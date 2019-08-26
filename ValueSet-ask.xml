@@ -1,0 +1,24 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+  </meta>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
+  <version value="0.1" />
+  <name value="ASK" />
+  <status value="draft" />
+  <experimental value="true" />
+  <date value="2019-08-21" />
+  <publisher value="Medizininformatik Initiative" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.medizininformatik-initiative.de/" />
+    </telecom>
+  </contact>
+  <description value="Arzneimittel-Stoffkatalog (ASK) Nummern" />
+  <compose>
+    <include>
+      <system value="urn:oid:1.2.276.0.76.5.308" />
+    </include>
+  </compose>
+</ValueSet>

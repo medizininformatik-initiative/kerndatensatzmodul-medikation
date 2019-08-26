@@ -1,0 +1,154 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationMII" />
+  <name value="MedicationMII" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.id">
+      <path value="Medication.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.meta">
+      <path value="Medication.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <description value="Discriminated by code system" />
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer">
+      <path value="Medication.code.coding" />
+      <sliceName value="Pharmazentralnummer" />
+      <short value="PZN-Nummer" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/ifa/pzn" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer.display">
+      <path value="Medication.code.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Rezeptur">
+      <path value="Medication.code.coding" />
+      <sliceName value="Rezeptur" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Medication.code.coding:Rezeptur.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/medicationType" />
+      </binding>
+    </element>
+    <element id="Medication.code.coding:Rezeptur.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="RZP" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Rezeptur.display">
+      <path value="Medication.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Rezeptur" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.text">
+      <path value="Medication.code.text" />
+      <short value="Handelsname" />
+      <definition value="Handelsname des Medikamentes als Freitexteingabe (ohne PZN-Code) oder als von code.coding.display (Handelsname laut PZN) abweichender Handelsname" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+      </binding>
+    </element>
+    <element id="Medication.amount">
+      <path value="Medication.amount" />
+      <type>
+        <code value="Ratio" />
+        <profile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Ratio-uv-ips" />
+      </type>
+    </element>
+    <element id="Medication.ingredient">
+      <path value="Medication.ingredient" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
+      <path value="Medication.ingredient.item[x]" />
+      <sliceName value="itemCodeableConcept" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept">
+      <path value="Medication.ingredient.itemCodeableConcept" />
+      <sliceName value="itemCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Arzneimittel-Stoffkatalog (ASK) Nummer" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding">
+      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.system">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.version">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.version" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.code">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.display">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.display" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>

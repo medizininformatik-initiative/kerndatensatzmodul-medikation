@@ -1,0 +1,145 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatementMII" />
+  <name value="MedicationStatementMII" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationStatement" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationStatement">
+      <path value="MedicationStatement" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.id">
+      <path value="MedicationStatement.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.meta">
+      <path value="MedicationStatement.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.meta.profile">
+      <path value="MedicationStatement.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.status">
+      <path value="MedicationStatement.status" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.medication[x]">
+      <path value="MedicationStatement.medication[x]" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationMII" />
+      </type>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="Representation of unknown or absent medications" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.subject">
+      <path value="MedicationStatement.subject" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.subject.reference">
+      <path value="MedicationStatement.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.effective[x]">
+      <path value="MedicationStatement.effective[x]" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.informationSource">
+      <path value="MedicationStatement.informationSource" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.reasonCode">
+      <path value="MedicationStatement.reasonCode" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.reasonReference">
+      <path value="MedicationStatement.reasonReference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage">
+      <path value="MedicationStatement.dosage" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.timing">
+      <path value="MedicationStatement.dosage.timing" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site">
+      <path value="MedicationStatement.dosage.site" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.site.coding">
+      <path value="MedicationStatement.dosage.site.coding" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding.system">
+      <path value="MedicationStatement.dosage.site.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding.version">
+      <path value="MedicationStatement.dosage.site.coding.version" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding.code">
+      <path value="MedicationStatement.dosage.site.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding.display">
+      <path value="MedicationStatement.dosage.site.coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route">
+      <path value="MedicationStatement.dosage.route" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="EDQM Standards Terms" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.route.coding">
+      <path value="MedicationStatement.dosage.route.coding" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <description value="EDQM Standards Terms" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.system">
+      <path value="MedicationStatement.dosage.route.coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.version">
+      <path value="MedicationStatement.dosage.route.coding.version" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.code">
+      <path value="MedicationStatement.dosage.route.coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.route.coding.display">
+      <path value="MedicationStatement.dosage.route.coding.display" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
