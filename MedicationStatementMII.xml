@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatementMII" />
-  <name value="MedicationStatementMII" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement" />
+  <version value="1.0" />
+  <name value="MedicationStatement" />
+  <title value="MI-Initiative - Medikation - MedicationStatement" />
   <status value="draft" />
   <fhirVersion value="4.0.0" />
   <kind value="resource" />
@@ -11,18 +14,6 @@
   <differential>
     <element id="MedicationStatement">
       <path value="MedicationStatement" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.id">
-      <path value="MedicationStatement.id" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.meta">
-      <path value="MedicationStatement.meta" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.meta.profile">
-      <path value="MedicationStatement.meta.profile" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.status">
@@ -36,7 +27,7 @@
       </type>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationMII" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
       </type>
       <mustSupport value="true" />
       <binding>
@@ -47,12 +38,23 @@
     </element>
     <element id="MedicationStatement.subject">
       <path value="MedicationStatement.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Patient" />
+      </type>
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.subject.reference">
       <path value="MedicationStatement.subject.reference" />
       <min value="1" />
       <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.context">
+      <path value="MedicationStatement.context" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter " />
+      </type>
     </element>
     <element id="MedicationStatement.effective[x]">
       <path value="MedicationStatement.effective[x]" />
