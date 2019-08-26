@@ -16,7 +16,6 @@
       <path value="Medication" />
       <mustSupport value="true" />
     </element>
-    
     <element id="Medication.code">
       <path value="Medication.code" />
       <min value="1" />
@@ -128,23 +127,59 @@
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.system">
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK">
+      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <sliceName value="codingASK" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK.system">
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
-      <mustSupport value="true" />
+      <min value="1" />
+      <fixedUri value="urn:oid:1.2.276.0.76.5.308" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.version">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.version" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.code">
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK.code">
       <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
-      <mustSupport value="true" />
+      <min value="1" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding.display">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.display" />
-      <mustSupport value="true" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC">
+      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <sliceName value="codingATC" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC.system">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://www.whocc.no/atc" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC.code">
+      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemReference">
+      <path value="Medication.ingredient.itemReference" />
+      <sliceName value="itemReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
