@@ -143,5 +143,53 @@
       <path value="MedicationStatement.dosage.route.coding.display" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.dosage.method.coding">
+      <path value="MedicationStatement.dosage.method.coding" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingEDQM">
+      <path value="MedicationStatement.dosage.method.coding" />
+      <sliceName value="codingEDQM" />
+      <max value="1" />
+      <binding>
+        <strength value="preferred" />
+        <description value="EDQM adminisration methods" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/administration-method-edqm" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingEDQM.system">
+      <path value="MedicationStatement.dosage.method.coding.system" />
+      <min value="1" />
+      <fixedUri value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingEDQM.code">
+      <path value="MedicationStatement.dosage.method.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingSNOMED">
+      <path value="MedicationStatement.dosage.method.coding" />
+      <sliceName value="codingSNOMED" />
+      <max value="1" />
+      <binding>
+        <strength value="example" />
+        <description value="SNOMED administration methods" />
+        <valueSet value="http://hl7.org/fhir/ValueSet/administration-method-codes" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingSNOMED.system">
+      <path value="MedicationStatement.dosage.method.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="MedicationStatement.dosage.method.coding:codingSNOMED.code">
+      <path value="MedicationStatement.dosage.method.coding.code" />
+      <min value="1" />
+    </element>
   </differential>
 </StructureDefinition>
