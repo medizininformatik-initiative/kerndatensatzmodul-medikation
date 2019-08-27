@@ -14,7 +14,7 @@
     </contact>
     <compose>
         <include>
-            <system value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+            <system value="http://standardterms.edqm.eu" />
             <concept>
                 <code value="AME-0004" />
                 <display value="Administration" />
