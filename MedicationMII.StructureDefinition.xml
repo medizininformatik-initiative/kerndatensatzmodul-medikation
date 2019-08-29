@@ -112,15 +112,6 @@
       <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemCodeableConcept" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemReference">
-      <path value="Medication.ingredient.itemReference" />
-      <sliceName value="itemReference" />
-      <type>
-        <code value="Reference" />
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
-      </type>
-    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept">
       <path value="Medication.ingredient.itemCodeableConcept" />
       <sliceName value="itemCodeableConcept" />
@@ -148,7 +139,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <sliceName value="codingASK" />
-      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
@@ -166,7 +156,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <sliceName value="codingATC" />
-      <max value="1" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
@@ -184,7 +173,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <sliceName value="codingUNII" />
-      <max value="1" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII.system">
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
@@ -194,6 +182,15 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII.code">
       <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
       <min value="1" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemReference">
+      <path value="Medication.ingredient.itemReference" />
+      <sliceName value="itemReference" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
+      </type>
     </element>
   </differential>
 </StructureDefinition>
