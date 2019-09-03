@@ -84,30 +84,43 @@
     <element id="MedicationStatement.dosage.site">
       <path value="MedicationStatement.dosage.site" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
-      </binding>
     </element>
     <element id="MedicationStatement.dosage.site.coding">
       <path value="MedicationStatement.dosage.site.coding" />
-      <mustSupport value="true" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="MedicationStatement.dosage.site.coding.system">
+    <element id="MedicationStatement.dosage.site.coding:codingEDQM">
+      <path value="MedicationStatement.dosage.site.coding" />
+      <sliceName value="codingEDQM" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="intended site EDQM" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/intended-site-edqm" />
+      </binding>
+    </element>
+    <element id="MedicationStatement.dosage.site.coding:codingEDQM.system">
       <path value="MedicationStatement.dosage.site.coding.system" />
-      <mustSupport value="true" />
+      <fixedUri value="http://standardterms.edqm.eu" />
     </element>
-    <element id="MedicationStatement.dosage.site.coding.version">
-      <path value="MedicationStatement.dosage.site.coding.version" />
-      <mustSupport value="false" />
+    <element id="MedicationStatement.dosage.site.coding:codingSNOMED">
+      <path value="MedicationStatement.dosage.site.coding" />
+      <sliceName value="codingSNOMED" />
+      <binding>
+        <strength value="example" />
+        <description value="target site IPS" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
+      </binding>
     </element>
-    <element id="MedicationStatement.dosage.site.coding.code">
-      <path value="MedicationStatement.dosage.site.coding.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.dosage.site.coding.display">
-      <path value="MedicationStatement.dosage.site.coding.display" />
-      <mustSupport value="true" />
+    <element id="MedicationStatement.dosage.site.coding:codingSNOMED.system">
+      <path value="MedicationStatement.dosage.site.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="MedicationStatement.dosage.route">
       <path value="MedicationStatement.dosage.route" />
@@ -166,7 +179,7 @@
     <element id="MedicationStatement.dosage.method.coding:codingEDQM.system">
       <path value="MedicationStatement.dosage.method.coding.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:0.4.0.127.0.16.1.1.2.1" />
+      <fixedUri value="http://standardterms.edqm.eu" />
     </element>
     <element id="MedicationStatement.dosage.method.coding:codingEDQM.code">
       <path value="MedicationStatement.dosage.method.coding.code" />
