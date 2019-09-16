@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/BasismodulMedikation" />
+  <name value="BasismodulMedikation" />
+  <status value="draft" />
+  <fhirVersion value="4.0.0" />
+  <kind value="logical" />
+  <abstract value="false" />
+  <type value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/BasismodulMedikation" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Element" />
+  <derivation value="specialization" />
+  <differential>
+    <element id="BasismodulMedikation">
+      <path value="BasismodulMedikation" />
+      <short value="Das Basismodul Medikation enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Element" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag">
+      <path value="BasismodulMedikation.Medikationseintrag" />
+      <short value="Medikationseintrag: Dokumentiert die Verschreibung, Gabe oder Medikationsplan zu einem oder mehreren Medikamenten." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Identifikation">
+      <path value="BasismodulMedikation.Medikationseintrag.Identifikation" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Identifier" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Status">
+      <path value="BasismodulMedikation.Medikationseintrag.Status" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur" />
+      <short value="Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich." />
+      <comment value="Grund, warum die 3 Unterpunkte auf gleichem Level sind: es kann sein, dass nur eines davon bekannt ist (z.B. nur der Wirkstoff). Der Wirkstoff ist aber immer auch Bestandteil des Fertigarzneimittels bzw. einer Rezeptur." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt" />
+      <short value="Arzneimittelprodukt: hiermit ist sowohl eine zusammengesetzte Produkt-ID (PhPID) gemeint wie die Pharmazentralnummer (PZN), als auch Produktidentifikatoren (GTIN)." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name" />
+      <short value="Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels gemäß Informationsstelle für Arzneispezialitäten (IFA) oder Hauskatalog." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code" />
+      <short value="Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer (PZN), IDMP Pharmaceutical Product Identifiers (PhPID), IDMP Medicinal Product Identifier (MPID), Pharmacy Product Number (PPN)" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke" />
+      <short value="Wirkstärke gemäß Handelsname" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Ratio" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Ratio" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur" />
+      <short value="Rezeptur-Eintrag" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile" />
+      <short value="Beschreibung der Rezeptur" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff" />
+      <short value="Wirkstoff" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Allgemein">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Allgemein" />
+      <short value="Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird. In den meisten Fällen WHO-INN (international non-proprietary name der World Health Organisation) in der englischen Version. Hinweis: in Deutschland gibt es z.T. Schreibvarianten oder weitere Bezeichnungen. Für Substanzen ohne WHO INN die registrierte Substanzbezeichnung." />
+      <comment value="Abgrenzung zu Wirkstoff-Name (aktiv): Bei Wirkstoff-Name (allgemein) kein „Derivat“ der Substanz (Salz, Ester etc.), wie es im Arzneimittel als &quot;active ingredient&quot; registriert sein kann. &#xD;&#xA;&#xD;&#xA;FHIR-Mapping: Medication.ingredient.itemCodeableConcept.text&#xD;&#xA;&#xD;&#xA;i.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Allgemein">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Allgemein" />
+      <short value="Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII." />
+      <comment value="Die Problematik mit ATC-Codes ist bekannt.&#xD;&#xA;Abgrenzung zu Wirkstoff-Code (aktiv): Bei Wirkstoff-Code (allgemein) kein „Derivat“ der Substanz (Salz, Ester etc.), wie es im Arzneimittel als &quot;active ingredient&quot; registriert sein kann.&#xD;&#xA;&#xD;&#xA;FHIR-Mapping: Medication.ingredient.itemCodeableConcept.coding&#xD;&#xA;&#xD;&#xA;i.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Aktiv">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Aktiv" />
+      <short value="„Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Name (allgemein) sein oder auch ein „Derivat“ der Substanz sein (z.B. Salz, Ester etc. Bezeichnung dann z.B. wie  Modified INNs (INNMs)" />
+      <comment value="FHIR-Mapping: Medication.ingredient.itemCodeableConcept.text&#xD;&#xA;&#xD;&#xA;i.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Aktiv">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Aktiv" />
+      <short value="Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII.  Hierbei handelt es sich um das „Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Code (allgemein) sein oder der Code für ein „Derivat“ der Substanz sein (z. B. Salz, Ester etc.)" />
+      <comment value="FHIR-Mapping: Medication.ingredient.itemCodeableConcept.coding&#xD;&#xA;&#xD;&#xA;i.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Stärke">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Stärke" />
+      <short value="Wirkstärke, Menge der aktiven Substanz pro Dosiseinheit entsprechend Darreichungsform (1 Tablette, 1 Ampulle, 1 mL etc.)" />
+      <comment value="FHIR-Mapping: Medication.ingredient.strength" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Ratio" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Ratio" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Darreichungsform">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Darreichungsform" />
+      <short value="Darreichungsform nach EDQM" />
+      <comment value="FHIR-Mapping: Medication.form" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Einnahmedauer">
+      <path value="BasismodulMedikation.Medikationseintrag.Einnahmedauer" />
+      <short value="Einnahmedauer für eine angeordnete, geplante oder durchgeführte Medikamentengabe. Bei Einzel-Vergabe kann die Dauer auch punktweise (Null) sein." />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective&#xD;&#xA;&#xD;&#xA;hier ist jeweils ein Zeitpunkt für Einzelvergabe (.effectiveDateTime) oder eine Periode (.effectivePeriod) möglich" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme">
+      <path value="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme" />
+      <short value="Startzeitpunkt der Einnahme" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectiveDateTime" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme">
+      <path value="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme">
+      <path value="BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Period" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Period" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-Freitext">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-Freitext" />
+      <short value="Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectivePeriod.data&#xD;&#xA;&#xD;&#xA;Kann nicht gleichzeitig mit &quot;Dauer der Einnahme&quot; angegeben werden" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-Freitext.Freitext">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-Freitext.Freitext" />
+      <short value="Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectivePeriod.data&#xD;&#xA;&#xD;&#xA;Kann nicht gleichzeitig mit &quot;Dauer der Einnahme&quot; angegeben werden" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert" />
+      <short value="Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Reihenfolge">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Reihenfolge" />
+      <short value="Sequenznummer des Dosierungseintrags. Bei mehreren Einträgen zur Dosierung wird damit die Reihenfolge (Priorität) der Einträge festgelegt." />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.sequence&#xD;&#xA;&#xD;&#xA;Im Gegensatz zu MedicationStatement hat MedicationAdministration nur höchstens einen Eintrag zur Dosierung (deshalb gibt es keine Angaben zur Reihenfolge)" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="integer" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/integer" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe" />
+      <short value="Zeitangabe zur Einnahme als Teil des Dosierschemas" />
+      <definition value="Ausführliche Beispiele finden sich unter http://wiki.hl7.de/index.php?title=cdamedp:Dosierbeispiele&#xD;&#xA;&#xD;&#xA;Nicht vorhanden bei Vergabe, weil bei Vergabe kein zukünftiges Dosierungs-Schema angegeben werden muss." />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing&#xD;&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt" />
+      <short value="Exakter Zeitpunkt, zu dem eine Medikation gegeben werden soll." />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event&#xD;&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung" />
+      <short value="Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when in Kombination mit MedicationStatement.dosage.timing.repeat.offset und/oder anderen Angaben in MedicationStatement.dosage.timing.repeat" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis" />
+      <short value="Ereignis, z. B. morgens, mittags, abends, zur Nacht" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when .dayOfWeek .timeOfDay etc." />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="code" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/code" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset" />
+      <short value="Offset zum Ereignis, z. B. 30 Minuten vorher" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.offset&#xD;&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="unsignedInt" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/unsignedInt" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall" />
+      <definition value="Ein Zeitintervall, das sich periodisch wiederholt. Periodische Intervalle haben zwei Eigenschaften, Phase und Periode. Die Phase gibt den &quot;Typ&quot; Intervall&quot; an, der sich jede Periode wiederholt.&#xD;&#xA;&#xD;&#xA;Wiederholungsintervall (periodische Intervallsequenz), gibt an&#xD;&#xA;die Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen (period) &#xD;&#xA;der Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt (phase)." />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase" />
+      <short value="Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event&#xD;&#xA;" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode" />
+      <short value="Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period &#xD;&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="decimal" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/decimal" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Einnahme-bei-Bedarf">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Einnahme-bei-Bedarf" />
+      <short value="Einnahme des Medikaments bei Bedarf" />
+      <comment value="FHIR-Mapping: MedicationStatement.asNeeded entweder als Boolean .asNeededBoolean  oder kodiert .asNeededCodeableConcept" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="boolean" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/boolean" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Art-der-Anwendung">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Art-der-Anwendung" />
+      <definition value="Art der Anwendung des Arzneimittels EDQM passende Value Sets. Pharmazeutische Anwendung dekomponiert in drei Eigenschaften: Art der Anwendung, Weg der Anwendung und Ort der Anwendung." />
+      <comment value="FHIR-Mappings:&#xD;&#xA;&#xD;&#xA;(MedicationStatement | MedicationAdministration).dosage.site&#xD;&#xA;(MedicationStatement | MedicationAdministration).dosage.route&#xD;&#xA;(MedicationStatement | MedicationAdministration).dosage.method&#xD;&#xA;&#xD;&#xA;jeweils mit einem .coding und .text für kodierte Angabe mit EDQM binding und im Freitext" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis">
+      <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis" />
+      <definition value="Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).&#xD;&#xA;Möglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis. " />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.doseAndRate mit den Teilangaben je nach Anforderung .type .dose .rate&#xD;&#xA;&#xD;&#xA;.type gibt die Art des Eintrages an&#xD;&#xA;.dose kann als SimpleQuantity (.doseQuantity) oder als Range (.doseRange) angegeben werden&#xD;&#xA;.rate kann als Ratio (.rateRatio), Range (.rateRange) oder  SimpleQuantity (.rateQuantity) angegeben werden&#xD;&#xA;&#xD;&#xA;MedicationAdministration.dosage.rate nur mit rateRatio und rateQuantity&#xD;&#xA;MedicationAdministration.dosage.dose nur SimpleQuantity&#xD;&#xA;&#xD;&#xA;Fragen: Ist diese Unterscheidung von HL7 intendiert und warum?" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Quantity" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Quantity" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Hinweis">
+      <path value="BasismodulMedikation.Medikationseintrag.Hinweis" />
+      <short value="Hinweistext zu diesem Medikament" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).dosage.note" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Annotation" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Annotation" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Behandlungsgrund">
+      <path value="BasismodulMedikation.Medikationseintrag.Behandlungsgrund" />
+      <short value="Behandlungsgrund kann ein Problem, Symptom oder eine Diagnose (Condition) sein." />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).reasonCode und .reasonReference&#xD;&#xA;&#xD;&#xA;.reasonReference ist eine Referenz auf ( Condition | Observation | DiagnosticReport )" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="CodeableConcept" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung">
+      <path value="BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung" />
+      <short value="Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden." />
+      <comment value="FHIR-Mappings:&#xD;&#xA;&#xD;&#xA;MedicationStatement.basedOn Referenz auf (MedicationAdministration | MedicationDispense | MedicationStatement | Observation)&#xD;&#xA;MedicationAdministration.request Referenz auf (MedicationRequest)&#xD;&#xA;(MedicationStatement | MedicationAdministration).partOf Referenz auf (MedicationAdministration | Procedure) und zusätzlich für Statement ( MedicationDispense | MedicationStatement | Observation )" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe">
+      <path value="BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe" />
+      <short value="Bezug zu Abgabe" />
+      <comment value="FHIR-Mappings:&#xD;&#xA;&#xD;&#xA;MedicationStatement.basedOn Referenz auf (MedicationAdministration | MedicationDispense | MedicationStatement | Observation)&#xD;&#xA;MedicationAdministration.request Referenz auf (MedicationRequest)&#xD;&#xA;(MedicationStatement | MedicationAdministration).partOf Referenz auf (MedicationAdministration | Procedure) und zusätzlich für Statement ( MedicationDispense | MedicationStatement | Observation )" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags">
+      <path value="BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags" />
+      <short value="Datum des Dokumentationseintrages" />
+      <comment value="FHIR-Mappings: MedicationStatement.dateAsserted&#xD;&#xA;" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="dateTime" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/dateTime" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags" />
+      <short value="Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat." />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Name">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Name" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="HumanName" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname" />
+      <short value="Name der Organisation" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse" />
+      <short value="Adresse" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="BackboneElement" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Straße">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Straße" />
+      <short value="Straßenname und Hausnummer" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.PLZ">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.PLZ" />
+      <short value="Postleitzahl" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Ort">
+      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Ort" />
+      <short value="Ortsname" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
+      </type>
+    </element>
+    <element id="BasismodulMedikation.Medikationseintrag.Durchführender">
+      <path value="BasismodulMedikation.Medikationseintrag.Durchführender" />
+      <short value="Health Professional der einen Medikationsprozess durchgeführt hat" />
+      <comment value="FHIR-Mapping: MedicationAdministration.performer&#xD;&#xA;&#xD;&#xA;.actor ist eine Referenz auf ( Practitioner | PractitionerRole | Patient | RelatedPerson | Device )" />
+      <min value="0" />
+      <max value="*" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>
