@@ -108,12 +108,17 @@
       <path value="Medication.ingredient" />
       <mustSupport value="true" />
     </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept">
       <path value="Medication.ingredient.item[x]" />
-      <sliceName value="itemCodeableConcept" />
-    </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept">
-      <path value="Medication.ingredient.itemCodeableConcept" />
       <sliceName value="itemCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
@@ -125,8 +130,8 @@
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
       </binding>
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding">
+      <path value="Medication.ingredient.item[x].coding" />
       <slicing>
         <discriminator>
           <type value="value" />
@@ -136,55 +141,55 @@
       </slicing>
       <mustSupport value="true" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingASK">
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="codingASK" />
       <binding>
         <strength value="required" />
         <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
       </binding>
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingASK.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:oid:1.2.276.0.76.5.308" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingASK.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingASK.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingATC">
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="codingATC" />
       <binding>
         <strength value="required" />
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
       </binding>
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingATC.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://www.whocc.no/atc" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingATC.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingATC.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingUNII">
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="codingUNII" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingUNII.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://fdasis.nlm.nih.gov" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemCodeableConcept.coding:codingUNII.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:codingUNII.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
-    <element id="Medication.ingredient.item[x]:itemCodeableConcept:itemReference">
-      <path value="Medication.ingredient.itemReference" />
+    <element id="Medication.ingredient.item[x]:itemReference">
+      <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemReference" />
       <type>
         <code value="Reference" />
