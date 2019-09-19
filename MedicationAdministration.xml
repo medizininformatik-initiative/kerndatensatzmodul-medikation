@@ -12,7 +12,7 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
-   <element id="MedicationAdministration.status">
+    <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
       <mustSupport value="true" />
     </element>
@@ -57,41 +57,54 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-	
-	
-	
-	 <element id="MedicationAdministration.dosage">
+
+
+
+    <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <mustSupport value="true" />
     </element>
-    
+
     <element id="MedicationAdministration.dosage.site">
       <path value="MedicationAdministration.dosage.site" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
-      </binding>
     </element>
     <element id="MedicationAdministration.dosage.site.coding">
       <path value="MedicationAdministration.dosage.site.coding" />
-      <mustSupport value="true" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
     </element>
-    <element id="MedicationAdministration.dosage.site.coding.system">
+    <element id="MedicationAdministration.dosage.site.coding:codingEDQM">
+      <path value="MedicationAdministration.dosage.site.coding" />
+      <sliceName value="codingEDQM" />
+      <max value="1" />
+      <binding>
+        <strength value="required" />
+        <description value="intended site EDQM" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/intended-site-edqm" />
+      </binding>
+    </element>
+    <element id="MedicationAdministration.dosage.site.coding:codingEDQM.system">
       <path value="MedicationAdministration.dosage.site.coding.system" />
-      <mustSupport value="true" />
+      <fixedUri value="http://standardterms.edqm.eu" />
     </element>
-    <element id="MedicationAdministration.dosage.site.coding.version">
-      <path value="MedicationAdministration.dosage.site.coding.version" />
-      <mustSupport value="true" />
+    <element id="MedicationAdministration.dosage.site.coding:codingSNOMED">
+      <path value="MedicationAdministration.dosage.site.coding" />
+      <sliceName value="codingSNOMED" />
+      <binding>
+        <strength value="example" />
+        <description value="target site IPS" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" />
+      </binding>
     </element>
-    <element id="MedicationAdministration.dosage.site.coding.code">
-      <path value="MedicationAdministration.dosage.site.coding.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.dosage.site.coding.display">
-      <path value="MedicationAdministration.dosage.site.coding.display" />
-      <mustSupport value="true" />
+    <element id="MedicationAdministration.dosage.site.coding:codingSNOMED.system">
+      <path value="MedicationAdministration.dosage.site.coding.system" />
+      <fixedUri value="http://snomed.info/sct" />
     </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
@@ -127,6 +140,6 @@
       <path value="MedicationAdministration.dosage.route.coding.display" />
       <mustSupport value="true" />
     </element>
-	
-	</differential>
+
+  </differential>
 </StructureDefinition>
