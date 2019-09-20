@@ -22,6 +22,8 @@
     <element id="BasismodulMedikation.Medikationseintrag">
       <path value="BasismodulMedikation.Medikationseintrag" />
       <short value="Medikationseintrag: Dokumentiert die Verschreibung, Gabe oder Medikationsplan zu einem oder mehreren Medikamenten." />
+      <definition value="AkdÄ MP 2.0: D13 Eine konkrete Zeile der Medikationstabelle mit Daten zur Medikation. Alternativ kann dies ein Wirkstoff-, Arzneimittel- oder Rezeptureintrag, ein Sonstiger Hinweis oder auch eine Überschrift sein." />
+      <comment value="FHIR-Mapping: MedicationStatement, MedicationAdministration" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -30,6 +32,7 @@
     </element>
     <element id="BasismodulMedikation.Medikationseintrag.Identifikation">
       <path value="BasismodulMedikation.Medikationseintrag.Identifikation" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationStatement).identifier" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -39,6 +42,8 @@
     </element>
     <element id="BasismodulMedikation.Medikationseintrag.Status">
       <path value="BasismodulMedikation.Medikationseintrag.Status" />
+      <short value="Prozess-Status des beschriebenen Medikationsstatus" />
+      <comment value="FHIR-Mapping: (MedicationStatement | MedicationAdministration).status und .statusReason" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -49,7 +54,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur" />
       <short value="Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich." />
-      <comment value="Grund, warum die 3 Unterpunkte auf gleichem Level sind: es kann sein, dass nur eines davon bekannt ist (z.B. nur der Wirkstoff). Der Wirkstoff ist aber immer auch Bestandteil des Fertigarzneimittels bzw. einer Rezeptur." />
+      <comment value="Grund, warum die 3 Unterpunkte auf gleichem Level sind: es kann sein, dass nur eines davon bekannt ist (z.B. nur der Wirkstoff). Der Wirkstoff ist aber immer auch Bestandteil des Fertigarzneimittels bzw. einer Rezeptur.&#xD;&#xA;&#xD;&#xA;FHIR-Mapping: Medication" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -59,6 +64,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt" />
       <short value="Arzneimittelprodukt: hiermit ist sowohl eine zusammengesetzte Produkt-ID (PhPID) gemeint wie die Pharmazentralnummer (PZN), als auch Produktidentifikatoren (GTIN)." />
+      <comment value="FHIR-Mapping: Medication.code" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -68,6 +74,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name" />
       <short value="Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels gemäß Informationsstelle für Arzneispezialitäten (IFA) oder Hauskatalog." />
+      <comment value="FHIR-Mapping: Medication.code.text" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -78,6 +85,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code" />
       <short value="Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer (PZN), IDMP Pharmaceutical Product Identifiers (PhPID), IDMP Medicinal Product Identifier (MPID), Pharmacy Product Number (PPN)" />
+      <comment value="FHIR-Mapping: Medication.code.coding" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -88,6 +96,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke" />
       <short value="Wirkstärke gemäß Handelsname" />
+      <comment value="FHIR-Mapping: Medication.amount" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -98,6 +107,8 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur" />
       <short value="Rezeptur-Eintrag" />
+      <definition value="AkdÄ MP 2.0: D17 Datenfeld, um freitextlich eine Rezeptur als Medikationseintrag zu gestalten." />
+      <comment value="FHIR-Mapping: Medication.code.coding als fixed code für Rezeptur in Kombination mit Medication.code.text für die Beschreibung der Rezeptur" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -107,6 +118,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile" />
       <short value="Beschreibung der Rezeptur" />
+      <comment value="FHIR-Mapping: Medication.code.text" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -117,6 +129,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff">
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff" />
       <short value="Wirkstoff" />
+      <comment value="FHIR-Mapping: Medication.ingredient" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -273,7 +286,7 @@
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe" />
       <short value="Zeitangabe zur Einnahme als Teil des Dosierschemas" />
       <definition value="Ausführliche Beispiele finden sich unter http://wiki.hl7.de/index.php?title=cdamedp:Dosierbeispiele&#xD;&#xA;&#xD;&#xA;Nicht vorhanden bei Vergabe, weil bei Vergabe kein zukünftiges Dosierungs-Schema angegeben werden muss." />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing&#xD;&#xA;" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -283,7 +296,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt" />
       <short value="Exakter Zeitpunkt, zu dem eine Medikation gegeben werden soll." />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event&#xD;&#xA;" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -315,7 +328,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset" />
       <short value="Offset zum Ereignis, z. B. 30 Minuten vorher" />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.offset&#xD;&#xA;" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.offset" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -336,7 +349,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase" />
       <short value="Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt" />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event&#xD;&#xA;" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.event" />
       <min value="0" />
       <max value="*" />
       <type>
@@ -347,7 +360,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode" />
       <short value="Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen" />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period &#xD;&#xA;" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period" />
       <min value="0" />
       <max value="1" />
       <type>
@@ -379,7 +392,7 @@
     </element>
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis" />
-      <definition value="Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).&#xD;&#xA;Möglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis. " />
+      <definition value="Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).&#xD;&#xA;Möglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis." />
       <comment value="FHIR-Mapping: MedicationStatement.dosage.doseAndRate mit den Teilangaben je nach Anforderung .type .dose .rate&#xD;&#xA;&#xD;&#xA;.type gibt die Art des Eintrages an&#xD;&#xA;.dose kann als SimpleQuantity (.doseQuantity) oder als Range (.doseRange) angegeben werden&#xD;&#xA;.rate kann als Ratio (.rateRatio), Range (.rateRange) oder  SimpleQuantity (.rateQuantity) angegeben werden&#xD;&#xA;&#xD;&#xA;MedicationAdministration.dosage.rate nur mit rateRatio und rateQuantity&#xD;&#xA;MedicationAdministration.dosage.dose nur SimpleQuantity&#xD;&#xA;&#xD;&#xA;Fragen: Ist diese Unterscheidung von HL7 intendiert und warum?" />
       <min value="0" />
       <max value="1" />
@@ -433,7 +446,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags">
       <path value="BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags" />
       <short value="Datum des Dokumentationseintrages" />
-      <comment value="FHIR-Mappings: MedicationStatement.dateAsserted&#xD;&#xA;" />
+      <comment value="FHIR-Mappings: MedicationStatement.dateAsserted" />
       <min value="0" />
       <max value="1" />
       <type>
