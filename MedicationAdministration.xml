@@ -49,22 +49,17 @@
       <path value="MedicationAdministration.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter " />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter" />
       </type>
     </element>
     <element id="MedicationAdministration.effective[x]">
       <path value="MedicationAdministration.effective[x]" />
-      <min value="1" />
       <mustSupport value="true" />
     </element>
-
-
-
     <element id="MedicationAdministration.dosage">
       <path value="MedicationAdministration.dosage" />
       <mustSupport value="true" />
     </element>
-
     <element id="MedicationAdministration.dosage.site">
       <path value="MedicationAdministration.dosage.site" />
       <mustSupport value="true" />
@@ -91,7 +86,14 @@
     </element>
     <element id="MedicationAdministration.dosage.site.coding:codingEDQM.system">
       <path value="MedicationAdministration.dosage.site.coding.system" />
+      <min value="1" />
       <fixedUri value="http://standardterms.edqm.eu" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.dosage.site.coding:codingEDQM.code">
+      <path value="MedicationAdministration.dosage.site.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site.coding:codingSNOMED">
       <path value="MedicationAdministration.dosage.site.coding" />
@@ -104,7 +106,14 @@
     </element>
     <element id="MedicationAdministration.dosage.site.coding:codingSNOMED.system">
       <path value="MedicationAdministration.dosage.site.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.dosage.site.coding:codingSNOMED.code">
+      <path value="MedicationAdministration.dosage.site.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
@@ -126,20 +135,22 @@
     </element>
     <element id="MedicationAdministration.dosage.route.coding.system">
       <path value="MedicationAdministration.dosage.route.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding.version">
       <path value="MedicationAdministration.dosage.route.coding.version" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding.code">
       <path value="MedicationAdministration.dosage.route.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding.display">
       <path value="MedicationAdministration.dosage.route.coding.display" />
-      <mustSupport value="true" />
+      <mustSupport value="false" />
     </element>
-
   </differential>
 </StructureDefinition>
