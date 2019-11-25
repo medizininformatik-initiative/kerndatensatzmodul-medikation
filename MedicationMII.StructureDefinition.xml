@@ -100,6 +100,7 @@
     <element id="Medication.code.coding:Rezeptur.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/mii/rzp" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:Rezeptur.code">
@@ -129,15 +130,24 @@
       <path value="Medication.form.coding.code" />
       <min value="1" />
     </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept">
-      <path value="Medication.ingredient.itemCodeableConcept" />
+      <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <slicing>
         <discriminator>
           <type value="type" />
@@ -147,7 +157,7 @@
       </slicing>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="ASK" />
       <binding>
         <strength value="required" />
@@ -155,40 +165,40 @@
       </binding>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:oid:1.2.276.0.76.5.308" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="UNII" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://fdasis.nlm.nih.gov" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="ATC" />
       <short value="ATC Substanzcode" />
       <definition value="Nur für ATC Codes, die einen einzelnen Wirkstoff beschreiben." />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://www.whocc.no/atc" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
     </element>
   </differential>
