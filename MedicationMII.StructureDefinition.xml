@@ -99,13 +99,11 @@
     </element>
     <element id="Medication.code.coding:Rezeptur.system">
       <path value="Medication.code.coding.system" />
-      <min value="1" />
       <fixedUri value="http://fhir.de/CodeSystem/mii/rzp" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:Rezeptur.code">
       <path value="Medication.code.coding.code" />
-      <min value="1" />
       <fixedCode value="RZP" />
       <mustSupport value="true" />
     </element>
