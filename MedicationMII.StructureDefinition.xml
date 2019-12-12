@@ -154,15 +154,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.ingredient.item[x]">
-      <path value="Medication.ingredient.item[x]" />
-      <slicing>
-        <discriminator>
-          <type value="type" />
-          <path value="$this" />
-        </discriminator>
-      </slicing>
-    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept">
       <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemCodeableConcept" />
