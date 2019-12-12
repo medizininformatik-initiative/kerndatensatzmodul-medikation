@@ -154,15 +154,24 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+      </slicing>
+    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept">
-      <path value="Medication.ingredient.itemCodeableConcept" />
+      <path value="Medication.ingredient.item[x]" />
       <sliceName value="itemCodeableConcept" />
       <type>
         <code value="CodeableConcept" />
       </type>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <slicing>
         <discriminator>
           <type value="type" />
@@ -172,71 +181,71 @@
       </slicing>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="ASK" />
       <short value="Arzneistoffkatalog(ASK)-Nummer" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/ask" />
+        <valueSet value="http://fhir.de/ValueSet/ask" />
       </binding>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:oid:1.2.276.0.76.5.308" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="UNII" />
       <short value="Unique Ingredient Identifier" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://fdasis.nlm.nih.gov" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="ATC" />
       <short value="ATC Substanzcode" />
       <definition value="Nur für ATC Codes, die einen einzelnen Wirkstoff beschreiben." />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="http://www.whocc.no/atc" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS">
-      <path value="Medication.ingredient.itemCodeableConcept.coding" />
+      <path value="Medication.ingredient.item[x].coding" />
       <sliceName value="CAS" />
       <short value="Chemical abstract codes" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.system">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
+      <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
       <fixedUri value="urn:oid:2.16.840.1.113883.6.61" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.code">
-      <path value="Medication.ingredient.itemCodeableConcept.coding.code" />
+      <path value="Medication.ingredient.item[x].coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
