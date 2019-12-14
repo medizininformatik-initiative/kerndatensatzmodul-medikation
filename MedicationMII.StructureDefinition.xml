@@ -183,7 +183,7 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.system">
       <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
-      <fixedUri value="urn:oid:1.2.276.0.76.5.308" />
+      <fixedUri value="http://fhir.de/CodeSystem/ask" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code">
