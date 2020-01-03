@@ -12,6 +12,18 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
   <derivation value="constraint" />
   <differential>
+    <element id="MedicationAdministration.id">
+      <path value="MedicationAdministration.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.meta.source">
+      <path value="MedicationAdministration.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.meta.profile">
+      <path value="MedicationAdministration.meta.profile" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationAdministration.status">
       <path value="MedicationAdministration.status" />
       <mustSupport value="true" />
@@ -78,11 +90,6 @@
       <path value="MedicationAdministration.dosage.site.coding" />
       <sliceName value="codingEDQM" />
       <max value="1" />
-      <binding>
-        <strength value="required" />
-        <description value="intended site EDQM" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/intended-site-edqm" />
-      </binding>
     </element>
     <element id="MedicationAdministration.dosage.site.coding:codingEDQM.system">
       <path value="MedicationAdministration.dosage.site.coding.system" />
@@ -128,7 +135,7 @@
       <path value="MedicationAdministration.dosage.route.coding" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
+        <strength value="preferred" />
         <description value="EDQM Standards Terms" />
         <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" />
       </binding>
@@ -139,18 +146,10 @@
       <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
-    <element id="MedicationAdministration.dosage.route.coding.version">
-      <path value="MedicationAdministration.dosage.route.coding.version" />
-      <mustSupport value="false" />
-    </element>
     <element id="MedicationAdministration.dosage.route.coding.code">
       <path value="MedicationAdministration.dosage.route.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationAdministration.dosage.route.coding.display">
-      <path value="MedicationAdministration.dosage.route.coding.display" />
-      <mustSupport value="false" />
     </element>
   </differential>
 </StructureDefinition>
