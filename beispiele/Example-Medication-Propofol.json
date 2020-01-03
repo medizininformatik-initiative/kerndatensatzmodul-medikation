@@ -1,0 +1,56 @@
+{
+    "resourceType": "Medication",
+    "meta": {
+      "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication"
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "code": "194346",
+          "display": "PROPOFOL 2% 20MG/1ML MCT",
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        }
+      ]
+    },
+    "form": {
+      "coding": [
+        {
+          "code": "50021000",
+          "display": "Emulsion for injection/infusion",
+          "system": "http://standardterms.edqm.eu"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "isActive": true,
+        "itemCodeableConcept": {
+          "coding": [
+            {
+              "code": "22898",
+              "display": "Propofol",
+              "system": "http://fhir.de/CodeSystem/ask"
+            }
+          ]
+        },
+        "strength": {
+          "denominator": {
+            "code": "ml",
+            "system": "http://unitsofmeasure.org",
+            "unit": "ml",
+            "value": 1
+          },
+          "numerator": {
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg",
+            "value": 20
+          }
+        }
+      }
+    ],
+    "status": "active",
+    "id": "bd3ca044-0534-455c-be52-b7620d456a90"
+  }
