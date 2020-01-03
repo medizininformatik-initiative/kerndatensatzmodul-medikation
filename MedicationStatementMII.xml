@@ -12,8 +12,16 @@
   <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationStatement" />
   <derivation value="constraint" />
   <differential>
-    <element id="MedicationStatement">
-      <path value="MedicationStatement" />
+    <element id="MedicationStatement.id">
+      <path value="MedicationStatement.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.meta.source">
+      <path value="MedicationStatement.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.meta.profile">
+      <path value="MedicationStatement.meta.profile" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.status">
@@ -77,6 +85,10 @@
       <path value="MedicationStatement.dosage" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.dosage.text">
+      <path value="MedicationStatement.dosage.text" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.dosage.timing">
       <path value="MedicationStatement.dosage.timing" />
       <mustSupport value="true" />
@@ -94,6 +106,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingEDQM">
       <path value="MedicationStatement.dosage.site.coding" />
@@ -108,6 +121,11 @@
     <element id="MedicationStatement.dosage.site.coding:codingEDQM.system">
       <path value="MedicationStatement.dosage.site.coding.system" />
       <fixedUri value="http://standardterms.edqm.eu" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding:codingEDQM.code">
+      <path value="MedicationStatement.dosage.site.coding.code" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingSNOMED">
       <path value="MedicationStatement.dosage.site.coding" />
@@ -121,6 +139,11 @@
     <element id="MedicationStatement.dosage.site.coding:codingSNOMED.system">
       <path value="MedicationStatement.dosage.site.coding.system" />
       <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.site.coding:codingSNOMED.code">
+      <path value="MedicationStatement.dosage.site.coding.code" />
+      <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.route">
       <path value="MedicationStatement.dosage.route" />
@@ -142,18 +165,11 @@
     </element>
     <element id="MedicationStatement.dosage.route.coding.system">
       <path value="MedicationStatement.dosage.route.coding.system" />
+      <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.dosage.route.coding.version">
-      <path value="MedicationStatement.dosage.route.coding.version" />
-      <mustSupport value="false" />
     </element>
     <element id="MedicationStatement.dosage.route.coding.code">
       <path value="MedicationStatement.dosage.route.coding.code" />
-      <mustSupport value="true" />
-    </element>
-    <element id="MedicationStatement.dosage.route.coding.display">
-      <path value="MedicationStatement.dosage.route.coding.display" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.method.coding">
@@ -170,11 +186,6 @@
       <path value="MedicationStatement.dosage.method.coding" />
       <sliceName value="codingEDQM" />
       <max value="1" />
-      <binding>
-        <strength value="preferred" />
-        <description value="EDQM adminisration methods" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/administration-method-edqm" />
-      </binding>
     </element>
     <element id="MedicationStatement.dosage.method.coding:codingEDQM.system">
       <path value="MedicationStatement.dosage.method.coding.system" />
