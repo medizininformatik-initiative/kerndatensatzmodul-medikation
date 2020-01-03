@@ -120,11 +120,13 @@
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingEDQM.system">
       <path value="MedicationStatement.dosage.site.coding.system" />
+      <min value="1" />
       <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingEDQM.code">
       <path value="MedicationStatement.dosage.site.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingSNOMED">
@@ -138,11 +140,13 @@
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingSNOMED.system">
       <path value="MedicationStatement.dosage.site.coding.system" />
+      <min value="1" />
       <fixedUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.site.coding:codingSNOMED.code">
       <path value="MedicationStatement.dosage.site.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.route">
@@ -165,11 +169,13 @@
     </element>
     <element id="MedicationStatement.dosage.route.coding.system">
       <path value="MedicationStatement.dosage.route.coding.system" />
+      <min value="1" />
       <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.route.coding.code">
       <path value="MedicationStatement.dosage.route.coding.code" />
+      <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.method.coding">
