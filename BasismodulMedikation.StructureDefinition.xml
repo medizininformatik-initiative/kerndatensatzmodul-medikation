@@ -463,15 +463,6 @@
         <code value="BackboneElement" />
       </type>
     </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Name">
-      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Name" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="HumanName" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/HumanName" />
-      </type>
-    </element>
     <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname">
       <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname" />
       <short value="Name der Organisation" />
@@ -480,55 +471,6 @@
       <type>
         <code value="string" />
         <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-      </type>
-    </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse">
-      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse" />
-      <short value="Adresse" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="BackboneElement" />
-      </type>
-    </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Straße">
-      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Straße" />
-      <short value="Straßenname und Hausnummer" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-      </type>
-    </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.PLZ">
-      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.PLZ" />
-      <short value="Postleitzahl" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-      </type>
-    </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Ort">
-      <path value="BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Adresse.Ort" />
-      <short value="Ortsname" />
-      <min value="0" />
-      <max value="1" />
-      <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/string" />
-      </type>
-    </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Durchführender">
-      <path value="BasismodulMedikation.Medikationseintrag.Durchführender" />
-      <short value="Health Professional der einen Medikationsprozess durchgeführt hat" />
-      <comment value="FHIR-Mapping: MedicationAdministration.performer&#xD;&#xA;&#xD;&#xA;.actor ist eine Referenz auf ( Practitioner | PractitionerRole | Patient | RelatedPerson | Device )" />
-      <min value="0" />
-      <max value="*" />
-      <type>
-        <code value="Reference" />
       </type>
     </element>
   </differential>
