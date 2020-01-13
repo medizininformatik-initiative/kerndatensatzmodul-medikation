@@ -161,7 +161,6 @@
           <type value="value" />
           <path value="system" />
         </discriminator>
-        <rules value="open" />
       </slicing>
     </element>
     <element id="Medication.ingredient.itemCodeableConcept:itemCodeableConcept.coding:ASK">
