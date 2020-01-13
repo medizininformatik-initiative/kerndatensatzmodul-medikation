@@ -175,7 +175,6 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK">
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
@@ -218,11 +217,15 @@
       <sliceName value="ATC" />
       <short value="ATC Substanzcode" />
       <definition value="Nur für ATC Codes, die einen einzelnen Wirkstoff beschreiben." />
+      <binding>
+        <strength value="required" />
+        <valueSet value="http://fhir.de/ValueSet/dimdi/atc" />
+      </binding>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.system">
       <path value="Medication.ingredient.itemCodeableConcept.coding.system" />
       <min value="1" />
-      <fixedUri value="http://www.whocc.no/atc" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/atc" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ATC.code">
