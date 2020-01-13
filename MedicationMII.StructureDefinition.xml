@@ -35,14 +35,9 @@
     <element id="Medication">
       <path value="Medication" />
       <comment value="MI-I Medikation" />
-      <mustSupport value="false" />
     </element>
     <element id="Medication.id">
       <path value="Medication.id" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Medication.meta">
-      <path value="Medication.meta" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.meta.source">
@@ -52,10 +47,6 @@
     <element id="Medication.meta.profile">
       <path value="Medication.meta.profile" />
       <mustSupport value="true" />
-    </element>
-    <element id="Medication.identifier">
-      <path value="Medication.identifier" />
-      <mustSupport value="false" />
     </element>
     <element id="Medication.code">
       <path value="Medication.code" />
@@ -76,7 +67,6 @@
     <element id="Medication.code.coding:Pharmazentralnummer">
       <path value="Medication.code.coding" />
       <sliceName value="Pharmazentralnummer" />
-      <max value="1" />
     </element>
     <element id="Medication.code.coding:Pharmazentralnummer.system">
       <path value="Medication.code.coding.system" />
@@ -92,17 +82,17 @@
     <element id="Medication.code.coding:atcClass">
       <path value="Medication.code.coding" />
       <sliceName value="atcClass" />
-      <short value="WHO ATC classification" />
-      <max value="1" />
+      <short value="ATC Klassification" />
+      <definition value="ATC-Codes für Kombiprodukte" />
       <binding>
         <strength value="required" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips" />
+        <valueSet value="http://fhir.de/ValueSet/dimdi/atc" />
       </binding>
     </element>
     <element id="Medication.code.coding:atcClass.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
-      <fixedUri value="http://www.whocc.no/atc" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/atc" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:atcClass.code">
@@ -113,7 +103,6 @@
     <element id="Medication.code.coding:Rezeptur">
       <path value="Medication.code.coding" />
       <sliceName value="Rezeptur" />
-      <max value="1" />
     </element>
     <element id="Medication.code.coding:Rezeptur.system">
       <path value="Medication.code.coding.system" />
@@ -125,7 +114,6 @@
       <path value="Medication.code.coding.code" />
       <min value="1" />
       <fixedCode value="RZP" />
-      <mustSupport value="true" />
     </element>
     <element id="Medication.code.text">
       <path value="Medication.code.text" />
@@ -170,7 +158,7 @@
       <path value="Medication.ingredient.itemCodeableConcept.coding" />
       <slicing>
         <discriminator>
-          <type value="type" />
+          <type value="value" />
           <path value="system" />
         </discriminator>
         <rules value="open" />
