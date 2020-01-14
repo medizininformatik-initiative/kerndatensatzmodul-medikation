@@ -29,7 +29,7 @@
         "itemCodeableConcept": {
           "coding": [
             {
-              "system": "http://www.whocc.no/atc",
+              "system": "http://fhir.de/CodeSystem/dimdi/atc",
               "code": "B01AC06",
               "display": "acetylsalicylic acid"
             },
