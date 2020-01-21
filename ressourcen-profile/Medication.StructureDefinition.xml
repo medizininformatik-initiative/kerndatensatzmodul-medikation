@@ -210,6 +210,21 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED">
+      <path value="Medication.ingredient.item[x].coding" />
+      <sliceName value="SNOMED" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.text">
       <path value="Medication.ingredient.item[x].text" />
       <mustSupport value="true" />
