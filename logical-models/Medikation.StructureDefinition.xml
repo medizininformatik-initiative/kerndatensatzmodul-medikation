@@ -32,6 +32,7 @@
     </element>
     <element id="BasismodulMedikation.Medikationseintrag.Identifikation">
       <path value="BasismodulMedikation.Medikationseintrag.Identifikation" />
+      <short value="Logische ID des Medikationseintrags" />
       <comment value="FHIR-Mapping: (MedicationStatement | MedicationStatement).identifier" />
       <min value="0" />
       <max value="*" />
