@@ -157,6 +157,7 @@
           <path value="system" />
         </discriminator>
       </slicing>
+      <min value="1" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK">
       <path value="Medication.ingredient.item[x].coding" />
