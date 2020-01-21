@@ -9,6 +9,11 @@
             <code value="887150" />
             <display value="Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi" />
         </coding>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+            <code value="L01DB01" />
+            <display value="Doxorubicin" />
+        </coding>
     </code>
     <status value="active" />
     <form>
@@ -21,9 +26,14 @@
     <ingredient>
         <itemCodeableConcept>
             <coding>
-                <system value="http://fhir.de/CodeSystem/dimdi/atc" />
-                <code value="L01DB01" />
-                <display value="Doxorubicin" />
+                <system value="http://fdasis.nlm.nih.gov" />
+                <code value="82F2G7BL4E" />
+                <display value="Doxorubicin hydrochloride" />
+            </coding>
+            <coding>
+                <system value="urn:oid:2.16.840.1.113883.6.61" />
+                <code value="25316-40-9" />
+                <display value="Doxorubicin hydrochloride" />
             </coding>
         </itemCodeableConcept>
         <isActive value="true" />
