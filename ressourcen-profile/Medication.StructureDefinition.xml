@@ -100,21 +100,6 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.code.coding:Rezeptur">
-      <path value="Medication.code.coding" />
-      <sliceName value="Rezeptur" />
-    </element>
-    <element id="Medication.code.coding:Rezeptur.system">
-      <path value="Medication.code.coding.system" />
-      <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/rzp" />
-      <mustSupport value="true" />
-    </element>
-    <element id="Medication.code.coding:Rezeptur.code">
-      <path value="Medication.code.coding.code" />
-      <min value="1" />
-      <fixedCode value="RZP" />
-    </element>
     <element id="Medication.code.text">
       <path value="Medication.code.text" />
       <mustSupport value="true" />
