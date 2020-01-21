@@ -1,28 +1,47 @@
 {
-    "resourceType": "MedicationStatement",
-    "meta": {
+  "meta": {
       "profile": [
-        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement"
+          "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement"
       ]
-    },
-    "dosage": [
+  },
+  "dosage": [
       {
-        "timing": {
-          "repeat": {
-            "frequency": 1,
-            "period": 4,
-            "periodUnit": "wk"
+          "doseAndRate": [
+              {
+                  "doseQuantity": {
+                      "code": "mg/kg",
+                      "system": "http://unitsofmeasure.org",
+                      "unit": "mg/kilogram",
+                      "value": 50
+                  }
+              }
+          ],
+          "route": {
+              "coding": [
+                  {
+                      "code": "20045000",
+                      "display": "Intravenous use",
+                      "system": "http://standardterms.edqm.eu"
+                  }
+              ]
+          },
+          "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
+          "timing": {
+              "repeat": {
+                  "frequency": 1,
+                  "period": 4,
+                  "periodUnit": "wk"
+              }
           }
-        }
       }
-    ],
-    "effectiveDateTime": "2020-01-03T13:37:59.744+00:00",
-    "medicationReference": {
-      "reference": "Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9"
-    },
-    "status": "completed",
-    "subject": {
+  ],
+  "effectiveDateTime": "2020-01-14T11:37:00+01:00",
+  "medicationReference": {
+      "reference": "Medication/8b67be5c-d83a-417c-864e-85fb5e9f4d52"
+  },
+  "status": "active",
+  "subject": {
       "reference": "Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1"
-    },
-    "id": "b201abe9-89ea-42f1-9d30-a4c9dc786c02"
-  }
+  },
+  "resourceType": "MedicationStatement"
+}
