@@ -1,0 +1,45 @@
+<Medication xmlns="http://hl7.org/fhir">
+    <id value="bbc6c5a1-62df-44fa-a907-d066476ac7f9" />
+    <meta>
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
+    </meta>
+    <code>
+        <coding>
+            <system value="http://fhir.de/CodeSystem/ifa/pzn" />
+            <code value="887150" />
+            <display value="Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi" />
+        </coding>
+    </code>
+    <status value="active" />
+    <form>
+        <coding>
+            <system value="http://standardterms.edqm.eu" />
+            <code value="11213000" />
+            <display value="Concentrate for solution for infusion" />
+        </coding>
+    </form>
+    <ingredient>
+        <itemCodeableConcept>
+            <coding>
+                <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+                <code value="L01DB01" />
+                <display value="Doxorubicin" />
+            </coding>
+        </itemCodeableConcept>
+        <isActive value="true" />
+        <strength>
+            <numerator>
+                <value value="50" />
+                <unit value="mg" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="mg" />
+            </numerator>
+            <denominator>
+                <value value="25" />
+                <unit value="ml" />
+                <system value="http://unitsofmeasure.org" />
+                <code value="ml" />
+            </denominator>
+        </strength>
+    </ingredient>
+</Medication>
