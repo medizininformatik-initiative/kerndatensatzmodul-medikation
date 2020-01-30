@@ -131,7 +131,7 @@
       <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff" />
       <short value="Wirkstoff" />
       <comment value="FHIR-Mapping: Medication.ingredient" />
-      <min value="0" />
+      <min value="1" />
       <max value="*" />
       <type>
         <code value="BackboneElement" />
