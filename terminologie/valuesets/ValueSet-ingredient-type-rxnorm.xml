@@ -1,0 +1,22 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
+    </meta>
+    <url value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/rxnorm-ingredient-types" />
+    <name value="rxnorm-ingredient-types" />
+    <title value="ValueSet RxNorm Ingredient Types" />
+    <status value="active" />
+    <date value="2020-02-06" />
+    <publisher value="https://www.medizininformatik-initiative.de" />
+    <description value="Defines codes to differentiate between ingredient types as a subset of RxNorm codes where Term Type is IN (ingredient), PIN (precise ingredient), or MIN (multiple ingredients)." />
+    <compose>
+        <include>
+            <system value="http://www.nlm.nih.gov/research/umls/rxnorm" />
+            <filter>
+                <property value="TTY" />
+                <op value="in" />
+                <value value="IN,PIN,MIN" />
+            </filter>
+        </include>
+    </compose>
+</ValueSet>
