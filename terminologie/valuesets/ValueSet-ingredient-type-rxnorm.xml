@@ -3,6 +3,7 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset" />
     </meta>
     <url value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/rxnorm-ingredient-types" />
+    <version value="0.9" />
     <name value="rxnorm-ingredient-types" />
     <title value="ValueSet RxNorm Ingredient Types" />
     <status value="active" />

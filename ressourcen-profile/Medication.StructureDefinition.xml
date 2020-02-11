@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication" />
-  <version value="1.0" />
+  <version value="0.9" />
   <name value="Medication" />
   <title value="MI-Initiative - Medikation - Medication" />
   <status value="draft" />
