@@ -288,7 +288,7 @@
       <sliceName value="ASK" />
       <short value="Arzneistoffkatalog(ASK)-Nummer" />
       <binding>
-        <strength value="required" />
+        <strength value="example" />
         <valueSet value="http://fhir.de/ValueSet/ask" />
       </binding>
     </element>
