@@ -205,7 +205,6 @@
       </extension>
       <path value="Medication.form.coding.system" />
       <min value="1" />
-      <fixedUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.form.coding.code">
