@@ -5,7 +5,7 @@
   <name value="Medication" />
   <title value="MI-Initiative - Medikation - Medication" />
   <status value="draft" />
-  <fhirVersion value="4.0.0" />
+  <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="script10.6" />
     <uri value="http://ncpdp.org/SCRIPT10_6" />
@@ -194,6 +194,7 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Medication.form.coding" />
+      <definition value="EDQM pharmaceutical dose forms sind bevorzugt zu verwenden. SNOMED CT und IFA Codes sind Alternativen." />
       <mustSupport value="true" />
     </element>
     <element id="Medication.form.coding.system">
