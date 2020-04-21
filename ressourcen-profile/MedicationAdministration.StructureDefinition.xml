@@ -244,9 +244,7 @@
       <path value="MedicationAdministration.dosage.route" />
       <mustSupport value="true" />
       <binding>
-        <strength value="required" />
-        <description value="EDQM Standards Terms" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" />
+        <strength value="example" />
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding">
@@ -282,6 +280,11 @@
       <sliceName value="EDQM" />
       <max value="1" />
       <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <description value="EDQM Standard Terms" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration" />
+      </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding:EDQM.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
