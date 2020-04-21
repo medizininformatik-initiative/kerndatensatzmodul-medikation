@@ -42,6 +42,16 @@
       <path value="MedicationStatement.meta.profile" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.partOf">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.partOf" />
+      <mustSupport value="true" />
+    </element>
     <element id="MedicationStatement.status">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
