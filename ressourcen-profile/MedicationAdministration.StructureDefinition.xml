@@ -309,5 +309,25 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationAdministration.dosage.dose">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationAdministration.dosage.dose" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationAdministration.dosage.rate[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationAdministration.dosage.rate[x]" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>

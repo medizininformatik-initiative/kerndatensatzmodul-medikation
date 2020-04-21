@@ -331,5 +331,35 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
+    <element id="MedicationStatement.dosage.doseAndRate">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.dosage.doseAndRate" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.dose[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.dosage.doseAndRate.dose[x]" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationStatement.dosage.doseAndRate.rate[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="MedicationStatement.dosage.doseAndRate.rate[x]" />
+      <mustSupport value="true" />
+    </element>
   </differential>
 </StructureDefinition>
