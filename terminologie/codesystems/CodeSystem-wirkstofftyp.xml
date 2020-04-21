@@ -1,0 +1,51 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
+    </meta>
+    <url value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Wirkstofftyp" />
+    <version value="0.9" />
+    <name value="Wirkstofftyp" />
+    <title value="CodeSystem Wirkstofftypen" />
+    <status value="draft" />
+    <experimental value="true" />
+    <date value="2020-04-20" />
+    <publisher value="Medizininformatik Initiative" />
+    <contact>
+        <telecom>
+            <system value="url" />
+            <value value="https://www.medizininformatik-initiative.de" />
+        </telecom>
+    </contact>
+    <description value="Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe." />
+    <copyright value="Medizininformatik Initiative" />
+    <caseSensitive value="true" />
+    <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Wirkstofftyp" />
+    <content value="complete" />
+    <concept>
+        <code value="IN" />
+        <display value="ingredient" />
+        <definition value="The name of the substance."/>
+        <designation> 
+            <language value="de-DE"/>
+            <value value="Wirkstoff allgemein" /> 
+          </designation>
+    </concept>
+    <concept>
+        <code value="PIN" />
+        <display value="precise ingredient" />
+        <definition value="The name of the substance expressed precisely as a salt or ester of the ingredient." />
+        <designation> 
+            <language value="de-DE"/>
+            <value value="Wirkstoff präzise" /> 
+        </designation>
+    </concept>
+    <concept>
+        <code value="MIN" />
+        <display value="multiple ingredients" />
+        <definition value="The name of the substances in a combination product." />
+        <designation> 
+            <language value="de-DE"/>
+            <value value="Kombinationswirkstoff" /> 
+        </designation>
+    </concept>
+</CodeSystem>
