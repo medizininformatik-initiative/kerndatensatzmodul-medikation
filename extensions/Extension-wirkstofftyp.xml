@@ -8,7 +8,7 @@
   <experimental value="true" />
   <date value="2020-04-20" />
   <publisher value="Medizininformatik Initiative" />
-  <description value="Extension zur Differenzierung des Wirkstofftyps" />
+  <description value="Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff." />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
