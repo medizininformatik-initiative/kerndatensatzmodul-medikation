@@ -199,10 +199,27 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Medication.form.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
       <definition value="EDQM pharmaceutical dose forms sind bevorzugt zu verwenden. SNOMED CT und IFA Codes sind Alternativen." />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.form.coding.system">
+    <element id="Medication.form.coding:EDQM">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.form.coding" />
+      <sliceName value="EDQM" />
+    </element>
+    <element id="Medication.form.coding:EDQM.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -211,9 +228,10 @@
       </extension>
       <path value="Medication.form.coding.system" />
       <min value="1" />
+      <patternUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.form.coding.code">
+    <element id="Medication.form.coding:EDQM.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>

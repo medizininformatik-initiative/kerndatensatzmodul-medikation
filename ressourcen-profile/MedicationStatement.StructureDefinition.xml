@@ -326,6 +326,7 @@
       </extension>
       <path value="MedicationStatement.dosage.route.coding.system" />
       <min value="1" />
+      <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationStatement.dosage.route.coding:SNOMED.code">
