@@ -37,6 +37,12 @@
       <comment value="MI-I Medikation" />
     </element>
     <element id="Medication.id">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
       <path value="Medication.id" />
       <mustSupport value="true" />
     </element>
@@ -124,7 +130,7 @@
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.code.coding:atcClass">
+    <element id="Medication.code.coding:atcClassDe">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -132,18 +138,18 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Medication.code.coding" />
-      <sliceName value="atcClass" />
-      <short value="ATC Klassification" />
-      <definition value="ATC-Codes für Kombiprodukte" />
+      <sliceName value="atcClassDe" />
+      <short value="ATC Klassifikation deutsche Version" />
+      <definition value="ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten" />
       <patternCoding>
         <system value="http://fhir.de/CodeSystem/dimdi/atc" />
       </patternCoding>
       <binding>
-        <strength value="required" />
+        <strength value="example" />
         <valueSet value="http://fhir.de/ValueSet/dimdi/atc" />
       </binding>
     </element>
-    <element id="Medication.code.coding:atcClass.system">
+    <element id="Medication.code.coding:atcClassDe.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
@@ -155,7 +161,42 @@
       <patternUri value="http://fhir.de/CodeSystem/dimdi/atc" />
       <mustSupport value="true" />
     </element>
-    <element id="Medication.code.coding:atcClass.code">
+    <element id="Medication.code.coding:atcClassDe.code">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.code.coding" />
+      <sliceName value="atcClassEn" />
+      <short value="Anatomical Therapeutic Chemical Classification System" />
+      <definition value="ATC Classification International WHO Version" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn.system">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <patternUri value="http://www.whocc.no/atc" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn.code">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
         <valueCode value="normative" />
       </extension>
