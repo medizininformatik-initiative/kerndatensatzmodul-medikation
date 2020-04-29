@@ -183,6 +183,9 @@
       <sliceName value="atcClassEn" />
       <short value="Anatomical Therapeutic Chemical Classification System" />
       <definition value="ATC Classification International WHO Version" />
+      <patternCoding>
+        <system value="http://www.whocc.no/atc" />
+      </patternCoding>
     </element>
     <element id="Medication.code.coding:atcClassEn.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
@@ -261,6 +264,9 @@
       </extension>
       <path value="Medication.form.coding" />
       <sliceName value="EDQM" />
+      <patternCoding>
+        <system value="http://standardterms.edqm.eu" />
+      </patternCoding>
     </element>
     <element id="Medication.form.coding:EDQM.system">
       <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
