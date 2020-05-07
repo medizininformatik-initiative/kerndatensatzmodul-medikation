@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstoffrelation" />
+  <version value="0.9" />
+  <name value="ExtensionWirkstoffrelation" />
+  <status value="draft" />
+  <date value="2020-04-23" />
+  <description value="Ermöglicht die Zuordnung von genauem (z.B. Salz, Ester) zu allgemeinem Wirkstoff." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <context>
+    <type value="element" />
+    <expression value="Medication.ingredient" />
+  </context>
+  <type value="Extension" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Extension" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Extension.extension">
+      <path value="Extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Extension.extension:ingredientReference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="ingredientReference" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ingredientReference.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ingredientReference" />
+    </element>
+    <element id="Extension.extension:ingredientReference.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Extension.extension:ingredientReference.value[x].reference">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x].reference" />
+      <type>
+        <code value="string" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Medication" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/Substance" />
+      </type>
+    </element>
+    <element id="Extension.extension:ingredientUri">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension" />
+      <sliceName value="ingredientUri" />
+      <max value="1" />
+    </element>
+    <element id="Extension.extension:ingredientUri.url">
+      <path value="Extension.extension.url" />
+      <fixedUri value="ingredientUri" />
+    </element>
+    <element id="Extension.extension:ingredientUri.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.extension.value[x]" />
+      <type>
+        <code value="uri" />
+      </type>
+    </element>
+    <element id="Extension.url">
+      <path value="Extension.url" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstoffrelation" />
+    </element>
+    <element id="Extension.value[x]">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+        <valueCode value="normative" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
+        <valueCode value="4.0.0" />
+      </extension>
+      <path value="Extension.value[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
