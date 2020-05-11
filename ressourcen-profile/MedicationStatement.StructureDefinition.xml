@@ -5,6 +5,15 @@
   <name value="MedicationStatement" />
   <title value="MI-Initiative - Medikation - MedicationStatement" />
   <status value="draft" />
+  <publisher value="Medizininformatik Initiative" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.medizininformatik-initiative.de/" />
+    </telecom>
+  </contact>
+  <description value="Dieses Profil beschreibt die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt." />
+  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />

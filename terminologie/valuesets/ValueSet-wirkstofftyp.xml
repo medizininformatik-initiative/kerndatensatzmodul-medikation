@@ -17,6 +17,7 @@
         </telecom>
     </contact>
     <description value="Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe." />
+    <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
     <compose>
         <include>
             <system value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp" />

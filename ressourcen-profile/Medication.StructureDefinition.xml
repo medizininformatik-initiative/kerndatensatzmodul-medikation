@@ -5,6 +5,15 @@
   <name value="Medication" />
   <title value="MI-Initiative - Medikation - Medication" />
   <status value="draft" />
+  <publisher value="Medizininformatik Initiative" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.medizininformatik-initiative.de/" />
+    </telecom>
+  </contact>
+  <description value="Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt." />
+  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="script10.6" />

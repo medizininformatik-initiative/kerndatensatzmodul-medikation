@@ -5,6 +5,15 @@
   <name value="MedicationAdministration" />
   <title value="MI-Initiative - Medikation - MedicationAdministration" />
   <status value="draft" />
+  <publisher value="Medizininformatik Initiative" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.medizininformatik-initiative.de/" />
+    </telecom>
+  </contact>
+  <description value="Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc." />
+  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
   <fhirVersion value="4.0.1" />
   <kind value="resource" />
   <abstract value="false" />
