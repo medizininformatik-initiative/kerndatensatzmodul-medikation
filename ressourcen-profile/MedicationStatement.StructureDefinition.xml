@@ -136,7 +136,9 @@
       <path value="MedicationStatement.context" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/Abteilungsfall" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/Versorgungsfall" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Encounter/Verwaltungsfall" />
       </type>
       <mustSupport value="true" />
     </element>
