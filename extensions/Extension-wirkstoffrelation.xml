@@ -3,7 +3,9 @@
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstoffrelation" />
   <version value="0.9" />
   <name value="ExtensionWirkstoffrelation" />
+  <title value="Extension Wirkstoffrelation" />
   <status value="draft" />
+  <experimental value="true" />
   <date value="2020-04-23" />
   <description value="Ermöglicht die Zuordnung von genauem (z.B. Salz, Ester) zu allgemeinem Wirkstoff." />
   <fhirVersion value="4.0.1" />
