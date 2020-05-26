@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstofftyp" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="ExtensionWirkstofftyp" />
   <title value="Extension Wirkstofftyp" />
-  <status value="draft" />
-  <experimental value="true" />
-  <date value="2020-04-20" />
+  <status value="active" />
+  <experimental value="false" />
   <publisher value="Medizininformatik Initiative" />
   <contact>
     <telecom>
@@ -15,7 +14,6 @@
     </telecom>
   </contact>
   <description value="Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff." />
-  <copyright value="CC-BY (https://creativecommons.org/licenses/by/2.0/de/)" />
   <fhirVersion value="4.0.1" />
   <mapping>
     <identity value="rim" />
