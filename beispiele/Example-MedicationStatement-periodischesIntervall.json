@@ -15,7 +15,7 @@
                     }
                 ]
             },
-            "text": "Marcumar montags, mittwochs und freitagmorgens",
+            "text": "Marcumar jeden Montag-, Mittwoch- und Freitagabend",
             "timing": {
                 "repeat": {
                     "dayOfWeek": [
