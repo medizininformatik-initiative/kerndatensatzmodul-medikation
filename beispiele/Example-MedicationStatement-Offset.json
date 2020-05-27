@@ -1,0 +1,47 @@
+{
+    "meta": {
+        "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement"
+        ]
+    },
+    "dosage": [
+        {
+            "route": {
+                "coding": [
+                    {
+                        "code": "20053000",
+                        "display": "Oral use",
+                        "system": "http://standardterms.edqm.eu"
+                    }
+                ]
+            },
+            "text": "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
+            "timing": {
+                "repeat": {
+                    "frequency": 1,
+                    "offset": 30,
+                    "period": 1,
+                    "periodUnit": "d",
+                    "when": [
+                        "ACM"
+                    ]
+                }
+            }
+        }
+    ],
+    "effectiveDateTime": "2020-05-27T17:57:00+01:00",
+    "medicationCodeableConcept": {
+        "coding": [
+            {
+                "code": "02532793",
+                "display": "L-THYROXIN 125 Henning Tabletten",
+                "system": "http://fhir.de/CodeSystem/ifa/pzn"
+            }
+        ]
+    },
+    "status": "active",
+    "subject": {
+        "reference": "Patient/example"
+    },
+    "resourceType": "MedicationStatement"
+}
