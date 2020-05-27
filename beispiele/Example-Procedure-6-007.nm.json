@@ -1,0 +1,33 @@
+{
+    "resourceType": "Procedure",
+    "meta": {
+      "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Procedure"
+      ]
+    },
+    "category": {
+      "coding": [
+        {
+          "code": "182832007",
+          "display": "Procedure related to management of drug administration (procedure)",
+          "system": "http://snomed.info/sct"
+        }
+      ]
+    },
+    "code": {
+      "coding": [
+        {
+          "code": "6-007.nm",
+          "display": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
+          "system": "http://fhir.de/CodeSystem/dimdi/ops",
+          "version": "2020"
+        }
+      ]
+    },
+    "performedDateTime": "2018-05-26",
+    "status": "completed",
+    "subject": {
+      "reference": "Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada"
+    },
+    "id": "ce33960c-02c9-4888-9448-9a8b7906e369"
+  }
