@@ -37,12 +37,6 @@
       <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstofftyp" />
     </element>
     <element id="Extension.value[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x]" />
       <min value="1" />
       <type>
@@ -54,23 +48,11 @@
       </binding>
     </element>
     <element id="Extension.value[x].system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].system" />
       <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/Wirkstofftyp" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp" />
     </element>
     <element id="Extension.value[x].code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="Extension.value[x].code" />
       <min value="1" />
     </element>

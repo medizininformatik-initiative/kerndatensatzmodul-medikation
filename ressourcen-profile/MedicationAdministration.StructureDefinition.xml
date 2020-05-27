@@ -22,52 +22,22 @@
   <derivation value="constraint" />
   <differential>
     <element id="MedicationAdministration.id">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.id" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.meta">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.meta" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.meta.source">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.meta.source" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.meta.profile">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.meta.profile" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.partOf">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.partOf" />
       <type>
         <code value="Reference" />
@@ -77,22 +47,10 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.status">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.status" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.medication[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.medication[x]" />
       <type>
         <code value="CodeableConcept" />
@@ -109,12 +67,6 @@
       </binding>
     </element>
     <element id="MedicationAdministration.subject">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.subject" />
       <type>
         <code value="Reference" />
@@ -124,12 +76,6 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.context">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.context" />
       <type>
         <code value="Reference" />
@@ -140,22 +86,10 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.effective[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.effective[x]" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.reasonReference">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.reasonReference" />
       <type>
         <code value="Reference" />
@@ -166,32 +100,14 @@
       </type>
     </element>
     <element id="MedicationAdministration.dosage">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.site" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.site.coding" />
       <slicing>
         <discriminator>
@@ -203,12 +119,6 @@
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site.coding:SNOMED">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.site.coding" />
       <sliceName value="SNOMED" />
       <mustSupport value="true" />
@@ -219,35 +129,17 @@
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.site.coding:SNOMED.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.site.coding.system" />
       <min value="1" />
       <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site.coding:SNOMED.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.site.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route" />
       <mustSupport value="true" />
       <binding>
@@ -255,12 +147,6 @@
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding" />
       <slicing>
         <discriminator>
@@ -277,12 +163,6 @@
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding:EDQM">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding" />
       <sliceName value="EDQM" />
       <max value="1" />
@@ -294,80 +174,38 @@
       </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding:EDQM.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding.system" />
       <min value="1" />
       <patternUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:EDQM.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:SNOMED">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding" />
       <sliceName value="SNOMED" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:SNOMED.system">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding.system" />
       <min value="1" />
       <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:SNOMED.code">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.route.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.dose">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.dose" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.rate[x]">
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
-        <valueCode value="normative" />
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version">
-        <valueCode value="4.0.0" />
-      </extension>
       <path value="MedicationAdministration.dosage.rate[x]" />
       <mustSupport value="true" />
     </element>
