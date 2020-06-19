@@ -111,7 +111,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -120,6 +120,9 @@
     <element id="MedicationAdministration.dosage.site.coding:SNOMED">
       <path value="MedicationAdministration.dosage.site.coding" />
       <sliceName value="SNOMED" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="example" />
@@ -130,7 +133,6 @@
     <element id="MedicationAdministration.dosage.site.coding:SNOMED.system">
       <path value="MedicationAdministration.dosage.site.coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.site.coding:SNOMED.code">
@@ -150,7 +152,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -165,6 +167,9 @@
       <path value="MedicationAdministration.dosage.route.coding" />
       <sliceName value="EDQM" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://standardterms.edqm.eu" />
+      </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
@@ -175,7 +180,6 @@
     <element id="MedicationAdministration.dosage.route.coding:EDQM.system">
       <path value="MedicationAdministration.dosage.route.coding.system" />
       <min value="1" />
-      <patternUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:EDQM.code">
@@ -187,12 +191,14 @@
       <path value="MedicationAdministration.dosage.route.coding" />
       <sliceName value="SNOMED" />
       <max value="1" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:SNOMED.system">
       <path value="MedicationAdministration.dosage.route.coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="MedicationAdministration.dosage.route.coding:SNOMED.code">

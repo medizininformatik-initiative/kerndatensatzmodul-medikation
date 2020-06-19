@@ -69,7 +69,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -87,7 +87,6 @@
     <element id="Medication.code.coding:Pharmazentralnummer.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://fhir.de/CodeSystem/ifa/pzn" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:Pharmazentralnummer.code">
@@ -112,7 +111,6 @@
     <element id="Medication.code.coding:atcClassDe.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://fhir.de/CodeSystem/dimdi/atc" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:atcClassDe.code">
@@ -133,7 +131,6 @@
     <element id="Medication.code.coding:atcClassEn.system">
       <path value="Medication.code.coding.system" />
       <min value="1" />
-      <patternUri value="http://www.whocc.no/atc" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.code.coding:atcClassEn.code">
@@ -161,7 +158,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -179,7 +176,6 @@
     <element id="Medication.form.coding:EDQM.system">
       <path value="Medication.form.coding.system" />
       <min value="1" />
-      <patternUri value="http://standardterms.edqm.eu" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.form.coding:EDQM.code">
@@ -253,7 +249,7 @@
       <slicing>
         <discriminator>
           <type value="pattern" />
-          <path value="system" />
+          <path value="$this" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -276,7 +272,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.system">
       <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
-      <patternUri value="http://fhir.de/CodeSystem/ask" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code">
@@ -296,7 +291,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system">
       <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
-      <patternUri value="http://fdasis.nlm.nih.gov" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.code">
@@ -316,7 +310,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.system">
       <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
-      <patternUri value="urn:oid:2.16.840.1.113883.6.61" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.code">
@@ -335,7 +328,6 @@
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.system">
       <path value="Medication.ingredient.item[x].coding.system" />
       <min value="1" />
-      <patternUri value="http://snomed.info/sct" />
       <mustSupport value="true" />
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.code">
