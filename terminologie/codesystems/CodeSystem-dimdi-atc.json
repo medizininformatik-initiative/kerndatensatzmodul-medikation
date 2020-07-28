@@ -51663,7 +51663,7 @@
     "experimental": true,
     "name": "Anatomisch-therapeutisch chemische Klassifikation (ATC) Amtliche deutsche Fassung 2020",
     "publisher": "Medizininformatik Initiative",
-    "status": "draft",
+    "status": "active",
     "url": "http://fhir.de/CodeSystem/dimdi/atc",
     "valueSet": "http://fhir.de/ValueSet/dimdi/atc",
     "version": "2020",
