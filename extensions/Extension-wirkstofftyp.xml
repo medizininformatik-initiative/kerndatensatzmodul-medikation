@@ -42,13 +42,13 @@
       </type>
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/ValueSet/wirkstofftyp" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp" />
       </binding>
     </element>
     <element id="Extension.value[x].system">
       <path value="Extension.value[x].system" />
       <min value="1" />
-      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp" />
+      <fixedUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" />
     </element>
     <element id="Extension.value[x].code">
       <path value="Extension.value[x].code" />
