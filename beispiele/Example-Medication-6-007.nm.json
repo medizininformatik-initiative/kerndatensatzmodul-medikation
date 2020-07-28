@@ -9,11 +9,11 @@
         {
             "extension": [
                 {
-                    "url": "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/wirkstofftyp",
+                    "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
                     "valueCoding": {
                         "code": "IN",
                         "display": "ingredient",
-                        "system": "https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp"
+                        "system": "https://www.medizininformatik-initiative.de/modul-medikation/fhir/core/CodeSystem/wirkstofftyp"
                     }
                 }
             ],
