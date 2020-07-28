@@ -49,6 +49,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+      <type>
+        <code value="Reference" />
+      </type>
       <mustSupport value="true" />
       <binding>
         <strength value="preferred" />
