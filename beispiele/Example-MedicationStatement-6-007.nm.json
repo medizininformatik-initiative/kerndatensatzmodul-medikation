@@ -2,7 +2,7 @@
     "resourceType": "MedicationStatement",
     "meta": {
       "profile": [
-        "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MedicationStatement"
+        "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
       ]
     },
     "dosage": [

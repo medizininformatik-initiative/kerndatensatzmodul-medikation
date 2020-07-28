@@ -3,7 +3,7 @@
   "id": "d6a2ed44-fe12-4d10-aecf-95955bcc88bb",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/Medication"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
     ]
   },
   "code": {

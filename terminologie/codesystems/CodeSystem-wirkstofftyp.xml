@@ -2,7 +2,7 @@
     <meta>
         <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem" />
     </meta>
-    <url value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp" />
+    <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" />
     <version value="1.0" />
     <name value="Wirkstofftyp" />
     <title value="CodeSystem Wirkstofftypen" />
@@ -17,7 +17,7 @@
     </contact>
     <description value="Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe." />
     <caseSensitive value="true" />
-    <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/CodeSystem/wirkstofftyp" />
+    <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp" />
     <content value="complete" />
     <concept>
         <code value="IN" />
