@@ -227,6 +227,9 @@
       <type>
         <code value="CodeableConcept" />
       </type>
+       <type>
+        <code value="Reference" />
+      </type>
     </element>
     <element id="Medication.ingredient.item[x]:itemCodeableConcept">
       <path value="Medication.ingredient.item[x]" />
