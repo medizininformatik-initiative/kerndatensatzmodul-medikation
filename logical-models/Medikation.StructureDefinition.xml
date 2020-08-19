@@ -395,7 +395,7 @@
     <element id="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis">
       <path value="BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis" />
       <definition value="Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).&#xD;&#xA;Möglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis." />
-      <comment value="FHIR-Mapping: MedicationStatement.dosage.doseAndRate mit den Teilangaben je nach Anforderung .type .dose .rate&#xD;&#xA;&#xD;&#xA;.type gibt die Art des Eintrages an&#xD;&#xA;.dose kann als SimpleQuantity (.doseQuantity) oder als Range (.doseRange) angegeben werden&#xD;&#xA;.rate kann als Ratio (.rateRatio), Range (.rateRange) oder  SimpleQuantity (.rateQuantity) angegeben werden&#xD;&#xA;&#xD;&#xA;MedicationAdministration.dosage.rate nur mit rateRatio und rateQuantity&#xD;&#xA;MedicationAdministration.dosage.dose nur SimpleQuantity&#xD;&#xA;&#xD;&#xA;Fragen: Ist diese Unterscheidung von HL7 intendiert und warum?" />
+      <comment value="FHIR-Mapping: MedicationStatement.dosage.doseAndRate mit den Teilangaben je nach Anforderung .type .dose .rate&#xD;&#xA;&#xD;&#xA;.type gibt die Art des Eintrages an&#xD;&#xA;.dose kann als SimpleQuantity (.doseQuantity) oder als Range (.doseRange) angegeben werden&#xD;&#xA;.rate kann als Ratio (.rateRatio), Range (.rateRange) oder  SimpleQuantity (.rateQuantity) angegeben werden&#xD;&#xA;&#xD;&#xA;MedicationAdministration.dosage.rate nur mit rateRatio und rateQuantity&#xD;&#xA;MedicationAdministration.dosage.dose nur SimpleQuantity" />
       <min value="0" />
       <max value="1" />
       <type>
