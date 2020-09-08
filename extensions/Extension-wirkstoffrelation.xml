@@ -55,14 +55,6 @@
         <code value="Reference" />
       </type>
     </element>
-    <element id="Extension.extension:ingredientReference.value[x].reference">
-      <path value="Extension.extension.value[x].reference" />
-      <type>
-        <code value="string" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Medication" />
-        <profile value="http://hl7.org/fhir/StructureDefinition/Substance" />
-      </type>
-    </element>
     <element id="Extension.extension:ingredientUri">
       <path value="Extension.extension" />
       <sliceName value="ingredientUri" />
