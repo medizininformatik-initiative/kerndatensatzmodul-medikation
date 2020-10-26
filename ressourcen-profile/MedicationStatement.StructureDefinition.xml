@@ -132,9 +132,6 @@
     <element id="MedicationStatement.dosage.route">
       <path value="MedicationStatement.dosage.route" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-      </binding>
     </element>
     <element id="MedicationStatement.dosage.route.coding">
       <path value="MedicationStatement.dosage.route.coding" />

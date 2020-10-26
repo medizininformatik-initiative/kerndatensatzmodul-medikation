@@ -124,9 +124,6 @@
     <element id="MedicationAdministration.dosage.route">
       <path value="MedicationAdministration.dosage.route" />
       <mustSupport value="true" />
-      <binding>
-        <strength value="example" />
-      </binding>
     </element>
     <element id="MedicationAdministration.dosage.route.coding">
       <path value="MedicationAdministration.dosage.route.coding" />
