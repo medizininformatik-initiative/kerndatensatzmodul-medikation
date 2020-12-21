@@ -46,18 +46,7 @@
     </element>
     <element id="MedicationAdministration.medication[x]">
       <path value="MedicationAdministration.medication[x]" />
-      <type>
-        <code value="CodeableConcept" />
-      </type>
-      <type>
-        <code value="Reference" />
-      </type>
       <mustSupport value="true" />
-      <binding>
-        <strength value="preferred" />
-        <description value="Representation of unknown or absent medications" />
-        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-medications-uv-ips" />
-      </binding>
     </element>
     <element id="MedicationAdministration.subject">
       <path value="MedicationAdministration.subject" />
