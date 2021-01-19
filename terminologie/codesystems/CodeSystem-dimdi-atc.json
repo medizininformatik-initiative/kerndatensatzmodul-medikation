@@ -51667,5 +51667,6 @@
     "url": "http://fhir.de/CodeSystem/dimdi/atc",
     "valueSet": "http://fhir.de/ValueSet/dimdi/atc",
     "version": "2020",
+    "id": "CodeSystemATC2020",
     "resourceType": "CodeSystem"
 }
