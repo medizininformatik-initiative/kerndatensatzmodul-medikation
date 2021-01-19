@@ -1,5 +1,6 @@
 {
     "resourceType": "Medication",
+    "id": "ExampleMedicationGlucoseloesung",
     "meta": {
         "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
@@ -103,6 +104,5 @@
             }
         }
     ],
-    "status": "active",
-    "id": "7f27cb8d-940b-43fd-ab8b-fee5b7a9b060"
+    "status": "active"
 }

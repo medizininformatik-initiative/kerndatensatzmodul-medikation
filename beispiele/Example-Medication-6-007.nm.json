@@ -1,5 +1,6 @@
 {
     "resourceType": "Medication",
+    "id": "ExampleMedicationThiotepa",
     "meta": {
         "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
@@ -37,6 +38,5 @@
                 ]
             }
         }
-    ],
-    "id": "8b455da3-931e-481f-abfe-da291cbba54e"
+    ]
 }

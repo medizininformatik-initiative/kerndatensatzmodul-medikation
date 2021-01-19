@@ -1,5 +1,6 @@
 {
     "resourceType": "Medication",
+    "id": "ExampleMedicationRezeptur",
     "meta": {
       "profile": [
         "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
@@ -51,6 +52,5 @@
         }
       }
     ],
-    "status": "active",
-    "id": "7a0655b5-bc85-43c8-bfc4-b66120203e1a"
+    "status": "active"
   }

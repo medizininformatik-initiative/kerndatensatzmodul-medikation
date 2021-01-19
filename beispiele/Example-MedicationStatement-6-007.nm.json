@@ -1,5 +1,6 @@
 {
     "resourceType": "MedicationStatement",
+    "id": "ExampleMedicationStatementIntravenousUse",
     "meta": {
       "profile": [
         "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
@@ -49,6 +50,5 @@
     "status": "completed",
     "subject": {
       "reference": "Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada"
-    },
-    "id": "01092433-b8a5-45a1-a6cb-fe3ce974985e"
+    }
   }

@@ -1,5 +1,6 @@
 {
     "resourceType": "MedicationAdministration",
+    "id": "ExampleMedicationAdministration",
     "meta": {
       "profile": [
         "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
@@ -46,6 +47,5 @@
     "status": "completed",
     "subject": {
       "reference": "Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1"
-    },
-    "id": "1bb6cad4-252e-43f5-a42a-474c36101ecf"
+    }
   }

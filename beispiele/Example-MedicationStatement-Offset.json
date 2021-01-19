@@ -1,4 +1,6 @@
 {
+    "resourceType": "MedicationStatement",
+    "id": "ExampleMedicationStatementOffset",
     "meta": {
         "profile": [
             "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
@@ -42,6 +44,5 @@
     "status": "active",
     "subject": {
         "reference": "Patient/example"
-    },
-    "resourceType": "MedicationStatement"
+    }
 }

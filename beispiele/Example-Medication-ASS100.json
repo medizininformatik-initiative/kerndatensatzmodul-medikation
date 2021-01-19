@@ -1,6 +1,6 @@
 {
   "resourceType": "Medication",
-  "id": "d6a2ed44-fe12-4d10-aecf-95955bcc88bb",
+  "id": "ExampleMedicationASS100",
   "meta": {
     "profile": [
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"

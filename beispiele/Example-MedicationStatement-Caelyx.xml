@@ -1,5 +1,5 @@
 <MedicationStatement xmlns="http://hl7.org/fhir">
-    <id value="989fbc88-3b97-46b4-ac0f-433cdae64d14" />
+    <id value="ExampleMedicationStatementCaelyx" />
     <meta>
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement" />
     </meta>

@@ -1,5 +1,6 @@
 {
     "resourceType": "Procedure",
+    "id": "ExampleProcedure",
     "meta": {
       "profile": [
         "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
@@ -28,6 +29,5 @@
     "status": "completed",
     "subject": {
       "reference": "Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada"
-    },
-    "id": "ce33960c-02c9-4888-9448-9a8b7906e369"
+    }
   }
