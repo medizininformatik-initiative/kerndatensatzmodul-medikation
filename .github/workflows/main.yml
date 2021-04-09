@@ -46,3 +46,4 @@ jobs:
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: true
   
+          EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA # ATC, http://fdasis.nlm.nih.gov validation
