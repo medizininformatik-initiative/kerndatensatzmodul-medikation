@@ -1,0 +1,25 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.medikation",
+  "version": "1.0.6",
+  "description": "Medizininformatik Initiative - Modul Medikation",
+  "author": "alexanderzautke",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "devDependencies": null,
+  "canonicals": null,
+  "dependencies": {
+    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
+    "hl7.fhir.uv.ips": "1.0.0"
+  },
+  "keywords": null,
+  "license": null,
+  "homepage": null,
+  "directories": null,
+  "title": null,
+  "fhir-version-list": null,
+  "maintainers": null,
+  "canonical": null,
+  "url": null,
+  "jurisdiction": null
+}
