@@ -18,9 +18,6 @@
       <short value="Das Basismodul Medikation enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben" />
       <min value="0" />
       <max value="*" />
-      <type>
-        <code value="Element" />
-      </type>
     </element>
     <element id="BasismodulMedikation.Medikationseintrag">
       <path value="BasismodulMedikation.Medikationseintrag" />
@@ -97,8 +94,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke">
-      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke" />
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstaerke">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstaerke" />
       <short value="Wirkstärke gemäß Handelsname" />
       <comment value="FHIR-Mapping: Medication.amount" />
       <min value="0" />
@@ -184,8 +181,8 @@
         <profile value="http://hl7.org/fhir/StructureDefinition/CodeableConcept" />
       </type>
     </element>
-    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Stärke">
-      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Stärke" />
+    <element id="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Staerke">
+      <path value="BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Staerke" />
       <short value="Wirkstärke, Menge der aktiven Substanz pro Dosiseinheit entsprechend Darreichungsform (1 Tablette, 1 Ampulle, 1 mL etc.)" />
       <comment value="FHIR-Mapping: Medication.ingredient.strength" />
       <min value="0" />
