@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.medikation",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Medizininformatik Initiative - Modul Medikation",
   "author": "alexanderzautke",
   "fhirVersions": [
