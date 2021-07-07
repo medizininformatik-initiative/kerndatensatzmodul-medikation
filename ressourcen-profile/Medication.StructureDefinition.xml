@@ -6,7 +6,7 @@
   <name value="ProfileMedicationMedikation" />
   <title value="Profile - Medication - Medikation" />
   <status value="active" />
-  <date value="2021-06-29"/>
+  <date value="2021-07-07"/>
   <publisher value="Medizininformatik Initiative" />
   <contact>
     <telecom>
@@ -209,7 +209,7 @@
     <element id="Medication.ingredient.extension:Wirkstoffrelation">
       <path value="Medication.ingredient.extension" />
       <sliceName value="Wirkstoffrelation" />
-      <max value="1" />
+      <max value="*" />
       <type>
         <code value="Extension" />
         <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" />
