@@ -14,7 +14,7 @@
         "display": "ASS 100 - 1a Pharma TAH Tabletten"
       },
       {
-        "system": "http://fhir.de/CodeSystem/dimdi/atc",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "B01AC06",
         "display": "acetylsalicylic acid"
       }

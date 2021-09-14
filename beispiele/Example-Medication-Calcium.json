@@ -16,7 +16,7 @@
             {
                 "code": "A12AA20",
                 "display": "Calcium (verschiedene Salze in Kombination)",
-                "system": "http://fhir.de/CodeSystem/dimdi/atc"
+                "system": "http://fhir.de/CodeSystem/bfarm/atc"
             },
             {
                 "code": "A12AA20",

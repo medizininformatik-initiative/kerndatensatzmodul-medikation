@@ -1,13 +1,13 @@
 {
 	"resourceType": "CodeSystem",
 	"id": "CodeSystemATC2020",
-	"url": "http://fhir.de/CodeSystem/dimdi/atc",
+	"url": "http://fhir.de/CodeSystem/bfarm/atc",
 	"version": "2020",
 	"name": "ATC",
 	"title": "Anatomisch-therapeutisch chemische Klassifikation (ATC) Amtliche deutsche Fassung 2020",
 	"status": "active",
 	"experimental": true,
-	"date": "2020-01-25",
+	"date": "2021-09-14",
 	"publisher": "Medizininformatik Initiative",
 	"contact": [
 		{
@@ -22,7 +22,7 @@
 	"description": "Anatomisch-therapeutisch-chemische-Klassifikation mit Tagesdosen Amtliche Fassung des ATC-Index mit DDD-Angaben für Deutschland im Jahre 2020",
 	"copyright": "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)",
 	"caseSensitive": false,
-	"valueSet": "http://fhir.de/ValueSet/dimdi/atc",
+	"valueSet": "http://fhir.de/ValueSet/bfarm/atc",
 	"hierarchyMeaning": "is-a",
 	"content": "complete",
 	"concept": [

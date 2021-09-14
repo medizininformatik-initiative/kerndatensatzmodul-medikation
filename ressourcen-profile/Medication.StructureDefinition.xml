@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ProfileMedicationMedikation" />
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication" />
-  <version value="1.0.9" />
+  <version value="1.0.10" />
   <name value="ProfileMedicationMedikation" />
   <title value="Profile - Medication - Medikation" />
   <status value="active" />
-  <date value="2021-07-07"/>
+  <date value="2021-09-14"/>
   <publisher value="Medizininformatik Initiative" />
   <contact>
     <telecom>
@@ -101,12 +101,12 @@
       <short value="ATC Klassifikation deutsche Version" />
       <definition value="ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten" />
       <patternCoding>
-        <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+        <system value="http://fhir.de/CodeSystem/bfarm/atc" />
       </patternCoding>
       <mustSupport value="true" />
       <binding>
         <strength value="example" />
-        <valueSet value="http://fhir.de/ValueSet/dimdi/atc" />
+        <valueSet value="http://fhir.de/ValueSet/bfarm/atc" />
       </binding>
     </element>
     <element id="Medication.code.coding:atcClassDe.system">

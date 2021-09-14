@@ -10,7 +10,7 @@
             <display value="Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi" />
         </coding>
         <coding>
-            <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+            <system value="http://fhir.de/CodeSystem/bfarm/atc" />
             <code value="L01DB01" />
             <display value="Doxorubicin" />
         </coding>

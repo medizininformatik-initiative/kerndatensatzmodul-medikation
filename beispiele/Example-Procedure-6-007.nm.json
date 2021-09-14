@@ -20,7 +20,7 @@
         {
           "code": "6-007.nm",
           "display": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
-          "system": "http://fhir.de/CodeSystem/dimdi/ops",
+          "system": "http://fhir.de/CodeSystem/bfarm/ops",
           "version": "2020"
         }
       ]

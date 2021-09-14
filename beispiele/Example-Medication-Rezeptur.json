@@ -26,7 +26,7 @@
             {
               "code": "L01DB01",
               "display": "Doxorubicin",
-              "system": "http://fhir.de/CodeSystem/dimdi/atc"
+              "system": "http://fhir.de/CodeSystem/bfarm/atc"
             }
           ]
         },
