@@ -25,6 +25,13 @@
 	"valueSet": "http://fhir.de/ValueSet/bfarm/atc",
 	"hierarchyMeaning": "is-a",
 	"content": "complete",
+	"property": [
+		{
+			"code": "DDD",
+			"description": "Definierte Tagesdosis (defined daily dose, DDD)",
+			"type": "string"
+		}
+	],
 	"concept": [
 		{
 			"code": "A",
