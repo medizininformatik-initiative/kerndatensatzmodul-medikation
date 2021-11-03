@@ -1,0 +1,449 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ProfileMedicationMedikation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "business"
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
+  "version": "1.0.11",
+  "name": "ProfileMedicationMedikation",
+  "title": "Profile - Medication - Medikation",
+  "status": "active",
+  "date": "2021-09-14",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "script10.6",
+      "uri": "http://ncpdp.org/SCRIPT10_6",
+      "name": "Mapping to NCPDP SCRIPT 10.6"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication",
+        "path": "Medication",
+        "comment": "MI-I Medikation"
+      },
+      {
+        "id": "Medication.id",
+        "path": "Medication.id",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta",
+        "path": "Medication.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta.source",
+        "path": "Medication.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.meta.profile",
+        "path": "Medication.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:Pharmazentralnummer",
+        "path": "Medication.code.coding",
+        "sliceName": "Pharmazentralnummer",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:Pharmazentralnummer.system",
+        "path": "Medication.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:Pharmazentralnummer.code",
+        "path": "Medication.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassDe",
+        "path": "Medication.code.coding",
+        "sliceName": "atcClassDe",
+        "short": "ATC Klassifikation deutsche Version",
+        "definition": "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/bfarm/atc"
+        }
+      },
+      {
+        "id": "Medication.code.coding:atcClassDe.system",
+        "path": "Medication.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassDe.code",
+        "path": "Medication.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn",
+        "path": "Medication.code.coding",
+        "sliceName": "atcClassEn",
+        "short": "Anatomical Therapeutic Chemical Classification System",
+        "definition": "ATC Classification International WHO Version",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://www.whocc.no/atc"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.system",
+        "path": "Medication.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.code",
+        "path": "Medication.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.text",
+        "path": "Medication.code.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form",
+        "path": "Medication.form",
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform"
+        }
+      },
+      {
+        "id": "Medication.form.coding",
+        "path": "Medication.form.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "EDQM pharmaceutical dose forms sind bevorzugt zu verwenden. SNOMED CT und IFA Codes sind Alternativen.",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding:EDQM",
+        "path": "Medication.form.coding",
+        "sliceName": "EDQM",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://standardterms.edqm.eu"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding:EDQM.system",
+        "path": "Medication.form.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.form.coding:EDQM.code",
+        "path": "Medication.form.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient",
+        "path": "Medication.ingredient",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.extension",
+        "path": "Medication.ingredient.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.ingredient.extension:Wirkstofftyp",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstofftyp",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.extension:Wirkstoffrelation",
+        "path": "Medication.ingredient.extension",
+        "sliceName": "Wirkstoffrelation",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemReference",
+        "path": "Medication.ingredient.itemReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Substance",
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept",
+        "path": "Medication.ingredient.itemCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:ASK",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "sliceName": "ASK",
+        "short": "Arzneistoffkatalog(ASK)-Nummer",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ask"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://fhir.de/ValueSet/ask"
+        }
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:ASK.system",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:ASK.code",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:UNII",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "sliceName": "UNII",
+        "short": "Unique Ingredient Identifier",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fdasis.nlm.nih.gov"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:UNII.system",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:UNII.code",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:CAS",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "sliceName": "CAS",
+        "short": "Chemical abstract codes",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "urn:oid:2.16.840.1.113883.6.61"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:CAS.system",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:CAS.code",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:SNOMED",
+        "path": "Medication.ingredient.itemCodeableConcept.coding",
+        "sliceName": "SNOMED",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:SNOMED.system",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.coding:SNOMED.code",
+        "path": "Medication.ingredient.itemCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.itemCodeableConcept.text",
+        "path": "Medication.ingredient.itemCodeableConcept.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.strength.numerator",
+        "path": "Medication.ingredient.strength.numerator",
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.strength.denominator",
+        "path": "Medication.ingredient.strength.denominator",
+        "mustSupport": true
+      }
+    ]
+  }
+}
