@@ -1,0 +1,42 @@
+{
+    "resourceType": "Medication",
+    "id": "ExampleMedicationThiotepa",
+    "meta": {
+        "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+        ]
+    },
+    "ingredient": [
+        {
+            "extension": [
+                {
+                    "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
+                    "valueCoding": {
+                        "code": "IN",
+                        "display": "ingredient",
+                        "system": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
+                    }
+                }
+            ],
+            "itemCodeableConcept": {
+                "coding": [
+                    {
+                        "code": "905Z5W3GKH",
+                        "display": "thiotepa",
+                        "system": "http://fdasis.nlm.nih.gov"
+                    },
+                    {
+                        "code": "7962",
+                        "display": "thiotepa",
+                        "system": "http://fhir.de/CodeSystem/ask"
+                    },
+                    {
+                        "code": "52-24-4",
+                        "display": "thiotepa",
+                        "system": "urn:oid:2.16.840.1.113883.6.61"
+                    }
+                ]
+            }
+        }
+    ]
+}

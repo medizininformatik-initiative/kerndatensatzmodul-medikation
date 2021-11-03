@@ -1,0 +1,56 @@
+{
+    "resourceType": "Medication",
+    "id": "ExampleMedicationRezeptur",
+    "meta": {
+      "profile": [
+        "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      ]
+    },
+    "code": {
+      "text": "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
+    },
+    "form": {
+      "coding": [
+        {
+          "code": "11210000",
+          "display": "Solution for infusion",
+          "system": "http://standardterms.edqm.eu"
+        }
+      ]
+    },
+    "ingredient": [
+      {
+        "isActive": true,
+        "itemCodeableConcept": {
+          "coding": [
+            {
+              "code": "L01DB01",
+              "display": "Doxorubicin",
+              "system": "http://fhir.de/CodeSystem/bfarm/atc"
+            }
+          ]
+        },
+        "strength": {
+          "denominator": {
+            "code": "mL",
+            "system": "http://unitsofmeasure.org",
+            "unit": "milliliter",
+            "value": 250
+          },
+          "numerator": {
+            "code": "mg",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg",
+            "value": 85
+          }
+        }
+      },
+      {
+        "isActive": true,
+        "itemReference": {
+          "reference": "Medication/7f27cb8d-940b-43fd-ab8b-fee5b7a9b060"
+        }
+      }
+    ],
+    "status": "active"
+  }

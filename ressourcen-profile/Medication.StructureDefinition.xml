@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="ProfileMedicationMedikation" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication" />
+  <version value="1.0.10" />
+  <name value="ProfileMedicationMedikation" />
+  <title value="Profile - Medication - Medikation" />
+  <status value="active" />
+  <date value="2021-09-14"/>
+  <publisher value="Medizininformatik Initiative" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="https://www.medizininformatik-initiative.de/" />
+    </telecom>
+  </contact>
+  <description value="Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="script10.6" />
+    <uri value="http://ncpdp.org/SCRIPT10_6" />
+    <name value="Mapping to NCPDP SCRIPT 10.6" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Medication" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Medication" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Medication">
+      <path value="Medication" />
+      <comment value="MI-I Medikation" />
+    </element>
+    <element id="Medication.id">
+      <path value="Medication.id" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.meta">
+      <path value="Medication.meta" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.meta.source">
+      <path value="Medication.meta.source" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.meta.profile">
+      <path value="Medication.meta.profile" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code">
+      <path value="Medication.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding">
+      <path value="Medication.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer">
+      <path value="Medication.code.coding" />
+      <sliceName value="Pharmazentralnummer" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/ifa/pzn" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:Pharmazentralnummer.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassDe">
+      <path value="Medication.code.coding" />
+      <sliceName value="atcClassDe" />
+      <short value="ATC Klassifikation deutsche Version" />
+      <definition value="ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/bfarm/atc" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="http://fhir.de/ValueSet/bfarm/atc" />
+      </binding>
+    </element>
+    <element id="Medication.code.coding:atcClassDe.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassDe.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn">
+      <path value="Medication.code.coding" />
+      <sliceName value="atcClassEn" />
+      <short value="Anatomical Therapeutic Chemical Classification System" />
+      <definition value="ATC Classification International WHO Version" />
+      <patternCoding>
+        <system value="http://www.whocc.no/atc" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn.system">
+      <path value="Medication.code.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.coding:atcClassEn.code">
+      <path value="Medication.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.code.text">
+      <path value="Medication.code.text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.form">
+      <path value="Medication.form" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="preferred" />
+        <valueSet value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform" />
+      </binding>
+    </element>
+    <element id="Medication.form.coding">
+      <path value="Medication.form.coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <definition value="EDQM pharmaceutical dose forms sind bevorzugt zu verwenden. SNOMED CT und IFA Codes sind Alternativen." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.form.coding:EDQM">
+      <path value="Medication.form.coding" />
+      <sliceName value="EDQM" />
+      <patternCoding>
+        <system value="http://standardterms.edqm.eu" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.form.coding:EDQM.system">
+      <path value="Medication.form.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.form.coding:EDQM.code">
+      <path value="Medication.form.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient">
+      <path value="Medication.ingredient" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.extension">
+      <path value="Medication.ingredient.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Medication.ingredient.extension:Wirkstofftyp">
+      <path value="Medication.ingredient.extension" />
+      <sliceName value="Wirkstofftyp" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.extension:Wirkstoffrelation">
+      <path value="Medication.ingredient.extension" />
+      <sliceName value="Wirkstoffrelation" />
+      <max value="*" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]">
+      <path value="Medication.ingredient.item[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+       <type>
+        <code value="Reference" />
+      </type>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept">
+      <path value="Medication.ingredient.item[x]" />
+      <sliceName value="itemCodeableConcept" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding">
+      <path value="Medication.ingredient.item[x].coding" />
+      <slicing>
+        <discriminator>
+          <type value="pattern" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK">
+      <path value="Medication.ingredient.item[x].coding" />
+      <sliceName value="ASK" />
+      <short value="Arzneistoffkatalog(ASK)-Nummer" />
+      <patternCoding>
+        <system value="http://fhir.de/CodeSystem/ask" />
+      </patternCoding>
+      <mustSupport value="true" />
+      <binding>
+        <strength value="example" />
+        <valueSet value="http://fhir.de/ValueSet/ask" />
+      </binding>
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII">
+      <path value="Medication.ingredient.item[x].coding" />
+      <sliceName value="UNII" />
+      <short value="Unique Ingredient Identifier" />
+      <patternCoding>
+        <system value="http://fdasis.nlm.nih.gov" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS">
+      <path value="Medication.ingredient.item[x].coding" />
+      <sliceName value="CAS" />
+      <short value="Chemical abstract codes" />
+      <patternCoding>
+        <system value="urn:oid:2.16.840.1.113883.6.61" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED">
+      <path value="Medication.ingredient.item[x].coding" />
+      <sliceName value="SNOMED" />
+      <patternCoding>
+        <system value="http://snomed.info/sct" />
+      </patternCoding>
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.system">
+      <path value="Medication.ingredient.item[x].coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.code">
+      <path value="Medication.ingredient.item[x].coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.item[x]:itemCodeableConcept.text">
+      <path value="Medication.ingredient.item[x].text" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.strength">
+      <path value="Medication.ingredient.strength" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.strength.numerator">
+      <path value="Medication.ingredient.strength.numerator" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Medication.ingredient.strength.denominator">
+      <path value="Medication.ingredient.strength.denominator" />
+      <mustSupport value="true" />
+    </element>
+  </differential>
+</StructureDefinition>
