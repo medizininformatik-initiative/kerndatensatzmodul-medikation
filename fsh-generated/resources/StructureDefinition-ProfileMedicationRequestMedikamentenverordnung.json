@@ -16,7 +16,7 @@
   "name": "ProfileMedicationRequestMedikamentenverordnung",
   "title": "Profile - MedicationRequest - Medikamentenverordnung",
   "status": "draft",
-  "date": "2021-11-11",
+  "date": "2021-12-21",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -88,6 +88,11 @@
         "id": "MedicationRequest.meta.profile",
         "path": "MedicationRequest.meta.profile",
         "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.doNotPerform",
+        "path": "MedicationRequest.doNotPerform",
+        "max": "0"
       },
       {
         "id": "MedicationRequest.medication[x]",
@@ -239,7 +244,16 @@
               "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
-        ],
+        ]
+      },
+      {
+        "id": "MedicationRequest.encounter",
+        "path": "MedicationRequest.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction",
+        "path": "MedicationRequest.dosageInstruction",
         "mustSupport": true
       }
     ]

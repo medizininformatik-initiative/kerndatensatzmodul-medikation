@@ -6,7 +6,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
 * ^version = "0.1.0"
 * ^status = #draft
-* ^date = "2021-11-11"
+* ^date = "2021-12-21"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
@@ -15,6 +15,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * meta MS
 * meta.source MS
 * meta.profile MS
+* doNotPerform 0..0
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type
@@ -53,4 +54,5 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * medicationCodeableConcept.coding[atcClassEn].code 1.. MS
 * medicationCodeableConcept.text MS
 * subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
-* subject MS
+* encounter MS
+* dosageInstruction MS

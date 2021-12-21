@@ -221,3 +221,18 @@ Usage: #example
 * performedDateTime = "2018-05-26"
 * status = #completed
 * subject = Reference(Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada)
+
+Instance: ExampleMedicationRequestCaelyx
+InstanceOf: ProfileMedicationRequestMedikamentenverordnung
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+* status = #active
+* intent = #order
+* medicationReference = Reference(Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9)
+* subject = Reference(Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1)
+* authoredOn = "2021-12-21T11:41:00+01:00"
+* dosageInstruction.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
+* dosageInstruction.timing.repeat.frequency = 1
+* dosageInstruction.timing.repeat.period = 4
+* dosageInstruction.timing.repeat.periodUnit = #wk
+* dosageInstruction.route = $standardterms#20045000 "Intravenous use"
