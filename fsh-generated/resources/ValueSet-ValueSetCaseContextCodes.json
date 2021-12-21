@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "CaseContextCodes",
+  "id": "ValueSetCaseContextCodes",
+  "title": "ValueSet - Case Context Codes",
+  "description": "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+  "version": "0.1.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/ValueSetCaseContextCodes",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "experimental": false,
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16",
+        "concept": [
+          {
+            "code": "E200",
+            "display": "stationärer Aufenthalt"
+          },
+          {
+            "code": "E210",
+            "display": "stationäre Aufnahme"
+          },
+          {
+            "code": "E230",
+            "display": "stationäre Entlassung"
+          }
+        ]
+      }
+    ]
+  }
+}
