@@ -120,6 +120,61 @@ Usage: #example
 * ingredient.itemCodeableConcept.coding[+] = $cs-ask#7962 "thiotepa"
 * ingredient.itemCodeableConcept.coding[+] = urn:oid:2.16.840.1.113883.6.61#52-24-4 "thiotepa"
 
+Instance: ExampleMedicationDolomo
+InstanceOf: ProfileMedicationMedikation
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+* code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN"
+* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* form.coding[EDQM] = $standardterms#10219000 "Tablet"
+* amount.numerator.value = 27
+* amount.numerator.unit = "Tablet"
+* amount.numerator.system = $standardterms
+* amount.numerator.code = #10219000
+* amount.denominator.value = 1
+* amount.denominator.system = "http://unitsofmeasure.org"
+* amount.denominator.code = #1
+* ingredient[0].itemReference = Reference(ExampleMedicationDolomoTag)
+* ingredient[1].itemReference = Reference(ExampleMedicationDolomoNacht)
+
+Instance: ExampleMedicationDolomoTag
+InstanceOf: ProfileMedicationMedikation
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* form.coding[EDQM] = $standardterms#10219000 "Tablet"
+* ingredient[0].isActive = true
+* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+* ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[0].strength.numerator = 250 'mg' "mg"
+* ingredient[1].isActive = true
+* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+* ingredient[1].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[1].strength.numerator = 250 'mg' "mg"
+* ingredient[2].isActive = true
+* ingredient[2].itemCodeableConcept = $cs-ask#00088 "Coffein"
+* ingredient[2].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[2].strength.numerator = 50 'mg' "mg"
+
+Instance: ExampleMedicationDolomoNacht
+InstanceOf: ProfileMedicationMedikation
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* form.coding[EDQM] = $standardterms#10219000 "Tablet"
+* ingredient[0].isActive = true
+* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+* ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[0].strength.numerator = 250 'mg' "mg"
+* ingredient[1].isActive = true
+* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+* ingredient[1].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[1].strength.numerator = 250 'mg' "mg"
+* ingredient[2].isActive = true
+* ingredient[2].itemCodeableConcept = $cs-ask#00087 "Codeinphosphat-Hemihydrat"
+* ingredient[2].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[2].strength.numerator = 30 'mg' "mg"
+
 Instance: ExampleMedicationAdministration
 InstanceOf: ProfileMedicationAdministrationMedikation
 Usage: #example
@@ -214,7 +269,7 @@ Usage: #example
 Instance: ExampleProcedure
 InstanceOf: Procedure
 Usage: #example
-* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
+//* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
 * category = $sct#182832007 "Procedure related to management of drug administration (procedure)"
 * code.coding = $cs-ops#6-007.nm "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
 * code.coding.version = "2020"

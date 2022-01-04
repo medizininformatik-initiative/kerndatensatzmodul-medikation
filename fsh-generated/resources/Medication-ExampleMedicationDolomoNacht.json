@@ -1,0 +1,107 @@
+{
+  "resourceType": "Medication",
+  "id": "ExampleMedicationDolomoNacht",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "N02BE51",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  },
+  "ingredient": [
+    {
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "00002",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Acetylsalicylsäure"
+          }
+        ]
+      },
+      "strength": {
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        },
+        "numerator": {
+          "value": 250,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "01212",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Paracetamol"
+          }
+        ]
+      },
+      "strength": {
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        },
+        "numerator": {
+          "value": 250,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      }
+    },
+    {
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "00087",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Codeinphosphat-Hemihydrat"
+          }
+        ]
+      },
+      "strength": {
+        "denominator": {
+          "value": 1,
+          "code": "10219000",
+          "system": "http://standardterms.edqm.eu",
+          "unit": "Tablet"
+        },
+        "numerator": {
+          "value": 30,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      }
+    }
+  ]
+}
