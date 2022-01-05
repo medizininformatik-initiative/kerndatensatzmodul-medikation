@@ -143,6 +143,13 @@ Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
+* amount.numerator.value = 18
+* amount.numerator.unit = "Tablet"
+* amount.numerator.system = $standardterms
+* amount.numerator.code = #10219000
+* amount.denominator.value = 1
+* amount.denominator.system = "http://unitsofmeasure.org"
+* amount.denominator.code = #1
 * ingredient[0].isActive = true
 * ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
 * ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
@@ -162,6 +169,13 @@ Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
+* amount.numerator.value = 9
+* amount.numerator.unit = "Tablet"
+* amount.numerator.system = $standardterms
+* amount.numerator.code = #10219000
+* amount.denominator.value = 1
+* amount.denominator.system = "http://unitsofmeasure.org"
+* amount.denominator.code = #1
 * ingredient[0].isActive = true
 * ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
 * ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"

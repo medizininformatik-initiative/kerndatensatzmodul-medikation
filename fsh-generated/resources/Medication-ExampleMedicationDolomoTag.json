@@ -24,6 +24,19 @@
       }
     ]
   },
+  "amount": {
+    "numerator": {
+      "value": 18,
+      "unit": "Tablet",
+      "system": "http://standardterms.edqm.eu",
+      "code": "10219000"
+    },
+    "denominator": {
+      "value": 1,
+      "system": "http://unitsofmeasure.org",
+      "code": "1"
+    }
+  },
   "ingredient": [
     {
       "isActive": true,
