@@ -1,0 +1,98 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig-mii-medikation-version-1.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/ig-version-1.0",
+  "version": "1.0.10",
+  "name": "[DE] Medizininformatik Initiative - Modul Medikation - Implementierungsleitfaden - Version 1.0",
+  "status": "active",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "page": {
+      "nameUrl": "IGMIIKDSModulMedikation-1.x.md",
+      "title": "IG MII KDS Modul Medikation",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "BeschreibungModul-1.x.md",
+          "title": "Beschreibung Modul",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "KontextimGesamtprojektBezgezuanderenModulen-1.x.md",
+          "title": "Kontext im Gesamtprojekt / Bezüge zu anderen Modulen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "Referenzen-1.x.md",
+          "title": "Referenzen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "AnwendungsflleInformationsmodell-1.x.md",
+          "title": "Anwendungsfälle / Informationsmodell",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "BeschreibungvonSzenarienfrdieAnwendungderModule-1.x.md",
+              "title": "Beschreibung von Szenarien für die Anwendung der Module",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "Datenstzeinkl.Beschreibungen-1.x.md",
+              "title": "Datensätze inkl. Beschreibungen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "UML-1.x.md",
+              "title": "UML",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "TechnischeImplementierung-1.x.md",
+          "title": "Technische Implementierung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "FHIR-Profile-1.x.md",
+              "title": "FHIR-Profile",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "Medication-1.x.md",
+                  "title": "Medication",
+                  "generation": "markdown",
+                  "page": [
+                    {
+                      "nameUrl": "Extensions-1.x.md",
+                      "title": "Extensions",
+                      "generation": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "nameUrl": "MedicationAdministration-1.x.md",
+                  "title": "MedicationAdministration",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "MedicationStatement-1.x.md",
+                  "title": "MedicationStatement",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "Terminologien-1.x.md",
+              "title": "Terminologien",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
