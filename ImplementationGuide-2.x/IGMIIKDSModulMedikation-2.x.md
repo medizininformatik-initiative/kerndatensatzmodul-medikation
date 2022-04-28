@@ -9,9 +9,9 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 22.09.2021  |
-| Version | 1.0.10       |
-| Status  | Active      |
+| Datum   | current  |
+| Version | 2.0.0      |
+| Status  | draft      |
 | Realm   | DE          | 
 
 ## Inhaltsverzeichnis
