@@ -1,9 +1,5 @@
 # Kerndatensatz Modul Medikation
 
-| Hinweis | Under Construction! |
-|---------|---------------------|
-| {{render:Warning}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Medikation' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Medikation/IGMIIKDSModulMedikation.html).|
-
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Medikation' der Medizinformatik-Initative.
 Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
