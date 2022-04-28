@@ -1,0 +1,108 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "ig-mii-medikation-version-2.0",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/ig-version-2.0",
+  "version": "2.0.0",
+  "name": "[DE] Medizininformatik Initiative - Modul Medikation - Implementierungsleitfaden - Version 2.0",
+  "status": "draft",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "page": {
+      "nameUrl": "ImplementationGuide-2.x/IGMIIKDSModulMedikation-2.x.md",
+      "title": "IG MII KDS Modul Medikation",
+      "generation": "markdown",
+      "page": [
+        {
+          "nameUrl": "ImplementationGuide-2.x/BeschreibungModul-2.x.md",
+          "title": "Beschreibung Modul",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-2.x/KontextimGesamtprojektBezgezuanderenModulen-2.x.md",
+          "title": "Kontext im Gesamtprojekt / Bezüge zu anderen Modulen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-2.x/Referenzen-2.x.md",
+          "title": "Referenzen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-2.x/AnwendungsflleInformationsmodell-2.x.md",
+          "title": "Anwendungsfälle / Informationsmodell",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide-2.x/BeschreibungvonSzenarienfrdieAnwendungderModule-2.x.md",
+              "title": "Beschreibung von Szenarien für die Anwendung der Module",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide-2.x/Datenstzeinkl.Beschreibungen-2.x.md",
+              "title": "Datensätze inkl. Beschreibungen",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide-2.x/UML-2.x.md",
+              "title": "UML",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/TechnischeImplementierung-2.x.md",
+          "title": "Technische Implementierung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/FHIR-Profile-2.x.md",
+              "title": "FHIR-Profile",
+              "generation": "markdown",
+              "page": [
+                {
+                  "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/Medication-2.x.md",
+                  "title": "Medication",
+                  "generation": "markdown",
+                  "page": [
+                    {
+                      "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/Extensions-2.x.md",
+                      "title": "Extensions",
+                      "generation": "markdown"
+                    }
+                  ]
+                },
+                {
+                  "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/MedicationAdministration-2.x.md",
+                  "title": "MedicationAdministration",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/MedicationStatement-2.x.md",
+                  "title": "MedicationStatement",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/MedicationRequest-2.x.md",
+                  "title": "MedicationRequest",
+                  "generation": "markdown"
+                },
+                {
+                  "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/List-2.x.md",
+                  "title": "List",
+                  "generation": "markdown"
+                }
+              ]
+            },
+            {
+              "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/Terminologien-2.x.md",
+              "title": "Terminologien",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
