@@ -52,41 +52,41 @@
           ]
         },
         {
-          "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung-1.x.md",
+          "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/TechnischeImplementierung-1.x.md",
           "title": "Technische Implementierung",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide-1.x/FHIR-Profile-1.x.md",
+              "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/FHIR-Profile-1.x.md",
               "title": "FHIR-Profile",
               "generation": "markdown",
               "page": [
                 {
-                  "nameUrl": "ImplementationGuide-1.x/Medication-1.x.md",
+                  "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/Medication-1.x.md",
                   "title": "Medication",
                   "generation": "markdown",
                   "page": [
                     {
-                      "nameUrl": "ImplementationGuide-1.x/Extensions-1.x.md",
+                      "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/Extensions-1.x.md",
                       "title": "Extensions",
                       "generation": "markdown"
                     }
                   ]
                 },
                 {
-                  "nameUrl": "ImplementationGuide-1.x/MedicationAdministration-1.x.md",
+                  "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/MedicationAdministration-1.x.md",
                   "title": "MedicationAdministration",
                   "generation": "markdown"
                 },
                 {
-                  "nameUrl": "ImplementationGuide-1.x/MedicationStatement-1.x.md",
+                  "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/MedicationStatement-1.x.md",
                   "title": "MedicationStatement",
                   "generation": "markdown"
                 }
               ]
             },
             {
-              "nameUrl": "ImplementationGuide-1.x/Terminologien-1.x.md",
+              "nameUrl": "ImplementationGuide-1.x/TechnischeImplementierung/Terminologien-1.x.md",
               "title": "Terminologien",
               "generation": "markdown"
             }
