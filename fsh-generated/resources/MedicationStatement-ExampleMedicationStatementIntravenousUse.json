@@ -40,15 +40,15 @@
   ],
   "effectiveDateTime": "2018-05-26",
   "medicationReference": {
-    "reference": "Medication/8b455da3-931e-481f-abfe-da291cbba54e"
+    "reference": "Medication/ExampleMedicationThiotepa"
   },
   "partOf": [
     {
-      "reference": "Procedure/ce33960c-02c9-4888-9448-9a8b7906e369"
+      "reference": "Procedure/ExampleProcedure"
     }
   ],
   "status": "completed",
   "subject": {
-    "reference": "Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada"
+    "reference": "Patient/example"
   }
 }

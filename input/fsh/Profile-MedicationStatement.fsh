@@ -1,11 +1,12 @@
-Profile: ProfileMedicationStatementMedikation
+Profile: SD_MII_Medikation_MedicationStatement
 Parent: MedicationStatement
-Id: ProfileMedicationStatementMedikation
-Title: "Profile - MedicationStatement - Medikationsbericht"
+Id: sd-mii-medikation-medication-statement
+Title: "SD MII Medikation MedicationStatement"
 Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
-* ^version = "1.0.11"
+* ^version = "2.0"
 * ^status = #active
+* ^date = "2022-05-18"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"

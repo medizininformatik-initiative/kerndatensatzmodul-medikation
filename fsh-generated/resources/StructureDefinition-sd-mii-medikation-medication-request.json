@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ProfileMedicationRequestMedikamentenverordnung",
+  "id": "sd-mii-medikation-medication-request",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -13,10 +13,10 @@
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
   "version": "0.1.0",
-  "name": "ProfileMedicationRequestMedikamentenverordnung",
-  "title": "Profile - MedicationRequest - Medikamentenverordnung",
+  "name": "SD_MII_Medikation_MedicationRequest",
+  "title": "SD MII Medikation MedicationRequest",
   "status": "draft",
-  "date": "2021-12-21",
+  "date": "2022-05-18",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

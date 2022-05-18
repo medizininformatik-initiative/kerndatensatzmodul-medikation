@@ -1,12 +1,12 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "CaseContextCodes",
-  "id": "ValueSetCaseContextCodes",
-  "title": "ValueSet - Case Context Codes",
+  "name": "VS_MII_Medikation_Fallkontext",
+  "id": "vs-mii-medikation-fallkontext",
+  "title": "VS MII Medikation Fallkontext",
   "description": "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
   "version": "0.1.0",
-  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/ValueSetCaseContextCodes",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

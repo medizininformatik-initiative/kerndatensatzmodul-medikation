@@ -23,6 +23,6 @@
   "performedDateTime": "2018-05-26",
   "status": "completed",
   "subject": {
-    "reference": "Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada"
+    "reference": "Patient/example"
   }
 }

@@ -1,10 +1,10 @@
-CodeSystem: CodeSystemWirkstofftyp
-Id: CodeSystemWirkstofftyp
-Title: "CodeSystem - Wirkstofftypen"
+CodeSystem: CS_MII_Medikation_Wirkstofftyp
+Id: cs-mii-medikation-wirkstofftyp
+Title: "CS MII Medikation Wirkstofftyp"
 Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
-* ^version = "1.0"
+* ^version = "2.0"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"

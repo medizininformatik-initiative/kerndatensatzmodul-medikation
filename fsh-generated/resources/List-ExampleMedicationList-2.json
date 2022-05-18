@@ -3,7 +3,7 @@
   "id": "ExampleMedicationList-2",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/List"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
     ]
   },
   "code": {

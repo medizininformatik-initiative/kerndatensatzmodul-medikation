@@ -1,9 +1,9 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "ValueSetWirkstofftyp",
-  "id": "ValueSetWirkstofftyp",
-  "title": "ValueSet  - Wirkstofftypen",
+  "name": "VS_MII_Medikation_Wirkstofftyp",
+  "id": "vs-mii-medikation-wirkstofftyp",
+  "title": "VS MII Medikation Wirkstofftypen",
   "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
   "version": "1.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",

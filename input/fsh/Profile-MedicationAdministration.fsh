@@ -1,11 +1,12 @@
-Profile: ProfileMedicationAdministrationMedikation
+Profile: SD_MII_Medikation_MedicationAdministration
 Parent: MedicationAdministration
-Id: ProfileMedicationAdministrationMedikation
-Title: "Profile - MedicationAdministration - Medikamentenverabreichung"
+Id: sd-mii-medikation-medication-administration
+Title: "SD MII Medikation MedicationAdministration"
 Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
-* ^version = "1.0.11"
+* ^version = "2.0"
 * ^status = #active
+* ^date = "2022-05-18"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"

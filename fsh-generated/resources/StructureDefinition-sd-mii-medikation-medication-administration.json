@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ProfileMedicationAdministrationMedikation",
+  "id": "sd-mii-medikation-medication-administration",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -12,10 +12,11 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
-  "version": "1.0.11",
-  "name": "ProfileMedicationAdministrationMedikation",
-  "title": "Profile - MedicationAdministration - Medikamentenverabreichung",
+  "version": "2.0",
+  "name": "SD_MII_Medikation_MedicationAdministration",
+  "title": "SD MII Medikation MedicationAdministration",
   "status": "active",
+  "date": "2022-05-18",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

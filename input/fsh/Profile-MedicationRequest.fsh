@@ -1,12 +1,12 @@
-Profile: ProfileMedicationRequestMedikamentenverordnung
+Profile: SD_MII_Medikation_MedicationRequest
 Parent: MedicationRequest
-Id: ProfileMedicationRequestMedikamentenverordnung
-Title: "Profile - MedicationRequest - Medikamentenverordnung"
+Id: sd-mii-medikation-medication-request
+Title: "SD MII Medikation MedicationRequest"
 Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
 * ^version = "0.1.0"
 * ^status = #draft
-* ^date = "2021-12-21"
+* ^date = "2022-05-18"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"

@@ -11,7 +11,7 @@
     "reference": "Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9"
   },
   "subject": {
-    "reference": "Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1"
+    "reference": "Patient/example"
   },
   "effectiveDateTime": "2020-01-02T09:30:00+01:00",
   "dosage": [

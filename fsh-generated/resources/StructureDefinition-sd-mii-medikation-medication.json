@@ -1,6 +1,6 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ProfileMedicationMedikation",
+  "id": "sd-mii-medikation-medication",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
@@ -12,11 +12,11 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
-  "version": "1.0.11",
-  "name": "ProfileMedicationMedikation",
-  "title": "Profile - Medication - Medikation",
+  "version": "2.0",
+  "name": "SD_MII_Medikation_Medication",
+  "title": "SD MII Medikation Medication",
   "status": "active",
-  "date": "2021-09-14",
+  "date": "2022-05-18",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

@@ -9,10 +9,10 @@
   "status": "active",
   "intent": "order",
   "medicationReference": {
-    "reference": "Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9"
+    "reference": "Medication/ExampleMedicationCaelyx"
   },
   "subject": {
-    "reference": "Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1"
+    "reference": "Patient/example"
   },
   "authoredOn": "2021-12-21T11:41:00+01:00",
   "dosageInstruction": [

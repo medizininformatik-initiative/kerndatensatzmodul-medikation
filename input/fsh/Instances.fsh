@@ -1,5 +1,5 @@
 Instance: ExampleMedicationRezeptur
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
@@ -9,11 +9,11 @@ Usage: #example
 * ingredient[=].strength.denominator = 250 'mL' "milliliter"
 * ingredient[=].strength.numerator = 85 'mg' "mg"
 * ingredient[+].isActive = true
-* ingredient[=].itemReference = Reference(Medication/7f27cb8d-940b-43fd-ab8b-fee5b7a9b060)
+* ingredient[=].itemReference = Reference(ExampleMedicationGlucoseloesung)
 * status = #active
 
 Instance: ExampleMedicationGlucoseloesung
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
@@ -35,7 +35,7 @@ Usage: #example
 * status = #active
 
 Instance: ExampleMedicationCalcium
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#00169644 "CALCIUM SANDOZ forte Brausetabletten"
@@ -74,7 +74,7 @@ Usage: #example
 * ingredient[=].strength.denominator = 1 http://standardterms.edqm.eu#10222000 "Effervescent tablet"
 
 Instance: ExampleMedicationCaelyx
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#887150 "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
@@ -88,7 +88,7 @@ Usage: #example
 * ingredient.strength.denominator = 25 'ml' "ml"
 
 Instance: ExampleMedicationASS100
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
@@ -99,7 +99,7 @@ Usage: #example
 * ingredient.strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
 
 Instance: ExampleMedicationPropofol
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code = $cs-pzn#194346 "PROPOFOL 2% 20MG/1ML MCT"
@@ -111,7 +111,7 @@ Usage: #example
 * status = #active
 
 Instance: ExampleMedicationThiotepa
-InstanceOf: Medication
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * ingredient.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
@@ -121,7 +121,7 @@ Usage: #example
 * ingredient.itemCodeableConcept.coding[+] = urn:oid:2.16.840.1.113883.6.61#52-24-4 "thiotepa"
 
 Instance: ExampleMedicationDolomo
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN"
@@ -138,7 +138,7 @@ Usage: #example
 * ingredient[1].itemReference = Reference(ExampleMedicationDolomoNacht)
 
 Instance: ExampleMedicationDolomoTag
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
@@ -164,7 +164,7 @@ Usage: #example
 * ingredient[2].strength.numerator = 50 'mg' "mg"
 
 Instance: ExampleMedicationDolomoNacht
-InstanceOf: ProfileMedicationMedikation
+InstanceOf: sd-mii-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
@@ -190,7 +190,7 @@ Usage: #example
 * ingredient[2].strength.numerator = 30 'mg' "mg"
 
 Instance: ExampleMedicationAdministration
-InstanceOf: ProfileMedicationAdministrationMedikation
+InstanceOf: sd-mii-medikation-medication-administration
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
 * dosage.dose = 85 'mg' "mg"
@@ -199,12 +199,12 @@ Usage: #example
 * dosage.route = $standardterms#20045000 "Intravenous use"
 * effectivePeriod.end = "2020-01-06T11:20:00.000+00:00"
 * effectivePeriod.start = "2020-01-06T10:20:00.000+00:00"
-* medicationReference = Reference(Medication/8b67be5c-d83a-417c-864e-85fb5e9f4d52)
+* medicationReference = Reference(ExampleMedicationRezeptur)
 * status = #completed
-* subject = Reference(Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1)
+* subject = Reference(Patient/example)
 
 Instance: ExampleMedicationStatement
-InstanceOf: ProfileMedicationStatementMedikation
+InstanceOf: sd-mii-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.doseAndRate.doseQuantity = 50 'mg/kg' "mg/kilogram"
@@ -214,12 +214,12 @@ Usage: #example
 * dosage.timing.repeat.period = 4
 * dosage.timing.repeat.periodUnit = #wk
 * effectiveDateTime = "2020-01-14T11:37:00+01:00"
-* medicationReference = Reference(Medication/8b67be5c-d83a-417c-864e-85fb5e9f4d52)
+* medicationReference = Reference(ExampleMedicationRezeptur)
 * status = #active
-* subject = Reference(Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1)
+* subject = Reference(Patient/example)
 
 Instance: ExampleMedicationStatementPeriodischesIntervall
-InstanceOf: ProfileMedicationStatementMedikation
+InstanceOf: sd-mii-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.route = $standardterms#20053000 "Oral use"
@@ -237,7 +237,7 @@ Usage: #example
 * subject = Reference(Patient/example)
 
 Instance: ExampleMedicationStatementOffset
-InstanceOf: ProfileMedicationStatementMedikation
+InstanceOf: sd-mii-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.route = $standardterms#20053000 "Oral use"
@@ -253,12 +253,12 @@ Usage: #example
 * subject = Reference(Patient/example)
 
 Instance: ExampleMedicationStatementCaelyx
-InstanceOf: ProfileMedicationStatementMedikation
+InstanceOf: sd-mii-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #active
 * medicationReference = Reference(Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9)
-* subject = Reference(Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1)
+* subject = Reference(Patient/example)
 * effectiveDateTime = "2020-01-02T09:30:00+01:00"
 * dosage.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosage.timing.repeat.frequency = 1
@@ -267,7 +267,7 @@ Usage: #example
 * dosage.route = $standardterms#20045000 "Intravenous use"
 
 Instance: ExampleMedicationStatementIntravenousUse
-InstanceOf: ProfileMedicationStatementMedikation
+InstanceOf: sd-mii-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.doseAndRate.doseRange.high = 2600 'mg' "milligram"
@@ -275,10 +275,10 @@ Usage: #example
 * dosage.route = $standardterms#20045000 "Intravenous use"
 * dosage.text = "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
 * effectiveDateTime = "2018-05-26"
-* medicationReference = Reference(Medication/8b455da3-931e-481f-abfe-da291cbba54e)
-* partOf = Reference(Procedure/ce33960c-02c9-4888-9448-9a8b7906e369)
+* medicationReference = Reference(ExampleMedicationThiotepa)
+* partOf = Reference(ExampleProcedure)
 * status = #completed
-* subject = Reference(Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada)
+* subject = Reference(Patient/example)
 
 Instance: ExampleProcedure
 InstanceOf: Procedure
@@ -289,19 +289,43 @@ Usage: #example
 * code.coding.version = "2020"
 * performedDateTime = "2018-05-26"
 * status = #completed
-* subject = Reference(Patient/fe1f7a9a-f33e-4dbe-9ee5-246e2d3baada)
+* subject = Reference(Patient/example)
 
 Instance: ExampleMedicationRequestCaelyx
-InstanceOf: ProfileMedicationRequestMedikamentenverordnung
+InstanceOf: sd-mii-medikation-medication-request
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
 * status = #active
 * intent = #order
-* medicationReference = Reference(Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9)
-* subject = Reference(Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1)
+* medicationReference = Reference(ExampleMedicationCaelyx)
+* subject = Reference(Patient/example)
 * authoredOn = "2021-12-21T11:41:00+01:00"
 * dosageInstruction.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
 * dosageInstruction.timing.repeat.periodUnit = #wk
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
+
+Instance: ExampleMedicationList-1
+InstanceOf: SD_MII_Medikation_Medikationsliste
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+* status = #current
+* mode = #snapshot
+* title = "Aufnahmemedikation"
+* code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
+* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210
+* subject = Reference(Patient/example)
+* entry[+].item = Reference(MedicationStatement/example)
+
+Instance: ExampleMedicationList-2
+InstanceOf: SD_MII_Medikation_Medikationsliste
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+* status = #current
+* mode = #working
+* title = "Aktuelle medikamentöse Therapie"
+* code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
+* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200
+* subject = Reference(Patient/example)
+* entry[+].item = Reference(MedicationStatement/example)

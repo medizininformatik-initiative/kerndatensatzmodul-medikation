@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "ExtensionWirkstoffrelation",
+  "id": "sd-mii-medikation-wirkstoffrelation",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
-  "version": "1.0",
-  "name": "ExtensionWirkstoffrelation",
-  "title": "Extension - Wirkstoffrelation",
+  "version": "2.0",
+  "name": "SD_MII_Medikation_Wirkstoffrelation",
+  "title": "SD MII Medikation Wirkstoffrelation",
   "status": "active",
   "experimental": false,
   "publisher": "Medizininformatik Initiative",
@@ -18,7 +18,7 @@
       ]
     }
   ],
-  "description": "Ermöglicht die Zuordnung von genauem (z.B. Salz, Ester) zu allgemeinem Wirkstoff.",
+  "description": "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,8 +43,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Extension - Wirkstoffrelation",
-        "definition": "Ermöglicht die Zuordnung von genauem (z.B. Salz, Ester) zu allgemeinem Wirkstoff."
+        "short": "SD MII Medikation Wirkstoffrelation",
+        "definition": "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff."
       },
       {
         "id": "Extension.extension:ingredientReference",
