@@ -25,6 +25,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * subject MS
 * subject only Reference(Patient)
 * encounter MS
+* date MS
 * entry MS
 * entry.flag ..0
 * entry.deleted ..0

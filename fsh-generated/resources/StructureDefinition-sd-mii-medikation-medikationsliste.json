@@ -140,6 +140,11 @@
         "mustSupport": true
       },
       {
+        "id": "List.date",
+        "path": "List.date",
+        "mustSupport": true
+      },
+      {
         "id": "List.entry",
         "path": "List.entry",
         "mustSupport": true
