@@ -69,6 +69,21 @@
         ]
       },
       {
+        "id": "List.status",
+        "path": "List.status",
+        "mustSupport": true
+      },
+      {
+        "id": "List.mode",
+        "path": "List.mode",
+        "mustSupport": true
+      },
+      {
+        "id": "List.code",
+        "path": "List.code",
+        "mustSupport": true
+      },
+      {
         "id": "List.code.coding",
         "path": "List.code.coding",
         "slicing": {
@@ -91,7 +106,8 @@
         "patternCoding": {
           "code": "medications",
           "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.code.coding:contextCode",
@@ -99,6 +115,7 @@
         "sliceName": "contextCode",
         "min": 1,
         "max": "1",
+        "mustSupport": true,
         "binding": {
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
@@ -114,7 +131,13 @@
               "http://hl7.org/fhir/StructureDefinition/Patient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "List.entry",
+        "path": "List.entry",
+        "mustSupport": true
       },
       {
         "id": "List.entry.flag",
@@ -136,7 +159,8 @@
               "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }

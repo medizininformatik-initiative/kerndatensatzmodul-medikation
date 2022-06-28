@@ -11,15 +11,23 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
 * obeys medication-list-context-1 and medication-list-context-2
+* status MS
+* mode MS
+* code MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains medCode 1..1 and contextCode 1..1
+* code.coding[medCode] MS
+* code.coding[contextCode] MS
 * code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
 * code.coding[contextCode] from VS_MII_Medikation_Fallkontext (required)
+* subject MS
 * subject only Reference(Patient)
+* entry MS
 * entry.flag ..0
 * entry.deleted ..0
+* entry.item MS
 * entry.item only Reference(SD_MII_Medikation_MedicationStatement)
 
 ValueSet: VS_MII_Medikation_Fallkontext
