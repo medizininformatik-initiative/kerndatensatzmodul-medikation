@@ -1,0 +1,24 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "sp-mii-medikation-medicationadministration-rateratio-denominator",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator",
+  "version": "0.1.0",
+  "name": "SP_MII_Medikation_MedicationAdministration_RateRatioDenominator",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für MedicationAdministration.dosage.rateRatio.denominator",
+  "code": "rateratio-denominator",
+  "base": [
+    "MedicationAdministration"
+  ],
+  "type": "quantity",
+  "expression": "MedicationAdministration.dosage.rateRatio.denominator",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}
