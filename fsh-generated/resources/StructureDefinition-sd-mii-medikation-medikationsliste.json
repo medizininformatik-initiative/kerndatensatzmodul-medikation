@@ -135,6 +135,11 @@
         "mustSupport": true
       },
       {
+        "id": "List.encounter",
+        "path": "List.encounter",
+        "mustSupport": true
+      },
+      {
         "id": "List.entry",
         "path": "List.entry",
         "mustSupport": true

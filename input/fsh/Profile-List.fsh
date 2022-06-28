@@ -24,6 +24,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * code.coding[contextCode] from VS_MII_Medikation_Fallkontext (required)
 * subject MS
 * subject only Reference(Patient)
+* encounter MS
 * entry MS
 * entry.flag ..0
 * entry.deleted ..0
