@@ -6,10 +6,10 @@ Für Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnung der Dos
 
 Siehe auch [Terminologien](https://simplifier.net/guide/MedizininformatikInitiative-ModulMedikation-ImplementationGuide/Terminologien).
 
-{{render:ExtensionWirkstofftyp}}
+{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp}}
 
 <br>
 
 Eine weitere Extension erlaubt es, Referenzen zwischen den Wirkstoffen abzubilden. Somit kann ein Wirkstoff, der als "genauer" Wirkstoff klassifiziert ist, eindeutig einem "allgemeinen" Wirkstoff zugeordnet werden. Dies erlaubt bspw. die Umrechnung, dass "10mg Bisoprolol hemifumarat" "8,49mg Bisoprolol" entsprechen.
 
-{{render:ExtensionWirkstoffrelation}}
+{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation}}

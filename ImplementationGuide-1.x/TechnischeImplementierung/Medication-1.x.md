@@ -8,7 +8,7 @@ https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Structure
 **Differential**
 
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileMedicationMedikation, diff}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, diff}}
 
 <br>
 
@@ -16,7 +16,7 @@ https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Structure
 
 **Snapshot**
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileMedicationMedikation, snapshot}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, snapshot}}
 
 
 ---
