@@ -9,4 +9,4 @@ Canonical: ```https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/
 [Link Simplifier Profil Übersicht](https://simplifier.net/resolve?canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata&fhirVersion=R4)
 
 
-{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata}}
+{{render:cps-mii-medikation-capabilitystatement}}
