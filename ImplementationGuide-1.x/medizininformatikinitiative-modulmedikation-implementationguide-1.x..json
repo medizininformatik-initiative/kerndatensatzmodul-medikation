@@ -5,6 +5,7 @@
   "version": "1.0.11",
   "name": "IG_MII_Medikation_1_0",
   "status": "active",
+  "description": "Medizininformatik Initiative - Modul Medikation - ImplementationGuide Version 1.0",
   "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
   "fhirVersion": [
     "4.0.1"

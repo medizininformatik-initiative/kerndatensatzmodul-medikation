@@ -229,8 +229,12 @@ Usage: #definition
 * rest.resource[+].type = #MedicationStatement
 * rest.resource[=].profile = "http://hl7.org/fhir/StructureDefinition/MedicationStatement"
 * rest.resource[=].supportedProfile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|1.0.11"
-* rest.resource[=].interaction[0].code = #read
-* rest.resource[=].interaction[+].code = #search-type
+* rest.resource[=].interaction[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #read
+* rest.resource[=].interaction[+].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
+* rest.resource[=].interaction[=].extension.valueCode = #SHALL
+* rest.resource[=].interaction[=].code = #search-type
 * rest.resource[=].searchParam[0].extension.url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
 * rest.resource[=].searchParam[=].extension.valueCode = #SHALL
 * rest.resource[=].searchParam[=].name = "_count"
