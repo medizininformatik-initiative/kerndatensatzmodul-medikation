@@ -3,8 +3,10 @@
   "id": "ig-mii-medikation-version-2.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/ig-version-2.0",
   "version": "2.0.0",
-  "name": "[DE] Medizininformatik Initiative - Modul Medikation - Implementierungsleitfaden - Version 2.0",
+  "name": "IG_MII_Medikation_2_0",
   "status": "draft",
+  "description": "Medizininformatik Initiative - Modul Medikation - ImplementationGuide Version 2.0",
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -98,6 +100,11 @@
             {
               "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/Terminologien-2.x.md",
               "title": "Terminologien",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide-2.x/TechnischeImplementierung/CapabilityStatement-2.x.md",
+              "title": "CapabilityStatement",
               "generation": "markdown"
             }
           ]
