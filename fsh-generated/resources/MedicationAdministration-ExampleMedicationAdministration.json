@@ -42,10 +42,10 @@
     "start": "2020-01-06T10:20:00.000+00:00"
   },
   "medicationReference": {
-    "reference": "Medication/ExampleMedicationRezeptur"
+    "reference": "Medication/8b67be5c-d83a-417c-864e-85fb5e9f4d52"
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/688f4605-71c0-48ef-a2d8-cd03a6d3dee1"
   }
 }

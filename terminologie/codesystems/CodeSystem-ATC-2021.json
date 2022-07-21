@@ -1,9 +1,14 @@
 {
 	"resourceType": "CodeSystem",
 	"id": "CodeSystemATC2021",
+	"meta": {
+		"profile": [
+			"http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+		]
+	},
 	"url": "http://fhir.de/CodeSystem/bfarm/atc",
 	"version": "2021",
-	"name": "ATC",
+	"name": "ATC2021",
 	"title": "Anatomisch-therapeutisch chemische Klassifikation (ATC) Amtliche deutsche Fassung 2021",
 	"status": "active",
 	"experimental": true,
