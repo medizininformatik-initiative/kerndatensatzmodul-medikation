@@ -1,0 +1,628 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "LogicalModelMedikation",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation",
+  "version": "1.0.11",
+  "name": "LogicalModelMedikation",
+  "title": "LogicalModel - Medikation",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "BasismodulMedikation",
+        "path": "BasismodulMedikation",
+        "short": "Das Basismodul Medikation enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben"
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag",
+        "path": "BasismodulMedikation.Medikationseintrag",
+        "short": "Medikationseintrag: Dokumentiert die Verschreibung, Gabe oder Medikationsplan zu einem oder mehreren Medikamenten.",
+        "definition": "AkdÄ MP 2.0: D13 Eine konkrete Zeile der Medikationstabelle mit Daten zur Medikation. Alternativ kann dies ein Wirkstoff-, Arzneimittel- oder Rezeptureintrag, ein Sonstiger Hinweis oder auch eine Überschrift sein.",
+        "comment": "FHIR-Mapping: MedicationStatement, MedicationAdministration",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Identifikation",
+        "path": "BasismodulMedikation.Medikationseintrag.Identifikation",
+        "short": "Identifikator des Medikationseintrags",
+        "definition": "Identifikator des Medikationseintrags",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationStatement).identifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Status",
+        "path": "BasismodulMedikation.Medikationseintrag.Status",
+        "short": "Prozess-Status des beschriebenen Medikationsstatus",
+        "definition": "Prozess-Status des beschriebenen Medikationsstatus",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).status und .statusReason",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur",
+        "short": "Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich.",
+        "definition": "Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich.",
+        "comment": "Grund, warum die 3 Unterpunkte auf gleichem Level sind: es kann sein, dass nur eines davon bekannt ist (z.B. nur der Wirkstoff). Der Wirkstoff ist aber immer auch Bestandteil des Fertigarzneimittels bzw. einer Rezeptur.\r\n\r\nFHIR-Mapping: Medication",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt",
+        "short": "Arzneimittelprodukt: hiermit ist sowohl eine zusammengesetzte Produkt-ID (PhPID) gemeint wie die Pharmazentralnummer (PZN), als auch Produktidentifikatoren (GTIN).",
+        "definition": "Arzneimittelprodukt: hiermit ist sowohl eine zusammengesetzte Produkt-ID (PhPID) gemeint wie die Pharmazentralnummer (PZN), als auch Produktidentifikatoren (GTIN).",
+        "comment": "FHIR-Mapping: Medication.code",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Name",
+        "short": "Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels gemäß Informationsstelle für Arzneispezialitäten (IFA) oder Hauskatalog.",
+        "definition": "Arzneimittelname oder auch Handelsname genannt. Bezeichnung eines Fertigarzneimittels gemäß Informationsstelle für Arzneispezialitäten (IFA) oder Hauskatalog.",
+        "comment": "FHIR-Mapping: Medication.code.text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittel-Code",
+        "short": "Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer (PZN), IDMP Pharmaceutical Product Identifiers (PhPID), IDMP Medicinal Product Identifier (MPID), Pharmacy Product Number (PPN)",
+        "definition": "Identifikation eines Fertigarzneimittels durch seinen Code, z. B. Pharmazentralnummer (PZN), IDMP Pharmaceutical Product Identifiers (PhPID), IDMP Medicinal Product Identifier (MPID), Pharmacy Product Number (PPN)",
+        "comment": "FHIR-Mapping: Medication.code.coding",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstaerke",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstaerke",
+        "short": "Wirkstärke gemäß Handelsname",
+        "definition": "Wirkstärke gemäß Handelsname",
+        "comment": "FHIR-Mapping: Medication.amount",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur",
+        "short": "Rezeptur-Eintrag",
+        "definition": "AkdÄ MP 2.0: D17 Datenfeld, um freitextlich eine Rezeptur als Medikationseintrag zu gestalten.",
+        "comment": "FHIR-Mapping: Medication.code.coding als fixed code für Rezeptur in Kombination mit Medication.code.text für die Beschreibung der Rezeptur",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Rezeptur.Freitextzeile",
+        "short": "Beschreibung der Rezeptur",
+        "definition": "Beschreibung der Rezeptur",
+        "comment": "FHIR-Mapping: Medication.code.text",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff",
+        "short": "Wirkstoff",
+        "definition": "Wirkstoff",
+        "comment": "FHIR-Mapping: Medication.ingredient",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Allgemein",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Allgemein",
+        "short": "Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird. In den meisten Fällen WHO-INN (international non-proprietary name der World Health Organisation) in der englischen Version. Hinweis: in Deutschland gibt es z.T. Schreibvarianten oder weitere Bezeichnungen. Für Substanzen ohne WHO INN die registrierte Substanzbezeichnung.",
+        "definition": "Bezeichnung eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird. In den meisten Fällen WHO-INN (international non-proprietary name der World Health Organisation) in der englischen Version. Hinweis: in Deutschland gibt es z.T. Schreibvarianten oder weitere Bezeichnungen. Für Substanzen ohne WHO INN die registrierte Substanzbezeichnung.",
+        "comment": "Abgrenzung zu Wirkstoff-Name (aktiv): Bei Wirkstoff-Name (allgemein) kein „Derivat“ der Substanz (Salz, Ester etc.), wie es im Arzneimittel als \"active ingredient\" registriert sein kann. \r\n\r\nFHIR-Mapping: Medication.ingredient.itemCodeableConcept.text\r\n\r\ni.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Allgemein",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Allgemein",
+        "short": "Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII.",
+        "definition": "Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII.",
+        "comment": "Die Problematik mit ATC-Codes ist bekannt.\r\nAbgrenzung zu Wirkstoff-Code (aktiv): Bei Wirkstoff-Code (allgemein) kein „Derivat“ der Substanz (Salz, Ester etc.), wie es im Arzneimittel als \"active ingredient\" registriert sein kann.\r\n\r\nFHIR-Mapping: Medication.ingredient.itemCodeableConcept.coding\r\n\r\ni.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Aktiv",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Name-Aktiv",
+        "short": "„Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Name (allgemein) sein oder auch ein „Derivat“ der Substanz sein (z.B. Salz, Ester etc. Bezeichnung dann z.B. wie  Modified INNs (INNMs)",
+        "definition": "„Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Name (allgemein) sein oder auch ein „Derivat“ der Substanz sein (z.B. Salz, Ester etc. Bezeichnung dann z.B. wie  Modified INNs (INNMs)",
+        "comment": "FHIR-Mapping: Medication.ingredient.itemCodeableConcept.text\r\n\r\ni.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Aktiv",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Wirkstoff-Code-Aktiv",
+        "short": "Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII.  Hierbei handelt es sich um das „Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Code (allgemein) sein oder der Code für ein „Derivat“ der Substanz sein (z. B. Salz, Ester etc.)",
+        "definition": "Code eines Wirkstoffes, der aus einer Wirkstoffklassifikation entnommen wird z.B. ASK, UNII.  Hierbei handelt es sich um das „Active ingredient“ des Arzneimittelprodukts gemäss Zulassung (vgl. z.B. AMIS-Datenbank), kann Wirkstoff-Code (allgemein) sein oder der Code für ein „Derivat“ der Substanz sein (z. B. Salz, Ester etc.)",
+        "comment": "FHIR-Mapping: Medication.ingredient.itemCodeableConcept.coding\r\n\r\ni.V.m. Medication.ingredient.isActive kann festgestellt werden, ob diese Substanz aktive Substanz des Medikamentes ist.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Staerke",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Wirkstoff.Menge-Staerke",
+        "short": "Wirkstärke, Menge der aktiven Substanz pro Dosiseinheit entsprechend Darreichungsform (1 Tablette, 1 Ampulle, 1 mL etc.)",
+        "definition": "Wirkstärke, Menge der aktiven Substanz pro Dosiseinheit entsprechend Darreichungsform (1 Tablette, 1 Ampulle, 1 mL etc.)",
+        "comment": "FHIR-Mapping: Medication.ingredient.strength",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Darreichungsform",
+        "path": "BasismodulMedikation.Medikationseintrag.Arzneimittel-Wirkstoff-Rezeptur.Darreichungsform",
+        "short": "Darreichungsform nach EDQM",
+        "definition": "Darreichungsform nach EDQM",
+        "comment": "FHIR-Mapping: Medication.form",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer",
+        "short": "Einnahmedauer für eine angeordnete, geplante oder durchgeführte Medikamentengabe. Bei Einzel-Vergabe kann die Dauer auch punktweise (Null) sein.",
+        "definition": "Einnahmedauer für eine angeordnete, geplante oder durchgeführte Medikamentengabe. Bei Einzel-Vergabe kann die Dauer auch punktweise (Null) sein.",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective\r\n\r\nhier ist jeweils ein Zeitpunkt für Einzelvergabe (.effectiveDateTime) oder eine Periode (.effectivePeriod) möglich",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme",
+        "short": "Startzeitpunkt der Einnahme",
+        "definition": "Startzeitpunkt der Einnahme",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme",
+        "short": "Endzeitpunkt der Einnahme",
+        "definition": "Endzeitpunkt der Einnahme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme",
+        "short": "Dauer der Einnahme",
+        "definition": "Dauer der Einnahme",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-Freitext",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-Freitext",
+        "short": "Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll",
+        "definition": "Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectivePeriod.data\r\n\r\nKann nicht gleichzeitig mit \"Dauer der Einnahme\" angegeben werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-Freitext.Freitext",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-Freitext.Freitext",
+        "short": "Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll",
+        "definition": "Enddatum bzw. Endzeitpunkt der Einnahme, bis zu welchem Tag bzw. welcher Zeit einschließlich das Medikament eingenommen werden soll",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).effective.effectivePeriod.data\r\n\r\nKann nicht gleichzeitig mit \"Dauer der Einnahme\" angegeben werden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert",
+        "short": "Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme.",
+        "definition": "Dauer (Intervall in Tagen, Wochen Monaten etc.) der Einnahme.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Reihenfolge",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Reihenfolge",
+        "short": "Sequenznummer des Dosierungseintrags. Bei mehreren Einträgen zur Dosierung wird damit die Reihenfolge (Priorität) der Einträge festgelegt.",
+        "definition": "Sequenznummer des Dosierungseintrags. Bei mehreren Einträgen zur Dosierung wird damit die Reihenfolge (Priorität) der Einträge festgelegt.",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.sequence\r\n\r\nIm Gegensatz zu MedicationStatement hat MedicationAdministration nur höchstens einen Eintrag zur Dosierung (deshalb gibt es keine Angaben zur Reihenfolge)",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "integer"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe",
+        "short": "Zeitangabe zur Einnahme als Teil des Dosierschemas",
+        "definition": "Ausführliche Beispiele finden sich unter http://wiki.hl7.de/index.php?title=cdamedp:Dosierbeispiele\r\n\r\nNicht vorhanden bei Vergabe, weil bei Vergabe kein zukünftiges Dosierungs-Schema angegeben werden muss.",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Zeitpunkt",
+        "short": "Exakter Zeitpunkt, zu dem eine Medikation gegeben werden soll.",
+        "definition": "Exakter Zeitpunkt, zu dem eine Medikation gegeben werden soll.",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.event",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung",
+        "short": "Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden",
+        "definition": "Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when in Kombination mit MedicationStatement.dosage.timing.repeat.offset und/oder anderen Angaben in MedicationStatement.dosage.timing.repeat",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
+        "short": "Ereignis, z. B. morgens, mittags, abends, zur Nacht",
+        "definition": "Ereignis, z. B. morgens, mittags, abends, zur Nacht",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when .dayOfWeek .timeOfDay etc.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
+        "short": "Offset zum Ereignis, z. B. 30 Minuten vorher",
+        "definition": "Offset zum Ereignis, z. B. 30 Minuten vorher",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.offset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "unsignedInt"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall",
+        "short": "Ein Zeitintervall, das sich periodisch wiederholt. Periodische Intervalle haben zwei Eigenschaften, Phase und Periode. Die Phase gibt den \"Typ\" Intervall\" an, der sich jede Periode wiederholt.\r\n\r\nWiederholungsintervall (periodische Intervallsequenz), gibt an\r\ndie Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen (period) \r\nder Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt (phase).",
+        "definition": "Ein Zeitintervall, das sich periodisch wiederholt. Periodische Intervalle haben zwei Eigenschaften, Phase und Periode. Die Phase gibt den \"Typ\" Intervall\" an, der sich jede Periode wiederholt.\r\n\r\nWiederholungsintervall (periodische Intervallsequenz), gibt an\r\ndie Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen (period) \r\nder Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt (phase).",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Phase",
+        "short": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
+        "definition": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.event",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Zeitangabe.Periodisches-Intervall.Periode",
+        "short": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
+        "definition": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.bounds .count .duration .frequency .period",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "decimal"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Einnahme-bei-Bedarf",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Einnahme-bei-Bedarf",
+        "short": "Einnahme des Medikaments bei Bedarf",
+        "definition": "Einnahme des Medikaments bei Bedarf",
+        "comment": "FHIR-Mapping: MedicationStatement.asNeeded entweder als Boolean .asNeededBoolean  oder kodiert .asNeededCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Art-der-Anwendung",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Art-der-Anwendung",
+        "short": "Art der Anwendung des Arzneimittels EDQM passende Value Sets. Pharmazeutische Anwendung dekomponiert in drei Eigenschaften: Art der Anwendung, Weg der Anwendung und Ort der Anwendung.",
+        "definition": "Art der Anwendung des Arzneimittels EDQM passende Value Sets. Pharmazeutische Anwendung dekomponiert in drei Eigenschaften: Art der Anwendung, Weg der Anwendung und Ort der Anwendung.",
+        "comment": "FHIR-Mappings:\r\n\r\n(MedicationStatement | MedicationAdministration).dosage.site\r\n(MedicationStatement | MedicationAdministration).dosage.route\r\n(MedicationStatement | MedicationAdministration).dosage.method\r\n\r\njeweils mit einem .coding und .text für kodierte Angabe mit EDQM binding und im Freitext",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis",
+        "path": "BasismodulMedikation.Medikationseintrag.Dosierung-strukturiert.Dosis",
+        "short": "Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).\r\nMöglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis.",
+        "definition": "Kann angegeben sein als Mengenangabe (SimpleQuantity, Range) oder als Menge pro Zeiteinheit (Ratio).\r\nMöglicherweise wichtig sind Maximaldosierungen innerhalb einer Zeiteinheit oder max. Lebenszeitdosis.",
+        "comment": "FHIR-Mapping: MedicationStatement.dosage.doseAndRate mit den Teilangaben je nach Anforderung .type .dose .rate\r\n\r\n.type gibt die Art des Eintrages an\r\n.dose kann als SimpleQuantity (.doseQuantity) oder als Range (.doseRange) angegeben werden\r\n.rate kann als Ratio (.rateRatio), Range (.rateRange) oder  SimpleQuantity (.rateQuantity) angegeben werden\r\n\r\nMedicationAdministration.dosage.rate nur mit rateRatio und rateQuantity\r\nMedicationAdministration.dosage.dose nur SimpleQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Hinweis",
+        "path": "BasismodulMedikation.Medikationseintrag.Hinweis",
+        "short": "Hinweistext zu diesem Medikament",
+        "definition": "Hinweistext zu diesem Medikament",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).dosage.note",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Annotation"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Behandlungsgrund",
+        "path": "BasismodulMedikation.Medikationseintrag.Behandlungsgrund",
+        "short": "Behandlungsgrund kann ein Problem, Symptom oder eine Diagnose (Condition) sein.",
+        "definition": "Behandlungsgrund kann ein Problem, Symptom oder eine Diagnose (Condition) sein.",
+        "comment": "FHIR-Mapping: (MedicationStatement | MedicationAdministration).reasonCode und .reasonReference\r\n\r\n.reasonReference ist eine Referenz auf ( Condition | Observation | DiagnosticReport )",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung",
+        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung",
+        "short": "Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden.",
+        "definition": "Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden.",
+        "comment": "FHIR-Mappings:\r\n\r\nMedicationStatement.basedOn Referenz auf (MedicationAdministration | MedicationDispense | MedicationStatement | Observation)\r\nMedicationAdministration.request Referenz auf (MedicationRequest)\r\n(MedicationStatement | MedicationAdministration).partOf Referenz auf (MedicationAdministration | Procedure) und zusätzlich für Statement ( MedicationDispense | MedicationStatement | Observation )",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe",
+        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe",
+        "short": "Bezug zu Abgabe",
+        "definition": "Bezug zu Abgabe",
+        "comment": "FHIR-Mappings:\r\n\r\nMedicationStatement.basedOn Referenz auf (MedicationAdministration | MedicationDispense | MedicationStatement | Observation)\r\nMedicationAdministration.request Referenz auf (MedicationRequest)\r\n(MedicationStatement | MedicationAdministration).partOf Referenz auf (MedicationAdministration | Procedure) und zusätzlich für Statement ( MedicationDispense | MedicationStatement | Observation )",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags",
+        "path": "BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags",
+        "short": "Datum des Dokumentationseintrages",
+        "definition": "Datum des Dokumentationseintrages",
+        "comment": "FHIR-Mappings: MedicationStatement.dateAsserted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags",
+        "path": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags",
+        "short": "Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat.",
+        "definition": "Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat.",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname",
+        "path": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags.Organisationsname",
+        "short": "Name der Organisation",
+        "definition": "Name der Organisation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

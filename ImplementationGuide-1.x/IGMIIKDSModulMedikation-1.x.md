@@ -5,8 +5,8 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 22.09.2021  |
-| Version | 1.0.10       |
+| Datum   | 21.07.2022  |
+| Version | 1.0.11      |
 | Status  | Active      |
 | Realm   | DE          | 
 
@@ -18,11 +18,11 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Prof
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt wurden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
-* Martin Boeker, Med. Fakultät und Universitätsklinikum der Universität Freiburg
-* Julian Saß, Berlin Institute of Health (BIH)
+* Martin Boeker, Klinikum rechts der Isar, Technische Universität München
+* Julian Saß, Berlin Institute of Health at Charité (BIH)
 * Karoline Buckow, TMF – Technologie- und Methodenplattform
 für die vernetzte medizinische Forschung e.V.
-* Sylvia Thun, Berlin Institute of Health (BIH), Charité Universitätsmedizin
+* Sylvia Thun, Berlin Institute of Health at Charité (BIH)
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
@@ -38,7 +38,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Heinrich	Lautenbacher (DIFUTURE)
 * Julian Saß (HiGHmed)
 * Karoline Buckow (TMF e.V.)
-* Martin Boeker (MIRACUM)
+* Martin Boeker (DIFUTURE)
 * Matthias Löbe (SMITH)
 * Sebastian Semler (TMF e.V.)
 * Susann Wrobel (SMITH)
@@ -47,7 +47,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Thomas Ganslandt (MIRACUM)
 
 ## Copyright-Hinweis, Nutzungshinweise
-Copyright © 2019: TMF e. V., Charlottenstraße 42, 10117 Berlin
+Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
 
 Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.
 

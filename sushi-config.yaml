@@ -1,29 +1,16 @@
-# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
-# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
-# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: medizininformatikinitiative-modulmedikation-implementationguide
-canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation
-name: kds-medikation-fsh
-status: draft
-version: 0.1.0
+canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide
 fhirVersion: 4.0.1
+FSHOnly: false
+applyExtensionMetadataToRoot: false
+id: de.medizininformatikinitiative.kerndatensatz.medikation
+name: Medizininformatik Initiative - Modul Medikation - ImplementationGuide
+status: active
+version: "1.0.11"
 copyrightYear: 2021+
 releaseLabel: ci-build
 publisher:
   name: Medizininformatik Initiative
   url: https://www.medizininformatik-initiative.de/
-
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-menu:
-  Home: index.html
-  Artifacts: artifacts.html
 dependencies:
-  de.medizininformatikinitiative.kerndatensatz.meta: 
-    uri: de.medizininformatikinitiative.kerndatensatz.meta
-    version: 1.0.3
-  hl7.fhir.uv.ips: 
-    uri: hl7.fhir.uv.ips
-    version: 1.0.0
+  hl7.fhir.uv.ips: 1.0.0
+  de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
