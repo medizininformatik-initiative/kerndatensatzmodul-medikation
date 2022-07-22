@@ -1,0 +1,139 @@
+@startuml "Medikation"
+
+class Medikation {
+    Darreichungsform: code
+}
+
+Medikation "1..1" -- "0..*" Medikationseintrag
+
+class Rezeptur {
+    Freitextzeile: string
+}
+
+Rezeptur "0..1" -- "1..1" Medikation
+
+class Arzneimittelprodukt {
+    ArzneimittelName: string
+    ArzneimittelCode: code
+    Arzneimittelwirkstärke: quantity
+}
+
+Arzneimittelprodukt "0..1" -- "1..1" Medikation
+
+class Wirkstoff {
+    WirkstoffNameAllgemein: string
+    WirkstoffCodeAllgemein: code
+    WirkstoffNameAktiv: string
+    WirkstoffCodeAktiv: code
+    MengeStärke: quantity
+}
+
+Wirkstoff "1..*" -- "1..1" Medikation
+
+class Medikationseintrag {
+    Identifikation: identifier
+    Status: code 
+    Hinweis: string 
+    Behandlungsgrund: complex
+    BezugZuVerordnung: identifier
+    BezugZuAbgabe: identifier 
+    BezugZumPatient: identifier
+    BezugZumFall: identifier 
+    DatumDesEintrags: datetime 
+}
+
+class Einnahmedauer {
+    StartzeitpunktEinnahme: datetime
+    EndzeitpunktEinnahme: datetime 
+    DauerDerEinnahme: duration
+}
+
+Einnahmedauer "0..1" -- "0..1" Medikationseintrag
+
+class AutorInformantDesEintrags {
+    Organisationsname: string 
+}
+
+AutorInformantDesEintrags "0..1" -- "0..*" Medikationseintrag
+
+class DosierungFreitextDesEintrags {
+    Freitext: string
+}
+
+DosierungFreitextDesEintrags "0..1" -- "0..*" Medikationseintrag
+
+class DosierungStrukturiertDesEintrags {
+    Reihenfolge: count 
+    EinnahmeBeiBedarf: boolean
+    ArtDerAnwendung: code
+    Dosis: quantity
+}
+
+DosierungStrukturiertDesEintrags "0..*" -- "0..*" Medikationseintrag
+
+class Zeitangabe {
+    Zeitpunkt: datetime
+}
+
+Zeitangabe "0..1" -- "0..1" DosierungStrukturiertDesEintrags
+
+class PeriodischesIntervall {
+    Phase: datetime
+    Periode: duration
+}
+
+PeriodischesIntervall "0..1" -- "1..1" Zeitangabe
+
+class EreignisbezogeneWiederholung {
+    Ereignis: code
+    Offset: quantity
+}
+
+EreignisbezogeneWiederholung "0..1" -- "1..1" Zeitangabe
+
+class Medikationsliste {
+    Identifikation: identifier
+    Status: code
+    Modus: code
+    Typ: code
+}
+
+Medikationsliste "0..1" -- "0..*" Medikationseintrag
+
+class Medikationsverordnung {
+    Identifikation: identifier
+    Status: code
+    Hinweis: string
+    Behandlungsgrund: complex
+    DatumDerVerordnung: datetime
+    Ersatzmedikation: complex
+    Verordnungsdetails: code
+    BezugZumPatient: identifier
+    BezugZumFall: identifier
+    VorherigeMedikationsverordnungen: identifier
+    Kontraindikationen: complex
+}
+
+Medikationsverordnung "0..*" -- "1..1" Medikation
+
+class AutorInformantDerVerordnung {
+    Organisationsname: string
+}
+
+AutorInformantDerVerordnung "0..*" -- "0..1" Medikationsverordnung
+
+class DosierungFreitextDerVerordnung {
+    Freitext: string
+}
+
+DosierungFreitextDerVerordnung "0..1" -- "0..*" Medikationsverordnung
+
+class DosierungStrukturiertDerVerordnung {
+    Reihenfolge: count
+    EinnahmeBeiBedarf: boolean
+    ArtDerAnwendung: code
+    Dosis: quantity
+}
+
+DosierungStrukturiertDerVerordnung "0..*" -- "0..*" Medikationsverordnung
+
