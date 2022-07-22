@@ -3,10 +3,10 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: de.medizininformatikinitiative.kerndatensatz.medikation
-name: Medizininformatik Initiative - Modul Medikation - ImplementationGuide
+name: IG_MII_Medikation_2_0
 status: active
-version: "1.0.11"
-copyrightYear: 2021+
+version: "2.0.0-ballot"
+copyrightYear: 2019+
 releaseLabel: ci-build
 publisher:
   name: Medizininformatik Initiative

@@ -1,0 +1,22 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "sp-mii-medikation-medication-reasonreference",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-ReasonReference",
+  "name": "SP_MII_Medikation_Medication_ReasonReference",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference",
+  "code": "reason-reference",
+  "base": [
+    "MedicationStatement",
+    "MedicationAdministration"
+  ],
+  "type": "reference",
+  "expression": "%resource.reasonReference",
+  "target": [
+    "Condition",
+    "Observation",
+    "DiagnosticReport"
+  ]
+}

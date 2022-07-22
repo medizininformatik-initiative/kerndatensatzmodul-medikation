@@ -1,0 +1,23 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "sp-mii-medikation-medicationstatement-dosequantity",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseQuantity",
+  "name": "SP_MII_Medikation_MedicationStatement_DoseQuantity",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity",
+  "code": "dose-quantity",
+  "base": [
+    "MedicationStatement"
+  ],
+  "type": "quantity",
+  "expression": "MedicationStatement.dosage.doseAndRate.doseQuantity",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

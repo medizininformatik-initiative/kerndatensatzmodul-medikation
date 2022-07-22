@@ -1,20 +1,21 @@
 {
-  "resourceType": "MedicationStatement",
-  "id": "ExampleMedicationStatementCaelyx",
+  "resourceType": "MedicationRequest",
+  "id": "ExampleMedicationRequestCaelyx",
   "meta": {
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
     ]
   },
   "status": "active",
+  "intent": "order",
   "medicationReference": {
-    "reference": "Medication/bbc6c5a1-62df-44fa-a907-d066476ac7f9"
+    "reference": "Medication/ExampleMedicationCaelyx"
   },
   "subject": {
     "reference": "Patient/example"
   },
-  "effectiveDateTime": "2020-01-02T09:30:00+01:00",
-  "dosage": [
+  "authoredOn": "2021-12-21T11:41:00+01:00",
+  "dosageInstruction": [
     {
       "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
       "timing": {

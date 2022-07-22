@@ -1,0 +1,404 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "sd-mii-medikation-medication-administration",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
+  "version": "2.0.0-ballot",
+  "name": "SD_MII_Medikation_MedicationAdministration",
+  "title": "SD MII Medikation MedicationAdministration",
+  "status": "active",
+  "date": "2022-05-18",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationAdministration",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationAdministration.id",
+        "path": "MedicationAdministration.id",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta",
+        "path": "MedicationAdministration.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta.source",
+        "path": "MedicationAdministration.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.meta.profile",
+        "path": "MedicationAdministration.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.partOf",
+        "path": "MedicationAdministration.partOf",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.status",
+        "path": "MedicationAdministration.status",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]",
+        "path": "MedicationAdministration.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationReference",
+        "path": "MedicationAdministration.medicationReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept",
+        "path": "MedicationAdministration.medicationCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:Pharmazentralnummer",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding",
+        "sliceName": "Pharmazentralnummer",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:Pharmazentralnummer.system",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:Pharmazentralnummer.code",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassDe",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding",
+        "sliceName": "atcClassDe",
+        "short": "ATC Klassifikation deutsche Version",
+        "definition": "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/bfarm/atc"
+        }
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassDe.system",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassDe.code",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassEn",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding",
+        "sliceName": "atcClassEn",
+        "short": "Anatomical Therapeutic Chemical Classification System",
+        "definition": "ATC Classification International WHO Version",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://www.whocc.no/atc"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassEn.system",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.coding:atcClassEn.code",
+        "path": "MedicationAdministration.medicationCodeableConcept.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medicationCodeableConcept.text",
+        "path": "MedicationAdministration.medicationCodeableConcept.text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.subject",
+        "path": "MedicationAdministration.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.context",
+        "path": "MedicationAdministration.context",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]",
+        "path": "MedicationAdministration.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.reasonReference",
+        "path": "MedicationAdministration.reasonReference",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage",
+        "path": "MedicationAdministration.dosage",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site",
+        "path": "MedicationAdministration.dosage.site",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding",
+        "path": "MedicationAdministration.dosage.site.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding:SNOMED",
+        "path": "MedicationAdministration.dosage.site.coding",
+        "sliceName": "SNOMED",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "example",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
+          "description": "target site IPS"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding:SNOMED.system",
+        "path": "MedicationAdministration.dosage.site.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.site.coding:SNOMED.code",
+        "path": "MedicationAdministration.dosage.site.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route",
+        "path": "MedicationAdministration.dosage.route",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
+          "description": "EDQM Standards Terms"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:EDQM",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "sliceName": "EDQM",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://standardterms.edqm.eu"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
+          "description": "EDQM Standard Terms"
+        }
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:EDQM.system",
+        "path": "MedicationAdministration.dosage.route.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:EDQM.code",
+        "path": "MedicationAdministration.dosage.route.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:SNOMED",
+        "path": "MedicationAdministration.dosage.route.coding",
+        "sliceName": "SNOMED",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:SNOMED.system",
+        "path": "MedicationAdministration.dosage.route.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.route.coding:SNOMED.code",
+        "path": "MedicationAdministration.dosage.route.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose",
+        "path": "MedicationAdministration.dosage.dose",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "mustSupport": true
+      }
+    ]
+  }
+}
