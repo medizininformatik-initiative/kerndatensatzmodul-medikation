@@ -6,7 +6,7 @@ Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelve
 
 **Abbildung Modul MEDIKATION in ART-DECOR mit Übersicht der Komponenten:** 
 
-{{render:IG_Medikation_KDS_Modul_Uebersicht}}
+{{render:ig-bilder-IG-Medikation-KDS-Modul-Uebersicht}}
 
 In einem [Medikationseintrag](https://art-decor.org/art-decor/decor-datasets--mide-?id=2.16.840.1.113883.3.1937.777.24.1.1&effectiveDate=2018-06-05T12%3A44%3A12&conceptId=2.16.840.1.113883.3.1937.777.24.2.605&conceptEffectiveDate=2019-02-05T16%3A12%3A20&language=de-DE) lassen sich folgende Typen der Dokumentation von Arzneimittelprozessen unterscheiden:
 
@@ -27,7 +27,7 @@ Es stehen entsprechend ihres Anwendungsbereiches drei Teilmodule für die Dokume
 
 **Abbildung Modul MEDIKATION Medikationsliste:** 
 
-{{render:IG_Medikation_KDS_Liste}}
+{{render:ig-bilder-IG-Medikation-KDS-Liste}}
 
 #### Aufnahme- und Entlassmedikation
 
@@ -43,13 +43,13 @@ Zur Dokumentation einer Medikationsanordnung durch medizinisches Personal.
 
 **Abbildung Modul MEDIKATION Medikationsverordnung:** 
 
-{{render:IG_Medikation_KDS_Medikationsverordnung}}
+{{render:ig-bilder-IG-Medikation-KDS-Medikationsverordnung}}
 
 ### Medikationsvergabe
 
 **Abbildung Modul MEDIKATION Medikationsvergabe:**
 
-{{render:IG_Medikation_KDS_Medikationsvergabe}}
+{{render:ig-bilder-IG-Medikation-KDS-Medikationsvergabe}}
 
 Die Medikationsvergabe wird zur Dokumentation einer Einzelvergabe einer Medikation auf Ereignisniveau verwendet, bei dem ein Patient ein Medikament einnimmt oder es ihm auf andere Weise verabreicht wird. Beispielhaft seien hier die Einnahme einer Tablette oder eine langlaufende Infusion genannt. Die Medikationsvergabe ist in jedem Fall mit einem spezifischen Patienten verknüpft und kann darüber hinaus als Ereignis mit einer spezifischen Behandlungsepisode (Fall) und der zugrunde liegenden Medikationsanordnung verknüpft sein.
 Diese Ressource deckt die Verabreichung aller Medikamente (ausgenommen Impfstoffe) ab. Sie wird in erster Linie in der stationären Versorgung verwendet, um die Verabreichung von Medikamenten zu erfassen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Anwendungen usw. Es kann auch in ambulanten Einrichtungen zur Erfassung der Verabreichungen von Medikamenten verwendet werden. In einigen Fällen kann es für die Berichterstattung über die häusliche Gesundheitsfürsorge verwendet werden, z. B. für die Erfassung von selbst verabreichtem oder sogar geräteverabreichtem Insulin [nach http://hl7.org/fhir/medicationadministration.html].
@@ -72,6 +72,6 @@ Die Datensätze im Modul sind so strukturiert, dass die Information entsprechend
 
 Abbildung Kombinationspackungen (nach Anforderung der KBV)
 
-{{render:IG_Medikation_KDS_Kombinationspackungen}}
+{{render:ig-bilder-IG-Medikation-KDS-Kombinationspackungen}}
 
 Kombinationspackungen können auf einfache Weise durch eine hierarchische Schachtelung der Medication über eine Verknüpfung ausgehend von Item.reference auf andere Medication-Instanzen dargestellt werden. Damit würde die „obere“ Medication-Instanz als Packungshierarchie als Container der eigentlichen Medication dienen. Sie enthält auch die entsprechende PZN der Kombinationspackung. Die eigentliche Medikation („Untermedikation") würde als vollständige Medication-Instanzen abgebildet werden (jeweils ohne PZN, vollständige Medikationsdaten mit ASK und ggf. ATC etc).
