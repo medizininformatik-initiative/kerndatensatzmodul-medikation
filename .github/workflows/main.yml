@@ -44,7 +44,7 @@ jobs:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources terminologie/codesystems logical-models
           PATH_TO_EXAMPLES: fsh-generated/resources
           DOTNET_VALIDATION_ENABLED: true
-          JAVA_VALIDATION_ENABLED: true
+          JAVA_VALIDATION_ENABLED: false
           OUTPUT_FORMAT: RAW
 
           # Error @ Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (line 28, col21) : The code "82F2G7BL4E" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#82F2G7BL4E) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://fdasis.nlm.nih.gov#82F2G7BL4E'
