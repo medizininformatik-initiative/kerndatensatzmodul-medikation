@@ -11,6 +11,9 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
 * obeys medication-list-context-1 and medication-list-context-2
+* meta MS
+* meta.source MS
+* meta.profile MS
 * status MS
 * mode MS
 * code MS
@@ -38,7 +41,7 @@ Title: "VS MII Medikation Fallkontext"
 Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-* ^version = "0.1.0"
+//* ^version = "0.1.0"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"

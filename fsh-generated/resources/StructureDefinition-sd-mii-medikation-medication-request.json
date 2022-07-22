@@ -90,6 +90,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.category",
+        "path": "MedicationRequest.category",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.doNotPerform",
         "path": "MedicationRequest.doNotPerform",
         "max": "0"

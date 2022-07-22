@@ -6,7 +6,7 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels oder d
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 //* ^version = "2.0"
 * ^status = #active
-* ^date = "2022-05-18"
+* ^date = "2022-07-13"
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
@@ -16,6 +16,17 @@ Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels oder d
 * meta.profile MS
 * partOf MS
 * status MS
+* category MS
+* category.coding ^slicing.discriminator.type = #pattern
+* category.coding ^slicing.discriminator.path = "$this"
+* category.coding ^slicing.rules = #open
+* category.coding contains
+    usageCategory 0..* and
+    contextCode 0..1
+* category.coding[usageCategory] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/medication-statement-category"
+* category.coding[usageCategory] from http://hl7.org/fhir/ValueSet/medication-statement-category (required)
+* category.coding[contextCode] ^patternCoding.system = "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16"
+* category.coding[contextCode] from https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext (required)
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type

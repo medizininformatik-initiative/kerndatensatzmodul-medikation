@@ -16,6 +16,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * meta.profile MS
 * partOf MS
 * status MS
+* category MS
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type

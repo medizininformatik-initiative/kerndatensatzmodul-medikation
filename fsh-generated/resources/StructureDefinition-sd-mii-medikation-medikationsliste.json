@@ -69,6 +69,21 @@
         ]
       },
       {
+        "id": "List.meta",
+        "path": "List.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "List.meta.source",
+        "path": "List.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "List.meta.profile",
+        "path": "List.meta.profile",
+        "mustSupport": true
+      },
+      {
         "id": "List.status",
         "path": "List.status",
         "mustSupport": true

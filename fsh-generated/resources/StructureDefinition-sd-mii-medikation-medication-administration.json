@@ -95,6 +95,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.category",
+        "path": "MedicationAdministration.category",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.medication[x]",
         "path": "MedicationAdministration.medication[x]",
         "slicing": {

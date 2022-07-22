@@ -16,6 +16,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * meta.source MS
 * meta.profile MS
 * doNotPerform 0..0
+* category MS
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type
