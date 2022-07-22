@@ -149,7 +149,7 @@
             {
               "name": "empty-reason",
               "definition": "http://hl7.org/fhir/SearchParameter/List-empty-reason",
-              "type": "date",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
@@ -650,7 +650,7 @@
             },
             {
               "name": "status",
-              "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-request",
+              "definition": "http://hl7.org/fhir/SearchParameter/medications-status",
               "type": "token",
               "extension": [
                 {
@@ -913,7 +913,7 @@
             {
               "name": "intended-performertype",
               "definition": "http://hl7.org/fhir/SearchParameter/MedicationRequest-intended-performertype",
-              "type": "reference",
+              "type": "token",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
