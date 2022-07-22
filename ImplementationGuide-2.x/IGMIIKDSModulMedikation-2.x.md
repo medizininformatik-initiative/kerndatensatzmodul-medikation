@@ -5,7 +5,7 @@
 | {{render:Warning}} | Dieser Implementation Guide stellt die aktuelle Arbeitsversion des Moduls 'Medikation' dar. Die jeweils für den produktiven Einsatz veröffentlichte Version finden Sie auf [dieser Seite der Medizininformatik-Initiative](https://www.medizininformatik-initiative.de/Kerndatensatz/Modul_Medikation/IGMIIKDSModulMedikation.html).|
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls 'Medikation' der Medizinformatik-Initative.
-Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
+Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung   |   |
 |---------|---|
@@ -22,15 +22,15 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazuhegörigen FHIR-Prof
 Dieser Leitfaden ist im Rahmen der Medizininformatik-Initative erstellt wurden und unterliegt per Governance-Prozess dem Abstimmungsverfahren des Interoperabilitätsforums und der Technischen Komitees von HL7 Deutschland e. V..
 
 ## Ansprechpartner
-* Martin Boeker, Med. Fakultät und Universitätsklinikum der Universität Freiburg
-* Julian Saß, Berlin Institute of Health (BIH)
+* Martin Boeker, Klinikum rechts der Isar, Technische Universität München
+* Julian Saß, Berlin Institute of Health at Charité (BIH)
 * Karoline Buckow, TMF – Technologie- und Methodenplattform
 für die vernetzte medizinische Forschung e.V.
-* Sylvia Thun, Berlin Institute of Health (BIH), Charité Universitätsmedizin
+* Sylvia Thun, Charité – Universitätsmedizin Berlin
 
 Fragen zu der vorliegenden Publikation können jederzeit unter [chat.fhir.org](chat.fhir.org) im Stream 'german/mi-initiative' gestellt werden.
 
-Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets gern entgegengenommen.
+Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues) gern entgegengenommen.
 
 
 ## Autoren (in alphabetischer Reihenfolge)
@@ -42,7 +42,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Heinrich	Lautenbacher (DIFUTURE)
 * Julian Saß (HiGHmed)
 * Karoline Buckow (TMF e.V.)
-* Martin Boeker (MIRACUM)
+* Martin Boeker (DIFUTURE)
 * Matthias Löbe (SMITH)
 * Sebastian Semler (TMF e.V.)
 * Susann Wrobel (SMITH)
@@ -51,7 +51,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' im Simplifier-Projekt stets g
 * Thomas Ganslandt (MIRACUM)
 
 ## Copyright-Hinweis, Nutzungshinweise
-Copyright © 2019: TMF e. V., Charlottenstraße 42, 10117 Berlin
+Copyright © 2019+: TMF e. V., Charlottenstraße 42, 10117 Berlin
 
 Der Inhalt dieser Spezifikation ist öffentlich. Die Nachnutzungs- bzw. Veröffentlichungsansprüche sind nicht beschränkt.
 

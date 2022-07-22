@@ -10,6 +10,28 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 
 | Logischer Datensatz | Beschreibung |
 |--------------|-----------|
+| Medikationsliste | Die Medikationsliste ist eine flache Sammlung von Medikationseinträgen, die ein Patient zu einem bestimmten Zeitpunkt einnimmt, beispielsweise bei Aufnahme oder Entlassung. |
+| Medikationsliste.Identifikation | Business Identifier der Medikationsliste |
+| Medikationsliste.Status | Zeigt den Status der Medikationsliste an |
+| Medikationsliste.Modus | Zeigt den Modus der Mediaktionsliste an - ob es sich um eine Arbeitsliste handelt, die laufend aktualisiert wird, oder um eine Momentaufnahme, beispielsweise die Liste der Medikationseinträge bei Aufnahme oder Entlassung. |
+| Medikationsliste.Typ | Definiert den Typ der Liste - warum diese erstellt wurde. |
+| Medikationsliste.Medikationseintrag | Referenz auf Medikationseintrag |
+| Medikationsverordnung | Dokumentation einer Medikationsanordnung durch medizinisches Personal. |
+| Medikationsverordnung.Identifikation | Identifikator der Medikationsverordnung |
+| Medikationsverordnung.Status | Status der Medikationsverordnung |
+| Medikationsverordnung.Arzneimittel/Wirkstoff/Rezeptur | Die Medikation, die angeordnet wird. |
+| Medikationsverordnung.Dosierung (Freitext) | Textueller Eintrag der Dosierung | 
+| Medikationsverordnung.Dosierung (strukturiert) | Die Dosierung (strukturiert) beschreibt die Einzeldosis oder Dosen eines Medikamentes, welches verabreicht wird oder werden soll. |
+| Medikationsverordnung.Hinweis | Hinweistext zu diesem Medikament |
+| Medikationsverordnung.Behandlungsgrund | Behandlungsgrund kann ein Problem, Symptom oder eine Diagnose (Condition) sein. |
+| Medikationsverordnung.Datum der Verordnung | Datum der Medikationsverordnung |
+| Medikationsverordnung.Ersatzmedikation | Zeigt an, ob die Substitution Teil der Abgabe sein kann oder soll oder nicht. In einigen Fällen muss eine Substitution stattfinden, in anderen Fällen darf sie nicht stattfinden. |
+| Medikationsverordnung.Verordnungsdetails | Ob es sich bei der Anfrage um einen Vorschlag, einen Plan oder einen Auftrag handelt. |
+| Medikationsverordnung.Bezug zum Patient | Ein Link zu einer Ressource, die die Person repräsentiert, an die das Medikament verabreicht werden soll. |
+| Medikationsverordnung.Bezug zum Fall | Der Fall, bei der diese Verordnung erstellt wurde oder mit der die Erstellung dieser Verordnung in engem Zusammenhang steht. |
+| Medikationsverordnung.vorherige Medikationsverordnungen | Ein Link zu einer Ressource, die eine frühere Verschreibung darstellt. |
+| Medikationsverordnung.Kontraindikationen | Weist auf ein tatsächliches oder potenzielles klinisches Problem mit oder zwischen einer oder mehreren aktiven oder vorgeschlagenen klinischen Maßnahmen für einen Patienten hin, z. B. Wechselwirkung zwischen Arzneimitteln, doppelte Therapie, Dosierungswarnung usw. | Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat. |
+| Medikationsverordnung.Autor/Informant der Verordnung | 
 | Medikationseintrag | Dokumentiert die Verschreibung, Gabe oder Medikationsplan zu einem oder mehreren Medikamenten. |
 | Medikationseintrag.Identifikation | Identifikator des Medikationseintrags |
 | Medikationseintrag.Status | Prozess-Status des beschriebenen Medikationsstatus |
@@ -50,6 +72,8 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 | Medikationseintrag.Behandlungsgrund | Behandlungsgrund kann ein Problem, Symptom oder eine Diagnose (Condition) sein. |
 | Medikationseintrag.Bezug zu Verordnung | Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden. |
 | Medikationseintrag.Bezug zu Abgabe | Bezug zu Abgabe |
+| Medikationseintrag.Bezug zum Patient | Die Person, die das Medikament einnimmt/eingesetzt hat. |
+| Medikationseintrag.Bezug zum Fall | Der Besuch, die Aufnahme oder ein anderer Kontakt zwischen Patient und Leistungserbringer, bei dem die Verabreichung des Medikaments erfolgt ist. |
 | Medikationseintrag.Datum des Eintrags | Datum des Dokumentationseintrages |
 | Medikationseintrag.Autor/Informant des Eintrags | Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereitgestellt hat. |
 | Medikationseintrag.Autor/Informant des Eintrags.Organisationsname | Name der Organisation |
