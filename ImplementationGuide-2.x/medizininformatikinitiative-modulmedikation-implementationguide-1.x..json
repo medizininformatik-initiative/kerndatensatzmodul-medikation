@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "ig-mii-medikation-version-2.0",
+  "id": "ig-mii-medikation-2.0",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/ig-version-2.0",
   "version": "2.0.0",
   "name": "IG_MII_Medikation_2_0",
@@ -11,6 +11,424 @@
     "4.0.1"
   ],
   "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-medication"
+        },
+        "name": "SD MII Medikation Medication",
+        "description": "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-medication-administration"
+        },
+        "name": "SD MII Medikation MedicationAdministration",
+        "description": "Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-medication-request"
+        },
+        "name": "SD MII Medikation MedicationRequest",
+        "description": "Dieses Profil beschreibt die Verordnung einer Medikation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-medication-statement"
+        },
+        "name": "SD MII Medikation MedicationStatement",
+        "description": "Dieses Profil beschreibt die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-medikationsliste"
+        },
+        "name": "SD MII Medikation Medikationsliste",
+        "description": "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-wirkstoffrelation"
+        },
+        "name": "SD MII Medikation Wirkstoffrelation",
+        "description": "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/sd-mii-medikation-wirkstofftyp"
+        },
+        "name": "SD MII Medikation Wirkstofftyp",
+        "description": "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/LogicalModelMedikation"
+        },
+        "name": "LogicalModel - Medikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-medikation-fallkontext"
+        },
+        "name": "VS MII Medikation Fallkontext",
+        "description": "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-mii-medikation-wirkstofftyp"
+        },
+        "name": "VS MII Medikation Wirkstofftypen",
+        "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-mii-medikation-wirkstofftyp"
+        },
+        "name": "CS MII Medikation Wirkstofftyp",
+        "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationASS100"
+        },
+        "name": "ExampleMedicationASS100",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/ExampleMedicationAdministration"
+        },
+        "name": "ExampleMedicationAdministration",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationCaelyx"
+        },
+        "name": "ExampleMedicationCaelyx",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationCalcium"
+        },
+        "name": "ExampleMedicationCalcium",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationDolomo"
+        },
+        "name": "ExampleMedicationDolomo",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationDolomoNacht"
+        },
+        "name": "ExampleMedicationDolomoNacht",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationDolomoTag"
+        },
+        "name": "ExampleMedicationDolomoTag",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationGlucoseloesung"
+        },
+        "name": "ExampleMedicationGlucoseloesung",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "List/ExampleMedicationList-1"
+        },
+        "name": "ExampleMedicationList-1",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+      },
+      {
+        "reference": {
+          "reference": "List/ExampleMedicationList-2"
+        },
+        "name": "ExampleMedicationList-2",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationPropofol"
+        },
+        "name": "ExampleMedicationPropofol",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/ExampleMedicationRequestCaelyx"
+        },
+        "name": "ExampleMedicationRequestCaelyx",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationRezeptur"
+        },
+        "name": "ExampleMedicationRezeptur",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatement"
+        },
+        "name": "ExampleMedicationStatement",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatementCaelyx"
+        },
+        "name": "ExampleMedicationStatementCaelyx",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatementIntravenousUse"
+        },
+        "name": "ExampleMedicationStatementIntravenousUse",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatementOffset"
+        },
+        "name": "ExampleMedicationStatementOffset",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/ExampleMedicationStatementPeriodischesIntervall"
+        },
+        "name": "ExampleMedicationStatementPeriodischesIntervall",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      },
+      {
+        "reference": {
+          "reference": "Medication/ExampleMedicationThiotepa"
+        },
+        "name": "ExampleMedicationThiotepa",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/ExampleProcedure"
+        },
+        "name": "ExampleProcedure",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/cps-mii-medikation-capabilitystatement-2x"
+        },
+        "name": "cps-mii-medikation-capabilitystatement-2x",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-list-mode"
+        },
+        "name": "sp-mii-medikation-list-mode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medication-dosage-route"
+        },
+        "name": "sp-mii-medikation-medication-dosage-route",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medication-dosage-site"
+        },
+        "name": "sp-mii-medikation-medication-dosage-site",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medication-ingredient-strength-denominator"
+        },
+        "name": "sp-mii-medikation-medication-ingredient-strength-denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medication-ingredient-strength-numerator"
+        },
+        "name": "sp-mii-medikation-medication-ingredient-strength-numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medication-reasonreference"
+        },
+        "name": "sp-mii-medikation-medication-reasonreference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationadministration-dose"
+        },
+        "name": "sp-mii-medikation-medicationadministration-dose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationadministration-ratequantity"
+        },
+        "name": "sp-mii-medikation-medicationadministration-ratequantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationadministration-rateratio-denominator"
+        },
+        "name": "sp-mii-medikation-medicationadministration-rateratio-denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationadministration-rateratio-numerator"
+        },
+        "name": "sp-mii-medikation-medicationadministration-rateratio-numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-dosequantity"
+        },
+        "name": "sp-mii-medikation-medicationrequest-dosequantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-doserange-high"
+        },
+        "name": "sp-mii-medikation-medicationrequest-doserange-high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-doserange-low"
+        },
+        "name": "sp-mii-medikation-medicationrequest-doserange-low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-ratequantity"
+        },
+        "name": "sp-mii-medikation-medicationrequest-ratequantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-raterange-high"
+        },
+        "name": "sp-mii-medikation-medicationrequest-raterange-high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-raterange-low"
+        },
+        "name": "sp-mii-medikation-medicationrequest-raterange-low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-rateratio-denominator"
+        },
+        "name": "sp-mii-medikation-medicationrequest-rateratio-denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationrequest-rateratio-numerator"
+        },
+        "name": "sp-mii-medikation-medicationrequest-rateratio-numerator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-dosequantity"
+        },
+        "name": "sp-mii-medikation-medicationstatement-dosequantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-doserange-high"
+        },
+        "name": "sp-mii-medikation-medicationstatement-doserange-high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-doserange-low"
+        },
+        "name": "sp-mii-medikation-medicationstatement-doserange-low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-ratequantity"
+        },
+        "name": "sp-mii-medikation-medicationstatement-ratequantity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-raterange-high"
+        },
+        "name": "sp-mii-medikation-medicationstatement-raterange-high",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-raterange-low"
+        },
+        "name": "sp-mii-medikation-medicationstatement-raterange-low",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-rateratio-denominator"
+        },
+        "name": "sp-mii-medikation-medicationstatement-rateratio-denominator",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/sp-mii-medikation-medicationstatement-rateratio-numerator"
+        },
+        "name": "sp-mii-medikation-medicationstatement-rateratio-numerator",
+        "exampleBoolean": false
+      }
+    ],
     "page": {
       "nameUrl": "ImplementationGuide-2.x/IGMIIKDSModulMedikation-2.x.md",
       "title": "IG MII KDS Modul Medikation",
