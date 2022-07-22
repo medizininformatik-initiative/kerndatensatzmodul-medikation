@@ -13,13 +13,13 @@ https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Structure
 
 **Differential**
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileMedicationRequestMedikamentenverordnung, diff}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest, diff}}
 
 ---
 
 **Snapshot**
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileMedicationRequestMedikamentenverordnung, snapshot}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest, snapshot}}
 
 ---
 

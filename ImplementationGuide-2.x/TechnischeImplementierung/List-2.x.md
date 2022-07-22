@@ -35,17 +35,17 @@ https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Structure
 
 **Differential**
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileListMedikationsliste, diff}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste, diff}}
 
 ---
 
 **Snapshot**
 
-{{tree:MedizininformatikInitiative-ModulMedikation/ProfileListMedikationsliste, snapshot}}
+{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste, snapshot}}
 
 ---
 
-{{render:ValueSetCaseContextCodes}}
+{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext}}
 
 ---
 
