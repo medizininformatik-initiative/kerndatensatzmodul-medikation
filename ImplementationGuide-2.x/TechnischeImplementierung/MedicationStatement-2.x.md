@@ -78,6 +78,7 @@ MedicationStatement-Beispiel für periodisches Intervall:
 {{json:ExampleMedicationStatementPeriodischesIntervall}}
 
 <br>
+
 Beispiel einer MedicationStatement-Ressource abgeleitet vom OPS-Code *6-007.nm*: Das MedicationStatement enthält die Referenzen auf Patient, Prozedur und Medikation. Der OPS-Code wird über das [Modul Prozedur](https://simplifier.net/medizininformatikinitiative-modulprozeduren) abgebildet. Die Referenz auf die Procedure-Ressource erfolgt über das MedicationStatement.partOf-Element. Der Vollständigkeit halber sind neben der MedicationStatement-Ressource nachfolgend auch die referenzierten Medication- und Procedure-Ressourcen aufgeführt.
 
 {{json:ExampleMedicationStatementIntravenousUse}}
