@@ -30,7 +30,7 @@ Es ist zu beachten, dass das Logical Model rein auf die Abbildung der Dateneleme
 | Medikationsverordnung.Bezug zum Patient | Ein Link zu einer Ressource, die die Person repräsentiert, an die das Medikament verabreicht werden soll. |
 | Medikationsverordnung.Bezug zum Fall | Der Fall, bei der diese Verordnung erstellt wurde oder mit der die Erstellung dieser Verordnung in engem Zusammenhang steht. |
 | Medikationsverordnung.vorherige Medikationsverordnungen | Ein Link zu einer Ressource, die eine frühere Verschreibung darstellt. |
-| Medikationsverordnung.Kontraindikationen | Weist auf ein tatsächliches oder potenzielles klinisches Problem mit oder zwischen einer oder mehreren aktiven oder vorgeschlagenen klinischen Maßnahmen für einen Patienten hin, z. B. Wechselwirkung zwischen Arzneimitteln, doppelte Therapie, Dosierungswarnung usw. | Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat. |
+| Medikationsverordnung.Kontraindikationen | Weist auf ein tatsächliches oder potenzielles klinisches Problem mit oder zwischen einer oder mehreren aktiven oder vorgeschlagenen klinischen Maßnahmen für einen Patienten hin, z. B. Wechselwirkung zwischen Arzneimitteln, doppelte Therapie, Dosierungswarnung usw. |
 | Medikationsverordnung.Autor/Informant der Verordnung | 
 | Medikationseintrag | Dokumentiert die Verschreibung, Gabe oder Medikationsplan zu einem oder mehreren Medikamenten. |
 | Medikationseintrag.Identifikation | Identifikator des Medikationseintrags |
