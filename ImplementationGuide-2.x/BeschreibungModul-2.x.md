@@ -31,11 +31,11 @@ Es stehen entsprechend ihres Anwendungsbereiches drei Teilmodule für die Dokume
 
 #### Aufnahme- und Entlassmedikation
 
-Die Art eines Medikationseintrages kann durch folgende Flags weiter spezifiziert werden. Die Flags werden jeweils an die Medikationseinträge verknüpft (und nicht an eine zusammenfassende Liste, s. u.). 
+Die Art eines Medikationseintrages kann durch folgende Codes weiter spezifiziert werden. Die Flags werden jeweils an die Medikationseinträge verknüpft und an eine zusammenfassende Liste, s. u.). 
 
-* Aufnahmemedikation    `IHE Deutschland Fallkontext|E210`
-* Entlassmedikation     `IHE Deutschland Fallkontext|E230`
-* Stationäre Medikation `IHE Deutschland Fallkontext|E200`
+* Aufnahmemedikation    `IHE Deutschland Fallkontext|E210 "stationäre Aufnahme"`
+* Entlassmedikation     `IHE Deutschland Fallkontext|E230 "stationäre Entlassung"`
+* Stationäre Medikation `IHE Deutschland Fallkontext|E200 "stationärer Aufenthalt"`
 
 
 ### Medikationsverordnung
