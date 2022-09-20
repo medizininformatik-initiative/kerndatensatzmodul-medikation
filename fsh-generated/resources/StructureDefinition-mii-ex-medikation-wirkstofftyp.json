@@ -4,7 +4,41 @@
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
   "version": "2.0.0-ballot",
   "name": "MII_EX_Medikation_Wirkstofftyp",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_EX_Medikation_IngredientType"
+          }
+        ]
+      }
+    ]
+  },
   "title": "MII EX Medikation Wirkstofftyp",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII EX Medikation Ingredient Type"
+          }
+        ]
+      }
+    ]
+  },
   "status": "active",
   "experimental": false,
   "publisher": "Medizininformatik Initiative",
@@ -19,6 +53,23 @@
     }
   ],
   "description": "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Extension to differentiate the type of ingredient into general, exact or combination ingredient."
+          }
+        ]
+      }
+    ]
+  },
   "fhirVersion": "4.0.1",
   "mapping": [
     {

@@ -3,7 +3,9 @@ Id: mii-ex-medikation-wirkstofftyp
 Title: "MII EX Medikation Wirkstofftyp"
 Description: "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_EX_Medikation_IngredientType)
+* insert Translation(^title, en-US, MII EX Medikation Ingredient Type)
+* insert Translation(^description, en-US, Extension to differentiate the type of ingredient into general\, exact or combination ingredient.)
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url

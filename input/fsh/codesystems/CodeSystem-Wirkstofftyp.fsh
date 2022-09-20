@@ -5,7 +5,7 @@ Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substan
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
 * insert Translation(^name, en-US, MII_CS_Medikation_IngredientType)
-* insert Translation(^title, en-US, MII CS Medikation IngredientType)
+* insert Translation(^title, en-US, MII CS Medikation Ingredient Type)
 * insert Translation(^description, en-US, Codes for differentiating ingredients between exact substance e.g. salt\, ester\, general normalized substance and combination code for several active ingredients.)
 * ^status = #active
 * ^experimental = false

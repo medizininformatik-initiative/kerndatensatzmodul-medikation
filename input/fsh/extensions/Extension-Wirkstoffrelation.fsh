@@ -3,7 +3,9 @@ Id: mii-ex-medikation-wirkstoffrelation
 Title: "MII EX Medikation Wirkstoffrelation"
 Description: "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_EX_Medikation_IngredientRelation)
+* insert Translation(^title, en-US, MII EX Medikation Ingredient Relation)
+* insert Translation(^description, en-US, The extension enables the assignment of an exact substance e.g. salt\, ester to a general substance.)
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
