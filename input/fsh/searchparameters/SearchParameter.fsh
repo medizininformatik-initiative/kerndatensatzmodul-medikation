@@ -1,9 +1,9 @@
-Instance: sp-mii-medikation-medication-ingredient-strength-numerator
+Instance: mii-sp-medikation-medication-ingredient-strength-numerator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_Medication_Ingredient_Strength_Numerator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_Ingredient_Strength_Numerator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -18,12 +18,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medication-ingredient-strength-denominator
+Instance: mii-sp-medikation-medication-ingredient-strength-denominator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_Medication_Ingredient_Strength_Denominator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_Ingredient_Strength_Denominator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -38,12 +38,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medication-reasonreference
+Instance: mii-sp-medikation-medication-reasonreference
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-ReasonReference"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_Medication_ReasonReference"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_ReasonReference"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -57,12 +57,12 @@ Usage: #definition
 * target[+] = #Observation
 * target[+] = #DiagnosticReport
 
-Instance: sp-mii-medikation-medication-dosage-site
+Instance: mii-sp-medikation-medication-dosage-site
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageSite"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_Medication_DosageSite"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_DosageSite"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -78,12 +78,12 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #above
 
-Instance: sp-mii-medikation-medication-dosage-route
+Instance: mii-sp-medikation-medication-dosage-route
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageRoute"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_Medication_DosageRoute"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_DosageRoute"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -99,12 +99,12 @@ Usage: #definition
 * modifier[+] = #below
 * modifier[+] = #above
 
-Instance: sp-mii-medikation-medicationstatement-doserange-low
+Instance: mii-sp-medikation-medicationstatement-doserange-low
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_DoseRangeLow"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_DoseRangeLow"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -119,12 +119,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-doserange-high
+Instance: mii-sp-medikation-medicationstatement-doserange-high
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeHigh"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_DoseRangeHigh"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_DoseRangeHigh"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -139,12 +139,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-dosequantity
+Instance: mii-sp-medikation-medicationstatement-dosequantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseQuantity"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_DoseQuantity"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_DoseQuantity"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -159,12 +159,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-rateratio-numerator
+Instance: mii-sp-medikation-medicationstatement-rateratio-numerator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_RateRatioNumerator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRatioNumerator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -179,12 +179,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-rateratio-denominator
+Instance: mii-sp-medikation-medicationstatement-rateratio-denominator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioDenominator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_RateRatioDenominator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRatioDenominator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -199,12 +199,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-raterange-low
+Instance: mii-sp-medikation-medicationstatement-raterange-low
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeLow"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_RateRangeLow"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRangeLow"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -219,12 +219,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-raterange-high
+Instance: mii-sp-medikation-medicationstatement-raterange-high
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeHigh"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_RateRangeHigh"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRangeHigh"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -239,12 +239,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationstatement-ratequantity
+Instance: mii-sp-medikation-medicationstatement-ratequantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateQuantity"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationStatement_RateQuantity"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateQuantity"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -259,12 +259,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationadministration-dose
+Instance: mii-sp-medikation-medicationadministration-dose
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-Dose"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationAdministration_Dose"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationAdministration_Dose"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -279,12 +279,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationadministration-rateratio-numerator
+Instance: mii-sp-medikation-medicationadministration-rateratio-numerator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationAdministration_RateRatioNumerator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationAdministration_RateRatioNumerator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -299,12 +299,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationadministration-rateratio-denominator
+Instance: mii-sp-medikation-medicationadministration-rateratio-denominator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationAdministration_RateRatioDenominator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationAdministration_RateRatioDenominator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -319,12 +319,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationadministration-ratequantity
+Instance: mii-sp-medikation-medicationadministration-ratequantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateQuantity"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationAdministration_RateQuantity"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationAdministration_RateQuantity"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -339,12 +339,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-doserange-low
+Instance: mii-sp-medikation-medicationrequest-doserange-low
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeLow"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_DoseRangeLow"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_DoseRangeLow"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -359,12 +359,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-doserange-high
+Instance: mii-sp-medikation-medicationrequest-doserange-high
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeHigh"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_DoseRangeHigh"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_DoseRangeHigh"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -379,12 +379,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-dosequantity
+Instance: mii-sp-medikation-medicationrequest-dosequantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseQuantity"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_DoseQuantity"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_DoseQuantity"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -399,12 +399,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-rateratio-numerator
+Instance: mii-sp-medikation-medicationrequest-rateratio-numerator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioNumerator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_RateRatioNumerator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_RateRatioNumerator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -419,12 +419,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-rateratio-denominator
+Instance: mii-sp-medikation-medicationrequest-rateratio-denominator
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioDenominator"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_RateRatioDenominator"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_RateRatioDenominator"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -439,12 +439,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-raterange-low
+Instance: mii-sp-medikation-medicationrequest-raterange-low
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeLow"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_RateRangeLow"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_RateRangeLow"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -459,12 +459,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-raterange-high
+Instance: mii-sp-medikation-medicationrequest-raterange-high
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeHigh"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_RateRangeHigh"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_RateRangeHigh"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -479,12 +479,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-medicationrequest-ratequantity
+Instance: mii-sp-medikation-medicationrequest-ratequantity
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateQuantity"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_MedicationRequest_RateQuantity"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationRequest_RateQuantity"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"
@@ -499,12 +499,12 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
-Instance: sp-mii-medikation-list-mode
+Instance: mii-sp-medikation-list-mode
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/List-Mode"
-//* version = "0.1.0"
-* name = "SP_MII_Medikation_List_Mode"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_List_Mode"
 * status = #draft
 * experimental = false
 * date = "2022-06-28"

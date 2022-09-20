@@ -1,7 +1,12 @@
-Logical: LogicalModelMedikation
+Logical: MII_LM_Medikation
 Parent: Element
-Id: LogicalModelMedikation
-Title: "LogicalModel - Medikation"
+Id: mii-lm-medikation
+Title: "MII LM Medikation"
+Description: "MII LogicalModel Modul Medikation"
+* insert Translation(^name, en-US, MII_LM_Medikation)
+* insert Translation(^title, en-US, MII LM Medikation)
+* insert Translation(^description, en-US, MII LogicalModel Module Medikation)
+* insert Publisher
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"
 * . ^short = "Das Basismodul Medikation enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben"
 * Medikationsliste 0..* BackboneElement "Medikationsliste" "Die Medikationsliste ist eine flache Sammlung von Medikationseinträgen, die ein Patient zu einem bestimmten Zeitpunkt einnimmt, beispielsweise bei Aufnahme oder Entlassung."

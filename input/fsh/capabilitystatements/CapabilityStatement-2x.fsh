@@ -30,12 +30,12 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 * rest.resource[=].searchParam[=].extension[0].url = $exp
 * rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
 
-Instance: cps-mii-medikation-capabilitystatement-2x
+Instance: mii-cps-medikation-capabilitystatement-2x
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
-* name = "CpS_MII_Medikation_CapabilityStatement_2x"
-* title = "CpS MII Medikation CapabilityStatement"
+* name = "MII_CPS_Medikation_CapabilityStatement_2x"
+* title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
 * date = "2022-07-13"

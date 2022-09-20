@@ -1,6 +1,6 @@
-Extension: SD_MII_Medikation_Wirkstoffrelation
-Id: sd-mii-medikation-wirkstoffrelation
-Title: "SD MII Medikation Wirkstoffrelation"
+Extension: MII_EX_Medikation_Wirkstoffrelation
+Id: mii-ex-medikation-wirkstoffrelation
+Title: "MII EX Medikation Wirkstoffrelation"
 Description: "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
 //* ^version = "2.0"

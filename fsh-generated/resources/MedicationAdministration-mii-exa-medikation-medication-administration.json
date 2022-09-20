@@ -1,0 +1,51 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "mii-exa-medikation-medication-administration",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "value": 85,
+      "code": "mg",
+      "system": "http://unitsofmeasure.org",
+      "unit": "mg"
+    },
+    "rateRatio": {
+      "denominator": {
+        "value": 1,
+        "code": "h",
+        "system": "http://unitsofmeasure.org",
+        "unit": "hour"
+      },
+      "numerator": {
+        "value": 250,
+        "code": "mL",
+        "system": "http://unitsofmeasure.org",
+        "unit": "milliliter"
+      }
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "20045000",
+          "system": "http://standardterms.edqm.eu",
+          "display": "Intravenous use"
+        }
+      ]
+    }
+  },
+  "effectivePeriod": {
+    "end": "2020-01-06T11:20:00.000+00:00",
+    "start": "2020-01-06T10:20:00.000+00:00"
+  },
+  "medicationReference": {
+    "reference": "Medication/mii-exa-medikation-medication-rezeptur"
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-medikation-medicationrequest-doserange-high",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeHigh",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "MII_SP_Medikation_MedicationRequest_DoseRangeHigh",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+  "code": "doserange-high",
+  "base": [
+    "MedicationRequest"
+  ],
+  "type": "quantity",
+  "expression": "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

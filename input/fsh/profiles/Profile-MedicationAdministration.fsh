@@ -1,15 +1,15 @@
-Profile: SD_MII_Medikation_MedicationAdministration
+Profile: MII_PR_Medikation_MedicationAdministration
 Parent: MedicationAdministration
-Id: sd-mii-medikation-medication-administration
-Title: "SD MII Medikation MedicationAdministration"
+Id: mii-pr-medikation-medication-administration
+Title: "MII PR Medikation MedicationAdministration"
 Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_PR_Medikation_MedicationAdministration)
+* insert Translation(^title, en-US, MII PR Medikation MedicationAdministration)
+* insert Translation(^description, en-US, This profile describes medication administrations\, including self-administration of oral medications\, injections\, intravenous administrations\, etc.)
 * ^status = #active
 * ^date = "2022-05-18"
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
+* insert Publisher
 * id MS
 * meta MS
 * meta.source MS

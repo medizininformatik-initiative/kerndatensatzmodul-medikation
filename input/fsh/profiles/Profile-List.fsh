@@ -1,15 +1,15 @@
 
-Profile: SD_MII_Medikation_Medikationsliste
+Profile: MII_PR_Medikation_Medikationsliste
 Parent: List
-Id: sd-mii-medikation-medikationsliste
-Title: "SD MII Medikation Medikationsliste"
+Id: mii-pr-medikation-medikationsliste
+Title: "MII PR Medikation Medikationsliste"
 Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
-//* ^version = "0.1.0"
+* insert Translation(^name, en-US, MII_PR_Medikation_Medicationlist)
+* insert Translation(^title, en-US, MII PR Medikation Medicationlist)
+* insert Translation(^description, en-US, List of discrete medications e.g. for documentation of admission or discharge medication.)
 * ^status = #draft
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
+* insert Publisher
 * obeys medication-list-context-1 and medication-list-context-2
 * meta MS
 * meta.source MS
@@ -24,7 +24,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * code.coding[medCode] MS
 * code.coding[contextCode] MS
 * code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
-* code.coding[contextCode] from VS_MII_Medikation_Fallkontext (required)
+* code.coding[contextCode] from mii-vs-medikation-fallkontext (required)
 * subject MS
 * subject only Reference(Patient)
 * encounter MS
@@ -33,11 +33,11 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * entry.flag ..0
 * entry.deleted ..0
 * entry.item MS
-* entry.item only Reference(SD_MII_Medikation_MedicationStatement)
+* entry.item only Reference(mii-pr-medikation-medication-statement)
 
-ValueSet: VS_MII_Medikation_Fallkontext
-Id: vs-mii-medikation-fallkontext
-Title: "VS MII Medikation Fallkontext"
+ValueSet: MII_VS_Medikation_Fallkontext
+Id: mii-vs-medikation-fallkontext
+Title: "MII VS Medikation Fallkontext"
 Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

@@ -1,15 +1,15 @@
-Profile: SD_MII_Medikation_MedicationRequest
+Profile: MII_PR_Medikation_MedicationRequest
 Parent: MedicationRequest
-Id: sd-mii-medikation-medication-request
-Title: "SD MII Medikation MedicationRequest"
+Id: mii-pr-medikation-medication-request
+Title: "MII PR Medikation MedicationRequest"
 Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
-//* ^version = "0.1.0"
+* insert Translation(^name, en-US, MII_PR_Medikation_MedicationRequest)
+* insert Translation(^title, en-US, MII PR Medikation MedicationRequest)
+* insert Translation(^description, en-US, An order or request for both supply of the medication and the instructions for administration of the medication to a patient.)
 * ^status = #draft
 * ^date = "2022-05-18"
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
+* insert Publisher
 * . ^comment = "MI-I Medikamentenverordnung"
 * id MS
 * meta MS

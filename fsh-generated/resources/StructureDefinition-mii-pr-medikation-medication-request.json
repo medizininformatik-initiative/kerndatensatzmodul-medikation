@@ -1,0 +1,319 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-medikation-medication-request",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Medications"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
+  "version": "2.0.0-ballot",
+  "name": "MII_PR_Medikation_MedicationRequest",
+  "_name": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII_PR_Medikation_MedicationRequest"
+          }
+        ]
+      }
+    ]
+  },
+  "title": "MII PR Medikation MedicationRequest",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR Medikation MedicationRequest"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "draft",
+  "date": "2022-05-18",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Profil beschreibt die Verordnung einer Medikation.",
+  "_description": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "An order or request for both supply of the medication and the instructions for administration of the medication to a patient."
+          }
+        ]
+      }
+    ]
+  },
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "script10.6",
+      "uri": "http://ncpdp.org/SCRIPT10_6",
+      "name": "Mapping to NCPDP SCRIPT 10.6"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationRequest",
+        "path": "MedicationRequest",
+        "comment": "MI-I Medikamentenverordnung"
+      },
+      {
+        "id": "MedicationRequest.id",
+        "path": "MedicationRequest.id",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.meta",
+        "path": "MedicationRequest.meta",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.meta.source",
+        "path": "MedicationRequest.meta.source",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.meta.profile",
+        "path": "MedicationRequest.meta.profile",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.category",
+        "path": "MedicationRequest.category",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.doNotPerform",
+        "path": "MedicationRequest.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.medication[x]",
+        "path": "MedicationRequest.medication[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationReference",
+        "path": "MedicationRequest.medication[x]",
+        "sliceName": "medicationReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Medication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
+        "path": "MedicationRequest.medication[x]",
+        "sliceName": "medicationCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding",
+        "path": "MedicationRequest.medication[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "Pharmazentralnummer",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/ifa/pzn"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "atcClassDe",
+        "short": "ATC Klassifikation deutsche Version",
+        "definition": "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        },
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://fhir.de/ValueSet/bfarm/atc"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn",
+        "path": "MedicationRequest.medication[x].coding",
+        "sliceName": "atcClassEn",
+        "short": "Anatomical Therapeutic Chemical Classification System",
+        "definition": "ATC Classification International WHO Version",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://www.whocc.no/atc"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn.system",
+        "path": "MedicationRequest.medication[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn.code",
+        "path": "MedicationRequest.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.text",
+        "path": "MedicationRequest.medication[x].text",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.subject",
+        "path": "MedicationRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
+            ],
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.encounter",
+        "path": "MedicationRequest.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction",
+        "path": "MedicationRequest.dosageInstruction",
+        "mustSupport": true
+      }
+    ]
+  }
+}

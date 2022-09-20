@@ -1,15 +1,15 @@
-Profile: SD_MII_Medikation_Medication
+Profile: MII_PR_Medikation_Medication
 Parent: Medication
-Id: sd-mii-medikation-medication
-Title: "SD MII Medikation Medication"
+Id: mii-pr-medikation-medication
+Title: "MII PR Medikation Medication"
 Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_PR_Medikation_Medication)
+* insert Translation(^title, en-US, MII PR Medikation Medication)
+* insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * ^status = #active
 * ^date = "2022-05-18"
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
+* insert Publisher
 * . ^comment = "MI-I Medikation"
 * id MS
 * meta MS

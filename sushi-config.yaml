@@ -3,7 +3,7 @@ fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
 id: de.medizininformatikinitiative.kerndatensatz.medikation
-name: IG_MII_Medikation_2_0
+name: MII_IG_Medikation_2_0
 status: active
 version: "2.0.0-ballot"
 copyrightYear: 2019+

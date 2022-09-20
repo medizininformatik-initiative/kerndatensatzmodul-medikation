@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-medikation-medicationstatement-doserange-low",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "MII_SP_Medikation_MedicationStatement_DoseRangeLow",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low",
+  "code": "doserange-low",
+  "base": [
+    "MedicationStatement"
+  ],
+  "type": "quantity",
+  "expression": "MedicationStatement.dosage.doseAndRate.doseRange.low",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

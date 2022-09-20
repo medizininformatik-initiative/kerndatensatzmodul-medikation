@@ -1,0 +1,34 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "mii-sp-medikation-medicationstatement-rateratio-numerator",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "name": "MII_SP_Medikation_MedicationStatement_RateRatioNumerator",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-06-28",
+  "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator",
+  "code": "rateratio-numerator",
+  "base": [
+    "MedicationStatement"
+  ],
+  "type": "quantity",
+  "expression": "MedicationStatement.dosage.doseAndRate.rateRatio.numerator",
+  "comparator": [
+    "eq",
+    "gt",
+    "lt",
+    "ge",
+    "le"
+  ]
+}

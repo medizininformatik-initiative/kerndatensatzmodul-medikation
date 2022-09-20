@@ -1,15 +1,15 @@
-Profile: SD_MII_Medikation_MedicationStatement
+Profile: MII_PR_Medikation_MedicationStatement
 Parent: MedicationStatement
-Id: sd-mii-medikation-medication-statement
-Title: "SD MII Medikation MedicationStatement"
-Description: "Dieses Profil beschreibt die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt."
+Id: mii-pr-medikation-medication-statement
+Title: "MII PR Medikation MedicationStatement"
+Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_PR_Medikation_MedicationStatement)
+* insert Translation(^title, en-US, MII PR Medikation MedicationStatement)
+* insert Translation(^description, en-US, A record of a medication that is being consumed by a patient.)
 * ^status = #active
 * ^date = "2022-07-13"
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
+* insert Publisher
 * id MS
 * meta MS
 * meta.source MS

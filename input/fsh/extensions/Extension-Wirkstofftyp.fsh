@@ -1,6 +1,6 @@
-Extension: SD_MII_Medikation_Wirkstofftyp
-Id: sd-mii-medikation-wirkstofftyp
-Title: "SD MII Medikation Wirkstofftyp"
+Extension: MII_EX_Medikation_Wirkstofftyp
+Id: mii-ex-medikation-wirkstofftyp
+Title: "MII EX Medikation Wirkstofftyp"
 Description: "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 //* ^version = "2.0"

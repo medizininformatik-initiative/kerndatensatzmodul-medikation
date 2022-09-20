@@ -1,15 +1,15 @@
-CodeSystem: CS_MII_Medikation_Wirkstofftyp
-Id: cs-mii-medikation-wirkstofftyp
-Title: "CS MII Medikation Wirkstofftyp"
+CodeSystem: MII_CS_Medikation_Wirkstofftyp
+Id: mii-cs-medikation-wirkstofftyp
+Title: "MII CS Medikation Wirkstofftyp"
 Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
-//* ^version = "2.0"
+* insert Translation(^name, en-US, MII_CS_Medikation_IngredientType)
+* insert Translation(^title, en-US, MII CS Medikation IngredientType)
+* insert Translation(^description, en-US, Codes for differentiating ingredients between exact substance e.g. salt\, ester\, general normalized substance and combination code for several active ingredients.)
 * ^status = #active
 * ^experimental = false
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de"
+* insert Publisher
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
 * ^content = #complete
