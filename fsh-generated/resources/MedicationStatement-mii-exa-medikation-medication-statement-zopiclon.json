@@ -1,0 +1,119 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mii-exa-medikation-medication-statement-zopiclon",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "status": "intended",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "N05CF01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+      }
+    ],
+    "text": "Zopiclon 3,75mg"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectivePeriod": {
+    "start": "2022-02-02T12:22:00+00:00"
+  },
+  "dosage": [
+    {
+      "text": "Zopiclon 3,75mg Tabl. 0-0-0-1",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "08:00:00"
+          ]
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 0,
+            "code": "{Stueck}",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ]
+    },
+    {
+      "text": "Zopiclon 3,75mg Tabl. 0-0-0-1",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "12:00:00"
+          ]
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 0,
+            "code": "{Stueck}",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ]
+    },
+    {
+      "text": "Zopiclon 3,75mg Tabl. 0-0-0-1",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "18:00:00"
+          ]
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 0,
+            "code": "{Stueck}",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ]
+    },
+    {
+      "text": "Zopiclon 3,75mg Tabl. 0-0-0-1",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "22:00:00"
+          ]
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "code": "{Stueck}",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ]
+    }
+  ]
+}

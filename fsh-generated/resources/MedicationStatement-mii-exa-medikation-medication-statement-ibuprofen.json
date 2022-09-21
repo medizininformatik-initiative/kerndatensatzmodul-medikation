@@ -1,0 +1,51 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "mii-exa-medikation-medication-statement-ibuprofen",
+  "meta": {
+    "profile": [
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+    ]
+  },
+  "status": "intended",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "M01AE01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+      }
+    ],
+    "text": "Ibuprofen 400mg"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectivePeriod": {
+    "start": "2022-02-02T12:22:00+00:00"
+  },
+  "dosage": [
+    {
+      "text": "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2022-02-02T12:22:00+00:00"
+          },
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "asNeededBoolean": true,
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "code": "{Stueck}",
+            "system": "http://unitsofmeasure.org",
+            "unit": "1"
+          }
+        }
+      ]
+    }
+  ]
+}

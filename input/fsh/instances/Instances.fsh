@@ -313,7 +313,7 @@ Usage: #example
 * status = #current
 * mode = #snapshot
 * title = "Aufnahmemedikation"
-* code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
+* code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210
 * subject = Reference(Patient/example)
 * entry[+].item = Reference(MedicationStatement/example)
@@ -325,7 +325,142 @@ Usage: #example
 * status = #current
 * mode = #working
 * title = "Aktuelle medikamentöse Therapie"
-* code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
+* code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200
 * subject = Reference(Patient/example)
 * entry[+].item = Reference(MedicationStatement/example)
+
+Instance: mii-exa-medikation-medication-statement-concor
+InstanceOf: mii-pr-medikation-medication-statement
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+* status = #intended
+* medicationCodeableConcept = $cs-atc#C07AB07
+* medicationCodeableConcept.text = "Concor 2,5mg"
+* subject = Reference(Patient/example)
+* effectivePeriod.start = "2022-02-02T12:22:00+00:00"
+* dosage[0].text = "Concor 2,5mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "08:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "12:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "18:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "22:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+
+Instance: mii-exa-medikation-medication-statement-hct
+InstanceOf: mii-pr-medikation-medication-statement
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+* status = #intended
+* medicationCodeableConcept = $cs-atc#C03AA03
+* medicationCodeableConcept.text = "HCT 12,5mg"
+* subject = Reference(Patient/example)
+* effectivePeriod.start = "2022-02-02T12:22:00+00:00"
+* dosage[0].text = "HCT 12,5 mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "08:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "12:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "18:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "22:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+
+Instance: mii-exa-medikation-medication-statement-ibuprofen
+InstanceOf: mii-pr-medikation-medication-statement
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+* status = #intended
+* medicationCodeableConcept = $cs-atc#M01AE01
+* medicationCodeableConcept.text = "Ibuprofen 400mg"
+* subject = Reference(Patient/example)
+* effectivePeriod.start = "2022-02-02T12:22:00+00:00"
+* dosage.text = "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)"
+* dosage.timing.repeat.boundsPeriod.start = "2022-02-02T12:22:00+00:00"
+* dosage.timing.repeat.frequency = 3
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
+* dosage.asNeededBoolean = true
+* dosage.doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+
+Instance: mii-exa-medikation-medication-statement-zopiclon
+InstanceOf: mii-pr-medikation-medication-statement
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+* status = #intended
+* medicationCodeableConcept = $cs-atc#N05CF01
+* medicationCodeableConcept.text = "Zopiclon 3,75mg"
+* subject = Reference(Patient/example)
+* effectivePeriod.start = "2022-02-02T12:22:00+00:00"
+* dosage[0].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "08:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "12:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "18:00:00"
+* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
+* dosage[=].timing.repeat.frequency = 1
+* dosage[=].timing.repeat.period = 1
+* dosage[=].timing.repeat.periodUnit = #d
+* dosage[=].timing.repeat.timeOfDay = "22:00:00"
+* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+
+Instance: mii-exa-medikation-list-admission
+InstanceOf: mii-pr-medikation-medikationsliste
+Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+* status = #current
+* mode = #snapshot
+* title = "Aufnahmemedikation"
+* code.coding[medCode] = $list-example-use-codes#medications
+* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210
+* subject = Reference(Patient/example)
+* encounter = Reference(Encounter/ExampleEinrichtungskontakt)
+* entry[0].item = Reference(mii-exa-medikation-medication-statement-hct)
+* entry[+].item = Reference(mii-exa-medikation-medication-statement-concor)
+* entry[+].item = Reference(mii-exa-medikation-medication-statement-ibuprofen)
+* entry[+].item = Reference(mii-exa-medikation-medication-statement-zopiclon)

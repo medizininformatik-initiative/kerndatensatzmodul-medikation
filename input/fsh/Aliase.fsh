@@ -15,3 +15,4 @@ Alias: $fdasis = http://fdasis.nlm.nih.gov
 Alias: $sct = http://snomed.info/sct
 Alias: $cs-ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $list-example-use-codes = http://terminology.hl7.org/CodeSystem/list-example-use-codes
+Alias: $ihe-xds-fallkontext = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16
