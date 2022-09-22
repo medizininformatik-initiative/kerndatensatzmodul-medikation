@@ -47,9 +47,10 @@ Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationslis
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de"
-* include urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200 "stationärer Aufenthalt"
-* include urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210 "stationäre Aufnahme"
-* include urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E230 "stationäre Entlassung"
+* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E100 "ambulanter Kontakt"
+* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200 "stationärer Aufenthalt"
+* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210 "stationäre Aufnahme"
+* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E230 "stationäre Entlassung"
 
 Invariant: medication-list-context-1
 Description: "Wenn der Kontext Aufnahme oder Entlassung ist, soll der mode 'snapshot' sein. "
