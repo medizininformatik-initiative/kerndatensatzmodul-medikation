@@ -141,6 +141,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.status",
+        "path": "MedicationRequest.status",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.category",
         "path": "MedicationRequest.category",
         "mustSupport": true
@@ -177,7 +182,8 @@
               "http://hl7.org/fhir/StructureDefinition/Medication"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
@@ -302,11 +308,17 @@
               "http://hl7.org/fhir/StructureDefinition/Group"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.encounter",
         "path": "MedicationRequest.encounter",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.authoredOn",
+        "path": "MedicationRequest.authoredOn",
         "mustSupport": true
       },
       {

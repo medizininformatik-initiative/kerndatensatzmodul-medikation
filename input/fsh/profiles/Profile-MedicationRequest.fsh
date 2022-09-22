@@ -17,11 +17,13 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * meta.profile MS
 * doNotPerform 0..0
 * category MS
+* status MS
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
+* medicationReference MS
 * medicationReference only Reference
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept MS
@@ -54,6 +56,8 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * medicationCodeableConcept.coding[atcClassEn].system 1.. MS
 * medicationCodeableConcept.coding[atcClassEn].code 1.. MS
 * medicationCodeableConcept.text MS
+* subject MS
 * subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 * encounter MS
+* authoredOn MS
 * dosageInstruction MS
