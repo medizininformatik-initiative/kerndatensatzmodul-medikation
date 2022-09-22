@@ -135,7 +135,7 @@ Usage: #example
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].itemReference = Reference(mii-exa-medikation-medication-dolomo-tag)
-* ingredient[1].itemReference = Reference(ExampleMedicationDolomoNacht)
+* ingredient[1].itemReference = Reference(mii-exa-medikation-medication-dolomo-nacht)
 
 Instance: mii-exa-medikation-medication-dolomo-tag
 InstanceOf: mii-pr-medikation-medication
