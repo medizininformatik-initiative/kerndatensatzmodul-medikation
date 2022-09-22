@@ -10,7 +10,7 @@ Zweck und Kontext der Liste werden über `List.code` angegeben. Ein Coding wird 
 
 @```
 from ValueSet 
-where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/ValueSetCaseContextCodes'
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext'
 for compose.include.concept select
     code,
     display
@@ -20,7 +20,7 @@ Je nachdem, ob es sich um eine Medikationsliste während eines stationären Aufe
 
 @```
 from StructureDefinition 
-where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/List'
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste'
 for differential.element[0].constraint select
     key,
     severity,
@@ -30,8 +30,13 @@ for differential.element[0].constraint select
 
 ---
 
-Canonical:
-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/List
+@```
+from StructureDefinition 
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste'
+select
+    name,
+    url
+```
 
 **Differential**
 
@@ -49,11 +54,94 @@ https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Structure
 
 ---
 
+**Suchparameter**
+
+Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombination:
+
+1. Der Suchparameter ```_id``` MUSS unterstützt werden:
+
+    Beispiele: 
+
+    ```GET [base]/List?_id=1234```
+    
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_id" finden sich in der [FHIR-Basisspezifikation - Abschnitt "Parameters for all resources"](http://hl7.org/fhir/R4/search.html#all).
+
+2. Der Suchparameter "_profile" MUSS unterstützt werden:
+
+    Beispiele:
+    
+    ```GET [base]/List?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste```
+    
+    Anwendungshinweise: Weitere Informationen zur Suche nach "_profile" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#all).
+
+3. Der Suchparameter "status" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/List?status=current```
+    
+    Anwendungshinweise: Weitere Informationen zur Suche nach "status" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#token).
+
+4. Der Suchparameter "mode" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/List?mode=snapshot```
+    
+    Anwendungshinweise: Weitere Informationen zur Suche nach "category" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#token).
+
+5. Der Suchparameter "code" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/List?code=urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16|E210```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "code" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#token).
+
+6. Der Suchparameter "subject" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/List?subject=Patient/example```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "subject" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+8. Der Suchparameter "encounter" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/List?context=Encounter/example```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "encounter" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
+---
+
 **Beispiele**
 
 Beispiel einer List Ressource, die eine Aufnahmemedikation beschreibt. 
 
-{{json:ExampleMedicationList-1}}
+{{json:mii-exa-medikation-list-admission}}
+
+
+<details>
+  <summary>MedicationStatement-Ressourcen, die in der List-Ressource referenziert werden <strong>hier klicken</strong>:</summary>
+  
+  {{json:mii-exa-medikation-medication-statement-concor}}
+
+  ---
+
+  {{json:mii-exa-medikation-medication-statement-hct}}
+
+  ---
+
+  {{json:mii-exa-medikation-medication-statement-ibuprofen}}
+
+  ---
+
+  {{json:mii-exa-medikation-medication-statement-zopiclon}}
+
+
+</details>
 
 ---
 
