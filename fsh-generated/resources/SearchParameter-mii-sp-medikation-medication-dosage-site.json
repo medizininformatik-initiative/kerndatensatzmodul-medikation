@@ -24,7 +24,7 @@
     "MedicationAdministration"
   ],
   "type": "token",
-  "expression": "%resource.dosage.site",
+  "expression": "MedicationAdministration.dosage.site | MedicationStatement.dosage.site",
   "modifier": [
     "text",
     "in",

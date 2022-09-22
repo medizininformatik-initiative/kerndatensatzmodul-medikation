@@ -24,7 +24,7 @@
     "MedicationAdministration"
   ],
   "type": "reference",
-  "expression": "%resource.reasonReference",
+  "expression": "MedicationAdministration.reasonReference | MedicationStatement.reasonReference",
   "target": [
     "Condition",
     "Observation",

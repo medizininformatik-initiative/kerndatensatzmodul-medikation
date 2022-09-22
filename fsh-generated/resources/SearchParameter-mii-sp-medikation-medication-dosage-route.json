@@ -24,7 +24,7 @@
     "MedicationAdministration"
   ],
   "type": "token",
-  "expression": "%resource.dosage.route",
+  "expression": "MedicationAdministration.dosage.route | MedicationStatement.dosage.route",
   "modifier": [
     "text",
     "in",

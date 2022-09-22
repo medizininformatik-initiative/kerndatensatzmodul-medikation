@@ -38,6 +38,25 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
+Instance: mii-sp-medikation-medication-ingredient-strength
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrength"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_Medication_Ingredient_Strength"
+* status = #draft
+* experimental = false
+* date = "2022-09-22"
+* description = "Suchparameter für Medication.ingredient.strength"
+* code = #ingredient-strength
+* base = #Medication
+* type = #composite
+* expression = "Medication.ingredient.strength"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator"
+* component[=].expression = "numerator"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator"
+* component[=].expression = "denominator"
+
 Instance: mii-sp-medikation-medication-reasonreference
 InstanceOf: SearchParameter
 Usage: #definition
@@ -52,7 +71,7 @@ Usage: #definition
 * base[+] = #MedicationStatement
 * base[+] = #MedicationAdministration 
 * type = #reference
-* expression = "%resource.reasonReference"
+* expression = "MedicationAdministration.reasonReference | MedicationStatement.reasonReference"
 * target[+] = #Condition
 * target[+] = #Observation
 * target[+] = #DiagnosticReport
@@ -71,7 +90,7 @@ Usage: #definition
 * base[+] = #MedicationStatement
 * base[+] = #MedicationAdministration 
 * type = #token
-* expression = "%resource.dosage.site"
+* expression = "MedicationAdministration.dosage.site | MedicationStatement.dosage.site"
 * modifier[+] = #text
 * modifier[+] = #in
 * modifier[+] = #not-in
@@ -92,7 +111,7 @@ Usage: #definition
 * base[+] = #MedicationStatement
 * base[+] = #MedicationAdministration
 * type = #token
-* expression = "%resource.dosage.route"
+* expression = "MedicationAdministration.dosage.route | MedicationStatement.dosage.route"
 * modifier[+] = #text
 * modifier[+] = #in
 * modifier[+] = #not-in
@@ -138,6 +157,25 @@ Usage: #definition
 * comparator[+] = #lt
 * comparator[+] = #ge 
 * comparator[+] = #le 
+
+Instance: mii-sp-medikation-medicationstatement-doserange
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRange"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_DoseRange"
+* status = #draft
+* experimental = false
+* date = "2022-09-22"
+* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange"
+* code = #doserange
+* base = #MedicationStatement
+* type = #composite
+* expression = "MedicationStatement.dosage.doseAndRate.doseRange"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow"
+* component[=].expression = "low"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeHigh"
+* component[=].expression = "high"
 
 Instance: mii-sp-medikation-medicationstatement-dosequantity
 InstanceOf: SearchParameter
@@ -199,6 +237,25 @@ Usage: #definition
 * comparator[+] = #ge 
 * comparator[+] = #le 
 
+Instance: mii-sp-medikation-medicationstatement-rateratio
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatio"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRatio"
+* status = #draft
+* experimental = false
+* date = "2022-09-22"
+* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio"
+* code = #rateratio
+* base = #MedicationStatement
+* type = #composite
+* expression = "MedicationStatement.dosage.doseAndRate.rateRatio"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator"
+* component[=].expression = "numerator"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioDenominator"
+* component[=].expression = "denominator"
+
 Instance: mii-sp-medikation-medicationstatement-raterange-low
 InstanceOf: SearchParameter
 Usage: #definition
@@ -238,6 +295,25 @@ Usage: #definition
 * comparator[+] = #lt
 * comparator[+] = #ge 
 * comparator[+] = #le 
+
+Instance: mii-sp-medikation-medicationstatement-raterange
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationStatement_RateRange"
+* status = #draft
+* experimental = false
+* date = "2022-09-22"
+* description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange"
+* code = #raterange
+* base = #MedicationStatement
+* type = #composite
+* expression = "MedicationStatement.dosage.doseAndRate.rateRange"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeLow"
+* component[=].expression = "low"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeHigh"
+* component[=].expression = "high"
 
 Instance: mii-sp-medikation-medicationstatement-ratequantity
 InstanceOf: SearchParameter
@@ -318,6 +394,25 @@ Usage: #definition
 * comparator[+] = #lt
 * comparator[+] = #ge 
 * comparator[+] = #le 
+
+Instance: mii-sp-medikation-medicationadministration-rateratio
+InstanceOf: SearchParameter
+Usage: #definition
+* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatio"
+* insert SP_Publisher
+* name = "MII_SP_Medikation_MedicationAdministration_RateRatio"
+* status = #draft
+* experimental = false
+* date = "2022-09-22"
+* description = "Suchparameter für MedicationAdministration.dosage.rateRatio"
+* code = #rateratio
+* base = #MedicationAdministration
+* type = #composite
+* expression = "MedicationAdministration.dosage.rateRatio"
+* component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator"
+* component[=].expression = "numerator"
+* component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator"
+* component[=].expression = "denominator"
 
 Instance: mii-sp-medikation-medicationadministration-ratequantity
 InstanceOf: SearchParameter
