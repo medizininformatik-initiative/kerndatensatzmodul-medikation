@@ -58,7 +58,10 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * subject MS
 * context MS
 * effective[x] MS
+* performer MS
+* reasonCode MS
 * reasonReference MS
+* request MS
 * dosage MS
 * dosage.site MS
 * dosage.site.coding MS

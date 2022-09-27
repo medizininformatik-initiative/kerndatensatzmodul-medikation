@@ -15,9 +15,11 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * meta MS
 * meta.source MS
 * meta.profile MS
+* identifier MS
 * doNotPerform 0..0
 * category MS
 * status MS
+* intent MS
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
 * medication[x] ^slicing.discriminator.type = #type
@@ -60,4 +62,50 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 * encounter MS
 * authoredOn MS
+* recorder MS
+* reasonCode MS
+* reasonReference MS
+* basedOn MS
 * dosageInstruction MS
+* dosageInstruction.text MS
+* dosageInstruction.timing MS
+* dosageInstruction.site MS
+* dosageInstruction.site.coding MS
+* dosageInstruction.site.coding ^slicing.discriminator.type = #pattern
+* dosageInstruction.site.coding ^slicing.discriminator.path = "$this"
+* dosageInstruction.site.coding ^slicing.rules = #open
+* dosageInstruction.site.coding contains
+    SNOMED 0..* MS
+* dosageInstruction.site.coding[SNOMED] from http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips (example)
+* dosageInstruction.site.coding[SNOMED] ^sliceName = "SNOMED"
+* dosageInstruction.site.coding[SNOMED] ^patternCoding.system = "http://snomed.info/sct"
+* dosageInstruction.site.coding[SNOMED] ^binding.description = "target site IPS"
+* dosageInstruction.site.coding[SNOMED].system 1.. MS
+* dosageInstruction.site.coding[SNOMED].code 1.. MS
+* dosageInstruction.route MS
+* dosageInstruction.route.coding MS
+* dosageInstruction.route.coding ^slicing.discriminator.type = #pattern
+* dosageInstruction.route.coding ^slicing.discriminator.path = "$this"
+* dosageInstruction.route.coding ^slicing.rules = #open
+* dosageInstruction.route.coding contains
+    EDQM 0..1 MS and
+    SNOMED 0..1 MS
+* dosageInstruction.route.coding[EDQM] from http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration (preferred)
+* dosageInstruction.route.coding[EDQM] ^sliceName = "EDQM"
+* dosageInstruction.route.coding[EDQM] ^patternCoding.system = "http://standardterms.edqm.eu"
+* dosageInstruction.route.coding[EDQM] ^mustSupport = true
+* dosageInstruction.route.coding[EDQM] ^binding.description = "EDQM Standard Terms"
+* dosageInstruction.route.coding[EDQM].system 1.. MS
+* dosageInstruction.route.coding[EDQM].code 1.. MS
+* dosageInstruction.route.coding[SNOMED] ^sliceName = "SNOMED"
+* dosageInstruction.route.coding[SNOMED] ^patternCoding.system = "http://snomed.info/sct"
+* dosageInstruction.route.coding[SNOMED] ^mustSupport = true
+* dosageInstruction.route.coding[SNOMED].system 1.. MS
+* dosageInstruction.route.coding[SNOMED].code 1.. MS
+* dosageInstruction.doseAndRate MS
+* dosageInstruction.doseAndRate.dose[x] MS
+* dosageInstruction.doseAndRate.rate[x] MS
+* substitution MS
+* substitution.allowed[x] MS
+* priorPrescription MS
+* detectedIssue MS

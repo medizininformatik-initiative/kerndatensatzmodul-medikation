@@ -316,8 +316,23 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.performer",
+        "path": "MedicationAdministration.performer",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.reasonCode",
+        "path": "MedicationAdministration.reasonCode",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.reasonReference",
         "path": "MedicationAdministration.reasonReference",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.request",
+        "path": "MedicationAdministration.request",
         "mustSupport": true
       },
       {

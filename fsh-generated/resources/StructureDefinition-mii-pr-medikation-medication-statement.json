@@ -131,6 +131,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.identifier",
+        "path": "MedicationStatement.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.partOf",
         "path": "MedicationStatement.partOf",
         "mustSupport": true
@@ -350,6 +355,21 @@
         "id": "MedicationStatement.effective[x]",
         "path": "MedicationStatement.effective[x]",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dateAsserted",
+        "path": "MedicationStatement.dateAsserted",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.informationSource",
+        "path": "MedicationStatement.informationSource",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.reasonCode",
+        "path": "MedicationStatement.reasonCode",
         "mustSupport": true
       },
       {

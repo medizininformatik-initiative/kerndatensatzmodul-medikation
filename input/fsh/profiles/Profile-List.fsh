@@ -14,6 +14,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * meta MS
 * meta.source MS
 * meta.profile MS
+* identifier MS
 * status MS
 * mode MS
 * code MS
@@ -25,7 +26,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * code.coding[contextCode] MS
 * code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
 * code.coding[contextCode] from mii-vs-medikation-fallkontext (required)
-* subject MS
+* subject 1.. MS
 * subject only Reference(Patient)
 * encounter MS
 * date MS

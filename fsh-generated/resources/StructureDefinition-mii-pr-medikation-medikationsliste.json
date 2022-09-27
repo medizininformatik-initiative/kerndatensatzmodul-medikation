@@ -135,6 +135,11 @@
         "mustSupport": true
       },
       {
+        "id": "List.identifier",
+        "path": "List.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "List.status",
         "path": "List.status",
         "mustSupport": true
@@ -190,6 +195,7 @@
       {
         "id": "List.subject",
         "path": "List.subject",
+        "min": 1,
         "type": [
           {
             "code": "Reference",

@@ -14,6 +14,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * meta MS
 * meta.source MS
 * meta.profile MS
+* identifier MS
 * partOf MS
 * status MS
 * category MS
@@ -68,6 +69,9 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * subject MS
 * context MS
 * effective[x] 1.. MS
+* dateAsserted MS
+* informationSource MS
+* reasonCode MS
 * reasonReference MS
 * dosage MS
 * dosage.text MS
