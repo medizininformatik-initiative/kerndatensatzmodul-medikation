@@ -309,4 +309,12 @@ Source: MII_LM_Medikation
   * Bezug-zu-Fall -> "MedicationAdministration.context"
   * Durchfuehrender -> "MedicationAdministration.performer"
 
-
+Mapping: Medikation-LogicalModel-Profile
+Id: KDS-Profile
+Title: "Medikation LogicalModel KDS-Profile Mapping"
+Source: MII_LM_Medikation
+* Medikation -> "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+* Medikationsliste -> "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+* Medikationsverordnung -> "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+* Medikationseintrag -> "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+* Medikationsverabreichung -> "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"

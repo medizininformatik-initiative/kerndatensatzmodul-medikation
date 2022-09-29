@@ -79,6 +79,10 @@
     {
       "identity": "FHIR",
       "name": "Medikation LogicalModel FHIR Mapping"
+    },
+    {
+      "identity": "KDS-Profile",
+      "name": "Medikation LogicalModel KDS-Profile Mapping"
     }
   ],
   "kind": "logical",
@@ -111,6 +115,10 @@
           {
             "identity": "FHIR",
             "map": "Medication"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
           }
         ]
       },
@@ -251,6 +259,10 @@
           {
             "identity": "FHIR",
             "map": "List"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           }
         ]
       },
@@ -420,6 +432,10 @@
           {
             "identity": "FHIR",
             "map": "MedicationRequest"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
           }
         ]
       },
@@ -1106,6 +1122,10 @@
           {
             "identity": "FHIR",
             "map": "MedicationStatement"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           }
         ]
       },
@@ -1829,6 +1849,10 @@
           {
             "identity": "FHIR",
             "map": "MedicationAdministration"
+          },
+          {
+            "identity": "KDS-Profile",
+            "map": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
           }
         ]
       },
