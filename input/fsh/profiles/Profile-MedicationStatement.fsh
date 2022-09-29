@@ -15,6 +15,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * meta.source MS
 * meta.profile MS
 * identifier MS
+* basedOn MS
 * partOf MS
 * status MS
 * category MS
@@ -33,6 +34,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
+* medicationReference MS
 * medicationReference only Reference
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept MS
@@ -69,13 +71,20 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * subject MS
 * context MS
 * effective[x] 1.. MS
+* effectiveDateTime MS
+* effectivePeriod MS
 * dateAsserted MS
 * informationSource MS
 * reasonCode MS
 * reasonReference MS
+* note MS
 * dosage MS
+* dosage.sequence MS
 * dosage.text MS
 * dosage.timing MS
+* dosage.asNeeded[x] MS
+* dosage.asNeededBoolean MS
+* dosage.asNeededCodeableConcept MS
 * dosage.site MS
 * dosage.site.coding MS
 * dosage.site.coding ^slicing.discriminator.type = #pattern
@@ -111,4 +120,9 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * dosage.route.coding[SNOMED].code 1.. MS
 * dosage.doseAndRate MS
 * dosage.doseAndRate.dose[x] MS
+* dosage.doseAndRate.doseRange MS
+* dosage.doseAndRate.doseQuantity MS
 * dosage.doseAndRate.rate[x] MS
+* dosage.doseAndRate.rateRatio MS
+* dosage.doseAndRate.rateRange MS
+* dosage.doseAndRate.rateQuantity MS

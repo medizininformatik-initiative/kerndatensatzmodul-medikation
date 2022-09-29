@@ -17,7 +17,6 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * meta.profile MS
 * identifier MS
 * doNotPerform 0..0
-* category MS
 * status MS
 * intent MS
 * medication[x] MS
@@ -62,13 +61,19 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 * encounter MS
 * authoredOn MS
+* requester MS
 * recorder MS
 * reasonCode MS
 * reasonReference MS
 * basedOn MS
+* note MS
 * dosageInstruction MS
+* dosageInstruction.sequence MS
 * dosageInstruction.text MS
 * dosageInstruction.timing MS
+* dosageInstruction.asNeeded[x] MS
+* dosageInstruction.asNeededBoolean MS
+* dosageInstruction.asNeededCodeableConcept MS
 * dosageInstruction.site MS
 * dosageInstruction.site.coding MS
 * dosageInstruction.site.coding ^slicing.discriminator.type = #pattern
@@ -104,8 +109,15 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * dosageInstruction.route.coding[SNOMED].code 1.. MS
 * dosageInstruction.doseAndRate MS
 * dosageInstruction.doseAndRate.dose[x] MS
+* dosageInstruction.doseAndRate.doseRange MS
+* dosageInstruction.doseAndRate.doseQuantity MS
 * dosageInstruction.doseAndRate.rate[x] MS
+* dosageInstruction.doseAndRate.rateRatio MS
+* dosageInstruction.doseAndRate.rateRange MS
+* dosageInstruction.doseAndRate.rateQuantity MS
 * substitution MS
 * substitution.allowed[x] MS
+* substitution.allowedBoolean MS
+* substitution.allowedCodeableConcept MS
 * priorPrescription MS
 * detectedIssue MS

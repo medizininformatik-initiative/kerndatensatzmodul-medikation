@@ -156,11 +156,6 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.category",
-        "path": "MedicationRequest.category",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationRequest.doNotPerform",
         "path": "MedicationRequest.doNotPerform",
         "max": "0"
@@ -332,6 +327,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.requester",
+        "path": "MedicationRequest.requester",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.recorder",
         "path": "MedicationRequest.recorder",
         "mustSupport": true
@@ -352,8 +352,18 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationRequest.note",
+        "path": "MedicationRequest.note",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.sequence",
+        "path": "MedicationRequest.dosageInstruction.sequence",
         "mustSupport": true
       },
       {
@@ -364,6 +374,47 @@
       {
         "id": "MedicationRequest.dosageInstruction.timing",
         "path": "MedicationRequest.dosageInstruction.timing",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "path": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.asNeeded[x]:asNeededBoolean",
+        "path": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "sliceName": "asNeededBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.asNeeded[x]:asNeededCodeableConcept",
+        "path": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "sliceName": "asNeededCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -491,11 +542,102 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "sliceName": "rateRatio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "sliceName": "rateRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "sliceName": "rateQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -506,6 +648,42 @@
       {
         "id": "MedicationRequest.substitution.allowed[x]",
         "path": "MedicationRequest.substitution.allowed[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x]:allowedBoolean",
+        "path": "MedicationRequest.substitution.allowed[x]",
+        "sliceName": "allowedBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x]:allowedCodeableConcept",
+        "path": "MedicationRequest.substitution.allowed[x]",
+        "sliceName": "allowedCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       },
       {

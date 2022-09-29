@@ -136,6 +136,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.identifier",
+        "path": "MedicationAdministration.identifier",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.partOf",
         "path": "MedicationAdministration.partOf",
         "mustSupport": true
@@ -177,7 +182,8 @@
               "http://hl7.org/fhir/StructureDefinition/Medication"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationAdministration.medication[x]:medicationCodeableConcept",
@@ -313,6 +319,42 @@
       {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectiveDateTime",
+        "path": "MedicationAdministration.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.effective[x]:effectivePeriod",
+        "path": "MedicationAdministration.effective[x]",
+        "sliceName": "effectivePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -336,8 +378,18 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.note",
+        "path": "MedicationAdministration.note",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.dosage",
         "path": "MedicationAdministration.dosage",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.text",
+        "path": "MedicationAdministration.dosage.text",
         "mustSupport": true
       },
       {
@@ -470,6 +522,45 @@
       {
         "id": "MedicationAdministration.dosage.rate[x]",
         "path": "MedicationAdministration.dosage.rate[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "sliceName": "rateRatio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity",
+        "path": "MedicationAdministration.dosage.rate[x]",
+        "sliceName": "rateQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

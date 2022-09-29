@@ -166,7 +166,8 @@
           ],
           "rules": "open"
         },
-        "min": 2
+        "min": 2,
+        "mustSupport": true
       },
       {
         "id": "List.code.coding:medCode",
@@ -181,6 +182,16 @@
         "mustSupport": true
       },
       {
+        "id": "List.code.coding:medCode.system",
+        "path": "List.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:medCode.code",
+        "path": "List.code.coding.code",
+        "mustSupport": true
+      },
+      {
         "id": "List.code.coding:contextCode",
         "path": "List.code.coding",
         "sliceName": "contextCode",
@@ -191,6 +202,16 @@
           "strength": "required",
           "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
         }
+      },
+      {
+        "id": "List.code.coding:contextCode.system",
+        "path": "List.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:contextCode.code",
+        "path": "List.code.coding.code",
+        "mustSupport": true
       },
       {
         "id": "List.subject",

@@ -18,14 +18,19 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * status MS
 * mode MS
 * code MS
+* code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains medCode 1..1 and contextCode 1..1
 * code.coding[medCode] MS
-* code.coding[contextCode] MS
+* code.coding[medCode].system MS
+* code.coding[medCode].code MS
 * code.coding[medCode] = http://terminology.hl7.org/CodeSystem/list-example-use-codes#medications
+* code.coding[contextCode] MS
 * code.coding[contextCode] from mii-vs-medikation-fallkontext (required)
+* code.coding[contextCode].system MS
+* code.coding[contextCode].code MS
 * subject 1.. MS
 * subject only Reference(Patient)
 * encounter MS

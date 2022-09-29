@@ -136,6 +136,11 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.basedOn",
+        "path": "MedicationStatement.basedOn",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.partOf",
         "path": "MedicationStatement.partOf",
         "mustSupport": true
@@ -218,7 +223,8 @@
               "http://hl7.org/fhir/StructureDefinition/Medication"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept",
@@ -354,7 +360,43 @@
       {
         "id": "MedicationStatement.effective[x]",
         "path": "MedicationStatement.effective[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.effective[x]:effectiveDateTime",
+        "path": "MedicationStatement.effective[x]",
+        "sliceName": "effectiveDateTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.effective[x]:effectivePeriod",
+        "path": "MedicationStatement.effective[x]",
+        "sliceName": "effectivePeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -378,8 +420,18 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationStatement.note",
+        "path": "MedicationStatement.note",
+        "mustSupport": true
+      },
+      {
         "id": "MedicationStatement.dosage",
         "path": "MedicationStatement.dosage",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.sequence",
+        "path": "MedicationStatement.dosage.sequence",
         "mustSupport": true
       },
       {
@@ -390,6 +442,47 @@
       {
         "id": "MedicationStatement.dosage.timing",
         "path": "MedicationStatement.dosage.timing",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeeded[x]",
+        "path": "MedicationStatement.dosage.asNeeded[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeeded[x]:asNeededBoolean",
+        "path": "MedicationStatement.dosage.asNeeded[x]",
+        "sliceName": "asNeededBoolean",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.asNeeded[x]:asNeededCodeableConcept",
+        "path": "MedicationStatement.dosage.asNeeded[x]",
+        "sliceName": "asNeededCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -517,11 +610,102 @@
       {
         "id": "MedicationStatement.dosage.doseAndRate.dose[x]",
         "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseRange",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "sliceName": "doseRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "sliceName": "doseQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "MedicationStatement.dosage.doseAndRate.rate[x]",
         "path": "MedicationStatement.dosage.doseAndRate.rate[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.rate[x]:rateRatio",
+        "path": "MedicationStatement.dosage.doseAndRate.rate[x]",
+        "sliceName": "rateRatio",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Ratio"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.rate[x]:rateRange",
+        "path": "MedicationStatement.dosage.doseAndRate.rate[x]",
+        "sliceName": "rateRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity",
+        "path": "MedicationStatement.dosage.doseAndRate.rate[x]",
+        "sliceName": "rateQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

@@ -300,7 +300,8 @@
             }
           ],
           "rules": "open"
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "Medication.ingredient.extension:Wirkstofftyp",
@@ -348,7 +349,8 @@
               "http://hl7.org/fhir/StructureDefinition/Medication"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       },
       {
         "id": "Medication.ingredient.item[x]:itemCodeableConcept",

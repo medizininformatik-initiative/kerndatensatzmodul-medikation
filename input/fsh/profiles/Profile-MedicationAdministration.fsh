@@ -14,6 +14,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * meta MS
 * meta.source MS
 * meta.profile MS
+* identifier MS
 * partOf MS
 * status MS
 * category MS
@@ -22,6 +23,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medication[x] ^slicing.discriminator.type = #type
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
+* medicationReference MS
 * medicationReference only Reference
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept MS
@@ -58,11 +60,15 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * subject MS
 * context MS
 * effective[x] MS
+* effectiveDateTime MS
+* effectivePeriod MS
 * performer MS
 * reasonCode MS
 * reasonReference MS
 * request MS
+* note MS
 * dosage MS
+* dosage.text MS
 * dosage.site MS
 * dosage.site.coding MS
 * dosage.site.coding ^slicing.discriminator.type = #pattern
@@ -97,3 +103,5 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.route.coding[SNOMED].code 1.. MS
 * dosage.dose MS
 * dosage.rate[x] MS
+* dosage.rateRatio MS
+* dosage.rateQuantity MS

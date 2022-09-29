@@ -60,6 +60,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * form.coding[EDQM].system 1.. MS
 * form.coding[EDQM].code 1.. MS
 * ingredient 1.. MS
+* ingredient.extension MS
 * ingredient.extension ^slicing.discriminator.type = #value
 * ingredient.extension ^slicing.discriminator.path = "url"
 * ingredient.extension ^slicing.rules = #open
@@ -70,6 +71,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.item[x] ^slicing.discriminator.type = #type
 * ingredient.item[x] ^slicing.discriminator.path = "$this"
 * ingredient.item[x] ^slicing.rules = #open
+* ingredient.itemReference MS
 * ingredient.itemReference only Reference
 * ingredient.itemCodeableConcept only CodeableConcept
 * ingredient.itemCodeableConcept MS
