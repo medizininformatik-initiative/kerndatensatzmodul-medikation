@@ -50,7 +50,15 @@ select
 
 ---
 
-{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext}}
+@```
+from StructureDefinition 
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation'
+    for differential.element where id.contains('BasismodulMedikation.Medikationsliste') 
+    select 
+        FHIR: mapping[0].map,
+        Datensatz: path, 
+        Erklaerung: definition 
+```
 
 ---
 

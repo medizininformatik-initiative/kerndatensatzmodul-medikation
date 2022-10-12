@@ -28,6 +28,18 @@ select
 
 ---
 
+@```
+from StructureDefinition 
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation'
+    for differential.element where id.contains('BasismodulMedikation.Medikationsverordnung') 
+    select 
+        FHIR: mapping[0].map,
+        Datensatz: path, 
+        Erklaerung: definition 
+```
+
+---
+
 **Suchparameter**
 
 Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombination:

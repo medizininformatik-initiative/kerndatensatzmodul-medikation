@@ -23,36 +23,17 @@ select
 
 {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, snapshot}}
 
-
----
-| FHIR-Element | Erklärung |
-|--------------|-----------|
-| Medication.id | Must-support, jedoch optional | 
-| Medication.meta | Must-support, jedoch optional |
-| Medication.identifier | Business-Identifier der Medikation |
-| Medication.code | Der Code aus einem externen Codesystem für ein Arzneimittelprodukt oder eine Wirkstoffklasse. |
-| Medication.status | Indikator, ob die Medikation aktuell angewendet wird oder verschrieben werden kann. |
-| Medication.manufacturer | Hersteller |
-| Medication.form | Darreichungsform |
-| Medication.amount | Wirkstärke gemäß Handelsname |
-| Medication.ingredient | Wirkstoff |
-| Medication.batch | Informationen zum Arzneimittel wie Ablaufdatum |
-
 ---
 
-| FHIR-Element | Logischer Datensatz |
-|---|---|
-| Medication | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur |
-| Medication.code | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt |
-| Medication.code.coding:Pharmazentralnummer.display | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt.Arzneimittelname |
-| Medication.code.coding:Pharmazentralnummer.code | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt.Arzneimittel-Code |
-| Medication.code.coding:atcClass.display | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt.Arzneimittelname |
-| Medication.code.coding:atcClass.code | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt.Arzneimittel-Code |
-| Medication.amount | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Arzneimittelprodukt.Arzneimittelwirkstärke |
-| Medication.code.text | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Rezeptur.Freitextzeile |
-| Medication.ingredient | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Wirkstoff |
-| Medication.ingredient.strength | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Wirkstoff.Menge/Stärke |
-| Medication.form | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur.Darreichungsform |
+@```
+from StructureDefinition 
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation'
+    for differential.element where id.contains('BasismodulMedikation.Medikation.')
+    select 
+        FHIR: mapping[0].map,
+        Datensatz: path, 
+        Erklaerung: definition 
+```
 
 ---
 

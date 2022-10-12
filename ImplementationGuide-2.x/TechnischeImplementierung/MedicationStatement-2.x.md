@@ -27,44 +27,15 @@ select
 
 ---
 
-| FHIR-Element | Erklärung |
-|--------------|-----------|
-| MedicationStatement.id | Must-support, jedoch optional |
-| MedicationStatement.meta | Must-support, jedoch optional |
-| MedicationStatement.identifier | Business-Identifier des Medikationseintrags |
-| MedicationStatement.basedOn | Hintergrundinformation, wie es zu dem Medikationseintrag kam |
-| MedicationStatement.partOf | Angabe, wenn der Medikatonseintrag z.B. Teil einer Prozedur ist |
-| MedicationStatement.status | Angabe, ob der Medikationseintrag offen oder abgechlossen ist |
-| MedicationStatement.statusReason | Begründung für den Status |
-| MedicationStatement.category | Handelt es sich um einen stationören, ambulanten oder vom PatientIn berichteten Eintrag |
-| MedicationStatement.medication[x] | Referenz zu Arzneimittel |
-| MedicationStatement.subject | Empfänger der Medikation |
-| MedicationStatement.context | Referenz zu Ereignis wie Fall oder Behandlungsepisode |
-| MedicationStatement.effective[x] | Zeitpunkt oder Zeitraum |
-| MedicationStatement.dateAsserted | Zeitpunkt der Feststellung des Eintrags |
-| MedicationStatement.informationSource | Informationsquelle |
-| MedicationStatement.derivedFrom | Referenz zu verwandten Ereignissen |
-| MedicationStatement.reasonCode | Grund des Eintrags |
-| MedicationStatement.reasonReference | Referenz zu weiteren Information, die ursächlich für den Eintrag sind |
-| MedicationStatement.note | Notiz |
-| MedicationStatement.dosage | Details über Verabreichung wie Dosis oder Zugangsweg |
-
----
-| FHIR-Element | Logischer Datensatz |
-|---|---|
-| MedicationStatement.identifier | Medikation.Medikationseintrag.Identifikation |
-| MedicationStatement.status | Medikation.Medikationseintrag.Status |
-| MedicationStatement.medication[x] | Medikation.Medikationseintrag.Arzneimittel/Wirkstoff/Rezeptur |
-| MedicationStatement.effective[x] | Medikation.Medikationseintrag.Einnahmedauer |
-| MedicationStatement.dosage.text | Medikation.Medikationseintrag.Dosierung (Freitext) |
-| MedicationStatement.dosage | Medikation.Medikationseintrag.Dosierung (strukturiert) |
-| MedicationStatement.note | Medikation.Medikationseintrag.Hinweis |
-| MedicationStatement.reasonCode | Medikation.Medikationseintrag.Behandlungsgrund |
-| MedicationStatement.reasonReference | Medikation.Medikationseintrag.Behandlungsgrund |
-| MedicationStatement.basedOn | Medikation.Medikationseintrag.Bezug zu Verordnung |
-| MedicationStatement.partOf | Medikation.Medikationseintrag.Bezug zu Abgabe |
-| MedicationStatement.dateAsserted | Medikation.Medikationseintrag.Datum des Eintrags |
-| MedicationStatement.informationSource | Medikation.Medikationseintrag.Autor/Informant des Eintrags |
+@```
+from StructureDefinition 
+where url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation'
+    for differential.element where id.contains('BasismodulMedikation.Medikationseintrag') 
+    select 
+        FHIR: mapping[0].map,
+        Datensatz: path, 
+        Erklaerung: definition  
+```
 
 ---
 
