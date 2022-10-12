@@ -431,7 +431,7 @@
           {
             "key": "dsg-1",
             "severity": "error",
-            "human": "Dosage must be present as free text or structured",
+            "human": "If present, dosage must include free text or structured data",
             "expression": "text.exists() or doseAndRate.exists()",
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
           }
