@@ -359,6 +359,15 @@
       {
         "id": "MedicationRequest.dosageInstruction",
         "path": "MedicationRequest.dosageInstruction",
+        "constraint": [
+          {
+            "key": "dsg-1",
+            "severity": "error",
+            "human": "Dosage must be present as free text or structured",
+            "expression": "text.exists() or doseAndRate.exists()",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+          }
+        ],
         "mustSupport": true
       },
       {

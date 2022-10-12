@@ -67,6 +67,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * reasonReference MS
 * basedOn MS
 * note MS
+* dosageInstruction obeys dsg-1
 * dosageInstruction MS
 * dosageInstruction.sequence MS
 * dosageInstruction.text MS

@@ -78,6 +78,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * reasonCode MS
 * reasonReference MS
 * note MS
+* dosage obeys dsg-1
 * dosage MS
 * dosage.sequence MS
 * dosage.text MS
