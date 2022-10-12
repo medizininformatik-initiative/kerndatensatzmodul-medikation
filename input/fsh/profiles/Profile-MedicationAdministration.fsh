@@ -102,6 +102,28 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.route.coding[SNOMED].system 1.. MS
 * dosage.route.coding[SNOMED].code 1.. MS
 * dosage.dose MS
+* dosage.dose ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.dose.value 1.. MS
+* dosage.dose.unit MS
+* dosage.dose.system 1.. MS
+* dosage.dose.code 1.. MS
 * dosage.rate[x] MS
 * dosage.rateRatio MS
+* dosage.rateRatio.numerator MS
+* dosage.rateRatio.numerator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.rateRatio.numerator.value 1.. MS
+* dosage.rateRatio.numerator.unit MS
+* dosage.rateRatio.numerator.system 1.. MS
+* dosage.rateRatio.numerator.code 1.. MS
+* dosage.rateRatio.denominator MS
+* dosage.rateRatio.denominator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.rateRatio.denominator.value 1.. MS
+* dosage.rateRatio.denominator.unit MS
+* dosage.rateRatio.denominator.system 1.. MS
+* dosage.rateRatio.denominator.code 1.. MS
 * dosage.rateQuantity MS
+* dosage.rateQuantity ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.rateQuantity.value 1.. MS
+* dosage.rateQuantity.unit MS
+* dosage.rateQuantity.system 1.. MS
+* dosage.rateQuantity.code 1.. MS

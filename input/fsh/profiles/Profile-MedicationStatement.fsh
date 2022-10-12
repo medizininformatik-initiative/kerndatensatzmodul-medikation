@@ -83,6 +83,44 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * dosage.sequence MS
 * dosage.text MS
 * dosage.timing MS
+* dosage.timing.event MS
+* dosage.timing.repeat MS
+* dosage.timing.repeat.boundsDuration MS
+* dosage.timing.repeat.boundsDuration ^patternDuration.system = "http://unitsofmeasure.org"
+* dosage.timing.repeat.boundsDuration.value 1.. MS
+* dosage.timing.repeat.boundsDuration.unit MS
+* dosage.timing.repeat.boundsDuration.system 1.. MS
+* dosage.timing.repeat.boundsDuration.code 1.. MS
+* dosage.timing.repeat.boundsRange MS
+* dosage.timing.repeat.boundsRange.low MS
+* dosage.timing.repeat.boundsRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.timing.repeat.boundsRange.low.value 1.. MS
+* dosage.timing.repeat.boundsRange.low.unit MS
+* dosage.timing.repeat.boundsRange.low.system 1.. MS
+* dosage.timing.repeat.boundsRange.low.code 1.. MS
+* dosage.timing.repeat.boundsRange.high MS
+* dosage.timing.repeat.boundsRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.timing.repeat.boundsRange.high.value 1.. MS
+* dosage.timing.repeat.boundsRange.high.unit MS
+* dosage.timing.repeat.boundsRange.high.system 1.. MS
+* dosage.timing.repeat.boundsRange.high.code 1.. MS
+* dosage.timing.repeat.boundsPeriod MS
+* dosage.timing.repeat.boundsPeriod.start MS
+* dosage.timing.repeat.boundsPeriod.end MS
+* dosage.timing.repeat.count MS
+* dosage.timing.repeat.countMax MS
+* dosage.timing.repeat.duration MS
+* dosage.timing.repeat.durationMax MS
+* dosage.timing.repeat.durationUnit MS
+* dosage.timing.repeat.frequency MS
+* dosage.timing.repeat.frequencyMax MS
+* dosage.timing.repeat.period MS
+* dosage.timing.repeat.periodMax MS
+* dosage.timing.repeat.periodUnit MS
+* dosage.timing.repeat.dayOfWeek MS
+* dosage.timing.repeat.timeOfDay MS
+* dosage.timing.repeat.when MS
+* dosage.timing.repeat.offset MS
 * dosage.asNeeded[x] MS
 * dosage.asNeededBoolean MS
 * dosage.asNeededCodeableConcept MS
@@ -122,8 +160,72 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * dosage.doseAndRate MS
 * dosage.doseAndRate.dose[x] MS
 * dosage.doseAndRate.doseRange MS
+* dosage.doseAndRate.doseRange.low MS
+* dosage.doseAndRate.doseRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.doseRange.low.value 1.. MS
+* dosage.doseAndRate.doseRange.low.unit MS
+* dosage.doseAndRate.doseRange.low.system 1.. MS
+* dosage.doseAndRate.doseRange.low.code 1.. MS
+* dosage.doseAndRate.doseRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.doseRange.high.value 1.. MS
+* dosage.doseAndRate.doseRange.high.unit MS
+* dosage.doseAndRate.doseRange.high.system 1.. MS
+* dosage.doseAndRate.doseRange.high.code 1.. MS
 * dosage.doseAndRate.doseQuantity MS
+* dosage.doseAndRate.doseQuantity ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.doseQuantity.value 1.. MS
+* dosage.doseAndRate.doseQuantity.unit MS
+* dosage.doseAndRate.doseQuantity.system 1.. MS
+* dosage.doseAndRate.doseQuantity.code 1.. MS
 * dosage.doseAndRate.rate[x] MS
 * dosage.doseAndRate.rateRatio MS
+* dosage.doseAndRate.rateRatio.numerator MS
+* dosage.doseAndRate.rateRatio.numerator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.rateRatio.numerator.value 1.. MS
+* dosage.doseAndRate.rateRatio.numerator.unit MS
+* dosage.doseAndRate.rateRatio.numerator.system 1.. MS
+* dosage.doseAndRate.rateRatio.numerator.code 1.. MS
+* dosage.doseAndRate.rateRatio.denominator MS
+* dosage.doseAndRate.rateRatio.denominator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.rateRatio.denominator.value 1.. MS
+* dosage.doseAndRate.rateRatio.denominator.unit MS
+* dosage.doseAndRate.rateRatio.denominator.system 1.. MS
+* dosage.doseAndRate.rateRatio.denominator.code 1.. MS
 * dosage.doseAndRate.rateRange MS
+* dosage.doseAndRate.rateRange.low MS
+* dosage.doseAndRate.rateRange.low ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.rateRange.low.value 1.. MS
+* dosage.doseAndRate.rateRange.low.unit MS
+* dosage.doseAndRate.rateRange.low.system 1.. MS
+* dosage.doseAndRate.rateRange.low.code 1.. MS
+* dosage.doseAndRate.rateRange.high MS
+* dosage.doseAndRate.rateRange.high ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.rateRange.high.value 1.. MS
+* dosage.doseAndRate.rateRange.high.unit MS
+* dosage.doseAndRate.rateRange.high.system 1.. MS
+* dosage.doseAndRate.rateRange.high.code 1.. MS
 * dosage.doseAndRate.rateQuantity MS
+* dosage.doseAndRate.rateQuantity ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.doseAndRate.rateQuantity.value 1.. MS
+* dosage.doseAndRate.rateQuantity.unit MS
+* dosage.doseAndRate.rateQuantity.system 1.. MS
+* dosage.doseAndRate.rateQuantity.code 1.. MS
+* dosage.maxDosePerPeriod MS
+* dosage.maxDosePerPeriod.numerator MS
+* dosage.maxDosePerPeriod.numerator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.maxDosePerPeriod.numerator.value 1.. MS
+* dosage.maxDosePerPeriod.numerator.unit MS
+* dosage.maxDosePerPeriod.numerator.system 1.. MS
+* dosage.maxDosePerPeriod.numerator.code 1.. MS
+* dosage.maxDosePerPeriod.denominator MS
+* dosage.maxDosePerPeriod.denominator ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.maxDosePerPeriod.denominator.value 1.. MS
+* dosage.maxDosePerPeriod.denominator.unit MS
+* dosage.maxDosePerPeriod.denominator.system 1.. MS
+* dosage.maxDosePerPeriod.denominator.code 1.. MS
+* dosage.maxDosePerAdministration MS
+* dosage.maxDosePerAdministration ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.maxDosePerAdministration.value 1.. MS
+* dosage.maxDosePerAdministration.unit MS
+* dosage.maxDosePerAdministration.system 1.. MS
+* dosage.maxDosePerAdministration.code 1.. MS

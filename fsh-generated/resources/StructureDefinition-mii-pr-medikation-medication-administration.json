@@ -517,6 +517,32 @@
       {
         "id": "MedicationAdministration.dosage.dose",
         "path": "MedicationAdministration.dosage.dose",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.value",
+        "path": "MedicationAdministration.dosage.dose.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.unit",
+        "path": "MedicationAdministration.dosage.dose.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.system",
+        "path": "MedicationAdministration.dosage.dose.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.dose.code",
+        "path": "MedicationAdministration.dosage.dose.code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -548,6 +574,68 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator",
+        "path": "MedicationAdministration.dosage.rate[x].numerator",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator.value",
+        "path": "MedicationAdministration.dosage.rate[x].numerator.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator.unit",
+        "path": "MedicationAdministration.dosage.rate[x].numerator.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator.system",
+        "path": "MedicationAdministration.dosage.rate[x].numerator.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator.code",
+        "path": "MedicationAdministration.dosage.rate[x].numerator.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator",
+        "path": "MedicationAdministration.dosage.rate[x].denominator",
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator.value",
+        "path": "MedicationAdministration.dosage.rate[x].denominator.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator.unit",
+        "path": "MedicationAdministration.dosage.rate[x].denominator.unit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator.system",
+        "path": "MedicationAdministration.dosage.rate[x].denominator.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator.code",
+        "path": "MedicationAdministration.dosage.rate[x].denominator.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "MedicationAdministration.dosage.rate[x]:rateQuantity",
         "path": "MedicationAdministration.dosage.rate[x]",
         "sliceName": "rateQuantity",
@@ -561,6 +649,32 @@
             ]
           }
         ],
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity.value",
+        "path": "MedicationAdministration.dosage.rate[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity.unit",
+        "path": "MedicationAdministration.dosage.rate[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity.system",
+        "path": "MedicationAdministration.dosage.rate[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.dosage.rate[x]:rateQuantity.code",
+        "path": "MedicationAdministration.dosage.rate[x].code",
+        "min": 1,
         "mustSupport": true
       }
     ]
