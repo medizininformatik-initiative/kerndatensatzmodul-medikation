@@ -36,6 +36,7 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 ## Autoren (in alphabetischer Reihenfolge)
 
 * Alexander Zautke (HL7 e.V.)
+* Andrea Riedel (MIRACUM) 
 * Caroline Bönisch (HiGHmed)
 * Danny Ammon (SMITH)
 * Editha Räuscher(TMF e.V.)
@@ -44,10 +45,13 @@ Anmerkungen und Kritik werden in Form von 'Issues' auf [GitHub](https://github.c
 * Karoline Buckow (TMF e.V.)
 * Martin Boeker (DIFUTURE)
 * Matthias Löbe (SMITH)
+* Maximilian Reith (KBV) 
+* Noemi Deppenwiese (MIRACUM) 
 * Sebastian Semler (TMF e.V.)
+* Stefanie Schild (MIRACUM) 
 * Susann Wrobel (SMITH)
 * Susanne Zabka (MIRACUM)
-* Sylvia Thun (HL7 e.V.)
+* Sylvia Thun (HL7 Deutschland e.V.)
 * Thomas Ganslandt (MIRACUM)
 
 ## Copyright-Hinweis, Nutzungshinweise
