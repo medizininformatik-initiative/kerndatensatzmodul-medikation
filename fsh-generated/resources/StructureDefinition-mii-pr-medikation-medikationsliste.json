@@ -106,8 +106,8 @@
           {
             "key": "medication-list-context-1",
             "severity": "error",
-            "human": "Wenn der Kontext Aufnahme oder Entlassung ist, soll der mode 'snapshot' sein. ",
-            "expression": "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230').exists() implies List.mode='snapshot'",
+            "human": "Wenn der Kontext Aufnahme, Entlassung oder ambulanter Kontakt ist, soll der mode 'snapshot' sein.",
+            "expression": "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E100').exists() implies List.mode='snapshot'",
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           },
           {

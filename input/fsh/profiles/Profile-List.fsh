@@ -59,9 +59,9 @@ Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationslis
 * urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E230 "stationäre Entlassung"
 
 Invariant: medication-list-context-1
-Description: "Wenn der Kontext Aufnahme oder Entlassung ist, soll der mode 'snapshot' sein. "
+Description: "Wenn der Kontext Aufnahme, Entlassung oder ambulanter Kontakt ist, soll der mode 'snapshot' sein."
 Severity: #error
-Expression: "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230').exists() implies List.mode='snapshot'"
+Expression: "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E100').exists() implies List.mode='snapshot'"
 
 Invariant: medication-list-context-2
 Description: "Wenn der Kontext stationärer Aufenthalt ist, soll der mode 'working' sein."
