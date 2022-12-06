@@ -24,12 +24,15 @@ Im Bereich der Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnu
 
 {{render:CodeSystemWirkstofftyp}}
 
-<br><br>
+---
+
 **Arzneimittelprodukte**
 
 Zur Identifikation von Arzneimittelprodukten wird vorgeschlagen:
 * die [Pharmazentralnummer (PZN)](https://de.wikipedia.org/wiki/Pharmazentralnummer) Diese Nummern müssen über ein öffentlich verfügbare URL/URI abfragbar gemacht werden. (§31b SGB V)
 * [Pharmaceutical Product Identifier (PHPID)](https://www.fda.gov/industry/fda-resources-data-standards/pharmaceutical-product-identification), welche Teil der ISO-IDMP-Standards sind, jedoch aktuell nicht verfügbar.
+
+---
 
 **Kombinierte Arzneimittelpackungen**
 
@@ -41,6 +44,8 @@ Das kombinierte Fertigarzneimittel wird im Medikationsplan mit einer PZN kodiert
 Variante 2: zwei oder mehrere PZNs
 Die einzelnen Komponenten des Fertigarzneimittels werden durch zwei oder mehrere PZNs im Medikationsplan kodiert. In diesem Fall ist das kombinierte Fertigarzneimittel durch Aufteilung auf entsprechende, aufeinanderfolgende Medikationseinträge darzustellen. Es lässt sich strukturell derzeit kein Zusammenhang zwischen Medikationseinträgen herstellen, der eine Zusammengehörigkeit als kombiniertes Fertigarzneimittel kennzeichnet. Diesen Zusammenhang kann der Anwender bei Bedarf durch geeignete Texte – ggf. durch eine eigene Zwischenüberschrift herstellen.
 
+---
+
 **Anwendungsart und Darreichungsform**
 
 Für die Anwendungsart und Darreichungsform sollen genutzt werden:
@@ -48,6 +53,22 @@ Für die Anwendungsart und Darreichungsform sollen genutzt werden:
 * Alternativ kann die Bezeichnung einer Darreichungsform in Form des IFA-Codes angegeben werden. Vorgaben gemäß KBV Medikationsplan. Schlüsseltabelle: https://applications.kbv.de/S_BMP_DARREICHUNGSFORM_V1.02.xhtml
 
 Bevorzugt sollten hier die Standard-Terminologien der [EDQM verwendet werden, da sie zu den ISO-Standards zur "Identification of Medicinal Products" konform sind. 
+
+---
+
+**Kontext der Anwendung von Medikation**
+
+<p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
+Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und steht zur Kommentierung.
+</p>
+
+Codes zur Differenzierung des Kontextes in dem eine Medikationsliste (List) verwaltet wird oder zur Kategorisierung eines Medikationseintrags (MedicationStatement) sind im folgenden ValueSet dargestellt:
+
+Canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext
+
+{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext}}
+
+---
 
 **Liste externer Code Systeme** 
 
