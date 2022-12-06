@@ -4,7 +4,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength_Numerator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für Medication.ingredient.strength.numerator"
@@ -24,7 +24,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength_Denominator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für Medication.ingredient.strength.denominator"
@@ -44,7 +44,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrength"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-09-22"
 * description = "Suchparameter für Medication.ingredient.strength"
@@ -63,7 +63,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-ReasonReference"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_ReasonReference"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für (MedicationAdministration|MedicationStatement).reasonReference"
@@ -82,7 +82,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageSite"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_DosageSite"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.site"
@@ -103,7 +103,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageRoute"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_Medication_DosageRoute"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für (MedicationAdministration|MedicationStatement).dosage.route"
@@ -124,7 +124,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_DoseRangeLow"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.low"
@@ -144,7 +144,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeHigh"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_DoseRangeHigh"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange.high"
@@ -164,7 +164,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRange"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_DoseRange"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-09-22"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseRange"
@@ -183,7 +183,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseQuantity"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_DoseQuantity"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.doseQuantity"
@@ -203,7 +203,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRatioNumerator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.numerator"
@@ -223,7 +223,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioDenominator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRatioDenominator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio.denominator"
@@ -243,7 +243,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatio"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRatio"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-09-22"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRatio"
@@ -262,7 +262,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeLow"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRangeLow"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.low"
@@ -282,7 +282,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeHigh"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRangeHigh"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange.high"
@@ -302,7 +302,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateRange"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-09-22"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange"
@@ -321,7 +321,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateQuantity"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationStatement_RateQuantity"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationStatement.dosage.doseAndRate.rateQuantity"
@@ -341,7 +341,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-Dose"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationAdministration_Dose"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationAdministration.dosage.dose"
@@ -361,7 +361,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatioNumerator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationAdministration.dosage.rateRatio.numerator"
@@ -381,7 +381,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatioDenominator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationAdministration.dosage.rateRatio.denominator"
@@ -401,7 +401,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatio"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatio"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-09-22"
 * description = "Suchparameter für MedicationAdministration.dosage.rateRatio"
@@ -420,7 +420,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateQuantity"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationAdministration_RateQuantity"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationAdministration.dosage.rateQuantity"
@@ -440,7 +440,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeLow"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_DoseRangeLow"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.doseRange.low"
@@ -460,7 +460,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeHigh"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_DoseRangeHigh"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.doseRange.high"
@@ -480,7 +480,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseQuantity"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_DoseQuantity"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.doseQuantity"
@@ -500,7 +500,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioNumerator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_RateRatioNumerator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateRatio.numerator"
@@ -520,7 +520,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioDenominator"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_RateRatioDenominator"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateRatio.denominator"
@@ -540,7 +540,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeLow"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_RateRangeLow"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateRange.low"
@@ -560,7 +560,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeHigh"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_RateRangeHigh"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateRange.high"
@@ -580,7 +580,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateQuantity"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_MedicationRequest_RateQuantity"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateQuantity"
@@ -600,7 +600,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/List-Mode"
 * insert SP_Publisher
 * name = "MII_SP_Medikation_List_Mode"
-* status = #draft
+* status = #active
 * experimental = false
 * date = "2022-06-28"
 * description = "Suchparameter für List.mode"

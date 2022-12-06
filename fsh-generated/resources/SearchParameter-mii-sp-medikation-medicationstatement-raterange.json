@@ -14,7 +14,7 @@
     }
   ],
   "name": "MII_SP_Medikation_MedicationStatement_RateRange",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2022-09-22",
   "description": "Suchparameter für MedicationStatement.dosage.doseAndRate.rateRange",

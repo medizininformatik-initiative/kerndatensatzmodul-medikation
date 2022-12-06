@@ -14,7 +14,7 @@
     }
   ],
   "name": "MII_SP_Medikation_Medication_Ingredient_Strength",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2022-09-22",
   "description": "Suchparameter für Medication.ingredient.strength",

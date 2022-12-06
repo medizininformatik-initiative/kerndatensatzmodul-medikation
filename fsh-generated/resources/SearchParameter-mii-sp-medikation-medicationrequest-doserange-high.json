@@ -14,7 +14,7 @@
     }
   ],
   "name": "MII_SP_Medikation_MedicationRequest_DoseRangeHigh",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
   "date": "2022-06-28",
   "description": "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.doseRange.high",
