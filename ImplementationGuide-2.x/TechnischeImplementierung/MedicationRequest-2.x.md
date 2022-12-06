@@ -1,7 +1,7 @@
 #### {{page-title}}
 
 <p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
-Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und befindet sich in Entwicklung.
+Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und steht zur Kommentierung.
 </p>
 
 Die MedicationRequest Ressource beschreibt einen Auftrag zur Lieferung des Medikaments oder die Anordnung und die Anweisungen zur Verabreichung des Medikaments an einen Patienten.

@@ -1,7 +1,7 @@
 #### {{page-title}}
 
 <p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
-Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und befindet sich in Entwicklung.
+Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und steht zur Kommentierung.
 </p>
 
 Die List Ressource ist eine flache Sammlung von Ressourcen und bietet Funktionen für die Verwaltung der Sammlung. In diesem Fall dient die Ressource als Sammlung der Medikationen, die ein Patient zu einem bestimmten Zeitpunkt einnimmt, beispielsweise bei Aufnahme oder Entlassung. Die Ressource verweist dazu auf MedicationStatement Ressourcen.
@@ -16,7 +16,7 @@ for compose.include.concept select
     display
 ```
 
-Je nachdem, ob es sich um eine Medikationsliste während eines stationären Aufenthaltes oder eine Aufnahme- oder Entlassmedikation handelt, wird `List.mode` unterschiedlich gesetzt. Für die Medikationsliste während des stationären Aufenthaltes wird `List.mode` = `working` gesetzt. Im Kontext von Aufnahme und Entlassung soll `List.mode` = `snapshot` sein.
+Je nachdem, ob es sich um eine Medikationsliste während eines stationären Aufenthaltes oder eine Aufnahme- oder Entlassmedikation handelt, wird `List.mode` unterschiedlich gesetzt. Für die Medikationsliste während des stationären Aufenthaltes wird `List.mode` = `working` gesetzt. Im Kontext von Aufnahme, Entlassung oder ambulantem Kontakt soll `List.mode` = `snapshot` sein.
 
 @```
 from StructureDefinition 
