@@ -1,6 +1,6 @@
 @startuml
 
-skinparam ObjectBackgroundColor LightBlue
+skinparam ClassBackgroundColor LightBlue
 skinparam Linetype ortho
 
 class Medikation {
