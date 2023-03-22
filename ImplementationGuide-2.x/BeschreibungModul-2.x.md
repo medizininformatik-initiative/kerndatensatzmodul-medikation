@@ -45,6 +45,7 @@ Es stehen entsprechend ihres Anwendungsbereiches fünf Teilmodule für die Dokum
 
 Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen beziehen, wird die Einheit für die Instanz von "Medication" wie folgt angegeben:
 
+``` json
 "amount": {
         "numerator": {
             "value": 27,
@@ -59,6 +60,7 @@ Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen
             "code": "1"
         }
     },
+```
 
 #### Kombinationspackungen
 
