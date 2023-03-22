@@ -2,7 +2,7 @@
 
 {{render:KDSMED04}}
 
-Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelanordnungen und -gaben sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
+Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -verabreichungen sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
 
 Im Implementationsguide werden zwei unterschiedliche Formen von Modellen verwendet:
 
@@ -29,9 +29,9 @@ Angaben zur Medikation können von der bloßen Dokumentation der Gabe eines Prä
 Es stehen entsprechend ihres Anwendungsbereiches fünf Teilmodule für die Dokumentation der Medikation zur Verfügung: 
 
 1. Medikation (Medication) beschreibt eine einzelne Medikation mit Wirkstoff, Verabreichungsform, Wirkstoffstärke etc. 
-1. Medikationseintrag (MedicationStatement) beschreibt von der Anordnung oder Verabreichung unabhängige Medikationsdokumentation 
+1. Medikationseintrag (MedicationStatement) beschreibt von der Verordnung oder Verabreichung unabhängige Medikationsdokumentation 
 4. Medikationsliste (List) erlaubt es mehrere Medikationseinträge (MedicationStatement) zu einer zusammengehörigen Liste zusammenzufassen 
-2. Medikationsanordnung (MedicationRequest) beschreibt die Anordnung einer Medikation durch medizinisches Personal 
+2. Medikationsverordnung (MedicationRequest) beschreibt die Verordnung einer Medikation durch medizinisches Personal 
 3. Medikationsverabreichung (MedicationAdministration) beschreibt ein aktuelles Verabreichungereignis einer Medikation durch medizinisches Personal 
 
 ### Medikation
@@ -77,7 +77,7 @@ Kombinationspackungen können auf einfache Weise durch eine hierarchische Schach
 
 {{render:ig-bilder-IG-Medikation-KDS-Medikationseintrag-2x}}
 
-Zur Dokumentation von der Anordnung oder Verabreichung unabhängiger Medikationsereignisse und -dokumentation z. B. in Medikationsplänen oder bei der Angabe von Medikationen durch den Patienten selber. 
+Zur Dokumentation von der Verordnung oder Verabreichung unabhängiger Medikationsereignisse und -dokumentation z. B. in Medikationsplänen oder bei der Angabe von Medikationen durch den Patienten selber. 
 
 Eine Medikationsverabreichung ist von einem Medikationseintrag durch die vollständige(re) Informationen über die Verabreichung unterschieden, die auf den tatsächlichen Verabreichungsinformationen basiert. Ein Medikationseintrag ist damit in der Regel weniger spezifisch als eine Medikationsverabreichung. Für den Medikationseintrag ist nicht vorgeschrieben zu dokumentieren, wann genau das Medikament verabreicht wurde, sondern nur dass ein Bericht über die Einnahme dieses Medikaments vorliegt, wobei Informationen zu Zeit, Menge oder Rate oder sogar das Medikamentenprodukt fehlen, unvollständig oder weniger präzise sein können. Die Angaben zur Medikamenteneinnahme können aus dem Gedächtnis des Patienten, aus einem Rezept oder aus einer Medikamentenliste stammen, die der Patient, der Arzt oder eine andere am Prozess beteiligte Personen führen [nach https://www.hl7.org/fhir/medicationstatement.html]. 
 
@@ -110,16 +110,16 @@ Die Art eines Medikationseintrages kann durch folgende Codes weiter spezifiziert
 * Stationäre Medikation `IHE Deutschland Fallkontext|E200 "stationärer Aufenthalt"`
 
 
-### Medikationsanordnung (Arzneimittelanforderung)
-Zur Dokumentation einer Medikationsanordnung durch medizinisches Personal.
+### Medikationsverordnung (Arzneimittelanforderung)
+Zur Dokumentation einer Medikationsverordnung durch medizinisches Personal.
 
-**Abbildung Modul MEDIKATION Medikationsanordnung:** 
+**Abbildung Modul MEDIKATION Medikationsverordnung:** 
 
-{{render:ig-bilder-IG_Medikation_KDS_Medikationsanordnung}}
+{{render:ig-bilder-IG_Medikation_KDS_Medikationsverordnung_2x}}
 
-#### Änderung der Dosis bei Medikamenteneintrag und -anordnung
+#### Änderung der Dosis bei Medikamenteneintrag und -verordnung
 
-Zur Abbildung von Dosisänderungen während der Behandlung muss jeweils eine neue Instanz von Medikationseintrag bzw. -anordnung mit der veränderten Dosierung angelegt werden. Die angegebenen Behandlungszeiträume sollten dann aneinander anschließen. Bei Medikationsanordnung kann zusätzlich über MedicationRequest.priorPrescription auf die vorhergehende Anordnung verlinkt werden.
+Zur Abbildung von Dosisänderungen während der Behandlung muss jeweils eine neue Instanz von Medikationseintrag bzw. -verordnung mit der veränderten Dosierung angelegt werden. Die angegebenen Behandlungszeiträume sollten dann aneinander anschließen. Bei Medikationsverordnung kann zusätzlich über MedicationRequest.priorPrescription auf die vorhergehende Verordnung verlinkt werden.
 
 ### Medikationsverabreichung
 
@@ -127,7 +127,7 @@ Zur Abbildung von Dosisänderungen während der Behandlung muss jeweils eine neu
 
 {{render:ig-bilder-IG-Medikation-KDS-Medikationsverabreichung-2x}}
 
-Die Medikationsverabreichung wird zur Dokumentation einer Einzelverabreichung einer Medikation auf Ereignisniveau verwendet, bei dem ein Patient ein Medikament einnimmt oder es ihm auf andere Weise verabreicht wird. Beispielhaft seien hier die Einnahme einer Tablette oder eine langlaufende Infusion genannt. Die Medikationsverabreichung ist in jedem Fall mit einem spezifischen Patienten verknüpft und kann darüber hinaus als Ereignis mit einer spezifischen Behandlungsepisode (Fall) und der zugrunde liegenden Medikationsanordnung verknüpft sein.
+Die Medikationsverabreichung wird zur Dokumentation einer Einzelverabreichung einer Medikation auf Ereignisniveau verwendet, bei dem ein Patient ein Medikament einnimmt oder es ihm auf andere Weise verabreicht wird. Beispielhaft seien hier die Einnahme einer Tablette oder eine langlaufende Infusion genannt. Die Medikationsverabreichung ist in jedem Fall mit einem spezifischen Patienten verknüpft und kann darüber hinaus als Ereignis mit einer spezifischen Behandlungsepisode (Fall) und der zugrunde liegenden Medikationsverordnung verknüpft sein.
 Diese Ressource deckt die Verabreichung aller Medikamente (ausgenommen Impfstoffe) ab. Sie wird in erster Linie in der stationären Versorgung verwendet, um die Verabreichung von Medikamenten zu erfassen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Anwendungen usw. Es kann auch in ambulanten Einrichtungen zur Erfassung der Verabreichungen von Medikamenten verwendet werden. In einigen Fällen kann es für die Berichterstattung über die häusliche Gesundheitsfürsorge verwendet werden, z. B. für die Erfassung von selbst verabreichtem oder sogar geräteverabreichtem Insulin [nach http://hl7.org/fhir/medicationadministration.html].
 
-Eine Minimalform der Dokumentation von Medikation im Krankenhaus (Medikationsverabreichung) kann von den Häusern der stationären Versorgung auf Basis von Codes des Operationen- und Prozedurenschlüssels (OPS) für zusatzentgeltfähige Medikamente erreicht werden. Eine vollständig strukturierte Medikationsdokumentation findet darüber hinaus regelhaft auf den Intensivstationen im Patientendatenmanagementsystem (PDMS) statt, teilweise auch in der regulären stationären Versorgung im Rahmen von Systemen zur Visitendokumentation oder dedizierten Anordnungssystemen. Außerdem erfolgt häufig eine fallbezogene Dokumentation in Systemen der Krankenhausapotheken, z.B. im Rahmen der Eigenherstellung von Infusionslösungen oder der Chargendokumentation.
+Eine Minimalform der Dokumentation von Medikation im Krankenhaus (Medikationsverabreichung) kann von den Häusern der stationären Versorgung auf Basis von Codes des Operationen- und Prozedurenschlüssels (OPS) für zusatzentgeltfähige Medikamente erreicht werden. Eine vollständig strukturierte Medikationsdokumentation findet darüber hinaus regelhaft auf den Intensivstationen im Patientendatenmanagementsystem (PDMS) statt, teilweise auch in der regulären stationären Versorgung im Rahmen von Systemen zur Visitendokumentation oder dedizierten Verordnungssystemen. Außerdem erfolgt häufig eine fallbezogene Dokumentation in Systemen der Krankenhausapotheken, z.B. im Rahmen der Eigenherstellung von Infusionslösungen oder der Chargendokumentation.
