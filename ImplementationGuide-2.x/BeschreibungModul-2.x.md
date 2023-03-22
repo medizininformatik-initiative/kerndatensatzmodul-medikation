@@ -34,7 +34,42 @@ Es stehen entsprechend ihres Anwendungsbereiches fünf Teilmodule für die Dokum
 2. Medikationsanordnung (MedicationRequest) beschreibt die Anordnung einer Medikation durch medizinisches Personal 
 3. Medikationsverabreichung (MedicationAdministration) beschreibt ein aktuelles Verabreichungereignis einer Medikation durch medizinisches Personal 
 
+### Medikation
 
+**Informationsmodell Medikation:** 
+
+{{render:ig-bilder-IG-Medikation-KDS-Medikation-2x}}
+
+
+#### Angabe der Einheit "Packung"
+
+Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen beziehen, wird die Einheit für die Instanz von "Medication" wie folgt angegeben:
+
+"amount": {
+        "numerator": {
+            "value": 27,
+            "unit": "Tablet",
+            "system": "http://standardterms.edqm.eu",
+            "code": "10219000"
+        },
+        "denominator": {
+            "value": 1,
+            "unit": "Package",
+            "system": "http://unitsofmeasure.org",
+            "code": "1"
+        }
+    },
+
+#### Kombinationspackungen
+
+**Kombinationspackungen (nach Anforderung der KBV)**
+
+{{render:ig-bilder-IG-Medikation-KDS-Kombinationspackungen}}
+
+Kombinationspackungen können auf einfache Weise durch eine hierarchische Schachtelung der Medication über eine Verknüpfung ausgehend von Item.reference auf andere Medication-Instanzen dargestellt werden. Damit würde die „obere“ Medication-Instanz als Packungshierarchie als Container der eigentlichen Medication dienen. Sie enthält auch die entsprechende PZN der Kombinationspackung. Die eigentliche Medikation („Untermedikation") würde als vollständige Medication-Instanzen abgebildet werden (jeweils ohne PZN, vollständige Medikationsdaten mit ASK und ggf. ATC etc).
+
+
+### Medikationseintrag
 
 **Informationsmodell Medikationseintrag:** 
 
@@ -55,6 +90,8 @@ In einer weiteren Ausbaustufe sollten darüber hinaus folgende Datenelemente ver
 * Applikationsort und -weg
 
 Die Datensätze im Modul sind so strukturiert, dass die Information entsprechend den vorhandenen Ausgangsdaten mit unterschiedlichem Detaillierungsgrad angegeben werden kann (zum Beispiel nur Angabe des Wirkstoffes vs. alle Angaben zum Präparat inklusive Wirkstoffe oder nur Beschreibung der Dosierung vs. strukturierte Angaben zur Dosierung).
+
+### Medikationsplan
 
 Zur Erfassung von Medikationsplänen besteht die Möglichkeit mehrere Medikationseinträge in einer Liste zusammenzufassen. 
 
@@ -92,30 +129,3 @@ Die Medikationsverabreichung wird zur Dokumentation einer Einzelverabreichung ei
 Diese Ressource deckt die Verabreichung aller Medikamente (ausgenommen Impfstoffe) ab. Sie wird in erster Linie in der stationären Versorgung verwendet, um die Verabreichung von Medikamenten zu erfassen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Anwendungen usw. Es kann auch in ambulanten Einrichtungen zur Erfassung der Verabreichungen von Medikamenten verwendet werden. In einigen Fällen kann es für die Berichterstattung über die häusliche Gesundheitsfürsorge verwendet werden, z. B. für die Erfassung von selbst verabreichtem oder sogar geräteverabreichtem Insulin [nach http://hl7.org/fhir/medicationadministration.html].
 
 Eine Minimalform der Dokumentation von Medikation im Krankenhaus (Medikationsverabreichung) kann von den Häusern der stationären Versorgung auf Basis von Codes des Operationen- und Prozedurenschlüssels (OPS) für zusatzentgeltfähige Medikamente erreicht werden. Eine vollständig strukturierte Medikationsdokumentation findet darüber hinaus regelhaft auf den Intensivstationen im Patientendatenmanagementsystem (PDMS) statt, teilweise auch in der regulären stationären Versorgung im Rahmen von Systemen zur Visitendokumentation oder dedizierten Anordnungssystemen. Außerdem erfolgt häufig eine fallbezogene Dokumentation in Systemen der Krankenhausapotheken, z.B. im Rahmen der Eigenherstellung von Infusionslösungen oder der Chargendokumentation.
-
-#### Angabe der Einheit "Packung"
-
-Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen beziehen, wird die Einheit für die Instanz von "Medication" wie folgt angegeben:
-
-"amount": {
-        "numerator": {
-            "value": 27,
-            "unit": "Tablet",
-            "system": "http://standardterms.edqm.eu",
-            "code": "10219000"
-        },
-        "denominator": {
-            "value": 1,
-            "unit": "Package",
-            "system": "http://unitsofmeasure.org",
-            "code": "1"
-        }
-    },
-
-#### Kombinationspackungen
-
-Abbildung Kombinationspackungen (nach Anforderung der KBV)
-
-{{render:ig-bilder-IG-Medikation-KDS-Kombinationspackungen}}
-
-Kombinationspackungen können auf einfache Weise durch eine hierarchische Schachtelung der Medication über eine Verknüpfung ausgehend von Item.reference auf andere Medication-Instanzen dargestellt werden. Damit würde die „obere“ Medication-Instanz als Packungshierarchie als Container der eigentlichen Medication dienen. Sie enthält auch die entsprechende PZN der Kombinationspackung. Die eigentliche Medikation („Untermedikation") würde als vollständige Medication-Instanzen abgebildet werden (jeweils ohne PZN, vollständige Medikationsdaten mit ASK und ggf. ATC etc).
