@@ -4,12 +4,12 @@
 
 Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelanordnungen und -gaben sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
 
-Im Implementationsguide werden zwei unterschiedliche Formen von Modellen dargestellt:
+Im Implementationsguide werden zwei unterschiedliche Formen von Modellen verwendet:
 
- 1. Im oberen Teil zur Beschreibung der Module werden logische Informationsmodelle verwendet, mit denen die Anwendungssicht dargestellt wird. Diese Modelle werden mit dem Werkzeug ArtDecor entwickelt und können hier zusammenhängend eingesehen werden (https://art-decor.org/art-decor/decor-datasets--mide-).
- 2. Im unteren Teil zur Darstellung der Implementation in FHIR werden FHIR-Modelle verwendet, die über Simplifier dargestellt werden (https://simplifier.net/MedizininformatikInitiative-ModulMedikation/~introduction).
+ 1. Im oberen Teil des Implementationsguide werden zur Beschreibung der Module logische Informationsmodelle verwendet, um die Anwendungssicht darzustellen. Diese Modelle werden mit dem Werkzeug ArtDecor entwickelt und können hier zusammenhängend eingesehen werden (https://art-decor.org/art-decor/decor-datasets--mide-).
+ 2. Im unteren Teil des Implementationsguide werden zur Darstellung der technischen Implementation des Moduls in FHIR FHIR-Modelle verwendet, die über Simplifier dargestellt werden (https://simplifier.net/MedizininformatikInitiative-ModulMedikation/~introduction).
 
-Diese Formen der Modelle sind entsprechend ihrer jeweiligen Zielsetzung aufeinander abgestimmt: Mapping-Tabellen zwischen den Bezeichnern können über die Tabellendarstellung in Art-Decor dargestellt werden (Spalten Name und Comment: FHIR-Mapping). In der hier vorliegenden Version wurden die gültigen Nameing-Conventions verwendet, bei denen die Bezeichner im logischen Informationsmodell in deutscher Sprache und die Feldnamen der FHIR-Implementierung in englischer Sprache angegeben sind. In folgenden Versionen des Moduls werden Bezeichner nach neuen Nameing-Conventions vereinheitlicht.
+Beide Formen der Modelle sind entsprechend ihrer jeweiligen Zielsetzung kongruent aufeinander abgestimmt: Mapping-Tabellen zwischen den Bezeichnern können über die Tabellendarstellung in Art-Decor dynamisch erzeugt werden (Spalten Name und Comment: FHIR-Mapping). In der hier vorliegenden Version des Moduls wurden die gültigen Nameing-Conventions verwendet, bei denen die Bezeichner im logischen Informationsmodell in deutscher Sprache und die Feldnamen der FHIR-Implementierung in englischer Sprache angegeben sind. In folgenden Versionen des Moduls werden Bezeichner nach neuen Nameing-Conventions vereinheitlicht.
 
 **Informationsmodell Modul MEDIKATION mit Übersicht der Teilmodule:** 
 
