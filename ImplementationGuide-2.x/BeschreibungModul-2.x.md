@@ -115,7 +115,7 @@ Zur Dokumentation einer Medikationsverordnung durch medizinisches Personal.
 
 **Abbildung Modul MEDIKATION Medikationsverordnung:** 
 
-{{render:ig-bilder-IG_Medikation_KDS_Medikationsverordnung_2x}}
+{{render:ig-bilder-IG-Medikation-KDS-Medikationsverordnung-2x}}
 
 #### Änderung der Dosis bei Medikamenteneintrag und -verordnung
 
