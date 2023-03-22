@@ -2,9 +2,16 @@
 
 {{render:KDSMED04}}
 
-Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
+Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelanordnungen und -gaben sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
 
-**Abbildung Modul MEDIKATION in ART-DECOR mit Übersicht der Komponenten:** 
+Im Implementationsguide werden zwei unterschiedliche Formen von Modellen dargestellt:
+
+ 1. Im oberen Teil zur Beschreibung der Module werden logische Informationsmodelle verwendet, mit denen die logische Anwendungssicht dargestellt wird. Diese Modelle werden mit dem Werkzeug ArtDecor entwickelt und können hier zusammenhängend eingesehen werden (https://art-decor.org/art-decor/decor-datasets--mide-).
+ 2. Im unteren Teil zur Darstellung der Implementation in FHIR werden FHIR-Modelle verwendet, die über Simplifier dargestellt werden (https://simplifier.net/MedizininformatikInitiative-ModulMedikation/~introduction)
+
+Diese Formen der Modelle sind entsprechend ihrer jeweiligen Zielsetzung aufeinander abgestimmt: Mapping-Tabellen zwischen den Bezeichnern können über die Tabellendarstellung in Art-Decor dargestellt werden (Spalten Name und Comment: FHIR-Mapping). In der hier vorliegenden Version wurden die gültigen Nameing-Conventions verwendet, bei denen die Bezeichner im logischen Informationsmodell in deutscher Sprache und die Feldnamen der FHIR-Implementierung in englischer Sprache angegeben sind. In folgenden Versionen des Moduls werden Bezeichner nach neuen Nameing-Conventions vereinheitlicht.
+
+**Informationsmodell Modul MEDIKATION mit Übersicht der Komponenten:** 
 
 {{render:ig-bilder-IG-Medikation-KDS-Medikation-Modul-AD-2x}}
 
@@ -22,12 +29,12 @@ Angaben zur Medikation können von der bloßen Dokumentation der Gabe eines Prä
 Es stehen entsprechend ihres Anwendungsbereiches fünf Teilmodule für die Dokumentation der Medikation zur Verfügung: 
 
 1. Medikationseintrag (MedicationStatement) beschreibt von der Anordnung oder Vergabe unabhängige Medikationsdokumentation 
-2. Medikationsverordnung (MedicationRequest) beschreibt die Anordnung einer Medikation durch medizinisches Personal 
+2. Medikationsanordnung (MedicationRequest) beschreibt die Anordnung einer Medikation durch medizinisches Personal 
 3. Medikationsvergabe (MedicationAdministration) beschreibt ein aktuelles Vergabeereignis einer Medikation durch medizinisches Personal 
 4. Medikationsliste (List) erlaubt es mehrere MedicationStatement zu einer zusammengehörigen Liste zusammenzufassen 
 5. Medikation (Medication) beschreibt eine einzelne Medikation mit Wirkstoff, Vergabeform, Wirkstoffstärke etc. 
 
-**Abbildung Medikationseintrag:** 
+**Informationsmodell Medikationseintrag:** 
 
 {{render:ig-bilder-IG-Medikation-KDS-Medikationseintrag-2x}}
 
@@ -49,7 +56,7 @@ Die Datensätze im Modul sind so strukturiert, dass die Information entsprechend
 
 Zur Erfassung von Medikationsplänen besteht die Möglichkeit mehrere Medikationseinträge in einer Liste zusammenzufassen. 
 
-**Abbildung Modul MEDIKATION Medikationsliste:** 
+**Informationsmodell Modul MEDIKATION Medikationsliste:** 
 
 {{render:ig-bilder-IG-Medikation-KDS-Liste}}
 
@@ -62,12 +69,16 @@ Die Art eines Medikationseintrages kann durch folgende Codes weiter spezifiziert
 * Stationäre Medikation `IHE Deutschland Fallkontext|E200 "stationärer Aufenthalt"`
 
 
-### Medikationsverordnung
+### Medikationsanordnung (Arzneimittelanforderung)
 Zur Dokumentation einer Medikationsanordnung durch medizinisches Personal.
 
-**Abbildung Modul MEDIKATION Medikationsverordnung:** 
+**Abbildung Modul MEDIKATION Medikationsanordnung:** 
 
-{{render:ig-bilder-IG-Medikation-KDS-Medikationsverordnung}}
+{{render:ig-bilder-IG-Medikation-KDS-Medikationsanordnung}}
+
+#### Änderung der Dosis bei Medikamenteneintrag und -anordnung
+
+Zur Abbildung von Dosisänderungen während der Behandlung muss jeweils eine neue Instanz von Medikationseintrag bzw. -anordnung mit der veränderten Dosierung angelegt werden. Die angegebenen Behandlungszeiträume sollten dann aneinander anschließen. Bei Medikationsanordnung kann zusätzlich über MedicationRequest.priorPrescription auf die vorhergehende Anordnung verlinkt werden.
 
 ### Medikationsvergabe
 
@@ -78,7 +89,7 @@ Zur Dokumentation einer Medikationsanordnung durch medizinisches Personal.
 Die Medikationsvergabe wird zur Dokumentation einer Einzelvergabe einer Medikation auf Ereignisniveau verwendet, bei dem ein Patient ein Medikament einnimmt oder es ihm auf andere Weise verabreicht wird. Beispielhaft seien hier die Einnahme einer Tablette oder eine langlaufende Infusion genannt. Die Medikationsvergabe ist in jedem Fall mit einem spezifischen Patienten verknüpft und kann darüber hinaus als Ereignis mit einer spezifischen Behandlungsepisode (Fall) und der zugrunde liegenden Medikationsanordnung verknüpft sein.
 Diese Ressource deckt die Verabreichung aller Medikamente (ausgenommen Impfstoffe) ab. Sie wird in erster Linie in der stationären Versorgung verwendet, um die Verabreichung von Medikamenten zu erfassen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Anwendungen usw. Es kann auch in ambulanten Einrichtungen zur Erfassung der Verabreichungen von Medikamenten verwendet werden. In einigen Fällen kann es für die Berichterstattung über die häusliche Gesundheitsfürsorge verwendet werden, z. B. für die Erfassung von selbst verabreichtem oder sogar geräteverabreichtem Insulin [nach http://hl7.org/fhir/medicationadministration.html].
 
-Eine Minimalform der Dokumentation von Medikation im Krankenhaus (Medikationsvergabe) kann von den Häusern der stationären Versorgung auf Basis von Codes des Operationen- und Prozedurenschlüssels (OPS) für zusatzentgeltfähige Medikamente erreicht werden. Eine vollständig strukturierte Medikationsdokumentation findet darüber hinaus regelhaft auf den Intensivstationen im Patientendatenmanagementsystem (PDMS) statt, teilweise auch in der regulären stationären Versorgung im Rahmen von Systemen zur Visitendokumentation oder dedizierten Verordnungssystemen. Außerdem erfolgt häufig eine fallbezogene Dokumentation in Systemen der Krankenhausapotheken, z.B. im Rahmen der Eigenherstellung von Infusionslösungen oder der Chargendokumentation.
+Eine Minimalform der Dokumentation von Medikation im Krankenhaus (Medikationsvergabe) kann von den Häusern der stationären Versorgung auf Basis von Codes des Operationen- und Prozedurenschlüssels (OPS) für zusatzentgeltfähige Medikamente erreicht werden. Eine vollständig strukturierte Medikationsdokumentation findet darüber hinaus regelhaft auf den Intensivstationen im Patientendatenmanagementsystem (PDMS) statt, teilweise auch in der regulären stationären Versorgung im Rahmen von Systemen zur Visitendokumentation oder dedizierten Anordnungssystemen. Außerdem erfolgt häufig eine fallbezogene Dokumentation in Systemen der Krankenhausapotheken, z.B. im Rahmen der Eigenherstellung von Infusionslösungen oder der Chargendokumentation.
 
 #### Kombinationspackungen
 
