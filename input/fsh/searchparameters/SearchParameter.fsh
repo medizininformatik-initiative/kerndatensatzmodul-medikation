@@ -3,6 +3,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength_Numerator"
 * status = #active
 * experimental = false
@@ -23,6 +24,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength_Denominator"
 * status = #active
 * experimental = false
@@ -43,6 +45,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrength"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_Ingredient_Strength"
 * status = #active
 * experimental = false
@@ -62,6 +65,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-ReasonReference"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_ReasonReference"
 * status = #active
 * experimental = false
@@ -81,6 +85,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageSite"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_DosageSite"
 * status = #active
 * experimental = false
@@ -102,6 +107,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-DosageRoute"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_Medication_DosageRoute"
 * status = #active
 * experimental = false
@@ -123,6 +129,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_DoseRangeLow"
 * status = #active
 * experimental = false
@@ -143,6 +150,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeHigh"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_DoseRangeHigh"
 * status = #active
 * experimental = false
@@ -163,6 +171,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRange"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_DoseRange"
 * status = #active
 * experimental = false
@@ -182,6 +191,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseQuantity"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_DoseQuantity"
 * status = #active
 * experimental = false
@@ -202,6 +212,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRatioNumerator"
 * status = #active
 * experimental = false
@@ -222,6 +233,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioDenominator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRatioDenominator"
 * status = #active
 * experimental = false
@@ -242,6 +254,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatio"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRatio"
 * status = #active
 * experimental = false
@@ -261,6 +274,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeLow"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRangeLow"
 * status = #active
 * experimental = false
@@ -281,6 +295,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeHigh"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRangeHigh"
 * status = #active
 * experimental = false
@@ -301,6 +316,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateRange"
 * status = #active
 * experimental = false
@@ -320,6 +336,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateQuantity"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationStatement_RateQuantity"
 * status = #active
 * experimental = false
@@ -340,6 +357,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-Dose"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationAdministration_Dose"
 * status = #active
 * experimental = false
@@ -360,6 +378,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatioNumerator"
 * status = #active
 * experimental = false
@@ -380,6 +399,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatioDenominator"
 * status = #active
 * experimental = false
@@ -400,6 +420,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatio"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationAdministration_RateRatio"
 * status = #active
 * experimental = false
@@ -419,6 +440,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateQuantity"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationAdministration_RateQuantity"
 * status = #active
 * experimental = false
@@ -439,6 +461,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeLow"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_DoseRangeLow"
 * status = #active
 * experimental = false
@@ -459,6 +482,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseRangeHigh"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_DoseRangeHigh"
 * status = #active
 * experimental = false
@@ -479,6 +503,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-DoseQuantity"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_DoseQuantity"
 * status = #active
 * experimental = false
@@ -499,6 +524,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioNumerator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_RateRatioNumerator"
 * status = #active
 * experimental = false
@@ -519,6 +545,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRatioDenominator"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_RateRatioDenominator"
 * status = #active
 * experimental = false
@@ -539,6 +566,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeLow"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_RateRangeLow"
 * status = #active
 * experimental = false
@@ -559,6 +587,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateRangeHigh"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_RateRangeHigh"
 * status = #active
 * experimental = false
@@ -579,6 +608,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationRequest-RateQuantity"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_MedicationRequest_RateQuantity"
 * status = #active
 * experimental = false
@@ -599,6 +629,7 @@ InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/List-Mode"
 * insert SP_Publisher
+* insert Version
 * name = "MII_SP_Medikation_List_Mode"
 * status = #active
 * experimental = false

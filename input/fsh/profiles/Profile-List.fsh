@@ -8,7 +8,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * insert Translation(^name, en-US, MII_PR_Medikation_Medicationlist)
 * insert Translation(^title, en-US, MII PR Medikation Medicationlist)
 * insert Translation(^description, en-US, List of discrete medications e.g. for documentation of admission or discharge medication.)
-//* ^status = #draft
+* insert PR_CS_VS_Version
 * insert Publisher
 * obeys medication-list-context-1 and medication-list-context-2
 * meta MS
@@ -47,8 +47,7 @@ Title: "MII VS Medikation Fallkontext"
 Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
-//* ^version = "0.1.0"
-//* ^status = #draft
+* insert PR_CS_VS_Version
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url

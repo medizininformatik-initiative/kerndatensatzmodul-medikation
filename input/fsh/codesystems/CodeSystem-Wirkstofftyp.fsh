@@ -10,6 +10,7 @@ Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substan
 * ^status = #active
 * ^experimental = false
 * insert Publisher
+* insert PR_CS_VS_Version
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
 * ^content = #complete

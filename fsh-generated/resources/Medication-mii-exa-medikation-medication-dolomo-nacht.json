@@ -9,8 +9,8 @@
   "code": {
     "coding": [
       {
-        "code": "N02BE51",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BE51",
         "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
       }
     ]
@@ -18,8 +18,8 @@
   "form": {
     "coding": [
       {
-        "code": "10219000",
         "system": "http://standardterms.edqm.eu",
+        "code": "10219000",
         "display": "Tablet"
       }
     ]

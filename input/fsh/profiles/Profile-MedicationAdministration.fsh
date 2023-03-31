@@ -7,6 +7,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(^name, en-US, MII_PR_Medikation_MedicationAdministration)
 * insert Translation(^title, en-US, MII PR Medikation MedicationAdministration)
 * insert Translation(^description, en-US, This profile describes medication administrations\, including self-administration of oral medications\, injections\, intravenous administrations\, etc.)
+* insert PR_CS_VS_Version
 * ^status = #active
 * ^date = "2022-05-18"
 * insert Publisher

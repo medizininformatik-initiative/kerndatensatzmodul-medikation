@@ -13,6 +13,7 @@
       ]
     }
   ],
+  "version": "2.0.0",
   "name": "MII_SP_Medikation_Medication_DosageRoute",
   "status": "active",
   "experimental": false,

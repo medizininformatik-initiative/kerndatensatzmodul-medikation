@@ -5,7 +5,6 @@
   "id": "mii-vs-medikation-wirkstofftyp",
   "title": "MII VS Medikation Wirkstofftypen",
   "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
-  "version": "2.0.0-ballot",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
   "meta": {
     "profile": [
@@ -75,6 +74,7 @@
       ]
     }
   ],
+  "version": "2.0.0",
   "compose": {
     "include": [
       {

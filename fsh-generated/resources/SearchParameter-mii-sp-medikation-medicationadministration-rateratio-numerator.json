@@ -13,6 +13,7 @@
       ]
     }
   ],
+  "version": "2.0.0",
   "name": "MII_SP_Medikation_MedicationAdministration_RateRatioNumerator",
   "status": "active",
   "experimental": false,

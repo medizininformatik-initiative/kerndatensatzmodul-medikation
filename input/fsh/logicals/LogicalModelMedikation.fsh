@@ -7,6 +7,7 @@ Description: "MII LogicalModel Modul Medikation"
 * insert Translation(^title, en-US, MII LM Medikation)
 * insert Translation(^description, en-US, MII LogicalModel Module Medikation)
 * insert Publisher
+* insert PR_CS_VS_Version
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"
 * . ^short = "Das Basismodul Medikation enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -gaben"
 * Medikation 0..* BackboneElement "Medikation" "Definition eines Medikamentes zum Zwecke der Verschreibung, Abgabe und Verabreichung. Es kann sich um ein fertiges Arzneimittelprodukt, einen Wirkstoff oder eine Rezeptur handeln."
