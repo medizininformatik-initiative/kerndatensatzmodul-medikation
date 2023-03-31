@@ -9,13 +9,13 @@
   "code": {
     "coding": [
       {
-        "code": "02758994",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "code": "02758994",
         "display": "dolomo® TN"
       },
       {
-        "code": "N02BE51",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "code": "N02BE51",
         "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
       }
     ]
@@ -23,8 +23,8 @@
   "form": {
     "coding": [
       {
-        "code": "10219000",
         "system": "http://standardterms.edqm.eu",
+        "code": "10219000",
         "display": "Tablet"
       }
     ]
@@ -38,6 +38,7 @@
     },
     "denominator": {
       "value": 1,
+      "unit": "Package",
       "system": "http://unitsofmeasure.org",
       "code": "1"
     }
