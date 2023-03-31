@@ -132,6 +132,7 @@ Usage: #example
 * amount.numerator.system = $standardterms
 * amount.numerator.code = #10219000
 * amount.denominator.value = 1
+* amount.denominator.unit = "Package"
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].itemReference = Reference(mii-exa-medikation-medication-dolomo-tag)
