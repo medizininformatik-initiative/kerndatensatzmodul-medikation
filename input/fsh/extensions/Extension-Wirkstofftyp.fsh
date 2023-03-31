@@ -6,6 +6,7 @@ Description: "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, ge
 * insert Translation(^name, en-US, MII_EX_Medikation_IngredientType)
 * insert Translation(^title, en-US, MII EX Medikation Ingredient Type)
 * insert Translation(^description, en-US, Extension to differentiate the type of ingredient into general\, exact or combination ingredient.)
+* insert PR_CS_VS_Version
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url

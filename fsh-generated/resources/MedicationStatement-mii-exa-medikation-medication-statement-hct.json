@@ -6,6 +6,100 @@
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
   },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "{Stueck}",
+            "unit": "1"
+          }
+        }
+      ],
+      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "08:00:00"
+          ]
+        }
+      }
+    },
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "{Stueck}",
+            "unit": "1"
+          }
+        }
+      ],
+      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "12:00:00"
+          ]
+        }
+      }
+    },
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "{Stueck}",
+            "unit": "1"
+          }
+        }
+      ],
+      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "18:00:00"
+          ]
+        }
+      }
+    },
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "{Stueck}",
+            "unit": "1"
+          }
+        }
+      ],
+      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
+          "timeOfDay": [
+            "22:00:00"
+          ]
+        }
+      }
+    }
+  ],
   "status": "intended",
   "medicationCodeableConcept": {
     "coding": [
@@ -21,99 +115,5 @@
   },
   "effectivePeriod": {
     "start": "2022-02-02T12:22:00+00:00"
-  },
-  "dosage": [
-    {
-      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "08:00:00"
-          ]
-        }
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 1,
-            "code": "{Stueck}",
-            "system": "http://unitsofmeasure.org",
-            "unit": "1"
-          }
-        }
-      ]
-    },
-    {
-      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "12:00:00"
-          ]
-        }
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 1,
-            "code": "{Stueck}",
-            "system": "http://unitsofmeasure.org",
-            "unit": "1"
-          }
-        }
-      ]
-    },
-    {
-      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "18:00:00"
-          ]
-        }
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 1,
-            "code": "{Stueck}",
-            "system": "http://unitsofmeasure.org",
-            "unit": "1"
-          }
-        }
-      ]
-    },
-    {
-      "text": "HCT 12,5 mg Tabl. 1-0-0-0",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "22:00:00"
-          ]
-        }
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 1,
-            "code": "{Stueck}",
-            "system": "http://unitsofmeasure.org",
-            "unit": "1"
-          }
-        }
-      ]
-    }
-  ]
+  }
 }

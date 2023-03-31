@@ -1,18 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medication-administration",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "name": "MII_PR_Medikation_MedicationAdministration",
   "_name": {
     "extension": [

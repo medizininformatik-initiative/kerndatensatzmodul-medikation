@@ -34,6 +34,7 @@ Instance: mii-cps-medikation-capabilitystatement-2x
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
+* insert Version
 * name = "MII_CPS_Medikation_CapabilityStatement_2x"
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active

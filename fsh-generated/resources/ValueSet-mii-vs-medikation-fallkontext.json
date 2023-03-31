@@ -5,13 +5,13 @@
   "id": "mii-vs-medikation-fallkontext",
   "title": "MII VS Medikation Fallkontext",
   "description": "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
-  "version": "2.0.0-ballot",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
+  "version": "2.0.0",
   "experimental": false,
   "publisher": "Medizininformatik Initiative",
   "contact": [

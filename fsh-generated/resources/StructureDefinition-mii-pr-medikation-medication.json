@@ -1,18 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medication",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "business"
-    }
-  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "name": "MII_PR_Medikation_Medication",
   "_name": {
     "extension": [
@@ -334,6 +324,19 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
       },
       {
         "id": "Medication.ingredient.item[x]:itemReference",

@@ -6,7 +6,6 @@
   "id": "mii-cs-medikation-wirkstofftyp",
   "title": "MII CS Medikation Wirkstofftyp",
   "description": "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
-  "version": "2.0.0-ballot",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
   "concept": [
     {
@@ -111,6 +110,7 @@
       ]
     }
   ],
+  "version": "2.0.0",
   "caseSensitive": true,
   "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
   "count": 3

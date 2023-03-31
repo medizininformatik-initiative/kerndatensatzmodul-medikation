@@ -10,4 +10,5 @@ Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substan
 * ^status = #active
 * ^experimental = false
 * insert Publisher
+* insert PR_CS_VS_Version
 * include codes from system $cs-wirkstofftyp

@@ -1,18 +1,8 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medication-request",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Medications"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
-  "version": "2.0.0-ballot",
+  "version": "2.0.0",
   "name": "MII_PR_Medikation_MedicationRequest",
   "_name": {
     "extension": [
@@ -394,6 +384,20 @@
         "id": "MedicationRequest.dosageInstruction.timing.repeat",
         "path": "MedicationRequest.dosageInstruction.timing.repeat",
         "mustSupport": true
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration",

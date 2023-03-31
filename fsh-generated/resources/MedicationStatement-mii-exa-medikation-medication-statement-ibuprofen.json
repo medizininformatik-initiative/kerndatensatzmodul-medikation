@@ -6,6 +6,32 @@
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
     ]
   },
+  "dosage": [
+    {
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "system": "http://unitsofmeasure.org",
+            "value": 1,
+            "code": "{Stueck}",
+            "unit": "1"
+          }
+        }
+      ],
+      "text": "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2022-02-02T12:22:00+00:00"
+          },
+          "frequency": 3,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "asNeededBoolean": true
+    }
+  ],
   "status": "intended",
   "medicationCodeableConcept": {
     "coding": [
@@ -21,31 +47,5 @@
   },
   "effectivePeriod": {
     "start": "2022-02-02T12:22:00+00:00"
-  },
-  "dosage": [
-    {
-      "text": "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)",
-      "timing": {
-        "repeat": {
-          "boundsPeriod": {
-            "start": "2022-02-02T12:22:00+00:00"
-          },
-          "frequency": 3,
-          "period": 1,
-          "periodUnit": "d"
-        }
-      },
-      "asNeededBoolean": true,
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 1,
-            "code": "{Stueck}",
-            "system": "http://unitsofmeasure.org",
-            "unit": "1"
-          }
-        }
-      ]
-    }
-  ]
+  }
 }

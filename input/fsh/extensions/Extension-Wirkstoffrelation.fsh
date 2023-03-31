@@ -6,6 +6,7 @@ Description: "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstof
 * insert Translation(^name, en-US, MII_EX_Medikation_IngredientRelation)
 * insert Translation(^title, en-US, MII EX Medikation Ingredient Relation)
 * insert Translation(^description, en-US, The extension enables the assignment of an exact substance e.g. salt\, ester to a general substance.)
+* insert PR_CS_VS_Version
 * ^experimental = false
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
