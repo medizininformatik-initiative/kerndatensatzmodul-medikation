@@ -370,8 +370,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsliste.Bezug-zum-Patient",
-        "path": "BasismodulMedikation.Medikationsliste.Bezug-zum-Patient",
+        "id": "BasismodulMedikation.Medikationsliste.BezugZumPatient",
+        "path": "BasismodulMedikation.Medikationsliste.BezugZumPatient",
         "short": "Bezug zum Patient",
         "definition": "Die Person, für die die Medikationsliste erstellt oder verwaltet wird.",
         "comment": "FHIR-Mapping: List.subject",
@@ -393,8 +393,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsliste.Bezug-zum-Fall",
-        "path": "BasismodulMedikation.Medikationsliste.Bezug-zum-Fall",
+        "id": "BasismodulMedikation.Medikationsliste.BezugZumFall",
+        "path": "BasismodulMedikation.Medikationsliste.BezugZumFall",
         "short": "Bezug zum Fall",
         "definition": "Der Besuch, die Aufnahme oder ein anderer Kontakt zwischen Patient und Leistungserbringer, bei dem die Medikationsliste erstellt oder bearbeitet wird.",
         "comment": "FHIR-Mapping: List.encounter",
@@ -606,8 +606,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Startzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Startzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.StartzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.StartzeitpunktEinnahme",
         "short": "Startzeitpunkt der Einnahme",
         "definition": "Startzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.boundsPeriod.start",
@@ -626,8 +626,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Endzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Endzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.EndzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.EndzeitpunktEinnahme",
         "short": "Endzeitpunkt der Einnahme",
         "definition": "Endzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.boundsPeriod.end",
@@ -646,8 +646,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Dauer-der-Einnahme",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.Dauer-der-Einnahme",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.DauerDerEinnahme",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Einnahmedauer.DauerDerEinnahme",
         "short": "Dauer der Einnahme",
         "definition": "Dauer der Einnahme",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.boundsDuration",
@@ -686,8 +686,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung",
         "short": "Ereignisbezogene Wiederholung",
         "definition": "Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.repeat.when in Kombination mit MedicationRequest.dosageInstruction.timing.repeat.offset und/oder anderen Angaben in MedicationRequest.dosageInstruction.timing.repeat",
@@ -706,8 +706,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung.Ereignis",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung.Ereignis",
         "short": "Ereignis",
         "definition": "Ereignis, z. B. morgens, mittags, abends, zur Nacht",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.repeat.when .dayOfWeek .timeOfDay etc.",
@@ -726,8 +726,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung.Offset",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.EreignisbezogeneWiederholung.Offset",
         "short": "Offset",
         "definition": "Offset zum Ereignis, z. B. 30 Minuten vorher",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.repeat.offset",
@@ -746,8 +746,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall",
         "short": "Periodisches Intervall",
         "definition": "Ein Zeitintervall, das sich periodisch wiederholt. Periodische Intervalle haben zwei Eigenschaften, Phase und Periode. Die Phase gibt den \"Typ\" Intervall\" an, der sich jede Periode wiederholt.\r\n\r\nWiederholungsintervall (periodische Intervallsequenz), gibt an\r\ndie Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen (period) \r\nder Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt (phase).",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.repeat",
@@ -766,8 +766,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall.Phase",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall.Phase",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall.Phase",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall.Phase",
         "short": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
         "definition": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.event",
@@ -786,8 +786,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall.Periode[x]",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.Periodisches-Intervall.Periode[x]",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall.Periode[x]",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Zeitangabe.PeriodischesIntervall.Periode[x]",
         "short": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
         "definition": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.timing.repeat.(boundsDuration|boundsPeriod)",
@@ -809,8 +809,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Einnahme-bei-Bedarf[x]",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Einnahme-bei-Bedarf[x]",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.EinnahmeBeiBedarf[x]",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.EinnahmeBeiBedarf[x]",
         "short": "Einnahme bei Bedarf",
         "definition": "Einnahme des Medikaments bei Bedarf",
         "comment": "FHIR-Mapping: MedicationRequest.dosageInstruction.asNeeded[x] entweder als Boolean .asNeededBoolean  oder kodiert .asNeededCodeableConcept",
@@ -832,8 +832,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Art-der-Anwendung",
-        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.Art-der-Anwendung",
+        "id": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.ArtDerAnwendung",
+        "path": "BasismodulMedikation.Medikationsverordnung.Dosierungsinstruktionen.ArtDerAnwendung",
         "short": "Art der Anwendung",
         "definition": "Art der Anwendung des Arzneimittels EDQM passende Value Sets. Pharmazeutische Anwendung dekomponiert in drei Eigenschaften: Art der Anwendung, Weg der Anwendung und Ort der Anwendung.",
         "comment": "FHIR-Mappings: MedicationRequest.dosageInstruction.(site|route|method) jeweils mit einem .coding oder .text für kodierte Angabe mit EDQM binding und im Freitext",
@@ -928,8 +928,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Datum-der-Verordnung",
-        "path": "BasismodulMedikation.Medikationsverordnung.Datum-der-Verordnung",
+        "id": "BasismodulMedikation.Medikationsverordnung.DatumDerVerordnung",
+        "path": "BasismodulMedikation.Medikationsverordnung.DatumDerVerordnung",
         "short": "Datum des Dokumentationseintrages",
         "definition": "Datum des Dokumentationseintrages",
         "comment": "FHIR Mapping: MedicationRequest.authoredOn",
@@ -991,8 +991,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Bezug-zum-Patient",
-        "path": "BasismodulMedikation.Medikationsverordnung.Bezug-zum-Patient",
+        "id": "BasismodulMedikation.Medikationsverordnung.BezugZumPatient",
+        "path": "BasismodulMedikation.Medikationsverordnung.BezugZumPatient",
         "short": "Bezug zum Patient",
         "definition": "Ein Link zu einer Ressource, die die Person repräsentiert, an die das Medikament verabreicht werden soll.",
         "comment": "FHIR Mapping: MedicationRequest.subject",
@@ -1014,8 +1014,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Bezug-zum-Fall",
-        "path": "BasismodulMedikation.Medikationsverordnung.Bezug-zum-Fall",
+        "id": "BasismodulMedikation.Medikationsverordnung.BezugZumFall",
+        "path": "BasismodulMedikation.Medikationsverordnung.BezugZumFall",
         "short": "Bezug zum Fall",
         "definition": "Die Fall, bei der diese Verordnung erstellt wurde oder mit der die Erstellung dieser Verordnung in engem Zusammenhang steht.",
         "comment": "FHIR Mapping: MedicationRequest.encounter",
@@ -1037,8 +1037,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Vorherige-Medikationsverordnungen",
-        "path": "BasismodulMedikation.Medikationsverordnung.Vorherige-Medikationsverordnungen",
+        "id": "BasismodulMedikation.Medikationsverordnung.VorherigeMedikationsverordnungen",
+        "path": "BasismodulMedikation.Medikationsverordnung.VorherigeMedikationsverordnungen",
         "short": "Vorherige Medikationsverordnungen",
         "definition": "Ein Link zu einer Ressource, die eine frühere Verschreibung darstellt.",
         "comment": "FHIR Mapping: MedicationRequest.priorPrescription",
@@ -1083,8 +1083,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverordnung.Autor-Informant-der-Verordnung",
-        "path": "BasismodulMedikation.Medikationsverordnung.Autor-Informant-der-Verordnung",
+        "id": "BasismodulMedikation.Medikationsverordnung.AutorInformantDerVerordnung",
+        "path": "BasismodulMedikation.Medikationsverordnung.AutorInformantDerVerordnung",
         "short": "Autor Informant der Verordnung.",
         "definition": "Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat.",
         "comment": "FHIR-Mapping: MedicationRequest.requester",
@@ -1216,8 +1216,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Startzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.StartzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.StartzeitpunktEinnahme",
         "short": "Startzeitpunkt der Einnahme",
         "definition": "Startzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.effectivePeriod.start",
@@ -1236,8 +1236,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Endzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.EndzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.EndzeitpunktEinnahme",
         "short": "Endzeitpunkt der Einnahme",
         "definition": "Endzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.effectivePeriod.end",
@@ -1256,8 +1256,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dauer-der-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.DauerDerEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.DauerDerEinnahme",
         "short": "Dauer der Einnahme",
         "definition": "Dauer der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.effectivePeriod",
@@ -1376,8 +1376,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Startzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Startzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.StartzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.StartzeitpunktEinnahme",
         "short": "Startzeitpunkt der Einnahme",
         "definition": "Startzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.boundsPeriod.start",
@@ -1396,8 +1396,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Endzeitpunkt-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Endzeitpunkt-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.EndzeitpunktEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.EndzeitpunktEinnahme",
         "short": "Endzeitpunkt der Einnahme",
         "definition": "Endzeitpunkt der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.boundsPeriod.end",
@@ -1416,8 +1416,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Dauer-der-Einnahme",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.Dauer-der-Einnahme",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.DauerDerEinnahme",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Einnahmedauer.DauerDerEinnahme",
         "short": "Dauer der Einnahme",
         "definition": "Dauer der Einnahme",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.boundsDuration",
@@ -1456,8 +1456,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung",
         "short": "Ereignisbezogene Wiederholung",
         "definition": "Gibt ein periodisches Zeitintervall an, in dem die Wiederholung auf Aktivitäten des täglichen Lebens oder anderen wichtigen Ereignissen basiert, die zeitabhängig sind, jedoch nicht vollständig von der Zeit bestimmt werden",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when in Kombination mit MedicationStatement.dosage.timing.repeat.offset und/oder anderen Angaben in MedicationStatement.dosage.timing.repeat",
@@ -1476,8 +1476,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung.Ereignis",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung.Ereignis",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung.Ereignis",
         "short": "Ereignis",
         "definition": "Ereignis, z. B. morgens, mittags, abends, zur Nacht",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.when .dayOfWeek .timeOfDay etc.",
@@ -1496,8 +1496,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Ereignisbezogene-Wiederholung.Offset",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung.Offset",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.EreignisbezogeneWiederholung.Offset",
         "short": "Offset",
         "definition": "Offset zum Ereignis, z. B. 30 Minuten vorher",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.offset",
@@ -1516,8 +1516,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall",
         "short": "Periodisches Intervall",
         "definition": "Ein Zeitintervall, das sich periodisch wiederholt. Periodische Intervalle haben zwei Eigenschaften, Phase und Periode. Die Phase gibt den \"Typ\" Intervall\" an, der sich jede Periode wiederholt.\r\n\r\nWiederholungsintervall (periodische Intervallsequenz), gibt an\r\ndie Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen (period) \r\nder Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt (phase).",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat",
@@ -1536,8 +1536,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall.Phase",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall.Phase",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall.Phase",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall.Phase",
         "short": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
         "definition": "Ankerzeitpunkt (Startzeitpunkt), an dem die periodische Intervallsequenz beginnt",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.event",
@@ -1556,8 +1556,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall.Periode[x]",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.Periodisches-Intervall.Periode[x]",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall.Periode[x]",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Zeitangabe.PeriodischesIntervall.Periode[x]",
         "short": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
         "definition": "Dauer jedes Vorkommens bzw. der Zeit zwischen den Vorkommnissen",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.timing.repeat.(boundsDuration|boundsPeriod)",
@@ -1579,8 +1579,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Einnahme-bei-Bedarf[x]",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Einnahme-bei-Bedarf[x]",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.EinnahmeBeiBedarf[x]",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.EinnahmeBeiBedarf[x]",
         "short": "Einnahme bei Bedarf",
         "definition": "Einnahme des Medikaments bei Bedarf",
         "comment": "FHIR-Mapping: MedicationStatement.dosage.asNeeded[x] entweder als Boolean .asNeededBoolean  oder kodiert .asNeededCodeableConcept",
@@ -1602,8 +1602,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Art-der-Anwendung",
-        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.Art-der-Anwendung",
+        "id": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.ArtDerAnwendung",
+        "path": "BasismodulMedikation.Medikationseintrag.Einnahmedauer.Dosierung.ArtDerAnwendung",
         "short": "Art der Anwendung",
         "definition": "Art der Anwendung des Arzneimittels EDQM passende Value Sets. Pharmazeutische Anwendung dekomponiert in drei Eigenschaften: Art der Anwendung, Weg der Anwendung und Ort der Anwendung.",
         "comment": "FHIR-Mappings: MedicationStatement.dosage.(site|route|method) jeweils mit einem .coding oder .text für kodierte Angabe mit EDQM binding und im Freitext",
@@ -1698,8 +1698,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung",
-        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Verordnung",
+        "id": "BasismodulMedikation.Medikationseintrag.BezugZuVerordnung",
+        "path": "BasismodulMedikation.Medikationseintrag.BezugZuVerordnung",
         "short": "Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden.",
         "definition": "Bezug zu Verordnung. Hier können je nach Anforderung unterschiedliche Bezüge zum Fall, Behandlungsplan etc. hergestellt werden.",
         "comment": "FHIR-Mappings: MedicationStatement.basedOn",
@@ -1721,8 +1721,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe",
-        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zu-Abgabe",
+        "id": "BasismodulMedikation.Medikationseintrag.BezugZuAbgabe",
+        "path": "BasismodulMedikation.Medikationseintrag.BezugZuAbgabe",
         "short": "Bezug zu Abgabe",
         "definition": "Bezug zu Abgabe",
         "comment": "FHIR-Mappings: MedicationStatement.basedOn",
@@ -1744,8 +1744,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zum-Patient",
-        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zum-Patient",
+        "id": "BasismodulMedikation.Medikationseintrag.BezugZumPatient",
+        "path": "BasismodulMedikation.Medikationseintrag.BezugZumPatient",
         "short": "Bezug zum Patient",
         "definition": "Die Person, die das Medikament einnimmt/eingesetzt hat.",
         "comment": "FHIR Mapping: MedicationStatement.subject",
@@ -1767,8 +1767,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Bezug-zum-Fall",
-        "path": "BasismodulMedikation.Medikationseintrag.Bezug-zum-Fall",
+        "id": "BasismodulMedikation.Medikationseintrag.BezugZumFall",
+        "path": "BasismodulMedikation.Medikationseintrag.BezugZumFall",
         "short": "Bezug zum Fall",
         "definition": "Der Besuch, die Aufnahme oder ein anderer Kontakt zwischen Patient und Leistungserbringer, bei dem die Verabreichung des Medikaments erfolgt ist.",
         "comment": "FHIR Mapping: MedicationStatement.context",
@@ -1790,8 +1790,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags",
-        "path": "BasismodulMedikation.Medikationseintrag.Datum-des-Eintrags",
+        "id": "BasismodulMedikation.Medikationseintrag.DatumDesEintrags",
+        "path": "BasismodulMedikation.Medikationseintrag.DatumDesEintrags",
         "short": "Datum des Dokumentationseintrages",
         "definition": "Datum des Dokumentationseintrages",
         "comment": "FHIR-Mapping: MedicationStatement.dateAsserted",
@@ -1810,8 +1810,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags",
-        "path": "BasismodulMedikation.Medikationseintrag.Autor-Informant-des-Eintrags",
+        "id": "BasismodulMedikation.Medikationseintrag.AutorInformantDesEintrags",
+        "path": "BasismodulMedikation.Medikationseintrag.AutorInformantDesEintrags",
         "short": "Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat.",
         "definition": "Zuständiger Health Professional, der den Vorgang angelegt hat bzw. Informationen zu dem Vorgang bereit gestellt hat.",
         "comment": "FHIR-Mapping: MedicationStatement.informationSource",
@@ -2120,8 +2120,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Verordnung",
-        "path": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Verordnung",
+        "id": "BasismodulMedikation.Medikationsverabreichung.BezugZuVerordnung",
+        "path": "BasismodulMedikation.Medikationsverabreichung.BezugZuVerordnung",
         "short": "Bezug zu Verordnung",
         "definition": "Referenz auf die Medikationsverordnung, welche die Mediaktionsverabreichung anordnet.",
         "comment": "FHIR-Mappings: MedicationAdministration.request",
@@ -2143,8 +2143,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Patient",
-        "path": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Patient",
+        "id": "BasismodulMedikation.Medikationsverabreichung.BezugZuPatient",
+        "path": "BasismodulMedikation.Medikationsverabreichung.BezugZuPatient",
         "short": "Bezug zu Patient",
         "definition": "Die Person, die das Medikament erhält.",
         "comment": "FHIR Mapping: MedicationAdministration.subject",
@@ -2166,8 +2166,8 @@
         ]
       },
       {
-        "id": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Fall",
-        "path": "BasismodulMedikation.Medikationsverabreichung.Bezug-zu-Fall",
+        "id": "BasismodulMedikation.Medikationsverabreichung.BezugZuFall",
+        "path": "BasismodulMedikation.Medikationsverabreichung.BezugZuFall",
         "short": "Bezug zu Fall",
         "definition": "Der Besuch, die Aufnahme oder ein anderer Kontakt zwischen Patient und Leistungserbringer, bei dem die Verabreichung des Medikaments erfolgt ist.",
         "comment": "FHIR Mapping: MedicationAdministration.context",
