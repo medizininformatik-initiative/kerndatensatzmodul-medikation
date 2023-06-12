@@ -315,7 +315,7 @@ Usage: #example
 * mode = #snapshot
 * title = "Aufnahmemedikation"
 * code.coding[medCode] = $list-example-use-codes#medications
-* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210
+* code.coding[contextCode] = $ihe-xds-fallkontext#E210
 * subject = Reference(Patient/example)
 * entry[+].item = Reference(MedicationStatement/example)
 
@@ -327,7 +327,7 @@ Usage: #example
 * mode = #working
 * title = "Aktuelle medikamentöse Therapie"
 * code.coding[medCode] = $list-example-use-codes#medications
-* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200
+* code.coding[contextCode] = $ihe-xds-fallkontext#E200
 * subject = Reference(Patient/example)
 * entry[+].item = Reference(MedicationStatement/example)
 
@@ -458,7 +458,7 @@ Usage: #example
 * mode = #snapshot
 * title = "Aufnahmemedikation"
 * code.coding[medCode] = $list-example-use-codes#medications
-* code.coding[contextCode] = urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210
+* code.coding[contextCode] = $ihe-xds-fallkontext#E210
 * subject = Reference(Patient/example)
 * encounter = Reference(Encounter/ExampleEinrichtungskontakt)
 * entry[0].item = Reference(mii-exa-medikation-medication-statement-hct)

@@ -27,7 +27,7 @@
   "compose": {
     "include": [
       {
-        "system": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16",
+        "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
         "concept": [
           {
             "code": "E100",
