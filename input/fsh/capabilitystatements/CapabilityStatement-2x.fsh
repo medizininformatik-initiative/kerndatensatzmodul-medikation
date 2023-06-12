@@ -54,7 +54,7 @@ Usage: #definition
 // List requirements
 * insert SupportResource(List, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/List, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2.0.0-ballot, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
@@ -75,7 +75,7 @@ Usage: #definition
 // Medication requirements
 * insert SupportResource(Medication, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Medication, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0-ballot, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
@@ -96,7 +96,7 @@ Usage: #definition
 // MedicationAdministration requirements
 * insert SupportResource(MedicationAdministration, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0-ballot, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
@@ -124,7 +124,7 @@ Usage: #definition
 // MedicationRequest requirements
 * insert SupportResource(MedicationRequest, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationRequest, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0-ballot, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
@@ -158,7 +158,7 @@ Usage: #definition
 // MedicationStatement requirements
 * insert SupportResource(MedicationStatement, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationStatement, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2.0.0-ballot, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2.0.0, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
