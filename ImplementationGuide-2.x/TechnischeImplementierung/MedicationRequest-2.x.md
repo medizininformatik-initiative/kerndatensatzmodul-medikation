@@ -1,4 +1,4 @@
-#### {{page-title}}
+## {{page-title}}
 
 Die MedicationRequest Ressource beschreibt einen Auftrag zur Lieferung des Medikaments oder die Anordnung und die Anweisungen zur Verabreichung des Medikaments an einen Patienten.
 
