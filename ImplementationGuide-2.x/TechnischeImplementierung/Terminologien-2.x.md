@@ -9,9 +9,9 @@ Soweit möglich sollen Terminologien und eindeutige Codes verwendet werden, die 
 **Wirkstoffe**
 
 Für Wirkstoffe werden als Unique Identifier (Code) vorgeschlagen:
-* Stoff-Codes des deutschen Arzneimittel-Stoffkatalogs des BfArM (ASK). Es ist abzuklären, wie dieser ASK.-Nr. via URI/URL über BfArM/DIMDI oder ABDATA (§31b SGB V) öffentlich verfügbar gemacht wird.  https://www.dimdi.de/dynamic/de/arzneimittel/arzneimittel-recherchieren/amis/datenbankinformation-amis-oeffentlicher-teil-arzneimittel/
+* Stoff-Codes des deutschen Arzneimittel-Stoffkatalogs des BfArM (ASK). Es ist abzuklären, wie dieser ASK.-Nr. via URI/URL über BfArM/DIMDI oder ABDATA (§31b SGB V) öffentlich verfügbar gemacht wird.  https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Arzneimittel-recherchieren/_node.html 
 * [Unique Ingredient Identifier (UNII)](https://en.wikipedia.org/wiki/Unique_Ingredient_Identifier) des US Substance Registration System. Diese ist in Deutschland nicht verfügbar.
-* Eindeutige Schlüssel, die CAS Registry Number, aus der Chemical-Abstracts-Service-Datenbank (CAS). 
+* Eindeutige Schlüssel, die [CAS Registry Number](https://www.cas.org/support/documentation/chemical-substances/faqs), aus der Chemical-Abstracts-Service-Datenbank (CAS). 
 * SNOMED-CT-Codes aus der Substance-Hierarchie. Diese Codes sind in den deutschen Datenbanken (PharmNet/AMIS und ABDATA) nicht enthalten.
 
 * Für die Bezeichnung der Stoffe können die registrierten Substanzbezeichnungen verwendet werden, bei denen es sich in der Regel, aber nicht immer, um die  [WHO-INNs (International Non-proprietary Names)](https://www.who.int/medicines/services/inn/en/) handelt. In der MII sollte dabei die deutsche Schreibweise verwendet werden, die in manchen Fällen von der englischen Version leicht abweicht.
@@ -58,10 +58,6 @@ Bevorzugt sollten hier die Standard-Terminologien der [EDQM verwendet werden, da
 
 **Kontext der Anwendung von Medikation**
 
-<p style="background-color: #ffcccc; border:1px solid grey; padding: 5px; max-width: 790px;">
-Draft Status - Dieser Teil der Spezifikation war bislang nicht Teil der Ballotierung und steht zur Kommentierung.
-</p>
-
 Codes zur Differenzierung des Kontextes in dem eine Medikationsliste (List) verwaltet wird oder zur Kategorisierung eines Medikationseintrags (MedicationStatement) sind im folgenden ValueSet dargestellt:
 
 Canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext
@@ -82,6 +78,6 @@ Canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikatio
 | http<nolink>://standardterms.edqm.eu | EDQM [Standard Terms](https://standardterms.edqm.eu/) |  | 0.4.0.127.0.16.1.1.2.1 |
 | http<nolink>://snomed.info/sct | SNOMED CT [snomed.org](http://snomed.org/) | [Using SNOMED CT with FHIR](http://hl7.org/fhir/snomedct.html) | 2.16.840.1.113883.6.96 | 
 | http<nolink>://unitsofmeasure.org | UCUM [unitsofmeasure.org](http://unitsofmeasure.org/) | [Using UCUM with FHIR](http://hl7.org/fhir/ucum.html) | 2.16.840.1.113883.6.8 |  
-| urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16 | IHE XDS Fallkontext bei Dokumentenerstellung | | 1.3.6.1.4.1.19376.3.276.1.5.16 |
+| http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung | IHE XDS Fallkontext bei Dokumentenerstellung | | 1.3.6.1.4.1.19376.3.276.1.5.16 |
 
 <br><br>
