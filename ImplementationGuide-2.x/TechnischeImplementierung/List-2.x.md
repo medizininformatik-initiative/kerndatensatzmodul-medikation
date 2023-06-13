@@ -1,4 +1,4 @@
-#### {{page-title}}
+## {{page-title}}
 
 Die List Ressource ist eine flache Sammlung von Ressourcen und bietet Funktionen für die Verwaltung der Sammlung. In diesem Fall dient die Ressource als Sammlung der Medikationen, die ein Patient zu einem bestimmten Zeitpunkt einnimmt, beispielsweise bei Aufnahme oder Entlassung. Die Ressource verweist dazu auf MedicationStatement Ressourcen.
 
