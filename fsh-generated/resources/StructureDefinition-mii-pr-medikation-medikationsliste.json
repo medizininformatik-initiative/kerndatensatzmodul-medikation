@@ -97,14 +97,14 @@
             "key": "medication-list-context-1",
             "severity": "error",
             "human": "Wenn der Kontext Aufnahme, Entlassung oder ambulanter Kontakt ist, soll der mode 'snapshot' sein.",
-            "expression": "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E100').exists() implies List.mode='snapshot'",
+            "expression": "List.code.coding.where(system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E210' or system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E230' or system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E100').exists() implies List.mode='snapshot'",
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           },
           {
             "key": "medication-list-context-2",
             "severity": "error",
             "human": "Wenn der Kontext stationärer Aufenthalt ist, soll der mode 'working' sein.",
-            "expression": "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E200').exists() implies List.mode='working'",
+            "expression": "List.code.coding.where(system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E200').exists() implies List.mode='working'",
             "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
           }
         ]
@@ -187,6 +187,9 @@
         "sliceName": "contextCode",
         "min": 1,
         "max": "1",
+        "patternCoding": {
+          "system": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"
+        },
         "mustSupport": true,
         "binding": {
           "strength": "required",

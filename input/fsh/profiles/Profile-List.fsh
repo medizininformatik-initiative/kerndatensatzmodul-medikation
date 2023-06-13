@@ -30,6 +30,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * code.coding[contextCode] MS
 * code.coding[contextCode] from mii-vs-medikation-fallkontext (required)
 * code.coding[contextCode].system MS
+* code.coding[contextCode] ^patternCoding.system = "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"
 * code.coding[contextCode].code MS
 * subject 1.. MS
 * subject only Reference(Patient)
@@ -52,17 +53,17 @@ Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationslis
 * ^publisher = "Medizininformatik Initiative"
 * ^contact.telecom.system = #url
 * ^contact.telecom.value = "https://www.medizininformatik-initiative.de"
-* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E100 "ambulanter Kontakt"
-* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E200 "stationärer Aufenthalt"
-* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E210 "stationäre Aufnahme"
-* urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16#E230 "stationäre Entlassung"
+* $ihe-xds-fallkontext#E100 "ambulanter Kontakt"
+* $ihe-xds-fallkontext#E200 "stationärer Aufenthalt"
+* $ihe-xds-fallkontext#E210 "stationäre Aufnahme"
+* $ihe-xds-fallkontext#E230 "stationäre Entlassung"
 
 Invariant: medication-list-context-1
 Description: "Wenn der Kontext Aufnahme, Entlassung oder ambulanter Kontakt ist, soll der mode 'snapshot' sein."
 Severity: #error
-Expression: "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E210' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E230' or system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E100').exists() implies List.mode='snapshot'"
+Expression: "List.code.coding.where(system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E210' or system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E230' or system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E100').exists() implies List.mode='snapshot'"
 
 Invariant: medication-list-context-2
 Description: "Wenn der Kontext stationärer Aufenthalt ist, soll der mode 'working' sein."
 Severity: #error
-Expression: "List.code.coding.where(system='urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16' and code='E200').exists() implies List.mode='working'"
+Expression: "List.code.coding.where(system='http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung' and code='E200').exists() implies List.mode='working'"

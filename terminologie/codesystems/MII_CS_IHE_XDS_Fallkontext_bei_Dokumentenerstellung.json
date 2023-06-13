@@ -1,7 +1,7 @@
 {
 	"resourceType": "CodeSystem",
 	"id": "mii-cs-fallkontext-bei-dokumentenerstellung",
-	"url": "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16",
+	"url": "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
 	"version": "0.1.0",
 	"name": "MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung",
 	"title": "MII CS IHE XDS Fallkontext bei Dokumentenerstellung",

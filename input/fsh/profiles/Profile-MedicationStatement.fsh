@@ -28,7 +28,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
     contextCode 0..1
 * category.coding[usageCategory] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/medication-statement-category"
 * category.coding[usageCategory] from http://hl7.org/fhir/ValueSet/medication-statement-category (required)
-* category.coding[contextCode] ^patternCoding.system = "urn:oid:1.3.6.1.4.1.19376.3.276.1.5.16"
+* category.coding[contextCode] ^patternCoding.system = "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"
 * category.coding[contextCode] from https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext (required)
 * medication[x] MS
 * medication[x] only CodeableConcept or Reference
