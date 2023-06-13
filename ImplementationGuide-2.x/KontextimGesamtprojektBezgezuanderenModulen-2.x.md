@@ -8,11 +8,11 @@ Medikationsdaten sind von zentraler Bedeutung für eine Vielzahl von Fragestellu
 
 ### Beziehung zum Modul Person
 
-Die Zuordnung von Medikationsdaten zu einem Patienten bzw. einer Patientin erfolgt über Referenzen vom Modul MEDIKATION zum MODUL [PERSON](https://simplifier.net/guide/medizininformatikinitiative-modulperson-implementationguide/igmiikdsmodulperson).
+Die Zuordnung von Medikationsdaten zu einem Patienten bzw. einer Patientin erfolgt über Referenzen vom Modul MEDIKATION zum MODUL [PERSON](https://simplifier.net/medizininformatikinitiative-modulperson).
 
 ### Beziehung zum Modul Fall
 
-Die Zuordnung von Medikationsdaten zu einem Fall erfolgt über Referenzen vom Modul MEDIKATION zum MODUL [FALL](https://simplifier.net/guide/medizininformatikinitiative-modulfall-implementationguide). Wenn immer verfügbar sollte eine Referenz auf den Behandlungsfall mitgeführt werden, um den Fallbezug der Medikation zu erhalten.
+Die Zuordnung von Medikationsdaten zu einem Fall erfolgt über Referenzen vom Modul MEDIKATION zum MODUL [FALL](https://simplifier.net/medizininformatikinitiative-modulfall). Wenn immer verfügbar sollte eine Referenz auf den Behandlungsfall mitgeführt werden, um den Fallbezug der Medikation zu erhalten.
 
 * Statements/Liste i. S. Entlass/Aufnahmemedikation ⇒ Einrichtungskontakt.
 * Request ⇒ Abteilungsstellen (oder besser auch Versorgungsstellen)
@@ -20,10 +20,10 @@ Die Zuordnung von Medikationsdaten zu einem Fall erfolgt über Referenzen vom Mo
 
 ### Beziehung zum Modul Prozedur
 
-Die Einnahme, Verabreichung oder Anordnung einer Medikation kann in Bezug zu einer durchgeführten Prozedur stehen, bspw. eine Kontrastmittelgabe vor einer Röntgen-Diagnostik. Das Modul MEDIKATION spezifiziert in diesem Rahmen u.a. das Medikament, sowie Dosis und Verabreichungszeitpunkt. Für die Angaben zur Prozedur wird das Modul [PROZEDUR](https://simplifier.net/guide/medizininformatikinitiative-modulprozeduren-implementationguide) verwendet. Die Datenstrukturen dieses Moduls ermöglichen es, den Bezug zur Prozedur über Referenzen von MEDIKATION zu PROZEDUR auszudrücken.
+Die Einnahme, Verabreichung oder Anordnung einer Medikation kann in Bezug zu einer durchgeführten Prozedur stehen, bspw. eine Kontrastmittelgabe vor einer Röntgen-Diagnostik. Das Modul MEDIKATION spezifiziert in diesem Rahmen u.a. das Medikament, sowie Dosis und Verabreichungszeitpunkt. Für die Angaben zur Prozedur wird das Modul [PROZEDUR](https://simplifier.net/medizininformatikinitiative-modulprozeduren) verwendet. Die Datenstrukturen dieses Moduls ermöglichen es, den Bezug zur Prozedur über Referenzen von MEDIKATION zu PROZEDUR auszudrücken.
 
 Die Beziehung zwischen den beiden Modulen ist darüber hinaus relevant für Use Cases in Verbindung mit dem Operationen- und Prozedurenschlüssel – OPS. Zu Abrechnungszwecken werden in den Kliniken ausgewählte teure Medikamente unter Nutzung des Kapitels 6 des OPS-Kataloges fallbezogen erfasst. In diesem Fall kann die klinische Dokumentation der medikamentösen Therapie, wie in diesem Modul beschrieben, mit der Prozedurenklassifikation nach OPS verknüpft werden.
 
 ### Beziehung zum Modul Diagnose
 
-Das Modul MEDIKATION enthält Verbindungen zum Modul [DIAGNOSE](https://simplifier.net/guide/medizininformatikinitiative-moduldiagnosen-implementationguide/igmiikdsmoduldiagnose), welche ermöglichen, die zugrundeliegende Erkrankung als Ursache (Behandlungsgrund) für eine medikamentöse Therapie zu erfassen. 
+Das Modul MEDIKATION enthält Verbindungen zum Modul [DIAGNOSE](https://simplifier.net/medizininformatikinitiative-moduldiagnosen), welche ermöglichen, die zugrundeliegende Erkrankung als Ursache (Behandlungsgrund) für eine medikamentöse Therapie zu erfassen. 

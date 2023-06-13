@@ -5,8 +5,8 @@ Im Folgenden werden die Use Cases des Moduls, sowie die dazugehörigen FHIR-Prof
 
 | Veröffentlichung   |   |
 |---------|---|
-| Datum   | 06.12.2022 |
-| Version | 2.0.0-ballot |
+| Datum   | 13.06.2023 |
+| Version | 2.0.0 |
 | Status  | active      |
 | Realm   | DE          | 
 
