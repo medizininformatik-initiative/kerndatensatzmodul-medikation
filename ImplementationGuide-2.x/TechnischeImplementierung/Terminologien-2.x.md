@@ -78,6 +78,6 @@ Canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikatio
 | http<nolink>://standardterms.edqm.eu | EDQM [Standard Terms](https://standardterms.edqm.eu/) |  | 0.4.0.127.0.16.1.1.2.1 |
 | http<nolink>://snomed.info/sct | SNOMED CT [snomed.org](http://snomed.org/) | [Using SNOMED CT with FHIR](http://hl7.org/fhir/snomedct.html) | 2.16.840.1.113883.6.96 | 
 | http<nolink>://unitsofmeasure.org | UCUM [unitsofmeasure.org](http://unitsofmeasure.org/) | [Using UCUM with FHIR](http://hl7.org/fhir/ucum.html) | 2.16.840.1.113883.6.8 |  
-| http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung | IHE XDS Fallkontext bei Dokumentenerstellung | | 1.3.6.1.4.1.19376.3.276.1.5.16 |
+| http<nolink>://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung | IHE XDS Fallkontext bei Dokumentenerstellung | | 1.3.6.1.4.1.19376.3.276.1.5.16 |
 
 <br><br>
