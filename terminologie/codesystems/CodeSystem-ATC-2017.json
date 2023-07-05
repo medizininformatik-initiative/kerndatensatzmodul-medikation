@@ -1,10 +1,10 @@
 {
     "resourceType": "CodeSystem",
-    "id": "CodeSystemATC2017",
+    "id": "mii-cs-medikation-atc-2017",
     "url": "http://fhir.de/CodeSystem/bfarm/atc",
     "version": "2017",
-    "name": "ATC",
-    "title": "Anatomisch-therapeutisch chemische Klassifikation (ATC) Amtliche deutsche Fassung 2017",
+    "name": "MII_CS_Medikation_ATC_2017",
+    "title": "MII CS Medikation ATC 2017",
     "status": "active",
     "experimental": true,
     "date": "2023-07-05",
