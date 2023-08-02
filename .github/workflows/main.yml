@@ -2,7 +2,7 @@
 
 name: CI (FHIR Validation)
 
-# Controls when the action will run.
+# Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
@@ -15,41 +15,35 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # Validate all resources using Firely Terminal
+
+  # Validate all resources using Firely Terminal 
   CI_FHIR_VALIDATION:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+        
       - name: Checkout code
-        uses: actions/checkout@v3
-
-      # Install .NET runtime
-      - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v2
-        with:
-          dotnet-version: 6.0.x
-
-      # Install Java runtime (only needed if you want to run the offical HL7 Java validator)
-      - name: Setup Java JDK
-        uses: actions/setup-java@v3
-        with:
-          distribution: "microsoft"
-          java-version: "17"
-
+        uses: actions/checkout@v2
+        
+      # Java and .NET are already installed on ubuntu-latest
+        
       - name: Firely.Terminal (GitHub Actions)
         uses: FirelyTeam/firely-terminal-pipeline@v0.4.0
         with:
-          PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources terminologie/codesystems logical-models
+          PATH_TO_CONFORMANCE_RESOURCES: terminologie/codesystems fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
+          PATH_TO_QUALITY_CONTROL_RULES: qc/custom
           DOTNET_VALIDATION_ENABLED: true
-          JAVA_VALIDATION_ENABLED: false
+          JAVA_VALIDATION_ENABLED: true
           OUTPUT_FORMAT: RAW
+          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+          # SUSHI_ENABLED: false
+          JAVA_VALIDATOR_VERSION: 6.0.23
 
           # Error @ Medication.ingredient[0].item.ofType(CodeableConcept).coding[0] (line 28, col21) : The code "82F2G7BL4E" is not valid in the system http://fdasis.nlm.nih.gov; The code provided (http://fdasis.nlm.nih.gov#82F2G7BL4E) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://fdasis.nlm.nih.gov#82F2G7BL4E'
           # Error @ Medication.code.coding[2] (line 21, col14) : The code "V06DC01" is not valid in the system http://www.whocc.no/atc; The code provided (http://www.whocc.no/atc#V06DC01) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://www.whocc.no/atc#V06DC01'
           # Error @ Medication.ingredient[1] (line 48, col8) : Medication.ingredient.item[x]:itemCodeableConcept: minimum required = 1, but only found 0 (from https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
           EXPECTED_FAILS: VALIDATION_EXAMPLES_JAVA
-          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
-          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
