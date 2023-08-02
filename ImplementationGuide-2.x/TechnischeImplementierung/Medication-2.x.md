@@ -1,3 +1,8 @@
+---
+topic: MedikationMedication
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication
+---
+
 ## Medication
 
 Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt.
@@ -10,18 +15,22 @@ select
     url
 ```
 
-**Differential**
-
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, diff}}
-
-<br>
-
 ---
 
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, snapshot}}
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication}}
+    </tab>
+</tabs>
 
 ---
 
