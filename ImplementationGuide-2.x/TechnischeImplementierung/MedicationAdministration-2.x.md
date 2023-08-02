@@ -1,3 +1,8 @@
+---
+topic: MedikationMedicationAdministration
+subject: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration
+---
+
 ## MedicationAdministration
 
 Diese MedicationAdministration-Ressource wird verwendet, um Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben usw. zu erfassen.
@@ -12,18 +17,22 @@ select
     url
 ```
 
-**Differential**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, diff}}
-
-<br>
-
 ---
 
-**Snapshot**
-
-{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, snapshot}}
-
+<tabs>
+    <tab title="snap" active="true">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, snap}}
+    </tab>
+    <tab title="diff">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, diff}}
+    </tab>
+    <tab title="hybrid">
+      {{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, hybrid}}
+    </tab>
+    <tab title="JSON">
+      {{json:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration}}
+    </tab>
+</tabs>
 
 ---
 

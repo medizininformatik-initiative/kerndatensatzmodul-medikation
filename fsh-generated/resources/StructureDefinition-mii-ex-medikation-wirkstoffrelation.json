@@ -47,7 +47,7 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.medizininformatik-initiative.de/"
+          "value": "https://www.medizininformatik-initiative.de"
         }
       ]
     }
@@ -111,16 +111,6 @@
       {
         "id": "Extension.extension:ingredientReference.value[x]",
         "path": "Extension.extension.value[x]",
-        "sliceName": "valueReference",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
         "type": [
           {
             "code": "Reference",
