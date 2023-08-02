@@ -8,15 +8,11 @@ Description: "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, ge
 * insert Translation(^description, en-US, Extension to differentiate the type of ingredient into general\, exact or combination ingredient.)
 * insert PR_CS_VS_Version
 * ^experimental = false
-* ^publisher = "Medizininformatik Initiative"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "https://www.medizininformatik-initiative.de/"
-* ^context.type = #element
-* ^context.expression = "Medication.ingredient"
-* url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp" (exactly)
+* insert Publisher
+* insert ExtensionContext(Medication.ingredient)
 * value[x] 1..
 * value[x] only Coding
 * value[x] from $vs-wirkstofftyp (required)
-* value[x].system 1..
-* value[x].system = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" (exactly)
-* value[x].code 1..
+* valueCoding.system 1..
+* valueCoding.system = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" (exactly)
+* valueCoding.code 1..
