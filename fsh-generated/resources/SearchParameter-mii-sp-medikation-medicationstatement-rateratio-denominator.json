@@ -24,7 +24,7 @@
     "MedicationStatement"
   ],
   "type": "quantity",
-  "expression": "MedicationStatement.dosage.doseAndRate.rateRatio.denominator",
+  "expression": "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).denominator",
   "comparator": [
     "eq",
     "gt",

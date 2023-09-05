@@ -24,7 +24,7 @@
     "MedicationAdministration"
   ],
   "type": "quantity",
-  "expression": "MedicationAdministration.dosage.rateRatio.denominator",
+  "expression": "MedicationAdministration.dosage.rate.ofType(Ratio).denominator",
   "comparator": [
     "eq",
     "gt",
