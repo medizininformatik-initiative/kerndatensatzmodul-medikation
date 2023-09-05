@@ -21,7 +21,7 @@
   "description": "Suchparameter für MedicationAdministration.dosage.dose",
   "code": "ratequantity",
   "base": [
-    "MedicationStatement"
+    "MedicationAdministration"
   ],
   "type": "quantity",
   "expression": "MedicationAdministration.dosage.dose",

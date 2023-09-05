@@ -24,7 +24,7 @@
     "MedicationAdministration"
   ],
   "type": "composite",
-  "expression": "MedicationAdministration.dosage.rateRatio",
+  "expression": "MedicationAdministration.dosage.rate.ofType(Ratio)",
   "component": [
     {
       "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator",

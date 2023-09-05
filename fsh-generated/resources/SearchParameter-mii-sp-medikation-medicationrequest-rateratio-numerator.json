@@ -24,7 +24,7 @@
     "MedicationRequest"
   ],
   "type": "quantity",
-  "expression": "MedicationRequest.dosageInstruction.doseAndRate.rateRatio.numerator",
+  "expression": "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator",
   "comparator": [
     "eq",
     "gt",

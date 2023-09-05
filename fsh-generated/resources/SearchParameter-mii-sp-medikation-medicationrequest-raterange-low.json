@@ -24,7 +24,7 @@
     "MedicationRequest"
   ],
   "type": "quantity",
-  "expression": "MedicationRequest.dosageInstruction.doseAndRate.rateRange.low",
+  "expression": "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low",
   "comparator": [
     "eq",
     "gt",

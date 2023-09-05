@@ -138,7 +138,7 @@ Usage: #definition
 * code = #doserange-low
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.doseRange.low"
+* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).low"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -159,7 +159,7 @@ Usage: #definition
 * code = #doserange-high
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.doseRange.high"
+* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range).high"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -180,7 +180,7 @@ Usage: #definition
 * code = #doserange
 * base = #MedicationStatement
 * type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.doseRange"
+* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Range)"
 * component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeLow"
 * component[=].expression = "low"
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-DoseRangeHigh"
@@ -200,7 +200,7 @@ Usage: #definition
 * code = #dose-quantity
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.doseQuantity"
+* expression = "MedicationStatement.dosage.doseAndRate.dose.ofType(Quantity)"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -221,7 +221,7 @@ Usage: #definition
 * code = #rateratio-numerator
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rateRatio.numerator"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).numerator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -242,7 +242,7 @@ Usage: #definition
 * code = #rateratio-numerator
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rateRatio.denominator"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio).denominator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -263,7 +263,7 @@ Usage: #definition
 * code = #rateratio
 * base = #MedicationStatement
 * type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.rateRatio"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Ratio)"
 * component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioNumerator"
 * component[=].expression = "numerator"
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRatioDenominator"
@@ -283,7 +283,7 @@ Usage: #definition
 * code = #raterange-low
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rateRange.low"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).low"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -304,7 +304,7 @@ Usage: #definition
 * code = #raterange-high
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rateRange.high"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range).high"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -325,7 +325,7 @@ Usage: #definition
 * code = #raterange
 * base = #MedicationStatement
 * type = #composite
-* expression = "MedicationStatement.dosage.doseAndRate.rateRange"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Range)"
 * component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeLow"
 * component[=].expression = "low"
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRangeHigh"
@@ -345,7 +345,7 @@ Usage: #definition
 * code = #ratequantity
 * base[+] = #MedicationStatement
 * type = #quantity
-* expression = "MedicationStatement.dosage.doseAndRate.rateQuantity"
+* expression = "MedicationStatement.dosage.doseAndRate.rate.ofType(Quantity)"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -364,7 +364,7 @@ Usage: #definition
 * date = "2022-06-28"
 * description = "Suchparameter für MedicationAdministration.dosage.dose"
 * code = #ratequantity
-* base[+] = #MedicationStatement
+* base[+] = #MedicationAdministration
 * type = #quantity
 * expression = "MedicationAdministration.dosage.dose"
 * comparator[+] = #eq 
@@ -387,7 +387,7 @@ Usage: #definition
 * code = #rateratio-numerator
 * base[+] = #MedicationAdministration
 * type = #quantity
-* expression = "MedicationAdministration.dosage.rateRatio.numerator"
+* expression = "MedicationAdministration.dosage.rate.ofType(Ratio).numerator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -408,7 +408,7 @@ Usage: #definition
 * code = #rateratio-denominator
 * base[+] = #MedicationAdministration
 * type = #quantity
-* expression = "MedicationAdministration.dosage.rateRatio.denominator"
+* expression = "MedicationAdministration.dosage.rate.ofType(Ratio).denominator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -429,7 +429,7 @@ Usage: #definition
 * code = #rateratio
 * base = #MedicationAdministration
 * type = #composite
-* expression = "MedicationAdministration.dosage.rateRatio"
+* expression = "MedicationAdministration.dosage.rate.ofType(Ratio)"
 * component[0].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioNumerator"
 * component[=].expression = "numerator"
 * component[+].definition = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationAdministration-RateRatioDenominator"
@@ -449,7 +449,7 @@ Usage: #definition
 * code = #ratequantity
 * base[+] = #MedicationAdministration
 * type = #quantity
-* expression = "MedicationAdministration.dosage.rateQuantity"
+* expression = "MedicationAdministration.dosage.rate.ofType(Quantity)"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -470,7 +470,7 @@ Usage: #definition
 * code = #doserange-low
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.doseRange.low"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).low"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -491,7 +491,7 @@ Usage: #definition
 * code = #doserange-high
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.doseRange.high"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Range).high"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -512,7 +512,7 @@ Usage: #definition
 * code = #dose-quantity
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.doseQuantity"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.dose.ofType(Quantity)"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -533,7 +533,7 @@ Usage: #definition
 * code = #rateratio-numerator
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.rateRatio.numerator"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).numerator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -554,7 +554,7 @@ Usage: #definition
 * code = #rateratio-numerator
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.rateRatio.denominator"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -575,7 +575,7 @@ Usage: #definition
 * code = #raterange-low
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.rateRange.low"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).low"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -596,7 +596,7 @@ Usage: #definition
 * code = #raterange-high
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.rateRange.high"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Range).high"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
@@ -617,7 +617,7 @@ Usage: #definition
 * code = #ratequantity
 * base[+] = #MedicationRequest
 * type = #quantity
-* expression = "MedicationRequest.dosageInstruction.doseAndRate.rateQuantity"
+* expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Quantity)"
 * comparator[+] = #eq 
 * comparator[+] = #gt 
 * comparator[+] = #lt
