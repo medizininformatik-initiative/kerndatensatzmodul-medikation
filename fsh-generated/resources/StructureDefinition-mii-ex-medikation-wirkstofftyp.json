@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-ex-medikation-wirkstofftyp",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
-  "version": "2.0.0",
+  "version": "2024.0.0",
   "name": "MII_EX_Medikation_Wirkstofftyp",
   "_name": {
     "extension": [

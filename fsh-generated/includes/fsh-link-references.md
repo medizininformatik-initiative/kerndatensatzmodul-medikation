@@ -1,3 +1,7 @@
+[mii-exa-medikation-medikationsliste-aktuelle-therapie]: List-mii-exa-medikation-medikationsliste-aktuelle-therapie.html
+[mii-exa-medikation-medikationsliste-aufnahmemedikation]: List-mii-exa-medikation-medikationsliste-aufnahmemedikation.html
+[mii-exa-medikation-list-admission]: List-mii-exa-medikation-list-admission.html
+[mii-cps-medikation-capabilitystatement-2x]: CapabilityStatement-mii-cps-medikation-capabilitystatement-2x.html
 [MII_CS_Medikation_Wirkstofftyp]: CodeSystem-mii-cs-medikation-wirkstofftyp.html
 [MII_EX_Medikation_Wirkstoffrelation]: StructureDefinition-mii-ex-medikation-wirkstoffrelation.html
 [MII_EX_Medikation_Wirkstofftyp]: StructureDefinition-mii-ex-medikation-wirkstofftyp.html
@@ -9,8 +13,6 @@
 [MII_PR_Medikation_Medikationsliste]: StructureDefinition-mii-pr-medikation-medikationsliste.html
 [MII_VS_Medikation_Fallkontext]: ValueSet-mii-vs-medikation-fallkontext.html
 [MII_VS_Medikation_Wirkstofftyp]: ValueSet-mii-vs-medikation-wirkstofftyp.html
-[mii-cps-medikation-capabilitystatement-2x]: CapabilityStatement-mii-cps-medikation-capabilitystatement-2x.html
-[mii-exa-medikation-list-admission]: List-mii-exa-medikation-list-admission.html
 [mii-exa-medikation-medication-administration]: MedicationAdministration-mii-exa-medikation-medication-administration.html
 [mii-exa-medikation-medication-ass-100]: Medication-mii-exa-medikation-medication-ass-100.html
 [mii-exa-medikation-medication-caelyx]: Medication-mii-exa-medikation-medication-caelyx.html
@@ -32,8 +34,6 @@
 [mii-exa-medikation-medication-statement-periodisches-intervall]: MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.html
 [mii-exa-medikation-medication-statement-zopiclon]: MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.html
 [mii-exa-medikation-medication-thiotepa]: Medication-mii-exa-medikation-medication-thiotepa.html
-[mii-exa-medikation-medikationsliste-aktuelle-therapie]: List-mii-exa-medikation-medikationsliste-aktuelle-therapie.html
-[mii-exa-medikation-medikationsliste-aufnahmemedikation]: List-mii-exa-medikation-medikationsliste-aufnahmemedikation.html
 [mii-exa-medikation-procedure-thiotepa]: Procedure-mii-exa-medikation-procedure-thiotepa.html
 [mii-sp-medikation-list-mode]: SearchParameter-mii-sp-medikation-list-mode.html
 [mii-sp-medikation-medication-dosage-route]: SearchParameter-mii-sp-medikation-medication-dosage-route.html
