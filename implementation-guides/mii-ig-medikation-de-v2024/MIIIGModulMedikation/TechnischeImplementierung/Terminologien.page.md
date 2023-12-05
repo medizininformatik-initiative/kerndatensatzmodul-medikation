@@ -1,11 +1,12 @@
 ---
 parent: 
+topic: MedikationTerminologien
 ---
 ## Terminologien
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/WARNING.JPG}} | Zusätzlich zu internationalen Terminologien werden durch das Modul MEDIKATION auch eigene CodeSystems definiert. Es sei drauf hingewiesen, dass alle CodeSystems auch ein implizites ValueSet enthalten, welches der jeweiligen FHIR CodeSystem-Ressource zu entnehmen ist.|
+| {{render:render:implementation-guides/ImplementationGuide-Common/images/WARNING.JPG}} | Zusätzlich zu internationalen Terminologien werden durch das Modul MEDIKATION auch eigene CodeSystems definiert. Es sei drauf hingewiesen, dass alle CodeSystems auch ein implizites ValueSet enthalten, welches der jeweiligen FHIR CodeSystem-Ressource zu entnehmen ist.|
 
 Soweit möglich sollen Terminologien und eindeutige Codes verwendet werden, die internationalen Standards entsprechen. Für die Arzneimittel und Dosierungsinformationen sind dies die ISO-Standards zur [Identification of Medicinal Products (IDMP)](https://www.ema.europa.eu/en/human-regulatory/overview/data-medicines-iso-idmp-standards-overview), die vor allem im regulatorischen Kontext implementiert werden. Als IDMP-konforme Terminologien und eindeutige Identifizierungs-Codes werden vorgeschlagen:
 

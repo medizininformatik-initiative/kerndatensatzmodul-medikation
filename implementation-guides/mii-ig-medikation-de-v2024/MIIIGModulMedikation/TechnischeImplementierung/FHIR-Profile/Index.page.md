@@ -9,4 +9,4 @@ Alle Elemente des Kerndatensatzes, angepasst an die Details und Anforderungen f�
 
 | Hinweis | Verpflichtende / must-support Elemente |
 |---------|---------------------|
-| {{render:Warning}} | Für verpflichtende oder als must-support markierten Elemente sei an dieser Stelle auf die entsprechenden [Regeln der IPS](http://hl7.org/fhir/uv/ips/STU1/design.html#must-support) verwiesen, die auch für diesen ImplementationGuide gelten. |
+| {{render:implementation-guides/ImplementationGuide-Common/images/WARNING.JPG}} | Für verpflichtende oder als must-support markierten Elemente sei an dieser Stelle auf die entsprechenden [Regeln der IPS](http://hl7.org/fhir/uv/ips/STU1/design.html#must-support) verwiesen, die auch für diesen ImplementationGuide gelten. |
