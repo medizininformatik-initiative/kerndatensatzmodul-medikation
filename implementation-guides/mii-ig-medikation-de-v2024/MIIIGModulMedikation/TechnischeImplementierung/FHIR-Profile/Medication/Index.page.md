@@ -144,21 +144,21 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
 
 Beispiel einer Medication-Ressource für ein Fertigarzneimittel mit Angabe einer Pharmazentralnummer, Darreichungsform, Wirkstoff und Wirkstärke:
 
-{{json:ExampleMedicationASS100}}
+{{json:mii-exa-medikation-medication-ass-100}}
 <br>
 
 ---
 
 Beispiel einer Medication-Ressource für eine Infusionslösung mit Angabe der Darreichungsform, Wirkstoff und Wirkstärke, sowie weitere Bestandteile in Form einer Referenz auf eine eigene Medication-Ressource für die Glucoselösung. Medication.code enthält in diesem Fall nur das text-Element:
 
-{{json:ExampleMedicationRezeptur}}
+{{json:mii-exa-medikation-medication-rezeptur}}
 <br>
 
 ---
 
 Die im vorrangegangenen Beispiel referenzierte Medication-Ressource:
 
-{{json:ExampleMedicationGlucoseloesung}}
+{{json:mii-exa-medikation-medication-glucoseloesung}}
 <br>
 
 ---
