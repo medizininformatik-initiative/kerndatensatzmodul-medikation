@@ -37,7 +37,8 @@
     "coding": [
       {
         "code": "M01AE01",
-        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022"
       }
     ],
     "text": "Ibuprofen 400mg"

@@ -105,7 +105,8 @@
     "coding": [
       {
         "code": "C07AB07",
-        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022"
       }
     ],
     "text": "Concor 2,5mg"

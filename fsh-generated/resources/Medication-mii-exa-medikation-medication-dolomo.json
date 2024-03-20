@@ -16,6 +16,7 @@
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "code": "N02BE51",
+        "version": "2023",
         "display": "Paracetamol, Kombinationen exkl. Psycholeptika"
       }
     ]

@@ -16,11 +16,13 @@
       {
         "code": "A12AA20",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2023",
         "display": "Calcium (verschiedene Salze in Kombination)"
       },
       {
         "code": "A12AA20",
         "system": "http://www.whocc.no/atc",
+        "version": "2023",
         "display": "calcium (different salts in combination)"
       }
     ]

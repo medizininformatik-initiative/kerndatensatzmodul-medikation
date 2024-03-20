@@ -105,7 +105,8 @@
     "coding": [
       {
         "code": "N05CF01",
-        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022"
       }
     ],
     "text": "Zopiclon 3,75mg"
