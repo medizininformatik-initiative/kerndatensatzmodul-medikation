@@ -16,11 +16,13 @@
       {
         "code": "V06DC01",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2023",
         "display": "Glucose"
       },
       {
         "code": "V06DC01",
         "system": "http://www.whocc.no/atc",
+        "version": "2023",
         "display": "glucose"
       }
     ]

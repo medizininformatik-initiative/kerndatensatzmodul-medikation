@@ -40,7 +40,7 @@
     ]
   },
   "status": "active",
-  "date": "2022-05-18",
+  "date": "2024-03-20",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -169,6 +169,12 @@
         "mustSupport": true
       },
       {
+        "id": "Medication.code.coding:atcClassDe.version",
+        "path": "Medication.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
         "id": "Medication.code.coding:atcClassDe.code",
         "path": "Medication.code.coding.code",
         "min": 1,
@@ -190,6 +196,12 @@
       {
         "id": "Medication.code.coding:atcClassEn.system",
         "path": "Medication.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.version",
+        "path": "Medication.code.coding.version",
         "min": 1,
         "mustSupport": true
       },

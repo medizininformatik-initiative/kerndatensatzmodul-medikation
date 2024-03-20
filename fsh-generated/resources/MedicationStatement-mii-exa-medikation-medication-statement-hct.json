@@ -105,7 +105,8 @@
     "coding": [
       {
         "code": "C03AA03",
-        "system": "http://fhir.de/CodeSystem/bfarm/atc"
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2022"
       }
     ],
     "text": "HCT 12,5mg"

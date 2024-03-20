@@ -5,7 +5,7 @@ Usage: #example
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].isActive = true
-* ingredient[=].itemCodeableConcept = $cs-atc#L01DB01 "Doxorubicin"
+* ingredient[=].itemCodeableConcept = $cs-atc|2023#L01DB01 "Doxorubicin"
 * ingredient[=].strength.denominator = 250 'mL' "milliliter"
 * ingredient[=].strength.numerator = 85 'mg' "mg"
 * ingredient[+].isActive = true
@@ -17,8 +17,8 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
-* code.coding[+] = $cs-atc#V06DC01 "Glucose"
-* code.coding[+] = $cs-atc-who#V06DC01 "glucose"
+* code.coding[+] = $cs-atc|2023#V06DC01 "Glucose"
+* code.coding[+] = $cs-atc-who|2023#V06DC01 "glucose"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].isActive = true
 * ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#12829 "Glucose"
@@ -39,8 +39,8 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#00169644 "CALCIUM SANDOZ forte Brausetabletten"
-* code.coding[+] = $cs-atc#A12AA20 "Calcium (verschiedene Salze in Kombination)"
-* code.coding[+] = $cs-atc-who#A12AA20 "calcium (different salts in combination)"
+* code.coding[+] = $cs-atc|2023#A12AA20 "Calcium (verschiedene Salze in Kombination)"
+* code.coding[+] = $cs-atc-who|2023#A12AA20 "calcium (different salts in combination)"
 * form = $standardterms#10222000 "Effervescent tablet"
 * ingredient[0].id = "ing_1"
 * ingredient[=].extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
@@ -78,7 +78,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#887150 "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
-* code.coding[+] = $cs-atc#L01DB01 "Doxorubicin"
+* code.coding[+] = $cs-atc|2023#L01DB01 "Doxorubicin"
 * status = #active
 * form = $standardterms#11213000 "Concentrate for solution for infusion"
 * ingredient.itemCodeableConcept.coding[0] = $fdasis#82F2G7BL4E "Doxorubicin hydrochloride"
@@ -92,7 +92,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
-* code.coding[+] = $cs-atc#B01AC06 "acetylsalicylic acid"
+* code.coding[+] = $cs-atc|2023#B01AC06 "acetylsalicylic acid"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
 * ingredient.strength.numerator = 100 'mg' "milligram"
@@ -125,7 +125,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN"
-* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 27
 * amount.numerator.unit = "Tablet"
@@ -142,7 +142,7 @@ Instance: mii-exa-medikation-medication-dolomo-tag
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
-* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 18
 * amount.numerator.unit = "Tablet"
@@ -168,7 +168,7 @@ Instance: mii-exa-medikation-medication-dolomo-nacht
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
-* code.coding[atcClassDe] = $cs-atc#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
+* code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 9
 * amount.numerator.unit = "Tablet"
@@ -336,7 +336,7 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
-* medicationCodeableConcept = $cs-atc#C07AB07
+* medicationCodeableConcept = $cs-atc|2022#C07AB07
 * medicationCodeableConcept.text = "Concor 2,5mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
@@ -370,7 +370,7 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
-* medicationCodeableConcept = $cs-atc#C03AA03
+* medicationCodeableConcept = $cs-atc|2022#C03AA03
 * medicationCodeableConcept.text = "HCT 12,5mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
@@ -404,7 +404,7 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
-* medicationCodeableConcept = $cs-atc#M01AE01
+* medicationCodeableConcept = $cs-atc|2022#M01AE01
 * medicationCodeableConcept.text = "Ibuprofen 400mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
@@ -421,7 +421,7 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
-* medicationCodeableConcept = $cs-atc#N05CF01
+* medicationCodeableConcept = $cs-atc|2022#N05CF01
 * medicationCodeableConcept.text = "Zopiclon 3,75mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"

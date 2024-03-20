@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2022-05-18"
+* ^date = "2024-03-20"
 * insert Publisher
 * . ^comment = "MI-I Medikation"
 * id MS
@@ -37,6 +37,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassDe] ^patternCoding.system = "http://fhir.de/CodeSystem/bfarm/atc"
 * code.coding[atcClassDe] ^mustSupport = true
 * code.coding[atcClassDe].system 1.. MS
+* code.coding[atcClassDe].version 1.. MS
 * code.coding[atcClassDe].code 1.. MS
 * code.coding[atcClassEn] ^sliceName = "atcClassEn"
 * code.coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
@@ -44,6 +45,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassEn] ^patternCoding.system = "http://www.whocc.no/atc"
 * code.coding[atcClassEn] ^mustSupport = true
 * code.coding[atcClassEn].system 1.. MS
+* code.coding[atcClassEn].version 1.. MS
 * code.coding[atcClassEn].code 1.. MS
 * code.text MS
 * form MS
