@@ -75,6 +75,8 @@
     }
   ],
   "version": "2024.0.0",
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
+  "date": "2024-05-29",
   "compose": {
     "include": [
       {

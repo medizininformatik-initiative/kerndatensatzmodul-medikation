@@ -9,8 +9,9 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * insert Translation(^description, en-US, A record of a medication that is being consumed by a patient.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2022-07-13"
+* ^date = "2024-05-29"
 * insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS

@@ -9,8 +9,9 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2024-03-20"
+* ^date = "2024-05-29"
 * insert Publisher
+* insert KDS_Copyright
 * . ^comment = "MI-I Medikation"
 * id MS
 * meta MS
