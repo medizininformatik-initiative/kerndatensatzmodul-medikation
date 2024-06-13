@@ -40,6 +40,7 @@
     ]
   },
   "status": "active",
+  "date": "2024-05-29",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -69,6 +70,7 @@
       }
     ]
   },
+  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

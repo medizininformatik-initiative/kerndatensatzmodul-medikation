@@ -24,6 +24,8 @@
       ]
     }
   ],
+  "copyright": "This artifact includes content from IHE Deutschland e.V. (https://www.ihe-d.de/)",
+  "date": "2024-05-29",
   "compose": {
     "include": [
       {

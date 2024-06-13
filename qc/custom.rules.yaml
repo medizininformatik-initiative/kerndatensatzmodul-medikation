@@ -12,6 +12,7 @@
     - /**/*.json
     - "!package.json"
     - "!/**/CodeSystem-ATC*.json"
+    - "!/**/CodeSystem-ASK*.json"
     - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - action: Check for valid ids
@@ -28,6 +29,7 @@
     - /**/*.json
     - "!package.json"
     - "!/**/CodeSystem-ATC*.json"
+    - "!/**/CodeSystem-ASK*.json"
     - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-name
@@ -40,6 +42,7 @@
     - /**/*.json
     - "!package.json"
     - "!/**/CodeSystem-ATC*.json"
+    - "!/**/CodeSystem-ASK*.json"
     - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-title
@@ -52,6 +55,7 @@
     - /**/*.json
     - "!package.json"
     - "!/**/CodeSystem-ATC*.json"
+    - "!/**/CodeSystem-ASK*.json"
     - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-url
@@ -64,4 +68,5 @@
     - /**/*.json
     - "!package.json"
     - "!/**/CodeSystem-ATC*.json"
+    - "!/**/CodeSystem-ASK*.json"
     - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"

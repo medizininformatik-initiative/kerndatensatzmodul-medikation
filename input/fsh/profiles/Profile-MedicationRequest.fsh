@@ -8,8 +8,9 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * insert Translation(^title, en-US, MII PR Medikation MedicationRequest)
 * insert Translation(^description, en-US, An order or request for both supply of the medication and the instructions for administration of the medication to a patient.)
 * insert PR_CS_VS_Version
-* ^date = "2022-05-18"
+* ^date = "2024-05-29"
 * insert Publisher
+* insert KDS_Copyright
 * . ^comment = "MI-I Medikamentenverordnung"
 * id MS
 * meta MS

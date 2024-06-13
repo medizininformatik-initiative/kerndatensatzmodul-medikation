@@ -9,8 +9,9 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(^description, en-US, This profile describes medication administrations\, including self-administration of oral medications\, injections\, intravenous administrations\, etc.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2022-05-18"
+* ^date = "2024-05-29"
 * insert Publisher
+* insert KDS_Copyright
 * id MS
 * meta MS
 * meta.source MS
