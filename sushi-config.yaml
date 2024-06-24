@@ -16,3 +16,5 @@ dependencies:
   hl7.fhir.uv.ips: 1.0.0
   de.medizininformatikinitiative.kerndatensatz.meta: 1.0.3
   de.ihe-d.terminology: 3.0.0
+menu:
+  Home: index.html

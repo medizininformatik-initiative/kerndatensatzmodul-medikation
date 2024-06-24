@@ -361,9 +361,9 @@ Usage: #definition
 * name = "MII_SP_Medikation_MedicationAdministration_Dose"
 * status = #active
 * experimental = false
-* date = "2022-06-28"
+* date = "2024-06-24"
 * description = "Suchparameter für MedicationAdministration.dosage.dose"
-* code = #ratequantity
+* code = #dose
 * base[+] = #MedicationAdministration
 * type = #quantity
 * expression = "MedicationAdministration.dosage.dose"

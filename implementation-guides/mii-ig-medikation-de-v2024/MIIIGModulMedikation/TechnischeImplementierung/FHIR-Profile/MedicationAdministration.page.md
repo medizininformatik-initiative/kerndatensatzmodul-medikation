@@ -157,13 +157,13 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "dosage-route" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#token).
 
-12. Der Suchparameter "ratequantity" MUSS unterstützt werden:
+12. Der Suchparameter "dose" MUSS unterstützt werden:
 
     Beispiele:
 
-    ```GET [base]/MedicationAdministration?ratequantity=100|http://unitsofmeasure.org|mg```
+    ```GET [base]/MedicationAdministration?dose=100|http://unitsofmeasure.org|mg```
     
-    Anwendungshinweise: Weitere Informationen zur Suche nach "ratequantity" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
+    Anwendungshinweise: Weitere Informationen zur Suche nach "dose" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
 
 13. Der Suchparameter "rateratio-numerator" MUSS unterstützt werden:
 
@@ -173,7 +173,7 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "rateratio-numerator" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
 
-14. Der Suchparameter "rateratio-numerator" MUSS unterstützt werden:
+14. Der Suchparameter "rateratio-denominator" MUSS unterstützt werden:
 
     Beispiele:
 
@@ -188,6 +188,14 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
     ```GET [base]/MedicationAdministration?rateratio=250|http://unitsofmeasure.org|mL$1|http://unitsofmeasure.org|h```
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "rateratio" finden sich in der [FHIR-Basisspezifikation - Abschnitt "composite"](http://hl7.org/fhir/search.html#composite).
+
+16. Der Suchparameter "ratequantity" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/MedicationAdministration?ratequantity=100|http://unitsofmeasure.org|mg/h```
+    
+    Anwendungshinweise: Weitere Informationen zur Suche nach "ratequantity" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
 
 ---
 
