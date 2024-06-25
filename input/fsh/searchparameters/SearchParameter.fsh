@@ -549,9 +549,9 @@ Usage: #definition
 * name = "MII_SP_Medikation_MedicationRequest_RateRatioDenominator"
 * status = #active
 * experimental = false
-* date = "2022-06-28"
+* date = "2024-06-25"
 * description = "Suchparameter für MedicationRequest.dosageInstruction.doseAndRate.rateRatio.denominator"
-* code = #rateratio-numerator
+* code = #rateratio-denominator
 * base[+] = #MedicationRequest
 * type = #quantity
 * expression = "MedicationRequest.dosageInstruction.doseAndRate.rate.ofType(Ratio).denominator"
