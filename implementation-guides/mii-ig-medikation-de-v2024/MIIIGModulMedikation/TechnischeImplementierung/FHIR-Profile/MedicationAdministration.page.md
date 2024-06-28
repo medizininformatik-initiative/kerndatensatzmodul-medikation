@@ -157,11 +157,11 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "dosage-route" finden sich in der [FHIR-Basisspezifikation - Abschnitt "token"](http://hl7.org/fhir/R4/search.html#token).
 
-12. Der Suchparameter "dose" MUSS unterstützt werden:
+12. Der Suchparameter "dose-quantity" MUSS unterstützt werden:
 
     Beispiele:
 
-    ```GET [base]/MedicationAdministration?dose=100|http://unitsofmeasure.org|mg```
+    ```GET [base]/MedicationAdministration?dose-quantity=100|http://unitsofmeasure.org|mg```
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "dose" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
 
