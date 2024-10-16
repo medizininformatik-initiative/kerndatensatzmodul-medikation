@@ -6,20 +6,34 @@ Title: "MII PR Medikation Medikationsliste"
 Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
 * insert Translation(^name, en-US, MII_PR_Medikation_Medicationlist)
-* insert Translation(^title, en-US, MII PR Medikation Medicationlist)
+* insert Translation(^title, de-DE, Medikationsliste)
+* insert Translation(^title, en-US, Medicationlist)
+* insert Translation(^description, de-DE, Sammlung der Medikationen\, die ein Patient zu einem bestimmten Zeitpunkt einnimmt\, beispielsweise bei Aufnahme oder Entlassung)
 * insert Translation(^description, en-US, List of discrete medications e.g. for documentation of admission or discharge medication.)
 * insert PR_CS_VS_Version
 * insert Publisher
 * insert KDS_Copyright
-* ^date = "2024-05-29"
+* ^date = "2024-10-15"
 * obeys medication-list-context-1 and medication-list-context-2
 * meta MS
 * meta.source MS
 * meta.profile MS
 * identifier MS
 * status MS
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* insert Translation(status ^definition, de-DE, aktuell | inaktiv | Eingabe fehlerhaft)
+* insert Translation(status ^definition, en-US, current | retired | entered-in-error)
 * mode MS
+* insert Translation(mode ^short, de-DE, Modus)
+* insert Translation(mode ^short, en-US, Mode)
+* insert Translation(mode ^definition, de-DE, Arbeitsmodus | Momentaufnahme | Änderungen)
+* insert Translation(mode ^definition, en-US, working | snapshot | changes)
 * code MS
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^definition, de-DE, ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung)
+* insert Translation(code ^definition, en-US, ambulatory contact | inpatient stay | inpatient admission | inpatient discharge)
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -37,8 +51,20 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * subject 1.. MS
 * subject only Reference(Patient)
 * encounter MS
+* insert Translation(encounter ^short, de-DE, Fall oder Kontakt)
+* insert Translation(encounter ^short, en-US, Encounter)
+* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, bei dem die Medikationsliste erstellt wurde.)
+* insert Translation(encounter ^definition, en-US, Encounter during which the medication list was created.)
 * date MS
+* insert Translation(date ^short, de-DE, Datum)
+* insert Translation(date ^short, en-US, Date)
+* insert Translation(date ^definition, de-DE, Das Datum\, an dem die Medikationsliste erstellt wurde.)
+* insert Translation(date ^definition, en-US, The date that the medication list was prepared.)
 * entry MS
+* insert Translation(entry ^short, de-DE, Eintrag)
+* insert Translation(entry ^short, en-US, Entry)
+* insert Translation(entry ^definition, de-DE, Eintrag in der Medikationsliste vom Typ MedicationStatement.)
+* insert Translation(entry ^definition, en-US, An entry in the medication list that is a MedicationStatement.)
 * entry.flag ..0
 * entry.deleted ..0
 * entry.item MS
