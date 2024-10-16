@@ -124,7 +124,8 @@ Instance: mii-exa-medikation-medication-dolomo
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
-* code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN"
+//* meta.source = "https://www.mmi.de/mmi-pharmindex|1.0"
+* code.coding[Pharmazentralnummer] = $cs-pzn|02.08.2024#02758994 "dolomo® TN"
 * code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 27
