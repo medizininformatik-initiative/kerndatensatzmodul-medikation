@@ -11,6 +11,7 @@
       {
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
         "code": "02758994",
+        "version": "02.08.2024",
         "display": "dolomo® TN"
       },
       {
