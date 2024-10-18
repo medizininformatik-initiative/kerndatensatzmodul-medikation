@@ -25,7 +25,9 @@ jobs:
     steps:
         
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
         
       # Java and .NET are already installed on ubuntu-latest
         
@@ -41,7 +43,7 @@ jobs:
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
-          JAVA_VALIDATOR_VERSION: 6.3.29
+          JAVA_VALIDATOR_VERSION: 6.3.32
           SUSHI_ENABLED: true 
           SUSHI_VERSION: 3.12.0
 

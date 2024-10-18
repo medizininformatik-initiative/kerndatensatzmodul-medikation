@@ -17,3 +17,4 @@ Alias: $sct-no-ver = http://snomed.info/sct
 Alias: $cs-ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $list-example-use-codes = http://terminology.hl7.org/CodeSystem/list-example-use-codes
 Alias: $ihe-xds-fallkontext = http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung
+Alias: $pzn-vs = http://fhir.de/ValueSet/ifa/pzn

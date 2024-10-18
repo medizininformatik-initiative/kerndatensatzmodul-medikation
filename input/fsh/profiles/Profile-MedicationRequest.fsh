@@ -77,7 +77,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * insert Translation(medication[x] ^definition, de-DE, Medikation\, die verordnet wurde. Code oder Referenz auf Medication-Objekt.)
 * insert Translation(medication[x] ^definition, en-US, The medication that was requested. Code or a reference to a Medication resource.)
 * subject MS
-* subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
+//* subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 * encounter MS
 * insert Translation(encounter ^short, de-DE, Fall / Kontakt)
 * insert Translation(encounter ^short, en-US, Encounter)

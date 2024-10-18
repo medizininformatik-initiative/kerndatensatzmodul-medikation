@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-medikation-capabilitystatement-2x",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata",
-  "version": "2024.0.0",
+  "version": "2025.0.0",
   "name": "MII_CPS_Medikation_CapabilityStatement_2x",
   "title": "MII CPS Medikation CapabilityStatement",
   "status": "active",
@@ -237,7 +237,7 @@
             },
             {
               "name": "mode",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/List-Mode",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode",
               "type": "token",
               "extension": [
                 {
@@ -432,8 +432,19 @@
               ]
             },
             {
+              "name": "ingredient-strength",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength",
+              "type": "composite",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                  "valueCode": "SHALL"
+                }
+              ]
+            },
+            {
               "name": "ingredient-strength-numerator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthNumerator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator",
               "type": "quantity",
               "extension": [
                 {
@@ -444,7 +455,7 @@
             },
             {
               "name": "ingredient-strength-denominator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Medication-IngredientStrengthDenominator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator",
               "type": "quantity",
               "extension": [
                 {
@@ -673,7 +684,7 @@
             },
             {
               "name": "dosage-site",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
               "type": "token",
               "extension": [
                 {
@@ -684,7 +695,7 @@
             },
             {
               "name": "dosage-route",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Route",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
               "type": "token",
               "extension": [
                 {
@@ -695,7 +706,7 @@
             },
             {
               "name": "dose-quantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -706,7 +717,7 @@
             },
             {
               "name": "ratequantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -717,7 +728,7 @@
             },
             {
               "name": "rateratio-numerator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
               "type": "quantity",
               "extension": [
                 {
@@ -728,7 +739,7 @@
             },
             {
               "name": "rateratio-denominator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
               "type": "quantity",
               "extension": [
                 {
@@ -739,7 +750,7 @@
             },
             {
               "name": "rateratio",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatio",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
               "type": "composite",
               "extension": [
                 {
@@ -1012,7 +1023,7 @@
             },
             {
               "name": "dosage-site",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
               "type": "token",
               "extension": [
                 {
@@ -1023,7 +1034,7 @@
             },
             {
               "name": "dosage-route",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Route",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
               "type": "token",
               "extension": [
                 {
@@ -1034,7 +1045,7 @@
             },
             {
               "name": "doserange-low",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeLow",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
               "type": "quantity",
               "extension": [
                 {
@@ -1045,7 +1056,7 @@
             },
             {
               "name": "doserange-high",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeHigh",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
               "type": "quantity",
               "extension": [
                 {
@@ -1056,7 +1067,7 @@
             },
             {
               "name": "doserange",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRange",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
               "type": "composite",
               "extension": [
                 {
@@ -1067,7 +1078,7 @@
             },
             {
               "name": "dose-quantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -1078,7 +1089,7 @@
             },
             {
               "name": "raterange-low",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeLow",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
               "type": "quantity",
               "extension": [
                 {
@@ -1089,7 +1100,7 @@
             },
             {
               "name": "raterange-high",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeHigh",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
               "type": "quantity",
               "extension": [
                 {
@@ -1111,7 +1122,7 @@
             },
             {
               "name": "ratequantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -1122,7 +1133,7 @@
             },
             {
               "name": "rateratio-numerator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
               "type": "quantity",
               "extension": [
                 {
@@ -1133,7 +1144,7 @@
             },
             {
               "name": "rateratio-denominator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
               "type": "quantity",
               "extension": [
                 {
@@ -1144,7 +1155,7 @@
             },
             {
               "name": "rateratio",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatio",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
               "type": "composite",
               "extension": [
                 {
@@ -1362,7 +1373,7 @@
             },
             {
               "name": "dosage-site",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Site",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site",
               "type": "token",
               "extension": [
                 {
@@ -1373,7 +1384,7 @@
             },
             {
               "name": "dosage-route",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-Route",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route",
               "type": "token",
               "extension": [
                 {
@@ -1384,7 +1395,7 @@
             },
             {
               "name": "doserange-low",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeLow",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low",
               "type": "quantity",
               "extension": [
                 {
@@ -1395,7 +1406,7 @@
             },
             {
               "name": "doserange-high",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRangeHigh",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high",
               "type": "quantity",
               "extension": [
                 {
@@ -1406,7 +1417,7 @@
             },
             {
               "name": "doserange",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseRange",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange",
               "type": "composite",
               "extension": [
                 {
@@ -1417,7 +1428,7 @@
             },
             {
               "name": "dose-quantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-DoseQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -1428,7 +1439,7 @@
             },
             {
               "name": "raterange-low",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeLow",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low",
               "type": "quantity",
               "extension": [
                 {
@@ -1439,7 +1450,7 @@
             },
             {
               "name": "raterange-high",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRangeHigh",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high",
               "type": "quantity",
               "extension": [
                 {
@@ -1461,7 +1472,7 @@
             },
             {
               "name": "ratequantity",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateQuantity",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity",
               "type": "quantity",
               "extension": [
                 {
@@ -1472,7 +1483,7 @@
             },
             {
               "name": "rateratio-numerator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioNumerator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator",
               "type": "quantity",
               "extension": [
                 {
@@ -1483,7 +1494,7 @@
             },
             {
               "name": "rateratio-denominator",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatioDenominator",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator",
               "type": "quantity",
               "extension": [
                 {
@@ -1494,7 +1505,7 @@
             },
             {
               "name": "rateratio",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/Dosage-RateRatio",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
               "type": "composite",
               "extension": [
                 {
