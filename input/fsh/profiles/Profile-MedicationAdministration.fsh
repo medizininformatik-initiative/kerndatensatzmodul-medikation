@@ -80,7 +80,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(medication[x] ^short, en-US, Medication)
 * insert Translation(medication[x] ^definition, de-DE, Medikation\, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt.)
 * insert Translation(medication[x] ^definition, en-US, The medication that was administered. Code or a reference to a Medication resource.)
-* subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
+//* subject only https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference
 * subject MS
 * context MS
 * insert Translation(context ^short, de-DE, Kontext)
