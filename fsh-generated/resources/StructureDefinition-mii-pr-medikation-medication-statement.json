@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medication-statement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
-  "version": "2024.0.0",
+  "version": "2025.0.0",
   "name": "MII_PR_Medikation_MedicationStatement",
   "_name": {
     "extension": [
@@ -693,18 +693,6 @@
       {
         "id": "MedicationStatement.subject",
         "path": "MedicationStatement.subject",
-        "type": [
-          {
-            "code": "Reference",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/core/StructureDefinition/MII-Reference"
-            ],
-            "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient",
-              "http://hl7.org/fhir/StructureDefinition/Group"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {

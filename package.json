@@ -12,7 +12,7 @@
     "Medikation",
     "Medication"
   ],
-  "license": "CC0-1.0",
+  "license": "CC-BY-4.0",
   "homepage": "https://www.medizininformatik-initiative.de/",
   "directories" : {
     "lib" : "package",
@@ -28,7 +28,8 @@
   "canonicals": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation-v2025",
   "jurisdiction": "http://unstats.un.org/unsd/methods/m49/m49.htm#276",
   "dependencies": {
-    "de.medizininformatikinitiative.kerndatensatz.meta": "1.0.3",
+    "hl7.fhir.r4.core" : "4.0.1",
+    "de.medizininformatikinitiative.kerndatensatz.meta": "2025.0.0-alpha1",
     "hl7.fhir.uv.ips": "1.0.0",
     "de.ihe-d.terminology": "3.0.0"
   }
