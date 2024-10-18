@@ -27,6 +27,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
     atcClassDe 0..* MS and
     atcClassEn 0..* MS
 * code.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
+* code.coding[Pharmazentralnummer] from $pzn-vs (required)
 * code.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * code.coding[Pharmazentralnummer] ^mustSupport = true
 * code.coding[Pharmazentralnummer].system 1.. MS
