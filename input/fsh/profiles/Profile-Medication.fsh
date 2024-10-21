@@ -90,7 +90,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
     UNII 0..* MS and
     CAS 0..* MS and
     SNOMED 0..* MS
-* ingredient.itemCodeableConcept.coding[ASK] from $vs-ask (example)
+* ingredient.itemCodeableConcept.coding[ASK] from $vs-ask (required)
 * ingredient.itemCodeableConcept.coding[ASK] ^sliceName = "ASK"
 * ingredient.itemCodeableConcept.coding[ASK] ^short = "Arzneistoffkatalog(ASK)-Nummer"
 * ingredient.itemCodeableConcept.coding[ASK] ^patternCoding.system = "http://fhir.de/CodeSystem/ask"

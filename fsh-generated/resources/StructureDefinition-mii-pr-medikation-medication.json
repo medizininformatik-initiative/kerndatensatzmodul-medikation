@@ -381,7 +381,7 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://fhir.de/ValueSet/ask"
         }
       },
