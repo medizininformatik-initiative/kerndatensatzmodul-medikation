@@ -335,7 +335,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Substance",
-              "http://hl7.org/fhir/StructureDefinition/Medication"
+              "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
             ]
           }
         ],
@@ -381,7 +381,7 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "example",
+          "strength": "required",
           "valueSet": "http://fhir.de/ValueSet/ask"
         }
       },

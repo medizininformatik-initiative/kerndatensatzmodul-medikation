@@ -40,7 +40,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
 * medicationReference MS
-* medicationReference only Reference
+* medicationReference only Reference(mii-pr-medikation-medication)
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept MS
 * medicationCodeableConcept.coding MS
