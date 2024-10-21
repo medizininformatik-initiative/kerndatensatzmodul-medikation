@@ -59,7 +59,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * medication[x] ^slicing.discriminator.path = "$this"
 * medication[x] ^slicing.rules = #open
 * medicationReference MS
-* medicationReference only Reference
+* medicationReference only Reference(mii-pr-medikation-medication)
 * medicationCodeableConcept only CodeableConcept
 * medicationCodeableConcept MS
 * medicationCodeableConcept.coding MS
