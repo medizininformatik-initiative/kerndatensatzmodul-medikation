@@ -2,7 +2,7 @@ canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikatio
 fhirVersion: 4.0.1
 FSHOnly: false
 applyExtensionMetadataToRoot: false
-id: mii-ig-medikation-de-2025
+id: mii-ig-medikation
 name: MII_IG_Medikation
 status: active
 version: "2025.0.0"
@@ -14,8 +14,8 @@ publisher:
   url: https://www.medizininformatik-initiative.de/
 dependencies:
   hl7.fhir.uv.ips: 1.0.0
-  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0-alpha1
+  de.medizininformatikinitiative.kerndatensatz.meta: 2025.0.0-alpha4
   de.basisprofil.r4: 1.5.0
-  de.ihe-d.terminology: 3.0.0
+  de.ihe-d.terminology: 3.0.1
 menu:
   Home: index.html
