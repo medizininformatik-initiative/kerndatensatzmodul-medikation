@@ -15,3 +15,15 @@ fsh-index.json
 fsh-index.txt
 MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json
 index.html
+_updatePublisher.sh
+_updatePublisher.bat
+_genonce.sh
+_genonce.bat
+_gencontinuous.sh
+_gencontinuous.bat
+template
+temp
+output
+input-cache
+ig.ini 
+input/pagecontent/index.md 
