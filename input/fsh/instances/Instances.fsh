@@ -278,7 +278,7 @@ Usage: #example
 * dosage.text = "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
 * effectiveDateTime = "2018-05-26"
 * medicationReference = Reference(mii-exa-medikation-medication-thiotepa)
-* partOf = Reference(ExampleProcedure)
+* partOf = Reference(Procedure/ExampleProcedure)
 * status = #completed
 * subject = Reference(Patient/example)
 
