@@ -13,7 +13,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * ^status = #active
 * ^date = "2024-11-13"
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS

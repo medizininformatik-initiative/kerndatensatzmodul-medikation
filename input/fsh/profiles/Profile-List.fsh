@@ -12,7 +12,7 @@ Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- 
 * insert Translation(^description, en-US, List of discrete medications e.g. for documentation of admission or discharge medication.)
 * insert PR_CS_VS_Version
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * ^date = "2024-11-13"
 * obeys medication-list-context-1 and medication-list-context-2
 * meta MS
@@ -104,7 +104,8 @@ Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationslis
 * ^experimental = false
 * insert Publisher
 * insert IHE_Copyright
-* ^date = "2024-05-29"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-11-14"
 * $ihe-xds-fallkontext#E100 "ambulanter Kontakt"
 * $ihe-xds-fallkontext#E200 "stationärer Aufenthalt"
 * $ihe-xds-fallkontext#E210 "stationäre Aufnahme"

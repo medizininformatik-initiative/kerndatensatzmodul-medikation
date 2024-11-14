@@ -1,13 +1,27 @@
 {
   "resourceType": "CapabilityStatement",
-  "id": "mii-cps-medikation-capabilitystatement-2x",
+  "id": "mii-cps-medikation-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata",
   "version": "2025.0.0",
-  "name": "MII_CPS_Medikation_CapabilityStatement_2x",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "name": "MII_CPS_Medikation_CapabilityStatement",
   "title": "MII CPS Medikation CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-05-29",
+  "date": "2024-11-14",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

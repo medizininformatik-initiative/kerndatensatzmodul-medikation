@@ -30,16 +30,17 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 * rest.resource[=].searchParam[=].extension[0].url = $exp
 * rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
 
-Instance: mii-cps-medikation-capabilitystatement-2x
+Instance: mii-cps-medikation-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
 * insert Version
-* name = "MII_CPS_Medikation_CapabilityStatement_2x"
+* insert LicenseCodeableCCBY40Instance
+* name = "MII_CPS_Medikation_CapabilityStatement"
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2024-05-29"
+* date = "2024-11-14"
 * insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"

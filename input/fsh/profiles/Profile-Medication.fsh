@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ^status = #active
 * ^date = "2024-11-14"
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * . ^comment = "MI-I Medikation"
 * id MS
 * meta MS

@@ -9,8 +9,8 @@ Description: "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, ge
 * insert PR_CS_VS_Version
 * ^experimental = false
 * insert Publisher
-* insert KDS_Copyright
-* ^date = "2024-05-29"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-11-14"
 * insert ExtensionContext(Medication.ingredient)
 * value[x] 1..
 * value[x] only Coding

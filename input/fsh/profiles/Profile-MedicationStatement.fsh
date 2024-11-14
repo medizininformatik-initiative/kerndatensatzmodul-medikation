@@ -13,7 +13,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * ^status = #active
 * ^date = "2024-11-14"
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * id MS
 * meta MS
 * meta.source MS

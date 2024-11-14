@@ -12,7 +12,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * insert PR_CS_VS_Version
 * ^date = "2024-11-13"
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * . ^comment = "MI-I Medikamentenverordnung"
 * id MS
 * meta MS
