@@ -255,6 +255,14 @@ Folgende Suchparameter sind für das Modul Medikation relevant, auch in Kombinat
     
     Anwendungshinweise: Weitere Informationen zur Suche nach "rate-quantity" finden sich in der [FHIR-Basisspezifikation - Abschnitt "quantity"](https://hl7.org/fhir/search.html#quantity).
 
+24. Der Suchparameter "part-of" MUSS unterstützt werden:
+
+    Beispiele:
+
+    ```GET [base]/MedicationStatement?part-of=Procedure/example```
+
+    Anwendungshinweise: Weitere Informationen zur Suche nach "reason-reference" finden sich in der [FHIR-Basisspezifikation - Abschnitt "reference"](http://hl7.org/fhir/R4/search.html#reference).
+
 ---
 
 **Beispiele**
