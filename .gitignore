@@ -13,6 +13,7 @@ validator_cli.jar
 ImplementationGuide-mii-ig-medikation*
 fsh-index.json
 fsh-index.txt
+fsh-generated/includes/fsh-link-references.md
 MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json
 index.html
 _updatePublisher.sh
