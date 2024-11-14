@@ -1751,8 +1751,6 @@
         },
         "mustSupport": true,
         "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
           "description": "EDQM Standards Terms"
         }
       },

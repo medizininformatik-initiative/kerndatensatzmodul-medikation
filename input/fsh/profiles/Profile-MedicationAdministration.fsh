@@ -196,7 +196,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(dosage.route ^definition, de-DE, Weg des Medikaments in den Körper)
 * insert Translation(dosage.route ^definition, en-US, Path of substance into the body)
 * dosage.route.coding MS
-* dosage.route.coding from http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration (preferred)
+//* dosage.route.coding from http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration (preferred)
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "$this"
 * dosage.route.coding ^slicing.rules = #open
