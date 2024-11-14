@@ -53,7 +53,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-10-16",
+  "date": "2024-11-14",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -128,7 +128,7 @@
       {
         "id": "MedicationStatement.identifier",
         "path": "MedicationStatement.identifier",
-        "mustSupport": true,
+        "short": "Identifikator",
         "_short": {
           "extension": [
             {
@@ -159,6 +159,7 @@
             }
           ]
         },
+        "definition": "Ein Identifikator für den Medikationseintrag",
         "_definition": {
           "extension": [
             {
@@ -188,12 +189,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.basedOn",
         "path": "MedicationStatement.basedOn",
-        "mustSupport": true,
+        "short": "Basiert auf",
         "_short": {
           "extension": [
             {
@@ -224,6 +226,7 @@
             }
           ]
         },
+        "definition": "Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird.",
         "_definition": {
           "extension": [
             {
@@ -253,12 +256,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.partOf",
         "path": "MedicationStatement.partOf",
-        "mustSupport": true,
+        "short": "Teil von",
         "_short": {
           "extension": [
             {
@@ -289,6 +293,7 @@
             }
           ]
         },
+        "definition": "Ein größeres Ereignis, von dem dieses spezielle Ereignis ein Bestandteil oder Schritt ist.",
         "_definition": {
           "extension": [
             {
@@ -318,12 +323,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.status",
         "path": "MedicationStatement.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -354,6 +360,7 @@
             }
           ]
         },
+        "definition": "aktiv | abgeschlossen | Eingabe fehlerhaft | intendiert | gestoppt | pausiert | unbekannt| nicht eingenommen",
         "_definition": {
           "extension": [
             {
@@ -383,12 +390,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.category",
         "path": "MedicationStatement.category",
-        "mustSupport": true,
+        "short": "Kategorie",
         "_short": {
           "extension": [
             {
@@ -419,6 +427,7 @@
             }
           ]
         },
+        "definition": "Eine Kategorie, die dem Medikationseintrag zugeordnet ist.",
         "_definition": {
           "extension": [
             {
@@ -448,7 +457,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.category.coding",
@@ -467,6 +477,68 @@
         "id": "MedicationStatement.category.coding:usageCategory",
         "path": "MedicationStatement.category.coding",
         "sliceName": "usageCategory",
+        "short": "Kategorie Anwendungsbereich",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie Anwendungsbereich"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Usage Category"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Kategorie, die den Anwendungsbereich des Medikationseintrags beschreibt.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie, die den Anwendungsbereich des Medikationseintrags beschreibt."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Usage Category for the medication statement."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -481,6 +553,68 @@
         "id": "MedicationStatement.category.coding:contextCode",
         "path": "MedicationStatement.category.coding",
         "sliceName": "contextCode",
+        "short": "Kategorie Kontext",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie Kontext"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Context Category"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "outpatient contact | inpatient stay | inpatient admission | inpatient discharge"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "patternCoding": {
@@ -503,7 +637,7 @@
           ],
           "rules": "open"
         },
-        "mustSupport": true,
+        "short": "Medikation",
         "_short": {
           "extension": [
             {
@@ -534,6 +668,7 @@
             }
           ]
         },
+        "definition": "Das Medikament, welches Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt.",
         "_definition": {
           "extension": [
             {
@@ -545,7 +680,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Medikation, die eingenommen oder verarbreicht wurde. Code oder Referenz auf Medication-Objekt."
+                  "valueString": "Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt."
                 }
               ]
             },
@@ -558,17 +693,80 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "The medication that was taken. Code or a reference to a Medication resource."
+                  "valueString": "The medication that the statement is about. Code or a reference to a Medication resource."
                 }
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.medication[x]:medicationReference",
         "path": "MedicationStatement.medication[x]",
         "sliceName": "medicationReference",
+        "short": "Medikation Referenz",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medikation Referenz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medication Reference"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Referenz auf ein Medication-Ressource.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenz auf eine Medication-Ressource."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to a Medication resource."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -585,6 +783,68 @@
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept",
         "path": "MedicationStatement.medication[x]",
         "sliceName": "medicationCodeableConcept",
+        "short": "Medikation Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medikation Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medication code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Code für das Medikament, welches Gegenstand des Eintrags ist.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code für das Medikament, welches Gegenstand des Eintrags ist."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code for the medication that the statement is about."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -612,6 +872,68 @@
         "id": "MedicationStatement.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer",
         "path": "MedicationStatement.medication[x].coding",
         "sliceName": "Pharmazentralnummer",
+        "short": "PZN Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PZN Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PZN code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von der Pharmazentralnummer (PZN) definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -640,7 +962,67 @@
         "path": "MedicationStatement.medication[x].coding",
         "sliceName": "atcClassDe",
         "short": "ATC Klassifikation deutsche Version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC code"
+                }
+              ]
+            }
+          ]
+        },
         "definition": "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -669,7 +1051,67 @@
         "path": "MedicationStatement.medication[x].coding",
         "sliceName": "atcClassEn",
         "short": "Anatomical Therapeutic Chemical Classification System",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC WHO Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC WHO code"
+                }
+              ]
+            }
+          ]
+        },
         "definition": "ATC Classification International WHO Version",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -702,7 +1144,7 @@
       {
         "id": "MedicationStatement.context",
         "path": "MedicationStatement.context",
-        "mustSupport": true,
+        "short": "Kontext",
         "_short": {
           "extension": [
             {
@@ -733,6 +1175,7 @@
             }
           ]
         },
+        "definition": "Fall oder Kontakt in Verbindung mit dem Medikationseintrag",
         "_definition": {
           "extension": [
             {
@@ -762,7 +1205,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.effective[x]",
@@ -777,8 +1221,7 @@
           "ordered": false,
           "rules": "open"
         },
-        "min": 1,
-        "mustSupport": true,
+        "short": "Zeitpunkt oder Zeitraum",
         "_short": {
           "extension": [
             {
@@ -809,6 +1252,7 @@
             }
           ]
         },
+        "definition": "Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird.",
         "_definition": {
           "extension": [
             {
@@ -838,12 +1282,76 @@
               ]
             }
           ]
-        }
+        },
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.effective[x]:effectiveDateTime",
         "path": "MedicationStatement.effective[x]",
         "sliceName": "effectiveDateTime",
+        "short": "Zeitpunkt",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitpunkt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Date time"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The date time when the medication was or will be taken."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -857,6 +1365,68 @@
         "id": "MedicationStatement.effective[x]:effectivePeriod",
         "path": "MedicationStatement.effective[x]",
         "sliceName": "effectivePeriod",
+        "short": "Zeitraum",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitraum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Period"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Der Zeitraum, in dem der Patient das Medikament eingenommen hat oder einnehmen wird.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Der Zeitraum, in dem der Patient das Medikament eingenommen hat oder einnehmen wird."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The interval of time during which the patient is/was/will be taking the medication."
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "type": [
@@ -869,7 +1439,7 @@
       {
         "id": "MedicationStatement.dateAsserted",
         "path": "MedicationStatement.dateAsserted",
-        "mustSupport": true,
+        "short": "Datum Bestätigung",
         "_short": {
           "extension": [
             {
@@ -900,6 +1470,7 @@
             }
           ]
         },
+        "definition": "Das Datum, an dem der Medikationseintrag von der Informationsquelle bestätigt wurde.",
         "_definition": {
           "extension": [
             {
@@ -929,12 +1500,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.informationSource",
         "path": "MedicationStatement.informationSource",
-        "mustSupport": true,
+        "short": "Informationsquelle",
         "_short": {
           "extension": [
             {
@@ -965,6 +1537,7 @@
             }
           ]
         },
+        "definition": "Die Person oder Organisation, die die Information über die Einnahme dieses Medikaments bereitgestellt hat.",
         "_definition": {
           "extension": [
             {
@@ -994,12 +1567,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.reasonCode",
         "path": "MedicationStatement.reasonCode",
-        "mustSupport": true,
+        "short": "Grund Code",
         "_short": {
           "extension": [
             {
@@ -1030,6 +1604,7 @@
             }
           ]
         },
+        "definition": "Grund für den Medikationseintrag als Code.",
         "_definition": {
           "extension": [
             {
@@ -1059,12 +1634,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.reasonReference",
         "path": "MedicationStatement.reasonReference",
-        "mustSupport": true,
+        "short": "Grund Referenz",
         "_short": {
           "extension": [
             {
@@ -1095,6 +1671,7 @@
             }
           ]
         },
+        "definition": "Grund für den Medikationseintrag als Referenz auf Condition- oder Observation-Ressource.",
         "_definition": {
           "extension": [
             {
@@ -1106,7 +1683,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Grund für den Medikationseintrag als Referenz auf Condition- oder Observation-Objekt."
+                  "valueString": "Grund für den Medikationseintrag als Referenz auf Condition- oder Observation-Ressource."
                 }
               ]
             },
@@ -1124,12 +1701,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.note",
         "path": "MedicationStatement.note",
-        "mustSupport": true,
+        "short": "Hinweis",
         "_short": {
           "extension": [
             {
@@ -1160,6 +1738,7 @@
             }
           ]
         },
+        "definition": "Zusätzliche Informationen zum Medikationseintrag als Freitext.",
         "_definition": {
           "extension": [
             {
@@ -1189,21 +1768,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.dosage",
         "path": "MedicationStatement.dosage",
-        "constraint": [
-          {
-            "key": "dsg-1",
-            "severity": "error",
-            "human": "If present, dosage must include free text or structured data",
-            "expression": "text.exists() or doseAndRate.exists()",
-            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
-          }
-        ],
-        "mustSupport": true,
+        "short": "Dosierung",
         "_short": {
           "extension": [
             {
@@ -1234,6 +1805,7 @@
             }
           ]
         },
+        "definition": "Details zur Dosierung des Medikamentes.",
         "_definition": {
           "extension": [
             {
@@ -1245,7 +1817,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Gibt an, wie das Medikament vom Patienten eingenommen wird/wurde oder werden sollte."
+                  "valueString": "Details zur Dosierung des Medikamentes."
                 }
               ]
             },
@@ -1258,12 +1830,22 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Indicates how the medication is/was or should be taken by the patient."
+                  "valueString": "Details of how the medication is/was taken or should be taken."
                 }
               ]
             }
           ]
-        }
+        },
+        "constraint": [
+          {
+            "key": "dsg-1",
+            "severity": "error",
+            "human": "If present, dosage must include free text or structured data",
+            "expression": "text.exists() or doseAndRate.exists()",
+            "source": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+          }
+        ],
+        "mustSupport": true
       },
       {
         "id": "MedicationStatement.dosage.sequence",
@@ -1555,6 +2137,68 @@
       {
         "id": "MedicationStatement.dosage.site",
         "path": "MedicationStatement.dosage.site",
+        "short": "Verabreichungsort",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verabreichungsort"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Site of administration"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Körperstelle, an der das Medikament verabreicht wurde/wird oder werden soll.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Körperstelle, an der das Medikament verabreicht wurde/wird oder werden soll."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Anatomic site where the medication was/is or should be administered."
+                }
+              ]
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
@@ -1575,6 +2219,68 @@
         "id": "MedicationStatement.dosage.site.coding:SNOMED",
         "path": "MedicationStatement.dosage.site.coding",
         "sliceName": "SNOMED",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -1602,6 +2308,68 @@
       {
         "id": "MedicationStatement.dosage.route",
         "path": "MedicationStatement.dosage.route",
+        "short": "Verabreichungsweg",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verabreichungsweg"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Route of administration"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Der Weg, auf dem das Medikament verabreicht wurde/wird oder werden soll.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Der Weg, auf dem das Medikament verabreicht wurde/wird oder werden soll."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "How drug was administered or should be administered."
+                }
+              ]
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
@@ -1622,6 +2390,68 @@
         "id": "MedicationStatement.dosage.route.coding:EDQM",
         "path": "MedicationStatement.dosage.route.coding",
         "sliceName": "EDQM",
+        "short": "EDQM Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen durch EDQM Standard Terms definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen durch EDQM Standard Terms definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by EDQM Standard Terms"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "patternCoding": {
@@ -1650,6 +2480,68 @@
         "id": "MedicationStatement.dosage.route.coding:SNOMED",
         "path": "MedicationStatement.dosage.route.coding",
         "sliceName": "SNOMED",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "1",
         "patternCoding": {
