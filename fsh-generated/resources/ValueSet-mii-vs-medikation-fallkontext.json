@@ -25,7 +25,21 @@
     }
   ],
   "copyright": "This artifact includes content from IHE Deutschland e.V. (https://www.ihe-d.de/)",
-  "date": "2024-05-29",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "date": "2024-11-14",
   "compose": {
     "include": [
       {

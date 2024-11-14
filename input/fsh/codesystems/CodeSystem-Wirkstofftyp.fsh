@@ -11,8 +11,8 @@ Description: "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substan
 * ^experimental = false
 * insert Publisher
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
-* ^date = "2024-05-29"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-11-14"
 * ^caseSensitive = true
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
 * ^content = #complete

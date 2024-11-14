@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medication",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
   "version": "2025.0.0",
   "name": "MII_PR_Medikation_Medication",
@@ -40,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-05-29",
+  "date": "2024-11-14",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -70,7 +84,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -107,6 +120,8 @@
       {
         "id": "Medication.code",
         "path": "Medication.code",
+        "short": "Code",
+        "definition": "Code für Medikation",
         "mustSupport": true
       },
       {
@@ -127,6 +142,68 @@
         "id": "Medication.code.coding:Pharmazentralnummer",
         "path": "Medication.code.coding",
         "sliceName": "Pharmazentralnummer",
+        "short": "PZN Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PZN Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PZN code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von der Pharmazentralnummer (PZN) definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -155,7 +232,67 @@
         "path": "Medication.code.coding",
         "sliceName": "atcClassDe",
         "short": "ATC Klassifikation deutsche Version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC code"
+                }
+              ]
+            }
+          ]
+        },
         "definition": "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -190,7 +327,67 @@
         "path": "Medication.code.coding",
         "sliceName": "atcClassEn",
         "short": "Anatomical Therapeutic Chemical Classification System",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC WHO Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC WHO code"
+                }
+              ]
+            }
+          ]
+        },
         "definition": "ATC Classification International WHO Version",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -224,6 +421,8 @@
       {
         "id": "Medication.form",
         "path": "Medication.form",
+        "short": "Darreichungsform",
+        "definition": "Darreichungsform des Medikaments",
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
@@ -249,6 +448,68 @@
         "id": "Medication.form.coding:EDQM",
         "path": "Medication.form.coding",
         "sliceName": "EDQM",
+        "short": "EDQM Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen durch EDQM Standard Terms definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen durch EDQM Standard Terms definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by EDQM Standard Terms"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -271,6 +532,8 @@
       {
         "id": "Medication.ingredient",
         "path": "Medication.ingredient",
+        "short": "Bestandteil",
+        "definition": "Ein Bestandteil des Medikaments",
         "min": 1,
         "mustSupport": true
       },
@@ -373,7 +636,8 @@
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK",
         "path": "Medication.ingredient.item[x].coding",
         "sliceName": "ASK",
-        "short": "Arzneistoffkatalog(ASK)-Nummer",
+        "short": "ASK Code",
+        "definition": "Arzneistoffkatalog(ASK)-Nummer",
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -401,7 +665,8 @@
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII",
         "path": "Medication.ingredient.item[x].coding",
         "sliceName": "UNII",
-        "short": "Unique Ingredient Identifier",
+        "short": "UNII Code",
+        "definition": "Unique Ingredient Identifier (UNII)",
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -425,7 +690,8 @@
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:CAS",
         "path": "Medication.ingredient.item[x].coding",
         "sliceName": "CAS",
-        "short": "Chemical abstract codes",
+        "short": "CAS Code",
+        "definition": "Chemical abstract codes (CAS)",
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -449,6 +715,68 @@
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED",
         "path": "Medication.ingredient.item[x].coding",
         "sliceName": "SNOMED",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        },
         "min": 0,
         "max": "*",
         "patternCoding": {
@@ -476,6 +804,8 @@
       {
         "id": "Medication.ingredient.strength",
         "path": "Medication.ingredient.strength",
+        "short": "Menge|Stärke",
+        "definition": "Die Menge oder Stärke des Bestandteils",
         "mustSupport": true
       },
       {

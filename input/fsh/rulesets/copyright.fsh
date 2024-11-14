@@ -1,6 +1,3 @@
-RuleSet: KDS_Copyright
-* ^copyright = "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0)."
-
 RuleSet: SNOMED_Copyright
 * ^copyright = "This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement"
 

@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "mii-pr-medikation-medikationsliste",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste",
   "version": "2025.0.0",
   "name": "MII_PR_Medikation_Medikationsliste",
@@ -53,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-10-15",
+  "date": "2024-11-13",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -96,7 +110,6 @@
       }
     ]
   },
-  "copyright": "This specification is licensed under Creative Commons \"No Rights Reserved\" (CC0).",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -148,7 +161,7 @@
       {
         "id": "List.status",
         "path": "List.status",
-        "mustSupport": true,
+        "short": "Status",
         "_short": {
           "extension": [
             {
@@ -179,6 +192,7 @@
             }
           ]
         },
+        "definition": "aktuell | inaktiv | Eingabe fehlerhaft",
         "_definition": {
           "extension": [
             {
@@ -208,12 +222,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.mode",
         "path": "List.mode",
-        "mustSupport": true,
+        "short": "Modus",
         "_short": {
           "extension": [
             {
@@ -244,6 +259,7 @@
             }
           ]
         },
+        "definition": "Arbeitsmodus | Momentaufnahme | Änderungen",
         "_definition": {
           "extension": [
             {
@@ -273,12 +289,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.code",
         "path": "List.code",
-        "mustSupport": true,
+        "short": "Code",
         "_short": {
           "extension": [
             {
@@ -309,6 +326,174 @@
             }
           ]
         },
+        "definition": "Enthält Codes für Medikationsliste und Kontext der Medikationsliste.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Enthält Codes für Medikationsliste und Kontext der Medikationsliste."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Contains codes for medication list and context of the medication list."
+                }
+              ]
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding",
+        "path": "List.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2,
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:medCode",
+        "path": "List.code.coding",
+        "sliceName": "medCode",
+        "short": "Medikationsliste",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medikationsliste"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medication list"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Code für Medikationsliste",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code für Medikationsliste"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code for medication list"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "medications",
+          "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:medCode.system",
+        "path": "List.code.coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:medCode.code",
+        "path": "List.code.coding.code",
+        "mustSupport": true
+      },
+      {
+        "id": "List.code.coding:contextCode",
+        "path": "List.code.coding",
+        "sliceName": "contextCode",
+        "short": "Kontext der Medikationsliste",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kontext der Medikationsliste"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Context of the medication list"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung",
         "_definition": {
           "extension": [
             {
@@ -338,49 +523,7 @@
               ]
             }
           ]
-        }
-      },
-      {
-        "id": "List.code.coding",
-        "path": "List.code.coding",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
         },
-        "min": 2,
-        "mustSupport": true
-      },
-      {
-        "id": "List.code.coding:medCode",
-        "path": "List.code.coding",
-        "sliceName": "medCode",
-        "min": 1,
-        "max": "1",
-        "patternCoding": {
-          "code": "medications",
-          "system": "http://terminology.hl7.org/CodeSystem/list-example-use-codes"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "List.code.coding:medCode.system",
-        "path": "List.code.coding.system",
-        "mustSupport": true
-      },
-      {
-        "id": "List.code.coding:medCode.code",
-        "path": "List.code.coding.code",
-        "mustSupport": true
-      },
-      {
-        "id": "List.code.coding:contextCode",
-        "path": "List.code.coding",
-        "sliceName": "contextCode",
         "min": 1,
         "max": "1",
         "patternCoding": {
@@ -419,7 +562,7 @@
       {
         "id": "List.encounter",
         "path": "List.encounter",
-        "mustSupport": true,
+        "short": "Fall oder Kontakt",
         "_short": {
           "extension": [
             {
@@ -450,6 +593,7 @@
             }
           ]
         },
+        "definition": "Fall oder Kontakt, bei dem die Medikationsliste erstellt wurde.",
         "_definition": {
           "extension": [
             {
@@ -479,12 +623,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.date",
         "path": "List.date",
-        "mustSupport": true,
+        "short": "Datum",
         "_short": {
           "extension": [
             {
@@ -515,6 +660,7 @@
             }
           ]
         },
+        "definition": "Das Datum, an dem die Medikationsliste erstellt wurde.",
         "_definition": {
           "extension": [
             {
@@ -544,12 +690,13 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.entry",
         "path": "List.entry",
-        "mustSupport": true,
+        "short": "Eintrag",
         "_short": {
           "extension": [
             {
@@ -580,6 +727,7 @@
             }
           ]
         },
+        "definition": "Ein Eintrag in der Medikationsliste vom Typ MedicationStatement.",
         "_definition": {
           "extension": [
             {
@@ -609,7 +757,8 @@
               ]
             }
           ]
-        }
+        },
+        "mustSupport": true
       },
       {
         "id": "List.entry.flag",

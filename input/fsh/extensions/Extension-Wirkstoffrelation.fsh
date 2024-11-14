@@ -7,8 +7,8 @@ Description: "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstof
 * insert Translation(^title, en-US, MII EX Medikation Ingredient Relation)
 * insert Translation(^description, en-US, The extension enables the assignment of an exact substance e.g. salt\, ester to a general substance.)
 * insert PR_CS_VS_Version
-* insert KDS_Copyright
-* ^date = "2024-05-29"
+* insert LicenseCodeableCCBY40
+* ^date = "2024-11-14"
 * ^experimental = false
 * insert Publisher
 * insert ExtensionContext(Medication.ingredient)

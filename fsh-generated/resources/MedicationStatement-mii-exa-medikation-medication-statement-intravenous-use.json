@@ -44,7 +44,7 @@
   },
   "partOf": [
     {
-      "reference": "ExampleProcedure"
+      "reference": "Procedure/ExampleProcedure"
     }
   ],
   "status": "completed",

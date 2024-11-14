@@ -9,15 +9,17 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2024-05-29"
+* ^date = "2024-11-14"
 * insert Publisher
-* insert KDS_Copyright
+* insert LicenseCodeableCCBY40
 * . ^comment = "MI-I Medikation"
 * id MS
 * meta MS
 * meta.source MS
 * meta.profile MS
 * code MS
+* code ^short = "Code"
+* code ^definition = "Code für Medikation"
 * code.coding MS
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -26,12 +28,14 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
     Pharmazentralnummer 0..* MS and
     atcClassDe 0..* MS and
     atcClassEn 0..* MS
+* insert AddPznCodingTranslation(code.coding[Pharmazentralnummer])
 * code.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
 * code.coding[Pharmazentralnummer] from $pzn-vs (required)
 * code.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * code.coding[Pharmazentralnummer] ^mustSupport = true
 * code.coding[Pharmazentralnummer].system 1.. MS
 * code.coding[Pharmazentralnummer].code 1.. MS
+* insert AddAtcDeCodingTranslation(code.coding[atcClassDe])
 * code.coding[atcClassDe] from $vs-atc (required)
 * code.coding[atcClassDe] ^sliceName = "atcClassDe"
 * code.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
@@ -41,6 +45,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassDe].system 1.. MS
 * code.coding[atcClassDe].version 1.. MS
 * code.coding[atcClassDe].code 1.. MS
+* insert AddAtcWhoCodingTranslation(code.coding[atcClassEn])
 * code.coding[atcClassEn] ^sliceName = "atcClassEn"
 * code.coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * code.coding[atcClassEn] ^definition = "ATC Classification International WHO Version"
@@ -51,6 +56,8 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassEn].code 1.. MS
 * code.text MS
 * form MS
+* form ^short = "Darreichungsform"
+* form ^definition = "Darreichungsform des Medikaments"
 * form from $medicine-doseform (preferred)
 * form.coding MS
 * form.coding ^slicing.discriminator.type = #pattern
@@ -59,12 +66,15 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * form.coding contains
     EDQM 0..*
 * form.coding ^definition = "EDQM pharmaceutical dose forms sind bevorzugt zu verwenden. SNOMED CT und IFA Codes sind Alternativen."
+* insert AddEdqmCodingTranslation(form.coding[EDQM])
 * form.coding[EDQM] ^sliceName = "EDQM"
 * form.coding[EDQM] ^patternCoding.system = "http://standardterms.edqm.eu"
 * form.coding[EDQM] ^mustSupport = true
 * form.coding[EDQM].system 1.. MS
 * form.coding[EDQM].code 1.. MS
 * ingredient 1.. MS
+* ingredient ^short = "Bestandteil"
+* ingredient ^definition = "Ein Bestandteil des Medikaments"
 * ingredient.extension MS
 * ingredient.extension ^slicing.discriminator.type = #value
 * ingredient.extension ^slicing.discriminator.path = "url"
@@ -90,25 +100,29 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
     UNII 0..* MS and
     CAS 0..* MS and
     SNOMED 0..* MS
+* ingredient.itemCodeableConcept.coding[ASK] ^short = "ASK Code"
+* ingredient.itemCodeableConcept.coding[ASK] ^definition = "Arzneistoffkatalog(ASK)-Nummer"
 * ingredient.itemCodeableConcept.coding[ASK] from $vs-ask (required)
 * ingredient.itemCodeableConcept.coding[ASK] ^sliceName = "ASK"
-* ingredient.itemCodeableConcept.coding[ASK] ^short = "Arzneistoffkatalog(ASK)-Nummer"
 * ingredient.itemCodeableConcept.coding[ASK] ^patternCoding.system = "http://fhir.de/CodeSystem/ask"
 * ingredient.itemCodeableConcept.coding[ASK] ^mustSupport = true
 * ingredient.itemCodeableConcept.coding[ASK].system 1.. MS
 * ingredient.itemCodeableConcept.coding[ASK].code 1.. MS
 * ingredient.itemCodeableConcept.coding[UNII] ^sliceName = "UNII"
-* ingredient.itemCodeableConcept.coding[UNII] ^short = "Unique Ingredient Identifier"
+* ingredient.itemCodeableConcept.coding[UNII] ^short = "UNII Code"
+* ingredient.itemCodeableConcept.coding[UNII] ^definition = "Unique Ingredient Identifier (UNII)"
 * ingredient.itemCodeableConcept.coding[UNII] ^patternCoding.system = "http://fdasis.nlm.nih.gov"
 * ingredient.itemCodeableConcept.coding[UNII] ^mustSupport = true
 * ingredient.itemCodeableConcept.coding[UNII].system 1.. MS
 * ingredient.itemCodeableConcept.coding[UNII].code 1.. MS
 * ingredient.itemCodeableConcept.coding[CAS] ^sliceName = "CAS"
-* ingredient.itemCodeableConcept.coding[CAS] ^short = "Chemical abstract codes"
+* ingredient.itemCodeableConcept.coding[CAS] ^short = "CAS Code"
+* ingredient.itemCodeableConcept.coding[CAS] ^definition = "Chemical abstract codes (CAS)"
 * ingredient.itemCodeableConcept.coding[CAS] ^patternCoding.system = "urn:oid:2.16.840.1.113883.6.61"
 * ingredient.itemCodeableConcept.coding[CAS] ^mustSupport = true
 * ingredient.itemCodeableConcept.coding[CAS].system 1.. MS
 * ingredient.itemCodeableConcept.coding[CAS].code 1.. MS
+* insert AddSnomedCodingTranslation(ingredient.itemCodeableConcept.coding[SNOMED])
 * ingredient.itemCodeableConcept.coding[SNOMED] ^sliceName = "SNOMED"
 * ingredient.itemCodeableConcept.coding[SNOMED] ^patternCoding.system = "http://snomed.info/sct"
 * ingredient.itemCodeableConcept.coding[SNOMED] ^mustSupport = true
@@ -116,5 +130,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.itemCodeableConcept.coding[SNOMED].code 1.. MS
 * ingredient.itemCodeableConcept.text MS
 * ingredient.strength MS
+* ingredient.strength ^short = "Menge|Stärke"
+* ingredient.strength ^definition = "Die Menge oder Stärke des Bestandteils"
 * ingredient.strength.numerator MS
 * ingredient.strength.denominator MS
