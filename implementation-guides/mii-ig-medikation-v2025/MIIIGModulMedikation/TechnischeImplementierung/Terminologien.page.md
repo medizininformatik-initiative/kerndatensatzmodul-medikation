@@ -6,7 +6,7 @@ topic: MedikationTerminologien
 
 | Hinweis |  |
 |---------|---------------------|
-| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | CodeSystem-Ressourcen für externe Terminologien (ICD-10-WHO), werden nicht mehr in diesem Modul veröffentlicht, sondern sollen bei der Service Unit Terminologische Dienste (SU-TermServ) bezogen werden: https://www.ontoserver.mii-termserv.de/ |
+| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}} | CodeSystem-Ressourcen für externe Terminologien (ATC, ASK, EDQM etc.), werden nicht mehr in diesem Modul veröffentlicht, sondern sollen bei der Service Unit Terminologische Dienste (SU-TermServ) bezogen werden: https://www.ontoserver.mii-termserv.de/ |
 
 Soweit möglich sollen Terminologien und eindeutige Codes verwendet werden, die internationalen Standards entsprechen. Für die Arzneimittel und Dosierungsinformationen sind dies die ISO-Standards zur [Identification of Medicinal Products (IDMP)](https://www.ema.europa.eu/en/human-regulatory/overview/data-medicines-iso-idmp-standards-overview), die vor allem im regulatorischen Kontext implementiert werden. Als IDMP-konforme Terminologien und eindeutige Identifizierungs-Codes werden vorgeschlagen:
 
