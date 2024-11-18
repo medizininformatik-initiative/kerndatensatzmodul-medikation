@@ -2,11 +2,11 @@
 
 **Version: 2025.0.0**
 
-- Dependency auf de.basisprofil.r4 aktualisiert auf Version 1.5.0
+- Dependency auf de.basisprofil.r4 aktualisiert auf Version 1.5.0. Die Änderung hat keine Auswirkung auf Implementierungen dieses Moduls.
 - Profile enthalten zusätzliche Beschreibungen und Übersetzungen für Implementierer und das Forschungsdatenportal für Gesundheit (FDPG).
 - Suchparameter aus diesem Modul entfernt. SearchParameter-Ressourcen werden nun zentral im Modul Meta verwaltet.
-- CodeSystem Ressourcen für ATC und ASK wurden entfernt. Diese können nun über die Service Unit Terminologische Dienste (SU-TermServ) bezogen werden.
-- Referenzen auf Medication-Ressource innerhalb des Moduls jetzt eingeschränkt auf MII-Medication-Profil.
+- CodeSystem Ressourcen für ATC und ASK wurden entfernt. Diese können nun über die Service Unit Terminologische Dienste (SU-TermServ) bezogen werden: https://www.ontoserver.mii-termserv.de/
+- Referenzen auf Medication-Ressource innerhalb des Moduls jetzt eingeschränkt auf Profil MII_PR_Medikation_Medication.
 
 **Version: 2024.0.0**
 
