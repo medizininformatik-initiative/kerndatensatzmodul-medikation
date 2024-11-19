@@ -1006,8 +1006,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "MedicationRequest.reasonCode",
@@ -2722,8 +2721,7 @@
               ]
             }
           ]
-        },
-        "mustSupport": true
+        }
       }
     ]
   }
