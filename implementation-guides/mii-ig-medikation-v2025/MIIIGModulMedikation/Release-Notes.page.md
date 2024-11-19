@@ -7,6 +7,7 @@
 - Suchparameter aus diesem Modul entfernt. SearchParameter-Ressourcen werden nun zentral im Modul Meta verwaltet.
 - CodeSystem Ressourcen für ATC und ASK wurden entfernt. Diese können nun über die Service Unit Terminologische Dienste (SU-TermServ) bezogen werden: https://www.ontoserver.mii-termserv.de/
 - Referenzen auf Medication-Ressource innerhalb des Moduls jetzt eingeschränkt auf Profil MII_PR_Medikation_Medication.
+- Profil MII_PR_Medikation_MedicationRequest (MedicationRequest) entfernen der MustSupport-Labels auf `MedicationRequest.recorder` und `MedicationRequest.detectedIssue`. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/96
 
 **Version: 2024.0.0**
 

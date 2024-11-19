@@ -111,7 +111,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * requester ^definition = "Die Person, Organisation oder das Gerät, die die Verordnung initiiert hat und für deren Aktivierung verantwortlich ist."
 * insert Translation(requester ^definition, de-DE, Die Person\, Organisation oder das Gerät\, die die Verordnung initiiert hat und für deren Aktivierung verantwortlich ist.)
 * insert Translation(requester ^definition, en-US, The individual\, organization\, or device that initiated the request and has responsibility for its activation.)
-* recorder MS
+* recorder //MS
 * recorder ^short = "Auftragserfasser"
 * insert Translation(recorder ^short, de-DE, Auftragserfasser)
 * insert Translation(recorder ^short, en-US, Recorder)
@@ -343,7 +343,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * priorPrescription ^definition = "Eine Verschreibung, die ersetzt wird"
 * insert Translation(priorPrescription ^definition, de-DE, Eine Verschreibung\, die ersetzt wird)
 * insert Translation(priorPrescription ^definition, en-US, An order/prescription that is being replaced)
-* detectedIssue MS
+* detectedIssue //MS
 * detectedIssue ^short = "Erkannte Probleme"
 * insert Translation(detectedIssue ^short, de-DE, Erkannte Probleme)
 * insert Translation(detectedIssue ^short, en-US, Detected issue)
