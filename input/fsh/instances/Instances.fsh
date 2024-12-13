@@ -1,6 +1,7 @@
 Instance: mii-exa-medikation-medication-rezeptur
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.text = "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung"
 * form = $standardterms#11210000 "Solution for infusion"
@@ -15,6 +16,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-glucoseloesung
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
 * code.coding[+] = $cs-atc|2023#V06DC01 "Glucose"
@@ -37,6 +39,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-calcium
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#00169644 "CALCIUM SANDOZ forte Brausetabletten"
 * code.coding[+] = $cs-atc|2023#A12AA20 "Calcium (verschiedene Salze in Kombination)"
@@ -76,6 +79,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-caelyx
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#887150 "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
 * code.coding[+] = $cs-atc|2023#L01DB01 "Doxorubicin"
@@ -90,6 +94,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-ass-100
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * code.coding[+] = $cs-atc|2023#B01AC06 "acetylsalicylic acid"
@@ -101,6 +106,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-propofol
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code = $cs-pzn#194346 "PROPOFOL 2% 20MG/1ML MCT"
 * form = $standardterms#50021000 "Emulsion for injection/infusion"
@@ -113,6 +119,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-thiotepa
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * ingredient.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 * ingredient.extension.valueCoding = $cs-wirkstofftyp#IN "ingredient"
@@ -123,6 +130,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-dolomo
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 //* meta.source = "https://www.mmi.de/mmi-pharmindex|1.0"
 * code.coding[Pharmazentralnummer] = $cs-pzn|02.08.2024#02758994 "dolomo® TN"
@@ -142,6 +150,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-dolomo-tag
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
@@ -168,6 +177,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-dolomo-nacht
 InstanceOf: mii-pr-medikation-medication
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
@@ -194,6 +204,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-administration
 InstanceOf: mii-pr-medikation-medication-administration
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
 * dosage.dose = 85 'mg' "mg"
 * dosage.rateRatio.denominator = 1 'h' "hour"
@@ -208,6 +219,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.doseAndRate.doseQuantity = 50 'mg/kg' "mg/kilogram"
 * dosage.route = $standardterms#20045000 "Intravenous use"
@@ -223,6 +235,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-periodisches-intervall
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.route = $standardterms#20053000 "Oral use"
 * dosage.text = "Marcumar jeden Montag-, Mittwoch- und Freitagabend"
@@ -241,6 +254,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-offset
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.route = $standardterms#20053000 "Oral use"
 * dosage.text = "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"
@@ -257,6 +271,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-caelyx
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #active
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
@@ -271,6 +286,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-intravenous-use
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * dosage.doseAndRate.doseRange.high = 2600 'mg' "milligram"
 * dosage.doseAndRate.doseRange.low = 2400 'mg' "milligram"
@@ -285,6 +301,7 @@ Usage: #example
 Instance: mii-exa-medikation-procedure-thiotepa
 InstanceOf: Procedure
 Usage: #example
+* insert TestDataLabel
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
 * category = $sct#182832007 "Procedure related to management of drug administration (procedure)"
 * code.coding = $cs-ops#6-007.nm "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
@@ -296,6 +313,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-request-caelyx
 InstanceOf: mii-pr-medikation-medication-request
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
 * status = #active
 * intent = #order
@@ -311,6 +329,7 @@ Usage: #example
 Instance: mii-exa-medikation-medikationsliste-aufnahmemedikation
 InstanceOf: mii-pr-medikation-medikationsliste
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
 * status = #current
 * mode = #snapshot
@@ -323,6 +342,7 @@ Usage: #example
 Instance: mii-exa-medikation-medikationsliste-aktuelle-therapie
 InstanceOf: mii-pr-medikation-medikationsliste
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
 * status = #current
 * mode = #working
@@ -335,6 +355,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-concor
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#C07AB07
@@ -369,6 +390,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-hct
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#C03AA03
@@ -403,6 +425,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-ibuprofen
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#M01AE01
@@ -420,6 +443,7 @@ Usage: #example
 Instance: mii-exa-medikation-medication-statement-zopiclon
 InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#N05CF01
@@ -454,6 +478,7 @@ Usage: #example
 Instance: mii-exa-medikation-list-admission
 InstanceOf: mii-pr-medikation-medikationsliste
 Usage: #example
+* insert TestDataLabel
 * meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
 * status = #current
 * mode = #snapshot
