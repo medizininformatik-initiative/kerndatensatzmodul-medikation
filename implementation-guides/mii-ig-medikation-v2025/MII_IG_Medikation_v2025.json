@@ -1,5 +1,19 @@
 {
   "resourceType": "ImplementationGuide",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://spdx.org/licenses/",
+            "code": "CC-BY-4.0",
+            "display": "Creative Commons Attribution 4.0 International License"
+          }
+        ]
+      }
+    }
+  ],
   "id": "mii-ig-medikation",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
   "version": "2025.0.0",
