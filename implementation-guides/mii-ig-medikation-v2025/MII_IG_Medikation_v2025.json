@@ -1,5 +1,19 @@
 {
   "resourceType": "ImplementationGuide",
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://spdx.org/licenses/",
+            "code": "CC-BY-4.0",
+            "display": "Creative Commons Attribution 4.0 International License"
+          }
+        ]
+      }
+    }
+  ],
   "id": "mii-ig-medikation",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
   "version": "2025.0.0",
@@ -26,19 +40,19 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.uv.ips",
-      "version": "1.0.0",
-      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "version": "1.1.x",
+      "uri": "http://fhir.org/packages/hl7.fhir.uv.ips/ImplementationGuide/hl7.fhir.uv.ips",
       "id": "hl7_fhir_uv_ips"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.0-alpha4",
+      "version": "2025.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.0",
+      "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
