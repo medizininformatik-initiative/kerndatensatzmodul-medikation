@@ -26,19 +26,19 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.uv.ips",
-      "version": "1.0.0",
-      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "version": "1.1.x",
+      "uri": "http://fhir.org/packages/hl7.fhir.uv.ips/ImplementationGuide/hl7.fhir.uv.ips",
       "id": "hl7_fhir_uv_ips"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.0-alpha4",
+      "version": "2025.0.x",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.0",
+      "version": "1.5.x",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
