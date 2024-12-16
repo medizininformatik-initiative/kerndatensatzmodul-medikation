@@ -1,4 +1,4 @@
-## Medizininformatik-Initiative - Kerndatensatz - Modul Medikation Release 2024
+## Medizininformatik-Initiative - Kerndatensatz - Modul Medikation
 
 ### Übersicht
 
