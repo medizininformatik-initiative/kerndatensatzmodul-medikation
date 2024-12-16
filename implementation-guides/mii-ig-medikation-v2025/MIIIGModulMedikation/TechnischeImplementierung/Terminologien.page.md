@@ -78,7 +78,7 @@ Canonical: https://www.medizininformatik-initiative.de/fhir/core/modul-medikatio
 | http<nolink>://fhir.de/CodeSystem/bfarm/atc | ATC [Anatomisch-therapeutisch-chemische Klassifikation](https://www.dimdi.de/dynamic/de/arzneimittel/atc-klassifikation/)| deutsche Fassung | | 
 | http<nolink>://fhir.de/CodeSystem/ask | Arzneistoffkatalog -Nummer | | 1.2.276.0.76.5.308 |
 | http<nolink>://fdasis.nlm.nih.gov | UNII [Unique Ingredient Identifier](http://www.fda.gov/Drugs/InformationOnDrugs/ucm142438.htm) | [Using UNII with FHIR](http://hl7.org/fhir/unii.html) | 2.16.840.1.113883.4.9 |    
-| urn:oid:2.16.840.1.113883.6.61 | [CAS registry system](https://www.cas.org/support/documentation/chemical-substances) | unique numerical identifier of a substance in the CAS Registry system | 2.16.840.1.113883.6.61 |
+| http<nolink>://terminology.hl7.org/CodeSystem/CAS | [CAS registry system](https://www.cas.org/support/documentation/chemical-substances) | unique numerical identifier of a substance in the CAS Registry system | 2.16.840.1.113883.6.61 |
 | http<nolink>://standardterms.edqm.eu | EDQM [Standard Terms](https://standardterms.edqm.eu/) |  | 0.4.0.127.0.16.1.1.2.1 |
 | http<nolink>://snomed.info/sct | SNOMED CT [snomed.org](http://snomed.org/) | [Using SNOMED CT with FHIR](http://hl7.org/fhir/snomedct.html) | 2.16.840.1.113883.6.96 | 
 | http<nolink>://unitsofmeasure.org | UCUM [unitsofmeasure.org](http://unitsofmeasure.org/) | [Using UCUM with FHIR](http://hl7.org/fhir/ucum.html) | 2.16.840.1.113883.6.8 |  

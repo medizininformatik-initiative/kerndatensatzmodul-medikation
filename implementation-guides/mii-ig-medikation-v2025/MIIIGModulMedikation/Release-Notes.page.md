@@ -8,6 +8,7 @@
 - CodeSystem Ressourcen für ATC und ASK wurden entfernt. Diese können nun über die Service Unit Terminologische Dienste (SU-TermServ) bezogen werden: https://www.ontoserver.mii-termserv.de/
 - Referenzen auf Medication-Ressource innerhalb des Moduls jetzt eingeschränkt auf Profil MII_PR_Medikation_Medication.
 - Profil MII_PR_Medikation_MedicationRequest (MedicationRequest) entfernen der MustSupport-Labels auf `MedicationRequest.recorder` und `MedicationRequest.detectedIssue`. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/96
+- Das CodeSystem [Chemical Abstracts Service (CAS)](https://terminology.hl7.org/CodeSystem-CAS.html) verwendet ab dieser Version die Canonical URL `http://terminology.hl7.org/CodeSystem/CAS`, statt `urn:oid:2.16.840.1.113883.6.61`. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/70
 
 **Version: 2024.0.0**
 
