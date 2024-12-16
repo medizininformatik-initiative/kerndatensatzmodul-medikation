@@ -6,7 +6,7 @@ subject: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/
 
 ## MedicationStatement
 
-Das MedicationStatement dokumentiert die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt.
+Das MedicationStatement dokumentiert die Verordnung eines Arzneimittels oder den Konsum durch einen Patienten. MedicationStatement KANN anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei KANN es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt.
 
 Der Hauptunterschied zwischen der konkreten Verabreichung einer Medikation (MedicationAdministration) und dem MedicationStatement besteht darin, dass die Medikamentenverabreichung über vollständige Verabreichungsinformationen verfügt und auf den tatsächlichen Informationen der Person basiert, die das Medikament verabreicht hat. MedicationStatement hat im Vergleich eher den Charakter z.B. eines Medikationsplans. Es ist nicht klar, ob der Patient diese Arzneimittel tatsächlich eingenommen hat oder diese verabreicht wurden.
 

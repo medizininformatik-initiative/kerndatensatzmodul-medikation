@@ -18,3 +18,4 @@ Alias: $cs-ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $list-example-use-codes = http://terminology.hl7.org/CodeSystem/list-example-use-codes
 Alias: $ihe-xds-fallkontext = http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung
 Alias: $pzn-vs = http://fhir.de/ValueSet/ifa/pzn
+Alias: $cas = http://terminology.hl7.org/CodeSystem/CAS

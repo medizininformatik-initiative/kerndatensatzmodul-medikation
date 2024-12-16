@@ -118,7 +118,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.itemCodeableConcept.coding[CAS] ^sliceName = "CAS"
 * ingredient.itemCodeableConcept.coding[CAS] ^short = "CAS Code"
 * ingredient.itemCodeableConcept.coding[CAS] ^definition = "Chemical abstract codes (CAS)"
-* ingredient.itemCodeableConcept.coding[CAS] ^patternCoding.system = "urn:oid:2.16.840.1.113883.6.61"
+* ingredient.itemCodeableConcept.coding[CAS] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/CAS"
 * ingredient.itemCodeableConcept.coding[CAS] ^mustSupport = true
 * ingredient.itemCodeableConcept.coding[CAS].system 1.. MS
 * ingredient.itemCodeableConcept.coding[CAS].code 1.. MS
