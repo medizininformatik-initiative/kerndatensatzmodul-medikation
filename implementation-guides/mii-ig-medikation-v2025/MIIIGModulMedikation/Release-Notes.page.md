@@ -2,6 +2,8 @@
 
 **Version: 2025.0.0**
 
+Datum 16.12.2024
+
 - Dependency auf de.basisprofil.r4 aktualisiert auf Version 1.5.0. Die Änderung hat keine Auswirkung auf Implementierungen dieses Moduls.
 - Profile enthalten zusätzliche Beschreibungen und Übersetzungen für Implementierer und das Forschungsdatenportal für Gesundheit (FDPG).
 - Suchparameter aus diesem Modul entfernt. SearchParameter-Ressourcen werden nun zentral im Modul Meta verwaltet.
@@ -11,6 +13,8 @@
 - Das CodeSystem [Chemical Abstracts Service (CAS)](https://terminology.hl7.org/CodeSystem-CAS.html) verwendet ab dieser Version die Canonical URL `http://terminology.hl7.org/CodeSystem/CAS`, statt `urn:oid:2.16.840.1.113883.6.61`. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/70
 
 **Version: 2024.0.0**
+
+Datum 24.05.2023
 
 - Die veröffentlichten FHIR-Packages verwenden nun [Calender Versioning (CalVer)](https://calver.org/) nach dem Schema YYYY.MINOR.PATCH. Damit wird ein Releasezyklus im Jahresrhythmus etabliert. Die Jahresversion (YYYY) zeigt das Jahr an, in dem das Kerndatensatzmodul angewendet wird. MINOR-Versionen werden bei Einführung neuer Funktionen, Erweiterungen oder substantieller Änderungen veröffentlicht. PATCH-Versionen umfassen Bugfixes oder textuelle Korrekturen.
 - Die Benennung der Conformance-Ressourcen und Beispielinstanzen folgt nun einheitlichen [MII-Namenskonventionen](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Namenskonventionen-f%C3%BCr-FHIR%E2%80%90Ressourcen-in-der-MII).
