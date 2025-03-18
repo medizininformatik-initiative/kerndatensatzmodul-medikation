@@ -200,7 +200,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "$this"
 * dosage.route.coding ^slicing.rules = #open
-* dosage.route.coding ^binding.description = "EDQM Standards Terms"
+//* dosage.route.coding ^binding.description = "EDQM Standards Terms"
 * dosage.route.coding contains
     EDQM 0..1 MS and
     SNOMED 0..1 MS
