@@ -36,7 +36,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[Pharmazentralnummer].system 1.. MS
 * code.coding[Pharmazentralnummer].code 1.. MS
 * insert AddAtcDeCodingTranslation(code.coding[atcClassDe])
-* code.coding[atcClassDe] from $vs-atc (required)
+* code.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * code.coding[atcClassDe] ^sliceName = "atcClassDe"
 * code.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * code.coding[atcClassDe] ^definition = "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten"

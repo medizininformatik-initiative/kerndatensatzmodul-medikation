@@ -71,7 +71,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
 * medicationCodeableConcept.coding[Pharmazentralnummer].code 1.. MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
-* medicationCodeableConcept.coding[atcClassDe] from $vs-atc (required)
+* medicationCodeableConcept.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * medicationCodeableConcept.coding[atcClassDe] ^sliceName = "atcClassDe"
 * medicationCodeableConcept.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * medicationCodeableConcept.coding[atcClassDe] ^definition = "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten"
