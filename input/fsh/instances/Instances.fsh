@@ -124,7 +124,7 @@ Usage: #example
 * ingredient.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 * ingredient.extension.valueCoding = $cs-wirkstofftyp#IN "ingredient"
 * ingredient.itemCodeableConcept.coding[0] = $fdasis#905Z5W3GKH "thiotepa"
-* ingredient.itemCodeableConcept.coding[+] = $cs-ask#7962 "thiotepa"
+* ingredient.itemCodeableConcept.coding[+] = $cs-ask#07962 "thiotepa"
 * ingredient.itemCodeableConcept.coding[+] = $cas#52-24-4 "thiotepa"
 
 Instance: mii-exa-medikation-medication-dolomo
