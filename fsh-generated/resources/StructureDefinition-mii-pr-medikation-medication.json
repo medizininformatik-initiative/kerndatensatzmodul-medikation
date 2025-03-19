@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-11-14",
+  "date": "2025-03-19",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -646,7 +646,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/ask"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask"
         }
       },
       {

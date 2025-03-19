@@ -9,7 +9,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * insert Translation(^description, en-US, The profile describes a prepackaged drug or formulation.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2024-11-14"
+* ^date = "2025-03-19"
 * insert Publisher
 * insert LicenseCodeableCCBY40
 * . ^comment = "MI-I Medikation"
@@ -102,7 +102,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
     SNOMED 0..* MS
 * ingredient.itemCodeableConcept.coding[ASK] ^short = "ASK Code"
 * ingredient.itemCodeableConcept.coding[ASK] ^definition = "Arzneistoffkatalog(ASK)-Nummer"
-* ingredient.itemCodeableConcept.coding[ASK] from $vs-ask (required)
+* ingredient.itemCodeableConcept.coding[ASK] from mii-vs-medikation-ask (required)
 * ingredient.itemCodeableConcept.coding[ASK] ^sliceName = "ASK"
 * ingredient.itemCodeableConcept.coding[ASK] ^patternCoding.system = "http://fhir.de/CodeSystem/ask"
 * ingredient.itemCodeableConcept.coding[ASK] ^mustSupport = true
