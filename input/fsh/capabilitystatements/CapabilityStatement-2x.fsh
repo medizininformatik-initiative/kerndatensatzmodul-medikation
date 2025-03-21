@@ -40,7 +40,7 @@ Usage: #definition
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2024-11-14"
+* date = "2025-03-21"
 * insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
