@@ -1538,17 +1538,6 @@
                   "valueCode": "SHALL"
                 }
               ]
-            },
-            {
-              "name": "part-of",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
-              "type": "reference",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
             }
           ]
         }

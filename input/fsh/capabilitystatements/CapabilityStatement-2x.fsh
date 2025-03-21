@@ -195,4 +195,4 @@ Usage: #definition
 * insert SupportSearchParam(rateratio-numerator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-denominator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio, #composite, #SHALL)
-* insert SupportSearchParam(part-of, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof, #reference, #SHALL)
+//* insert SupportSearchParam(part-of, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof, #reference, #SHALL) //Already defined in core
