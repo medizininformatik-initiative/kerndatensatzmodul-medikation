@@ -15,7 +15,7 @@
 - name: instance-version-filled
   category: example 
   status: "Checking if all instances have correct version filled"
-  predicate: select(meta.profile).where($this.startsWith('https://www.medizininformatik-initiative.de/fhir/core/modul-mediaktion/StructureDefinition/') and $this.endsWith('2025.0.1')).exists()
+  predicate: select(meta.profile).where($this.startsWith('https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/') and $this.endsWith('2025.0.1')).exists()
   error-message: "instance version not filled (correctly)"
 
 - action: Check for valid ids
