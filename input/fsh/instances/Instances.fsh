@@ -367,25 +367,25 @@ Usage: #example
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "08:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 * dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "12:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "18:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "22:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 
 Instance: mii-exa-medikation-medication-statement-hct
 InstanceOf: mii-pr-medikation-medication-statement
@@ -402,25 +402,25 @@ Usage: #example
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "08:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 * dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "12:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 * dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "18:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 * dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "22:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 
 Instance: mii-exa-medikation-medication-statement-ibuprofen
 InstanceOf: mii-pr-medikation-medication-statement
@@ -438,7 +438,7 @@ Usage: #example
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
 * dosage.asNeededBoolean = true
-* dosage.doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage.doseAndRate.doseQuantity = 1 '1' "Tablette"
 
 Instance: mii-exa-medikation-medication-statement-zopiclon
 InstanceOf: mii-pr-medikation-medication-statement
@@ -455,25 +455,25 @@ Usage: #example
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "08:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "12:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "18:00:00"
-* dosage[=].doseAndRate.doseQuantity = 0 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
 * dosage[=].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "22:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '{Stueck}' "1"
+* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 
 Instance: mii-exa-medikation-list-admission
 InstanceOf: mii-pr-medikation-medikationsliste

@@ -20,8 +20,8 @@
           "doseQuantity": {
             "system": "http://unitsofmeasure.org",
             "value": 1,
-            "code": "{Stueck}",
-            "unit": "1"
+            "code": "1",
+            "unit": "Tablette"
           }
         }
       ],
