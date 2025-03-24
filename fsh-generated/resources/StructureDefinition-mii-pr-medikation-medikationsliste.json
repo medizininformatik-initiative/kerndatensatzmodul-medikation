@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "name": "MII_PR_Medikation_Medikationsliste",
   "_name": {
     "extension": [

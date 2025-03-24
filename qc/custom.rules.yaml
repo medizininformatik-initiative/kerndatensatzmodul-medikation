@@ -1,19 +1,27 @@
 - include: recommended
   name: include-recommended
 
-- name: version-filled
+- name: conformance-version-filled
   filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or ConceptMap or ImplementationGuide).exists()
   # Excluding NamingSystem as they have no version
   status: "Checking if all resources have version filled"
-  predicate: version.exists() and (version in ('2025.0.0'))
-  error-message: "version not filled (correctly)"
+  predicate: version.exists() and (version in ('2025.0.1'))
+  error-message: "conformance version not filled (correctly)"
   files:
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/CodeSystem-ATC*.json"
-    - "!/**/CodeSystem-ASK*.json"
-    - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
+
+- name: instance-version-filled
+  category: example 
+  status: "Checking if all instances have correct version filled"
+  predicate: select(meta.profile).where($this.startsWith('https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/') and $this.endsWith('2025.0.1')).exists()
+  error-message: "instance version not filled (correctly)"
+  files:
+    - /**/*.xml
+    - /**/*.json
+    - "!package.json"
+    - "!/**/Procedure-mii-exa-medikation-procedure-thiotepa.json"
 
 - action: Check for valid ids
   # See https://github.com/FirelyTeam/firely-net-sdk/issues/1773
@@ -28,9 +36,6 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/CodeSystem-ATC*.json"
-    - "!/**/CodeSystem-ASK*.json"
-    - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-name
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -41,9 +46,6 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/CodeSystem-ATC*.json"
-    - "!/**/CodeSystem-ASK*.json"
-    - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-title
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -54,9 +56,6 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/CodeSystem-ATC*.json"
-    - "!/**/CodeSystem-ASK*.json"
-    - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"
 
 - name: naming-convention-url
   filter: (StructureDefinition or ValueSet or CodeSystem or ConceptMap or StructureMap or NamingSystem or SearchParameter or CapabilityStatement or OperationDefinition or ImplementationGuide).exists()
@@ -67,6 +66,3 @@
     - /**/*.xml
     - /**/*.json
     - "!package.json"
-    - "!/**/CodeSystem-ATC*.json"
-    - "!/**/CodeSystem-ASK*.json"
-    - "!/**/MII_CS_IHE_XDS_Fallkontext_bei_Dokumentenerstellung.json"

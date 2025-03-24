@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "name": "MII_PR_Medikation_Medication",
   "_name": {
     "extension": [
@@ -54,7 +54,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-11-14",
+  "date": "2025-03-19",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -209,11 +209,7 @@
         "patternCoding": {
           "system": "http://fhir.de/CodeSystem/ifa/pzn"
         },
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/ifa/pzn"
-        }
+        "mustSupport": true
       },
       {
         "id": "Medication.code.coding:Pharmazentralnummer.system",
@@ -301,7 +297,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/bfarm/atc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc"
         }
       },
       {
@@ -646,7 +642,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/ask"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask"
         }
       },
       {

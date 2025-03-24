@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "name": "MII_PR_Medikation_MedicationRequest",
   "_name": {
     "extension": [
@@ -539,11 +539,7 @@
         "patternCoding": {
           "system": "http://fhir.de/CodeSystem/ifa/pzn"
         },
-        "mustSupport": true,
-        "binding": {
-          "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/ifa/pzn"
-        }
+        "mustSupport": true
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.system",
@@ -631,7 +627,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "http://fhir.de/ValueSet/bfarm/atc"
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc"
         }
       },
       {

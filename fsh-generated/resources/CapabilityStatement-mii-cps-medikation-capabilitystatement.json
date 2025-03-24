@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-medikation-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata",
-  "version": "2025.0.0",
+  "version": "2025.0.1",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -21,7 +21,7 @@
   "title": "MII CPS Medikation CapabilityStatement",
   "status": "active",
   "experimental": false,
-  "date": "2024-11-14",
+  "date": "2025-03-21",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -1532,17 +1532,6 @@
               "name": "rateratio",
               "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio",
               "type": "composite",
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
-                  "valueCode": "SHALL"
-                }
-              ]
-            },
-            {
-              "name": "part-of",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof",
-              "type": "reference",
               "extension": [
                 {
                   "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",

@@ -40,7 +40,7 @@ Usage: #definition
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2024-11-14"
+* date = "2025-03-21"
 * insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
@@ -195,4 +195,4 @@ Usage: #definition
 * insert SupportSearchParam(rateratio-numerator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-denominator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio, #composite, #SHALL)
-* insert SupportSearchParam(part-of, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof, #reference, #SHALL)
+//* insert SupportSearchParam(part-of, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof, #reference, #SHALL) //Already defined in core

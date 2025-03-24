@@ -59,13 +59,13 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
     atcClassEn 0..* MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[Pharmazentralnummer])
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
-* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
+//* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^mustSupport = true
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
 * medicationCodeableConcept.coding[Pharmazentralnummer].code 1.. MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
-* medicationCodeableConcept.coding[atcClassDe] from $vs-atc (required)
+* medicationCodeableConcept.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * medicationCodeableConcept.coding[atcClassDe] ^sliceName = "atcClassDe"
 * medicationCodeableConcept.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * medicationCodeableConcept.coding[atcClassDe] ^definition = "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten"

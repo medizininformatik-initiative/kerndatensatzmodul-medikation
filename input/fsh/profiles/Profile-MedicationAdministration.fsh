@@ -65,13 +65,13 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
     atcClassEn 0..* MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[Pharmazentralnummer])
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
-* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
+//* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^mustSupport = true
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
 * medicationCodeableConcept.coding[Pharmazentralnummer].code 1.. MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
-* medicationCodeableConcept.coding[atcClassDe] from $vs-atc (required)
+* medicationCodeableConcept.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * medicationCodeableConcept.coding[atcClassDe] ^sliceName = "atcClassDe"
 * medicationCodeableConcept.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * medicationCodeableConcept.coding[atcClassDe] ^definition = "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten"
@@ -200,7 +200,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.route.coding ^slicing.discriminator.type = #pattern
 * dosage.route.coding ^slicing.discriminator.path = "$this"
 * dosage.route.coding ^slicing.rules = #open
-* dosage.route.coding ^binding.description = "EDQM Standards Terms"
+//* dosage.route.coding ^binding.description = "EDQM Standards Terms"
 * dosage.route.coding contains
     EDQM 0..1 MS and
     SNOMED 0..1 MS

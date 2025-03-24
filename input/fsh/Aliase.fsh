@@ -19,3 +19,4 @@ Alias: $list-example-use-codes = http://terminology.hl7.org/CodeSystem/list-exam
 Alias: $ihe-xds-fallkontext = http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung
 Alias: $pzn-vs = http://fhir.de/ValueSet/ifa/pzn
 Alias: $cas = http://terminology.hl7.org/CodeSystem/CAS
+Alias: $ucum = http://unitsofmeasure.org
