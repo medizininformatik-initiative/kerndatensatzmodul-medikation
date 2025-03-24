@@ -89,7 +89,7 @@
           "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",
@@ -146,7 +146,7 @@
           "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",
@@ -221,7 +221,7 @@
           "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",

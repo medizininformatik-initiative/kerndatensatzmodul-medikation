@@ -40,7 +40,7 @@
       "code": "1",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
           "valueQuantity": {
             "value": 9,
             "unit": "Tablet",
@@ -76,7 +76,7 @@
           "unit": "Tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Tablet",
@@ -113,7 +113,7 @@
           "unit": "Tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Tablet",
@@ -150,7 +150,7 @@
           "unit": "Tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Tablet",

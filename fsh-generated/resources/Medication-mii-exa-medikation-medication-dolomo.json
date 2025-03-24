@@ -46,7 +46,7 @@
       "code": "1",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
           "valueQuantity": {
             "value": 27,
             "unit": "Tablet",
