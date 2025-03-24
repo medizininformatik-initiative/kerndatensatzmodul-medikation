@@ -59,7 +59,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
     atcClassEn 0..* MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[Pharmazentralnummer])
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
-* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
+//* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^patternCoding.system = "http://fhir.de/CodeSystem/ifa/pzn"
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^mustSupport = true
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
