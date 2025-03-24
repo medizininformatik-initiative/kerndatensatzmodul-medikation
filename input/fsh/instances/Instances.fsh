@@ -52,7 +52,8 @@ Usage: #example
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#11116-97-5 "Calcium lactate gluconate"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#422232005 "Calcium lactate gluconate (substance)"
 * ingredient[=].strength.numerator = 2945.15 'mg' "milligram"
-* ingredient[=].strength.denominator = 1 http://standardterms.edqm.eu#10222000 "Effervescent tablet"
+* ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
+* insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
 * ingredient[+].id = "ing_2"
 * ingredient[=].extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 * ingredient[=].extension.valueCoding = $cs-wirkstofftyp#PIN
@@ -60,7 +61,8 @@ Usage: #example
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#471-34-1 "Calcium carbonate"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#387307005 "Calcium carbonate (substance)"
 * ingredient[=].strength.numerator = 300 'mg' "milligram"
-* ingredient[=].strength.denominator = 1 http://standardterms.edqm.eu#10222000 "Effervescent tablet"
+* ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
+* insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
 * ingredient[+].id = "ing_3"
 * ingredient[=].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 * ingredient[=].extension[=].valueCoding = $cs-wirkstofftyp#IN
@@ -74,7 +76,8 @@ Usage: #example
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#14127-61-8 "Calcium cation"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#5540006 "Calcium (substance)"
 * ingredient[=].strength.numerator = 500.54 'mg' "milligram"
-* ingredient[=].strength.denominator = 1 http://standardterms.edqm.eu#10222000 "Effervescent tablet"
+* ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
+* insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
 
 Instance: mii-exa-medikation-medication-caelyx
 InstanceOf: mii-pr-medikation-medication
@@ -101,7 +104,8 @@ Usage: #example
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
 * ingredient.strength.numerator = 100 'mg' "milligram"
-* ingredient.strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient.strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient.strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 
 Instance: mii-exa-medikation-medication-propofol
 InstanceOf: mii-pr-medikation-medication
@@ -138,11 +142,12 @@ Usage: #example
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 27
 * amount.numerator.unit = "Tablet"
-* amount.numerator.system = $standardterms
-* amount.numerator.code = #10219000
+* amount.numerator.system = $ucum
+* amount.numerator.code = #1
+* insert PQTranslation(amount.numerator, 27, Tablet, http://standardterms.edqm.eu, 10219000)
 * amount.denominator.value = 1
 * amount.denominator.unit = "Package"
-* amount.denominator.system = "http://unitsofmeasure.org"
+* amount.denominator.system = $ucum
 * amount.denominator.code = #1
 * ingredient[0].itemReference = Reference(mii-exa-medikation-medication-dolomo-tag)
 * ingredient[1].itemReference = Reference(mii-exa-medikation-medication-dolomo-nacht)
@@ -156,22 +161,26 @@ Usage: #example
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 18
 * amount.numerator.unit = "Tablet"
-* amount.numerator.system = $standardterms
-* amount.numerator.code = #10219000
+* amount.numerator.system = $ucum
+* amount.numerator.code = #1
+* insert PQTranslation(amount.numerator, 18, Tablet, http://standardterms.edqm.eu, 10219000)
 * amount.denominator.value = 1
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].isActive = true
 * ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
-* ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[0].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[0].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[0].strength.numerator = 250 'mg' "mg"
 * ingredient[1].isActive = true
 * ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
-* ingredient[1].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[1].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[1].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[1].strength.numerator = 250 'mg' "mg"
 * ingredient[2].isActive = true
 * ingredient[2].itemCodeableConcept = $cs-ask#00088 "Coffein"
-* ingredient[2].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[2].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[2].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[2].strength.numerator = 50 'mg' "mg"
 
 Instance: mii-exa-medikation-medication-dolomo-nacht
@@ -183,22 +192,26 @@ Usage: #example
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 9
 * amount.numerator.unit = "Tablet"
-* amount.numerator.system = $standardterms
-* amount.numerator.code = #10219000
+* amount.numerator.system = $ucum
+* amount.numerator.code = #1
+* insert PQTranslation(amount.numerator, 9, Tablet, http://standardterms.edqm.eu, 10219000)
 * amount.denominator.value = 1
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].isActive = true
 * ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
-* ingredient[0].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[0].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[0].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[0].strength.numerator = 250 'mg' "mg"
 * ingredient[1].isActive = true
 * ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
-* ingredient[1].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[1].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[1].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[1].strength.numerator = 250 'mg' "mg"
 * ingredient[2].isActive = true
 * ingredient[2].itemCodeableConcept = $cs-ask#00087 "Codeinphosphat-Hemihydrat"
-* ingredient[2].strength.denominator = 1 http://standardterms.edqm.eu#10219000 "Tablet"
+* ingredient[2].strength.denominator = 1 '1' "Tablet"
+* insert PQTranslation(ingredient[2].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[2].strength.numerator = 30 'mg' "mg"
 
 Instance: mii-exa-medikation-medication-administration

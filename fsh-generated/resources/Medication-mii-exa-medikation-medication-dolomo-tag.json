@@ -36,8 +36,19 @@
     "numerator": {
       "value": 18,
       "unit": "Tablet",
-      "system": "http://standardterms.edqm.eu",
-      "code": "10219000"
+      "system": "http://unitsofmeasure.org",
+      "code": "1",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+          "valueQuantity": {
+            "value": 18,
+            "unit": "Tablet",
+            "system": "http://standardterms.edqm.eu",
+            "code": "10219000"
+          }
+        }
+      ]
     },
     "denominator": {
       "value": 1,
@@ -60,9 +71,20 @@
       "strength": {
         "denominator": {
           "value": 1,
-          "code": "10219000",
-          "system": "http://standardterms.edqm.eu",
-          "unit": "Tablet"
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablet",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "valueQuantity": {
+                "value": 1,
+                "unit": "Tablet",
+                "system": "http://standardterms.edqm.eu",
+                "code": "10219000"
+              }
+            }
+          ]
         },
         "numerator": {
           "value": 250,
@@ -86,9 +108,20 @@
       "strength": {
         "denominator": {
           "value": 1,
-          "code": "10219000",
-          "system": "http://standardterms.edqm.eu",
-          "unit": "Tablet"
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablet",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "valueQuantity": {
+                "value": 1,
+                "unit": "Tablet",
+                "system": "http://standardterms.edqm.eu",
+                "code": "10219000"
+              }
+            }
+          ]
         },
         "numerator": {
           "value": 250,
@@ -112,9 +145,20 @@
       "strength": {
         "denominator": {
           "value": 1,
-          "code": "10219000",
-          "system": "http://standardterms.edqm.eu",
-          "unit": "Tablet"
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablet",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation",
+              "valueQuantity": {
+                "value": 1,
+                "unit": "Tablet",
+                "system": "http://standardterms.edqm.eu",
+                "code": "10219000"
+              }
+            }
+          ]
         },
         "numerator": {
           "value": 50,
