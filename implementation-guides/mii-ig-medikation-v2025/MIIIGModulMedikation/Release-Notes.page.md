@@ -1,5 +1,12 @@
 ## {{page-title}}
 
+**Version: 2025.0.1**
+
+Datum 25.03.2025
+
+- Neu hinzugefügt wurden ValueSets und Bindings für ATC (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc`), ASK (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask`) und UNII (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii`), die mit dem MII-Terminologieserver (https://www.ontoserver.mii-termserv.de/) expandiert werden können und somit erweiterte Validierung ermöglichen.
+- Beispielressourcen aktualisiert: Die Ressourcen entsprechen nun dem Best-Practice-Ansatz für Dosis- und Menge/Stärke-Angaben, indem eine Quantity bevorzugt unter Verwendung von UCUM angegeben wird. UCUM-Annotations in Curly Braces sollten vermieden werden. Alternativ können andere Einheitensysteme über die Quantity Translation Extension (Canonical URL: `http://hl7.org/fhir/StructureDefinition/extension-quantity-translation`) definiert werden.
+
 **Version: 2025.0.0**
 
 Datum 16.12.2024
