@@ -86,11 +86,6 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "00343",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Wasser für Injektionszwecke"
-          },
-          {
             "code": "7732-18-5",
             "system": "http://terminology.hl7.org/CodeSystem/CAS",
             "display": "WATER"

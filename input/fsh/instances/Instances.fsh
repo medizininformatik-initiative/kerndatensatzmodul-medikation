@@ -30,7 +30,7 @@ Usage: #example
 * ingredient[=].strength.denominator = 1000 'ml' "ml"
 * ingredient[=].strength.numerator = 50 'g' "g"
 * ingredient[+].isActive = false
-* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#00343 "Wasser für Injektionszwecke"
+//* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#00343 "Wasser für Injektionszwecke"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#7732-18-5 "WATER"
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#059QF0KO0R "WATER"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#11713004 "Water (substance)"
