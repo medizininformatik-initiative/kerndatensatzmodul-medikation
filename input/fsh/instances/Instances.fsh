@@ -88,7 +88,7 @@ Usage: #example
 * code.coding[+] = $cs-atc|2023#L01DB01 "Doxorubicin"
 * status = #active
 * form = $standardterms#11213000 "Concentrate for solution for infusion"
-* ingredient.itemCodeableConcept.coding[0] = $fdasis#82F2G7BL4E "Doxorubicin hydrochloride"
+* ingredient.itemCodeableConcept.coding[0] = $fdasis#82F2G7BL4E "DOXORUBICIN HYDROCHLORIDE"
 * ingredient.itemCodeableConcept.coding[+] = $cas#25316-40-9 "Doxorubicin hydrochloride"
 * ingredient.isActive = true
 * ingredient.strength.numerator = 50 'mg' "mg"
@@ -127,8 +127,8 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
 * ingredient.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
 * ingredient.extension.valueCoding = $cs-wirkstofftyp#IN "ingredient"
-* ingredient.itemCodeableConcept.coding[0] = $fdasis#905Z5W3GKH "thiotepa"
-* ingredient.itemCodeableConcept.coding[+] = $cs-ask#07962 "thiotepa"
+* ingredient.itemCodeableConcept.coding[0] = $fdasis#905Z5W3GKH "THIOTEPA"
+* ingredient.itemCodeableConcept.coding[+] = $cs-ask#07962 "Thiotepa"
 * ingredient.itemCodeableConcept.coding[+] = $cas#52-24-4 "thiotepa"
 
 Instance: mii-exa-medikation-medication-dolomo
@@ -317,7 +317,7 @@ Usage: #example
 * insert TestDataLabel
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
 * category = $sct#182832007 "Procedure related to management of drug administration (procedure)"
-* code.coding = $cs-ops#6-007.nm "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
+* code.coding = $cs-ops#6-007.nm "Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg"
 * code.coding.version = "2020"
 * performedDateTime = "2018-05-26"
 * status = #completed
