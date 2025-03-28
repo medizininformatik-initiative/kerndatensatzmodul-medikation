@@ -42,9 +42,9 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "00002",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Acetylsalicylsäure"
+            "code": "387458008",
+            "system": "http://snomed.info/sct",
+            "display": "Aspirin (substance)"
           }
         ]
       },

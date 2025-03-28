@@ -23,7 +23,7 @@ Usage: #example
 * code.coding[+] = $cs-atc-who|2023#V06DC01 "glucose"
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].isActive = true
-* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#12829 "Glucose"
+//* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#12829 "Glucose"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#50-99-7 "Glucose"
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#5SL0G7R0OK "ANHYDROUS DEXTROSE"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#67079006 "Glucose (substance)"
@@ -102,7 +102,8 @@ Usage: #example
 * code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
 * code.coding[+] = $cs-atc|2023#B01AC06 "Acetylsalicylsäure"
 * form = $standardterms#10219000 "Tablet"
-* ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+// * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+* ingredient.itemCodeableConcept = $sct-no-ver#387458008 "Aspirin (substance)"
 * ingredient.strength.numerator = 100 'mg' "milligram"
 * ingredient.strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient.strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
@@ -168,17 +169,20 @@ Usage: #example
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].isActive = true
-* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+//* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+* ingredient[0].itemCodeableConcept = $sct-no-ver#387458008 "Aspirin (substance)"
 * ingredient[0].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[0].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[0].strength.numerator = 250 'mg' "mg"
 * ingredient[1].isActive = true
-* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+//* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+* ingredient[1].itemCodeableConcept = $sct-no-ver#387517004 "Paracetamol (substance)"
 * ingredient[1].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[1].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[1].strength.numerator = 250 'mg' "mg"
 * ingredient[2].isActive = true
-* ingredient[2].itemCodeableConcept = $cs-ask#00088 "Coffein"
+//* ingredient[2].itemCodeableConcept = $cs-ask#00088 "Coffein"
+* ingredient[2].itemCodeableConcept = $sct-no-ver#255641001 "Caffeine (substance)"
 * ingredient[2].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[2].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[2].strength.numerator = 50 'mg' "mg"
@@ -199,17 +203,20 @@ Usage: #example
 * amount.denominator.system = "http://unitsofmeasure.org"
 * amount.denominator.code = #1
 * ingredient[0].isActive = true
-* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+//* ingredient[0].itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
+* ingredient[0].itemCodeableConcept = $sct-no-ver#387458008 "Aspirin (substance)"
 * ingredient[0].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[0].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[0].strength.numerator = 250 'mg' "mg"
 * ingredient[1].isActive = true
-* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+//* ingredient[1].itemCodeableConcept = $cs-ask#01212 "Paracetamol"
+* ingredient[1].itemCodeableConcept = $sct-no-ver#387517004 "Paracetamol (substance)"
 * ingredient[1].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[1].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[1].strength.numerator = 250 'mg' "mg"
 * ingredient[2].isActive = true
-* ingredient[2].itemCodeableConcept = $cs-ask#00087 "Codeinphosphat-Hemihydrat"
+//* ingredient[2].itemCodeableConcept = $cs-ask#00087 "Codeinphosphat-Hemihydrat"
+* ingredient[2].itemCodeableConcept = $sct-no-ver#725666006 "Codeine phosphate hemihydrate (substance)"
 * ingredient[2].strength.denominator = 1 '1' "Tablet"
 * insert PQTranslation(ingredient[2].strength.denominator, 1, Tablet, http://standardterms.edqm.eu, 10219000)
 * ingredient[2].strength.numerator = 30 'mg' "mg"

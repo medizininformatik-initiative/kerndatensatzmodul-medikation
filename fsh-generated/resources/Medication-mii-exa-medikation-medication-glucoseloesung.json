@@ -49,11 +49,6 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "12829",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Glucose"
-          },
-          {
             "code": "50-99-7",
             "system": "http://terminology.hl7.org/CodeSystem/CAS",
             "display": "Glucose"
