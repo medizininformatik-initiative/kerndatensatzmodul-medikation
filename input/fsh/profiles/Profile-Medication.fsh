@@ -112,6 +112,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.itemCodeableConcept.coding[UNII] ^short = "UNII Code"
 * ingredient.itemCodeableConcept.coding[UNII] ^definition = "Unique Ingredient Identifier (UNII)"
 * ingredient.itemCodeableConcept.coding[UNII] ^patternCoding.system = "http://fdasis.nlm.nih.gov"
+* ingredient.itemCodeableConcept.coding[UNII] from mii-vs-medikation-unii (required)
 * ingredient.itemCodeableConcept.coding[UNII] ^mustSupport = true
 * ingredient.itemCodeableConcept.coding[UNII].system 1.. MS
 * ingredient.itemCodeableConcept.coding[UNII].code 1.. MS

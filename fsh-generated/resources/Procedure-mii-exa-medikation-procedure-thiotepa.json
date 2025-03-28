@@ -25,7 +25,7 @@
       {
         "code": "6-007.nm",
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
-        "display": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
+        "display": "Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg",
         "version": "2020"
       }
     ]

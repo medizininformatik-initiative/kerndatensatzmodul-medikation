@@ -30,12 +30,12 @@
           {
             "code": "905Z5W3GKH",
             "system": "http://fdasis.nlm.nih.gov",
-            "display": "thiotepa"
+            "display": "THIOTEPA"
           },
           {
             "code": "07962",
             "system": "http://fhir.de/CodeSystem/ask",
-            "display": "thiotepa"
+            "display": "Thiotepa"
           },
           {
             "code": "52-24-4",

@@ -12,7 +12,7 @@ RuleSet: Profile (profile, expectation)
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].supportedProfile[+] = "{profile}"
+* rest.resource[=].supportedProfile[+] = "{profile}|2025.0.1"
 * rest.resource[=].supportedProfile[=].extension[0].url = $exp
 * rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
 
@@ -30,6 +30,13 @@ RuleSet: SupportSearchParam (name, canonical, type, expectation)
 * rest.resource[=].searchParam[=].extension[0].url = $exp
 * rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
 
+RuleSet: SupportSpecialSearchParam (name, type, expectation)
+// This rule set must follow a SupportResource rule set, and applies to that resource.
+* rest.resource[=].searchParam[+].name = "{name}"
+* rest.resource[=].searchParam[=].type = {type}
+* rest.resource[=].searchParam[=].extension[0].url = $exp
+* rest.resource[=].searchParam[=].extension[0].valueCode = {expectation}
+
 Instance: mii-cps-medikation-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
@@ -40,7 +47,7 @@ Usage: #definition
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2025-03-21"
+* date = "2025-03-25"
 * insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
@@ -53,9 +60,11 @@ Usage: #definition
 // List requirements
 * insert SupportResource(List, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/List, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2025.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
@@ -74,9 +83,11 @@ Usage: #definition
 // Medication requirements
 * insert SupportResource(Medication, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/Medication, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2025.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
@@ -96,9 +107,11 @@ Usage: #definition
 // MedicationAdministration requirements
 * insert SupportResource(MedicationAdministration, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2025.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
@@ -126,9 +139,11 @@ Usage: #definition
 // MedicationRequest requirements
 * insert SupportResource(MedicationRequest, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationRequest, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2025.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
@@ -165,9 +180,11 @@ Usage: #definition
 // MedicationStatement requirements
 * insert SupportResource(MedicationStatement, #SHALL)
 * insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationStatement, #SHALL)
-* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2025.0.0, #SHALL)
+* insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
+* insert SupportSpecialSearchParam(_count, #special, #SHALL)
+* insert SupportSpecialSearchParam(_summary, #special, #SHALL)
 * insert SupportSearchParam(_id, http://hl7.org/fhir/SearchParameter/Resource-id, #token, #SHALL)
 * insert SupportSearchParam(_lastUpdated, http://hl7.org/fhir/SearchParameter/Resource-lastUpdated, #date, #SHALL)
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)

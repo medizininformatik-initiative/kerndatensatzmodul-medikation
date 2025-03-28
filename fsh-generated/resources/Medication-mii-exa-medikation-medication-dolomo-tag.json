@@ -62,9 +62,9 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "00002",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Acetylsalicylsäure"
+            "code": "387458008",
+            "system": "http://snomed.info/sct",
+            "display": "Aspirin (substance)"
           }
         ]
       },
@@ -99,9 +99,9 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "01212",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Paracetamol"
+            "code": "387517004",
+            "system": "http://snomed.info/sct",
+            "display": "Paracetamol (substance)"
           }
         ]
       },
@@ -136,9 +136,9 @@
       "itemCodeableConcept": {
         "coding": [
           {
-            "code": "00088",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Coffein"
+            "code": "255641001",
+            "system": "http://snomed.info/sct",
+            "display": "Caffeine (substance)"
           }
         ]
       },

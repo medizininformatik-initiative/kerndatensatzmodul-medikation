@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "MII_VS_Medikation_UNII",
+  "id": "mii-vs-medikation-unii",
+  "title": "MII VS Medikation UNII",
+  "description": "Enthaelt Unique Ingredient Identifier (UNII-Codes)",
+  "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "copyright": "U.S. Food and Drug Administration (FDA)",
+  "version": "2025.0.1",
+  "publisher": "Medizininformatik Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "CC-BY-4.0",
+            "system": "http://hl7.org/fhir/spdx-license",
+            "display": "Creative Commons Attribution 4.0 International"
+          }
+        ]
+      }
+    }
+  ],
+  "experimental": false,
+  "date": "2025-03-25",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fdasis.nlm.nih.gov",
+        "version": "20240622"
+      }
+    ]
+  }
+}
