@@ -100,7 +100,7 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
 * code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
-* code.coding[+] = $cs-atc|2023#B01AC06 "acetylsalicylic acid"
+* code.coding[+] = $cs-atc|2023#B01AC06 "Acetylsalicylsäure"
 * form = $standardterms#10219000 "Tablet"
 * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
 * ingredient.strength.numerator = 100 'mg' "milligram"
