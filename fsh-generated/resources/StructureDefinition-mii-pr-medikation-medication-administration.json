@@ -626,7 +626,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN Code"
+                  "valueString": "ATC Code"
                 }
               ]
             },
@@ -639,7 +639,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN code"
+                  "valueString": "ATC code"
                 }
               ]
             }
@@ -657,7 +657,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                  "valueString": "Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
                 }
               ]
             },
@@ -670,7 +670,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                  "valueString": "A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system"
                 }
               ]
             }
@@ -715,7 +715,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN Code"
+                  "valueString": "ATC WHO Code"
                 }
               ]
             },
@@ -728,7 +728,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN code"
+                  "valueString": "ATC WHO code"
                 }
               ]
             }
@@ -746,7 +746,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                  "valueString": "Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
                 }
               ]
             },
@@ -759,7 +759,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                  "valueString": "A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system"
                 }
               ]
             }

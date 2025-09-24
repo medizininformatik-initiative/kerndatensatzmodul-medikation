@@ -70,7 +70,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^mustSupport = true
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
 * medicationCodeableConcept.coding[Pharmazentralnummer].code 1.. MS
-* insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
+* insert AddAtcDeCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
 * medicationCodeableConcept.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * medicationCodeableConcept.coding[atcClassDe] ^sliceName = "atcClassDe"
 * medicationCodeableConcept.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
@@ -79,7 +79,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[atcClassDe] ^mustSupport = true
 * medicationCodeableConcept.coding[atcClassDe].system 1.. MS
 * medicationCodeableConcept.coding[atcClassDe].code 1.. MS
-* insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassEn])
+* insert AddAtcWhoCodingTranslation(medicationCodeableConcept.coding[atcClassEn])
 * medicationCodeableConcept.coding[atcClassEn] ^sliceName = "atcClassEn"
 * medicationCodeableConcept.coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * medicationCodeableConcept.coding[atcClassEn] ^definition = "ATC Classification International WHO Version"
