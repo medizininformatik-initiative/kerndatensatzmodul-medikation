@@ -2,11 +2,12 @@
 
 **Version: 2025.0.1**
 
-Datum 25.03.2025
+Datum 04.11.2025
 
-- Neu hinzugefügt wurden ValueSets und Bindings für ATC (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc`), ASK (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask`) und UNII (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii`), die mit dem MII-Terminologieserver (https://www.ontoserver.mii-termserv.de/) expandiert werden können und somit erweiterte Validierung ermöglichen.
-- Beispielressourcen aktualisiert: Die Ressourcen entsprechen nun dem Best-Practice-Ansatz für Dosis- und Menge/Stärke-Angaben, indem eine Quantity bevorzugt unter Verwendung von UCUM angegeben wird. UCUM-Annotations in Curly Braces sollten vermieden werden. Alternativ können andere Einheitensysteme über die Quantity Translation Extension (Canonical URL: `http://hl7.org/fhir/StructureDefinition/extension-quantity-translation`) definiert werden.
-- CapabilityStatement aktualisiert: das CapabilityStatement enthält nun Anforderungsdokumentation für Suchparameter `_count` und `_summary`.
+- `Added`: `(MedicationAdministration|MedicationStatement|MedicationRequest).medicationCodeableConcept` enthält Verweis auf UNII. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/pull/106
+- `Added`: Neu hinzugefügt wurden ValueSets und Bindings für ATC (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc`), ASK (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask`) und UNII (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii`), die mit dem MII-Terminologieserver (https://www.ontoserver.mii-termserv.de/) expandiert werden können und somit erweiterte Validierung ermöglichen.
+- `Changed`: Beispielressourcen entsprechen nun dem Best-Practice-Ansatz für Dosis- und Menge/Stärke-Angaben, indem eine Quantity bevorzugt unter Verwendung von UCUM angegeben wird. UCUM-Annotations in Curly Braces sollten vermieden werden. Alternativ können andere Einheitensysteme über die Quantity Translation Extension (Canonical URL: `http://hl7.org/fhir/StructureDefinition/extension-quantity-translation`) definiert werden.
+- `Added`: das CapabilityStatement enthält nun Anforderungsdokumentation für Suchparameter `_count` und `_summary`.
 
 **Version: 2025.0.0**
 
