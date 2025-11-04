@@ -626,7 +626,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN Code"
+                  "valueString": "ATC Code"
                 }
               ]
             },
@@ -639,7 +639,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN code"
+                  "valueString": "ATC code"
                 }
               ]
             }
@@ -657,7 +657,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                  "valueString": "Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
                 }
               ]
             },
@@ -670,7 +670,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                  "valueString": "A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system"
                 }
               ]
             }
@@ -715,7 +715,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN Code"
+                  "valueString": "ATC WHO Code"
                 }
               ]
             },
@@ -728,7 +728,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN code"
+                  "valueString": "ATC WHO code"
                 }
               ]
             }
@@ -746,7 +746,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Ein Verweis auf einen von der Pharmazentralnummer definierten Code"
+                  "valueString": "Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code"
                 }
               ]
             },
@@ -759,7 +759,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "A reference to a code defined by Pharmazentralnummer"
+                  "valueString": "A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system"
                 }
               ]
             }
@@ -780,6 +780,91 @@
       },
       {
         "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:atcClassEn.code",
+        "path": "MedicationAdministration.medication[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:UNII",
+        "path": "MedicationAdministration.medication[x].coding",
+        "sliceName": "UNII",
+        "short": "Unique Ingredient Identifier",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Unique Ingredient Identifier"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Unique Ingredient Identifier"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Global Susbstance Registration System Unique Ingredient Identifier. Soll nur eingesetzt werden, wenn weder ATC-Code noch PZN existiert, z.B. bei experimentellen Krebsmedikamenten.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Unique Ingredient Identifier (UNII) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A Unique Ingredient Identifier (UNII) from the american Food & Drug Administration's Global Substance Registration System"
+                }
+              ]
+            }
+          ]
+        },
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "system": "http://fdasis.nlm.nih.gov"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:UNII.system",
+        "path": "MedicationAdministration.medication[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationAdministration.medication[x]:medicationCodeableConcept.coding:UNII.code",
         "path": "MedicationAdministration.medication[x].coding.code",
         "min": 1,
         "mustSupport": true

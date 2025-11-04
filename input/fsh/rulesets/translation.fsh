@@ -37,6 +37,14 @@ RuleSet: AddAtcWhoCodingTranslation(path)
 * insert Translation({path} ^definition, de-DE, Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code)
 * insert Translation({path} ^definition, en-US, A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system)
 
+RuleSet: AddUniiCodingTranslation(path)
+* {path} ^short = "Unique Ingredient Identifier"
+* insert Translation({path} ^short, de-DE, Unique Ingredient Identifier)
+* insert Translation({path} ^short, en-US, Unique Ingredient Identifier)
+* {path} ^definition = "Ein Unique Ingredient Identifier (UNII) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration"
+* insert Translation({path} ^definition, de-DE, Ein Unique Ingredient Identifier (UNII\) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration)
+* insert Translation({path} ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
+
 RuleSet: AddEdqmCodingTranslation(path)
 * {path} ^short = "EDQM Code"
 * insert Translation({path} ^short, de-DE, EDQM Code)

@@ -62,7 +62,8 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding contains
     Pharmazentralnummer 0..* MS and
     atcClassDe 0..* MS and
-    atcClassEn 0..* MS
+    atcClassEn 0..* MS and
+    UNII 0..* MS
 * insert AddPznCodingTranslation(medicationCodeableConcept.coding[Pharmazentralnummer])
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^sliceName = "Pharmazentralnummer"
 //* medicationCodeableConcept.coding[Pharmazentralnummer] from $pzn-vs (required)
@@ -70,7 +71,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[Pharmazentralnummer] ^mustSupport = true
 * medicationCodeableConcept.coding[Pharmazentralnummer].system 1.. MS
 * medicationCodeableConcept.coding[Pharmazentralnummer].code 1.. MS
-* insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
+* insert AddAtcDeCodingTranslation(medicationCodeableConcept.coding[atcClassDe])
 * medicationCodeableConcept.coding[atcClassDe] from mii-vs-medikation-atc (required)
 * medicationCodeableConcept.coding[atcClassDe] ^sliceName = "atcClassDe"
 * medicationCodeableConcept.coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
@@ -79,7 +80,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[atcClassDe] ^mustSupport = true
 * medicationCodeableConcept.coding[atcClassDe].system 1.. MS
 * medicationCodeableConcept.coding[atcClassDe].code 1.. MS
-* insert AddPznCodingTranslation(medicationCodeableConcept.coding[atcClassEn])
+* insert AddAtcWhoCodingTranslation(medicationCodeableConcept.coding[atcClassEn])
 * medicationCodeableConcept.coding[atcClassEn] ^sliceName = "atcClassEn"
 * medicationCodeableConcept.coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * medicationCodeableConcept.coding[atcClassEn] ^definition = "ATC Classification International WHO Version"
@@ -87,6 +88,14 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * medicationCodeableConcept.coding[atcClassEn] ^mustSupport = true
 * medicationCodeableConcept.coding[atcClassEn].system 1.. MS
 * medicationCodeableConcept.coding[atcClassEn].code 1.. MS
+* insert AddUniiCodingTranslation(medicationCodeableConcept.coding[UNII])
+* medicationCodeableConcept.coding[UNII] ^sliceName = "UNII"
+* medicationCodeableConcept.coding[UNII] ^short = "Unique Ingredient Identifier"
+* medicationCodeableConcept.coding[UNII] ^definition = "Global Susbstance Registration System Unique Ingredient Identifier. Soll nur eingesetzt werden, wenn weder ATC-Code noch PZN existiert, z.B. bei experimentellen Krebsmedikamenten."
+* medicationCodeableConcept.coding[UNII] ^patternCoding.system = "http://fdasis.nlm.nih.gov"
+* medicationCodeableConcept.coding[UNII] ^mustSupport = true
+* medicationCodeableConcept.coding[UNII].system 1.. MS
+* medicationCodeableConcept.coding[UNII].code 1.. MS
 * medicationCodeableConcept.text MS
 * medication[x] ^short = "Medikation"
 * insert Translation(medication[x] ^short, de-DE, Medikation)
