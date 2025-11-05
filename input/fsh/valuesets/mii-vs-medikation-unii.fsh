@@ -9,5 +9,5 @@ Description: "Enthaelt Unique Ingredient Identifier (UNII-Codes)"
 * insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-03-25"
-* include codes from system $unii|20240622
+* ^date = "2025-11-05"
+* include codes from system $unii|20250702
