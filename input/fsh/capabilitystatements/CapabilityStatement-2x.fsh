@@ -5,10 +5,11 @@ RuleSet: SupportResource (resource, expectation)
 * rest.resource[=].extension[0].url = $exp
 * rest.resource[=].extension[0].valueCode = {expectation}
 
-RuleSet: Profile (profile, expectation)
+// The extension http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation is not allowed to be used at this point (this element is [CapabilityStatement.rest.resource.profile, canonical]
+RuleSet: Profile (profile)
 * rest.resource[=].profile[+] = "{profile}"
-* rest.resource[=].profile[=].extension[0].url = $exp
-* rest.resource[=].profile[=].extension[0].valueCode = {expectation}
+// * rest.resource[=].profile[=].extension[0].url = $exp
+// * rest.resource[=].profile[=].extension[0].valueCode = {expectation}
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
@@ -59,7 +60,7 @@ Usage: #definition
 
 // List requirements
 * insert SupportResource(List, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/List, #SHALL)
+* insert Profile(http://hl7.org/fhir/StructureDefinition/List)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -82,7 +83,7 @@ Usage: #definition
 
 // Medication requirements
 * insert SupportResource(Medication, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/Medication, #SHALL)
+* insert Profile(http://hl7.org/fhir/StructureDefinition/Medication)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -106,7 +107,7 @@ Usage: #definition
 
 // MedicationAdministration requirements
 * insert SupportResource(MedicationAdministration, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration, #SHALL)
+* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationAdministration)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -138,7 +139,7 @@ Usage: #definition
 
 // MedicationRequest requirements
 * insert SupportResource(MedicationRequest, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationRequest, #SHALL)
+* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationRequest)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -179,7 +180,7 @@ Usage: #definition
 
 // MedicationStatement requirements
 * insert SupportResource(MedicationStatement, #SHALL)
-* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationStatement, #SHALL)
+* insert Profile(http://hl7.org/fhir/StructureDefinition/MedicationStatement)
 * insert SupportProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement, #SHALL)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)

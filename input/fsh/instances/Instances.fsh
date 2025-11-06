@@ -24,14 +24,14 @@ Usage: #example
 * form = $standardterms#11210000 "Solution for infusion"
 * ingredient[0].isActive = true
 //* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#12829 "Glucose"
-* ingredient[=].itemCodeableConcept.coding[+] = $cas#50-99-7 "Glucose"
+* ingredient[=].itemCodeableConcept.coding[+] = $cas#50-99-7
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#5SL0G7R0OK "ANHYDROUS DEXTROSE"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#67079006 "Glucose (substance)"
 * ingredient[=].strength.denominator = 1000 'ml' "ml"
 * ingredient[=].strength.numerator = 50 'g' "g"
 * ingredient[+].isActive = false
 //* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#00343 "Wasser für Injektionszwecke"
-* ingredient[=].itemCodeableConcept.coding[+] = $cas#7732-18-5 "WATER"
+* ingredient[=].itemCodeableConcept.coding[+] = $cas#7732-18-5
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#059QF0KO0R "WATER"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct#11713004 "Water (substance)"
 * status = #active
@@ -89,7 +89,7 @@ Usage: #example
 * status = #active
 * form = $standardterms#11213000 "Concentrate for solution for infusion"
 * ingredient.itemCodeableConcept.coding[0] = $fdasis#82F2G7BL4E "DOXORUBICIN HYDROCHLORIDE"
-* ingredient.itemCodeableConcept.coding[+] = $cas#25316-40-9 "Doxorubicin hydrochloride"
+* ingredient.itemCodeableConcept.coding[+] = $cas#25316-40-9
 * ingredient.isActive = true
 * ingredient.strength.numerator = 50 'mg' "mg"
 * ingredient.strength.denominator = 25 'ml' "ml"
@@ -130,7 +130,7 @@ Usage: #example
 * ingredient.extension.valueCoding = $cs-wirkstofftyp#IN "ingredient"
 * ingredient.itemCodeableConcept.coding[0] = $fdasis#905Z5W3GKH "THIOTEPA"
 * ingredient.itemCodeableConcept.coding[+] = $cs-ask#07962 "Thiotepa"
-* ingredient.itemCodeableConcept.coding[+] = $cas#52-24-4 "thiotepa"
+* ingredient.itemCodeableConcept.coding[+] = $cas#52-24-4
 
 Instance: mii-exa-medikation-medication-dolomo
 InstanceOf: mii-pr-medikation-medication

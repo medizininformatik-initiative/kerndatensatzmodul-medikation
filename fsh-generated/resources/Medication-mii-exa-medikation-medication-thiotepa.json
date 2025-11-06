@@ -39,8 +39,7 @@
           },
           {
             "code": "52-24-4",
-            "system": "http://terminology.hl7.org/CodeSystem/CAS",
-            "display": "thiotepa"
+            "system": "http://terminology.hl7.org/CodeSystem/CAS"
           }
         ]
       }

@@ -9,5 +9,5 @@ Description: "Enthaelt ASK-Codes der Version 20240418"
 * insert LicenseCodeableCCBY40
 * ^status = #active
 * ^experimental = false
-* ^date = "2025-03-19"
-* include codes from system $cs-ask|20240418
+* ^date = "2025-11-06"
+* include codes from system $cs-ask|20240723
