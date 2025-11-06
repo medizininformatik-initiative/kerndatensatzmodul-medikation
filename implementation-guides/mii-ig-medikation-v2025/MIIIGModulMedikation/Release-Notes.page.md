@@ -2,7 +2,7 @@
 
 **Version: 2025.0.1**
 
-Datum 04.11.2025
+Datum 06.11.2025
 
 - `Added`: `(MedicationAdministration|MedicationStatement|MedicationRequest).medicationCodeableConcept` enthält Verweis auf UNII. Siehe: https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/pull/106
 - `Added`: Neu hinzugefügt wurden ValueSets und Bindings für ATC (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc`), ASK (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask`) und UNII (Canonical URL: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii`), die mit dem MII-Terminologieserver (https://www.ontoserver.mii-termserv.de/) expandiert werden können und somit erweiterte Validierung ermöglichen.
