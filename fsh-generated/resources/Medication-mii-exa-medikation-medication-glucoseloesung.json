@@ -50,8 +50,7 @@
         "coding": [
           {
             "code": "50-99-7",
-            "system": "http://terminology.hl7.org/CodeSystem/CAS",
-            "display": "Glucose"
+            "system": "http://terminology.hl7.org/CodeSystem/CAS"
           },
           {
             "code": "5SL0G7R0OK",
@@ -87,8 +86,7 @@
         "coding": [
           {
             "code": "7732-18-5",
-            "system": "http://terminology.hl7.org/CodeSystem/CAS",
-            "display": "WATER"
+            "system": "http://terminology.hl7.org/CodeSystem/CAS"
           },
           {
             "code": "059QF0KO0R",
