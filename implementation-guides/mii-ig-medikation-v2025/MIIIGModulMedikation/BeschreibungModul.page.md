@@ -16,8 +16,6 @@ Beide Formen der Modelle sind entsprechend ihrer jeweiligen Zielsetzung kongruen
 
 **Informationsmodell Modul MEDIKATION mit Übersicht der Teilmodule:** 
 
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikation_Modul_AD_2x}}
-
 Es lassen sich u.a. folgende Typen der Dokumentation von Arzneimittelprozessen unterscheiden:
 
 1. Medikation im Krankenhaus (hauptsächlich stationär/teilstationär)
@@ -38,11 +36,6 @@ Es stehen entsprechend ihres Anwendungsbereiches fünf Teilmodule für die Dokum
 3. Medikationsverabreichung ([MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html)) beschreibt ein aktuelles Verabreichungereignis einer Medikation durch medizinisches Personal.
 
 ### Medikation
-
-**Informationsmodell Medikation:** 
-
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikation_2x}}
-
 
 #### Angabe der Einheit "Packung"
 
@@ -69,16 +62,12 @@ Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen
 
 **Kombinationspackungen (nach Anforderung der KBV)**
 
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Kombinationspackungen}}
+{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Kombinationspackungen.png}}
 
 Kombinationspackungen können auf einfache Weise durch eine hierarchische Schachtelung der Medication über eine Verknüpfung ausgehend von Item.reference auf andere Medication-Instanzen dargestellt werden. Damit würde die „obere“ Medication-Instanz als Packungshierarchie als Container der eigentlichen Medication dienen. Sie enthält auch die entsprechende PZN der Kombinationspackung. Die eigentliche Medikation („Untermedikation") würde als vollständige Medication-Instanzen abgebildet werden (jeweils ohne PZN, vollständige Medikationsdaten mit ASK und ggf. ATC etc).
 
 
 ### Medikationseintrag
-
-**Informationsmodell Medikationseintrag:** 
-
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationseintrag_2x}}
 
 Zur Dokumentation von der Verordnung oder Verabreichung unabhängiger Medikationsereignisse und -dokumentation z. B. in Medikationsplänen oder bei der Angabe von Medikationen durch den Patienten selber. 
 
@@ -100,10 +89,6 @@ Die Datensätze im Modul sind so strukturiert, dass die Information entsprechend
 
 Zur Erfassung von Medikationsplänen besteht die Möglichkeit mehrere Medikationseinträge in einer Liste zusammenzufassen. 
 
-**Informationsmodell Modul MEDIKATION Medikationsliste:** 
-
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Liste}}
-
 #### Aufnahme- und Entlassmedikation
 
 Die Art eines Medikationseintrages kann durch folgende Codes weiter spezifiziert werden. Die Flags werden jeweils an die Medikationseinträge verknüpft und an eine zusammenfassende Liste, (s. u.). 
@@ -116,19 +101,11 @@ Die Art eines Medikationseintrages kann durch folgende Codes weiter spezifiziert
 ### Medikationsverordnung (Arzneimittelanforderung)
 Zur Dokumentation einer Medikationsverordnung durch medizinisches Personal.
 
-**Abbildung Modul MEDIKATION Medikationsverordnung:** 
-
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationsverordnung_2x}}
-
 #### Änderung der Dosis bei Medikamenteneintrag und -verordnung
 
 Zur Abbildung von Dosisänderungen während der Behandlung muss jeweils eine neue Instanz von Medikationseintrag bzw. -verordnung mit der veränderten Dosierung angelegt werden. Die angegebenen Behandlungszeiträume sollten dann aneinander anschließen. Bei Medikationsverordnung kann zusätzlich über MedicationRequest.priorPrescription auf die vorhergehende Verordnung verlinkt werden.
 
 ### Medikationsverabreichung
-
-**Abbildung Modul MEDIKATION Medikationsverabreichung:**
-
-{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationsverabreichung_2x}}
 
 Die Medikationsverabreichung wird zur Dokumentation einer Einzelverabreichung einer Medikation auf Ereignisniveau verwendet, bei dem ein Patient ein Medikament einnimmt oder es ihm auf andere Weise verabreicht wird. Beispielhaft seien hier die Einnahme einer Tablette oder eine langlaufende Infusion genannt. Die Medikationsverabreichung ist in jedem Fall mit einem spezifischen Patienten verknüpft und kann darüber hinaus als Ereignis mit einer spezifischen Behandlungsepisode (Fall) und der zugrunde liegenden Medikationsverordnung verknüpft sein.
 Diese Ressource deckt die Verabreichung aller Medikamente (ausgenommen Impfstoffe) ab. Sie wird in erster Linie in der stationären Versorgung verwendet, um die Verabreichung von Medikamenten zu erfassen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Anwendungen usw. Es kann auch in ambulanten Einrichtungen zur Erfassung der Verabreichungen von Medikamenten verwendet werden. In einigen Fällen kann es für die Berichterstattung über die häusliche Gesundheitsfürsorge verwendet werden, z. B. für die Erfassung von selbst verabreichtem oder sogar geräteverabreichtem Insulin nach [FHIR R4 MedicationAdministration](http://hl7.org/fhir/R4/medicationadministration.html).

@@ -10,7 +10,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * insert Translation(^description, de-DE, Eine Anweisung oder Anforderung für die Bereitstellung des Medikaments und die Anweisungen zur Verabreichung des Medikaments.)
 * insert Translation(^description, en-US, An order or request for both supply of the medication and the instructions for administration of the medication to a patient.)
 * insert PR_CS_VS_Version
-* ^date = "2024-11-13"
+* ^date = "2025-12-18"
 * insert Publisher
 * insert LicenseCodeableCCBY40
 * . ^comment = "MI-I Medikamentenverordnung"
