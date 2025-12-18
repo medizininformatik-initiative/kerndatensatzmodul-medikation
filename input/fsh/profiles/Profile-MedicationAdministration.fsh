@@ -11,7 +11,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(^description, en-US, Describes the event of a patient consuming or otherwise being administered a medication.)
 * insert PR_CS_VS_Version
 * ^status = #active
-* ^date = "2024-11-13"
+* ^date = "2025-12-18"
 * insert Publisher
 * insert LicenseCodeableCCBY40
 * id MS

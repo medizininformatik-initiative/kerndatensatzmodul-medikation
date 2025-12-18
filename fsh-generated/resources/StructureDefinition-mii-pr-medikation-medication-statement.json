@@ -67,7 +67,7 @@
     ]
   },
   "status": "active",
-  "date": "2024-11-14",
+  "date": "2025-12-18",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -2852,7 +2852,7 @@
           {
             "code": "Quantity",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"
             ]
           }
         ],
