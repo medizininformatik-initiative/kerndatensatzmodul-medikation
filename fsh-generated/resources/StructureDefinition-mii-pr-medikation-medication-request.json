@@ -2106,9 +2106,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2137,9 +2134,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2196,9 +2190,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.numerator",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].numerator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2227,9 +2218,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio.denominator",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].denominator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2271,9 +2259,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.low",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].low",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2302,9 +2287,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].high",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2344,9 +2326,6 @@
             ]
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2380,9 +2359,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.maxDosePerPeriod.numerator",
         "path": "MedicationRequest.dosageInstruction.maxDosePerPeriod.numerator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2411,9 +2387,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
         "path": "MedicationRequest.dosageInstruction.maxDosePerPeriod.denominator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2442,9 +2415,6 @@
       {
         "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration",
         "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {

@@ -2072,9 +2072,6 @@
             }
           ]
         },
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2131,9 +2128,6 @@
       {
         "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator",
         "path": "MedicationAdministration.dosage.rate[x].numerator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2162,9 +2156,6 @@
       {
         "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator",
         "path": "MedicationAdministration.dosage.rate[x].denominator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2204,9 +2195,6 @@
             ]
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {

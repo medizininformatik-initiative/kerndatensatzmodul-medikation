@@ -19,15 +19,15 @@
         {
           "doseRange": {
             "high": {
-              "system": "http://unitsofmeasure.org",
               "value": 2600,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "milligram"
             },
             "low": {
-              "system": "http://unitsofmeasure.org",
               "value": 2400,
               "code": "mg",
+              "system": "http://unitsofmeasure.org",
               "unit": "milligram"
             }
           }
