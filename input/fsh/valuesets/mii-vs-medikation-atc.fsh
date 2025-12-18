@@ -10,6 +10,7 @@ Description: "Enthaelt ATC-Codes der Versionen 2018 bis 2024"
 * ^status = #active
 * ^experimental = false
 * ^date = "2025-03-19"
+* include codes from system $cs-atc|2025
 * include codes from system $cs-atc|2024
 * include codes from system $cs-atc|2023
 * include codes from system $cs-atc|2022

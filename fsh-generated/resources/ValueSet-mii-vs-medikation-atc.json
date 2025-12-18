@@ -44,6 +44,10 @@
     "include": [
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2025"
+      },
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2024"
       },
       {
