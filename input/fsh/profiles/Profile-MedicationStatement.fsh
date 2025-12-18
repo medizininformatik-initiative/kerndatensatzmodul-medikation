@@ -211,6 +211,7 @@ Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medika
 * insert Translation(note ^definition, en-US, Additional information about the medication statement as free text.)
 * dosage obeys dsg-1
 * dosage MS
+* dosage only $DosageDE
 * dosage ^short = "Dosierung"
 * insert Translation(dosage ^short, de-DE, Dosierung)
 * insert Translation(dosage ^short, en-US, Dosage)

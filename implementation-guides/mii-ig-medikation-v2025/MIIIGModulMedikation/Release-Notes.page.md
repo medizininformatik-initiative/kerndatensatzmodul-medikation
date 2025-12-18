@@ -1,5 +1,14 @@
 ## {{page-title}}
 
+**Version: 2026.0.0**
+
+Datum 18.12.2025
+
+- `Added`: Dependency auf de.fhir.medication hinzugefügt auf Version [STU1](https://ig.fhir.de/igs/medication/index.html).
+- `Added`: `MedicationStatement.dosage` und `MedicationRequest.dosageInstruction` verwenden für Dosierungsangaben [Dosage-Profil](https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html) aus de.fhir.medication.
+
+---
+
 **Version: 2025.0.1**
 
 Datum 06.11.2025

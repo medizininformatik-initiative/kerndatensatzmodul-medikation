@@ -157,6 +157,7 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * insert Translation(note ^definition, en-US, Additional information about the medication request as free text.)
 * dosageInstruction obeys dsg-1
 * dosageInstruction MS
+* dosageInstruction only $DosageDE
 * dosageInstruction ^short = "Dosierungsanweisung"
 * insert Translation(dosageInstruction ^short, de-DE, Dosierungsanweisung)
 * insert Translation(dosageInstruction ^short, en-US, Dosage instruction)

@@ -1422,6 +1422,14 @@
             }
           ]
         },
+        "type": [
+          {
+            "code": "Dosage",
+            "profile": [
+              "http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE"
+            ]
+          }
+        ],
         "constraint": [
           {
             "key": "dsg-1",
@@ -1439,45 +1447,14 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.dosageInstruction.text",
-        "path": "MedicationRequest.dosageInstruction.text",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing",
-        "path": "MedicationRequest.dosageInstruction.timing",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationRequest.dosageInstruction.timing.event",
         "path": "MedicationRequest.dosageInstruction.timing.event",
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]",
         "sliceName": "boundsDuration",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Duration"
@@ -1485,31 +1462,22 @@
         ],
         "patternDuration": {
           "system": "http://unitsofmeasure.org"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration.value",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration.unit",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].unit",
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration.system",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].system",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsDuration.code",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x].code",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.bounds[x]:boundsRange",
@@ -1635,43 +1603,13 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.frequency",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.frequencyMax",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.frequencyMax",
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
         "path": "MedicationRequest.dosageInstruction.timing.repeat.periodMax",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.dayOfWeek",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.timing.repeat.when",
-        "path": "MedicationRequest.dosageInstruction.timing.repeat.when",
         "mustSupport": true
       },
       {
@@ -2148,23 +2086,8 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "mustSupport": true
       },
       {
@@ -2240,22 +2163,6 @@
         "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code",
         "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.code",
         "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
-        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
-        "sliceName": "doseQuantity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ],
         "mustSupport": true
       },
       {
@@ -2433,7 +2340,7 @@
           {
             "code": "Quantity",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"
             ]
           }
         ],

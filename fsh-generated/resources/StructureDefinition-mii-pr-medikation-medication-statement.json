@@ -1930,6 +1930,14 @@
             }
           ]
         },
+        "type": [
+          {
+            "code": "Dosage",
+            "profile": [
+              "http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE"
+            ]
+          }
+        ],
         "constraint": [
           {
             "key": "dsg-1",
@@ -1947,45 +1955,14 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.text",
-        "path": "MedicationStatement.dosage.text",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing",
-        "path": "MedicationStatement.dosage.timing",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.timing.event",
         "path": "MedicationStatement.dosage.timing.event",
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.timing.repeat",
-        "path": "MedicationStatement.dosage.timing.repeat",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.bounds[x]",
-        "path": "MedicationStatement.dosage.timing.repeat.bounds[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration",
         "path": "MedicationStatement.dosage.timing.repeat.bounds[x]",
         "sliceName": "boundsDuration",
-        "min": 0,
-        "max": "1",
         "type": [
           {
             "code": "Duration"
@@ -1993,31 +1970,22 @@
         ],
         "patternDuration": {
           "system": "http://unitsofmeasure.org"
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration.value",
         "path": "MedicationStatement.dosage.timing.repeat.bounds[x].value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration.unit",
-        "path": "MedicationStatement.dosage.timing.repeat.bounds[x].unit",
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration.system",
         "path": "MedicationStatement.dosage.timing.repeat.bounds[x].system",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsDuration.code",
         "path": "MedicationStatement.dosage.timing.repeat.bounds[x].code",
-        "min": 1,
-        "mustSupport": true
+        "min": 1
       },
       {
         "id": "MedicationStatement.dosage.timing.repeat.bounds[x]:boundsRange",
@@ -2143,43 +2111,13 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.timing.repeat.frequency",
-        "path": "MedicationStatement.dosage.timing.repeat.frequency",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.timing.repeat.frequencyMax",
         "path": "MedicationStatement.dosage.timing.repeat.frequencyMax",
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.timing.repeat.period",
-        "path": "MedicationStatement.dosage.timing.repeat.period",
-        "mustSupport": true
-      },
-      {
         "id": "MedicationStatement.dosage.timing.repeat.periodMax",
         "path": "MedicationStatement.dosage.timing.repeat.periodMax",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.periodUnit",
-        "path": "MedicationStatement.dosage.timing.repeat.periodUnit",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.dayOfWeek",
-        "path": "MedicationStatement.dosage.timing.repeat.dayOfWeek",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.timeOfDay",
-        "path": "MedicationStatement.dosage.timing.repeat.timeOfDay",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.timing.repeat.when",
-        "path": "MedicationStatement.dosage.timing.repeat.when",
         "mustSupport": true
       },
       {
@@ -2656,23 +2594,47 @@
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.doseAndRate",
-        "path": "MedicationStatement.dosage.doseAndRate",
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
         "mustSupport": true
       },
       {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]",
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity",
         "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
+        "sliceName": "doseQuantity",
+        "type": [
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          }
+        ],
+        "patternQuantity": {
+          "system": "http://unitsofmeasure.org"
+        }
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.value",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x].value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.unit",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x].unit",
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.system",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x].system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.code",
+        "path": "MedicationStatement.dosage.doseAndRate.dose[x].code",
+        "min": 1,
         "mustSupport": true
       },
       {
@@ -2746,48 +2708,6 @@
       {
         "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseRange.high.code",
         "path": "MedicationStatement.dosage.doseAndRate.dose[x].high.code",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity",
-        "path": "MedicationStatement.dosage.doseAndRate.dose[x]",
-        "sliceName": "doseQuantity",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Quantity",
-            "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
-            ]
-          }
-        ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.value",
-        "path": "MedicationStatement.dosage.doseAndRate.dose[x].value",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.unit",
-        "path": "MedicationStatement.dosage.doseAndRate.dose[x].unit",
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.system",
-        "path": "MedicationStatement.dosage.doseAndRate.dose[x].system",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "MedicationStatement.dosage.doseAndRate.dose[x]:doseQuantity.code",
-        "path": "MedicationStatement.dosage.doseAndRate.dose[x].code",
         "min": 1,
         "mustSupport": true
       },
@@ -2966,7 +2886,7 @@
           {
             "code": "Quantity",
             "profile": [
-              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity|4.0.1"
             ]
           }
         ],

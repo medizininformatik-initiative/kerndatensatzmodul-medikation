@@ -12,7 +12,7 @@ Alias: $medicine-route-of-administration = http://hl7.org/fhir/uv/ips/ValueSet/m
 Alias: $standardterms = http://standardterms.edqm.eu
 Alias: $cs-pzn = http://fhir.de/CodeSystem/ifa/pzn
 Alias: $fdasis = http://fdasis.nlm.nih.gov
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230731
+Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701
 Alias: $sct-no-ver = http://snomed.info/sct
 Alias: $cs-ops = http://fhir.de/CodeSystem/bfarm/ops
 Alias: $list-example-use-codes = http://terminology.hl7.org/CodeSystem/list-example-use-codes
@@ -21,3 +21,5 @@ Alias: $pzn-vs = http://fhir.de/ValueSet/ifa/pzn
 Alias: $cas = http://terminology.hl7.org/CodeSystem/CAS
 Alias: $ucum = http://unitsofmeasure.org
 Alias: $unii = http://fdasis.nlm.nih.gov
+// from Medication IG DE
+Alias: $DosageDE = http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE
