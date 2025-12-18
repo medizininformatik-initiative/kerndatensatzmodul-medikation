@@ -10,27 +10,27 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2025.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2026.0.0"
     ]
   },
   "dosage": {
     "dose": {
-      "system": "http://unitsofmeasure.org",
       "value": 85,
       "code": "mg",
+      "system": "http://unitsofmeasure.org",
       "unit": "mg"
     },
     "rateRatio": {
       "denominator": {
-        "system": "http://unitsofmeasure.org",
         "value": 1,
         "code": "h",
+        "system": "http://unitsofmeasure.org",
         "unit": "hour"
       },
       "numerator": {
-        "system": "http://unitsofmeasure.org",
         "value": 250,
         "code": "mL",
+        "system": "http://unitsofmeasure.org",
         "unit": "milliliter"
       }
     },

@@ -26,14 +26,14 @@ Usage: #example
 //* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#12829 "Glucose"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#50-99-7
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#5SL0G7R0OK "ANHYDROUS DEXTROSE"
-* ingredient[=].itemCodeableConcept.coding[+] = $sct#67079006 "Glucose (substance)"
+* ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#67079006 "Glucose (substance)"
 * ingredient[=].strength.denominator = 1000 'ml' "ml"
 * ingredient[=].strength.numerator = 50 'g' "g"
 * ingredient[+].isActive = false
 //* ingredient[=].itemCodeableConcept.coding[0] = $cs-ask#00343 "Wasser für Injektionszwecke"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#7732-18-5
 * ingredient[=].itemCodeableConcept.coding[+] = $fdasis#059QF0KO0R "WATER"
-* ingredient[=].itemCodeableConcept.coding[+] = $sct#11713004 "Water (substance)"
+* ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#11713004 "Water (substance)"
 * status = #active
 
 Instance: mii-exa-medikation-medication-calcium
@@ -50,7 +50,7 @@ Usage: #example
 * ingredient[=].extension.valueCoding = $cs-wirkstofftyp#PIN
 * ingredient[=].itemCodeableConcept.coding[0] = $fdasis#472LWJ3Y9N "CALCIUM LACTATE GLUCONATE"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#11116-97-5 "Calcium lactate gluconate"
-* ingredient[=].itemCodeableConcept.coding[+] = $sct#422232005 "Calcium lactate gluconate (substance)"
+* ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#422232005 "Calcium lactate gluconate (substance)"
 * ingredient[=].strength.numerator = 2945.15 'mg' "milligram"
 * ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
 * insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
@@ -59,7 +59,7 @@ Usage: #example
 * ingredient[=].extension.valueCoding = $cs-wirkstofftyp#PIN
 * ingredient[=].itemCodeableConcept.coding[0] = $fdasis#H0G9379FGK "CALCIUM CARBONATE"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#471-34-1 "Calcium carbonate"
-* ingredient[=].itemCodeableConcept.coding[+] = $sct#387307005 "Calcium carbonate (substance)"
+* ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#387307005 "Calcium carbonate (substance)"
 * ingredient[=].strength.numerator = 300 'mg' "milligram"
 * ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
 * insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
@@ -74,7 +74,7 @@ Usage: #example
 * ingredient[=].extension[=].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
 * ingredient[=].itemCodeableConcept.coding[0] = $fdasis#2M83C4R6ZB "CALCIUM CATION"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#14127-61-8 "Calcium cation"
-* ingredient[=].itemCodeableConcept.coding[+] = $sct#5540006 "Calcium (substance)"
+* ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#5540006 "Calcium (substance)"
 * ingredient[=].strength.numerator = 500.54 'mg' "milligram"
 * ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
 * insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
@@ -323,7 +323,7 @@ InstanceOf: Procedure
 Usage: #example
 * insert TestDataLabel
 //* meta.profile = "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure"
-* category = $sct#182832007 "Procedure related to management of drug administration (procedure)"
+* category = $sct-no-ver#182832007 "Procedure related to management of drug administration (procedure)"
 * code.coding = $cs-ops#6-007.nm "Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg"
 * code.coding.version = "2020"
 * performedDateTime = "2018-05-26"
@@ -335,16 +335,21 @@ InstanceOf: mii-pr-medikation-medication-request
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest)
+* extension[+].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationRequest.renderedDosageInstruction"
+* extension[=].valueMarkdown = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * status = #active
 * intent = #order
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
 * subject = Reference(Patient/example)
 * authoredOn = "2021-12-21T11:41:00+01:00"
-* dosageInstruction.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
 * dosageInstruction.timing.repeat.periodUnit = #wk
 * dosageInstruction.route = $standardterms#20045000 "Intravenous use"
+* dosageInstruction.doseAndRate.doseQuantity.value = 50
+* dosageInstruction.doseAndRate.doseQuantity.unit = "mg/m2 BSA"
+* dosageInstruction.doseAndRate.doseQuantity.system = $ucum
+* dosageInstruction.doseAndRate.doseQuantity.code = #mg/m2
 
 Instance: mii-exa-medikation-medikationsliste-aufnahmemedikation
 InstanceOf: mii-pr-medikation-medikationsliste
@@ -412,35 +417,18 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
+* extension[0].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-MedicationStatement.renderedDosageInstruction"
+* extension[=].valueMarkdown = "1-0-0-0 Tablette HCT 12,5mg oral"
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#C03AA03
 * medicationCodeableConcept.text = "HCT 12,5mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
-* dosage[0].text = "HCT 12,5 mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
-* dosage[=].timing.repeat.period = 1
-* dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "08:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
-* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
-* dosage[=].timing.repeat.period = 1
-* dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "12:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
-* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
-* dosage[=].timing.repeat.period = 1
-* dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "18:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
-* dosage[+].text = "HCT 12,5 mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
-* dosage[=].timing.repeat.period = 1
-* dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "22:00:00"
-* dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
+* dosage.timing.repeat.frequency = 1
+* dosage.timing.repeat.period = 1
+* dosage.timing.repeat.periodUnit = #d
+* dosage.timing.repeat.when[0] = #MORN
+* dosage.doseAndRate.doseQuantity = 1 $standardterms#15054000 "Tablet"
 
 Instance: mii-exa-medikation-medication-statement-ibuprofen
 InstanceOf: mii-pr-medikation-medication-statement

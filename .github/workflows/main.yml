@@ -30,6 +30,9 @@ jobs:
       JAVA_VALIDATION_ENABLED: true
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
+      VALIDATION_REPORT_INCLUDE: errors #errors|warnings|all
+      VALIDATION_REPORT_FILTERS: |
+        MedicationStatement-mii-exa-medikation-medication-statement-hct.json|Terminology_TX_Confirm_4a|*standardterms.edqm.eu*|*dosage*dose*
     secrets: inherit
 
   RELEASE:

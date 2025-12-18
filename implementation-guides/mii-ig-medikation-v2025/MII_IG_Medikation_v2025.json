@@ -16,11 +16,11 @@
   ],
   "id": "mii-ig-medikation",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
-  "version": "2025.0.1",
+  "version": "2026.0.0",
   "name": "MII_IG_Medikation",
-  "title": "MII IG Medikation v2025",
+  "title": "MII IG Medikation v2026",
   "status": "active",
-  "description": "Modul Medikation - Version 2025 - IG",
+  "description": "Modul Medikation - Version 2026 - IG",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -40,14 +40,14 @@
   "dependsOn": [
     {
       "packageId": "hl7.fhir.uv.ips",
-      "version": "1.1.x",
-      "uri": "http://fhir.org/packages/hl7.fhir.uv.ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
       "id": "hl7_fhir_uv_ips"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
-      "version": "2025.0.x",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.meta/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.x",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
       "id": "de_medizininformatikinitiative_kerndatensatz_meta"
     },
     {
@@ -61,6 +61,12 @@
       "version": "3.0.1",
       "uri": "http://fhir.de/packages/de.ihe-d.terminology",
       "id": "de_ihe_d_terminology"
+    },
+    {
+      "packageId": "de.fhir.medication",
+      "version": "1.0.x",
+      "uri": "http://ig.fhir.de/igs/medication/ImplementationGuide/de.fhir.medication",
+      "id": "de_fhir_medication"
     }
   ],
   "definition": {

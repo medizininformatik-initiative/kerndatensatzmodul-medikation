@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
-  "version": "2025.0.1",
+  "version": "2026.0.0",
   "name": "MII_PR_Medikation_MedicationAdministration",
   "_name": {
     "extension": [
@@ -2072,9 +2072,6 @@
             }
           ]
         },
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2131,9 +2128,6 @@
       {
         "id": "MedicationAdministration.dosage.rate[x]:rateRatio.numerator",
         "path": "MedicationAdministration.dosage.rate[x].numerator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2162,9 +2156,6 @@
       {
         "id": "MedicationAdministration.dosage.rate[x]:rateRatio.denominator",
         "path": "MedicationAdministration.dosage.rate[x].denominator",
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {
@@ -2204,9 +2195,6 @@
             ]
           }
         ],
-        "patternQuantity": {
-          "system": "http://unitsofmeasure.org"
-        },
         "mustSupport": true
       },
       {

@@ -230,7 +230,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.dose ^definition = "Menge des Medikaments pro Dosis"
 * insert Translation(dosage.dose ^definition, de-DE, Menge des Medikaments pro Dosis)
 * insert Translation(dosage.dose ^definition, en-US, The amount of medication per dose)
-* dosage.dose ^patternQuantity.system = "http://unitsofmeasure.org"
+//* dosage.dose ^patternQuantity.system = "http://unitsofmeasure.org"
 * dosage.dose.value 1.. MS
 * dosage.dose.unit MS
 * dosage.dose.system 1.. MS
@@ -238,19 +238,19 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * dosage.rate[x] MS
 * dosage.rateRatio MS
 * dosage.rateRatio.numerator MS
-* dosage.rateRatio.numerator ^patternQuantity.system = "http://unitsofmeasure.org"
+//* dosage.rateRatio.numerator ^patternQuantity.system = "http://unitsofmeasure.org"
 * dosage.rateRatio.numerator.value 1.. MS
 * dosage.rateRatio.numerator.unit MS
 * dosage.rateRatio.numerator.system 1.. MS
 * dosage.rateRatio.numerator.code 1.. MS
 * dosage.rateRatio.denominator MS
-* dosage.rateRatio.denominator ^patternQuantity.system = "http://unitsofmeasure.org"
+//* dosage.rateRatio.denominator ^patternQuantity.system = "http://unitsofmeasure.org"
 * dosage.rateRatio.denominator.value 1.. MS
 * dosage.rateRatio.denominator.unit MS
 * dosage.rateRatio.denominator.system 1.. MS
 * dosage.rateRatio.denominator.code 1.. MS
 * dosage.rateQuantity MS
-* dosage.rateQuantity ^patternQuantity.system = "http://unitsofmeasure.org"
+//* dosage.rateQuantity ^patternQuantity.system = "http://unitsofmeasure.org"
 * dosage.rateQuantity.value 1.. MS
 * dosage.rateQuantity.unit MS
 * dosage.rateQuantity.system 1.. MS

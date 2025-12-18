@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2025.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.0"
     ]
   },
   "code": {
@@ -70,7 +70,6 @@
           {
             "code": "422232005",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Calcium lactate gluconate (substance)"
           }
         ]
@@ -127,7 +126,6 @@
           {
             "code": "387307005",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Calcium carbonate (substance)"
           }
         ]
@@ -202,7 +200,6 @@
           {
             "code": "5540006",
             "system": "http://snomed.info/sct",
-            "version": "http://snomed.info/sct/900000000000207008/version/20230731",
             "display": "Calcium (substance)"
           }
         ]
