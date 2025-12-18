@@ -32,7 +32,7 @@ jobs:
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
       VALIDATION_REPORT_INCLUDE: errors #errors|warnings|all
       VALIDATION_REPORT_FILTERS: |
-        MedicationStatement-mii-exa-medikation-medication-statement-hct.json|Terminology_TX_Confirm_4a||MedicationStatement.​dosage[0].​doseAndRate[0].​dose.​ofType(Quantity)
+        MedicationStatement-mii-exa-medikation-medication-statement-hct.json|Terminology_TX_Confirm_4a|*standardterms.edqm.eu*|*dosage*dose*
     secrets: inherit
 
   RELEASE:
