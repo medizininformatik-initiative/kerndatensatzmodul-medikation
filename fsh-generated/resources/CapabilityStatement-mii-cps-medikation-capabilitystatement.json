@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "mii-cps-medikation-capabilitystatement",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata",
-  "version": "2025.0.1",
+  "version": "2026.0.0",
   "extension": [
     {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
@@ -65,7 +65,7 @@
           ],
           "profile": "http://hl7.org/fhir/StructureDefinition/List",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2025.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -284,7 +284,7 @@
           ],
           "profile": "http://hl7.org/fhir/StructureDefinition/Medication",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2025.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -514,7 +514,7 @@
           ],
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationAdministration",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2025.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -832,7 +832,7 @@
           ],
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2025.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2026.0.0"
           ],
           "_supportedProfile": [
             {
@@ -1249,7 +1249,7 @@
           ],
           "profile": "http://hl7.org/fhir/StructureDefinition/MedicationStatement",
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2025.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.0"
           ],
           "_supportedProfile": [
             {
