@@ -13,7 +13,7 @@ RuleSet: Profile (profile)
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].supportedProfile[+] = "{profile}|2026.0.0"
+* rest.resource[=].supportedProfile[+] = "{profile}|2026.0.1"
 * rest.resource[=].supportedProfile[=].extension[0].url = $exp
 * rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
 
@@ -48,7 +48,7 @@ Usage: #definition
 * title = "MII CPS Medikation CapabilityStatement"
 * status = #active
 * experimental = false
-* date = "2025-03-25"
+* date = "2026-02-13"
 * insert SP_Publisher
 * description = "Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren."
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"

@@ -4,15 +4,15 @@
   "name": "MII_VS_Medikation_ASK",
   "id": "mii-vs-medikation-ask",
   "title": "MII VS Medikation ASK",
-  "description": "Enthaelt ASK-Codes der Version 20240418",
+  "description": "Enthaelt alle ASK-Codes",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
-  "copyright": "BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
-  "version": "2026.0.0",
+  "copyright": "BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+  "version": "2026.0.1",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -39,12 +39,11 @@
     }
   ],
   "experimental": false,
-  "date": "2025-11-06",
+  "date": "2026-02-13",
   "compose": {
     "include": [
       {
-        "system": "http://fhir.de/CodeSystem/ask",
-        "version": "20240723"
+        "system": "http://fhir.de/CodeSystem/ask"
       }
     ]
   }

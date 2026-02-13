@@ -5,9 +5,10 @@ applyExtensionMetadataToRoot: false
 id: mii-ig-medikation
 name: MII_IG_Medikation
 status: active
-version: "2026.0.0"
+version: "2026.0.1"
 packageId: de.medizininformatikinitiative.kerndatensatz.medikation
 copyrightYear: 2019+
+jurisdiction: urn:iso:std:iso:3166#DE
 releaseLabel: ci-build
 publisher:
   name: Medizininformatik Initiative

@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+**Version: 2026.0.1**
+
+Datum 13.02.2026
+
+- `Changed`: ASK-ValueSet: Spezifische Versionierung in `ValueSet.compose.include.version` entfernt, um automatisch gegen die aktuelle CodeSystem-Version auf dem Terminologie-Server zu expandieren.
+
 **Version: 2026.0.0**
 
 Datum 18.12.2025
