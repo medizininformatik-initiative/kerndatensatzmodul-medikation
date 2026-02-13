@@ -1,5 +1,5 @@
 RuleSet: Version
-* version = "2026.0.0"
+* version = "2026.0.1"
 
 RuleSet: PR_CS_VS_Version
-* ^version = "2026.0.0"
+* ^version = "2026.0.1"
