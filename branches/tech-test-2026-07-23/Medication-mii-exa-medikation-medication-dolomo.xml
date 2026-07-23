@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-medication-dolomo"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication mii-exa-medikation-medication-dolomo</b></p><a name="mii-exa-medikation-medication-dolomo"> </a><a name="hcmii-exa-medikation-medication-dolomo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/ifa/pzn 02758994}, {http://fhir.de/CodeSystem/bfarm/atc N02BE51}">dolomo® TN</span></p><p><b>form</b>: <span title="Codes:{http://standardterms.edqm.eu 10219000}">Tablet</span></p><p><b>amount</b>: 27 Tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span>/1 Package<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p><blockquote><p><b>ingredient</b></p><p><b>item</b>: <a href="Medication-mii-exa-medikation-medication-dolomo-tag.html">Medication Paracetamol, Kombinationen exkl. Psycholeptika</a></p></blockquote><blockquote><p><b>ingredient</b></p><p><b>item</b>: <a href="Medication-mii-exa-medikation-medication-dolomo-nacht.html">Medication Paracetamol, Kombinationen exkl. Psycholeptika</a></p></blockquote></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+      <version value="02.08.2024"/>
+      <code value="02758994"/>
+      <display value="dolomo® TN"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2023"/>
+      <code value="N02BE51"/>
+      <display value="Paracetamol, Kombinationen exkl. Psycholeptika"/>
+    </coding>
+  </code>
+  <form>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="10219000"/>
+      <display value="Tablet"/>
+    </coding>
+  </form>
+  <amount>
+    <numerator>
+      <extension url="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation">
+        <valueQuantity>
+          <value value="27"/>
+          <unit value="Tablet"/>
+          <system value="http://standardterms.edqm.eu"/>
+          <code value="10219000"/>
+        </valueQuantity>
+      </extension>
+      <value value="27"/>
+      <unit value="Tablet"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </numerator>
+    <denominator>
+      <value value="1"/>
+      <unit value="Package"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="1"/>
+    </denominator>
+  </amount>
+  <ingredient>
+    <itemReference>
+      <reference value="Medication/mii-exa-medikation-medication-dolomo-tag"/>
+    </itemReference>
+  </ingredient>
+  <ingredient>
+    <itemReference>
+      <reference value="Medication/mii-exa-medikation-medication-dolomo-nacht"/>
+    </itemReference>
+  </ingredient>
+</Medication>

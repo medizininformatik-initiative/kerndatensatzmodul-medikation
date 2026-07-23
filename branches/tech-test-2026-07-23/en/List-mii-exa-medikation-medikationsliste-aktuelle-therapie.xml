@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-medikationsliste-aktuelle-therapie"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List mii-exa-medikation-medikationsliste-aktuelle-therapie</b></p><a name="mii-exa-medikation-medikationsliste-aktuelle-therapie"> </a><a name="hcmii-exa-medikation-medikationsliste-aktuelle-therapie"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medikationsliste.html">MII PR Medikation Medikationsliste</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Aktuelle medikamentöse Therapie</h2><table class="clstu"><tr><td>Mode: Working List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Patient/example">Patient/example</a></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/MedicationStatement/example">MedicationStatement/example</a></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <mode value="working"/>
+  <title value="Aktuelle medikamentöse Therapie"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+      <code value="medications"/>
+    </coding>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"/>
+      <code value="E200"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/example"/>
+    </item>
+  </entry>
+</List>

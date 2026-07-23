@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-medikation-wirkstofftyp"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-medikation-wirkstofftyp</b></p><a name="mii-cs-medikation-wirkstofftyp"> </a><a name="hcmii-cs-medikation-wirkstofftyp"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td></tr><tr><td style="white-space:nowrap">IN<a name="mii-cs-medikation-wirkstofftyp-IN"> </a></td><td>ingredient</td><td>The name of the substance.</td><td>Wirkstoff allgemein</td></tr><tr><td style="white-space:nowrap">PIN<a name="mii-cs-medikation-wirkstofftyp-PIN"> </a></td><td>precise ingredient</td><td>The name of the substance expressed precisely as a salt or ester of the ingredient.</td><td>Wirkstoff präzise</td></tr><tr><td style="white-space:nowrap">MIN<a name="mii-cs-medikation-wirkstofftyp-MIN"> </a></td><td>multiple ingredients</td><td>The name of the substances in a combination product.</td><td>Kombinationswirkstoff</td></tr></table></div>
+  </text>
+  <extension url="https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://hl7.org/fhir/spdx-license"/>
+        <code value="CC-BY-4.0"/>
+        <display value="Creative Commons Attribution 4.0 International"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+  <version value="2026.0.1"/>
+  <name value="MII_CS_Medikation_Wirkstofftyp">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="MII_CS_Medikation_IngredientType"/>
+      </extension>
+    </extension>
+  </name>
+  <title value="MII CS Medikation Wirkstofftyp">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="MII CS Medikation Ingredient Type"/>
+      </extension>
+    </extension>
+  </title>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-11-14"/>
+  <publisher value="Medizininformatik Initiative"/>
+  <contact>
+    <name value="Medizininformatik Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.medizininformatik-initiative.de/"/>
+    </telecom>
+  </contact>
+  <description value="Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en-US"/>
+      </extension>
+      <extension url="content">
+        <valueString value="Codes for differentiating ingredients between exact substance e.g. salt, ester, general normalized substance and combination code for several active ingredients."/>
+      </extension>
+    </extension>
+  </description>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="IN"/>
+    <display value="ingredient"/>
+    <definition value="The name of the substance."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Wirkstoff allgemein"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="PIN"/>
+    <display value="precise ingredient"/>
+    <definition value="The name of the substance expressed precisely as a salt or ester of the ingredient."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Wirkstoff präzise"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="MIN"/>
+    <display value="multiple ingredients"/>
+    <definition value="The name of the substances in a combination product."/>
+    <designation>
+      <language value="de-DE"/>
+      <value value="Kombinationswirkstoff"/>
+    </designation>
+  </concept>
+</CodeSystem>

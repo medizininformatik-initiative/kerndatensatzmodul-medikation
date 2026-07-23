@@ -1,0 +1,1688 @@
+{
+  "date" : "Thu, 23 Jul, 2026 15:53:09 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-mii-ig-medikation.json",
+    "size" : 16203,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 110,
+      "length" : 11
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 10
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 54
+    },
+    {
+      "activity" : "validate",
+      "start" : 179,
+      "length" : 15851
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 116
+    },
+    {
+      "activity" : "generate2",
+      "start" : 296,
+      "length" : 130
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement.json",
+    "size" : 59496,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 11
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 15
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 55
+    },
+    {
+      "activity" : "validate",
+      "start" : 176,
+      "length" : 3038
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 100
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 131
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 315,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-mii-cs-medikation-wirkstofftyp.json",
+    "size" : 3543,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 7
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 142,
+      "length" : 3744
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 82
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 93
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/List-mii-exa-medikation-list-admission.json",
+    "size" : 1444,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 112,
+      "length" : 3254
+    },
+    {
+      "activity" : "loadLists",
+      "start" : 195,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 195,
+      "length" : 32
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 32
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/List-mii-exa-medikation-medikationsliste-aktuelle-therapie.json",
+    "size" : 977,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 116,
+      "length" : 3
+    },
+    {
+      "activity" : "loadLists",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 195,
+      "length" : 12
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/List-mii-exa-medikation-medikationsliste-aufnahmemedikation.json",
+    "size" : 965,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 116,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 195,
+      "length" : 13
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-ass-100.json",
+    "size" : 1907,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 116,
+      "length" : 1370
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 195,
+      "length" : 5939
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-caelyx.json",
+    "size" : 1740,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 117,
+      "length" : 892
+    },
+    {
+      "activity" : "validate",
+      "start" : 201,
+      "length" : 6445
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-calcium.json",
+    "size" : 6811,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 118,
+      "length" : 2681
+    },
+    {
+      "activity" : "validate",
+      "start" : 207,
+      "length" : 12875
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 13
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-dolomo-nacht.json",
+    "size" : 4325,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 121,
+      "length" : 3578
+    },
+    {
+      "activity" : "validate",
+      "start" : 220,
+      "length" : 8248
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-dolomo-tag.json",
+    "size" : 4304,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 124,
+      "length" : 3593
+    },
+    {
+      "activity" : "validate",
+      "start" : 229,
+      "length" : 6785
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 14
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-dolomo.json",
+    "size" : 1851,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 128,
+      "length" : 896
+    },
+    {
+      "activity" : "validate",
+      "start" : 235,
+      "length" : 3102
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-glucoseloesung.json",
+    "size" : 2525,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 129,
+      "length" : 899
+    },
+    {
+      "activity" : "validate",
+      "start" : 238,
+      "length" : 5998
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-propofol.json",
+    "size" : 1415,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 130,
+      "length" : 883
+    },
+    {
+      "activity" : "validate",
+      "start" : 244,
+      "length" : 3650
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-rezeptur.json",
+    "size" : 1577,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 130,
+      "length" : 892
+    },
+    {
+      "activity" : "validate",
+      "start" : 248,
+      "length" : 1811
+    },
+    {
+      "activity" : "translate",
+      "start" : 288,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Medication-mii-exa-medikation-medication-thiotepa.json",
+    "size" : 1327,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 131,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 250,
+      "length" : 2357
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationAdministration-mii-exa-medikation-medication-administration.json",
+    "size" : 1401,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 131,
+      "length" : 1356
+    },
+    {
+      "activity" : "validate",
+      "start" : 252,
+      "length" : 4069
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 16
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationRequest-mii-exa-medikation-medication-request-caelyx.json",
+    "size" : 1578,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 133,
+      "length" : 469
+    },
+    {
+      "activity" : "validate",
+      "start" : 158,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 256,
+      "length" : 2239
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 24
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-caelyx.json",
+    "size" : 1174,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 133,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 259,
+      "length" : 18
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-concor.json",
+    "size" : 2722,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 133,
+      "length" : 1818
+    },
+    {
+      "activity" : "validate",
+      "start" : 259,
+      "length" : 8165
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-hct.json",
+    "size" : 1458,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 135,
+      "length" : 1820
+    },
+    {
+      "activity" : "validate",
+      "start" : 267,
+      "length" : 1416
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.json",
+    "size" : 1392,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 137,
+      "length" : 447
+    },
+    {
+      "activity" : "validate",
+      "start" : 268,
+      "length" : 2750
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.json",
+    "size" : 1520,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 137,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 271,
+      "length" : 3600
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-offset.json",
+    "size" : 1337,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 137,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 275,
+      "length" : 478
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.json",
+    "size" : 1356,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 137,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 275,
+      "length" : 492
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.json",
+    "size" : 2739,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 137,
+      "length" : 1818
+    },
+    {
+      "activity" : "validate",
+      "start" : 276,
+      "length" : 8192
+    },
+    {
+      "activity" : "generate1",
+      "start" : 288,
+      "length" : 41
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement.json",
+    "size" : 1400,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 139,
+      "length" : 452
+    },
+    {
+      "activity" : "validate",
+      "start" : 284,
+      "length" : 1829
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Procedure-mii-exa-medikation-procedure-thiotepa.json",
+    "size" : 889,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 140,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 286,
+      "length" : 2285
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstoffrelation.json",
+    "size" : 4608,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 110,
+      "length" : 13
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 140,
+      "length" : 58
+    },
+    {
+      "activity" : "validate",
+      "start" : 158,
+      "length" : 2963
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 61
+    },
+    {
+      "activity" : "generate2",
+      "start" : 297,
+      "length" : 590
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 312
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 2
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 396,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstofftyp.json",
+    "size" : 3700,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 110,
+      "length" : 9
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 140,
+      "length" : 12
+    },
+    {
+      "activity" : "validate",
+      "start" : 161,
+      "length" : 780
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 45
+    },
+    {
+      "activity" : "generate2",
+      "start" : 298,
+      "length" : 172
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 69
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-lm-medikation.json",
+    "size" : 79374,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 14
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 31
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 110,
+      "length" : 64
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 140,
+      "length" : 110
+    },
+    {
+      "activity" : "validate",
+      "start" : 162,
+      "length" : 2150
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 558
+    },
+    {
+      "activity" : "generate2",
+      "start" : 298,
+      "length" : 1011
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 477
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 315,
+      "length" : 1
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 14
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-administration.json",
+    "size" : 68048,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 13
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 23
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 110,
+      "length" : 125
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 140,
+      "length" : 1459
+    },
+    {
+      "activity" : "validate",
+      "start" : 164,
+      "length" : 2736
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 289,
+      "length" : 593
+    },
+    {
+      "activity" : "generate2",
+      "start" : 299,
+      "length" : 1236
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 405
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 18
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 6
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-request.json",
+    "size" : 87049,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 15
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 33
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 110,
+      "length" : 132
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 141,
+      "length" : 203
+    },
+    {
+      "activity" : "validate",
+      "start" : 167,
+      "length" : 3325
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 290,
+      "length" : 731
+    },
+    {
+      "activity" : "generate2",
+      "start" : 300,
+      "length" : 1777
+    },
+    {
+      "activity" : "generate2",
+      "start" : 313,
+      "length" : 585
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 23
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 396,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-statement.json",
+    "size" : 93968,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 16
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 33
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 111,
+      "length" : 107
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 141,
+      "length" : 183
+    },
+    {
+      "activity" : "validate",
+      "start" : 170,
+      "length" : 3097
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 3
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 610
+    },
+    {
+      "activity" : "generate2",
+      "start" : 302,
+      "length" : 1844
+    },
+    {
+      "activity" : "generate2",
+      "start" : 313,
+      "length" : 416
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 28
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication.json",
+    "size" : 24804,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 6
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 12
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 111,
+      "length" : 41
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 92
+    },
+    {
+      "activity" : "validate",
+      "start" : 173,
+      "length" : 1441
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 259
+    },
+    {
+      "activity" : "generate2",
+      "start" : 304,
+      "length" : 715
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 154
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-mii-pr-medikation-medikationsliste.json",
+    "size" : 23023,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 8
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 111,
+      "length" : 22
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 29
+    },
+    {
+      "activity" : "validate",
+      "start" : 175,
+      "length" : 1208
+    },
+    {
+      "activity" : "generate1",
+      "start" : 291,
+      "length" : 470
+    },
+    {
+      "activity" : "generate2",
+      "start" : 304,
+      "length" : 362
+    },
+    {
+      "activity" : "generate2",
+      "start" : 314,
+      "length" : 67
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 5
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 396,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 396,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-medikation-ask.json",
+    "size" : 1415,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 5
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 42
+    },
+    {
+      "activity" : "validate",
+      "start" : 146,
+      "length" : 1502
+    },
+    {
+      "activity" : "generate1",
+      "start" : 292,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 305,
+      "length" : 821
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-medikation-atc.json",
+    "size" : 2176,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 147,
+      "length" : 7749
+    },
+    {
+      "activity" : "generate1",
+      "start" : 292,
+      "length" : 19
+    },
+    {
+      "activity" : "generate2",
+      "start" : 306,
+      "length" : 5073
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-medikation-fallkontext.json",
+    "size" : 1877,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 14
+    },
+    {
+      "activity" : "validate",
+      "start" : 155,
+      "length" : 624
+    },
+    {
+      "activity" : "checkConformanceResources3",
+      "start" : 195,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 292,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 311,
+      "length" : 53
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-medikation-unii.json",
+    "size" : 1356,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 112,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 438
+    },
+    {
+      "activity" : "validate",
+      "start" : 156,
+      "length" : 1960
+    },
+    {
+      "activity" : "generate1",
+      "start" : 292,
+      "length" : 56
+    },
+    {
+      "activity" : "generate2",
+      "start" : 311,
+      "length" : 748
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-mii-vs-medikation-wirkstofftyp.json",
+    "size" : 2704,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 110,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 110,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 142,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 158,
+      "length" : 648
+    },
+    {
+      "activity" : "generate1",
+      "start" : 292,
+      "length" : 18
+    },
+    {
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 42
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 341,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1043,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 4064
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 24994,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 312,
+      "length" : 2
+    }]
+  }]
+}

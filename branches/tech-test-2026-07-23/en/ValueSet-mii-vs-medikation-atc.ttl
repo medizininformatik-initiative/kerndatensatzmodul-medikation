@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mii-vs-medikation-atc"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablevalueset" ;
+       fhir:index -1 ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablevalueset>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-medikation-atc</b></p><a name=\"mii-vs-medikation-atc\"> </a><a name=\"hcmii-vs-medikation-atc\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSet</a></p></div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2025\"> version ?2025</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2024\"> version ?2024</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2023\"> version ?2023</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2022\"> version ?2022</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2021\"> version ?2021</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2020\"> version ?2020</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2019\"> version ?2019</span></li><li>Include all codes defined in <code>http://fhir.de/CodeSystem/bfarm/atc</code><span title=\"Version is explicitly stated to be 2018\"> version ?2018</span></li></ul></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable" ] ;
+     fhir:Extension.valueCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index -1 ;
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/spdx-license" ] ;
+         fhir:Coding.code [ fhir:value "CC-BY-4.0" ] ;
+         fhir:Coding.display [ fhir:value "Creative Commons Attribution 4.0 International" ]
+       ]
+     ]
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc"] ;
+  fhir:ValueSet.version [ fhir:value "2026.0.1"] ;
+  fhir:ValueSet.name [ fhir:value "MII_VS_Medikation_ATC"] ;
+  fhir:ValueSet.title [ fhir:value "MII VS Medikation ATC"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2025-03-19"^^xsd:date] ;
+  fhir:ValueSet.publisher [ fhir:value "Medizininformatik Initiative"] ;
+  fhir:ValueSet.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Medizininformatik Initiative" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.medizininformatik-initiative.de/" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Enthaelt ATC-Codes der Versionen 2018 bis 2024"] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "DE" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)."] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2025" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2024" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2023" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2022" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2021" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2020" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2019" ]
+     ], [
+       fhir:index -1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:ValueSet.compose.include.version [ fhir:value "2018" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

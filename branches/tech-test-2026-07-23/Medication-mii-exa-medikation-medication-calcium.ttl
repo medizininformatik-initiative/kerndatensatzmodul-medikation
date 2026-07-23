@@ -1,0 +1,243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Medication/mii-exa-medikation-medication-calcium> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mii-exa-medikation-medication-calcium"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1" ;
+       fhir:index 0 ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "HTEST" ] ;
+       fhir:Coding.display [ fhir:value "test health data" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Medication mii-exa-medikation-medication-calcium</b></p><a name=\"mii-exa-medikation-medication-calcium\"> </a><a name=\"hcmii-exa-medikation-medication-calcium\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-medikation-medication.html\">MII PR Medikation Medication</a> version: 2026.0.1</p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/ifa/pzn 00169644}, {http://fhir.de/CodeSystem/bfarm/atc A12AA20}, {http://www.whocc.no/atc A12AA20}\">CALCIUM SANDOZ forte Brausetabletten</span></p><p><b>form</b>: <span title=\"Codes:{http://standardterms.edqm.eu 10222000}\">Effervescent tablet</span></p><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_1</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN\">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title=\"Codes:{http://fdasis.nlm.nih.gov 472LWJ3Y9N}, {http://terminology.hl7.org/CodeSystem/CAS 11116-97-5}, {http://snomed.info/sct 422232005}\">CALCIUM LACTATE GLUCONATE</span></p><p><b>strength</b>: 2945.15 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_2</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN\">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title=\"Codes:{http://fdasis.nlm.nih.gov H0G9379FGK}, {http://terminology.hl7.org/CodeSystem/CAS 471-34-1}, {http://snomed.info/sct 387307005}\">CALCIUM CARBONATE</span></p><p><b>strength</b>: 300 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_3</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href=\"CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-IN\">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_1</li></ul></blockquote><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_2</li></ul></blockquote><p><b>item</b>: <span title=\"Codes:{http://fdasis.nlm.nih.gov 2M83C4R6ZB}, {http://terminology.hl7.org/CodeSystem/CAS 14127-61-8}, {http://snomed.info/sct 5540006}\">CALCIUM CATION</span></p><p><b>strength</b>: 500.54 milligram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></blockquote></div>"
+  ] ;
+  fhir:Medication.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/ifa/pzn" ] ;
+       fhir:Coding.code [ fhir:value "00169644" ] ;
+       fhir:Coding.display [ fhir:value "CALCIUM SANDOZ forte Brausetabletten" ]
+     ], [
+       fhir:index 1 ;
+       fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/atc" ] ;
+       fhir:Coding.version [ fhir:value "2023" ] ;
+       fhir:Coding.code [ fhir:value "A12AA20" ] ;
+       fhir:Coding.display [ fhir:value "Calcium (verschiedene Salze in Kombination)" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Coding.system [ fhir:value "http://www.whocc.no/atc" ] ;
+       fhir:Coding.version [ fhir:value "2023" ] ;
+       fhir:Coding.code [ fhir:value "A12AA20" ] ;
+       fhir:Coding.display [ fhir:value "calcium (different salts in combination)" ]
+     ]
+  ] ;
+  fhir:Medication.form [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+       fhir:Coding.code [ fhir:value "10222000" ] ;
+       fhir:Coding.display [ fhir:value "Effervescent tablet" ]
+     ]
+  ] ;
+  fhir:Medication.ingredient [
+     fhir:index 0 ;
+     fhir:Element.id [ fhir:value "ing_1" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" ] ;
+         fhir:Coding.code [ fhir:value "PIN" ]
+       ]
+     ] ;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://fdasis.nlm.nih.gov" ] ;
+         fhir:Coding.code [ fhir:value "472LWJ3Y9N" ] ;
+         fhir:Coding.display [ fhir:value "CALCIUM LACTATE GLUCONATE" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/CAS" ] ;
+         fhir:Coding.code [ fhir:value "11116-97-5" ] ;
+         fhir:Coding.display [ fhir:value "Calcium lactate gluconate" ]
+       ], [
+         fhir:index 2 ;
+         a sct:422232005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "422232005" ] ;
+         fhir:Coding.display [ fhir:value "Calcium lactate gluconate (substance)" ]
+       ]
+     ] ;
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "2945.15"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "milligram" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ] ;
+       fhir:Ratio.denominator [
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation" ] ;
+           fhir:Extension.valueQuantity [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+             fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+             fhir:Quantity.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+             fhir:Quantity.code [ fhir:value "10222000" ]
+           ]
+         ] ;
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "1" ]
+       ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Element.id [ fhir:value "ing_2" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" ] ;
+         fhir:Coding.code [ fhir:value "PIN" ]
+       ]
+     ] ;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://fdasis.nlm.nih.gov" ] ;
+         fhir:Coding.code [ fhir:value "H0G9379FGK" ] ;
+         fhir:Coding.display [ fhir:value "CALCIUM CARBONATE" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/CAS" ] ;
+         fhir:Coding.code [ fhir:value "471-34-1" ] ;
+         fhir:Coding.display [ fhir:value "Calcium carbonate" ]
+       ], [
+         fhir:index 2 ;
+         a sct:387307005 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "387307005" ] ;
+         fhir:Coding.display [ fhir:value "Calcium carbonate (substance)" ]
+       ]
+     ] ;
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "300"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "milligram" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ] ;
+       fhir:Ratio.denominator [
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation" ] ;
+           fhir:Extension.valueQuantity [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+             fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+             fhir:Quantity.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+             fhir:Quantity.code [ fhir:value "10222000" ]
+           ]
+         ] ;
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "1" ]
+       ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Element.id [ fhir:value "ing_3" ] ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp" ] ;
+         fhir:Coding.code [ fhir:value "IN" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "ingredientUri" ] ;
+         fhir:Extension.valueUri [ fhir:value "#ing_1" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Element.extension [
+         fhir:index 0 ;
+         fhir:Extension.url [ fhir:value "ingredientUri" ] ;
+         fhir:Extension.valueUri [ fhir:value "#ing_2" ]
+       ] ;
+       fhir:Extension.url [ fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation" ]
+     ] ;
+     fhir:Medication.ingredient.itemCodeableConcept [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://fdasis.nlm.nih.gov" ] ;
+         fhir:Coding.code [ fhir:value "2M83C4R6ZB" ] ;
+         fhir:Coding.display [ fhir:value "CALCIUM CATION" ]
+       ], [
+         fhir:index 1 ;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/CAS" ] ;
+         fhir:Coding.code [ fhir:value "14127-61-8" ] ;
+         fhir:Coding.display [ fhir:value "Calcium cation" ]
+       ], [
+         fhir:index 2 ;
+         a sct:5540006 ;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+         fhir:Coding.code [ fhir:value "5540006" ] ;
+         fhir:Coding.display [ fhir:value "Calcium (substance)" ]
+       ]
+     ] ;
+     fhir:Medication.ingredient.strength [
+       fhir:Ratio.numerator [
+         fhir:Quantity.value [ fhir:value "500.54"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "milligram" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg" ]
+       ] ;
+       fhir:Ratio.denominator [
+         fhir:Element.extension [
+           fhir:index 0 ;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation" ] ;
+           fhir:Extension.valueQuantity [
+             fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+             fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+             fhir:Quantity.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+             fhir:Quantity.code [ fhir:value "10222000" ]
+           ]
+         ] ;
+         fhir:Quantity.value [ fhir:value "1"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "Effervescent tablet" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "1" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Medication/mii-exa-medikation-medication-calcium.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

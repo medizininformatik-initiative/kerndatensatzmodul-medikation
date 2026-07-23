@@ -1,0 +1,72 @@
+# de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1: null(en)
+
+## Pages
+
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [MII CS Medikation Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.md)
+
+### ValueSets
+
+* [MII VS Medikation ASK](ValueSet-mii-vs-medikation-ask.md)
+* [MII VS Medikation ATC](ValueSet-mii-vs-medikation-atc.md)
+* [MII VS Medikation Fallkontext](ValueSet-mii-vs-medikation-fallkontext.md)
+* [MII VS Medikation UNII](ValueSet-mii-vs-medikation-unii.md)
+* [MII VS Medikation Wirkstofftypen](ValueSet-mii-vs-medikation-wirkstofftyp.md)
+
+### Logicals
+
+* [MII LM Medikation](StructureDefinition-mii-lm-medikation.md)
+
+### Resource Profiles
+
+* [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.md)
+* [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.md)
+* [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md)
+* [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.md)
+* [MII PR Medikation Medikationsliste](StructureDefinition-mii-pr-medikation-medikationsliste.md)
+
+### Extensions
+
+* [MII EX Medikation Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.md)
+* [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.md)
+
+### CapabilityStatements
+
+* [MII CPS Medikation CapabilityStatement](CapabilityStatement-mii-cps-medikation-capabilitystatement.md)
+
+### ImplementationGuides
+
+* [MII_IG_Medikation](ImplementationGuide-mii-ig-medikation.md)
+
+### Examples
+
+* [Aufnahmemedikation (List)](List-mii-exa-medikation-list-admission.md)
+* [Aktuelle medikamentöse Therapie (List)](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md)
+* [Aufnahmemedikation (List)](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md)
+* [mii-exa-medikation-medication-ass-100 (Medication)](Medication-mii-exa-medikation-medication-ass-100.md)
+* [mii-exa-medikation-medication-caelyx (Medication)](Medication-mii-exa-medikation-medication-caelyx.md)
+* [mii-exa-medikation-medication-calcium (Medication)](Medication-mii-exa-medikation-medication-calcium.md)
+* [mii-exa-medikation-medication-dolomo-nacht (Medication)](Medication-mii-exa-medikation-medication-dolomo-nacht.md)
+* [mii-exa-medikation-medication-dolomo-tag (Medication)](Medication-mii-exa-medikation-medication-dolomo-tag.md)
+* [mii-exa-medikation-medication-dolomo (Medication)](Medication-mii-exa-medikation-medication-dolomo.md)
+* [mii-exa-medikation-medication-glucoseloesung (Medication)](Medication-mii-exa-medikation-medication-glucoseloesung.md)
+* [mii-exa-medikation-medication-propofol (Medication)](Medication-mii-exa-medikation-medication-propofol.md)
+* [mii-exa-medikation-medication-rezeptur (Medication)](Medication-mii-exa-medikation-medication-rezeptur.md)
+* [mii-exa-medikation-medication-thiotepa (Medication)](Medication-mii-exa-medikation-medication-thiotepa.md)
+* [mii-exa-medikation-medication-administration (MedicationAdministration)](MedicationAdministration-mii-exa-medikation-medication-administration.md)
+* [mii-exa-medikation-medication-request-caelyx (MedicationRequest)](MedicationRequest-mii-exa-medikation-medication-request-caelyx.md)
+* [mii-exa-medikation-medication-statement-periodisches-intervall (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.md)
+* [mii-exa-medikation-medication-statement-caelyx (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-caelyx.md)
+* [mii-exa-medikation-medication-statement-concor (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-concor.md)
+* [mii-exa-medikation-medication-statement-hct (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-hct.md)
+* [mii-exa-medikation-medication-statement-ibuprofen (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md)
+* [mii-exa-medikation-medication-statement-intravenous-use (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.md)
+* [mii-exa-medikation-medication-statement-offset (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-offset.md)
+* [mii-exa-medikation-medication-statement-zopiclon (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md)
+* [mii-exa-medikation-medication-statement (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement.md)
+* [mii-exa-medikation-procedure-thiotepa (Procedure)](Procedure-mii-exa-medikation-procedure-thiotepa.md)

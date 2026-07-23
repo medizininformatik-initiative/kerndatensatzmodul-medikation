@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/MedicationStatement/mii-exa-medikation-medication-statement> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "mii-exa-medikation-medication-statement"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1" ;
+       fhir:index 0 ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1>
+     ] ;
+     fhir:Meta.security [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ] ;
+       fhir:Coding.code [ fhir:value "HTEST" ] ;
+       fhir:Coding.display [ fhir:value "test health data" ]
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationStatement mii-exa-medikation-medication-statement</b></p><a name=\"mii-exa-medikation-medication-statement\"> </a><a name=\"hcmii-exa-medikation-medication-statement\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-mii-pr-medikation-medication-statement.html\">MII PR Medikation MedicationStatement</a> version: 2026.0.1</p><p style=\"margin-bottom: 0px\">Security Label: <a href=\"http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html\">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>medication</b>: <a href=\"Medication-mii-exa-medikation-medication-rezeptur.html\">Medication </a></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Patient/example\">Patient/example</a></p><p><b>effective</b>: 2020-01-14 11:37:00+0100</p><blockquote><p><b>dosage</b></p><p><b>text</b>: Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion</p><p><b>timing</b>: Once per 4 weeks</p><p><b>route</b>: <span title=\"Codes:{http://standardterms.edqm.eu 20045000}\">Intravenous use</span></p><h3>DoseAndRates</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Dose[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>50 mg/kilogram<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemg/kg = 'mg/kg')</span></td></tr></table></blockquote></div>"
+  ] ;
+  fhir:MedicationStatement.status [ fhir:value "active"] ;
+  fhir:MedicationStatement.medicationReference [
+     fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Medication/mii-exa-medikation-medication-rezeptur> ;
+     fhir:Reference.reference [ fhir:value "Medication/mii-exa-medikation-medication-rezeptur" ]
+  ] ;
+  fhir:MedicationStatement.subject [
+     fhir:link <https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/Patient/example> ;
+     fhir:Reference.reference [ fhir:value "Patient/example" ]
+  ] ;
+  fhir:MedicationStatement.effectiveDateTime [ fhir:value "2020-01-14T11:37:00+01:00"^^xsd:dateTime] ;
+  fhir:MedicationStatement.dosage [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion" ] ;
+     fhir:Dosage.timing [
+       fhir:Timing.repeat [
+         fhir:Timing.repeat.frequency [ fhir:value "1"^^xsd:positiveInteger ] ;
+         fhir:Timing.repeat.period [ fhir:value "4"^^xsd:decimal ] ;
+         fhir:Timing.repeat.periodUnit [ fhir:value "wk" ]
+       ]
+     ] ;
+     fhir:Dosage.route [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "http://standardterms.edqm.eu" ] ;
+         fhir:Coding.code [ fhir:value "20045000" ] ;
+         fhir:Coding.display [ fhir:value "Intravenous use" ]
+       ]
+     ] ;
+     fhir:Dosage.doseAndRate [
+       fhir:index 0 ;
+       fhir:Dosage.doseAndRate.doseQuantity [
+         fhir:Quantity.value [ fhir:value "50"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mg/kilogram" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mg/kg" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/MedicationStatement/mii-exa-medikation-medication-statement.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

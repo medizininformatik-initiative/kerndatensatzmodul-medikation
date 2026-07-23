@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-list-admission"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: List mii-exa-medikation-list-admission</b></p><a name="mii-exa-medikation-list-admission"> </a><a name="hcmii-exa-medikation-list-admission"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medikationsliste.html">MII PR Medikation Medikationsliste</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.2.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Aufnahmemedikation</h2><table class="clstu"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Patient/example">Patient/example</a>Encounter: <a href="https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.meta@2026.0.0&amp;canonical=https://www.medizininformatik-initiative.de/fhir/modul-meta/Encounter/ExampleEinrichtungskontakt">Encounter/ExampleEinrichtungskontakt</a></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="MedicationStatement-mii-exa-medikation-medication-statement-hct.html">MedicationStatement: extension = 1-0-0-0 Tablette HCT 12,5mg oral; status = intended; medication[x] = Hydrochlorothiazid; effective[x] = 2022-02-02 12:22:00+0000 --&gt; (ongoing)</a></td></tr><tr><td><a href="MedicationStatement-mii-exa-medikation-medication-statement-concor.html">MedicationStatement: status = intended; medication[x] = Bisoprolol; effective[x] = 2022-02-02 12:22:00+0000 --&gt; (ongoing)</a></td></tr><tr><td><a href="MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.html">MedicationStatement: status = intended; medication[x] = Ibuprofen; effective[x] = 2022-02-02 12:22:00+0000 --&gt; (ongoing)</a></td></tr><tr><td><a href="MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.html">MedicationStatement: status = intended; medication[x] = Zopiclon; effective[x] = 2022-02-02 12:22:00+0000 --&gt; (ongoing)</a></td></tr></table></div>
+  </text>
+  <status value="current"/>
+  <mode value="snapshot"/>
+  <title value="Aufnahmemedikation"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+      <code value="medications"/>
+    </coding>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"/>
+      <code value="E210"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/ExampleEinrichtungskontakt"/>
+  </encounter>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/mii-exa-medikation-medication-statement-hct"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/mii-exa-medikation-medication-statement-concor"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/mii-exa-medikation-medication-statement-ibuprofen"/>
+    </item>
+  </entry>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/mii-exa-medikation-medication-statement-zopiclon"/>
+    </item>
+  </entry>
+</List>
