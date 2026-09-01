@@ -1,0 +1,596 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ImplementationGuide-mii-ig-medikation" original="Resource ImplementationGuide-mii-ig-medikation" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Package</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Taskforce Core Data Set</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>Interoperability Working Group</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>National Steering Committee</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.name">
+             <notes>
+               <note id="n1">ImplementationGuide.name</note>
+             </notes>
+        <source>MII_IG_Medikation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.title">
+             <notes>
+               <note id="n1">ImplementationGuide.title</note>
+             </notes>
+        <source>MII IG Medikation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.publisher">
+             <notes>
+               <note id="n1">ImplementationGuide.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.description">
+             <notes>
+               <note id="n1">ImplementationGuide.description</note>
+             </notes>
+        <source>FHIR profiles for representing medication data - prescriptions, administrations, statements and medication lists, including active ingredients and dosage - as part of the MII core data set.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Aktuelle medikamentöse Therapie</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>Aufnahmemedikation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII CPS Medikation CapabilityStatement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Das vorliegende CapabilityStatement beschreibt alle verpflichtenden Interaktionen die ein konformes System unterstützen muss, um das Modul Medikation der Medizininformatik Initiative zu implementieren.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII CS Medikation Wirkstofftyp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII EX Medikation Wirkstoffrelation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII EX Medikation Wirkstofftyp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII LM Medikation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>MII LogicalModel Modul Medikation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Medikation Medication</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Medikation MedicationAdministration</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Medikation MedicationRequest</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Dieses Profil beschreibt die Verordnung einer Medikation.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Medikation MedicationStatement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Das MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII PR Medikation Medikationsliste</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII VS Medikation ASK</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Enthaelt alle ASK-Codes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII VS Medikation ATC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2024</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII VS Medikation Fallkontext</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII VS Medikation UNII</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Enthaelt Unique Ingredient Identifier (UNII-Codes)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>MII VS Medikation Wirkstofftypen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-administration</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-ass-100</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-caelyx</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-calcium</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-dolomo</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-dolomo-nacht</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-dolomo-tag</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-glucoseloesung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-propofol</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-request-caelyx</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-rezeptur</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-caelyx</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-concor</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-hct</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-ibuprofen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-intravenous-use</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-offset</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-periodisches-intervall</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-statement-zopiclon</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-medication-thiotepa</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-exa-medikation-procedure-thiotepa</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
+        <source>mii-param-medikation-manifest</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Table of Contents</source>
+        <target>Inhaltsverzeichnis</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Home</source>
+        <target>Startseite</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Guidance</source>
+        <target>Anleitung</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Guidance for Researchers</source>
+        <target>Anleitung für Forschende</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Guidance for Implementers</source>
+        <target>Anleitung für Implementierende</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>UML Diagrams</source>
+        <target>UML-Diagramme</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Security and Privacy</source>
+        <target>Sicherheit und Datenschutz</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Profiles</source>
+        <target>Profile</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Extensions</source>
+        <target>Extensions</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Capability Statements</source>
+        <target>CapabilityStatements</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Logical Models</source>
+        <target>Logische Modelle</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Value Sets</source>
+        <target>ValueSets</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Code Systems</source>
+        <target>CodeSystems</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Examples</source>
+        <target>Beispiele</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Downloads</source>
+        <target>Downloads</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Changelog</source>
+        <target>Änderungshistorie</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Metadata Overview</source>
+        <target>Metadaten-Übersicht</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Versioning</source>
+        <target>Versionierung</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>MII ImplementationGuide Resource</source>
+        <target>MII ImplementationGuide Ressource</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
+        <source>Translation Information</source>
+        <target>Hinweise zur Übersetzung</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

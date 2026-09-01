@@ -1,0 +1,31 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Marcumar",
+      "target" : null
+    },
+    {
+      "id" : "Dosage.text",
+      "context" : "Dosage.text",
+      "source" : "Marcumar jeden Montag-, Mittwoch- und Freitagabend",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Oral use",
+      "target" : null
+    }]
+  }]
+}

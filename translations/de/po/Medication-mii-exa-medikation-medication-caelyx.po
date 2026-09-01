@@ -1,0 +1,36 @@
+
+# Coding.display
+#: Coding.display
+msgid "test health data"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Doxorubicin"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Concentrate for solution for infusion"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "DOXORUBICIN HYDROCHLORIDE"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "mg"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "ml"
+msgstr ""
+

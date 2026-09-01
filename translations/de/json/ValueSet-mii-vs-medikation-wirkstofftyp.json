@@ -1,0 +1,49 @@
+{
+  "id" : "ValueSet-mii-vs-medikation-wirkstofftyp",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creative Commons Attribution 4.0 International",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_Medikation_Wirkstofftyp",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS Medikation Wirkstofftypen",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    }]
+  }]
+}

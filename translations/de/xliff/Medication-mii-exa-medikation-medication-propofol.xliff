@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Medication-mii-exa-medikation-medication-propofol" original="Resource Medication-mii-exa-medikation-medication-propofol" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>PROPOFOL 2% 20MG/1ML MCT</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Emulsion for injection/infusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Propofol</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>mg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-propofol" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>ml</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

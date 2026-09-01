@@ -1,0 +1,43 @@
+{
+  "id" : "Medication-mii-exa-medikation-medication-rezeptur",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Solution for infusion",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Doxorubicin",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "mg",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "milliliter",
+      "target" : null
+    }]
+  }]
+}

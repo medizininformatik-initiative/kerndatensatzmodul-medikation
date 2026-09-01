@@ -1,0 +1,81 @@
+
+# Coding.display
+#: Coding.display
+msgid "Creative Commons Attribution 4.0 International"
+msgstr ""
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Medikation_ATC"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII VS Medikation ATC"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Enthaelt ATC-Codes der Versionen 2018 bis 2024"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# ValueSet.copyright
+#: ValueSet.copyright
+msgid "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)."
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2025"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2024"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2023"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2022"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2021"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2020"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2019"
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2018"
+msgstr ""
+

@@ -1,0 +1,49 @@
+{
+  "id" : "Medication-mii-exa-medikation-medication-ass-100",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "ASS 100 - 1a Pharma TAH Tabletten",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Acetylsalicylsäure",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Tablet",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Aspirin (substance)",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "milligram",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Tablet",
+      "target" : null
+    }]
+  }]
+}

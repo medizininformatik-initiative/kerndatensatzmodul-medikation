@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Medication-mii-exa-medikation-medication-rezeptur" original="Resource Medication-mii-exa-medikation-medication-rezeptur" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>Infusion bestehend aus 85mg Doxorubicin aufgeloest zur Verabreichung in 250ml 5-%iger (50 mg/ml) Glucose-Infusionsloesung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Solution for infusion</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Doxorubicin</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>mg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-rezeptur" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>milliliter</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

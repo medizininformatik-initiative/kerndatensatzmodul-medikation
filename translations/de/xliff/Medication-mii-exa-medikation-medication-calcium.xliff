@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Medication-mii-exa-medikation-medication-calcium" original="Resource Medication-mii-exa-medikation-medication-calcium" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CALCIUM SANDOZ forte Brausetabletten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium (verschiedene Salze in Kombination)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>calcium (different salts in combination)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Effervescent tablet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CALCIUM LACTATE GLUCONATE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium lactate gluconate</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium lactate gluconate (substance)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>milligram</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>Effervescent tablet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CALCIUM CARBONATE</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium carbonate</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium carbonate (substance)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>CALCIUM CATION</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium cation</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-calcium" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Calcium (substance)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

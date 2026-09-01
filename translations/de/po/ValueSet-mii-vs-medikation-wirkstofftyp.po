@@ -1,0 +1,36 @@
+
+# Coding.display
+#: Coding.display
+msgid "Creative Commons Attribution 4.0 International"
+msgstr ""
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Medikation_Wirkstofftyp"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII VS Medikation Wirkstofftypen"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+

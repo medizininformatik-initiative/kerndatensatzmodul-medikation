@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Medication-mii-exa-medikation-medication-thiotepa" original="Resource Medication-mii-exa-medikation-medication-thiotepa" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Medication-mii-exa-medikation-medication-thiotepa" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-thiotepa" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>ingredient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-thiotepa" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>THIOTEPA</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-thiotepa" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Thiotepa</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

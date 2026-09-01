@@ -1,0 +1,25 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-hct",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "HCT 12,5mg",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Tablet",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,26 @@
+
+# Coding.display
+#: Coding.display
+msgid "test health data"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Intravenous use"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "mg"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "milliliter"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "hour"
+msgstr ""
+

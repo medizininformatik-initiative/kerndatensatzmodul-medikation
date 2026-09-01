@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ValueSet-mii-vs-medikation-fallkontext" original="Resource ValueSet-mii-vs-medikation-fallkontext" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Creative Commons Attribution 4.0 International</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_Medikation_Fallkontext</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII VS Medikation Fallkontext</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.copyright">
+             <notes>
+               <note id="n1">ValueSet.copyright</note>
+             </notes>
+        <source>This artifact includes content from IHE Deutschland e.V. (https://www.ihe-d.de/)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>ambulanter Kontakt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>stationärer Aufenthalt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>stationäre Aufnahme</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-fallkontext" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>stationäre Entlassung</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

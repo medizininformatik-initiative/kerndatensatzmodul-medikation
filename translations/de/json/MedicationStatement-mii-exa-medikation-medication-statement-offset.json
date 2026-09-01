@@ -1,0 +1,31 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-offset",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "L-THYROXIN 125 Henning Tabletten",
+      "target" : null
+    },
+    {
+      "id" : "Dosage.text",
+      "context" : "Dosage.text",
+      "source" : "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Oral use",
+      "target" : null
+    }]
+  }]
+}

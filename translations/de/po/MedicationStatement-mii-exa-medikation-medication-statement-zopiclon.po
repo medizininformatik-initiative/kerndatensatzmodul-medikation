@@ -1,0 +1,21 @@
+
+# Coding.display
+#: Coding.display
+msgid "test health data"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "Zopiclon 3,75mg"
+msgstr ""
+
+# Dosage.text
+#: Dosage.text
+msgid "Zopiclon 3,75mg Tabl. 0-0-0-1"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "Tablette"
+msgstr ""
+

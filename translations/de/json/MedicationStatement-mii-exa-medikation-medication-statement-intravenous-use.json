@@ -1,0 +1,31 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "Dosage.text",
+      "context" : "Dosage.text",
+      "source" : "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Intravenous use",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "milligram",
+      "target" : null
+    }]
+  }]
+}

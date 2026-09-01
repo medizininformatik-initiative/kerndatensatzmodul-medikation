@@ -325,10 +325,6 @@ pages:
     title: Extensions
   capability-statements.md:
     title: Capability Statements
-  search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Search Parameters
-  operations.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Operations
   logical-models.md:
     title: Logical Models
   value-sets.md: # OPTIONAL (0..1) — see docs/optional-pages.md
@@ -367,8 +363,6 @@ pages:
 
   # DEMONSTRATION page shipped with the scaffold — delete this entry, the page
   # and its German mirror once you have taken what you need from it.
-  rendering-artifacts.md:
-    title: Rendering Artifacts (demo)
 
 #
 #

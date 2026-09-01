@@ -1,0 +1,31 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Ibuprofen 400mg",
+      "target" : null
+    },
+    {
+      "id" : "Dosage.text",
+      "context" : "Dosage.text",
+      "source" : "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Tablette",
+      "target" : null
+    }]
+  }]
+}

@@ -1,0 +1,31 @@
+{
+  "id" : "MedicationStatement-mii-exa-medikation-medication-statement-concor",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "Concor 2,5mg",
+      "target" : null
+    },
+    {
+      "id" : "Dosage.text",
+      "context" : "Dosage.text",
+      "source" : "Concor 2,5mg Tabl. 1-0-0-0",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Tablette",
+      "target" : null
+    }]
+  }]
+}

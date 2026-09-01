@@ -1,0 +1,103 @@
+{
+  "id" : "ValueSet-mii-vs-medikation-atc",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creative Commons Attribution 4.0 International",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_Medikation_ATC",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS Medikation ATC",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.copyright",
+      "context" : "ValueSet.copyright",
+      "source" : "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2025",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2024",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2023",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2022",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2021",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2020",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2019",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2018",
+      "target" : null
+    }]
+  }]
+}

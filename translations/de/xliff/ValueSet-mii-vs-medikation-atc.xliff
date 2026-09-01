@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="ValueSet-mii-vs-medikation-atc" original="Resource ValueSet-mii-vs-medikation-atc" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Creative Commons Attribution 4.0 International</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_Medikation_ATC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII VS Medikation ATC</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2024</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.copyright">
+             <notes>
+               <note id="n1">ValueSet.copyright</note>
+             </notes>
+        <source>WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2025</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2024</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2023</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2022</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2021</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2020</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2019</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2018</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

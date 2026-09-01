@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="Medication-mii-exa-medikation-medication-dolomo-nacht" original="Resource Medication-mii-exa-medikation-medication-dolomo-nacht" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Paracetamol, Kombinationen exkl. Psycholeptika</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Tablet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>Tablet</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Aspirin (substance)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>mg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Paracetamol (substance)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Medication-mii-exa-medikation-medication-dolomo-nacht" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Codeine phosphate hemihydrate (substance)</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

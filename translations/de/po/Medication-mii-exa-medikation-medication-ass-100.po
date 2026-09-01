@@ -1,0 +1,36 @@
+
+# Coding.display
+#: Coding.display
+msgid "test health data"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "ASS 100 - 1a Pharma TAH Tabletten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Acetylsalicylsäure"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Tablet"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Aspirin (substance)"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "milligram"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "Tablet"
+msgstr ""
+

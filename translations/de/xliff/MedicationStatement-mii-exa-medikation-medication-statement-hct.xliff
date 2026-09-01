@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="MedicationStatement-mii-exa-medikation-medication-statement-hct" original="Resource MedicationStatement-mii-exa-medikation-medication-statement-hct" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-hct" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>test health data</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-hct" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>HCT 12,5mg</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-hct" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>Tablet</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

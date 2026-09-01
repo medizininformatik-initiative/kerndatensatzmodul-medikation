@@ -1,0 +1,19 @@
+{
+  "id" : "List-mii-exa-medikation-medikationsliste-aufnahmemedikation",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "test health data",
+      "target" : null
+    },
+    {
+      "id" : "List.title",
+      "context" : "List.title",
+      "source" : "Aufnahmemedikation",
+      "target" : null
+    }]
+  }]
+}

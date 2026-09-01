@@ -1,0 +1,55 @@
+{
+  "id" : "ValueSet-mii-vs-medikation-ask",
+  "baseLang" : "en",
+  "languages" : [{
+    "targetLang" : "de",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Creative Commons Attribution 4.0 International",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_Medikation_ASK",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII VS Medikation ASK",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "Enthaelt alle ASK-Codes",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.copyright",
+      "context" : "ValueSet.copyright",
+      "source" : "BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+      "target" : null
+    }]
+  }]
+}

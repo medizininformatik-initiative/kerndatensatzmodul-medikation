@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="en" target-language="de" id="CodeSystem-mii-cs-medikation-wirkstofftyp" original="Resource CodeSystem-mii-cs-medikation-wirkstofftyp" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Creative Commons Attribution 4.0 International</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>MII_CS_Medikation_Wirkstofftyp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>MII CS Medikation Wirkstofftyp</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>ingredient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.definition">
+             <notes>
+               <note id="n1">CodeSystem.concept.definition</note>
+             </notes>
+        <source>The name of the substance.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Wirkstoff allgemein</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>precise ingredient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.definition">
+             <notes>
+               <note id="n1">CodeSystem.concept.definition</note>
+             </notes>
+        <source>The name of the substance expressed precisely as a salt or ester of the ingredient.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Wirkstoff präzise</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>multiple ingredients</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.definition">
+             <notes>
+               <note id="n1">CodeSystem.concept.definition</note>
+             </notes>
+        <source>The name of the substances in a combination product.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-medikation-wirkstofftyp" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Kombinationswirkstoff</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
