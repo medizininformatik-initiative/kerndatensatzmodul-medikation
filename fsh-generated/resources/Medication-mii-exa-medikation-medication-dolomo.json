@@ -40,21 +40,21 @@
   },
   "amount": {
     "numerator": {
-      "value": 27,
-      "unit": "Tablet",
-      "system": "http://unitsofmeasure.org",
-      "code": "1",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
           "valueQuantity": {
             "value": 27,
             "unit": "Tablet",
             "system": "http://standardterms.edqm.eu",
             "code": "10219000"
-          }
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
         }
-      ]
+      ],
+      "value": 27,
+      "unit": "Tablet",
+      "system": "http://unitsofmeasure.org",
+      "code": "1"
     },
     "denominator": {
       "value": 1,

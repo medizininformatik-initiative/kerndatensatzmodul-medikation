@@ -13,17 +13,8 @@
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"
     ]
   },
-  "status": "active",
-  "medicationReference": {
-    "reference": "Medication/mii-exa-medikation-medication-caelyx"
-  },
-  "subject": {
-    "reference": "Patient/example"
-  },
-  "effectiveDateTime": "2020-01-02T09:30:00+01:00",
   "dosage": [
     {
-      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
       "timing": {
         "repeat": {
           "frequency": 1,
@@ -31,6 +22,7 @@
           "periodUnit": "wk"
         }
       },
+      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
       "route": {
         "coding": [
           {
@@ -41,5 +33,13 @@
         ]
       }
     }
-  ]
+  ],
+  "status": "active",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-medikation-medication-caelyx"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2020-01-02T09:30:00+01:00"
 }

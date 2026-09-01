@@ -13,6 +13,34 @@
       "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
     ]
   },
+  "ingredient": [
+    {
+      "strength": {
+        "denominator": {
+          "value": 1,
+          "code": "ml",
+          "system": "http://unitsofmeasure.org",
+          "unit": "ml"
+        },
+        "numerator": {
+          "value": 20,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg"
+        }
+      },
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "22898",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Propofol"
+          }
+        ]
+      }
+    }
+  ],
   "code": {
     "coding": [
       {
@@ -31,33 +59,5 @@
       }
     ]
   },
-  "ingredient": [
-    {
-      "isActive": true,
-      "itemCodeableConcept": {
-        "coding": [
-          {
-            "code": "22898",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Propofol"
-          }
-        ]
-      },
-      "strength": {
-        "denominator": {
-          "value": 1,
-          "code": "ml",
-          "system": "http://unitsofmeasure.org",
-          "unit": "ml"
-        },
-        "numerator": {
-          "value": 20,
-          "code": "mg",
-          "system": "http://unitsofmeasure.org",
-          "unit": "mg"
-        }
-      }
-    }
-  ],
   "status": "active"
 }

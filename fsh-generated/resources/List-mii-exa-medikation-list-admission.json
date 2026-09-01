@@ -25,15 +25,6 @@
       }
     ]
   },
-  "status": "current",
-  "mode": "snapshot",
-  "title": "Aufnahmemedikation",
-  "subject": {
-    "reference": "Patient/example"
-  },
-  "encounter": {
-    "reference": "Encounter/ExampleEinrichtungskontakt"
-  },
   "entry": [
     {
       "item": {
@@ -55,5 +46,14 @@
         "reference": "MedicationStatement/mii-exa-medikation-medication-statement-zopiclon"
       }
     }
-  ]
+  ],
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Aufnahmemedikation",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/ExampleEinrichtungskontakt"
+  }
 }

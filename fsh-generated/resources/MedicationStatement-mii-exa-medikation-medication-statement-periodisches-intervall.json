@@ -15,6 +15,21 @@
   },
   "dosage": [
     {
+      "timing": {
+        "repeat": {
+          "dayOfWeek": [
+            "mon",
+            "wed",
+            "fri"
+          ],
+          "when": [
+            "CV"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
       "route": {
         "coding": [
           {
@@ -24,22 +39,7 @@
           }
         ]
       },
-      "text": "Marcumar jeden Montag-, Mittwoch- und Freitagabend",
-      "timing": {
-        "repeat": {
-          "dayOfWeek": [
-            "mon",
-            "wed",
-            "fri"
-          ],
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d",
-          "when": [
-            "CV"
-          ]
-        }
-      }
+      "text": "Marcumar jeden Montag-, Mittwoch- und Freitagabend"
     }
   ],
   "effectiveDateTime": "2020-05-27T17:57:00+01:00",

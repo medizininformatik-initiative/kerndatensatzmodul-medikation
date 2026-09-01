@@ -25,17 +25,17 @@
       }
     ]
   },
-  "status": "current",
-  "mode": "working",
-  "title": "Aktuelle medikamentöse Therapie",
-  "subject": {
-    "reference": "Patient/example"
-  },
   "entry": [
     {
       "item": {
         "reference": "MedicationStatement/example"
       }
     }
-  ]
+  ],
+  "status": "current",
+  "mode": "working",
+  "title": "Aktuelle medikamentöse Therapie",
+  "subject": {
+    "reference": "Patient/example"
+  }
 }

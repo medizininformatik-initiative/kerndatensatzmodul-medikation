@@ -100,6 +100,12 @@
   "differential": {
     "element": [
       {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Medikation Wirkstofftyp",
+        "definition": "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff."
+      },
+      {
         "id": "Extension.extension",
         "path": "Extension.extension",
         "max": "0"

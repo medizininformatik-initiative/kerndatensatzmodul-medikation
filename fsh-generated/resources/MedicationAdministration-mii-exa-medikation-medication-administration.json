@@ -14,12 +14,6 @@
     ]
   },
   "dosage": {
-    "dose": {
-      "value": 85,
-      "code": "mg",
-      "system": "http://unitsofmeasure.org",
-      "unit": "mg"
-    },
     "rateRatio": {
       "denominator": {
         "value": 1,
@@ -33,6 +27,12 @@
         "system": "http://unitsofmeasure.org",
         "unit": "milliliter"
       }
+    },
+    "dose": {
+      "value": 85,
+      "code": "mg",
+      "system": "http://unitsofmeasure.org",
+      "unit": "mg"
     },
     "route": {
       "coding": [

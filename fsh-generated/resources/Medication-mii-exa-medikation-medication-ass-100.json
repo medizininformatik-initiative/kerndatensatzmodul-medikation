@@ -28,17 +28,33 @@
       }
     ]
   },
-  "form": {
-    "coding": [
-      {
-        "code": "10219000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Tablet"
-      }
-    ]
-  },
   "ingredient": [
     {
+      "strength": {
+        "denominator": {
+          "extension": [
+            {
+              "valueQuantity": {
+                "value": 1,
+                "unit": "Tablet",
+                "system": "http://standardterms.edqm.eu",
+                "code": "10219000"
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
+            }
+          ],
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Tablet"
+        },
+        "numerator": {
+          "value": 100,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
+        }
+      },
       "itemCodeableConcept": {
         "coding": [
           {
@@ -47,32 +63,16 @@
             "display": "Aspirin (substance)"
           }
         ]
-      },
-      "strength": {
-        "numerator": {
-          "value": 100,
-          "code": "mg",
-          "system": "http://unitsofmeasure.org",
-          "unit": "milligram"
-        },
-        "denominator": {
-          "value": 1,
-          "code": "1",
-          "system": "http://unitsofmeasure.org",
-          "unit": "Tablet",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
-              "valueQuantity": {
-                "value": 1,
-                "unit": "Tablet",
-                "system": "http://standardterms.edqm.eu",
-                "code": "10219000"
-              }
-            }
-          ]
-        }
       }
     }
-  ]
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "10219000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Tablet"
+      }
+    ]
+  }
 }

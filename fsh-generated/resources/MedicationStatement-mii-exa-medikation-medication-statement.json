@@ -25,6 +25,13 @@
           }
         }
       ],
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 4,
+          "periodUnit": "wk"
+        }
+      },
       "route": {
         "coding": [
           {
@@ -34,14 +41,7 @@
           }
         ]
       },
-      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "period": 4,
-          "periodUnit": "wk"
-        }
-      }
+      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
     }
   ],
   "effectiveDateTime": "2020-01-14T11:37:00+01:00",

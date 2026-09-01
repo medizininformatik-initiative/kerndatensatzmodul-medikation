@@ -28,16 +28,6 @@
       }
     ]
   },
-  "status": "active",
-  "form": {
-    "coding": [
-      {
-        "code": "11213000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Concentrate for solution for infusion"
-      }
-    ]
-  },
   "ingredient": [
     {
       "itemCodeableConcept": {
@@ -53,7 +43,6 @@
           }
         ]
       },
-      "isActive": true,
       "strength": {
         "numerator": {
           "value": 50,
@@ -67,7 +56,18 @@
           "system": "http://unitsofmeasure.org",
           "unit": "ml"
         }
-      }
+      },
+      "isActive": true
     }
-  ]
+  ],
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "code": "11213000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Concentrate for solution for infusion"
+      }
+    ]
+  }
 }

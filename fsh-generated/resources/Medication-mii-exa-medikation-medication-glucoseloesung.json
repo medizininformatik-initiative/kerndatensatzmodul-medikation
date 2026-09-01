@@ -34,18 +34,8 @@
       }
     ]
   },
-  "form": {
-    "coding": [
-      {
-        "code": "11210000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Solution for infusion"
-      }
-    ]
-  },
   "ingredient": [
     {
-      "isActive": true,
       "itemCodeableConcept": {
         "coding": [
           {
@@ -77,10 +67,10 @@
           "system": "http://unitsofmeasure.org",
           "unit": "g"
         }
-      }
+      },
+      "isActive": true
     },
     {
-      "isActive": false,
       "itemCodeableConcept": {
         "coding": [
           {
@@ -98,8 +88,18 @@
             "display": "Water (substance)"
           }
         ]
-      }
+      },
+      "isActive": false
     }
   ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
   "status": "active"
 }

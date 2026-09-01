@@ -45,15 +45,15 @@
       "text": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
     }
   ],
-  "effectiveDateTime": "2018-05-26",
-  "medicationReference": {
-    "reference": "Medication/mii-exa-medikation-medication-thiotepa"
-  },
   "partOf": [
     {
       "reference": "Procedure/ExampleProcedure"
     }
   ],
+  "effectiveDateTime": "2018-05-26",
+  "medicationReference": {
+    "reference": "Medication/mii-exa-medikation-medication-thiotepa"
+  },
   "status": "completed",
   "subject": {
     "reference": "Patient/example"

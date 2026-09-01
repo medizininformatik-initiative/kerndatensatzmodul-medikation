@@ -15,6 +15,17 @@
   },
   "dosage": [
     {
+      "timing": {
+        "repeat": {
+          "when": [
+            "ACM"
+          ],
+          "frequency": 1,
+          "offset": 30,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
       "route": {
         "coding": [
           {
@@ -24,18 +35,7 @@
           }
         ]
       },
-      "text": "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "offset": 30,
-          "period": 1,
-          "periodUnit": "d",
-          "when": [
-            "ACM"
-          ]
-        }
-      }
+      "text": "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"
     }
   ],
   "effectiveDateTime": "2020-05-27T17:57:00+01:00",
