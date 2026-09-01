@@ -1,101 +1,21 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Deutsche Übersetzung der Standardsprachseite input/pagecontent/changes.md
-     — beide Dateien müssen dasselbe aussagen. Struktur aus kerndatensatz-basis
-     input/pagecontent/changes.md (Branch main) — ein Abschnitt je Version,
-     neueste zuerst — und aus der MII-Release-Notes-Vorlage
-     (kerndatensatz-meta/implementation-guides/MedizininformatikInitiative-ImplementationGuide-Template/
-     MII-IG-Modul--Modul/Release-notes.page.md), die "Keep a Changelog" vorgibt.
 
-     Pflegeregel: Für jedes Release oben einen neuen Abschnitt
-     `#### Version <x>` ergänzen, in BEIDEN Sprachen, als Teil des
-     Release-Pull-Requests. Einen veröffentlichten Abschnitt danach nicht mehr
-     ändern. -->
+### Release Notes
 
-### Änderungshistorie
+**Version 2026.0.1** — 13.02.2026
 
-Diese Seite hält die Änderungen zwischen den veröffentlichten Versionen des
-Moduls **MII IG Medikation** fest, die neueste Version zuerst. Sie folgt
-[Keep a Changelog](https://keepachangelog.com/de/1.1.0/) und dem
-KDS-CalVer-Schema, das die Seite [Versionierung](version-history.html)
-beschreibt.
+* `Changed`: ASK-ValueSet — spezifische Versionierung in `ValueSet.compose.include.version` entfernt, um automatisch gegen die aktuelle CodeSystem-Version auf dem Terminologie-Server zu expandieren.
 
-Jede Version erhält einen eigenen Abschnitt mit dem Release-Datum und den nach
-Kategorien gruppierten Änderungen:
+**Version 2026.0.0** — 18.12.2025
 
-* **Hinzugefügt** — neue Profile, Extensions, ValueSets, Suchparameter, Seiten.
-* **Geändert** — geänderte Einschränkungen, Bindings, Hinweise oder
-  Dokumentation.
-* **Abgekündigt** — Artefakte, die noch existieren, aber nicht mehr genutzt
-  werden sollen.
-* **Entfernt** — zurückgezogene Artefakte.
-* **Behoben** — Korrekturen von Fehlern.
-* **Sicherheit** — Änderungen mit Auswirkung auf Sicherheit oder Datenschutz.
+* `Added`: Dependency auf `de.fhir.medication` hinzugefügt, Version [STU1](https://ig.fhir.de/igs/medication/index.html).
+* `Added`: `MedicationStatement.dosage` und `MedicationRequest.dosageInstruction` verwenden für Dosierungsangaben das [Dosage-Profil](https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html) aus `de.fhir.medication`.
+* `Fixed`: Dosierungsangaben in Beispielinstanzen sind konform zu `de.fhir.medication` [STU1](https://ig.fhir.de/igs/medication/index.html).
 
-Kategorien ohne Inhalt werden weggelassen. Geht eine Änderung auf ein Issue oder
-einen Pull-Request zurück, wird darauf verlinkt.
+**Version 2025.0.1** — 06.11.2025
 
-<div class="ig-highlight ig-highlight-red">
-<h5>Breaking Changes MÜSSEN berichtet und erläutert werden</h5>
-<p>Ein Versionsabschnitt mit einer Breaking Change ist erst vollständig, wenn
-er ausdrücklich und in diesem Changelog beantwortet:</p>
-<ul>
-<li><b>Was genau sich geändert hat</b> zwischen den beiden Versionen — das
-Artefakt, das Element, die alte und die neue Einschränkung (nicht nur
-„Profil X wurde überarbeitet“).</li>
-<li><b>Was das für bestehende Daten bedeutet:</b> Validieren Daten, die der
-Vorversion entsprachen, weiterhin gegen die neue Version? Falls nein: welche
-Ressourcen und Elemente sind betroffen, und wie zeigt sich der Fehler?</li>
-<li><b>Was Implementierende tun sollten:</b> die Empfehlung der Autorinnen
-und Autoren zur Migration bestehender Daten auf die neue Version —
-Transformationsschritte, Standardwerte, Umkodierungs-Hinweise — oder die
-ausdrückliche Aussage, dass kein Migrationspfad bereitgestellt wird, und
-warum.</li>
-</ul>
-<p><b>Was als Breaking Change zählt</b> — behandeln Sie eine Änderung als
-Breaking Change, wenn sie eines der Folgenden tut, auch wenn sie klein wirkt:
-eine Kardinalität verschärft (<code>0..*</code> → <code>1..1</code>), eine
-Binding-Stärke erhöht (example → required), Codes aus einem required-ValueSet
-entfernt, ein Element oder einen Slice entfernt oder umbenennt, einen Typ
-einengt, eine Invariante oder eine Must-Support-Pflicht hinzufügt oder eine
-kanonische URL ändert. Im Zweifel: als Breaking Change berichten.</p>
-<p><b>Breaking für wen:</b> benennen Sie beide Perspektiven — <i>gespeicherte
-Daten</i> (Instanzen, die gegen die alte Version valide sind) und
-<i>Implementierungen</i> (Clients und Server, die dagegen gebaut wurden; ein
-entfernter Suchparameter bricht Implementierungen, während jede gespeicherte
-Instanz valide bleibt).</p>
-<p><b>Die Versionsnummer warnt niemanden.</b> Das KDS-Kalender-Versionsschema
-(<code>JJJJ.n.n</code>) trägt kein Major-Signal wie SemVer — dieser
-Changelog-Abschnitt ist die <i>einzige</i> Warnung, die Lesende bekommen.</p>
-<p><b>Verlinken Sie das technische Delta.</b> Ab der zweiten formalen
-Publikation aktivieren Sie den Versionsvergleich des IG Publishers
-(<code>version-comparison</code> in <code>sushi-config.yaml</code> — siehe die
-Seite <a href="version-history.html">Versionierung</a> zur Einrichtung und
-ihren Voraussetzungen); er veröffentlicht einen maschinell erzeugten
-Vergleich unter <code>comparison-v&lt;Vorversion&gt;/index.html</code>.
-Verlinken Sie ihn aus dem Versionsabschnitt, damit die Erläuterung und der
-technische Diff nebeneinanderstehen.</p>
-<p>Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix
-<b>BREAKING:</b>), damit sie beim Überfliegen des Abschnitts nicht übersehen
-werden können.</p>
-</div>
+* `Added`: `(MedicationAdministration|MedicationStatement|MedicationRequest).medicationCodeableConcept` enthält einen Verweis auf UNII (siehe [PR #106](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/pull/106)).
+* `Added`: Neue ValueSets und Bindings für ATC (`.../ValueSet/mii-vs-medikation-atc`), ASK (`.../ValueSet/mii-vs-medikation-ask`) und UNII (`.../ValueSet/mii-vs-medikation-unii`), die mit dem [MII-Terminologieserver](https://www.ontoserver.mii-termserv.de/) expandiert werden können und damit erweiterte Validierung ermöglichen.
+* `Changed`: Beispielressourcen entsprechen dem Best-Practice-Ansatz für Dosis- und Mengen- bzw. Stärkeangaben, indem eine `Quantity` bevorzugt unter Verwendung von UCUM angegeben wird. UCUM-Annotationen in geschweiften Klammern sollten vermieden werden; alternativ können andere Einheitensysteme über die Quantity-Translation-Extension angegeben werden.
 
----
-
-#### Version 2026.0.1
-
-**Datum:** 2026-02-17
-
-##### Hinzugefügt
-
-* Erstveröffentlichung des Moduls **MII IG Medikation**.
-
-> [TODO: Ersetzen Sie diesen Abschnitt durch die echten Einträge Ihres ersten
-> Releases und ergänzen Sie für jede weitere Version oben einen neuen Abschnitt.
-> Bei einem Modul mit mehreren Teilbereichen gruppiert `kerndatensatz-basis` die
-> Einträge einer Version thematisch (etwa *Dokumentation*,
-> *Terminologie-Aktualisierungen* und je eine Überschrift pro Teilmodul) und
-> stellt jedem Stichpunkt **Hinzugefügt:** / **Geändert:** / **Entfernt:**
-> voran — nutzen Sie die für Ihr Modul passende der beiden Gruppierungen,
-> bleiben Sie dabei aber über alle Versionen hinweg und in beiden Sprachen
-> einheitlich.]
-{: .ig-highlight .ig-highlight-grey}
+<!-- TODO:REVIEW Die vollständige Release-Historie älterer Versionen steht in der Quellseite Release-Notes.page.md des Simplifier-Guides und sollte hier ergänzt werden. -->

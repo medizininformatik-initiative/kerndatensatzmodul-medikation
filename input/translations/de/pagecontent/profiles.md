@@ -1,16 +1,13 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Deutsche Übersetzung von input/pagecontent/profiles.md (aufgeteilt aus der
-     früheren Kombi-Seite profiles-and-extensions.md gemäß der abgestimmten
-     TF-KDS-Menüstruktur — eine Seite je Artefakt-Typ). -->
-Diese Seite listet die FHIR-Profile des Moduls **MII IG Medikation**. Als
-Ausgangspunkt liefert die Vorlage ein minimales Beispielprofil,
-[Example Patient](StructureDefinition-example-patient.html) — ersetzen Sie es
-durch die Profile Ihres Moduls (Namenskonvention `MII_PR_<Modul>_<Name>`, siehe
-[`docs/recipes/add-a-profile.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/recipes/add-a-profile.md) in diesem Repository sowie die
-MII-Namenskonventionen). Die Extensions des Moduls stehen auf der Seite
-[Extensions](extensions.html).
 
-> [TODO: Beschreiben Sie die Profile Ihres Moduls und ihre Beziehungen
-> zueinander. Die technischen Detailseiten erzeugt der IG-Publisher
-> automatisch.]
-{: .ig-highlight .ig-highlight-grey}
+### FHIR-Profile
+
+Die Arbeiten der Kerndatensatzspezifikationen basieren, wo möglich, auf internationalen Standards und Terminologien. Insbesondere sei hier die [International Patient Summary](http://hl7.org/fhir/uv/ips/STU1/) hervorgehoben. Eine Anpassung an die Gegebenheiten des deutschen Gesundheitswesens erfolgt durch die Verwendung der [Deutschen Basisprofile](https://ig.fhir.de/basisprofile-de/) von HL7 Deutschland. Außerdem wird Kompatibilität zu den FHIR-Spezifikationen der [Kassenärztlichen Bundesvereinigung (KBV)](https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv) und der [gematik](https://simplifier.net/organization/gematik) angestrebt.
+
+Alle Elemente des Kerndatensatzes, angepasst an die Details und Anforderungen der Use Cases der Medizininformatik-Initiative, werden in Form von FHIR StructureDefinitions beschrieben. Die Notwendigkeit der Anpassung der FHIR-Profile wird jeweils in textueller Form auf der Seite des Profils erläutert.
+
+Die KDS-weiten Konformitätsregeln — Anforderungssprache nach RFC-2119, Must Support und der Umgang mit fehlenden Daten — werden zentral vom [Meta-Modul](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance) gepflegt und hier nicht wiederholt.
+
+#### Medication
+
+Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Mindestens ein Wirkstoff MUSS angegeben werden.

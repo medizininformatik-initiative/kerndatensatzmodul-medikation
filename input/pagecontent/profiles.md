@@ -1,16 +1,14 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former combined profiles-and-extensions.md per the TF-KDS-agreed
-     menu structure (one page per artifact type); naming convention from the
-     meta wiki page "Namenskonventionen für FHIR-Ressourcen in der MII".
-     German mirror: input/translations/de/pagecontent/profiles.md. -->
-This page lists the FHIR profiles of the **MII IG Medikation** module. As a
-starting point the template ships one minimal example profile,
-[Example Patient](StructureDefinition-example-patient.html) — replace it with
-your module's profiles (naming convention `MII_PR_<Module>_<Name>`, see the
-[`docs/recipes/add-a-profile.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/recipes/add-a-profile.md) in this repository, and the MII naming
-conventions). The module's extensions are listed on the
-[Extensions](extensions.html) page.
+<!-- TODO:REVIEW machine translation of source pages TechnischeImplementierung/FHIR-Profile/Index.page.md and .../Medication/Index.page.md (de) -->
 
-> [TODO: Describe your module's profiles and how they relate to each other. The
-> IG Publisher generates the technical detail pages automatically.]
-{: .ig-highlight .ig-highlight-grey}
+### FHIR profiles
+
+The core dataset specifications are based, wherever possible, on international standards and terminologies — notably the [International Patient Summary](http://hl7.org/fhir/uv/ips/STU1/). Adaptation to the conditions of the German healthcare system is achieved by using the [German base profiles](https://ig.fhir.de/basisprofile-de/) of HL7 Germany. Compatibility with the FHIR specifications of the [National Association of Statutory Health Insurance Physicians (KBV)](https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv) and of [gematik](https://simplifier.net/organization/gematik) is also sought.
+
+All elements of the core dataset, adapted to the details and requirements of the use cases of the Medical Informatics Initiative, are described as FHIR StructureDefinitions. The reason for adapting each FHIR profile is explained in prose on the profile's own page.
+
+The KDS-wide conformance rules — requirements language per RFC-2119, Must Support and the handling of missing data — are maintained centrally by the [Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance) and are not repeated here.
+
+#### Medication
+
+The medication that is ordered, planned or administered. It may be a finished medicinal product or a compounded preparation; stating only the active ingredient is also possible. At least one active ingredient MUST be given.

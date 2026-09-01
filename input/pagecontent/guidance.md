@@ -1,34 +1,12 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/guidance.md (MII module page set).
-     "Guidance" overview page. Replace the [TODO] prompts; the sub-page structure
-     follows kerndatensatz-basis. German mirror:
-     input/translations/de/pagecontent/guidance.md — keep both in step. -->
+<!-- TODO:REVIEW machine translation of source page AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md (de) -->
 
-This section collects the domain guidance for implementing and using the
-**MII IG Medikation** module.
+### Scenarios for applying the modules
 
-### General Implementation Guidance
+**Medication during inpatient treatment with corresponding documentation of the German procedure classification (OPS)**
 
-* **[Datasets and Descriptions](logical-models.html)** — the module's data
-  elements, described as logical models. (This entry shares its target with
-  *Artifacts → Logical Models*; neither Artifacts-Summary anchor is usable as
-  a link target — see
-  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/page-structure.md) in this repository.)
-* **[UML Diagrams](uml-diagrams.html)** — visual representation of the data
-  models and their relationships.
+A patient with breast cancer is treated with a chemotherapeutic agent during her inpatient stay. The attending physician initially prescribes therapy with doxorubicin (Caelyx) once every four weeks. The order for the active ingredient and the medicinal product is documented.
 
-### Audience-Specific Guidance
+In accordance with the instructions for the prescribed medicinal product, the dose of 85 mg doxorubicin tailored to the patient is prepared as an infusion solution in a 5 per cent glucose solution. The infusion solution with its individual components, and the time or period of administration, are recorded.
 
-* **[Guidance for Researchers](researcher-guidance.html)** — for researchers
-  using the module's data.
-* **[Guidance for Implementers](implementer-guidance.html)** — technical
-  guidance for DIC implementers.
-
-> [TODO: Add the module-specific guidance that is relevant to all audiences —
-> e.g. the domain scope or its delimitations.]
-{: .ig-highlight .ig-highlight-grey}
-
----
-For the KDS-wide conformance requirements see the
-[Conformance rules of the Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
-for the technical artifacts see [Profiles](profiles.html).
+After the infusion has been administered, the OPS code 6-002.87 (pegylated liposomal doxorubicin, parenteral, 80 mg to under 90 mg) is coded.
