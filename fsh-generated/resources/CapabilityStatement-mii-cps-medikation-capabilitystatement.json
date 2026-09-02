@@ -52,7 +52,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2027.0.0-ballot.rc1"
           ],
           "_supportedProfile": [
             {
@@ -271,7 +271,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
           ],
           "_supportedProfile": [
             {
@@ -501,7 +501,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2026.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2027.0.0-ballot.rc1"
           ],
           "_supportedProfile": [
             {
@@ -819,7 +819,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2026.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2027.0.0-ballot.rc1"
           ],
           "_supportedProfile": [
             {
@@ -1236,7 +1236,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc1"
           ],
           "_supportedProfile": [
             {
@@ -1594,7 +1594,7 @@
       "mode": "server"
     }
   ],
-  "version": "2026.0.1",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_CPS_Medikation_CapabilityStatement",
   "title": "MII CPS Medikation CapabilityStatement",
   "status": "active",

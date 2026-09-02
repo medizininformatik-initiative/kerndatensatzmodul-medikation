@@ -2,6 +2,13 @@
 
 ### Release Notes
 
+**Version 2027.0.0-ballot.rc1** — 02.09.2026
+
+* `Changed`: Der Implementierungsleitfaden wurde von Simplifier auf das MII-KDS-Modul-Template (IG Publisher) migriert. Inhalte und Artefakt-URLs sind unveraendert; die Seitenstruktur folgt jetzt dem modulweit einheitlichen Seitenset, und der Leitfaden erscheint zweisprachig.
+* `Changed`: ATC-ValueSet um die Version 2026 erweitert (bisher 2018 bis 2025).
+* `Fixed`: Der Suchparameter `raterange` im CapabilityStatement verwies auf eine Canonical unterhalb des Moduls, die nie als Artefakt existierte; er zeigt nun auf `mii-sp-meta-medication-dosage-raterange` des Meta-Moduls, konsistent mit `raterange-low` und `raterange-high`.
+* `Added`: Anleitung fuer Forschende zu den Abbildungsmustern (Wirkstoff gegen Arzneimittel, geschachtelte Medikationsressourcen, Verordnung gegen Verabreichung).
+
 **Version 2026.0.1** — 13.02.2026
 
 * `Changed`: ASK-ValueSet — spezifische Versionierung in `ValueSet.compose.include.version` entfernt, um automatisch gegen die aktuelle CodeSystem-Version auf dem Terminologie-Server zu expandieren.

@@ -6,7 +6,7 @@ Im Folgenden werden die Use Cases des Moduls sowie die dazugehörigen FHIR-Profi
 | Veröffentlichung |               |
 |------------------|---------------|
 | Datum            | 2026-02-17    |
-| Version          | 2026.0.1      |
+| Version          | 2027.0.0-ballot.rc1      |
 | Status           | active        |
 | Realm            | DE            |
 

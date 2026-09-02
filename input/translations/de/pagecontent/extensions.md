@@ -1,26 +1,25 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Deutsche Übersetzung von input/pagecontent/extensions.md (aufgeteilt aus
-     der früheren Kombi-Seite profiles-and-extensions.md). -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
-
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als
-> *optional*. Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte
-> ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in
-> dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**,
-> nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md) dieses
-> Repositories. Ein Release darf dieses Banner nicht enthalten
-> (Konventions-Check M9).
-{: .ig-highlight .ig-highlight-grey}
 
 ### Extensions
 
-Diese Seite listet die FHIR-Extensions, die das Modul **MII IG Medikation**
-definiert (Namenskonvention `MII_EX_<Modul>_<Name>`). Extensions transportieren
-Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können; die
-Profile, die sie verwenden, stehen auf der Seite [Profile](profiles.html).
+Diese Seite listet die FHIR-Extensions, die das Modul **Medikation** definiert. Extensions transportieren Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können.
 
-> [TODO: Listen und beschreiben Sie die Extensions Ihres Moduls — oder
-> entfernen Sie diese Seite, wenn Ihr Modul keine definiert.]
-{: .ig-highlight .ig-highlight-grey}
+Die folgende Tabelle wird beim Build aus den tatsächlich gebauten Artefakten erzeugt — sie kann nicht veralten.
+
+{% sql {
+  "query" : "select Name, Title, Description, Web from Resources where Type = 'StructureDefinition' and sdType = 'Extension' order by Name",
+  "class" : "lines",
+  "columns" : [
+    { "name" : "Extension", "type" : "link", "source" : "Title", "target" : "Web" },
+    { "name" : "Beschreibung", "type" : "markdown", "source" : "Description" }
+  ]
+} %}
+
+#### Wozu sie dienen
+
+Beide Extensions hängen an der Wirkstoffangabe einer `Medication` und lösen dasselbe fachliche Problem: die Dosisberechnung braucht die Unterscheidung zwischen dem genauen Wirkstoff — der ein Salz oder Ester sein kann — und der reinen Substanz.
+
+* **Wirkstofftyp** klassifiziert die Angabe als allgemeinen Wirkstoff (`IN`), genauen Wirkstoff (`PIN`) oder Kombinationswirkstoff (`MIN`).
+* **Wirkstoffrelation** verknüpft einen genauen mit dem zugehörigen allgemeinen Wirkstoff und macht damit die Umrechnung nachvollziehbar: 10 mg Bisoprololhemifumarat entsprechen 8,49 mg Bisoprolol.
+
+Die zugehörigen Codes beschreibt der Abschnitt [Terminologien](code-systems.html).

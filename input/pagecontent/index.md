@@ -10,7 +10,7 @@ The Medikation module carries the data elements for documenting medication order
 | Publication |               |
 |-------------|---------------|
 | Date        | 2026-02-17    |
-| Version     | 2026.0.1 (CalVer `YYYY.n.n`) |
+| Version     | 2027.0.0-ballot.rc1 (CalVer `YYYY.n.n`) |
 | Status      | active        |
 | Realm       | DE            |
 
