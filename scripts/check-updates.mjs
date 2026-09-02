@@ -194,8 +194,8 @@ export function latestFromPackageList(packageList) {
  * the FHIR package registry metadata (null when packages.fhir.org 404s —
  * i.e. not yet published there) and, as fallback, the GitHub releases of
  * the repo named by TEMPLATE_REPO (currently
- * forschungsgruppe-digital-health/ig-template-mii-kds; swept to the target
- * org at transfer — null when the repo has no release yet). Returns { latest, source }; when neither source has
+ * medizininformatik-initiative/ig-template-mii-kds after the 2026-08-27 org
+ * move — null when the repo has no release yet). Returns { latest, source }; when neither source has
  * a version: { latest: null, source: "not yet published" } — graceful, not
  * an error.
  */
@@ -284,9 +284,10 @@ async function fetchJson(url, { github = false, allow404 = false } = {}) {
 
 const TEMPLATE_PKG_ID = "de.medizininformatikinitiative.template";
 // The org that HOSTS the releases today; swept to the target org at transfer
-// (docs/project-status.md). The target-org repo exists only as an empty
-// placeholder — asking it reports "not yet published" forever.
-const TEMPLATE_REPO = "forschungsgruppe-digital-health/ig-template-mii-kds";
+// Corrected 2026-09-01 after the org move: the forschungsgruppe-digital-health
+// copy is ARCHIVED at v1.3.2 (2026-08-20) while the live repo is at v1.3.4
+// (2026-08-28), so the old constant reported a stale version as current.
+const TEMPLATE_REPO = "medizininformatik-initiative/ig-template-mii-kds";
 
 // The org skill catalog. `skills/fhir-ig-analysis` and `skills/fhir-ig-translation`
 // are VENDORED copies of its skills, pinned in skills-lock.json and refreshed by
