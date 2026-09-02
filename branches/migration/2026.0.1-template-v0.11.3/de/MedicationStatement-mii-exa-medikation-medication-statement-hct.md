@@ -35,7 +35,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | | |
 | :--- | :--- |
 | - | **Dose[x]** |
-| * | 1 Tablet (Details: standardterms.edqm.eu code15054000 = 'Tablet') |
+| * | 1 Tablet (Details: standardterms.edqm.eu code15054000 = 'Tablette') |
 
 
 

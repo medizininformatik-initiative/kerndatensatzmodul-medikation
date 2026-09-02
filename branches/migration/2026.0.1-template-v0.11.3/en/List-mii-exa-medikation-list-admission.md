@@ -23,10 +23,10 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | Mode: Snapshot List | Status: Current | Code: Medication List |
 | Subject:[Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)Encounter:[Encounter/ExampleEinrichtungskontakt](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Encounter/ExampleEinrichtungskontakt) | | |
 
-* **Items**: [MedicationStatement: extension = 1-0-0-0 Tablette HCT 12,5mg oral; status = intended; medication[x] = C03AA03; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-hct.md)
-* **Items**: [MedicationStatement: status = intended; medication[x] = C07AB07; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-concor.md)
-* **Items**: [MedicationStatement: status = intended; medication[x] = M01AE01; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md)
-* **Items**: [MedicationStatement: status = intended; medication[x] = N05CF01; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md)
+* **Items**: [MedicationStatement: extension = 1-0-0-0 Tablette HCT 12,5mg oral; status = intended; medication[x] = Hydrochlorothiazid; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-hct.md)
+* **Items**: [MedicationStatement: status = intended; medication[x] = Bisoprolol; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-concor.md)
+* **Items**: [MedicationStatement: status = intended; medication[x] = Ibuprofen; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md)
+* **Items**: [MedicationStatement: status = intended; medication[x] = Zopiclon; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md)
 
 
 
