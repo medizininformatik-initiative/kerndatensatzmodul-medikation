@@ -14,7 +14,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>Glucose 5% B.braun Ecoflac Plus</source>
+        <source>Glucose 5% B.Braun Ecoflac Plus 10x250ml N2</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Medication-mii-exa-medikation-medication-glucoseloesung" resname="Coding.display">

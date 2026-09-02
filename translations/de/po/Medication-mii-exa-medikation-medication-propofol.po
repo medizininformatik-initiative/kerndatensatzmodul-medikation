@@ -6,7 +6,7 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "PROPOFOL 2% 20MG/1ML MCT"
+msgid "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
 msgstr ""
 
 # Coding.display

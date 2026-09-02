@@ -10,13 +10,6 @@
         <source>test health data</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use" resname="Dosage.text">
-             <notes>
-               <note id="n1">Dosage.text</note>
-             </notes>
-        <source>Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa</source>
-        <target></target>
-      </trans-unit>
       <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>

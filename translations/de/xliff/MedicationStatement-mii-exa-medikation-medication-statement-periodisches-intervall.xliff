@@ -14,14 +14,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>Marcumar</source>
-        <target></target>
-      </trans-unit>
-      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall" resname="Dosage.text">
-             <notes>
-               <note id="n1">Dosage.text</note>
-             </notes>
-        <source>Marcumar jeden Montag-, Mittwoch- und Freitagabend</source>
+        <source>Marcumar 3mg 98 Tbl. N3</source>
         <target></target>
       </trans-unit>
       <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall" resname="Coding.display">
@@ -29,6 +22,13 @@
                <note id="n1">Coding.display</note>
              </notes>
         <source>Oral use</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall" resname="Quantity.unit">
+             <notes>
+               <note id="n1">Quantity.unit</note>
+             </notes>
+        <source>Milligramm</source>
         <target></target>
       </trans-unit>
     </body>

@@ -10,12 +10,6 @@
       "target" : null
     },
     {
-      "id" : "Dosage.text",
-      "context" : "Dosage.text",
-      "source" : "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
-      "target" : null
-    },
-    {
       "id" : "Coding.display",
       "context" : "Coding.display",
       "source" : "Intravenous use",

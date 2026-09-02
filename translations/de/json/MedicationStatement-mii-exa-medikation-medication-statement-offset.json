@@ -12,19 +12,19 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "L-THYROXIN 125 Henning Tabletten",
-      "target" : null
-    },
-    {
-      "id" : "Dosage.text",
-      "context" : "Dosage.text",
-      "source" : "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
+      "source" : "L-Thyroxin Henning 125 50 Tbl. N2",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
       "source" : "Oral use",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Mikrogramm",
       "target" : null
     }]
   }]

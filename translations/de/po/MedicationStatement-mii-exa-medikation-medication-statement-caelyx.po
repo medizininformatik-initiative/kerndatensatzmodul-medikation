@@ -4,13 +4,13 @@
 msgid "test health data"
 msgstr ""
 
-# Dosage.text
-#: Dosage.text
-msgid "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
-msgstr ""
-
 # Coding.display
 #: Coding.display
 msgid "Intravenous use"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "mg/m2"
 msgstr ""
 

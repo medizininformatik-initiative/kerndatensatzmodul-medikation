@@ -4,11 +4,6 @@
 msgid "test health data"
 msgstr ""
 
-# Dosage.text
-#: Dosage.text
-msgid "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
-msgstr ""
-
 # Coding.display
 #: Coding.display
 msgid "Intravenous use"

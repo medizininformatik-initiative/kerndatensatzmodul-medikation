@@ -12,19 +12,19 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "Marcumar",
-      "target" : null
-    },
-    {
-      "id" : "Dosage.text",
-      "context" : "Dosage.text",
-      "source" : "Marcumar jeden Montag-, Mittwoch- und Freitagabend",
+      "source" : "Marcumar 3mg 98 Tbl. N3",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
       "source" : "Oral use",
+      "target" : null
+    },
+    {
+      "id" : "Quantity.unit",
+      "context" : "Quantity.unit",
+      "source" : "Milligramm",
       "target" : null
     }]
   }]

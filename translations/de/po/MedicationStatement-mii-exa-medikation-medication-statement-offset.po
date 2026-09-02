@@ -6,16 +6,16 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "L-THYROXIN 125 Henning Tabletten"
-msgstr ""
-
-# Dosage.text
-#: Dosage.text
-msgid "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"
+msgid "L-Thyroxin Henning 125 50 Tbl. N2"
 msgstr ""
 
 # Coding.display
 #: Coding.display
 msgid "Oral use"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "Mikrogramm"
 msgstr ""
 

@@ -6,16 +6,16 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "Marcumar"
-msgstr ""
-
-# Dosage.text
-#: Dosage.text
-msgid "Marcumar jeden Montag-, Mittwoch- und Freitagabend"
+msgid "Marcumar 3mg 98 Tbl. N3"
 msgstr ""
 
 # Coding.display
 #: Coding.display
 msgid "Oral use"
+msgstr ""
+
+# Quantity.unit
+#: Quantity.unit
+msgid "Milligramm"
 msgstr ""
 
