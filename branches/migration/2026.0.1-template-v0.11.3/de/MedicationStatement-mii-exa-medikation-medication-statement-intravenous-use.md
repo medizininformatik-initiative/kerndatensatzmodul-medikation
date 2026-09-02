@@ -26,7 +26,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2018-05-26
 
-> **dosage****text**: Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa**route**: Intravenous use
+> **dosage****timing**: Count 1 times, Once**route**: Intravenous use
 
 ### DoseAndRates
 
@@ -64,7 +64,11 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   },
   "effectiveDateTime" : "2018-05-26",
   "dosage" : [{
-    "text" : "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa",
+    "timing" : {
+      "repeat" : {
+        "count" : 1
+      }
+    },
     "route" : {
       "coding" : [{
         "system" : "http://standardterms.edqm.eu",

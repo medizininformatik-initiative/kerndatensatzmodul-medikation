@@ -24,12 +24,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2020-05-27 17:57:00+0100
 
-### Dosages
+> **dosage****timing**: 30min , before breakfast, Once per 1 day**route**: Oral use
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Text** | **Timing** | **Route** |
-| * | L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück | 30min , before breakfast, Once per 1 day | Oral use |
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 125 Mikrogramm (Details: UCUM codeug = 'ug') |
+
 
 
 
@@ -60,7 +63,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   },
   "effectiveDateTime" : "2020-05-27T17:57:00+01:00",
   "dosage" : [{
-    "text" : "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
@@ -76,7 +78,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "code" : "20053000",
         "display" : "Oral use"
       }]
-    }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 125,
+        "unit" : "Mikrogramm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ug"
+      }
+    }]
   }]
 }
 

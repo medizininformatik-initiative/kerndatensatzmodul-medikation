@@ -24,12 +24,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2020-05-27 17:57:00+0100
 
-### Dosages
+> **dosage****timing**: at dinner, Once per 1 day**route**: Oral use
 
-| | | | |
-| :--- | :--- | :--- | :--- |
-| - | **Text** | **Timing** | **Route** |
-| * | Marcumar jeden Montag-, Mittwoch- und Freitagabend | at dinner, Once per 1 day | Oral use |
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 3 Milligramm (Details: UCUM codemg = 'mg') |
+
 
 
 
@@ -60,7 +63,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   },
   "effectiveDateTime" : "2020-05-27T17:57:00+01:00",
   "dosage" : [{
-    "text" : "Marcumar jeden Montag-, Mittwoch- und Freitagabend",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
@@ -76,7 +78,15 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "code" : "20053000",
         "display" : "Oral use"
       }]
-    }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 3,
+        "unit" : "Milligramm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }]
   }]
 }
 
