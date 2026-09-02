@@ -258,7 +258,9 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * dosage.route = $standardterms#20053000 "Oral use"
-* dosage.text = "Marcumar jeden Montag-, Mittwoch- und Freitagabend"
+// Dosis aus dem in DIESER Instanz referenzierten Produkt: Marcumar 3 mg Tabletten,
+// eine Tablette je Einnahme. DosageDE#DosageStructuredRequiresBoth verlangt beides.
+* dosage.doseAndRate.doseQuantity = 3 'mg' "Milligramm"
 * dosage.timing.repeat.dayOfWeek[0] = #mon
 * dosage.timing.repeat.dayOfWeek[+] = #wed
 * dosage.timing.repeat.dayOfWeek[+] = #fri
@@ -277,11 +279,13 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * dosage.route = $standardterms#20053000 "Oral use"
-* dosage.text = "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.offset = 30
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
+// Dosis aus dosage.text dieser Instanz: "125 Mikrogramm taeglich".
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.doseAndRate.doseQuantity = 125 'ug' "Mikrogramm"
 * dosage.timing.repeat.when = #ACM
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
 * medicationCodeableConcept = $cs-pzn#02532793 "L-Thyroxin Henning 125 50 Tbl. N2"
@@ -297,10 +301,12 @@ Usage: #example
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
 * subject = Reference(Patient/example)
 * effectiveDateTime = "2020-01-02T09:30:00+01:00"
-* dosage.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.period = 4
 * dosage.timing.repeat.periodUnit = #wk
+// Dosis aus dosage.text dieser Instanz: "50 mg je Quadratmeter Koerperoberflaeche".
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.doseAndRate.doseQuantity = 50 'mg/m2' "mg/m2"
 * dosage.route = $standardterms#20045000 "Intravenous use"
 
 Instance: mii-exa-medikation-medication-statement-intravenous-use
@@ -308,10 +314,12 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
+// Einmalige parenterale Applikation, wie in dieser Instanz beschrieben.
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.timing.repeat.count = 1
 * dosage.doseAndRate.doseRange.high = 2600 'mg' "milligram"
 * dosage.doseAndRate.doseRange.low = 2400 'mg' "milligram"
 * dosage.route = $standardterms#20045000 "Intravenous use"
-* dosage.text = "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
 * effectiveDateTime = "2018-05-26"
 * medicationReference = Reference(mii-exa-medikation-medication-thiotepa)
 * partOf = Reference(Procedure/ExampleProcedure)

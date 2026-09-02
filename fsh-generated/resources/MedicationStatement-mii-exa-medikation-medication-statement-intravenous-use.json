@@ -15,6 +15,11 @@
   },
   "dosage": [
     {
+      "timing": {
+        "repeat": {
+          "count": 1
+        }
+      },
       "doseAndRate": [
         {
           "doseRange": {
@@ -41,8 +46,7 @@
             "display": "Intravenous use"
           }
         ]
-      },
-      "text": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
+      }
     }
   ],
   "partOf": [

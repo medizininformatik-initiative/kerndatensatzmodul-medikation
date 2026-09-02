@@ -22,7 +22,16 @@
           "periodUnit": "wk"
         }
       },
-      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 50,
+            "code": "mg/m2",
+            "system": "http://unitsofmeasure.org",
+            "unit": "mg/m2"
+          }
+        }
+      ],
       "route": {
         "coding": [
           {
