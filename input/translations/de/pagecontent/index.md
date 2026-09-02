@@ -16,6 +16,15 @@ Im Folgenden werden die Use Cases des Moduls sowie die dazugehörigen FHIR-Profi
 
 Das Modul MEDIKATION enthält Datenelemente zur Dokumentation von Arzneimittelverordnungen und -verabreichungen sowie Medikationsplänen. Es ist Bestandteil der Basismodule des Kerndatensatzes der Medizininformatik-Initiative.
 
+Im Implementationsguide werden zwei unterschiedliche Formen von Modellen verwendet:
+
+1. Im oberen Teil des Implementationsguide werden zur Beschreibung der Module logische Informationsmodelle verwendet, um die Anwendungssicht darzustellen. Diese Modelle werden mit dem Werkzeug ART-DECOR entwickelt und können unter <https://art-decor.org/art-decor/decor-datasets--mide-> zusammenhängend eingesehen werden.
+2. Im unteren Teil des Implementationsguide werden zur Darstellung der technischen Implementation des Moduls in FHIR FHIR-Modelle verwendet.
+
+Beide Formen der Modelle sind entsprechend ihrer jeweiligen Zielsetzung kongruent aufeinander abgestimmt: Mapping-Tabellen zwischen den Bezeichnern können über die Tabellendarstellung in ART-DECOR dynamisch erzeugt werden (Spalten Name und Comment: FHIR-Mapping). In der hier vorliegenden Version des Moduls wurden die gültigen Naming Conventions verwendet, bei denen die Bezeichner im logischen Informationsmodell in deutscher Sprache und die Feldnamen der FHIR-Implementierung in englischer Sprache angegeben sind. In folgenden Versionen des Moduls werden Bezeichner nach neuen Naming Conventions vereinheitlicht.
+
+**Informationsmodell Modul MEDIKATION mit Übersicht der Teilmodule:**
+
 Es lassen sich u. a. folgende Typen der Dokumentation von Arzneimittelprozessen unterscheiden:
 
 1. Medikation im Krankenhaus (hauptsächlich stationär/teilstationär)
@@ -58,6 +67,8 @@ Für Medikationsangaben, die sich nachweislich über die PZN auf ganze Packungen
 
 #### Kombinationspackungen
 
+**Kombinationspackungen (nach Anforderung der KBV)**
+
 ![Kombinationspackungen im Modul Medikation](IG_Medikation_KDS_Kombinationspackungen.png)
 
 Kombinationspackungen können auf einfache Weise durch eine hierarchische Schachtelung der `Medication` über eine Verknüpfung ausgehend von `Item.reference` auf andere `Medication`-Instanzen dargestellt werden. Damit dient die „obere" `Medication`-Instanz als Packungshierarchie und als Container der eigentlichen Medikation. Sie enthält auch die entsprechende PZN der Kombinationspackung. Die eigentliche Medikation („Untermedikation") wird als vollständige `Medication`-Instanz abgebildet — jeweils ohne PZN, mit vollständigen Medikationsdaten mit ASK und ggf. ATC.
@@ -67,6 +78,8 @@ Kombinationspackungen können auf einfache Weise durch eine hierarchische Schach
 Zur Dokumentation von der Verordnung oder Verabreichung unabhängiger Medikationsereignisse, z. B. in Medikationsplänen oder bei der Angabe von Medikationen durch die Patientin oder den Patienten selbst.
 
 Eine Medikationsverabreichung unterscheidet sich von einem Medikationseintrag durch die vollständigeren Informationen über die Verabreichung, die auf den tatsächlichen Verabreichungsinformationen basieren. Ein Medikationseintrag ist damit in der Regel weniger spezifisch. Für ihn ist nicht vorgeschrieben zu dokumentieren, wann genau das Medikament verabreicht wurde, sondern nur, dass ein Bericht über die Einnahme vorliegt — wobei Informationen zu Zeit, Menge oder Rate oder sogar das Medikamentenprodukt fehlen, unvollständig oder weniger präzise sein können. Die Angaben können aus dem Gedächtnis der Patientin oder des Patienten, aus einem Rezept oder aus einer Medikamentenliste stammen.
+
+Daten zur Entlass- und ambulanten Medikation (Medikationseintrag) stehen zukünftig über Angaben im Medikationsplan zur Verfügung. Für Selbstmedikation (Medikationseintrag) lässt sich derzeit keine patientenbezogene Dokumentation absehen; bei Eigenangabe ist sie auch im Medikationsplan enthalten, langfristig ist der Weg über Patientenportale denkbar. Studienmedikation (Medikationsverabreichung) wird in Electronic-Data-Capture-Systemen häufig strukturiert, aber ohne semantische Hinterlegung erfasst — bis auf die Kodierung der Nebenwirkungen in MedDRA als verpflichtende Komponente der Pharmakovigilanz-Meldekette. Einschränkungen können sich hier ggf. durch die Verblindung von Studienmedikamenten ergeben.
 
 Zu einer Medikation sollte als Mindestumfang der Wirkstoff abrufbar sein. In einer weiteren Ausbaustufe sollten darüber hinaus folgende Datenelemente verfügbar gemacht werden, abhängig von den Ausgangsdaten:
 
@@ -85,6 +98,10 @@ Zur Erfassung von Medikationsplänen besteht die Möglichkeit, mehrere Medikatio
 * Aufnahmemedikation — `IHE Deutschland Fallkontext | E210 "stationäre Aufnahme"`
 * Entlassmedikation — `IHE Deutschland Fallkontext | E230 "stationäre Entlassung"`
 * Stationäre Medikation — `IHE Deutschland Fallkontext | E200 "stationärer Aufenthalt"`
+
+#### Medikationsverordnung (Arzneimittelanforderung)
+
+Zur Dokumentation einer Medikationsverordnung durch medizinisches Personal.
 
 #### Änderung der Dosis bei Medikationseintrag und -verordnung
 

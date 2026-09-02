@@ -8,4 +8,8 @@ Nachfolgend wird aufgelistet, welche Inhalte verpflichtend im CapabilityStatemen
 
 Canonical: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata`
 
+#### Suchparameter
+
+Dieses Modul deklariert **keine eigenen SearchParameter-Ressourcen**. Welche Suchparameter unterstützt werden MÜSSEN, ergibt sich aus dem oben dargestellten CapabilityStatement; die Definitionen stammen aus der FHIR-Basisspezifikation und aus der MII-weiten Suchparameterliste des [Meta-Moduls](https://github.com/medizininformatik-initiative/kerndatensatz-meta). Die MII-weiten Festlegungen werden dort zentral gepflegt und hier nicht wiederholt.
+
 {% lang-fragment CapabilityStatement-mii-cps-medikation-capabilitystatement-html.xhtml %}

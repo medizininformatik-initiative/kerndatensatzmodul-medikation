@@ -1177,7 +1177,7 @@
                 }
               ],
               "name": "raterange",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
               "type": "composite"
             },
             {
@@ -1539,7 +1539,7 @@
                 }
               ],
               "name": "raterange",
-              "definition": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange",
               "type": "composite"
             },
             {

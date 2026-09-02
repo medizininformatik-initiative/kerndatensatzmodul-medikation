@@ -9,4 +9,8 @@ The following lists the content that MUST be stated in the CapabilityStatement. 
 
 Canonical: `https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata`
 
+#### Search parameters
+
+This module declares **no SearchParameter resources of its own**. Which search parameters MUST be supported follows from the CapabilityStatement rendered above; the definitions come from the FHIR base specification and from the MII-wide search parameter list of the [Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta). The MII-wide rules are maintained there centrally and are not repeated here.
+
 {% lang-fragment CapabilityStatement-mii-cps-medikation-capabilitystatement-html.xhtml %}
