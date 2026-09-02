@@ -18,7 +18,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
+* code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.Braun Ecoflac Plus 10x250ml N2"
 * code.coding[+] = $cs-atc|2023#V06DC01 "Glucose"
 * code.coding[+] = $cs-atc-who|2023#V06DC01 "glucose"
 * form = $standardterms#11210000 "Solution for infusion"
@@ -41,7 +41,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#00169644 "CALCIUM SANDOZ forte Brausetabletten"
+* code.coding[0] = $cs-pzn#00169644 "Calcium-Sandoz® Forte 500mg, 20 Brausetbl. N1"
 * code.coding[+] = $cs-atc|2023#A12AA20 "Calcium (verschiedene Salze in Kombination)"
 * code.coding[+] = $cs-atc-who|2023#A12AA20 "calcium (different salts in combination)"
 * form = $standardterms#10222000 "Effervescent tablet"
@@ -84,7 +84,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#887150 "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+* code.coding[0] = $cs-pzn#17313306 "Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1"
 * code.coding[+] = $cs-atc|2023#L01DB01 "Doxorubicin"
 * status = #active
 * form = $standardterms#11213000 "Concentrate for solution for infusion"
@@ -99,7 +99,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
+* code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1 A Pharma® TAH 100 Tbl. N3"
 * code.coding[+] = $cs-atc|2023#B01AC06 "Acetylsalicylsäure"
 * form = $standardterms#10219000 "Tablet"
 // * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
@@ -113,7 +113,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code = $cs-pzn#194346 "PROPOFOL 2% 20MG/1ML MCT"
+* code = $cs-pzn#16891099 "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
 * form = $standardterms#50021000 "Emulsion for injection/infusion"
 * ingredient.isActive = true
 * ingredient.itemCodeableConcept = $cs-ask#22898 "Propofol"
@@ -138,7 +138,7 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
 //* meta.source = "https://www.mmi.de/mmi-pharmindex|1.0"
-* code.coding[Pharmazentralnummer] = $cs-pzn|02.08.2024#02758994 "dolomo® TN"
+* code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN 27 Tbl."
 * code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 27
@@ -258,7 +258,9 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * dosage.route = $standardterms#20053000 "Oral use"
-* dosage.text = "Marcumar jeden Montag-, Mittwoch- und Freitagabend"
+// Dosis aus dem in DIESER Instanz referenzierten Produkt: Marcumar 3 mg Tabletten,
+// eine Tablette je Einnahme. DosageDE#DosageStructuredRequiresBoth verlangt beides.
+* dosage.doseAndRate.doseQuantity = 3 'mg' "Milligramm"
 * dosage.timing.repeat.dayOfWeek[0] = #mon
 * dosage.timing.repeat.dayOfWeek[+] = #wed
 * dosage.timing.repeat.dayOfWeek[+] = #fri
@@ -267,7 +269,7 @@ Usage: #example
 * dosage.timing.repeat.periodUnit = #d
 * dosage.timing.repeat.when = #CV
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
-* medicationCodeableConcept = $cs-pzn#05541338 "Marcumar"
+* medicationCodeableConcept = $cs-pzn#05541338 "Marcumar 3mg 98 Tbl. N3"
 * status = #active
 * subject = Reference(Patient/example)
 
@@ -277,14 +279,16 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * dosage.route = $standardterms#20053000 "Oral use"
-* dosage.text = "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.offset = 30
 * dosage.timing.repeat.period = 1
 * dosage.timing.repeat.periodUnit = #d
+// Dosis aus dosage.text dieser Instanz: "125 Mikrogramm taeglich".
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.doseAndRate.doseQuantity = 125 'ug' "Mikrogramm"
 * dosage.timing.repeat.when = #ACM
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
-* medicationCodeableConcept = $cs-pzn#02532793 "L-THYROXIN 125 Henning Tabletten"
+* medicationCodeableConcept = $cs-pzn#02532793 "L-Thyroxin Henning 125 50 Tbl. N2"
 * status = #active
 * subject = Reference(Patient/example)
 
@@ -297,10 +301,12 @@ Usage: #example
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
 * subject = Reference(Patient/example)
 * effectiveDateTime = "2020-01-02T09:30:00+01:00"
-* dosage.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.period = 4
 * dosage.timing.repeat.periodUnit = #wk
+// Dosis aus dosage.text dieser Instanz: "50 mg je Quadratmeter Koerperoberflaeche".
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.doseAndRate.doseQuantity = 50 'mg/m2' "mg/m2"
 * dosage.route = $standardterms#20045000 "Intravenous use"
 
 Instance: mii-exa-medikation-medication-statement-intravenous-use
@@ -308,10 +314,12 @@ InstanceOf: mii-pr-medikation-medication-statement
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
+// Einmalige parenterale Applikation, wie in dieser Instanz beschrieben.
+// DosageDE#DosageStructuredRequiresBoth verlangt timing UND doseAndRate.
+* dosage.timing.repeat.count = 1
 * dosage.doseAndRate.doseRange.high = 2600 'mg' "milligram"
 * dosage.doseAndRate.doseRange.low = 2400 'mg' "milligram"
 * dosage.route = $standardterms#20045000 "Intravenous use"
-* dosage.text = "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
 * effectiveDateTime = "2018-05-26"
 * medicationReference = Reference(mii-exa-medikation-medication-thiotepa)
 * partOf = Reference(Procedure/ExampleProcedure)

@@ -1,0 +1,9 @@
+{
+  "//": "TEMPLATE-REPO MAINTENANCE — removed from created modules by the first-run bootstrap (docs/recipes/first-run-setup.md). Modules release via the MII CalVer Module Release Workflow, never Release Please. This marker also covers .release-please-manifest.json, which cannot carry it: release-please parses every manifest key as a package path and its value as a version.",
+  "release-type": "simple",
+  "packages": {
+    ".": {
+      "release-type": "simple"
+    }
+  }
+}

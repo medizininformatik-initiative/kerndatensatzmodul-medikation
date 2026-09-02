@@ -10,11 +10,16 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc1"
     ]
   },
   "dosage": [
     {
+      "timing": {
+        "repeat": {
+          "count": 1
+        }
+      },
       "doseAndRate": [
         {
           "doseRange": {
@@ -41,19 +46,18 @@
             "display": "Intravenous use"
           }
         ]
-      },
-      "text": "Parenterale Applikation von 2.400 mg bis unter 2.600 mg Thiotepa"
+      }
+    }
+  ],
+  "partOf": [
+    {
+      "reference": "Procedure/ExampleProcedure"
     }
   ],
   "effectiveDateTime": "2018-05-26",
   "medicationReference": {
     "reference": "Medication/mii-exa-medikation-medication-thiotepa"
   },
-  "partOf": [
-    {
-      "reference": "Procedure/ExampleProcedure"
-    }
-  ],
   "status": "completed",
   "subject": {
     "reference": "Patient/example"

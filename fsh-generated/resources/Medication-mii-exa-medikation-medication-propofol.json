@@ -10,39 +10,11 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
-    ]
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "194346",
-        "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "PROPOFOL 2% 20MG/1ML MCT"
-      }
-    ]
-  },
-  "form": {
-    "coding": [
-      {
-        "code": "50021000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Emulsion for injection/infusion"
-      }
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
     ]
   },
   "ingredient": [
     {
-      "isActive": true,
-      "itemCodeableConcept": {
-        "coding": [
-          {
-            "code": "22898",
-            "system": "http://fhir.de/CodeSystem/ask",
-            "display": "Propofol"
-          }
-        ]
-      },
       "strength": {
         "denominator": {
           "value": 1,
@@ -56,8 +28,36 @@
           "system": "http://unitsofmeasure.org",
           "unit": "mg"
         }
+      },
+      "isActive": true,
+      "itemCodeableConcept": {
+        "coding": [
+          {
+            "code": "22898",
+            "system": "http://fhir.de/CodeSystem/ask",
+            "display": "Propofol"
+          }
+        ]
       }
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "code": "16891099",
+        "system": "http://fhir.de/CodeSystem/ifa/pzn",
+        "display": "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
+      }
+    ]
+  },
+  "form": {
+    "coding": [
+      {
+        "code": "50021000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Emulsion for injection/infusion"
+      }
+    ]
+  },
   "status": "active"
 }

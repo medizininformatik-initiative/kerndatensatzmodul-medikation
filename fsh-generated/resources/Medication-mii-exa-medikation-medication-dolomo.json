@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
     ]
   },
   "code": {
@@ -18,8 +18,7 @@
       {
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
         "code": "02758994",
-        "version": "02.08.2024",
-        "display": "dolomo® TN"
+        "display": "dolomo® TN 27 Tbl."
       },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
@@ -40,21 +39,21 @@
   },
   "amount": {
     "numerator": {
-      "value": 27,
-      "unit": "Tablet",
-      "system": "http://unitsofmeasure.org",
-      "code": "1",
       "extension": [
         {
-          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
           "valueQuantity": {
             "value": 27,
             "unit": "Tablet",
             "system": "http://standardterms.edqm.eu",
             "code": "10219000"
-          }
+          },
+          "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
         }
-      ]
+      ],
+      "value": 27,
+      "unit": "Tablet",
+      "system": "http://unitsofmeasure.org",
+      "code": "1"
     },
     "denominator": {
       "value": 1,

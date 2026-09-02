@@ -1,0 +1,5 @@
+### Inhalt
+
+Die List Ressource ist eine flache Sammlung von Ressourcen und bietet Funktionen für die Verwaltung der Sammlung. In diesem Fall dient die Ressource als Sammlung der Medikationen, die ein Patient zu einem bestimmten Zeitpunkt einnimmt, beispielsweise bei Aufnahme oder Entlassung. Die Ressource verweist dazu auf MedicationStatement Ressourcen.
+
+Zweck und Kontext der Liste werden über `List.code` angegeben. Ein Coding wird immer auf Code `medications` aus System `http://terminology.hl7.org/CodeSystem/list-example-use-codes` gesetzt. Mit dem zweiten Coding wird der Kontext bestimmt, in dem die Medikationsliste verwaltet wird. Dabei kann es sich um Aufnahmemedikation, Entlassmedikation oder die Medikation während des stationären Aufenthaltes handeln. Für diese Kontexte besteht die Auswahl aus Codes des Systems IHE XDS Fallkontext (`http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung`); die zulässigen Codes listet das ValueSet [MII VS Medikation Fallkontext](ValueSet-mii-vs-medikation-fallkontext.html).

@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
     ]
   },
   "code": {
@@ -18,7 +18,7 @@
       {
         "code": "00169644",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "CALCIUM SANDOZ forte Brausetabletten"
+        "display": "Calcium-Sandoz® Forte 500mg, 20 Brausetbl. N1"
       },
       {
         "code": "A12AA20",
@@ -34,18 +34,8 @@
       }
     ]
   },
-  "form": {
-    "coding": [
-      {
-        "code": "10222000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Effervescent tablet"
-      }
-    ]
-  },
   "ingredient": [
     {
-      "id": "ing_1",
       "extension": [
         {
           "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
@@ -75,33 +65,33 @@
         ]
       },
       "strength": {
-        "numerator": {
-          "value": 2945.15,
-          "code": "mg",
-          "system": "http://unitsofmeasure.org",
-          "unit": "milligram"
-        },
         "denominator": {
-          "value": 1,
-          "code": "1",
-          "system": "http://unitsofmeasure.org",
-          "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",
                 "system": "http://standardterms.edqm.eu",
                 "code": "10222000"
-              }
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
             }
-          ]
+          ],
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Effervescent tablet"
+        },
+        "numerator": {
+          "value": 2945.15,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
         }
-      }
+      },
+      "id": "ing_1"
     },
     {
-      "id": "ing_2",
       "extension": [
         {
           "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
@@ -131,33 +121,33 @@
         ]
       },
       "strength": {
-        "numerator": {
-          "value": 300,
-          "code": "mg",
-          "system": "http://unitsofmeasure.org",
-          "unit": "milligram"
-        },
         "denominator": {
-          "value": 1,
-          "code": "1",
-          "system": "http://unitsofmeasure.org",
-          "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",
                 "system": "http://standardterms.edqm.eu",
                 "code": "10222000"
-              }
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
             }
-          ]
+          ],
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Effervescent tablet"
+        },
+        "numerator": {
+          "value": 300,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
         }
-      }
+      },
+      "id": "ing_2"
     },
     {
-      "id": "ing_3",
       "extension": [
         {
           "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
@@ -205,30 +195,40 @@
         ]
       },
       "strength": {
-        "numerator": {
-          "value": 500.54,
-          "code": "mg",
-          "system": "http://unitsofmeasure.org",
-          "unit": "milligram"
-        },
         "denominator": {
-          "value": 1,
-          "code": "1",
-          "system": "http://unitsofmeasure.org",
-          "unit": "Effervescent tablet",
           "extension": [
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation",
               "valueQuantity": {
                 "value": 1,
                 "unit": "Effervescent tablet",
                 "system": "http://standardterms.edqm.eu",
                 "code": "10222000"
-              }
+              },
+              "url": "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation"
             }
-          ]
+          ],
+          "value": 1,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Effervescent tablet"
+        },
+        "numerator": {
+          "value": 500.54,
+          "code": "mg",
+          "system": "http://unitsofmeasure.org",
+          "unit": "milligram"
         }
-      }
+      },
+      "id": "ing_3"
     }
-  ]
+  ],
+  "form": {
+    "coding": [
+      {
+        "code": "10222000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Effervescent tablet"
+      }
+    ]
+  }
 }

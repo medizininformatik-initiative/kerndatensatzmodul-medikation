@@ -4,15 +4,15 @@
   "name": "MII_VS_Medikation_ATC",
   "id": "mii-vs-medikation-atc",
   "title": "MII VS Medikation ATC",
-  "description": "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+  "description": "Enthaelt ATC-Codes der Versionen 2018 bis 2026",
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
   "meta": {
     "profile": [
       "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
     ]
   },
-  "copyright": "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
-  "version": "2026.0.1",
+  "copyright": "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+  "version": "2027.0.0-ballot.rc1",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {
@@ -42,6 +42,10 @@
   "date": "2025-03-19",
   "compose": {
     "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "version": "2026"
+      },
       {
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2025"
