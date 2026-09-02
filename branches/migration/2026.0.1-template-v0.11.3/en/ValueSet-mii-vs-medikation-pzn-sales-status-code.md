@@ -46,7 +46,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Medikation PZN Sales Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T14:23:10+00:00",
+  "date" : "2026-09-02T14:31:45+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
