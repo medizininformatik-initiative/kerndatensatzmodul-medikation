@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-medication-calcium"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Medication mii-exa-medikation-medication-calcium</b></p><a name="mii-exa-medikation-medication-calcium"> </a><a name="hcmii-exa-medikation-medication-calcium"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/ifa/pzn 00169644}, {http://fhir.de/CodeSystem/bfarm/atc A12AA20}, {http://www.whocc.no/atc A12AA20}">CALCIUM SANDOZ forte Brausetabletten</span></p><p><b>form</b>: <span title="Codes:{http://standardterms.edqm.eu 10222000}">Effervescent tablet</span></p><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_1</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov 472LWJ3Y9N}, {http://terminology.hl7.org/CodeSystem/CAS 11116-97-5}, {http://snomed.info/sct 422232005}">CALCIUM LACTATE GLUCONATE</span></p><p><b>strength</b>: 2945.15 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_2</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov H0G9379FGK}, {http://terminology.hl7.org/CodeSystem/CAS 471-34-1}, {http://snomed.info/sct 387307005}">CALCIUM CARBONATE</span></p><p><b>strength</b>: 300 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_3</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-IN">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_1</li></ul></blockquote><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_2</li></ul></blockquote><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov 2M83C4R6ZB}, {http://terminology.hl7.org/CodeSystem/CAS 14127-61-8}, {http://snomed.info/sct 5540006}">CALCIUM CATION</span></p><p><b>strength</b>: 500.54 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Medication mii-exa-medikation-medication-calcium</b></p><a name="de-mii-exa-medikation-medication-calcium"> </a><a name="de-hcmii-exa-medikation-medication-calcium"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>code</b>: <span title="Codes:{http://fhir.de/CodeSystem/ifa/pzn 00169644}, {http://fhir.de/CodeSystem/bfarm/atc A12AA20}, {http://www.whocc.no/atc A12AA20}">CALCIUM SANDOZ forte Brausetabletten</span></p><p><b>form</b>: <span title="Codes:{http://standardterms.edqm.eu 10222000}">Effervescent tablet</span></p><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_1</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov 472LWJ3Y9N}, {http://terminology.hl7.org/CodeSystem/CAS 11116-97-5}, {http://snomed.info/sct 422232005}">CALCIUM LACTATE GLUCONATE</span></p><p><b>strength</b>: 2945.15 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_2</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-PIN">MII CS Medikation Wirkstofftyp: PIN</a> (precise ingredient)</p><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov H0G9379FGK}, {http://terminology.hl7.org/CodeSystem/CAS 471-34-1}, {http://snomed.info/sct 387307005}">CALCIUM CARBONATE</span></p><p><b>strength</b>: 300 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote><blockquote><p><b>ingredient</b></p><blockquote><p><b>id</b></p>ing_3</blockquote><p><b>MII EX Medikation Wirkstofftyp</b>: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html#mii-cs-medikation-wirkstofftyp-IN">MII CS Medikation Wirkstofftyp: IN</a> (ingredient)</p><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_1</li></ul></blockquote><blockquote><p><b>MII EX Medikation Wirkstoffrelation</b></p><ul><li>ingredientUri: #ing_2</li></ul></blockquote><p><b>item</b>: <span title="Codes:{http://fdasis.nlm.nih.gov 2M83C4R6ZB}, {http://terminology.hl7.org/CodeSystem/CAS 14127-61-8}, {http://snomed.info/sct 5540006}">CALCIUM CATION</span></p><p><b>strength</b>: 500.54 milligram<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemg = 'mg')</span>/1 Effervescent tablet<span style="background: LightGoldenRodYellow"> (Details: UCUM  code1 = '1')</span></p></blockquote></div></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+      <code value="00169644"/>
+      <display value="CALCIUM SANDOZ forte Brausetabletten"/>
+    </coding>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <version value="2023"/>
+      <code value="A12AA20"/>
+      <display value="Calcium (verschiedene Salze in Kombination)"/>
+    </coding>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <version value="2023"/>
+      <code value="A12AA20"/>
+      <display value="calcium (different salts in combination)"/>
+    </coding>
+  </code>
+  <form>
+    <coding>
+      <system value="http://standardterms.edqm.eu"/>
+      <code value="10222000"/>
+      <display value="Effervescent tablet"/>
+    </coding>
+  </form>
+  <ingredient id="ing_1">
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp">
+      <valueCoding>
+        <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+        <code value="PIN"/>
+      </valueCoding>
+    </extension>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://fdasis.nlm.nih.gov"/>
+        <code value="472LWJ3Y9N"/>
+        <display value="CALCIUM LACTATE GLUCONATE"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/CAS"/>
+        <code value="11116-97-5"/>
+        <display value="Calcium lactate gluconate"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="422232005"/>
+        <display value="Calcium lactate gluconate (substance)"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="2945.15"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <extension url="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation">
+          <valueQuantity>
+            <value value="1"/>
+            <unit value="Effervescent tablet"/>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10222000"/>
+          </valueQuantity>
+        </extension>
+        <value value="1"/>
+        <unit value="Effervescent tablet"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="1"/>
+      </denominator>
+    </strength>
+  </ingredient>
+  <ingredient id="ing_2">
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp">
+      <valueCoding>
+        <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+        <code value="PIN"/>
+      </valueCoding>
+    </extension>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://fdasis.nlm.nih.gov"/>
+        <code value="H0G9379FGK"/>
+        <display value="CALCIUM CARBONATE"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/CAS"/>
+        <code value="471-34-1"/>
+        <display value="Calcium carbonate"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="387307005"/>
+        <display value="Calcium carbonate (substance)"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="300"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <extension url="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation">
+          <valueQuantity>
+            <value value="1"/>
+            <unit value="Effervescent tablet"/>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10222000"/>
+          </valueQuantity>
+        </extension>
+        <value value="1"/>
+        <unit value="Effervescent tablet"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="1"/>
+      </denominator>
+    </strength>
+  </ingredient>
+  <ingredient id="ing_3">
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp">
+      <valueCoding>
+        <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+        <code value="IN"/>
+      </valueCoding>
+    </extension>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation">
+      <extension url="ingredientUri">
+        <valueUri value="#ing_1"/>
+      </extension>
+    </extension>
+    <extension url="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation">
+      <extension url="ingredientUri">
+        <valueUri value="#ing_2"/>
+      </extension>
+    </extension>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://fdasis.nlm.nih.gov"/>
+        <code value="2M83C4R6ZB"/>
+        <display value="CALCIUM CATION"/>
+      </coding>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/CAS"/>
+        <code value="14127-61-8"/>
+        <display value="Calcium cation"/>
+      </coding>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="5540006"/>
+        <display value="Calcium (substance)"/>
+      </coding>
+    </itemCodeableConcept>
+    <strength>
+      <numerator>
+        <value value="500.54"/>
+        <unit value="milligram"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <extension url="http://hl7.org/fhir/StructureDefinition/extension-quantity-translation">
+          <valueQuantity>
+            <value value="1"/>
+            <unit value="Effervescent tablet"/>
+            <system value="http://standardterms.edqm.eu"/>
+            <code value="10222000"/>
+          </valueQuantity>
+        </extension>
+        <value value="1"/>
+        <unit value="Effervescent tablet"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="1"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

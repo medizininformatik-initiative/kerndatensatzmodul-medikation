@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp,2026.0.1,active,,MII_CS_Medikation_Wirkstofftyp,MII CS Medikation Wirkstofftyp,"Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.","ValueSet/mii-vs-medikation-wirkstofftyp"

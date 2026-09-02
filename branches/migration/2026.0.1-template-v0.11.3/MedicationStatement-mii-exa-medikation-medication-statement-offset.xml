@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-medication-statement-offset"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: MedicationStatement mii-exa-medikation-medication-statement-offset</b></p><a name="mii-exa-medikation-medication-statement-offset"> </a><a name="hcmii-exa-medikation-medication-statement-offset"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medication-statement.html">MII PR Medikation MedicationStatement</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:{http://fhir.de/CodeSystem/ifa/pzn 02532793}">L-THYROXIN 125 Henning Tabletten</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example">Patient/example</a></p><p><b>effective</b>: 2020-05-27 17:57:00+0100</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück</td><td>30min , before breakfast, Once per 1 day</td><td><span title="Codes:{http://standardterms.edqm.eu 20053000}">Oral use</span></td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: MedicationStatement mii-exa-medikation-medication-statement-offset</b></p><a name="de-mii-exa-medikation-medication-statement-offset"> </a><a name="de-hcmii-exa-medikation-medication-statement-offset"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medication-statement.html">MII PR Medikation MedicationStatement</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p><b>status</b>: Active</p><p><b>medication</b>: <span title="Codes:{http://fhir.de/CodeSystem/ifa/pzn 02532793}">L-THYROXIN 125 Henning Tabletten</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example">Patient/example</a></p><p><b>effective</b>: 2020-05-27 17:57:00+0100</p><h3>Dosages</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td style="display: none">*</td><td>L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück</td><td>30min , before breakfast, Once per 1 day</td><td><span title="Codes:{http://standardterms.edqm.eu 20053000}">Oral use</span></td></tr></table></div></div>
+  </text>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
+      <code value="02532793"/>
+      <display value="L-THYROXIN 125 Henning Tabletten"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2020-05-27T17:57:00+01:00"/>
+  <dosage>
+    <text value="L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück"/>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="1"/>
+        <periodUnit value="d"/>
+        <when value="ACM"/>
+        <offset value="30"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://standardterms.edqm.eu"/>
+        <code value="20053000"/>
+        <display value="Oral use"/>
+      </coding>
+    </route>
+  </dosage>
+</MedicationStatement>

@@ -1,0 +1,66 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_Fallkontext",
+    "title" : "MII VS Medikation Fallkontext",
+    "description" : "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+    "systems" : ["http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
+    "StructureDefinition-mii-pr-medikation-medikationsliste.html" : "MII PR Medikation Medikationsliste"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_ASK",
+    "title" : "MII VS Medikation ASK",
+    "description" : "Enthaelt alle ASK-Codes",
+    "systems" : ["http://fhir.de/CodeSystem/ask"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-medikation-medication.html" : "MII PR Medikation Medication"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_ATC",
+    "title" : "MII VS Medikation ATC",
+    "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+    "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
+    "StructureDefinition-mii-pr-medikation-medication.html" : "MII PR Medikation Medication",
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_UNII",
+    "title" : "MII VS Medikation UNII",
+    "description" : "Enthaelt Unique Ingredient Identifier (UNII-Codes)",
+    "systems" : ["http://fdasis.nlm.nih.gov"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-medikation-medication.html" : "MII PR Medikation Medication"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_VS_Medikation_Wirkstofftyp",
+    "title" : "MII VS Medikation Wirkstofftypen",
+    "description" : "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+    "systems" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-ex-medikation-wirkstofftyp.html" : "MII EX Medikation Wirkstofftyp"
+  }]
+}

@@ -1,0 +1,418 @@
+{
+  "codeSystems" : [{
+    "url" : "http://fdasis.nlm.nih.gov",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "UNII",
+    "title" : "Unique Ingredient Identifier (UNII)",
+    "description" : "A UNII is a non-proprietary, free, unique, unambiguous, nonsemantic, alphanumeric identifier based on a substance's molecular structure and/or descriptive information. UNII identifiers are generated based on scientific identity characteristics using ISO 11238 data elements. UNII availability does not imply any regulatory review or approval. Synonyms and mappings are based on the best public information available at the time of publication.",
+    "oids" : ["2.16.840.1.113883.4.9"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-medikation-unii.html" : "MII VS Medikation UNII"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationRequest Intent",
+    "title" : "Medication request  intent",
+    "description" : "MedicationRequest Intent Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationrequest Status",
+    "title" : "Medicationrequest  status",
+    "description" : "MedicationRequest Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "oids" : ["2.16.840.1.113883.4.642.4.513"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-timing",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "EventTiming",
+    "title" : "EventTiming",
+    "description" : "Real world event relating to the schedule.",
+    "oids" : ["2.16.840.1.113883.4.642.4.76"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListStatus",
+    "title" : "ListStatus",
+    "description" : "The current state of the list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.327"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-status.html" : "ListStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "RequestPriority",
+    "description" : "Identifies the level of importance to be assigned to actioning the request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.116"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+  },
+  {
+    "url" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+    "version" : "2021-07-06T21:19:41",
+    "status" : "active",
+    "name" : "FallkontextBeiDokumentenerstellung",
+    "title" : "Fallkontext Bei Dokumentenerstellung",
+    "description" : "",
+    "uses" : {
+    },
+    "ValueSet-mii-vs-medikation-fallkontext.html" : "MII VS Medikation Fallkontext"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://tx.hl7europe.eu/r4/ValueSet/target-site-uv-ips" : "Target Site - IPS",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes "
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DoseAndRateType",
+    "title" : "DoseAndRateType",
+    "description" : "The kind of dose or rate specified.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleUseCodesForList",
+    "title" : "Example Use Codes for List",
+    "description" : "Example use codes for the List resource - typical kinds of use.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1105"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-example-codes.html" : "Example Use Codes for List"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationAdministrationPerformerFunctionCodes",
+    "title" : "MedicationAdministration Performer Function Codes",
+    "description" : "MedicationAdministration Performer Function Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Category Codes",
+    "title" : "Medication administration  category  codes",
+    "description" : "MedicationAdministration Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Status Codes",
+    "title" : "Medication administration  status  codes",
+    "description" : "MedicationAdministration Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication usage category codes",
+    "title" : "Medication usage category codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "MedicationRequestCategoryCodes",
+    "title" : "MedicationRequest Category Codes",
+    "description" : "MedicationRequest Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestCourseOfTherapyCodes",
+    "title" : "MedicationRequest Course of Therapy Codes",
+    "description" : "MedicationRequest Course of Therapy Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestStatusReasonCodes",
+    "title" : "MedicationRequest Status Reason Codes",
+    "description" : "MedicationRequest Status Reason Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ReasonMedicationGivenCodes",
+    "title" : "Reason Medication Given Codes",
+    "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ActReason",
+    "title" : "ActReason",
+    "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+    "oids" : ["2.16.840.1.113883.5.8"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "GTSAbbreviation",
+    "title" : "GTSAbbreviation",
+    "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+    "oids" : ["2.16.840.1.113883.5.1022"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "TimingEvent",
+    "title" : "TimingEvent",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.139"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "SubstanceAdminSubstitution",
+    "title" : "Substance Admin Substitution",
+    "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+    "oids" : ["2.16.840.1.113883.5.1070"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : "Unified Code for Units of Measure (UCUM)",
+    "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime",
+    "http://ig.fhir.de/igs/medication/1.0.7/ValueSet-DosageDoseQuantityDE.html" : "Dosage DoseQuantity ValueSet"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Medikation_Wirkstofftyp",
+    "title" : "MII CS Medikation Wirkstofftyp",
+    "description" : "Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe.",
+    "uses" : {
+    },
+    "ValueSet-mii-vs-medikation-wirkstofftyp.html" : "MII VS Medikation Wirkstofftypen"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  },
+  {
+    "url" : "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "PatientMedicineChangeTypes",
+    "title" : "Patient Medicine Change Types",
+    "description" : "Example Item Flags for the List Resource. In this case, these are the kind of flags that would be used on a medication list at the end of a consultation.",
+    "oids" : ["1.2.36.1.2001.1001.101.104.16592",
+    "2.16.840.1.113883.4.642.4.321"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-item-flag.html" : "Patient Medicine Change Types"
+  }]
+}

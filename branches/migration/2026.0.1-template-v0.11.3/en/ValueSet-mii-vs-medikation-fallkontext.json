@@ -1,0 +1,67 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "mii-vs-medikation-fallkontext",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet mii-vs-medikation-fallkontext</b></p><a name=\"mii-vs-medikation-fallkontext\"> </a><a name=\"hcmii-vs-medikation-fallkontext\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include these codes as defined in <a href=\"https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung\"><code>http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 2021-07-06T21:19:41, the version found through the package references\"> version &#x1F4E6;2021-07-06T21:19:41</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung#FallkontextBeiDokumentenerstellung-E100\">E100</a></td><td>ambulanter Kontakt</td><td>Ambulanter Kontakt in beliebiger Einrichtung mit Teilnahme an der ambulanten Versorgung</td></tr><tr><td><a href=\"https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung#FallkontextBeiDokumentenerstellung-E200\">E200</a></td><td>stationärer Aufenthalt</td><td>Voll-, teil- oder nachstationäre Behandlung in einer Einrichtung mit Teilnahme an der stationären Versorgung</td></tr><tr><td><a href=\"https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung#FallkontextBeiDokumentenerstellung-E210\">E210</a></td><td>stationäre Aufnahme</td><td>Aufnahme zur voll-, teil- oder nachstationären Behandlung in eine Einrichtung mit Teilnahme an der stationären Versorgung</td></tr><tr><td><a href=\"https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung#FallkontextBeiDokumentenerstellung-E230\">E230</a></td><td>stationäre Entlassung</td><td>Entlassung nach voll-, teil- oder nachstationärer Behandlung aus einer Einrichtung mit Teilnahme an der stationären Versorgung</td></tr></table></li></ul></div>"
+  },
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
+  "version" : "2026.0.1",
+  "name" : "MII_VS_Medikation_Fallkontext",
+  "title" : "MII VS Medikation Fallkontext",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-11-14",
+  "publisher" : "NUM-DIZ",
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "This artifact includes content from IHE Deutschland e.V. (https://www.ihe-d.de/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+      "concept" : [{
+        "code" : "E100",
+        "display" : "ambulanter Kontakt"
+      },
+      {
+        "code" : "E200",
+        "display" : "stationärer Aufenthalt"
+      },
+      {
+        "code" : "E210",
+        "display" : "stationäre Aufnahme"
+      },
+      {
+        "code" : "E230",
+        "display" : "stationäre Entlassung"
+      }]
+    }]
+  }
+}

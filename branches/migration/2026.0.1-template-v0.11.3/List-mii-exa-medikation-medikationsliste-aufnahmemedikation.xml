@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<List xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-medikationsliste-aufnahmemedikation"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.1"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: List mii-exa-medikation-medikationsliste-aufnahmemedikation</b></p><a name="mii-exa-medikation-medikationsliste-aufnahmemedikation"> </a><a name="hcmii-exa-medikation-medikationsliste-aufnahmemedikation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medikationsliste.html">MII PR Medikation Medikationsliste</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Aufnahmemedikation</h2><table class="clstu"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example">Patient/example</a></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/MedicationStatement/example">MedicationStatement/example</a></td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: List mii-exa-medikation-medikationsliste-aufnahmemedikation</b></p><a name="de-mii-exa-medikation-medikationsliste-aufnahmemedikation"> </a><a name="de-hcmii-exa-medikation-medikationsliste-aufnahmemedikation"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-mii-pr-medikation-medikationsliste.html">MII PR Medikation Medikationsliste</a> version: 2026.0.1</p><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><h2>Aufnahmemedikation</h2><table class="clstu"><tr><td>Mode: Snapshot List </td><td>Status: Current </td><td>Code: Medication List </td></tr><tr><td>Subject: <a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example">Patient/example</a></td></tr></table><table class="grid"><tr style="backgound-color: #eeeeee"><td><b>Items</b></td></tr><tr><td><a href="https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&amp;canonical=http://fhir.de/packages/de.ihe-d.terminology/MedicationStatement/example">MedicationStatement/example</a></td></tr></table></div></div>
+  </text>
+  <status value="current"/>
+  <mode value="snapshot"/>
+  <title value="Aufnahmemedikation"/>
+  <code>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/list-example-use-codes"/>
+      <code value="medications"/>
+    </coding>
+    <coding>
+      <system value="http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"/>
+      <code value="E210"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <entry>
+    <item>
+      <reference value="MedicationStatement/example"/>
+    </item>
+  </entry>
+</List>
