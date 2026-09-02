@@ -328,6 +328,8 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
   <li>Es wird empfohlen, <a href="https://www.whocc.no/atc_ddd_index/">ATC-Codes (Anatomisch-therapeutisch-chemische Klassifikation)</a> nur unter Vorbehalt für die Codierung von Wirkstoffen zu verwenden, da keine eindeutige Zuordnung eines ATC-Codes zu einer Substanz möglich ist.</li>
 </ul>
 
+<h4 id="wirkstofftyp">Wirkstofftyp</h4>
+
 <p>Im Bereich der Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnung der Dosisangaben zwischen dem genauen Wirkstoff (der ein Salz, Ester etc. sein kann) und dem reinen Wirkstoff zu unterscheiden, und anzugeben, ob die Berechnung auf dem Derivat (seltener) oder der „reinen"/„allgemeinen (normalisierter)" Substanz (meist) beruht. Aus diesem Grund wurde eine Extension definiert, welche an die Wirkstoffcodierung angehangen werden kann. Diese Extension verweist auf ein ValueSet, welches folgende Codes beinhaltet:</p>
 
 <ul>
@@ -337,6 +339,53 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 </ul>
 
 <p>Das CodeSystem dazu: <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">MII CS Medikation Wirkstofftyp</a>.</p>
+
+<h4 id="verkaufsstatus-einer-pzn">Verkaufsstatus einer PZN</h4>
+
+<p>Pharmazentralnummern sind flüchtig: Ein Artikel, der heute nicht mehr im Katalog steht, war zum Behandlungszeitpunkt möglicherweise regulär im Verkehr. Damit dieser Umstand dokumentierbar bleibt, führt das Modul die Verkaufsstatus-Codes des MMI-Pharmindex (Katalog #116) als eigenes CodeSystem: <a href="CodeSystem-mii-cs-medikation-pzn-sales-status-code.html">MII CS Medikation PZN Sales Status Codes</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Bedeutung</th>
+      <th>Erläuterung</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td>Im Vertrieb</td>
+      <td>Der Artikel ist im Markt erhältlich und wird vom Anbieter vertrieben</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">F</code></td>
+      <td>Außer Vertrieb</td>
+      <td>Lagerware darf abverkauft werden, sofern der Verkehrsfähigkeitsstatus dies zulässt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">D</code></td>
+      <td>Wegfall</td>
+      <td>Die Verkehrsfähigkeit ist erloschen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">R</code></td>
+      <td>Rückruf</td>
+      <td>Der Artikel wurde zurückgerufen und darf nicht mehr abgegeben werden</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Z</code></td>
+      <td>Zurückgezogen</td>
+      <td>Der Artikel wurde zurückgezogen und darf nicht mehr abgegeben werden</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Die Angabe ist dafür vorgesehen, als <strong>Property an einer PZN-Codierung</strong> hinterlegt zu werden — sie beschreibt den Artikel, nicht die Verordnung.</p>
+
+<div class="ig-highlight ig-highlight-grey">
+  <p><strong>Lizenz:</strong> Der Inhalt stammt aus den Rohdatendateien des MMI Pharmindex R3 und wird unter Lizenz zum Zweck der Integration in die Systeme der MII und des NUM verteilt. Er unterliegt daher <strong>nicht</strong> der CC-BY-4.0-Lizenz des übrigen Moduls.</p>
+</div>
 
 <h4 id="arzneimittelprodukte">Arzneimittelprodukte</h4>
 
@@ -466,7 +515,7 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 09:08+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 09:31+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

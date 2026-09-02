@@ -27,6 +27,10 @@
   },
   {
     "name" : "system-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "system-version",
     "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"
   },
   {

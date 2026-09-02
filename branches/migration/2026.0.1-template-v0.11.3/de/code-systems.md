@@ -24,6 +24,8 @@ Für Wirkstoffe werden als Unique Identifier (Code) vorgeschlagen:
 * Für die Bezeichnung der Stoffe können die registrierten Substanzbezeichnungen verwendet werden, bei denen es sich in der Regel, aber nicht immer, um die [WHO-INNs (International Non-proprietary Names)](https://www.who.int/teams/health-product-and-policy-standards/inn) handelt. In der MII sollte dabei die deutsche Schreibweise verwendet werden, die in manchen Fällen von der englischen Version leicht abweicht.
 * Es wird empfohlen, [ATC-Codes (Anatomisch-therapeutisch-chemische Klassifikation)](https://www.whocc.no/atc_ddd_index/) nur unter Vorbehalt für die Codierung von Wirkstoffen zu verwenden, da keine eindeutige Zuordnung eines ATC-Codes zu einer Substanz möglich ist.
 
+#### Wirkstofftyp
+
 Im Bereich der Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnung der Dosisangaben zwischen dem genauen Wirkstoff (der ein Salz, Ester etc. sein kann) und dem reinen Wirkstoff zu unterscheiden, und anzugeben, ob die Berechnung auf dem Derivat (seltener) oder der „reinen"/„allgemeinen (normalisierter)" Substanz (meist) beruht. Aus diesem Grund wurde eine Extension definiert, welche an die Wirkstoffcodierung angehangen werden kann. Diese Extension verweist auf ein ValueSet, welches folgende Codes beinhaltet:
 
 * IN (ingredient – allgemeiner Wirkstoff),
@@ -31,6 +33,22 @@ Im Bereich der Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnu
 * oder MIN (multiple ingredients – Kombinationscode für mehrere Wirkstoffe).
 
 Das CodeSystem dazu: [MII CS Medikation Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.md).
+
+#### Verkaufsstatus einer PZN
+
+Pharmazentralnummern sind flüchtig: Ein Artikel, der heute nicht mehr im Katalog steht, war zum Behandlungszeitpunkt möglicherweise regulär im Verkehr. Damit dieser Umstand dokumentierbar bleibt, führt das Modul die Verkaufsstatus-Codes des MMI-Pharmindex (Katalog #116) als eigenes CodeSystem: [MII CS Medikation PZN Sales Status Codes](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md).
+
+| | | |
+| :--- | :--- | :--- |
+| `N` | Im Vertrieb | Der Artikel ist im Markt erhältlich und wird vom Anbieter vertrieben |
+| `F` | Außer Vertrieb | Lagerware darf abverkauft werden, sofern der Verkehrsfähigkeitsstatus dies zulässt |
+| `D` | Wegfall | Die Verkehrsfähigkeit ist erloschen |
+| `R` | Rückruf | Der Artikel wurde zurückgerufen und darf nicht mehr abgegeben werden |
+| `Z` | Zurückgezogen | Der Artikel wurde zurückgezogen und darf nicht mehr abgegeben werden |
+
+Die Angabe ist dafür vorgesehen, als **Property an einer PZN-Codierung** hinterlegt zu werden — sie beschreibt den Artikel, nicht die Verordnung.
+
+**Lizenz:** Der Inhalt stammt aus den Rohdatendateien des MMI Pharmindex R3 und wird unter Lizenz zum Zweck der Integration in die Systeme der MII und des NUM verteilt. Er unterliegt daher **nicht** der CC-BY-4.0-Lizenz des übrigen Moduls.
 
 #### Arzneimittelprodukte
 

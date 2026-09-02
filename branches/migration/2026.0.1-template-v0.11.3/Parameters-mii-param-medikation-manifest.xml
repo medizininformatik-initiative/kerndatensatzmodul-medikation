@@ -27,6 +27,10 @@
   </parameter>
   <parameter>
     <name value="system-version"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"/>
+  </parameter>
+  <parameter>
+    <name value="system-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
   </parameter>
   <parameter>

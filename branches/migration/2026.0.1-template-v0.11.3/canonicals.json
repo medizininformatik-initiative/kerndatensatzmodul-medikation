@@ -6,6 +6,13 @@
   "name" : "MII_CPS_Medikation_CapabilityStatement"
 },
 {
+  "id" : "mii-cs-medikation-pzn-sales-status-code",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_CS_Medikation_PZN_Sales_Status_Codes"
+},
+{
   "id" : "mii-cs-medikation-wirkstofftyp",
   "type" : "CodeSystem",
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
@@ -95,6 +102,13 @@
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
   "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Medikation_ATC"
+},
+{
+  "id" : "mii-vs-medikation-pzn-sales-status-code",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes"
 },
 {
   "id" : "mii-vs-medikation-unii",

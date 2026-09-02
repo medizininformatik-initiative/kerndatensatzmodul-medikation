@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "9ea7500c-5f2b-45a8-a24f-db596c768f98",
+  "id" : "fff4197e-518b-4a84-8f40-fc9f30cf3f5d",
   "meta" : {
-    "lastUpdated" : "2026-09-02T09:08:43.113+00:00"
+    "lastUpdated" : "2026-09-02T09:31:23.757+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -31,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7dff87f2-c6fb-4fb7-b584-da2ccc9702c2",
-        "timestamp" : "2026-09-02T09:13:16+00:00",
+        "identifier" : "urn:uuid:2a1e7b69-8eac-4de7-9405-0f3a4fc63c6f",
+        "timestamp" : "2026-09-02T09:36:40+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -5092,8 +5092,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7dff87f2-c6fb-4fb7-b584-da2ccc9702c2",
-        "timestamp" : "2026-09-02T09:13:16+00:00",
+        "identifier" : "urn:uuid:2a1e7b69-8eac-4de7-9405-0f3a4fc63c6f",
+        "timestamp" : "2026-09-02T09:36:40+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -10153,8 +10153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3a469c93-e8ae-4541-8f66-aebec7af4191",
-        "timestamp" : "2026-09-02T09:13:17+00:00",
+        "identifier" : "urn:uuid:f6423a75-c373-4bca-a639-4c06f259f44a",
+        "timestamp" : "2026-09-02T09:36:41+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -14214,8 +14214,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9be09bea-0cc4-498b-be18-2801f0b107e4",
-        "timestamp" : "2026-09-02T09:13:17+00:00",
+        "identifier" : "urn:uuid:afa6a40c-c7a7-47b9-9725-b9718c5837f5",
+        "timestamp" : "2026-09-02T09:36:41+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -19343,8 +19343,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9be09bea-0cc4-498b-be18-2801f0b107e4",
-        "timestamp" : "2026-09-02T09:13:17+00:00",
+        "identifier" : "urn:uuid:afa6a40c-c7a7-47b9-9725-b9718c5837f5",
+        "timestamp" : "2026-09-02T09:36:41+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -24472,8 +24472,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:127c95dc-5e24-4074-85c8-f49b131d3e0c",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:f772810e-0c17-4a8e-9488-7d099f6df0a9",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -28601,8 +28601,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b23bf7c3-43ea-425c-b4d3-2c1919a937b2",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:951bc763-99b9-4aac-9e32-f873dab402e4",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28678,8 +28678,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b23bf7c3-43ea-425c-b4d3-2c1919a937b2",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:951bc763-99b9-4aac-9e32-f873dab402e4",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28755,8 +28755,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c66ee59d-5610-4659-98c6-1efcd614497c",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:1309cc34-0a21-4d12-866c-eee564e4c643",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28803,6 +28803,247 @@
     }
   },
   {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html\">codesystem MII CS Medikation PZN Sales Status Codes v2027.0.0-ballot.rc1 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-D\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-D\">D</a></td><td>Wegfall</td><td>Verkehrsfähigkeit ist erloschen</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Wegfall&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Wegfall&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-F\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-F\">F</a></td><td>Außer Vertrieb</td><td>Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Außer Vertrieb&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Außer Vertrieb&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-N\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-N\">N</a></td><td>Im Vertrieb</td><td>Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Im Vertrieb&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Im Vertrieb&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-R\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-R\">R</a></td><td>Rückruf</td><td>Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;R&quot;, &quot;display&quot;: &quot;Rückruf&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;R&quot;&gt;&lt;display value=&quot;Rückruf&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-Z\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-Z\">Z</a></td><td>Zurückgezogen</td><td>Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;Z&quot;, &quot;display&quot;: &quot;Zurückgezogen&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;Z&quot;&gt;&lt;display value=&quot;Zurückgezogen&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+      "version" : "2027.0.0-ballot.rc1",
+      "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
+      "title" : "MII VS Medikation PZN Sales Status Codes",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-02T09:31:23+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:df20affa-419a-449e-890a-a88b7bf633eb",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        }],
+        "contains" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "D",
+          "display" : "Wegfall"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "F",
+          "display" : "Außer Vertrieb"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "N",
+          "display" : "Im Vertrieb"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "R",
+          "display" : "Rückruf"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "Z",
+          "display" : "Zurückgezogen"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html\">codesystem MII CS Medikation PZN Sales Status Codes v2027.0.0-ballot.rc1 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-D\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-D\">D</a></td><td>Wegfall</td><td>Verkehrsfähigkeit ist erloschen</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;D&quot;, &quot;display&quot;: &quot;Wegfall&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;display value=&quot;Wegfall&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-F\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-F\">F</a></td><td>Außer Vertrieb</td><td>Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;F&quot;, &quot;display&quot;: &quot;Außer Vertrieb&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;display value=&quot;Außer Vertrieb&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-N\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-N\">N</a></td><td>Im Vertrieb</td><td>Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;N&quot;, &quot;display&quot;: &quot;Im Vertrieb&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;display value=&quot;Im Vertrieb&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-R\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-R\">R</a></td><td>Rückruf</td><td>Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;R&quot;, &quot;display&quot;: &quot;Rückruf&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;R&quot;&gt;&lt;display value=&quot;Rückruf&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-Z\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-Z\">Z</a></td><td>Zurückgezogen</td><td>Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;Z&quot;, &quot;display&quot;: &quot;Zurückgezogen&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;Z&quot;&gt;&lt;display value=&quot;Zurückgezogen&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+      "version" : "2027.0.0-ballot.rc1",
+      "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
+      "title" : "MII VS Medikation PZN Sales Status Codes",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-02T09:31:23+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:df20affa-419a-449e-890a-a88b7bf633eb",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        }],
+        "contains" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "D",
+          "display" : "Wegfall"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "F",
+          "display" : "Außer Vertrieb"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "N",
+          "display" : "Im Vertrieb"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "R",
+          "display" : "Rückruf"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "Z",
+          "display" : "Zurückgezogen"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "meta" : {
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html\">codesystem MII CS Medikation PZN Sales Status Codes v2027.0.0-ballot.rc1 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (de)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-D\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-D\">D</a></td><td/><td>Verkehrsfähigkeit ist erloschen</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;D&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;D&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-F\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-F\">F</a></td><td/><td>Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;F&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;F&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-N\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-N\">N</a></td><td/><td>Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;N&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;N&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-R\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-R\">R</a></td><td/><td>Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;R&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;R&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code-Z\"> </a><code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-mii-cs-medikation-pzn-sales-status-code.html#mii-cs-medikation-pzn-sales-status-code-Z\">Z</a></td><td/><td>Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;Z&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;Z&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
+      "version" : "2027.0.0-ballot.rc1",
+      "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
+      "title" : "MII VS Medikation PZN Sales Status Codes",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2026-09-02T09:31:23+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DE",
+          "display" : "Germany"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d51e171f-7091-45bc-aadb-9313b799395f",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "de"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "system-version",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code|2027.0.0-ballot.rc1"
+        }],
+        "contains" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "D"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "F"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "N"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "R"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
+          "code" : "Z"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -28828,8 +29069,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f98fced3-72c5-4054-83e3-60d7c18a8f0b",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:6a9f425c-997a-40f7-940a-8626b604cace",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -33889,8 +34130,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f98fced3-72c5-4054-83e3-60d7c18a8f0b",
-        "timestamp" : "2026-09-02T09:13:22+00:00",
+        "identifier" : "urn:uuid:6a9f425c-997a-40f7-940a-8626b604cace",
+        "timestamp" : "2026-09-02T09:36:48+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -38950,8 +39191,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc84f809-476f-4caf-bd27-df1793e7d1be",
-        "timestamp" : "2026-09-02T09:13:23+00:00",
+        "identifier" : "urn:uuid:a01664b0-43de-467f-8dc0-ddb78dd87384",
+        "timestamp" : "2026-09-02T09:36:49+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -43037,8 +43278,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bf6f3053-7eff-47cc-8796-93ce4e1cbd14",
-        "timestamp" : "2026-09-02T09:13:23+00:00",
+        "identifier" : "urn:uuid:8edcefbb-aad3-4d75-b983-d76d2b46f613",
+        "timestamp" : "2026-09-02T09:36:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43135,8 +43376,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bf6f3053-7eff-47cc-8796-93ce4e1cbd14",
-        "timestamp" : "2026-09-02T09:13:23+00:00",
+        "identifier" : "urn:uuid:8edcefbb-aad3-4d75-b983-d76d2b46f613",
+        "timestamp" : "2026-09-02T09:36:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43233,8 +43474,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b1c257e6-02e6-4e41-a50e-0a4f1a53682d",
-        "timestamp" : "2026-09-02T09:13:23+00:00",
+        "identifier" : "urn:uuid:8817e6eb-f97b-42e6-a68f-811ad41a6602",
+        "timestamp" : "2026-09-02T09:36:49+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{

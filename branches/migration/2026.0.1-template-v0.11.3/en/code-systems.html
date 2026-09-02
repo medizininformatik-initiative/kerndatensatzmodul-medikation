@@ -365,7 +365,155 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>See the extensions <a href="StructureDefinition-mii-ex-medikation-wirkstofftyp.html">Wirkstofftyp</a> and <a href="StructureDefinition-mii-ex-medikation-wirkstoffrelation.html">Wirkstoffrelation</a>.</p>
 
-<!-- TODO:REVIEW The source page Terminologien.page.md contains further sections (on medicinal products, dose forms and routes of administration, among others) that need to be added here. -->
+<h4 id="sales-status-of-a-pzn">Sales status of a PZN</h4>
+
+<p>Pharmazentralnummern are volatile: an article that is no longer in today's catalogue may well have been regularly on the market at the time of treatment. So that this can be documented, the module carries the sales status codes of the MMI Pharmindex (catalogue #116) as a code system of its own: <a href="CodeSystem-mii-cs-medikation-pzn-sales-status-code.html">MII CS Medikation PZN Sales Status Codes</a>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Meaning</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">N</code></td>
+      <td>On the market</td>
+      <td>The article is available on the market and distributed by the supplier</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">F</code></td>
+      <td>Withdrawn from distribution</td>
+      <td>Stock may be sold off, provided the marketability status allows it</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">D</code></td>
+      <td>Lapsed</td>
+      <td>Marketability has expired</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">R</code></td>
+      <td>Recalled</td>
+      <td>The article has been recalled and must no longer be dispensed</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Z</code></td>
+      <td>Withdrawn</td>
+      <td>The article has been withdrawn and must no longer be dispensed</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The value is intended to be carried as a <strong>property on a PZN coding</strong> — it describes the article, not the prescription.</p>
+
+<div class="ig-highlight ig-highlight-grey">
+  <p><strong>Licence:</strong> the content is generated from the MMI Pharmindex R3 raw data files and distributed under licence for integration into the systems of the MII and the NUM. It is therefore <strong>not</strong> covered by the CC-BY-4.0 licence of the rest of the module.</p>
+</div>
+
+<h4 id="medicinal-products">Medicinal products</h4>
+
+<p>The following are proposed for identifying medicinal products:</p>
+
+<ul>
+  <li>the <a href="https://de.wikipedia.org/wiki/Pharmazentralnummer">Pharmazentralnummer (PZN)</a>. These numbers must be made queryable via a publicly available URL/URI (§ 31b SGB V).</li>
+  <li>the <a href="https://www.fda.gov/industry/fda-resources-data-standards/pharmaceutical-product-identification">Pharmaceutical Product Identifier (PHPID)</a>, which is part of the ISO IDMP standards but is currently not available.</li>
+</ul>
+
+<h4 id="combination-packages">Combination packages</h4>
+
+<p>For combination packages — where the medicinal product consists of several components with different active ingredients, dose forms, doses or dose units — two representations are currently permitted on the medication plan and in the carrier:</p>
+
+<p><strong>Variant 1: one shared PZN.</strong> The combined finished medicinal product is coded with a single PZN, so that it appears as one medication entry. The dosage should then be entered as free text by the user to account for both components. An additional bound line can provide room for further explanation.</p>
+
+<p><strong>Variant 2: two or more PZNs.</strong> The individual components are coded with two or more PZNs. In that case the combined product is represented by splitting it across corresponding, consecutive medication entries. There is currently no structural way to express that such entries belong together as one combined product; the user can establish that relation with suitable text, if necessary under a separate subheading.</p>
+
+<h4 id="route-of-administration-and-dose-form">Route of administration and dose form</h4>
+
+<p>For the route of administration and the dose form the following are to be used:</p>
+
+<ul>
+  <li>the standard terminologies of the <a href="https://standardterms.edqm.eu/">EDQM (European Directorate for the Quality of Medicines and Health Care)</a>, "Routes and Methods of Administration" and "Pharmaceutical Dose Forms".</li>
+  <li>alternatively the dose form may be given as an IFA code, per the KBV medication plan specification. Key table: <a href="https://applications.kbv.de/S_BMP_DARREICHUNGSFORM_V1.02.xhtml">https://applications.kbv.de/S_BMP_DARREICHUNGSFORM_V1.02.xhtml</a></li>
+</ul>
+
+<p>The EDQM standard terminologies should be preferred, since they conform to the ISO standards for the Identification of Medicinal Products.</p>
+
+<h4 id="context-in-which-medication-is-used">Context in which medication is used</h4>
+
+<p>Codes distinguishing the context in which a medication list (<code class="language-plaintext highlighter-rouge">List</code>) is maintained, or categorising a medication statement (<code class="language-plaintext highlighter-rouge">MedicationStatement</code>), are given in the value set <a href="ValueSet-mii-vs-medikation-fallkontext.html">MII VS Medikation Fallkontext</a>.</p>
+
+<p>Canonical: <code class="language-plaintext highlighter-rouge">https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext</code></p>
+
+<h4 id="list-of-external-code-systems">List of external code systems</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>URI</th>
+      <th>Source</th>
+      <th>Comment</th>
+      <th>OID (for non-FHIR systems)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/ifa/pzn</code></td>
+      <td>PZN <a href="https://de.wikipedia.org/wiki/Pharmazentralnummer">Pharmazentralnummer</a></td>
+      <td> </td>
+      <td>1.2.276.0.76.4.6</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/bfarm/atc</code></td>
+      <td>ATC <a href="https://www.bfarm.de/DE/Kodiersysteme/Klassifikationen/ATC/_node.html">Anatomical Therapeutic Chemical classification</a></td>
+      <td>German edition</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/ask</code></td>
+      <td>Arzneistoffkatalog number</td>
+      <td> </td>
+      <td>1.2.276.0.76.5.308</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://fdasis.nlm.nih.gov</code></td>
+      <td>UNII <a href="https://www.fda.gov/industry/fda-data-standards-advisory-board/unique-ingredient-identifier-unii">Unique Ingredient Identifier</a></td>
+      <td><a href="http://hl7.org/fhir/unii.html">Using UNII with FHIR</a></td>
+      <td>2.16.840.1.113883.4.9</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/CAS</code></td>
+      <td><a href="https://www.cas.org/support/documentation/chemical-substances">CAS registry system</a></td>
+      <td>unique numerical identifier of a substance in the CAS Registry system</td>
+      <td>2.16.840.1.113883.6.61</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://standardterms.edqm.eu</code></td>
+      <td>EDQM <a href="https://standardterms.edqm.eu/">Standard Terms</a></td>
+      <td> </td>
+      <td>0.4.0.127.0.16.1.1.2.1</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://snomed.info/sct</code></td>
+      <td>SNOMED CT <a href="http://snomed.org/">snomed.org</a></td>
+      <td><a href="http://hl7.org/fhir/snomedct.html">Using SNOMED CT with FHIR</a></td>
+      <td>2.16.840.1.113883.6.96</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://unitsofmeasure.org</code></td>
+      <td>UCUM <a href="http://unitsofmeasure.org/">unitsofmeasure.org</a></td>
+      <td><a href="http://hl7.org/fhir/ucum.html">Using UCUM with FHIR</a></td>
+      <td>2.16.840.1.113883.6.8</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung</code></td>
+      <td>IHE XDS Fallkontext bei Dokumentenerstellung</td>
+      <td> </td>
+      <td>1.3.6.1.4.1.19376.3.276.1.5.16</td>
+    </tr>
+  </tbody>
+</table>
 
 
 
@@ -392,7 +540,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 09:08+0000">2026-09-02</span>
+          Generated <span title="Wed, Sep 2, 2026 09:31+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

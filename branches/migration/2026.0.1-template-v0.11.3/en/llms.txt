@@ -26,6 +26,7 @@
 
 ### CodeSystems
 
+* [MII CS Medikation PZN Sales Status Codes](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md)
 * [MII CS Medikation Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.md)
 
 ### ValueSets
@@ -33,6 +34,7 @@
 * [MII VS Medikation ASK](ValueSet-mii-vs-medikation-ask.md)
 * [MII VS Medikation ATC](ValueSet-mii-vs-medikation-atc.md)
 * [MII VS Medikation Fallkontext](ValueSet-mii-vs-medikation-fallkontext.md)
+* [MII VS Medikation PZN Sales Status Codes](ValueSet-mii-vs-medikation-pzn-sales-status-code.md)
 * [MII VS Medikation UNII](ValueSet-mii-vs-medikation-unii.md)
 * [MII VS Medikation Wirkstofftypen](ValueSet-mii-vs-medikation-wirkstofftyp.md)
 

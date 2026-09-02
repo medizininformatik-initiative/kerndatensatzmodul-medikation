@@ -1262,6 +1262,18 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/mii-cs-medikation-pzn-sales-status-code"
+      },
+      "name" : "MII CS Medikation PZN Sales Status Codes",
+      "description" : "This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/mii-cs-medikation-wirkstofftyp"
       },
       "name" : "MII CS Medikation Wirkstofftyp",
@@ -1398,6 +1410,18 @@
       },
       "name" : "MII VS Medikation Fallkontext",
       "description" : "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-medikation-pzn-sales-status-code"
+      },
+      "name" : "MII VS Medikation PZN Sales Status Codes",
+      "description" : "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes.",
       "exampleBoolean" : false
     },
     {

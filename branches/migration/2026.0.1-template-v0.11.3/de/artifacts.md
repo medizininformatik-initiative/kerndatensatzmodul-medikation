@@ -55,6 +55,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | [ MII VS Medikation ASK  ](ValueSet-mii-vs-medikation-ask.md) | Enthaelt alle ASK-Codes |
 | [ MII VS Medikation ATC  ](ValueSet-mii-vs-medikation-atc.md) | Enthaelt ATC-Codes der Versionen 2018 bis 2026 |
 | [ MII VS Medikation Fallkontext  ](ValueSet-mii-vs-medikation-fallkontext.md) | Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird. |
+| [ MII VS Medikation PZN Sales Status Codes  ](ValueSet-mii-vs-medikation-pzn-sales-status-code.md) | Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes. |
 | [ MII VS Medikation UNII  ](ValueSet-mii-vs-medikation-unii.md) | Enthaelt Unique Ingredient Identifier (UNII-Codes) |
 | [ MII VS Medikation Wirkstofftypen  ](ValueSet-mii-vs-medikation-wirkstofftyp.md) | Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe. |
 
@@ -64,6 +65,7 @@ Diese definieren neue CodeSysteme, die von Systemen verwendet werden, die mit di
 
 | | |
 | :--- | :--- |
+| [ MII CS Medikation PZN Sales Status Codes  ](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md) | This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine. |
 | [ MII CS Medikation Wirkstofftyp  ](CodeSystem-mii-cs-medikation-wirkstofftyp.md) | Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe. |
 
 ### Beispiel: Beispielinstanzen 

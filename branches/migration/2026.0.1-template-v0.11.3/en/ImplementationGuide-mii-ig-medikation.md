@@ -39,9 +39,14 @@ This IG declares the following global profiles — profiles that apply to every 
 
 This publication includes IP covered under the following statements.
 
+* Diese Repräsentation wurde aus den Rohdatendateien des MMI Pharmindex R3 erzeugt. Sie wird unter Lizenz zum Zweck der Integration in die Softwaresysteme der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin verteilt.
+
+* [MII CS Medikation PZN Sales Status Codes](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md): [MII_VS_Medikation_PZN_Sales_Status_Codes](ValueSet-mii-vs-medikation-pzn-sales-status-code.md)
+
+
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MII_CPS_Medikation_CapabilityStatement](CapabilityStatement-mii-cps-medikation-capabilitystatement.md), [MII_CS_Medikation_Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.md)... Show 14 more, [MII_EX_Medikation_Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.md), [MII_EX_Medikation_Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.md), [MII_IG_Medikation](index.md), [MII_LM_Medikation](StructureDefinition-mii-lm-medikation.md), [MII_PR_Medikation_Medication](StructureDefinition-mii-pr-medikation-medication.md), [MII_PR_Medikation_MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.md), [MII_PR_Medikation_MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.md), [MII_PR_Medikation_MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md), [MII_PR_Medikation_Medikationsliste](StructureDefinition-mii-pr-medikation-medikationsliste.md), [MII_VS_Medikation_ASK](ValueSet-mii-vs-medikation-ask.md), [MII_VS_Medikation_ATC](ValueSet-mii-vs-medikation-atc.md), [MII_VS_Medikation_Fallkontext](ValueSet-mii-vs-medikation-fallkontext.md), [MII_VS_Medikation_UNII](ValueSet-mii-vs-medikation-unii.md) and [MII_VS_Medikation_Wirkstofftyp](ValueSet-mii-vs-medikation-wirkstofftyp.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.5.0/CodeSystem-ISO3166Part1.html): [MII_CPS_Medikation_CapabilityStatement](CapabilityStatement-mii-cps-medikation-capabilitystatement.md), [MII_CS_Medikation_PZN_Sales_Status_Codes](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md)... Show 16 more, [MII_CS_Medikation_Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.md), [MII_EX_Medikation_Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.md), [MII_EX_Medikation_Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.md), [MII_IG_Medikation](index.md), [MII_LM_Medikation](StructureDefinition-mii-lm-medikation.md), [MII_PR_Medikation_Medication](StructureDefinition-mii-pr-medikation-medication.md), [MII_PR_Medikation_MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.md), [MII_PR_Medikation_MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.md), [MII_PR_Medikation_MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md), [MII_PR_Medikation_Medikationsliste](StructureDefinition-mii-pr-medikation-medikationsliste.md), [MII_VS_Medikation_ASK](ValueSet-mii-vs-medikation-ask.md), [MII_VS_Medikation_ATC](ValueSet-mii-vs-medikation-atc.md), [MII_VS_Medikation_Fallkontext](ValueSet-mii-vs-medikation-fallkontext.md), [MII_VS_Medikation_PZN_Sales_Status_Codes](ValueSet-mii-vs-medikation-pzn-sales-status-code.md), [MII_VS_Medikation_UNII](ValueSet-mii-vs-medikation-unii.md) and [MII_VS_Medikation_Wirkstofftyp](ValueSet-mii-vs-medikation-wirkstofftyp.md)
 
 
 * The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
@@ -1351,6 +1356,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-mii-cs-medikation-pzn-sales-status-code.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/mii-cs-medikation-pzn-sales-status-code"
+      },
+      "name" : "MII CS Medikation PZN Sales Status Codes",
+      "description" : "This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
         "valueUri" : "CodeSystem-mii-cs-medikation-wirkstofftyp.html"
       }],
       "reference" : {
@@ -1534,6 +1555,22 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "MII VS Medikation Fallkontext",
       "description" : "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-mii-vs-medikation-pzn-sales-status-code.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/mii-vs-medikation-pzn-sales-status-code"
+      },
+      "name" : "MII VS Medikation PZN Sales Status Codes",
+      "description" : "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes.",
       "exampleBoolean" : false
     },
     {

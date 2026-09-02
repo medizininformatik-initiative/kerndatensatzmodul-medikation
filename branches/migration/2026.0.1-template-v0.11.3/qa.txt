@@ -1,11 +1,12 @@
 MII_IG_Medikation : Validation Results
 =========================================
 
-err = 56, warn = 427, info = 1582
+err = 56, warn = 431, info = 1585
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.3
-Generated Wed Sep 02 09:14:54 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
+Generated Wed Sep 02 09:38:28 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
  Build Errors : 4 / 29 / 0
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement : 3 / 1 / 119
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-pzn-sales-status-code : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-wirkstofftyp : 3 / 2 / 10
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ImplementationGuide-mii-ig-medikation : 1 / 6 / 69
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/List-mii-exa-medikation-list-admission : 2 / 0 / 2
@@ -44,6 +45,7 @@ Generated Wed Sep 02 09:14:54 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-ask : 0 / 2 / 7
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-atc : 0 / 2 / 7
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-fallkontext : 3 / 2 / 6
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-pzn-sales-status-code : 0 / 2 / 4
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-unii : 0 / 2 / 7
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-wirkstofftyp : 3 / 2 / 6
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/input/resources/Parameters-expansion-manifest : 0 / 0 / 1
@@ -205,6 +207,10 @@ INFORMATION: CapabilityStatement/mii-cps-medikation-capabilitystatement: Capabil
 WARNING: CapabilityStatement/mii-cps-medikation-capabilitystatement: CapabilityStatement.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 INFORMATION: Resource: The resource CapabilityStatement/mii-cps-medikation-capabilitystatement could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement: URL Mismatch https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/mii-cps-medikation-capabilitystatement vs https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata
+== fsh-generated/resources/CodeSystem-mii-cs-medikation-pzn-sales-status-code.json ==
+INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.2
+WARNING: CodeSystem/mii-cs-medikation-pzn-sales-status-code: CodeSystem.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
+WARNING: Resource: The resource CodeSystem/mii-cs-medikation-pzn-sales-status-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-mii-cs-medikation-wirkstofftyp.json ==
 ERROR: CodeSystem.where(url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp'): Conformance resource /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-wirkstofftyp.json - the canonical URL (https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-wirkstofftyp) does not match the URL (https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp). Use the special-url parameter if you really mean for it not to match
 INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.2
@@ -227,19 +233,17 @@ INFORMATION: ImplementationGuide.meta.profile[2]: Pinned the version of http://h
 INFORMATION: ImplementationGuide.definition.resource[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[1].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[2].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[18].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[19].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[20].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[20].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[21].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[23].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[24].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[25].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[26].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[31].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[32].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[33].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
@@ -247,7 +251,9 @@ INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the 
 INFORMATION: ImplementationGuide.definition.resource[35].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.definition.resource[37].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
-INFORMATION: ImplementationGuide.definition.resource[38].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[38].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[39].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc1
+INFORMATION: ImplementationGuide.definition.resource[40].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc1
 INFORMATION: ImplementationGuide.title: Unused 'de' translation 'MII Implementation Guide MII IG Medikation' -> 'MII Implementierungsleitfaden MII IG Medikation'
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -2192,6 +2198,11 @@ INFORMATION: ValueSet/mii-vs-medikation-fallkontext: ValueSet.extension[0].value
 WARNING: ValueSet/mii-vs-medikation-fallkontext: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: Resource: The resource ValueSet/mii-vs-medikation-fallkontext should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 ERROR: /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-fallkontext: URL Mismatch https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-fallkontext vs https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext
+== fsh-generated/resources/ValueSet-mii-vs-medikation-pzn-sales-status-code.json ==
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code to 2027.0.0-ballot.rc1
+INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
+WARNING: ValueSet/mii-vs-medikation-pzn-sales-status-code: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
+WARNING: Resource: The resource ValueSet/mii-vs-medikation-pzn-sales-status-code should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-medikation-unii.json ==
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet/mii-vs-medikation-unii: ValueSet.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 (this may not be a problem, but you should check that it's not intended to match a slice)

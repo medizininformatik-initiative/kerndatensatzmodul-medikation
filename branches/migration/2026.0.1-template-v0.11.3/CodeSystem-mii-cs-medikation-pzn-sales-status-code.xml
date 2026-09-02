@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="mii-cs-medikation-pzn-sales-status-code"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-medikation-pzn-sales-status-code</b></p><a name="mii-cs-medikation-pzn-sales-status-code"> </a><a name="hcmii-cs-medikation-pzn-sales-status-code"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-insensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">D<a name="mii-cs-medikation-pzn-sales-status-code-D"> </a></td><td>Wegfall</td><td>Verkehrsfähigkeit ist erloschen</td></tr><tr><td style="white-space:nowrap">F<a name="mii-cs-medikation-pzn-sales-status-code-F"> </a></td><td>Außer Vertrieb</td><td>Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt</td></tr><tr><td style="white-space:nowrap">N<a name="mii-cs-medikation-pzn-sales-status-code-N"> </a></td><td>Im Vertrieb</td><td>Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben</td></tr><tr><td style="white-space:nowrap">R<a name="mii-cs-medikation-pzn-sales-status-code-R"> </a></td><td>Rückruf</td><td>Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden</td></tr><tr><td style="white-space:nowrap">Z<a name="mii-cs-medikation-pzn-sales-status-code-Z"> </a></td><td>Zurückgezogen</td><td>Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden</td></tr></table></div><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem mii-cs-medikation-pzn-sales-status-code</b></p><a name="de-mii-cs-medikation-pzn-sales-status-code"> </a><a name="de-hcmii-cs-medikation-pzn-sales-status-code"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-insensitive code system <code>https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">D<a name="de-mii-cs-medikation-pzn-sales-status-code-D"> </a></td><td>Wegfall</td><td>Verkehrsfähigkeit ist erloschen</td></tr><tr><td style="white-space:nowrap">F<a name="de-mii-cs-medikation-pzn-sales-status-code-F"> </a></td><td>Außer Vertrieb</td><td>Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt</td></tr><tr><td style="white-space:nowrap">N<a name="de-mii-cs-medikation-pzn-sales-status-code-N"> </a></td><td>Im Vertrieb</td><td>Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben</td></tr><tr><td style="white-space:nowrap">R<a name="de-mii-cs-medikation-pzn-sales-status-code-R"> </a></td><td>Rückruf</td><td>Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden</td></tr><tr><td style="white-space:nowrap">Z<a name="de-mii-cs-medikation-pzn-sales-status-code-Z"> </a></td><td>Zurückgezogen</td><td>Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden</td></tr></table></div></div>
+  </text>
+  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_CS_Medikation_PZN_Sales_Status_Codes"/>
+  <title value="MII CS Medikation PZN Sales Status Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-02T09:31:23+00:00"/>
+  <publisher value="NUM-DIZ">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="de"/>
+      </extension>
+      <extension url="content">
+        <valueString value="NUM-DIZ"/>
+      </extension>
+    </extension>
+  </publisher>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Diese Repräsentation wurde aus den Rohdatendateien des MMI Pharmindex R3 erzeugt. Sie wird unter Lizenz zum Zweck der Integration in die Softwaresysteme der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin verteilt."/>
+  <caseSensitive value="false"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="D"/>
+    <display value="Wegfall"/>
+    <definition value="Verkehrsfähigkeit ist erloschen"/>
+  </concept>
+  <concept>
+    <code value="F"/>
+    <display value="Außer Vertrieb"/>
+    <definition value="Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt"/>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <display value="Im Vertrieb"/>
+    <definition value="Ein Artikel mit Status im Vertrieb ist im Markt erhältlich und wird vom Anbieter vertrieben"/>
+  </concept>
+  <concept>
+    <code value="R"/>
+    <display value="Rückruf"/>
+    <definition value="Ein Artikel, der zurückgerufen wurde darf nicht mehr abgegeben werden"/>
+  </concept>
+  <concept>
+    <code value="Z"/>
+    <display value="Zurückgezogen"/>
+    <definition value="Ein Artikel, der zurückgezogen wurde darf nicht mehr abgegeben werden"/>
+  </concept>
+</CodeSystem>
