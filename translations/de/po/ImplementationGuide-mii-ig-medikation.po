@@ -71,6 +71,16 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
+msgid "MII CS Medikation PZN Sales Status Codes"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
 msgid "MII CS Medikation Wirkstofftyp"
 msgstr ""
 
@@ -187,6 +197,16 @@ msgstr ""
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
 msgid "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
+msgid "MII VS Medikation PZN Sales Status Codes"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes."
 msgstr ""
 
 # ImplementationGuide.definition.resource.name

@@ -1,0 +1,31 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Medikation_PZN_Sales_Status_Codes"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII VS Medikation PZN Sales Status Codes"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
