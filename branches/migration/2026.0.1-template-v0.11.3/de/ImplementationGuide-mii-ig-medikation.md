@@ -39,7 +39,7 @@ Dieser IG deklariert die folgenden globalen Profile — Profile, die für jede u
 
 This publication includes IP covered under the following statements.
 
-* Diese Repräsentation wurde aus den Rohdatendateien des MMI Pharmindex R3 erzeugt. Sie wird unter Lizenz zum Zweck der Integration in die Softwaresysteme der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin verteilt.
+* Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt.
 
 * [MII CS Medikation PZN Sales Status Codes](CodeSystem-mii-cs-medikation-pzn-sales-status-code.md): [MII_VS_Medikation_PZN_Sales_Status_Codes](ValueSet-mii-vs-medikation-pzn-sales-status-code.md)
 

@@ -48,7 +48,7 @@ Pharmazentralnummern sind flüchtig: Ein Artikel, der heute nicht mehr im Katalo
 
 Die Angabe ist dafür vorgesehen, als **Property an einer PZN-Codierung** hinterlegt zu werden — sie beschreibt den Artikel, nicht die Verordnung.
 
-**Lizenz:** Der Inhalt stammt aus den Rohdatendateien des MMI Pharmindex R3 und wird unter Lizenz zum Zweck der Integration in die Systeme der MII und des NUM verteilt. Er unterliegt daher **nicht** der CC-BY-4.0-Lizenz des übrigen Moduls.
+**Herausgeber und Lizenz:** Herausgeber dieses Inhalts ist die **Informationsstelle für Arzneispezialitäten – IFA GmbH / Vidal MMI Germany GmbH**, nicht die MII. Für die Nutzung der Rohdaten der Vidal MMI GmbH besteht ein Nutzungsvertrag mit der TMF; die Verwendung ist damit **nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin** erlaubt. Dieser Inhalt unterliegt daher **nicht** der CC-BY-4.0-Lizenz des übrigen Moduls. Herausgeber- und Lizenzangabe sind wörtlich aus der [PZN-Distribution der Service Unit Terminologische Dienste](https://gitlab.com/mii-termserv/fhir-resources/de.pharmazentralnummer) übernommen.
 
 #### Arzneimittelprodukte
 

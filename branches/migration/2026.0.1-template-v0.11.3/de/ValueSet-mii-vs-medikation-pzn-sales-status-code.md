@@ -10,6 +10,7 @@
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-09-02 | *Maschinenlesbarer Name*:MII_VS_Medikation_PZN_Sales_Status_Codes |
+| **Copyright/Rechtliches**: Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt. | |
 
  
 Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes. 
@@ -45,7 +46,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII VS Medikation PZN Sales Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-02T10:39:13+00:00",
+  "date" : "2026-09-02T13:32:49+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -75,6 +76,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       "display" : "Germany"
     }]
   }],
+  "copyright" : "Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt.",
   "compose" : {
     "include" : [{
       "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code"
