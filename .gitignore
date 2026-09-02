@@ -30,6 +30,12 @@ fsh-generated/fsh-index.json
 fsh-generated/data/fsh-index.json
 fsh-generated/fsh-index.txt
 fsh-generated/includes/menu.xml
+
+# Publisher-Ausgabe: die QUELLE der Uebersetzungen liegt unter
+# input/translations/, dieses Verzeichnis im Wurzelverzeichnis erzeugt der
+# IG Publisher bei jedem Lauf neu (json/, po/, xliff/ je Sprache).
+# kerndatensatzmodul-biobank ignoriert es ebenso.
+/translations/
 # The IG Publisher jar itself — downloaded, version-pinned, never committed.
 publisher.jar
 
