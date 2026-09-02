@@ -170,10 +170,14 @@ jobs:
     # storing the same cert twice under two different secret names.
     # If your organisation already provisions CDS_DEV_CLIENT_* centrally, replace
     # this block with `secrets: inherit`.
-    secrets:
-      CDS_DEV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-      CDS_DEV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-      CDS_DEV_CLIENT_CERT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+    # Die MII-Organisation provisioniert CDS_DEV_CLIENT_* zentral, also greift
+    # der vom Template selbst vorgeschlagene Weg (siehe Kommentar darueber).
+    # Die explizite Zuordnung uebergab dreimal einen LEEREN String, weil
+    # SU_TERMSERV_* hier nicht existiert: der Reusable dekodierte Leerwerte, und
+    # openssl meldete "Could not read private key" - der Fehler sah nach einem
+    # kaputten Zertifikat aus, war aber ein nicht angekommenes. main.yml
+    # verfaehrt seit jeher per inherit, weshalb dort derselbe Schritt lief.
+    secrets: inherit
 
   template-repo-notice:
     name: Validation skipped on the template repo
