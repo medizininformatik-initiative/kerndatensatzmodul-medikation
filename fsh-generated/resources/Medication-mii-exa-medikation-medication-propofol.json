@@ -44,9 +44,9 @@
   "code": {
     "coding": [
       {
-        "code": "194346",
+        "code": "16891099",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "PROPOFOL 2% 20MG/1ML MCT"
+        "display": "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
       }
     ]
   },

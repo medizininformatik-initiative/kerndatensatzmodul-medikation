@@ -16,9 +16,9 @@
   "code": {
     "coding": [
       {
-        "code": "887150",
+        "code": "17313306",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+        "display": "Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1"
       },
       {
         "code": "L01DB01",

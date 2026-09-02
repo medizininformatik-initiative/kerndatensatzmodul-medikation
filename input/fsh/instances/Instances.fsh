@@ -18,7 +18,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.braun Ecoflac Plus"
+* code.coding[0] = $cs-pzn#03705422 "Glucose 5% B.Braun Ecoflac Plus 10x250ml N2"
 * code.coding[+] = $cs-atc|2023#V06DC01 "Glucose"
 * code.coding[+] = $cs-atc-who|2023#V06DC01 "glucose"
 * form = $standardterms#11210000 "Solution for infusion"
@@ -41,7 +41,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#00169644 "CALCIUM SANDOZ forte Brausetabletten"
+* code.coding[0] = $cs-pzn#00169644 "Calcium-Sandoz® Forte 500mg, 20 Brausetbl. N1"
 * code.coding[+] = $cs-atc|2023#A12AA20 "Calcium (verschiedene Salze in Kombination)"
 * code.coding[+] = $cs-atc-who|2023#A12AA20 "calcium (different salts in combination)"
 * form = $standardterms#10222000 "Effervescent tablet"
@@ -84,7 +84,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#887150 "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+* code.coding[0] = $cs-pzn#17313306 "Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1"
 * code.coding[+] = $cs-atc|2023#L01DB01 "Doxorubicin"
 * status = #active
 * form = $standardterms#11213000 "Concentrate for solution for infusion"
@@ -99,7 +99,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1a Pharma TAH Tabletten"
+* code.coding[0] = $cs-pzn#06312077 "ASS 100 - 1 A Pharma® TAH 100 Tbl. N3"
 * code.coding[+] = $cs-atc|2023#B01AC06 "Acetylsalicylsäure"
 * form = $standardterms#10219000 "Tablet"
 // * ingredient.itemCodeableConcept = $cs-ask#00002 "Acetylsalicylsäure"
@@ -113,7 +113,7 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* code = $cs-pzn#194346 "PROPOFOL 2% 20MG/1ML MCT"
+* code = $cs-pzn#16891099 "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
 * form = $standardterms#50021000 "Emulsion for injection/infusion"
 * ingredient.isActive = true
 * ingredient.itemCodeableConcept = $cs-ask#22898 "Propofol"
@@ -138,7 +138,7 @@ Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
 //* meta.source = "https://www.mmi.de/mmi-pharmindex|1.0"
-* code.coding[Pharmazentralnummer] = $cs-pzn|02.08.2024#02758994 "dolomo® TN"
+* code.coding[Pharmazentralnummer] = $cs-pzn#02758994 "dolomo® TN 27 Tbl."
 * code.coding[atcClassDe] = $cs-atc|2023#N02BE51 "Paracetamol, Kombinationen exkl. Psycholeptika"
 * form.coding[EDQM] = $standardterms#10219000 "Tablet"
 * amount.numerator.value = 27
@@ -267,7 +267,7 @@ Usage: #example
 * dosage.timing.repeat.periodUnit = #d
 * dosage.timing.repeat.when = #CV
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
-* medicationCodeableConcept = $cs-pzn#05541338 "Marcumar"
+* medicationCodeableConcept = $cs-pzn#05541338 "Marcumar 3mg 98 Tbl. N3"
 * status = #active
 * subject = Reference(Patient/example)
 
@@ -284,7 +284,7 @@ Usage: #example
 * dosage.timing.repeat.periodUnit = #d
 * dosage.timing.repeat.when = #ACM
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
-* medicationCodeableConcept = $cs-pzn#02532793 "L-THYROXIN 125 Henning Tabletten"
+* medicationCodeableConcept = $cs-pzn#02532793 "L-Thyroxin Henning 125 50 Tbl. N2"
 * status = #active
 * subject = Reference(Patient/example)
 
