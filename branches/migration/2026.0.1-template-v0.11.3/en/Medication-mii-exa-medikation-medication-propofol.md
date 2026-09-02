@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: PROPOFOL 2% 20MG/1ML MCT
+**code**: Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml
 
 **status**: Active
 
@@ -48,8 +48,8 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
-      "code" : "194346",
-      "display" : "PROPOFOL 2% 20MG/1ML MCT"
+      "code" : "16891099",
+      "display" : "Propofol Fresenius MCT 20 mg/ml Emulsion zur Injektion/Infusion, Fertigspritze 1x50ml"
     }]
   },
   "status" : "active",

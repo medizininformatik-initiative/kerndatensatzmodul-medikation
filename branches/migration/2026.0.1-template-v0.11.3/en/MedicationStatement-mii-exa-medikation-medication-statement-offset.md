@@ -18,7 +18,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **status**: Active
 
-**medication**: L-THYROXIN 125 Henning Tabletten
+**medication**: L-Thyroxin Henning 125 50 Tbl. N2
 
 **subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
 
@@ -52,7 +52,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
       "code" : "02532793",
-      "display" : "L-THYROXIN 125 Henning Tabletten"
+      "display" : "L-Thyroxin Henning 125 50 Tbl. N2"
     }]
   },
   "subject" : {

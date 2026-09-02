@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: dolomo® TN
+**code**: dolomo® TN 27 Tbl.
 
 **form**: Tablet
 
@@ -45,9 +45,8 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
-      "version" : "02.08.2024",
       "code" : "02758994",
-      "display" : "dolomo® TN"
+      "display" : "dolomo® TN 27 Tbl."
     },
     {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",

@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi
+**code**: Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1
 
 **status**: Active
 
@@ -48,8 +48,8 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "code" : {
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
-      "code" : "887150",
-      "display" : "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+      "code" : "17313306",
+      "display" : "Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1"
     },
     {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",

@@ -24,7 +24,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 > **ingredient****item**: Doxorubicin**isActive**: true**strength**: 85 mg (Details: UCUM codemg = 'mg')/250 milliliter (Details: UCUM codemL = 'mL')
 
-> **ingredient****item**: [Medication Glucose 5% B.braun Ecoflac Plus](Medication-mii-exa-medikation-medication-glucoseloesung.md)**isActive**: true
+> **ingredient****item**: [Medication Glucose 5% B.Braun Ecoflac Plus 10x250ml N2](Medication-mii-exa-medikation-medication-glucoseloesung.md)**isActive**: true
 
 
 

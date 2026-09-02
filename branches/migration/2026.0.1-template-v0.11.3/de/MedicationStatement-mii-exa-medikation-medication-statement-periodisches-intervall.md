@@ -18,7 +18,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **status**: Active
 
-**medication**: Marcumar
+**medication**: Marcumar 3mg 98 Tbl. N3
 
 **subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
 
@@ -52,7 +52,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
       "code" : "05541338",
-      "display" : "Marcumar"
+      "display" : "Marcumar 3mg 98 Tbl. N3"
     }]
   },
   "subject" : {

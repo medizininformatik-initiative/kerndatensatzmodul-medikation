@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: CALCIUM SANDOZ forte Brausetabletten
+**code**: Calcium-Sandoz® Forte 500mg, 20 Brausetbl. N1
 
 **form**: Effervescent tablet
 
@@ -59,7 +59,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
       "code" : "00169644",
-      "display" : "CALCIUM SANDOZ forte Brausetabletten"
+      "display" : "Calcium-Sandoz® Forte 500mg, 20 Brausetbl. N1"
     },
     {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",

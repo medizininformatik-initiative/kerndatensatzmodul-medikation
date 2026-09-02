@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: Glucose 5% B.braun Ecoflac Plus
+**code**: Glucose 5% B.Braun Ecoflac Plus 10x250ml N2
 
 **status**: Active
 
@@ -46,7 +46,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
       "code" : "03705422",
-      "display" : "Glucose 5% B.braun Ecoflac Plus"
+      "display" : "Glucose 5% B.Braun Ecoflac Plus 10x250ml N2"
     },
     {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",

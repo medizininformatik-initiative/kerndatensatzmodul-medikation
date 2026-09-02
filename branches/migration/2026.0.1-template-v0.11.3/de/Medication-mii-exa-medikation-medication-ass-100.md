@@ -16,7 +16,7 @@ Profile: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-me
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**code**: ASS 100 - 1a Pharma TAH Tabletten
+**code**: ASS 100 - 1 A Pharma® TAH 100 Tbl. N3
 
 **form**: Tablet
 
@@ -47,7 +47,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "coding" : [{
       "system" : "http://fhir.de/CodeSystem/ifa/pzn",
       "code" : "06312077",
-      "display" : "ASS 100 - 1a Pharma TAH Tabletten"
+      "display" : "ASS 100 - 1 A Pharma® TAH 100 Tbl. N3"
     },
     {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",

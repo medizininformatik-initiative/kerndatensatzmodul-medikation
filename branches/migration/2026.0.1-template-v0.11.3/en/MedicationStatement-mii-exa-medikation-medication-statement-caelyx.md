@@ -18,7 +18,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **status**: Active
 
-**medication**: [Medication Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi](Medication-mii-exa-medikation-medication-caelyx.md)
+**medication**: [Medication Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1](Medication-mii-exa-medikation-medication-caelyx.md)
 
 **subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
 
