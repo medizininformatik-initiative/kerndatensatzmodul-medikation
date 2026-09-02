@@ -342,6 +342,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Die Spezifikation des Medikationsplan PLUS wurde zur Modellierung des Datensatzes und der FHIR-Profile herangezogen, es kann jedoch keine Konformität dieser Spezifikation mit dem Medikationsplan hergestellt werden. Dies liegt vor allem daran, dass der Medikationsplan PLUS auf der FHIR-Version STU3 basiert, während die Medizininformatik-Initiative mit FHIR R4 arbeitet. Einige Elemente in der Datenstruktur der FHIR-Ressourcen unterscheiden sich grundlegend zwischen den Versionen, wie beispielsweise die Angabe einer Wirkstärke innerhalb einer <code class="language-plaintext highlighter-rouge">Medication</code>-Ressource.</p>
 
+<h4 id="medication-ig-de">Medication IG DE</h4>
+
+<p>Das Modul verwendet den <a href="https://ig.fhir.de/igs/medication/index.html">Implementierungsleitfaden Medication DE</a> von HL7 Deutschland, gepinnt auf <strong><code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7</strong> (STU1). Daraus stammt das Profil <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">DosageDE</a>, auf das <code class="language-plaintext highlighter-rouge">MedicationStatement.dosage</code> und <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction</code> typisiert sind — Dosierungsangaben folgen damit einer deutschlandweit abgestimmten Struktur statt einer modul-eigenen.</p>
+
+<p>Seit dem 30.08.2026 liegt <strong><code class="language-plaintext highlighter-rouge">2.0.0-ballot</code></strong> vor. Der Stand ist gegenüber 1.0.7 rein additiv — <code class="language-plaintext highlighter-rouge">DosageDE</code> behält seine Canonical, bestehende Constraints bleiben unverändert — und ergänzt unter anderem:</p>
+
+<ul>
+  <li>die Profile <code class="language-plaintext highlighter-rouge">MedicationRequestDE</code>, <code class="language-plaintext highlighter-rouge">MedicationStatementDE</code> und <code class="language-plaintext highlighter-rouge">MedicationDispenseDE</code>,</li>
+  <li>sieben Logical Models für Dosierungsschemata (Intervall, Wochentag, Uhrzeit, Bedarfsmedikation und Kombinationen),</li>
+  <li>in <code class="language-plaintext highlighter-rouge">DosageDE</code> einen Slice <code class="language-plaintext highlighter-rouge">doseRange</code>, die Extension <code class="language-plaintext highlighter-rouge">asNeededFor</code> sowie die ModifierExtension <code class="language-plaintext highlighter-rouge">minimumIntervalBetweenAdministrations</code>.</li>
+</ul>
+
+<p>Das Modul bleibt bewusst auf 1.0.7, solange 2.0.0 im Ballot ist. Die Übernahme betrifft insbesondere die Dosierungsvorgaben und wird in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107">Issue #107</a> verfolgt.</p>
+
 
 
 
@@ -367,7 +381,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
+          Erstellt <span title="Wed, Sep 2, 2026 03:45+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

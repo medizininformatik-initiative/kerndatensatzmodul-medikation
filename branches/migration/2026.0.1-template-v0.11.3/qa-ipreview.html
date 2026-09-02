@@ -455,7 +455,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
+          Erstellt           <span title="Wed, Sep 2, 2026 03:45+0000">2026-09-02</span>
 
                     <br/>
 
@@ -1308,6 +1308,54 @@ Bei Terminologien zur Medikation (Arzneimittel, Substanzen etc.) sollen die ISO-
       </tr>
       <tr>
         <td>
+          <a href="de/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/igs/medication/index.html">ig.fhir.de</a>
+        </td>
+        <td>
+Das Modul verwendet den           <a href="https://ig.fhir.de/igs/medication/index.html">Implementierungsleitfaden Medication DE</a>
+ von HL7 Deutschland, gepinnt auf           <strong>
+<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7
+          </strong>
+ (STU1). Daraus stammt das Profil           <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">DosageDE</a>
+, auf das           <code class="language-plaintext highlighter-rouge">MedicationStatement.dosage</code>
+ und           <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction</code>
+ typisiert sind — Dosierungsangaben folgen damit einer deutschlandweit abgestimmten Struktur statt einer modul-eigenen.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">ig.fhir.de</a>
+        </td>
+        <td>
+Das Modul verwendet den           <a href="https://ig.fhir.de/igs/medication/index.html">Implementierungsleitfaden Medication DE</a>
+ von HL7 Deutschland, gepinnt auf           <strong>
+<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7
+          </strong>
+ (STU1). Daraus stammt das Profil           <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">DosageDE</a>
+, auf das           <code class="language-plaintext highlighter-rouge">MedicationStatement.dosage</code>
+ und           <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction</code>
+ typisiert sind — Dosierungsangaben folgen damit einer deutschlandweit abgestimmten Struktur statt einer modul-eigenen.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107">github.com</a>
+        </td>
+        <td>
+Das Modul bleibt bewusst auf 1.0.7, solange 2.0.0 im Ballot ist. Die Übernahme betrifft insbesondere die Dosierungsvorgaben und wird in           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107">Issue #107</a>
+ verfolgt.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="de/index.html">web</a>
         </td>
         <td>
@@ -1661,7 +1709,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
+          Generated           <span title="Wed, Sep 2, 2026 03:45+0000">2026-09-02</span>
 
                     <br/>
 
@@ -2189,6 +2237,54 @@ When creating the dataset for documenting medication, specifications were taken 
         <td>
 For medication terminologies (medicinal products, substances and so on) the ISO standards for the           <a href="https://www.ema.europa.eu/en/human-regulatory/overview/data-medicines-iso-idmp-standards-overview">Identification of Medicinal Products (IDMP)</a>
  are to be taken into account.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/igs/medication/index.html">ig.fhir.de</a>
+        </td>
+        <td>
+The module builds on the           <a href="https://ig.fhir.de/igs/medication/index.html">Medication DE implementation guide</a>
+ of HL7 Germany, pinned to           <strong>
+<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7
+          </strong>
+ (STU1). It provides the           <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">DosageDE</a>
+ profile, to which           <code class="language-plaintext highlighter-rouge">MedicationStatement.dosage</code>
+ and           <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction</code>
+ are typed — dosage information therefore follows a structure agreed across Germany rather than one specific to this module.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">ig.fhir.de</a>
+        </td>
+        <td>
+The module builds on the           <a href="https://ig.fhir.de/igs/medication/index.html">Medication DE implementation guide</a>
+ of HL7 Germany, pinned to           <strong>
+<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7
+          </strong>
+ (STU1). It provides the           <a href="https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html">DosageDE</a>
+ profile, to which           <code class="language-plaintext highlighter-rouge">MedicationStatement.dosage</code>
+ and           <code class="language-plaintext highlighter-rouge">MedicationRequest.dosageInstruction</code>
+ are typed — dosage information therefore follows a structure agreed across Germany rather than one specific to this module.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/implementer-guidance.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107">github.com</a>
+        </td>
+        <td>
+The module deliberately stays on 1.0.7 while 2.0.0 is in ballot. Adopting it concerns the dosage specifications in particular and is tracked in           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107">issue #107</a>
+.
         </td>
       </tr>
       <tr>

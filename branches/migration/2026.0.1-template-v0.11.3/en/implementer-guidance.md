@@ -42,3 +42,15 @@ For medication terminologies (medicinal products, substances and so on) the ISO 
 
 The Medikationsplan PLUS specification was used to model the dataset and the FHIR profiles; conformance of this specification with the medication plan cannot, however, be established. The main reason is that Medikationsplan PLUS is based on FHIR version STU3, whereas the Medical Informatics Initiative works with FHIR R4. Some elements in the data structure of the FHIR resources differ fundamentally between the versions — for example how a strength is stated within a `Medication` resource.
 
+#### Medication IG DE
+
+The module builds on the [Medication DE implementation guide](https://ig.fhir.de/igs/medication/index.html) of HL7 Germany, pinned to **`de.fhir.medication` 1.0.7** (STU1). It provides the [DosageDE](https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html) profile, to which `MedicationStatement.dosage` and `MedicationRequest.dosageInstruction` are typed — dosage information therefore follows a structure agreed across Germany rather than one specific to this module.
+
+Since 2026-08-30 a **`2.0.0-ballot`** is available. Compared with 1.0.7 it is purely additive — `DosageDE` keeps its canonical and its existing constraints are unchanged — and adds, among other things:
+
+* the profiles `MedicationRequestDE`, `MedicationStatementDE` and `MedicationDispenseDE`,
+* seven logical models for dosage schemes (interval, weekday, time of day, as-needed medication and combinations),
+* in `DosageDE` a `doseRange` slice, the `asNeededFor` extension and the `minimumIntervalBetweenAdministrations` modifier extension.
+
+The module deliberately stays on 1.0.7 while 2.0.0 is in ballot. Adopting it concerns the dosage specifications in particular and is tracked in [issue #107](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107).
+

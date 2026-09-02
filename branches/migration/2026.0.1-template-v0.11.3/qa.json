@@ -7,8 +7,8 @@
   "status" : "active",
   "package-id" : "de.medizininformatikinitiative.kerndatensatz.medikation",
   "ig-ver" : "2027.0.0-ballot.rc1",
-  "date" : "Wed, 02 Sep, 2026 03:32:09 +0000",
-  "dateISO8601" : "2026-09-02T03:32:09+00:00",
+  "date" : "Wed, 02 Sep, 2026 03:45:57 +0000",
+  "dateISO8601" : "2026-09-02T03:45:57+00:00",
   "errs" : 60,
   "warnings" : 399,
   "hints" : 1541,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2929645664
+  "maxMemory" : 2716497776
 }
