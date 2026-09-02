@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG Medikation v2026.0.1</title>
+    <title>Changelog - MII IG Medikation v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2026.0.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -209,8 +209,7 @@
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Guidance</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Guidance for Researchers (optional)</a></li>
+      <li><a href="researcher-guidance.html">Guidance for Researchers</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
@@ -234,14 +233,11 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifacts Summary</a></li>
       <li><a href="profiles.html">Profiles</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="extensions.html">Extensions (optional)</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="value-sets.html">Value Sets (optional)</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="code-systems.html">Code Systems (optional)</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
     </ul>
   </li>
@@ -253,8 +249,7 @@
          have to be re-targeted when that page is removed. -->
     <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="metadata.html">Metadata Overview (optional)</a></li>
+      <li><a href="metadata.html">Metadata Overview</a></li>
       <li><a href="version-history.html">Versioning</a></li>
     </ul>
   </li>
@@ -312,7 +307,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2026.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -336,6 +331,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <!-- TODO:REVIEW machine translation of source page Release-Notes.page.md (de) -->
 
 <h3 id="release-notes">Release notes</h3>
+
+<p><strong>Version 2027.0.0-ballot.rc1</strong> — 2026-09-02</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Changed</code>: the implementation guide was migrated from Simplifier onto the MII KDS module template (IG Publisher). Content and artifact URLs are unchanged; the page structure now follows the module-wide page set, and the guide is bilingual.</li>
+  <li><code class="language-plaintext highlighter-rouge">Changed</code>: the ATC value set now also includes version 2026 (previously 2018 to 2025).</li>
+  <li><code class="language-plaintext highlighter-rouge">Fixed</code>: the <code class="language-plaintext highlighter-rouge">raterange</code> search parameter in the CapabilityStatement pointed at a canonical under the module that never existed as an artifact; it now points at <code class="language-plaintext highlighter-rouge">mii-sp-meta-medication-dosage-raterange</code> of the Meta module, consistent with <code class="language-plaintext highlighter-rouge">raterange-low</code> and <code class="language-plaintext highlighter-rouge">raterange-high</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">Added</code>: guidance for researchers on the modelling patterns (ingredient vs medicinal product, nested medication resources, order vs administration).</li>
+</ul>
 
 <p><strong>Version 2026.0.1</strong> — 2026-02-13</p>
 
@@ -385,8 +389,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 03:18+0000">2026-09-02</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

@@ -1,11 +1,9 @@
-# Metadata Overview - MII IG Medikation v2026.0.1
+# Metadata Overview - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Metadata Overview**
 
 ## Metadata Overview
-
-> **Optional page (0..1).** The KDS module menu lists this page as **optional** — keep it only when your module's profiles carry the metadata characteristics it documents (as, for example, the Base module does). Decide for your module: **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md) of this repository. A release must not ship with this banner (convention check M9).
 
 ### Metadata Overview
 
@@ -70,7 +68,7 @@ Where a module publishes CodeSystem supplements, note that the CRMI **ShareableC
 
 The human-readable version scheme is described on the [Versioning](version-history.md) page. This section describes how that policy is expressed as CRMI metadata.
 
-The module uses calendar versioning in the SemVer-compatible numeric form `YYYY.MINOR.PATCH[-label]`, currently `2026.0.1`. The calendar year serves as the CRMI `<major>` component; `MINOR` and `PATCH` keep their usual additive and corrective semantics. Stable versions can therefore be compared using the declared `semver` version algorithm. Labels carry pre-release or build information; following CRMI/FHIR convention, no ordering is inferred among labels.
+The module uses calendar versioning in the SemVer-compatible numeric form `YYYY.MINOR.PATCH[-label]`, currently `2027.0.0-ballot.rc1`. The calendar year serves as the CRMI `<major>` component; `MINOR` and `PATCH` keep their usual additive and corrective semantics. Stable versions can therefore be compared using the declared `semver` version algorithm. Labels carry pre-release or build information; following CRMI/FHIR convention, no ordering is inferred among labels.
 
 | | |
 | :--- | :--- |

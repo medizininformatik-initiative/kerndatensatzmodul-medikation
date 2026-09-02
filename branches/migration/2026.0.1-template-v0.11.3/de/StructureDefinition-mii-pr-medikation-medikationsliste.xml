@@ -40,7 +40,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"/>
-  <version value="2026.0.1"/>
+  <version value="2027.0.0-ballot.rc1"/>
   <name value="MII_PR_Medikation_Medikationsliste"/>
   <title value="MII PR Medikation Medikationsliste"/>
   <status value="active"/>

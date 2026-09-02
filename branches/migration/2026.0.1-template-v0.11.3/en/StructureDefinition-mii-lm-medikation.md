@@ -1,4 +1,4 @@
-# MII LM Medikation - MII IG Medikation v2026.0.1
+# MII LM Medikation - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation | *Version*:2026.0.1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2024-11-14 | *Computable Name*:MII_LM_Medikation |
 
  
@@ -47,7 +47,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-lm-medikation
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_LM_Medikation",
   "_name" : {
     "extension" : [{

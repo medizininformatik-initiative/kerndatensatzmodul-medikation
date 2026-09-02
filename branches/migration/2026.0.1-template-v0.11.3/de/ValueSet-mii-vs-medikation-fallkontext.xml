@@ -19,7 +19,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
-  <version value="2026.0.1"/>
+  <version value="2027.0.0-ballot.rc1"/>
   <name value="MII_VS_Medikation_Fallkontext"/>
   <title value="MII VS Medikation Fallkontext"/>
   <status value="active"/>

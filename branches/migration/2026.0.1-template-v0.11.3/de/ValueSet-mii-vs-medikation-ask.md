@@ -1,4 +1,4 @@
-# MII VS Medikation ASK - MII IG Medikation v2026.0.1
+# MII VS Medikation ASK - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask | *Version*:2026.0.1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-02-13 | *Maschinenlesbarer Name*:MII_VS_Medikation_ASK |
 | **Copyright/Rechtliches**: BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). | |
 
@@ -53,7 +53,7 @@ No Expansion for this valueset (Unknown Code System)
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Medikation_ASK",
   "title" : "MII VS Medikation ASK",
   "status" : "active",

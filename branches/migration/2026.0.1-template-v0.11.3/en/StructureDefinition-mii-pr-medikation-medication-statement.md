@@ -1,4 +1,4 @@
-# MII PR Medikation MedicationStatement - MII IG Medikation v2026.0.1
+# MII PR Medikation MedicationStatement - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement | *Version*:2026.0.1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2025-12-18 | *Computable Name*:MII_PR_Medikation_MedicationStatement |
 
  
@@ -59,7 +59,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-medikation
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Medikation_MedicationStatement",
   "_name" : {
     "extension" : [{

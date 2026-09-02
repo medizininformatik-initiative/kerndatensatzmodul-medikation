@@ -22,7 +22,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"/>
-  <version value="2026.0.1"/>
+  <version value="2027.0.0-ballot.rc1"/>
   <name value="MII_EX_Medikation_Wirkstofftyp"/>
   <title value="MII EX Medikation Wirkstofftyp"/>
   <status value="active"/>

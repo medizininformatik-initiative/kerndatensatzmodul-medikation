@@ -652,7 +652,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
-    "version" : "2026.0.1",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_VS_Medikation_Fallkontext",
     "title" : "MII VS Medikation Fallkontext",
@@ -665,7 +665,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
-    "version" : "2026.0.1",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_VS_Medikation_ASK",
     "title" : "MII VS Medikation ASK",
@@ -677,11 +677,11 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
-    "version" : "2026.0.1",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_VS_Medikation_ATC",
     "title" : "MII VS Medikation ATC",
-    "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+    "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2026",
     "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
     "uses" : {
     },
@@ -692,7 +692,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
-    "version" : "2026.0.1",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_VS_Medikation_UNII",
     "title" : "MII VS Medikation UNII",
@@ -704,7 +704,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
-    "version" : "2026.0.1",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_VS_Medikation_Wirkstofftyp",
     "title" : "MII VS Medikation Wirkstofftypen",

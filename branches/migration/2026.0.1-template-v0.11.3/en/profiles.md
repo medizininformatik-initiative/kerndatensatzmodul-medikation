@@ -1,4 +1,4 @@
-# Profiles - MII IG Medikation v2026.0.1
+# Profiles - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Profiles**

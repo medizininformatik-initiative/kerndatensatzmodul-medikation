@@ -1,15 +1,28 @@
-# Extensions - MII IG Medikation v2026.0.1
+# Extensions - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Extensions**
 
 ## Extensions
 
-> **Optional page (0..1).** The KDS module menu lists this page as **optional**. Decide for your module: **keep** it — fill it in and delete this banner and the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md) of this repository. A release must not ship with this banner (convention check M9).
-
 ### Extensions
 
-This page lists the FHIR extensions defined by the **MII IG Medikation** module (naming convention `MII_EX_<Module>_<Name>`). Extensions carry information the base resources and profiles cannot express; the profiles that use them are on the [Profiles](profiles.md) page.
+This page lists the FHIR extensions defined by the **Medikation** module. Extensions carry information that the base resources and profiles cannot express.
 
-> [TODO: List and describe your module's extensions — or remove this page if your module defines none.]
+The table below is generated at build time from the artifacts actually built — it cannot go stale.
+
+| | |
+| :--- | :--- |
+| Title | Description |
+| [MII EX Medikation Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.md) | Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff. |
+| [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.md) | Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff. |
+
+#### What they are for
+
+Both extensions attach to the ingredient of a `Medication` and solve the same domain problem: calculating a dose requires distinguishing the precise ingredient — which may be a salt or an ester — from the pure substance.
+
+* **Wirkstofftyp** classifies the entry as a general ingredient (`IN`), a precise ingredient (`PIN`) or a combination ingredient (`MIN`).
+* **Wirkstoffrelation** links a precise ingredient to its general counterpart, making the conversion traceable: 10 mg bisoprolol hemifumarate corresponds to 8.49 mg bisoprolol.
+
+The corresponding codes are described under [Terminologies](code-systems.md).
 

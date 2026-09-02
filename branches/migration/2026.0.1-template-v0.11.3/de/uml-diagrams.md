@@ -1,4 +1,4 @@
-# UML-Diagramme - MII IG Medikation v2026.0.1
+# UML-Diagramme - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)

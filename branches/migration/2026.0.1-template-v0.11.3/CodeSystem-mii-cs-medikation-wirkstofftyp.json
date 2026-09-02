@@ -19,7 +19,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_CS_Medikation_Wirkstofftyp",
   "_name" : {
     "extension" : [{

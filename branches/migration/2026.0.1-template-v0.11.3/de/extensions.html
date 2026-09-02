@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Extensions - MII IG Medikation v2026.0.1</title>
+    <title>Extensions - MII IG Medikation v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2026.0.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -181,8 +181,7 @@
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Anleitung<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Anleitung</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Anleitung für Forschende (optional)</a></li>
+      <li><a href="researcher-guidance.html">Anleitung für Forschende</a></li>
       <li><a href="implementer-guidance.html">Anleitung für Implementierende</a></li>
       <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
@@ -207,14 +206,11 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artefakt-Übersicht</a></li>
       <li><a href="profiles.html">Profile</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="extensions.html">Extensions (optional)</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="value-sets.html">ValueSets (optional)</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="code-systems.html">CodeSystems (optional)</a></li>
+      <li><a href="value-sets.html">ValueSets</a></li>
+      <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
     </ul>
   </li>
@@ -225,8 +221,7 @@
          die Metadaten-Übersicht ist optional. -->
     <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadaten<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="metadata.html">Metadaten-Übersicht (optional)</a></li>
+      <li><a href="metadata.html">Metadaten-Übersicht</a></li>
       <li><a href="version-history.html">Versionierung</a></li>
     </ul>
   </li>
@@ -284,7 +279,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2026.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Extensions</h2>
   
 
@@ -311,33 +306,27 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 </p>
 
 <!-- markdownlint-disable MD041 -->
-<!-- Deutsche Übersetzung von input/pagecontent/extensions.md (aufgeteilt aus
-     der früheren Kombi-Seite profiles-and-extensions.md). -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
-
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
-</blockquote>
 
 <h3 id="extensions">Extensions</h3>
 
-<p>Diese Seite listet die FHIR-Extensions, die das Modul <strong>MII IG Medikation</strong>
-definiert (Namenskonvention <code class="language-plaintext highlighter-rouge">MII_EX_&lt;Modul&gt;_&lt;Name&gt;</code>). Extensions transportieren
-Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können; die
-Profile, die sie verwenden, stehen auf der Seite <a href="profiles.html">Profile</a>.</p>
+<p>Diese Seite listet die FHIR-Extensions, die das Modul <strong>Medikation</strong> definiert. Extensions transportieren Informationen, die die Basis-Ressourcen und Profile nicht ausdrücken können.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Listen und beschreiben Sie die Extensions Ihres Moduls — oder
-entfernen Sie diese Seite, wenn Ihr Modul keine definiert.]</p>
-</blockquote>
+<p>Die folgende Tabelle wird beim Build aus den tatsächlich gebauten Artefakten erzeugt — sie kann nicht veralten.</p>
+
+<table class="lines"><tr><td style="background-color: #eeeeee">Title</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-mii-ex-medikation-wirkstoffrelation.html">MII EX Medikation Wirkstoffrelation</a></td><td><div><p>Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-mii-ex-medikation-wirkstofftyp.html">MII EX Medikation Wirkstofftyp</a></td><td><div><p>Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.</p>
+</div></td></tr></table>
+
+<h4 id="wozu-sie-dienen">Wozu sie dienen</h4>
+
+<p>Beide Extensions hängen an der Wirkstoffangabe einer <code class="language-plaintext highlighter-rouge">Medication</code> und lösen dasselbe fachliche Problem: die Dosisberechnung braucht die Unterscheidung zwischen dem genauen Wirkstoff — der ein Salz oder Ester sein kann — und der reinen Substanz.</p>
+
+<ul>
+  <li><strong>Wirkstofftyp</strong> klassifiziert die Angabe als allgemeinen Wirkstoff (<code class="language-plaintext highlighter-rouge">IN</code>), genauen Wirkstoff (<code class="language-plaintext highlighter-rouge">PIN</code>) oder Kombinationswirkstoff (<code class="language-plaintext highlighter-rouge">MIN</code>).</li>
+  <li><strong>Wirkstoffrelation</strong> verknüpft einen genauen mit dem zugehörigen allgemeinen Wirkstoff und macht damit die Umrechnung nachvollziehbar: 10 mg Bisoprololhemifumarat entsprechen 8,49 mg Bisoprolol.</li>
+</ul>
+
+<p>Die zugehörigen Codes beschreibt der Abschnitt <a href="code-systems.html">Terminologien</a>.</p>
 
 
 
@@ -363,8 +352,8 @@ entfernen Sie diese Seite, wenn Ihr Modul keine definiert.]</p>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 03:18+0000">2026-09-02</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

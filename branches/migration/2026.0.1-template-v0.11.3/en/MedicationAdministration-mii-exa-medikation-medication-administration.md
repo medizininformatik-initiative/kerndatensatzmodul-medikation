@@ -1,4 +1,4 @@
-# mii-exa-medikation-medication-administration - MII IG Medikation v2026.0.1
+# mii-exa-medikation-medication-administration - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.md) version: 2026.0.1
+Profile: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.md) version: 2027.0.0-ballot.rc1
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
@@ -40,7 +40,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "MedicationAdministration",
   "id" : "mii-exa-medikation-medication-administration",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2026.0.1"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2027.0.0-ballot.rc1"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",

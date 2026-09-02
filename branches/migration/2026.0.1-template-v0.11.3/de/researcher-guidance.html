@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Anleitung für Forschende - MII IG Medikation v2026.0.1</title>
+    <title>Anleitung für Forschende - MII IG Medikation v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2026.0.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -181,8 +181,7 @@
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Anleitung<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Anleitung</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Anleitung für Forschende (optional)</a></li>
+      <li><a href="researcher-guidance.html">Anleitung für Forschende</a></li>
       <li><a href="implementer-guidance.html">Anleitung für Implementierende</a></li>
       <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
@@ -207,14 +206,11 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artefakt-Übersicht</a></li>
       <li><a href="profiles.html">Profile</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="extensions.html">Extensions (optional)</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">CapabilityStatements</a></li>
       <li><a href="logical-models.html">Logische Modelle</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="value-sets.html">ValueSets (optional)</a></li>
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="code-systems.html">CodeSystems (optional)</a></li>
+      <li><a href="value-sets.html">ValueSets</a></li>
+      <li><a href="code-systems.html">CodeSystems</a></li>
       <li><a href="examples.html">Beispiele</a></li>
     </ul>
   </li>
@@ -225,8 +221,7 @@
          die Metadaten-Übersicht ist optional. -->
     <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadaten<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <!-- OPTIONAL (0..1) — siehe docs/optional-pages.md -->
-      <li><a href="metadata.html">Metadaten-Übersicht (optional)</a></li>
+      <li><a href="metadata.html">Metadaten-Übersicht</a></li>
       <li><a href="version-history.html">Versionierung</a></li>
     </ul>
   </li>
@@ -284,7 +279,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2026.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Anleitung für Forschende</h2>
   
 
@@ -311,27 +306,58 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 </p>
 
 <!-- markdownlint-disable MD041 -->
-<!-- OPTIONAL-PAGE (0..1) — Marker entfernen, wenn die Seite BLEIBT; andernfalls
-     die Seite gemäß docs/optional-pages.md entfernen. Der Konventions-Check
-     (M9) lässt ein Release mit diesem Marker fehlschlagen. -->
 
+<!-- DERIVED:written source=BeschreibungModul.page.md,TechnischeImplementierung/Terminologien.page.md,KontextimGesamtprojektBezgezuanderenModulen.page.md gate=B -->
 <blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optionale Seite (0..1).</strong> Das KDS-Modulmenü führt diese Seite als
-<em>optional</em>. Entscheiden Sie für Ihr Modul: Seite <strong>behalten</strong> — Inhalte
-ausfüllen und dieses Banner samt <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code>-Marker-Kommentar löschen (in
-dieser Datei UND in der englischen Quellseite) — oder Seite <strong>entfernen</strong>,
-nach der Schritt-für-Schritt-Anleitung in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a> dieses
-Repositories. Ein Release darf dieses Banner nicht enthalten
-(Konventions-Check M9).</p>
+  <p>Diese Seite ist bei der Migration neu geschrieben worden. Der Simplifier-Guide hatte keine Anleitung für Forschende; der Text fasst Aussagen aus Modulbeschreibung, Terminologien und Kontextkapitel für diese Zielgruppe zusammen. Fachlich zu prüfen.</p>
 </blockquote>
 
 <h3 id="anleitung-für-forschende">Anleitung für Forschende</h3>
 
-<p>Hinweise für Forschende, die die Daten des Moduls <strong>MII IG Medikation</strong> für Forschungszwecke nutzen — z. B. welche Datenelemente für welche Fragestellungen relevant sind und wie sie interpretiert werden.</p>
+<p>Wer Medikationsdaten auswertet, stößt schnell darauf, dass dieselbe Therapie in den Daten sehr unterschiedlich aussehen kann. Das ist kein Modellierungsfehler, sondern Absicht: die Standorte dokumentieren unterschiedlich detailliert, und das Modul bildet diese Bandbreite bewusst ab. Für Abfragen bedeutet das, dass eine Suche über nur ein Muster systematisch Fälle übersieht.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Beschreiben Sie die forschungsrelevanten Aspekte des Moduls.]</p>
-</blockquote>
+<h4 id="wirkstoff-oder-arzneimittel--zwei-wege-zur-selben-aussage">Wirkstoff oder Arzneimittel — zwei Wege zur selben Aussage</h4>
+
+<p>Ein Medikament kann auf drei Ebenen codiert sein, und alle drei sind zulässig:</p>
+
+<ul>
+  <li><strong>Über das Fertigarzneimittel</strong>, per Pharmazentralnummer (PZN). Damit ist das konkrete Produkt einer Packung identifiziert — Handelsname, Hersteller, Packungsgröße.</li>
+  <li><strong>Über den Wirkstoff</strong>, per ASK-Nummer, UNII oder CAS. Damit ist die Substanz identifiziert, aber nicht das Präparat.</li>
+  <li><strong>Über die ATC-Klassifikation</strong>, die anatomisch-therapeutisch-chemisch einordnet. Ein ATC-Code ist keiner Substanz eindeutig zugeordnet — für eine wirkstoffgenaue Frage ist er zu grob.</li>
+</ul>
+
+<p>Praktische Folge: Wer nach „allen Patientinnen unter Bisoprolol" sucht, findet über die PZN nur die Fälle, in denen ein Präparat erfasst wurde, und über den ATC-Code auch Kombinationspräparate, die mehr enthalten als gesucht. Eine belastbare Kohorte entsteht in der Regel erst aus der Kombination mehrerer Zugänge.</p>
+
+<p>Hinzu kommt die Unterscheidung zwischen <strong>genauem und allgemeinem Wirkstoff</strong>: „Bisoprololhemifumarat" und „Bisoprolol" sind nicht dasselbe, und ihre Mengenangaben unterscheiden sich — 10 mg des Salzes entsprechen 8,49 mg der reinen Substanz. Welche Ebene vorliegt, sagt die Extension <a href="StructureDefinition-mii-ex-medikation-wirkstofftyp.html">Wirkstofftyp</a>; die Zuordnung zwischen beiden stellt <a href="StructureDefinition-mii-ex-medikation-wirkstoffrelation.html">Wirkstoffrelation</a> her. Wer Dosen aggregiert, ohne das zu berücksichtigen, addiert Ungleiches.</p>
+
+<h4 id="medikationsressourcen-können-geschachtelt-sein">Medikationsressourcen können geschachtelt sein</h4>
+
+<p>Eine <code class="language-plaintext highlighter-rouge">Medication</code> verweist über <code class="language-plaintext highlighter-rouge">ingredient.itemReference</code> auf weitere <code class="language-plaintext highlighter-rouge">Medication</code>-Ressourcen. Das wird an zwei Stellen gebraucht:</p>
+
+<ul>
+  <li><strong>Kombinationspackungen.</strong> Die äußere Ressource trägt die PZN der Packung, die inneren beschreiben die einzelnen Präparate mit ihren Wirkstoffen — jeweils ohne eigene PZN.</li>
+  <li><strong>Rezepturen und Infusionslösungen.</strong> Die zubereitete Lösung verweist auf ihre Bestandteile.</li>
+</ul>
+
+<p>Für Auswertungen heißt das: <strong>eine einzelne <code class="language-plaintext highlighter-rouge">Medication</code> ist nicht notwendigerweise die ganze Geschichte.</strong> Wer Wirkstoffe zählt, ohne der Referenzkette zu folgen, verliert bei Kombinationspackungen genau die Information, die er sucht — der Wirkstoff steht dort eine Ebene tiefer.</p>
+
+<h4 id="verordnet-ist-nicht-verabreicht">Verordnet ist nicht verabreicht</h4>
+
+<p>Drei Ressourcen beschreiben scheinbar Ähnliches, meinen aber Verschiedenes:</p>
+
+<ul>
+  <li><strong>MedicationRequest</strong> — eine Anordnung. Sie sagt nicht, ob das Medikament gegeben wurde.</li>
+  <li><strong>MedicationAdministration</strong> — eine tatsächliche Einzelgabe, mit Zeitpunkt und Dosis.</li>
+  <li><strong>MedicationStatement</strong> — ein Eintrag, oft aus einem Medikationsplan oder aus Patientenangaben. Ob und wann eingenommen wurde, ist hier ausdrücklich offen.</li>
+</ul>
+
+<p>Eine Frage nach Exposition beantwortet die Verabreichung, eine Frage nach Therapieabsicht die Verordnung. Beides zu vermischen überschätzt die Exposition.</p>
+
+<h4 id="der-detailgrad-schwankt-zwischen-den-standorten">Der Detailgrad schwankt zwischen den Standorten</h4>
+
+<p>Das Modul verlangt als Minimum den Wirkstoff. Handelsname, Dosis mit Einheit, Dosierungsschema, Darreichungsform sowie Applikationsort und -weg sind vorgesehen, aber nicht überall vorhanden — der Anteil strukturierter Medikationsdokumentation unterscheidet sich zwischen den Standorten erheblich. Für multizentrische Auswertungen empfiehlt es sich, die Vollständigkeit je Standort vorab zu prüfen, statt sie vorauszusetzen.</p>
+
+<p>Welche Codesysteme wofür gelten, beschreibt der Abschnitt <a href="code-systems.html">Terminologien</a>; die Datenelemente im Überblick stehen unter <a href="logical-models.html">Datensätze und Beschreibungen</a>.</p>
 
 
 
@@ -357,8 +383,8 @@ Repositories. Ein Release darf dieses Banner nicht enthalten
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 03:18+0000">2026-09-02</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

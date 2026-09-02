@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Guidance for Researchers - MII IG Medikation v2026.0.1</title>
+    <title>Guidance for Researchers - MII IG Medikation v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2026.0.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -209,8 +209,7 @@
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Guidance</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Guidance for Researchers (optional)</a></li>
+      <li><a href="researcher-guidance.html">Guidance for Researchers</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
       <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
@@ -234,14 +233,11 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifacts Summary</a></li>
       <li><a href="profiles.html">Profiles</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="extensions.html">Extensions (optional)</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="value-sets.html">Value Sets (optional)</a></li>
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="code-systems.html">Code Systems (optional)</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
     </ul>
   </li>
@@ -253,8 +249,7 @@
          have to be re-targeted when that page is removed. -->
     <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-      <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="metadata.html">Metadata Overview (optional)</a></li>
+      <li><a href="metadata.html">Metadata Overview</a></li>
       <li><a href="version-history.html">Versioning</a></li>
     </ul>
   </li>
@@ -312,7 +307,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2026.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Guidance for Researchers</h2>
   
 
@@ -333,28 +328,59 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 
 <!-- markdownlint-disable MD041 -->
-<!-- Source: kerndatensatz-basis input/pagecontent/researcher-guidance.md.
-     German mirror: input/translations/de/pagecontent/researcher-guidance.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
+<!-- TODO:REVIEW machine translation of input/translations/de/pagecontent/researcher-guidance.md -->
 
+<!-- DERIVED:written source=BeschreibungModul.page.md,TechnischeImplementierung/Terminologien.page.md,KontextimGesamtprojektBezgezuanderenModulen.page.md gate=B -->
 <blockquote class="ig-highlight ig-highlight-grey">
-  <p><strong>Optional page (0..1).</strong> The KDS module menu lists this page as <em>optional</em>.
-Decide for your module: <strong>keep</strong> it — fill it in and delete this banner and
-the <code class="language-plaintext highlighter-rouge">OPTIONAL-PAGE</code> marker comment (in this file AND the German mirror) — or
-<strong>remove</strong> it, following the per-entry procedure in <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md"><code class="language-plaintext highlighter-rouge">docs/optional-pages.md</code></a>
-of this repository. A release must not ship with this banner (convention
-check M9).</p>
+  <p>This page was newly written during the migration. The Simplifier guide had no guidance for researchers; the text draws together statements from the module description, the terminology page and the context chapter for this audience. Needs domain review.</p>
 </blockquote>
 
 <h3 id="guidance-for-researchers">Guidance for Researchers</h3>
 
-<p>Guidance for researchers using the data of the <strong>MII IG Medikation</strong> module for research purposes — e.g. which data elements are relevant to which research questions, and how they are to be interpreted.</p>
+<p>Anyone analysing medication data soon notices that the same therapy can look very different in the data. That is not a modelling error but deliberate: sites document at different levels of detail, and the module represents that range on purpose. For queries it means that searching on one pattern alone will systematically miss cases.</p>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Describe the research-relevant aspects of your module.]</p>
-</blockquote>
+<h4 id="active-ingredient-or-medicinal-product--two-routes-to-the-same-statement">Active ingredient or medicinal product — two routes to the same statement</h4>
+
+<p>A medication can be coded at three levels, and all three are permitted:</p>
+
+<ul>
+  <li><strong>Via the finished medicinal product</strong>, using the Pharmazentralnummer (PZN). This identifies the concrete product of a package — trade name, manufacturer, pack size.</li>
+  <li><strong>Via the active ingredient</strong>, using an ASK number, UNII or CAS. This identifies the substance, but not the preparation.</li>
+  <li><strong>Via the ATC classification</strong>, which categorises anatomically, therapeutically and chemically. An ATC code is not unambiguously assigned to one substance — for a question about a specific ingredient it is too coarse.</li>
+</ul>
+
+<p>Practical consequence: searching for "all patients on bisoprolol" finds, via the PZN, only those cases where a product was recorded, and via the ATC code also combination products that contain more than what was sought. A defensible cohort usually emerges only from combining several routes.</p>
+
+<p>There is also the distinction between <strong>precise and general ingredient</strong>: "bisoprolol hemifumarate" and "bisoprolol" are not the same, and their quantities differ — 10 mg of the salt corresponds to 8.49 mg of the pure substance. Which level is present is stated by the <a href="StructureDefinition-mii-ex-medikation-wirkstofftyp.html">Wirkstofftyp</a> extension; <a href="StructureDefinition-mii-ex-medikation-wirkstoffrelation.html">Wirkstoffrelation</a> establishes the mapping between the two. Aggregating doses without accounting for this adds up unlike things.</p>
+
+<h4 id="medication-resources-can-be-nested">Medication resources can be nested</h4>
+
+<p>A <code class="language-plaintext highlighter-rouge">Medication</code> references further <code class="language-plaintext highlighter-rouge">Medication</code> resources through <code class="language-plaintext highlighter-rouge">ingredient.itemReference</code>. This is needed in two places:</p>
+
+<ul>
+  <li><strong>Combination packages.</strong> The outer resource carries the PZN of the package; the inner ones describe the individual preparations with their ingredients, each without a PZN of its own.</li>
+  <li><strong>Compounded preparations and infusion solutions.</strong> The prepared solution references its components.</li>
+</ul>
+
+<p>For analyses this means: <strong>a single <code class="language-plaintext highlighter-rouge">Medication</code> is not necessarily the whole story.</strong> Counting ingredients without following the reference chain loses, for combination packages, exactly the information being sought — the ingredient sits one level down.</p>
+
+<h4 id="ordered-is-not-administered">Ordered is not administered</h4>
+
+<p>Three resources appear to describe something similar but mean different things:</p>
+
+<ul>
+  <li><strong>MedicationRequest</strong> — an order. It does not say whether the medication was given.</li>
+  <li><strong>MedicationAdministration</strong> — an actual single administration, with time and dose.</li>
+  <li><strong>MedicationStatement</strong> — an entry, often from a medication plan or from what the patient reported. Whether and when it was taken is explicitly left open here.</li>
+</ul>
+
+<p>A question about exposure is answered by the administration, a question about therapeutic intent by the order. Conflating the two overestimates exposure.</p>
+
+<h4 id="the-level-of-detail-varies-between-sites">The level of detail varies between sites</h4>
+
+<p>The module requires the active ingredient as a minimum. Trade name, dose with unit, dosage regimen, dose form as well as site and route of administration are provided for but not present everywhere — the share of structured medication documentation differs considerably between sites. For multi-centre analyses it is advisable to check completeness per site beforehand rather than assume it.</p>
+
+<p>Which code systems apply where is described under <a href="code-systems.html">Terminologies</a>; an overview of the data elements is under <a href="logical-models.html">Datasets and descriptions</a>.</p>
 
 
 
@@ -380,8 +406,8 @@ check M9).</p>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 03:18+0000">2026-09-02</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

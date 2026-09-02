@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Medikation v2026.0.1
+# MII ImplementationGuide Resource - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -85,7 +85,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "language" : "en",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-02-17"
+    "valueDate" : "2026-09-02"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -112,7 +112,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "version",
-      "valueString" : "2026.0.1"
+      "valueString" : "2027.0.0-ballot.rc1"
     },
     {
       "url" : "uri",
@@ -123,7 +123,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
     "valuePeriod" : {
-      "start" : "2026"
+      "start" : "2027"
     }
   },
   {
@@ -212,12 +212,12 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_IG_Medikation",
   "title" : "MII IG Medikation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-17",
+  "date" : "2026-09-02",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -1517,7 +1517,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
         "reference" : "ValueSet/mii-vs-medikation-atc"
       },
       "name" : "MII VS Medikation ATC",
-      "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+      "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2026",
       "exampleBoolean" : false
     },
     {

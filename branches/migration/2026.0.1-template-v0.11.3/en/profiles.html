@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>Profiles - MII IG Medikation v2026.0.1</title>
+    <title>Profiles - MII IG Medikation v2027.0.0-ballot.rc1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -138,7 +138,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2026.0.1 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc1 - 
 
 
 
@@ -206,8 +206,7 @@
     <a data-toggle="dropdown" href="guidance.html" class="dropdown-toggle">Guidance<b class="caret"> </b></a>
     <ul class="dropdown-menu">
       <li><a href="guidance.html">Guidance</a></li>
-        <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="researcher-guidance.html">Guidance for Researchers (optional)</a></li>
+      <li><a href="researcher-guidance.html">Guidance for Researchers</a></li>
       <li><a href="implementer-guidance.html">Guidance for Implementers</a></li>
         <!-- link-only entry: Logical-Models section of the Artifacts Summary (see header note) -->
       <li><a href="logical-models.html">Datasets and Descriptions</a></li>
@@ -231,14 +230,11 @@
     <ul class="dropdown-menu">
       <li><a href="artifacts.html">Artifacts Summary</a></li>
       <li><a href="profiles.html">Profiles</a></li>
-        <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="extensions.html">Extensions (optional)</a></li>
+      <li><a href="extensions.html">Extensions</a></li>
       <li><a href="capability-statements.html">Capability Statements</a></li>
       <li><a href="logical-models.html">Logical Models</a></li>
-        <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="value-sets.html">Value Sets (optional)</a></li>
-        <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="code-systems.html">Code Systems (optional)</a></li>
+      <li><a href="value-sets.html">Value Sets</a></li>
+      <li><a href="code-systems.html">Code Systems</a></li>
       <li><a href="examples.html">Examples</a></li>
     </ul>
   </li>
@@ -250,8 +246,7 @@
          have to be re-targeted when that page is removed. -->
     <a data-toggle="dropdown" href="version-history.html" class="dropdown-toggle">Metadata<b class="caret"> </b></a>
     <ul class="dropdown-menu">
-        <!-- OPTIONAL (0..1) — see docs/optional-pages.md -->
-      <li><a href="metadata.html">Metadata Overview (optional)</a></li>
+      <li><a href="metadata.html">Metadata Overview</a></li>
       <li><a href="version-history.html">Versioning</a></li>
     </ul>
   </li>
@@ -309,7 +304,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MII IG Medikation - Local Development build (v2026.0.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Profiles</h2>
   
 
@@ -334,7 +329,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="fhir-profiles">FHIR profiles</h3>
 
-<p><a name="l458">​</a>The core dataset specifications are based, wherever possible, on international standards and terminologies — notably the <a href="http://hl7.org/fhir/uv/ips/STU1/">International Patient Summary</a>. Adaptation to the conditions of the German healthcare system is achieved by using the <a href="https://ig.fhir.de/basisprofile-de/">German base profiles</a> of HL7 Germany. Compatibility with the FHIR specifications of the <a href="https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv">National Association of Statutory Health Insurance Physicians (KBV)</a> and of <a href="https://simplifier.net/organization/gematik">gematik</a> is also sought.</p>
+<p><a name="l448">​</a>The core dataset specifications are based, wherever possible, on international standards and terminologies — notably the <a href="http://hl7.org/fhir/uv/ips/STU1/">International Patient Summary</a>. Adaptation to the conditions of the German healthcare system is achieved by using the <a href="https://ig.fhir.de/basisprofile-de/">German base profiles</a> of HL7 Germany. Compatibility with the FHIR specifications of the <a href="https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv">National Association of Statutory Health Insurance Physicians (KBV)</a> and of <a href="https://simplifier.net/organization/gematik">gematik</a> is also sought.</p>
 
 <p>All elements of the core dataset, adapted to the details and requirements of the use cases of the Medical Informatics Initiative, are described as FHIR StructureDefinitions. The reason for adapting each FHIR profile is explained in prose on the profile's own page.</p>
 
@@ -368,8 +363,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 03:18+0000">2026-09-02</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Wed, Sep 2, 2026 03:32+0000">2026-09-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
               <!-- Branding override for the fhir2.base.template footer fragment.

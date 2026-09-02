@@ -17,7 +17,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_EX_Medikation_Wirkstofftyp",
   "title" : "MII EX Medikation Wirkstofftyp",
   "status" : "active",

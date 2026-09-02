@@ -1,4 +1,4 @@
-# Artefaktübersicht - MII IG Medikation v2026.0.1
+# Artefaktübersicht - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Artefaktübersicht**
@@ -53,7 +53,7 @@ Diese definieren Wertemengen, die von Systemen verwendet werden, die mit dem Imp
 | | |
 | :--- | :--- |
 | [ MII VS Medikation ASK  ](ValueSet-mii-vs-medikation-ask.md) | Enthaelt alle ASK-Codes |
-| [ MII VS Medikation ATC  ](ValueSet-mii-vs-medikation-atc.md) | Enthaelt ATC-Codes der Versionen 2018 bis 2024 |
+| [ MII VS Medikation ATC  ](ValueSet-mii-vs-medikation-atc.md) | Enthaelt ATC-Codes der Versionen 2018 bis 2026 |
 | [ MII VS Medikation Fallkontext  ](ValueSet-mii-vs-medikation-fallkontext.md) | Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird. |
 | [ MII VS Medikation UNII  ](ValueSet-mii-vs-medikation-unii.md) | Enthaelt Unique Ingredient Identifier (UNII-Codes) |
 | [ MII VS Medikation Wirkstofftypen  ](ValueSet-mii-vs-medikation-wirkstofftyp.md) | Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, Ester etc.), allgemeiner (normalisierter) Substanz und Kombinationscode für mehrere Wirkstoffe. |

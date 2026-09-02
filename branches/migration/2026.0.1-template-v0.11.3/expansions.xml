@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="efb4a21b-beb4-4fed-b9d4-227784b0ce18"/>
+  <id value="70852bd1-d2d1-4f34-a684-b4cc177f4c0e"/>
   <meta>
-    <lastUpdated value="2026-09-02T03:18:20.319+00:00"/>
+    <lastUpdated value="2026-09-02T03:32:09.476+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -133,7 +133,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Fallkontext"/>
         <title value="MII VS Medikation Fallkontext"/>
         <status value="active"/>
@@ -147,8 +147,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:89d1a5b8-fe42-42b0-933e-e61011e0787d"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:5b1251ba-4fb9-42ad-bccd-ae51ec54ecf1"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -326,7 +326,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Fallkontext"/>
         <title value="MII VS Medikation Fallkontext"/>
         <status value="active"/>
@@ -340,8 +340,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:89d1a5b8-fe42-42b0-933e-e61011e0787d"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:5b1251ba-4fb9-42ad-bccd-ae51ec54ecf1"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -519,7 +519,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Fallkontext"/>
         <title value="MII VS Medikation Fallkontext"/>
         <status value="active"/>
@@ -533,8 +533,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:8d88d723-2844-4a1e-bcf5-ca428ec5a7c5"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:8e4cc488-ed70-4223-b12a-93714a4ab1cc"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -593,9 +593,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2026.0.1 (CodeSystem)</a>
+              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2027.0.0-ballot.rc1 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -632,12 +632,12 @@
                 <td>The name of the substance.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -653,12 +653,12 @@
                 <td>The name of the substance expressed precisely as a salt or ester of the ingredient.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;precise ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;precise ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;precise ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;precise ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -674,12 +674,12 @@
                 <td>The name of the substances in a combination product.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;multiple ingredients&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;multiple ingredients&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;multiple ingredients&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;multiple ingredients&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -687,7 +687,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Wirkstofftyp">
           <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
@@ -719,8 +719,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:65d0b566-3815-4834-a906-f532b63a4e67"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:ee107da2-f536-425a-b6eb-cc776a73f97d"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -741,11 +741,11 @@
           </parameter>
           <parameter>
             <name value="system-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <contains>
             <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
@@ -778,9 +778,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2026.0.1 (CodeSystem)</a>
+              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2027.0.0-ballot.rc1 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -817,12 +817,12 @@
                 <td>The name of the substance.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -838,12 +838,12 @@
                 <td>The name of the substance expressed precisely as a salt or ester of the ingredient.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;precise ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;precise ingredient&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;precise ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;precise ingredient&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -859,12 +859,12 @@
                 <td>The name of the substances in a combination product.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;multiple ingredients&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;multiple ingredients&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;multiple ingredients&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;multiple ingredients&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -872,7 +872,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Wirkstofftyp">
           <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
@@ -904,8 +904,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:65d0b566-3815-4834-a906-f532b63a4e67"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:ee107da2-f536-425a-b6eb-cc776a73f97d"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -926,11 +926,11 @@
           </parameter>
           <parameter>
             <name value="system-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <contains>
             <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
@@ -963,9 +963,9 @@
           <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
             <p class="res-header-id"/>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
-              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2026.0.1 (CodeSystem)</a>
+              <a href="CodeSystem-mii-cs-medikation-wirkstofftyp.html">codesystem MII CS Medikation Wirkstofftyp v2027.0.0-ballot.rc1 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1" title="Click to Copy URL" class="btn-copy"> </button>
+                <button data-clipboard-text="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1" title="Click to Copy URL" class="btn-copy"> </button>
               </span>
             </p>
             <p>This value set contains 3 concepts</p>
@@ -1002,12 +1002,12 @@
                 <td>The name of the substance.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;Wirkstoff allgemein&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;IN&quot;, &quot;display&quot;: &quot;Wirkstoff allgemein&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;Wirkstoff allgemein&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;IN&quot;&gt;&lt;display value=&quot;Wirkstoff allgemein&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1023,12 +1023,12 @@
                 <td>The name of the substance expressed precisely as a salt or ester of the ingredient.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;Wirkstoff präzise&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;PIN&quot;, &quot;display&quot;: &quot;Wirkstoff präzise&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;Wirkstoff präzise&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;PIN&quot;&gt;&lt;display value=&quot;Wirkstoff präzise&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1044,12 +1044,12 @@
                 <td>The name of the substances in a combination product.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2026.0.1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;Kombinationswirkstoff&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;MIN&quot;, &quot;display&quot;: &quot;Kombinationswirkstoff&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2026.0.1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;Kombinationswirkstoff&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;MIN&quot;&gt;&lt;display value=&quot;Kombinationswirkstoff&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -1057,7 +1057,7 @@
           </div>
         </text>
         <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
-        <version value="2026.0.1"/>
+        <version value="2027.0.0-ballot.rc1"/>
         <name value="MII_VS_Medikation_Wirkstofftyp">
           <extension url="http://hl7.org/fhir/StructureDefinition/translation">
             <extension url="lang">
@@ -1089,8 +1089,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1636448c-e208-4772-86f1-d2c0f0388674"/>
-          <timestamp value="2026-09-02T03:20:34+00:00"/>
+          <identifier value="urn:uuid:512b4da8-39eb-4b6e-878b-460e88686004"/>
+          <timestamp value="2026-09-02T03:34:39+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -1111,11 +1111,11 @@
           </parameter>
           <parameter>
             <name value="system-version"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2026.0.1"/>
+            <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc1"/>
           </parameter>
           <contains>
             <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>

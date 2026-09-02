@@ -1,4 +1,4 @@
-# Changelog - MII IG Medikation v2026.0.1
+# Changelog - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -6,6 +6,13 @@
 ## Changelog
 
 ### Release notes
+
+**Version 2027.0.0-ballot.rc1** — 2026-09-02
+
+* `Changed`: the implementation guide was migrated from Simplifier onto the MII KDS module template (IG Publisher). Content and artifact URLs are unchanged; the page structure now follows the module-wide page set, and the guide is bilingual.
+* `Changed`: the ATC value set now also includes version 2026 (previously 2018 to 2025).
+* `Fixed`: the `raterange` search parameter in the CapabilityStatement pointed at a canonical under the module that never existed as an artifact; it now points at `mii-sp-meta-medication-dosage-raterange` of the Meta module, consistent with `raterange-low` and `raterange-high`.
+* `Added`: guidance for researchers on the modelling patterns (ingredient vs medicinal product, nested medication resources, order vs administration).
 
 **Version 2026.0.1** — 2026-02-13
 

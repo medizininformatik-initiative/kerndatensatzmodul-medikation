@@ -1,4 +1,4 @@
-# MII VS Medikation ATC - MII IG Medikation v2026.0.1
+# MII VS Medikation ATC - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,12 +8,12 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc | *Version*:2026.0.1 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2025-03-19 | *Maschinenlesbarer Name*:MII_VS_Medikation_ATC |
-| **Copyright/Rechtliches**: WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). | |
+| **Copyright/Rechtliches**: WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). | |
 
  
-Enthaelt ATC-Codes der Versionen 2018 bis 2024 
+Enthaelt ATC-Codes der Versionen 2018 bis 2026 
 
  **References** 
 
@@ -56,7 +56,7 @@ No Expansion for this valueset (Unsupported Code System Version)
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
-  "version" : "2026.0.1",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_VS_Medikation_ATC",
   "title" : "MII VS Medikation ATC",
   "status" : "active",
@@ -83,7 +83,7 @@ No Expansion for this valueset (Unsupported Code System Version)
       "value" : "https://www.netzwerk-universitaetsmedizin.de"
     }]
   }],
-  "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+  "description" : "Enthaelt ATC-Codes der Versionen 2018 bis 2026",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -91,9 +91,13 @@ No Expansion for this valueset (Unsupported Code System Version)
       "display" : "Germany"
     }]
   }],
-  "copyright" : "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+  "copyright" : "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
   "compose" : {
     "include" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2026"
+    },
+    {
       "system" : "http://fhir.de/CodeSystem/bfarm/atc",
       "version" : "2025"
     },

@@ -1,4 +1,4 @@
-# Metadaten-Übersicht - MII IG Medikation v2026.0.1
+# Metadaten-Übersicht - MII IG Medikation v2027.0.0-ballot.rc1
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Metadaten-Übersicht**
@@ -6,8 +6,6 @@
 ## Metadaten-Übersicht
 
  Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfaden verfasst wurde. Informationen zu diesen Übersetzungen und Anweisungen zum Abgeben von Feedback zu den Übersetzungen finden Sie [hier](translationinfo.md). 
-
-> **Optionale Seite (0..1).** Das KDS-Modulmenü führt diese Seite als **optional** — behalten Sie sie nur, wenn die Profile Ihres Moduls die hier dokumentierten Metadaten-Charakteristiken aufweisen (wie z. B. das Basis-Modul). Entscheiden Sie für Ihr Modul: Seite **behalten** — Inhalte ausfüllen und dieses Banner samt `OPTIONAL-PAGE`-Marker-Kommentar löschen (in dieser Datei UND in der englischen Quellseite) — oder Seite **entfernen**, nach der Schritt-für-Schritt-Anleitung in [`docs/optional-pages.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/blob/main/docs/optional-pages.md) dieses Repositories. Ein Release darf dieses Banner nicht enthalten (Konventions-Check M9).
 
 ### Metadaten-Übersicht
 
@@ -72,7 +70,7 @@ Veröffentlicht ein Modul CodeSystem-Supplements, ist zu beachten: Das CRMI-Prof
 
 Das menschenlesbare Versionsschema beschreibt die Seite [Versionierung](version-history.md). Dieser Abschnitt beschreibt, wie diese Politik als CRMI-Metadaten ausgedrückt wird.
 
-Das Modul verwendet die Kalender-Versionierung in der SemVer-kompatiblen numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit `2026.0.1`. Das Kalenderjahr dient als CRMI-`<major>`-Komponente; `MINOR` und `PATCH` behalten ihre übliche additive bzw. korrigierende Bedeutung. Stabile Versionen lassen sich damit über den deklarierten Versionsalgorithmus `semver` vergleichen. Labels tragen Vorab- oder Build-Informationen; gemäß CRMI-/FHIR-Konvention wird zwischen Labels keine Reihenfolge abgeleitet.
+Das Modul verwendet die Kalender-Versionierung in der SemVer-kompatiblen numerischen Form `JJJJ.MINOR.PATCH[-label]`, derzeit `2027.0.0-ballot.rc1`. Das Kalenderjahr dient als CRMI-`<major>`-Komponente; `MINOR` und `PATCH` behalten ihre übliche additive bzw. korrigierende Bedeutung. Stabile Versionen lassen sich damit über den deklarierten Versionsalgorithmus `semver` vergleichen. Labels tragen Vorab- oder Build-Informationen; gemäß CRMI-/FHIR-Konvention wird zwischen Labels keine Reihenfolge abgeleitet.
 
 | | |
 | :--- | :--- |
