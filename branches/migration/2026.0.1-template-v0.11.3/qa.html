@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for MII_IG_Medikation</h1>
- <p>Generated Wed Sep 02 03:03:59 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation">https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Wed Sep 02 03:21:45 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2026.0.1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation">https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.3.2 which is a development version. The latest official release version isv2.3.3 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = de.medizininformatikinitiative.kerndatensatz.medikation, Canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</td></tr>
@@ -1412,11 +1412,11 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[0]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l48&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l71">log</a>, or see <a href="#vmi252" onClick="document.getElementById('vmi252').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi252" style="display:none"><br/><pre>0ms tx-op
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#472LWJ3Y9N ("CALCIUM LACTATE GLUCONATE"), http://terminology.hl7.org/CodeSystem/CAS#11116-97-5 ("Calcium lactate gluconate"), http://snomed.info/sct#422232005 ("Calcium lactate gluconate (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#472LWJ3Y9N"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
-26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "472LWJ3Y9N" found in http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#472LWJ3Y9N ("CALCIUM LACTATE GLUCONATE"), http://terminology.hl7.org/CodeSystem/CAS#11116-97-5 ("Calcium lactate gluconate"), http://snomed.info/sct#422232005 ("Calcium lactate gluconate (substance)")]"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#472LWJ3Y9N"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "472LWJ3Y9N" found in http://fdasis.nlm.nih.gov|2024-06-22
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#11116-97-5"
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#422232005"
@@ -1424,11 +1424,11 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[0]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[2]&#8203;.system (l48&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l71">log</a>, or see <a href="#vmi253" onClick="document.getElementById('vmi253').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi253" style="display:none"><br/><pre>0ms tx-op
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#472LWJ3Y9N ("CALCIUM LACTATE GLUCONATE"), http://terminology.hl7.org/CodeSystem/CAS#11116-97-5 ("Calcium lactate gluconate"), http://snomed.info/sct#422232005 ("Calcium lactate gluconate (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#472LWJ3Y9N"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
-26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "472LWJ3Y9N" found in http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#472LWJ3Y9N ("CALCIUM LACTATE GLUCONATE"), http://terminology.hl7.org/CodeSystem/CAS#11116-97-5 ("Calcium lactate gluconate"), http://snomed.info/sct#422232005 ("Calcium lactate gluconate (substance)")]"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#472LWJ3Y9N"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "472LWJ3Y9N" found in http://fdasis.nlm.nih.gov|2024-06-22
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#11116-97-5"
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
 26ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#422232005"
@@ -1446,26 +1446,26 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[1]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l104&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l75">log</a>, or see <a href="#vmi257" onClick="document.getElementById('vmi257').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi257" style="display:none"><br/><pre>0ms tx-op
 0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#H0G9379FGK ("CALCIUM CARBONATE"), http://terminology.hl7.org/CodeSystem/CAS#471-34-1 ("Calcium carbonate"), http://snomed.info/sct#387307005 ("Calcium carbonate (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#H0G9379FGK"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "H0G9379FGK" found in http://fdasis.nlm.nih.gov|2024-06-22
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#471-34-1"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#387307005"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://snomed.info/sct"</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a></td>
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#H0G9379FGK"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "H0G9379FGK" found in http://fdasis.nlm.nih.gov|2024-06-22
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#471-34-1"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#387307005"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://snomed.info/sct"</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[1]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[2]&#8203;.system (l104&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l75">log</a>, or see <a href="#vmi258" onClick="document.getElementById('vmi258').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi258" style="display:none"><br/><pre>0ms tx-op
 0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#H0G9379FGK ("CALCIUM CARBONATE"), http://terminology.hl7.org/CodeSystem/CAS#471-34-1 ("Calcium carbonate"), http://snomed.info/sct#387307005 ("Calcium carbonate (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#H0G9379FGK"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "H0G9379FGK" found in http://fdasis.nlm.nih.gov|2024-06-22
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#471-34-1"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#387307005"
-28ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://snomed.info/sct"</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a></td>
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#H0G9379FGK"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "H0G9379FGK" found in http://fdasis.nlm.nih.gov|2024-06-22
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#471-34-1"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://snomed.info/sct#387307005"
+27ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://snomed.info/sct"</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[1]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.system (l106&#8203;/c12)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://fdasis.nlm.nih.gov' version '20250702' could not be found, so the code cannot be validated. Valid versions: 2024-06-22</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l76">log</a>, or see <a href="#vmi259" onClick="document.getElementById('vmi259').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi259" style="display:none"><br/><pre>Local Error: The local terminology server cannot handle this request. Server Error: A definition for CodeSystem 'http://fdasis.nlm.nih.gov' version '20250702' could not be found, so the code cannot be validated. Valid versions: 2024-06-22</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication.html">MII PR Medikation Medication</a></td>
@@ -1479,9 +1479,9 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[2]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[1]&#8203;.system (l178&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://terminology.hl7.org/CodeSystem/CAS' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l78">log</a>, or see <a href="#vmi262" onClick="document.getElementById('vmi262').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi262" style="display:none"><br/><pre>0ms tx-op
 0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#2M83C4R6ZB ("CALCIUM CATION"), http://terminology.hl7.org/CodeSystem/CAS#14127-61-8 ("Calcium cation"), http://snomed.info/sct#5540006 ("Calcium (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#2M83C4R6ZB"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#2M83C4R6ZB"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "2M83C4R6ZB" found in http://fdasis.nlm.nih.gov|2024-06-22
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#14127-61-8"
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
@@ -1491,9 +1491,9 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
    <tr style="background-color: #ffebcc">
      <td><b>Medication&#8203;.ingredient[2]&#8203;.item&#8203;.ofType(CodeableConcept)&#8203;.coding[2]&#8203;.system (l178&#8203;/c8)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l78">log</a>, or see <a href="#vmi263" onClick="document.getElementById('vmi263').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi263" style="display:none"><br/><pre>0ms tx-op
 0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Validate "[http://fdasis.nlm.nih.gov#2M83C4R6ZB ("CALCIUM CATION"), http://terminology.hl7.org/CodeSystem/CAS#14127-61-8 ("Calcium cation"), http://snomed.info/sct#5540006 ("Calcium (substance)")]"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#2M83C4R6ZB"
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
-1ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://fdasis.nlm.nih.gov#2M83C4R6ZB"
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: CodeSystem found: http://fdasis.nlm.nih.gov|2024-06-22 for http://fdasis.nlm.nih.gov|2024-06-22
+0ms http://fdasis.nlm.nih.gov/vs|2024-06-22: check code in (http://fdasis.nlm.nih.gov) at CodeableConcept.coding[0]
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Code "2M83C4R6ZB" found in http://fdasis.nlm.nih.gov|2024-06-22
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Check "http://terminology.hl7.org/CodeSystem/CAS#14127-61-8"
 25ms http://fdasis.nlm.nih.gov/vs|2024-06-22: Include for http://fdasis.nlm.nih.gov|2024-06-22 not considered for "http://terminology.hl7.org/CodeSystem/CAS"
@@ -1872,16 +1872,16 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Prepare include[2]: "(^http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation)"
 0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Analysing http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7 for validation purposes
 0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Prepare include[0]: "(http://standardterms.edqm.eu)(15001000,15002000,15004000,15005000,15006000,15007000,15008000,15009000,15011000,15012000,15013000,15015000,15016000,15017000,15018000,15019000,15021000,15022000,15023000,15024000,15025000,15026000,15027000,15028000,15029000,15030000,15031000,15033000,15034000,15035000,15036000,15037000,15038000,15039000,15040000,15041000,15042000,15043000,15044000,15045000,15046000,15047000,15048000,15049000,15050000,15051000,15052000,15053000,15054000,15055000,15056000,15057000,15058000,15059000,15060000,15061000,15062000)"
-1ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: CodeSystem found: "http://standardterms.edqm.eu|5 February 2025"
-1ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Validate "[http://standardterms.edqm.eu#15054000 ("undefined")]"
-1ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Check "http://standardterms.edqm.eu#15054000"
-1ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Include for https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT not considered for "http://standardterms.edqm.eu"
-1ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Include for http://unitsofmeasure.org not considered for "http://standardterms.edqm.eu"
-1ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Check included value set http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation
-1ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Check "http://standardterms.edqm.eu#15054000"
-1ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: CodeSystem found: http://standardterms.edqm.eu|5 February 2025 for http://standardterms.edqm.eu
-1ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: check code in (http://standardterms.edqm.eu)(15001000,15002000,15004000,15005000,15006000,15007000,15008000,15009000,15011000,15012000,15013000,15015000,15016000,15017000,15018000,15019000,15021000,15022000,15023000,15024000,15025000,15026000,15027000,15028000,15029000,15030000,15031000,15033000,15034000,15035000,15036000,15037000,15038000,15039000,15040000,15041000,15042000,15043000,15044000,15045000,15046000,15047000,15048000,15049000,15050000,15051000,15052000,15053000,15054000,15055000,15056000,15057000,15058000,15059000,15060000,15061000,15062000) at Coding
-1ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Code "15054000" found in http://standardterms.edqm.eu|5 February 2025</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication-statement.html">MII PR Medikation MedicationStatement</a></td>
+0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: CodeSystem found: "http://standardterms.edqm.eu|5 February 2025"
+0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Validate "[http://standardterms.edqm.eu#15054000 ("undefined")]"
+0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Check "http://standardterms.edqm.eu#15054000"
+0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Include for https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT not considered for "http://standardterms.edqm.eu"
+0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Include for http://unitsofmeasure.org not considered for "http://standardterms.edqm.eu"
+0ms http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE|1.0.7: Check included value set http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation
+0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Check "http://standardterms.edqm.eu#15054000"
+0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: CodeSystem found: http://standardterms.edqm.eu|5 February 2025 for http://standardterms.edqm.eu
+0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: check code in (http://standardterms.edqm.eu)(15001000,15002000,15004000,15005000,15006000,15007000,15008000,15009000,15011000,15012000,15013000,15015000,15016000,15017000,15018000,15019000,15021000,15022000,15023000,15024000,15025000,15026000,15027000,15028000,15029000,15030000,15031000,15033000,15034000,15035000,15036000,15037000,15038000,15039000,15040000,15041000,15042000,15043000,15044000,15045000,15046000,15047000,15048000,15049000,15050000,15051000,15052000,15053000,15054000,15055000,15056000,15057000,15058000,15059000,15060000,15061000,15062000) at Coding
+0ms http://ig.fhir.de/igs/medication/ValueSet/EDQMUnitOfPresentation|1.0.7: Code "15054000" found in http://standardterms.edqm.eu|5 February 2025</pre></div></td><td><a href="StructureDefinition-mii-pr-medikation-medication-statement.html">MII PR Medikation MedicationStatement</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>MedicationStatement&#8203;.dosage[0]&#8203;.doseAndRate[0]&#8203;.dose&#8203;.ofType(Quantity)&#8203;.system (l52&#8203;/c53)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://standardterms.edqm.eu'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="StructureDefinition-mii-pr-medikation-medication-statement.html">MII PR Medikation MedicationStatement</a></td>
