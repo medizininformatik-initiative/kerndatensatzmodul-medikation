@@ -252,7 +252,7 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.description</note>
              </notes>
-        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2024</source>
+        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2026</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-medikation" resname="ImplementationGuide.definition.resource.name">

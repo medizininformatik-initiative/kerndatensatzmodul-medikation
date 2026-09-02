@@ -42,7 +42,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2024</source>
+        <source>Enthaelt ATC-Codes der Versionen 2018 bis 2026</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="Coding.display">
@@ -56,7 +56,14 @@
              <notes>
                <note id="n1">ValueSet.copyright</note>
              </notes>
-        <source>WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).</source>
+        <source>WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">
+             <notes>
+               <note id="n1">ValueSet.compose.include.version</note>
+             </notes>
+        <source>2026</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-mii-vs-medikation-atc" resname="ValueSet.compose.include.version">

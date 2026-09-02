@@ -109,14 +109,17 @@ jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/value
 # "IG © <year> <publisher>" line (TF-KDS feedback 2026-08-14). "NUM-DIZ" is a
 # proper name, hence language-neutral. The module CONTENT stays MII content —
 # the artifact copyright labels in input/fsh/rulesets/crmi.fsh are unaffected.
+# publisher: NICHT die Modul-Identitaet, sondern Template-CHROME (Spec 2.2 / 9a).
+# NUM-DIZ uebernimmt Entwicklung und Pflege der IGs von der MII, und die Fusszeile
+# "IG (c) <Jahr> <publisher>" nennt den Pflegenden. Der Quellwert
+# "Medizininformatik Initiative" wird hier BEWUSST NICHT uebernommen - §9a
+# ueberschreibt fuer dieses eine Feld die Regel "die Quelle gewinnt". Die
+# inhaltliche Zuschreibung des Moduls bleibt unberuehrt: die RuleSets in
+# input/fsh/rulesets/publisher.fsh stempeln weiterhin die MII auf jedes Artefakt.
+# Der Kommentar steht BEWUSST oberhalb des Blocks: zwischen `publisher:` und
+# `name:` eingeschoben, findet ein zeilenbasierter Leser den Wert nicht mehr
+# (gemessen an verify-migration.py, F1 meldete "the target declares nothing").
 publisher:
-  # NICHT die Modul-Identitaet, sondern Template-CHROME (Spec 2.2 / 9a): NUM-DIZ
-  # uebernimmt Entwicklung und Pflege der IGs von der MII, und die Fusszeile
-  # "IG (c) <Jahr> <publisher>" nennt den Pflegenden. Der Quellwert
-  # "Medizininformatik Initiative" wird hier BEWUSST NICHT uebernommen - §9a
-  # ueberschreibt fuer dieses eine Feld die Regel "die Quelle gewinnt".
-  # Die inhaltliche Zuschreibung des Moduls bleibt unberuehrt: die RuleSets in
-  # input/fsh/rulesets/publisher.fsh stempeln weiterhin die MII auf jedes Artefakt.
   name: NUM-DIZ
   # Language-neutral URL: the footer's publisher link is the same on every
   # language's pages, so it must not pin one language's site.

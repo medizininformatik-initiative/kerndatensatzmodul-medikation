@@ -26,7 +26,7 @@ msgstr ""
 
 # ValueSet.description
 #: ValueSet.description
-msgid "Enthaelt ATC-Codes der Versionen 2018 bis 2024"
+msgid "Enthaelt ATC-Codes der Versionen 2018 bis 2026"
 msgstr ""
 
 # Coding.display
@@ -36,7 +36,12 @@ msgstr ""
 
 # ValueSet.copyright
 #: ValueSet.copyright
-msgid "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)."
+msgid "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)."
+msgstr ""
+
+# ValueSet.compose.include.version
+#: ValueSet.compose.include.version
+msgid "2026"
 msgstr ""
 
 # ValueSet.compose.include.version

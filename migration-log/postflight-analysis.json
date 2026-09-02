@@ -7,8 +7,8 @@
     "label": "mii-ig-medikation",
     "project_root_nested": null,
     "project_root_candidates": null,
-    "git_commit": "dca2570",
-    "timestamp": "2026-09-02T02:22:23Z"
+    "git_commit": "5cd3c8d",
+    "timestamp": "2026-09-02T03:55:12Z"
   },
   "identity": {
     "id": "mii-ig-medikation",
@@ -16,7 +16,7 @@
     "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
     "name": "MII_IG_Medikation",
     "title": "MII IG Medikation",
-    "version": "2026.0.1",
+    "version": "2027.0.0-ballot.rc1",
     "calver": true,
     "status": "active",
     "fhirVersion": "4.0.1",
@@ -981,14 +981,14 @@
       "intro_notes": true,
       "implementation_guides_tree": true,
       "dual_source": true,
-      "pagecontent_last_commit": "2026-09-01T23:56:49+02:00",
+      "pagecontent_last_commit": "2026-09-02T05:44:38+02:00",
       "implementation_guides_last_commit": "2026-02-17T17:24:22+01:00"
     },
     "qa_baseline": {
       "source": "output/qa.json",
       "errs": 67,
-      "warnings": 428,
-      "date": "Wed, 02 Sep, 2026 04:17:47 +0200"
+      "warnings": 426,
+      "date": "Wed, 02 Sep, 2026 05:51:56 +0200"
     },
     "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
   },
@@ -1016,11 +1016,11 @@
     "pages": 55,
     "pages_all": 59,
     "translation_pages": 19,
-    "translation_words": 9413,
+    "translation_words": 10894,
     "intro_note_pages": 6,
     "intro_note_words": 821,
-    "words": 24970,
-    "words_all_incl_stubs": 35254,
+    "words": 25627,
+    "words_all_incl_stubs": 37392,
     "images": 44,
     "mandatory_present": [
       "index",
@@ -1047,13 +1047,13 @@
       },
       {
         "path": "input/pagecontent/capability-statements.md",
-        "words": 101,
+        "words": 156,
         "kind": "target",
         "stub": false
       },
       {
         "path": "input/pagecontent/changes.md",
-        "words": 195,
+        "words": 306,
         "kind": "target",
         "stub": false
       },
@@ -1077,19 +1077,19 @@
       },
       {
         "path": "input/pagecontent/extensions.md",
-        "words": 189,
+        "words": 194,
         "kind": "target",
         "stub": false
       },
       {
         "path": "input/pagecontent/guidance.md",
-        "words": 144,
+        "words": 281,
         "kind": "target",
         "stub": false
       },
       {
         "path": "input/pagecontent/implementer-guidance.md",
-        "words": 586,
+        "words": 728,
         "kind": "target",
         "stub": false
       },
@@ -1107,7 +1107,7 @@
       },
       {
         "path": "input/pagecontent/metadata.md",
-        "words": 2581,
+        "words": 2455,
         "kind": "target",
         "stub": false
       },
@@ -1119,7 +1119,7 @@
       },
       {
         "path": "input/pagecontent/researcher-guidance.md",
-        "words": 165,
+        "words": 602,
         "kind": "target",
         "stub": false
       },
@@ -1143,7 +1143,7 @@
       },
       {
         "path": "input/pagecontent/value-sets.md",
-        "words": 277,
+        "words": 173,
         "kind": "target",
         "stub": false
       },
@@ -1437,19 +1437,19 @@
       },
       {
         "path": "input/translations/de/pagecontent/capability-statements.md",
-        "words": 84,
+        "words": 128,
         "kind": "translation",
         "stub": false
       },
       {
         "path": "input/translations/de/pagecontent/changes.md",
-        "words": 164,
+        "words": 503,
         "kind": "translation",
         "stub": false
       },
       {
         "path": "input/translations/de/pagecontent/code-systems.md",
-        "words": 353,
+        "words": 780,
         "kind": "translation",
         "stub": false
       },
@@ -1467,25 +1467,25 @@
       },
       {
         "path": "input/translations/de/pagecontent/extensions.md",
-        "words": 169,
+        "words": 185,
         "kind": "translation",
         "stub": false
       },
       {
         "path": "input/translations/de/pagecontent/guidance.md",
-        "words": 120,
+        "words": 238,
         "kind": "translation",
         "stub": false
       },
       {
         "path": "input/translations/de/pagecontent/implementer-guidance.md",
-        "words": 519,
+        "words": 643,
         "kind": "translation",
         "stub": false
       },
       {
         "path": "input/translations/de/pagecontent/index.md",
-        "words": 1097,
+        "words": 1331,
         "kind": "translation",
         "stub": false
       },
@@ -1497,7 +1497,7 @@
       },
       {
         "path": "input/translations/de/pagecontent/metadata.md",
-        "words": 2293,
+        "words": 2180,
         "kind": "translation",
         "stub": false
       },
@@ -1509,7 +1509,7 @@
       },
       {
         "path": "input/translations/de/pagecontent/researcher-guidance.md",
-        "words": 140,
+        "words": 523,
         "kind": "translation",
         "stub": false
       },
@@ -1533,7 +1533,7 @@
       },
       {
         "path": "input/translations/de/pagecontent/value-sets.md",
-        "words": 233,
+        "words": 142,
         "kind": "translation",
         "stub": false
       },
@@ -1547,17 +1547,17 @@
   },
   "linguistics": {
     "content_pages": 55,
-    "words_total": 24970,
-    "words_avg": 454.0,
-    "words_median": 357,
+    "words_total": 25627,
+    "words_avg": 465.9,
+    "words_median": 363,
     "words_min": 58,
-    "words_max": 2581,
+    "words_max": 2455,
     "longest_page": "input/pagecontent/metadata.md",
     "shortest_page": "input/pagecontent/examples.md",
     "per_page": [
       {
         "path": "input/pagecontent/metadata.md",
-        "words": 2581
+        "words": 2455
       },
       {
         "path": "input/pagecontent/logical-models.md",
@@ -1592,8 +1592,16 @@
         "words": 776
       },
       {
+        "path": "input/pagecontent/implementer-guidance.md",
+        "words": 728
+      },
+      {
         "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
         "words": 660
+      },
+      {
+        "path": "input/pagecontent/researcher-guidance.md",
+        "words": 602
       },
       {
         "path": "input/pagecontent/version-history.md",
@@ -1602,10 +1610,6 @@
       {
         "path": "input/pagecontent/security-and-privacy.md",
         "words": 596
-      },
-      {
-        "path": "input/pagecontent/implementer-guidance.md",
-        "words": 586
       },
       {
         "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
@@ -1668,8 +1672,12 @@
         "words": 357
       },
       {
-        "path": "input/pagecontent/value-sets.md",
-        "words": 277
+        "path": "input/pagecontent/changes.md",
+        "words": 306
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 281
       },
       {
         "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
@@ -1684,16 +1692,16 @@
         "words": 201
       },
       {
-        "path": "input/pagecontent/changes.md",
-        "words": 195
-      },
-      {
         "path": "input/pagecontent/extensions.md",
-        "words": 189
+        "words": 194
       },
       {
         "path": "input/pagecontent/profiles.md",
         "words": 188
+      },
+      {
+        "path": "input/pagecontent/value-sets.md",
+        "words": 173
       },
       {
         "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
@@ -1708,12 +1716,8 @@
         "words": 166
       },
       {
-        "path": "input/pagecontent/researcher-guidance.md",
-        "words": 165
-      },
-      {
-        "path": "input/pagecontent/guidance.md",
-        "words": 144
+        "path": "input/pagecontent/capability-statements.md",
+        "words": 156
       },
       {
         "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
@@ -1748,10 +1752,6 @@
         "words": 120
       },
       {
-        "path": "input/pagecontent/capability-statements.md",
-        "words": 101
-      },
-      {
         "path": "input/pagecontent/translationinfo.md",
         "words": 99
       },
@@ -1778,7 +1778,7 @@
     ]
   },
   "duplication": {
-    "duplicate_block_count": 129,
+    "duplicate_block_count": 128,
     "duplicate_blocks": [
       {
         "snippet": "anwendungshinweise: weitere informationen zur suche nach \"code\" finden sich in der [fhir b",
@@ -1945,11 +1945,11 @@
         ]
       },
       {
-        "snippet": "optional page (0..1). the kds module menu lists this page as optional . decide for your mo",
+        "snippet": "das verabreichte medikament soll entweder über eine referenz auf ein medication objekt, üb",
         "locations": [
-          "input/pagecontent/extensions.md",
-          "input/pagecontent/researcher-guidance.md",
-          "input/pagecontent/value-sets.md"
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
         ]
       }
     ],
@@ -4100,7 +4100,7 @@
       "ATC",
       "ASK"
     ],
-    "terminology_standard_refs": 328,
+    "terminology_standard_refs": 329,
     "local_codesystems": 1,
     "terminology_standard_share_pct": 100,
     "canonical_reuse_ratio_pct": 100,
@@ -4111,7 +4111,7 @@
     "dependency_stale_count": 0,
     "dependency_stale": [],
     "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
-    "release_cadence_per_year": 67.8,
+    "release_cadence_per_year": 68.3,
     "days_since_last_commit": 0,
     "tags": 8
   },
@@ -4156,11 +4156,11 @@
     "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
   },
   "git": {
-    "commits": 476,
+    "commits": 480,
     "authors": 12,
     "top_author_share": 50,
     "days_since_last": 0,
-    "commits_per_year": 67.8,
+    "commits_per_year": 68.3,
     "tags": 8,
     "first": "2019-08-26",
     "last": "2026-09-02",

@@ -176,7 +176,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.description
 #: ImplementationGuide.definition.resource.description
-msgid "Enthaelt ATC-Codes der Versionen 2018 bis 2024"
+msgid "Enthaelt ATC-Codes der Versionen 2018 bis 2026"
 msgstr ""
 
 # ImplementationGuide.definition.resource.name

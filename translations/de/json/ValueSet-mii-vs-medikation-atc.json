@@ -36,7 +36,7 @@
     {
       "id" : "ValueSet.description",
       "context" : "ValueSet.description",
-      "source" : "Enthaelt ATC-Codes der Versionen 2018 bis 2024",
+      "source" : "Enthaelt ATC-Codes der Versionen 2018 bis 2026",
       "target" : null
     },
     {
@@ -48,7 +48,13 @@
     {
       "id" : "ValueSet.copyright",
       "context" : "ValueSet.copyright",
-      "source" : "WHO, BfArM 1994 - 2025 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+      "source" : "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.version",
+      "context" : "ValueSet.compose.include.version",
+      "source" : "2026",
       "target" : null
     },
     {
