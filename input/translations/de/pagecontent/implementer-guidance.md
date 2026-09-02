@@ -35,3 +35,15 @@ Bei der Erstellung des Datensatzes zur Dokumentation der Medikation wurden Spezi
 Bei Terminologien zur Medikation (Arzneimittel, Substanzen etc.) sollen die ISO-Standards zur [Identification of Medicinal Products (IDMP)](https://www.ema.europa.eu/en/human-regulatory/overview/data-medicines-iso-idmp-standards-overview) berücksichtigt werden.
 
 Die Spezifikation des Medikationsplan PLUS wurde zur Modellierung des Datensatzes und der FHIR-Profile herangezogen, es kann jedoch keine Konformität dieser Spezifikation mit dem Medikationsplan hergestellt werden. Dies liegt vor allem daran, dass der Medikationsplan PLUS auf der FHIR-Version STU3 basiert, während die Medizininformatik-Initiative mit FHIR R4 arbeitet. Einige Elemente in der Datenstruktur der FHIR-Ressourcen unterscheiden sich grundlegend zwischen den Versionen, wie beispielsweise die Angabe einer Wirkstärke innerhalb einer `Medication`-Ressource.
+
+#### Medication IG DE
+
+Das Modul verwendet den [Implementierungsleitfaden Medication DE](https://ig.fhir.de/igs/medication/index.html) von HL7 Deutschland, gepinnt auf **`de.fhir.medication` 1.0.7** (STU1). Daraus stammt das Profil [DosageDE](https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html), auf das `MedicationStatement.dosage` und `MedicationRequest.dosageInstruction` typisiert sind — Dosierungsangaben folgen damit einer deutschlandweit abgestimmten Struktur statt einer modul-eigenen.
+
+Seit dem 30.08.2026 liegt **`2.0.0-ballot`** vor. Der Stand ist gegenüber 1.0.7 rein additiv — `DosageDE` behält seine Canonical, bestehende Constraints bleiben unverändert — und ergänzt unter anderem:
+
+* die Profile `MedicationRequestDE`, `MedicationStatementDE` und `MedicationDispenseDE`,
+* sieben Logical Models für Dosierungsschemata (Intervall, Wochentag, Uhrzeit, Bedarfsmedikation und Kombinationen),
+* in `DosageDE` einen Slice `doseRange`, die Extension `asNeededFor` sowie die ModifierExtension `minimumIntervalBetweenAdministrations`.
+
+Das Modul bleibt bewusst auf 1.0.7, solange 2.0.0 im Ballot ist. Die Übernahme betrifft insbesondere die Dosierungsvorgaben und wird in [Issue #107](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/issues/107) verfolgt.
