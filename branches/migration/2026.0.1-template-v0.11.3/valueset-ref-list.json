@@ -36,8 +36,8 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
   },
   {
     "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
@@ -50,8 +50,8 @@
     "uses" : {
     },
     "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
@@ -88,10 +88,10 @@
     "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
     "StructureDefinition-mii-pr-medikation-medication.html" : "MII PR Medikation Medication",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
+    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
