@@ -121,8 +121,19 @@ jobs:
           C: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
           K: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
           P: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+          # Fallback auf die Namen, unter denen die MII-Organisation das
+          # Zertifikat fuehrt. Der wiederverwendbare Workflow aus
+          # kerndatensatz-meta (ci_java_validation.yml, gepinnt auf 1db2e53)
+          # konsumiert AUSSCHLIESSLICH diese Namen; prueft der Waechter nur die
+          # Template-Namen, ueberspringt er die Java-Validierung, obwohl sie
+          # laufen koennte. Beachte: das Passwort heisst dort _CERT_PASSWORD.
+          C2: ${{ secrets.CDS_DEV_CLIENT_CERT }}
+          K2: ${{ secrets.CDS_DEV_CLIENT_KEY }}
+          P2: ${{ secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
-          if [ -n "${C}" ] && [ -n "${K}" ] && [ -n "${P}" ]; then
+          if { [ -n "${C}" ] || [ -n "${C2}" ]; } \
+             && { [ -n "${K}" ] || [ -n "${K2}" ]; } \
+             && { [ -n "${P}" ] || [ -n "${P2}" ]; }; then
             echo "has_cert=true" >> "${GITHUB_OUTPUT}"
           else
             echo "has_cert=false" >> "${GITHUB_OUTPUT}"

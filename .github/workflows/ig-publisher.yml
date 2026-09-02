@@ -213,9 +213,12 @@ jobs:
         if: ${{ steps.build.outputs.mode == 'full' }}
         shell: bash
         env:
-          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT }}
-          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY }}
-          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
+          # Beide Namensschemata: das Template nennt sie SU_TERMSERV_*, die
+          # MII-Organisation fuehrt sie als CDS_DEV_* (Passwort dort
+          # _CERT_PASSWORD). Der Schritt unten nimmt den erstbesten Wert.
+          SU_TERMSERV_CLIENT_CERT: ${{ secrets.SU_TERMSERV_CLIENT_CERT || secrets.CDS_DEV_CLIENT_CERT }}
+          SU_TERMSERV_CLIENT_KEY: ${{ secrets.SU_TERMSERV_CLIENT_KEY || secrets.CDS_DEV_CLIENT_KEY }}
+          SU_TERMSERV_CLIENT_PASSWORD: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD || secrets.CDS_DEV_CLIENT_CERT_PASSWORD }}
         run: |
           set -euo pipefail
           # Prefer the MII terminology server (SU-TermServ) through a client-cert
