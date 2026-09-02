@@ -19,13 +19,11 @@ input-cache/
 # die schon auf master ausgenommen war. kerndatensatzmodul-biobank und
 # kerndatensatzmodul-onkologie verfahren ebenso.
 fsh-generated/includes/fsh-link-references.md
-# Ebenfalls Build-Ausgabe, die SUSHI bei jedem Lauf neu schreibt und die master
-# gezielt ausgenommen hatte. Die ImplementationGuide-Ressource eingecheckt zu
-# halten laesst den Java-Validator ueber ihre definition.parameter-Codes
-# stolpern (copyrightyear, releaselabel, i18n-*, translation-sources sowie den
-# CRMI-Code 'package'); main.yml reicht advisor.json NICHT an den Validator
-# weiter, anders als die validation.yml des Templates.
-fsh-generated/resources/ImplementationGuide-mii-ig-medikation*
+# Build-Ausgabe, die SUSHI bei jedem Lauf neu schreibt und die NICHT ins
+# Package geht: SUSHI-Index und generiertes Menue. Die ImplementationGuide-
+# Ressource steht bewusst NICHT hier - sie IST Bestandteil des Packages
+# (verifiziert am vom Publisher erzeugten package.tgz) und muss eingecheckt
+# bleiben, solange Simplifier die Packages aus dem Repository baut.
 fsh-generated/fsh-index.json
 fsh-generated/data/fsh-index.json
 fsh-generated/fsh-index.txt

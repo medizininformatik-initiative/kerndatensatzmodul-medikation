@@ -28,7 +28,13 @@ jobs:
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
-      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
+      # advisor.json mitgeben: die generierte ImplementationGuide-Ressource ist
+      # Bestandteil des Packages und daher eingecheckt; ihre
+      # definition.parameter-Codes (copyrightyear, releaselabel, i18n-*,
+      # translation-sources) und der CRMI-Code 'package' sind fuer den
+      # Validator unaufloesbar, aber korrekt. Die validation.yml des Templates
+      # reicht die Datei bereits weiter, main.yml tat es nicht.
+      JAVA_VALIDATION_OPTIONS: -advisor-file advisor.json ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
       VALIDATION_REPORT_INCLUDE: errors #errors|warnings|all
       VALIDATION_REPORT_FILTERS: |
