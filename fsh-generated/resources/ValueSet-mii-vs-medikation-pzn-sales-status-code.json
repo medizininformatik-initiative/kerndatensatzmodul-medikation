@@ -13,17 +13,8 @@
   },
   "experimental": false,
   "version": "2027.0.0-ballot.rc1",
-  "publisher": "Medizininformatik Initiative",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.medizininformatik-initiative.de"
-        }
-      ]
-    }
-  ],
+  "publisher": "Informationsstelle für Arzneispezialitäten – IFA GmbH / Vidal MMI Germany GmbH",
+  "copyright": "Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt.",
   "compose": {
     "include": [
       {

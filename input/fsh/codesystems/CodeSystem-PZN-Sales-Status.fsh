@@ -7,10 +7,13 @@
 // sind: ein Code, der heute im Katalog fehlt, war moeglicherweise zum
 // Behandlungszeitpunkt regulaer im Verkehr.
 //
-// LIZENZ: Der Inhalt stammt aus den MMI-Pharmindex-R3-Rohdaten und wird unter
-// Lizenz zur Integration in Systeme der MII und des NUM verteilt. Deshalb wird
-// hier BEWUSST NICHT das modulweite `insert LicenseCodeableCCBY40` verwendet -
-// CC-BY-4.0 waere fuer lizenzierte Fremddaten eine falsche Aussage.
+// LIZENZ: Der Inhalt stammt aus den MMI-Pharmindex-R3-Rohdaten. Herausgeber und
+// Lizenz kommen aus `insert Legal_PZN` - dem RuleSet, mit dem die Service Unit
+// Terminologische Dienste das PZN-CodeSystem selbst auszeichnet (uebernommen aus
+// gitlab.com/mii-termserv/fhir-resources/de.pharmazentralnummer). Weder
+// `insert Publisher` (MII) noch `insert LicenseCodeableCCBY40` waeren hier
+// zutreffend: Herausgeber ist die IFA/Vidal MMI, und die Nutzung ist
+// vertraglich auf Projekte der MII und des NUM beschraenkt.
 
 CodeSystem: MII_CS_Medikation_PZN_Sales_Status_Codes
 Id: mii-cs-medikation-pzn-sales-status-code
@@ -23,8 +26,7 @@ Description: "This code system contains the sales status codes (catalog #116) fo
 * ^caseSensitive = false
 * ^content = #complete
 * insert PR_CS_VS_Version
-* insert Publisher
-* ^copyright = "Diese Repräsentation wurde aus den Rohdatendateien des MMI Pharmindex R3 erzeugt. Sie wird unter Lizenz zum Zweck der Integration in die Softwaresysteme der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin verteilt."
+* insert Legal_PZN
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code"
 * #D "Wegfall" "Verkehrsfähigkeit ist erloschen"
 * #F "Außer Vertrieb" "Lagerware darf abverkauft werden, sofern der 'Verkehrsfähigkeitsstatus' dies zulässt"
@@ -41,5 +43,5 @@ Description: "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sa
 * ^status = #active
 * ^experimental = false
 * insert PR_CS_VS_Version
-* insert Publisher
+* insert Legal_PZN
 * include codes from system MII_CS_Medikation_PZN_Sales_Status_Codes

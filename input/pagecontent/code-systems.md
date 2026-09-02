@@ -48,7 +48,7 @@ Pharmazentralnummern are volatile: an article that is no longer in today's catal
 The value is intended to be carried as a **property on a PZN coding** — it describes the article, not the prescription.
 
 <div class="ig-highlight ig-highlight-grey" markdown="1">
-**Licence:** the content is generated from the MMI Pharmindex R3 raw data files and distributed under licence for integration into the systems of the MII and the NUM. It is therefore **not** covered by the CC-BY-4.0 licence of the rest of the module.
+**Publisher and licence:** the publisher of this content is *Informationsstelle für Arzneispezialitäten – IFA GmbH / Vidal MMI Germany GmbH*, not the MII. A usage agreement with the TMF covers the Vidal MMI raw data; use is therefore permitted **only within the projects of the Medical Informatics Initiative and the Network University Medicine**. This content is consequently **not** covered by the CC-BY-4.0 licence of the rest of the module. Publisher and licence statement are taken verbatim from the [PZN distribution of the Service Unit Terminological Services](https://gitlab.com/mii-termserv/fhir-resources/de.pharmazentralnummer).
 </div>
 
 #### Medicinal products
