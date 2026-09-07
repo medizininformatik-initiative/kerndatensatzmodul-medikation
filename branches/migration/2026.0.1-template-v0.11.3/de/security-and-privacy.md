@@ -21,9 +21,16 @@ Wie Daten, die ein Datenintegrationszentrum verlassen, praktisch de-identifizier
 
 Dies ist der eigene Beitrag des Moduls: die Sicherheits- und Datenschutz-Eigenschaften, die aus der **Art der Daten dieses Moduls** folgen. **Der Inhalt dieses Abschnitts ist optional** — nicht jedes Modul hat eigene Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen Sie ihn wörtlich):
 
-> Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP — führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits- oder Datenschutzanforderungen an Implementierende.
+> Abschnitt 3 ist bei der Migration neu geschrieben worden. Der Simplifier-Guide hatte keine Sicherheits- und Datenschutzseite; die genannten Aspekte leiten sich aus den Datenkategorien ab, die dieses Modul führt. Fachlich zu prüfen.
 
-> **Illustratives Beispiel — vor dem ersten Release entfernen.** So füllt ein anderes KDS-Modul diesen Abschnitt (**Person**): die Patienten-Identifikatoren sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht zur Re-Identifizierung führen lassen, und der Geltungsbereich eines Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von Daten zu respektieren.
+Medikationsdaten werfen über den übergreifenden Rahmen hinaus eigene Aspekte auf, weil sie **mittelbar auf Diagnosen schließen lassen**. Ein Wirkstoff ist häufig für eine Indikation spezifisch; die Verordnung eines antiretroviralen Präparats, eines Neuroleptikums oder eines Zytostatikums offenbart die zugrundeliegende Erkrankung auch dann, wenn keine Diagnose übermittelt wird. Diese Inferenz überlebt eine Pseudonymisierung, weil sie nicht an Identifikatoren hängt, sondern am Inhalt.
 
-> [TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder übernehmen Sie den Standardtext oben, wenn es keine gibt.]
+Vier Punkte folgen daraus für dieses Modul:
+
+* **Seltene Erkrankungen und Onkologie.** Für Präparate, die nur bei sehr kleinen Kollektiven eingesetzt werden, kann bereits die Kombination aus Wirkstoff, Zeitraum und Standort eine Person faktisch eindeutig machen. Das Modul sieht für solche Fälle ausdrücklich die Kodierung über UNII vor — die Kodierung erhöht die Datenqualität, mindert aber das Risiko nicht.
+* **Studienmedikation und Verblindung.** Das Modul kann Studienmedikation abbilden. Wo eine Verblindung besteht, darf die Bereitstellung strukturierter Medikationsdaten sie nicht unterlaufen; ob ein Datensatz eine Zuordnung erlaubt, ist vor der Herausgabe zu prüfen.
+* **Freitext in Dosierungsangaben.** `Dosage.text` ist ein Freitextfeld. Es kann unbeabsichtigt identifizierende Angaben enthalten — Namen, Stationsbezeichnungen, Bemerkungen aus der Verlaufsdokumentation. DIMP entfernt sie nicht automatisch; Freitextfelder sind vor der Bereitstellung gesondert zu betrachten.
+* **Handelsnamen und Bezugsweg.** Pharmazentralnummern und Handelsbezeichnungen können Rückschlüsse auf die abgebende Stelle oder das versorgende Haus zulassen. Wo der Wirkstoff für die Fragestellung genügt, ist die Angabe der PZN nach dem Grundsatz der Datenminimierung entbehrlich.
+
+Über diese Aspekte hinaus stellt das Modul keine eigenen Sicherheits- oder Datenschutzanforderungen an Implementierende; es gelten das übergreifende Datenschutzkonzept und DIMP wie oben beschrieben.
 

@@ -334,9 +334,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      module-specific aspects. Stages 1 and 2 are static overarching content —
      keep them; stage 3 is where your module writes. Stage 3's CONTENT is
      optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
+     the section.
+       This module HAS aspects of its own; the scaffold's example box was
+       removed and stage 3 is written below.
      German mirror: input/translations/de/pagecontent/security-and-privacy.md —
      both files must say the same thing. -->
 
@@ -386,25 +386,21 @@ data category that raises security or privacy aspects of its own, and it
 places no module-specific security or privacy requirements on implementers.</p>
 </blockquote>
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-<blockquote class="ig-highlight ig-highlight-orange">
-  <p><strong>Illustrative example — remove before the first release.</strong> How another KDS
-module fills this section (<em>Person</em>): the patient identifiers are pseudonyms
-from the trusted third party; systems must not let record linkage
-re-identify a person, and the pseudonym's scope (site-wide vs
-project-specific) must be respected when data is combined.</p>
+<!-- DERIVED:written source=BeschreibungModul.page.md,KontextimGesamtprojektBezgezuanderenModulen.page.md gate=B -->
+<blockquote class="ig-highlight ig-highlight-grey">
+  <p>Section 3 was newly written during the migration. The Simplifier guide had no security and privacy page; the aspects named here follow from the data categories this module carries. Needs domain review.</p>
 </blockquote>
 
-<blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: State your module's specific aspects — the data categories it carries
-and their sensitivity, risks that profile-level pseudonymisation does not
-cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-this module places on implementers, each with the risk it addresses. Name
-residual risks that must be handled in system design, deployment or policy —
-or adopt the default text above if there are none.]</p>
-</blockquote>
+<p>Beyond the overarching framework, medication data raise aspects of their own because they <strong>allow diagnoses to be inferred</strong>. An active ingredient is often specific to an indication; an order for an antiretroviral, an antipsychotic or a cytostatic agent reveals the underlying disease even when no diagnosis is transmitted. That inference survives pseudonymisation, because it does not depend on identifiers but on content.</p>
+
+<p>Four points follow for this module:</p>
+
+<ul>
+  <li><strong>Rare diseases and oncology.</strong> For preparations used only in very small cohorts, the combination of active ingredient, period and site can already single out a person in practice. The module explicitly provides for UNII coding in such cases — coding improves data quality, but it does not reduce the risk.</li>
+  <li><strong>Study medication and blinding.</strong> The module can represent study medication. Where blinding is in place, providing structured medication data must not undermine it; whether a dataset permits an assignment is to be checked before release.</li>
+  <li><strong>Free text in dosage information.</strong> <code class="language-plaintext highlighter-rouge">Dosage.text</code> is a free-text field. It may inadvertently contain identifying information — names, ward designations, remarks from progress notes. DIMP does not remove these automatically; free-text fields need separate consideration before provision.</li>
+  <li><strong>Trade names and supply route.</strong> Pharmazentralnummern and trade names can allow inferences about the dispensing point or the treating hospital. Where the active ingredient suffices for the research question, stating the PZN is dispensable under the data-minimisation principle.</li>
+</ul>
 
 
 
@@ -431,7 +427,7 @@ or adopt the default text above if there are none.]</p>
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Wed, Sep 2, 2026 14:31+0000">2026-09-02</span>
+          Generated <span title="Mon, Sep 7, 2026 13:33+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

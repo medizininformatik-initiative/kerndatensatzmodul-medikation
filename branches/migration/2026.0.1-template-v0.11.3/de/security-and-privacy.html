@@ -355,36 +355,23 @@ Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden
 Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen
 Sie ihn wörtlich):</p>
 
-<blockquote>
-  <p>Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
-Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —
-führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder
-Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
-oder Datenschutzanforderungen an Implementierende.</p>
-</blockquote>
-
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-<blockquote class="ig-highlight ig-highlight-orange">
-  <p><strong>Illustratives Beispiel — vor dem ersten Release entfernen.</strong> So füllt ein
-anderes KDS-Modul diesen Abschnitt (<em>Person</em>): die Patienten-Identifikatoren
-sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-Daten zu respektieren.</p>
-</blockquote>
-
+<!-- DERIVED:written source=BeschreibungModul.page.md,KontextimGesamtprojektBezgezuanderenModulen.page.md gate=B -->
 <blockquote class="ig-highlight ig-highlight-grey">
-  <p>[TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-übernehmen Sie den Standardtext oben, wenn es keine gibt.]</p>
+  <p>Abschnitt 3 ist bei der Migration neu geschrieben worden. Der Simplifier-Guide hatte keine Sicherheits- und Datenschutzseite; die genannten Aspekte leiten sich aus den Datenkategorien ab, die dieses Modul führt. Fachlich zu prüfen.</p>
 </blockquote>
+
+<p>Medikationsdaten werfen über den übergreifenden Rahmen hinaus eigene Aspekte auf, weil sie <strong>mittelbar auf Diagnosen schließen lassen</strong>. Ein Wirkstoff ist häufig für eine Indikation spezifisch; die Verordnung eines antiretroviralen Präparats, eines Neuroleptikums oder eines Zytostatikums offenbart die zugrundeliegende Erkrankung auch dann, wenn keine Diagnose übermittelt wird. Diese Inferenz überlebt eine Pseudonymisierung, weil sie nicht an Identifikatoren hängt, sondern am Inhalt.</p>
+
+<p>Vier Punkte folgen daraus für dieses Modul:</p>
+
+<ul>
+  <li><strong>Seltene Erkrankungen und Onkologie.</strong> Für Präparate, die nur bei sehr kleinen Kollektiven eingesetzt werden, kann bereits die Kombination aus Wirkstoff, Zeitraum und Standort eine Person faktisch eindeutig machen. Das Modul sieht für solche Fälle ausdrücklich die Kodierung über UNII vor — die Kodierung erhöht die Datenqualität, mindert aber das Risiko nicht.</li>
+  <li><strong>Studienmedikation und Verblindung.</strong> Das Modul kann Studienmedikation abbilden. Wo eine Verblindung besteht, darf die Bereitstellung strukturierter Medikationsdaten sie nicht unterlaufen; ob ein Datensatz eine Zuordnung erlaubt, ist vor der Herausgabe zu prüfen.</li>
+  <li><strong>Freitext in Dosierungsangaben.</strong> <code class="language-plaintext highlighter-rouge">Dosage.text</code> ist ein Freitextfeld. Es kann unbeabsichtigt identifizierende Angaben enthalten — Namen, Stationsbezeichnungen, Bemerkungen aus der Verlaufsdokumentation. DIMP entfernt sie nicht automatisch; Freitextfelder sind vor der Bereitstellung gesondert zu betrachten.</li>
+  <li><strong>Handelsnamen und Bezugsweg.</strong> Pharmazentralnummern und Handelsbezeichnungen können Rückschlüsse auf die abgebende Stelle oder das versorgende Haus zulassen. Wo der Wirkstoff für die Fragestellung genügt, ist die Angabe der PZN nach dem Grundsatz der Datenminimierung entbehrlich.</li>
+</ul>
+
+<p>Über diese Aspekte hinaus stellt das Modul keine eigenen Sicherheits- oder Datenschutzanforderungen an Implementierende; es gelten das übergreifende Datenschutzkonzept und DIMP wie oben beschrieben.</p>
 
 
 
@@ -411,7 +398,7 @@ Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 2, 2026 14:31+0000">2026-09-02</span>
+          Erstellt <span title="Mon, Sep 7, 2026 13:33+0000">2026-09-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
