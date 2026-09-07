@@ -184,7 +184,12 @@ export function evaluate({ sushiConfig = null, igIni = null, packageJson = null,
 
     field("M6 version", readTopLevel(sushiConfig, "version"), (v) => {
       if (isPlaceholder(v)) return { ok: true, parameterized: true };
-      return { ok: /^\d{4}\.\d+\.\d+$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n (modules never use SemVer)" };
+      // Prerelease-Suffix zugelassen (2027.0.0-ballot.rc1). Uebernommen aus
+      // Template v0.13.2; unsere vendorierte Fassung v0.11.3 kannte nur
+      // YYYY.n.n und haette jeden Ballot-Release blockiert. Das Meta-Modul hat
+      // dieselbe Anpassung am 2026-08-31 vorgenommen ("workflows accept
+      // prerelease suffix", 78bc3691) und nutzt selbst 2027.0.0-ballot.rc3.
+      return { ok: /^\d{4}\.\d+\.\d+(-[0-9A-Za-z.-]+)?$/.test(v), parameterized: false, reason: "version must be CalVer YYYY.n.n with an optional prerelease suffix, e.g. 2027.0.0-draft.1 (modules never use SemVer)" };
     });
 
     // M7 — no floating label anywhere (always hard, both branches).

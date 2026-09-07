@@ -5,9 +5,9 @@
      module-specific aspects. Stages 1 and 2 are static overarching content —
      keep them; stage 3 is where your module writes. Stage 3's CONTENT is
      optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
+     the section.
+       This module HAS aspects of its own; the scaffold's example box was
+       removed and stage 3 is written below.
      German mirror: input/translations/de/pagecontent/security-and-privacy.md —
      both files must say the same thing. -->
 
@@ -56,20 +56,15 @@ TODO boxes below and adopt it verbatim):
 > data category that raises security or privacy aspects of its own, and it
 > places no module-specific security or privacy requirements on implementers.
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
-
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
+<!-- DERIVED:written source=BeschreibungModul.page.md,KontextimGesamtprojektBezgezuanderenModulen.page.md gate=B -->
+> Section 3 was newly written during the migration. The Simplifier guide had no security and privacy page; the aspects named here follow from the data categories this module carries. Needs domain review.
 {: .ig-highlight .ig-highlight-grey}
+
+Beyond the overarching framework, medication data raise aspects of their own because they **allow diagnoses to be inferred**. An active ingredient is often specific to an indication; an order for an antiretroviral, an antipsychotic or a cytostatic agent reveals the underlying disease even when no diagnosis is transmitted. That inference survives pseudonymisation, because it does not depend on identifiers but on content.
+
+Four points follow for this module:
+
+* **Rare diseases and oncology.** For preparations used only in very small cohorts, the combination of active ingredient, period and site can already single out a person in practice. The module explicitly provides for UNII coding in such cases — coding improves data quality, but it does not reduce the risk.
+* **Study medication and blinding.** The module can represent study medication. Where blinding is in place, providing structured medication data must not undermine it; whether a dataset permits an assignment is to be checked before release.
+* **Free text in dosage information.** `Dosage.text` is a free-text field. It may inadvertently contain identifying information — names, ward designations, remarks from progress notes. DIMP does not remove these automatically; free-text fields need separate consideration before provision.
+* **Trade names and supply route.** Pharmazentralnummern and trade names can allow inferences about the dispensing point or the treating hospital. Where the active ingredient suffices for the research question, stating the PZN is dispensable under the data-minimisation principle.
