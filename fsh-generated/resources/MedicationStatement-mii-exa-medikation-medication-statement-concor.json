@@ -33,6 +33,9 @@
           "timeOfDay": [
             "08:00:00"
           ],
+          "when": [
+            "MORN"
+          ],
           "frequency": 1,
           "period": 1,
           "periodUnit": "d"
@@ -47,8 +50,7 @@
             "unit": "Tablette"
           }
         }
-      ],
-      "text": "Concor 2,5mg Tabl. 1-0-0-0"
+      ]
     },
     {
       "timing": {
@@ -56,6 +58,9 @@
           "timeOfDay": [
             "12:00:00"
           ],
+          "when": [
+            "NOON"
+          ],
           "frequency": 1,
           "period": 1,
           "periodUnit": "d"
@@ -70,8 +75,7 @@
             "unit": "Tablette"
           }
         }
-      ],
-      "text": "Concor 2,5mg Tabl. 1-0-0-0"
+      ]
     },
     {
       "timing": {
@@ -79,28 +83,8 @@
           "timeOfDay": [
             "18:00:00"
           ],
-          "frequency": 1,
-          "period": 1,
-          "periodUnit": "d"
-        }
-      },
-      "doseAndRate": [
-        {
-          "doseQuantity": {
-            "value": 0,
-            "code": "1",
-            "system": "http://unitsofmeasure.org",
-            "unit": "Tablette"
-          }
-        }
-      ],
-      "text": "Concor 2,5mg Tabl. 1-0-0-0"
-    },
-    {
-      "timing": {
-        "repeat": {
-          "timeOfDay": [
-            "22:00:00"
+          "when": [
+            "EVE"
           ],
           "frequency": 1,
           "period": 1,
@@ -116,8 +100,32 @@
             "unit": "Tablette"
           }
         }
-      ],
-      "text": "Concor 2,5mg Tabl. 1-0-0-0"
+      ]
+    },
+    {
+      "timing": {
+        "repeat": {
+          "timeOfDay": [
+            "22:00:00"
+          ],
+          "when": [
+            "NIGHT"
+          ],
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 0,
+            "code": "1",
+            "system": "http://unitsofmeasure.org",
+            "unit": "Tablette"
+          }
+        }
+      ]
     }
   ],
   "status": "intended",

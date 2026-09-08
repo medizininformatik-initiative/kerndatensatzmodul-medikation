@@ -243,7 +243,6 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * dosage.doseAndRate.doseQuantity = 50 'mg/kg' "mg/kilogram"
 * dosage.route = $standardterms#20045000 "Intravenous use"
-* dosage.text = "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.period = 4
 * dosage.timing.repeat.periodUnit = #wk
@@ -395,29 +394,29 @@ Usage: #example
 * medicationCodeableConcept.text = "Concor 2,5mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
-* dosage[0].text = "Concor 2,5mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "08:00:00"
+* dosage[=].timing.repeat.when = #MORN
 * dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
-* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "12:00:00"
+* dosage[=].timing.repeat.when = #NOON
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
-* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "18:00:00"
+* dosage[=].timing.repeat.when = #EVE
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
-* dosage[+].text = "Concor 2,5mg Tabl. 1-0-0-0"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "22:00:00"
+* dosage[=].timing.repeat.when = #NIGHT
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 
 Instance: mii-exa-medikation-medication-statement-hct
@@ -448,7 +447,6 @@ Usage: #example
 * medicationCodeableConcept.text = "Ibuprofen 400mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
-* dosage.text = "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)"
 * dosage.timing.repeat.boundsPeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage.timing.repeat.frequency = 3
 * dosage.timing.repeat.period = 1
@@ -466,29 +464,29 @@ Usage: #example
 * medicationCodeableConcept.text = "Zopiclon 3,75mg"
 * subject = Reference(Patient/example)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
-* dosage[0].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "08:00:00"
+* dosage[=].timing.repeat.when = #MORN
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
-* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "12:00:00"
+* dosage[=].timing.repeat.when = #NOON
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
-* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "18:00:00"
+* dosage[=].timing.repeat.when = #EVE
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
-* dosage[+].text = "Zopiclon 3,75mg Tabl. 0-0-0-1"
-* dosage[=].timing.repeat.frequency = 1
+* dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
 * dosage[=].timing.repeat.timeOfDay = "22:00:00"
+* dosage[=].timing.repeat.when = #NIGHT
 * dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 
 Instance: mii-exa-medikation-list-admission
