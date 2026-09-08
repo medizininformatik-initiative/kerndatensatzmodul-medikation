@@ -190,7 +190,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"/>
-  <version value="2027.0.0-ballot.rc2"/>
+  <version value="2027.0.0-ballot.rc3"/>
   <name value="MII_PR_Medikation_MedicationStatement"/>
   <title value="MII PR Medikation MedicationStatement"/>
   <status value="active"/>

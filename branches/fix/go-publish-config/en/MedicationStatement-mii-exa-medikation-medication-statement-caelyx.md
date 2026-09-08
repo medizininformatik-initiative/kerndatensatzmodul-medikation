@@ -1,4 +1,4 @@
-# mii-exa-medikation-medication-statement-caelyx - MII IG Medikation v2027.0.0-ballot.rc2
+# mii-exa-medikation-medication-statement-caelyx - MII IG Medikation v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -12,7 +12,7 @@
 
 -------
 
-Profile: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md) version: 2027.0.0-ballot.rc2
+Profile: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md) version: 2027.0.0-ballot.rc3
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
@@ -43,7 +43,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   "resourceType" : "MedicationStatement",
   "id" : "mii-exa-medikation-medication-statement-caelyx",
   "meta" : {
-    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc2"],
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc3"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
       "code" : "HTEST",
