@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
-  "version": "2026.0.1",
+  "version": "2027.0.0-ballot.rc1",
   "name": "MII_EX_Medikation_Wirkstofftyp",
   "_name": {
     "extension": [
@@ -99,6 +99,12 @@
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "MII EX Medikation Wirkstofftyp",
+        "definition": "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff."
+      },
       {
         "id": "Extension.extension",
         "path": "Extension.extension",

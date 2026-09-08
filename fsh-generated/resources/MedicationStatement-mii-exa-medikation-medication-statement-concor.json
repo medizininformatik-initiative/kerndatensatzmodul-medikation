@@ -10,10 +10,9 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc1"
     ]
   },
-  "status": "intended",
   "medicationCodeableConcept": {
     "coding": [
       {
@@ -24,23 +23,19 @@
     ],
     "text": "Concor 2,5mg"
   },
-  "subject": {
-    "reference": "Patient/example"
-  },
   "effectivePeriod": {
     "start": "2022-02-02T12:22:00+00:00"
   },
   "dosage": [
     {
-      "text": "Concor 2,5mg Tabl. 1-0-0-0",
       "timing": {
         "repeat": {
+          "when": [
+            "MORN"
+          ],
           "frequency": 1,
           "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "08:00:00"
-          ]
+          "periodUnit": "d"
         }
       },
       "doseAndRate": [
@@ -55,15 +50,14 @@
       ]
     },
     {
-      "text": "Concor 2,5mg Tabl. 1-0-0-0",
       "timing": {
         "repeat": {
+          "when": [
+            "NOON"
+          ],
           "frequency": 1,
           "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "12:00:00"
-          ]
+          "periodUnit": "d"
         }
       },
       "doseAndRate": [
@@ -78,15 +72,14 @@
       ]
     },
     {
-      "text": "Concor 2,5mg Tabl. 1-0-0-0",
       "timing": {
         "repeat": {
+          "when": [
+            "EVE"
+          ],
           "frequency": 1,
           "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "18:00:00"
-          ]
+          "periodUnit": "d"
         }
       },
       "doseAndRate": [
@@ -101,15 +94,14 @@
       ]
     },
     {
-      "text": "Concor 2,5mg Tabl. 1-0-0-0",
       "timing": {
         "repeat": {
+          "when": [
+            "NIGHT"
+          ],
           "frequency": 1,
           "period": 1,
-          "periodUnit": "d",
-          "timeOfDay": [
-            "22:00:00"
-          ]
+          "periodUnit": "d"
         }
       },
       "doseAndRate": [
@@ -123,5 +115,9 @@
         }
       ]
     }
-  ]
+  ],
+  "status": "intended",
+  "subject": {
+    "reference": "Patient/example"
+  }
 }

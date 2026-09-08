@@ -10,31 +10,21 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
     ]
   },
   "code": {
     "coding": [
       {
-        "code": "887150",
+        "code": "17313306",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "Caelyx 50 Mg/25 ml Konz.z.Herst.e.Infusi"
+        "display": "Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1"
       },
       {
         "code": "L01DB01",
         "system": "http://fhir.de/CodeSystem/bfarm/atc",
         "version": "2023",
         "display": "Doxorubicin"
-      }
-    ]
-  },
-  "status": "active",
-  "form": {
-    "coding": [
-      {
-        "code": "11213000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Concentrate for solution for infusion"
       }
     ]
   },
@@ -53,7 +43,6 @@
           }
         ]
       },
-      "isActive": true,
       "strength": {
         "numerator": {
           "value": 50,
@@ -67,7 +56,18 @@
           "system": "http://unitsofmeasure.org",
           "unit": "ml"
         }
-      }
+      },
+      "isActive": true
     }
-  ]
+  ],
+  "status": "active",
+  "form": {
+    "coding": [
+      {
+        "code": "11213000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Concentrate for solution for infusion"
+      }
+    ]
+  }
 }

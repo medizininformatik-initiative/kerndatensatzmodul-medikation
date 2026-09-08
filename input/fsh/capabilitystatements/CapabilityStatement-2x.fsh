@@ -13,7 +13,7 @@ RuleSet: Profile (profile)
 
 RuleSet: SupportProfile (profile, expectation)
 // This rule set must follow a SupportResource rule set, and applies to that resource.
-* rest.resource[=].supportedProfile[+] = "{profile}|2026.0.1"
+* rest.resource[=].supportedProfile[+] = "{profile}|2027.0.0-ballot.rc1"
 * rest.resource[=].supportedProfile[=].extension[0].url = $exp
 * rest.resource[=].supportedProfile[=].extension[0].valueCode = {expectation}
 
@@ -172,7 +172,7 @@ Usage: #definition
 * insert SupportSearchParam(dose-quantity, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity, #quantity, #SHALL)
 * insert SupportSearchParam(raterange-low, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low, #quantity, #SHALL)
 * insert SupportSearchParam(raterange-high, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high, #quantity, #SHALL)
-* insert SupportSearchParam(raterange, https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange, #composite, #SHALL)
+* insert SupportSearchParam(raterange, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange, #composite, #SHALL)
 * insert SupportSearchParam(ratequantity, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-numerator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-denominator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator, #quantity, #SHALL)
@@ -208,7 +208,7 @@ Usage: #definition
 * insert SupportSearchParam(dose-quantity, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity, #quantity, #SHALL)
 * insert SupportSearchParam(raterange-low, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low, #quantity, #SHALL)
 * insert SupportSearchParam(raterange-high, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high, #quantity, #SHALL)
-* insert SupportSearchParam(raterange, https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/SearchParameter/MedicationStatement-RateRange, #composite, #SHALL)
+* insert SupportSearchParam(raterange, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange, #composite, #SHALL)
 * insert SupportSearchParam(ratequantity, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-numerator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator, #quantity, #SHALL)
 * insert SupportSearchParam(rateratio-denominator, https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator, #quantity, #SHALL)

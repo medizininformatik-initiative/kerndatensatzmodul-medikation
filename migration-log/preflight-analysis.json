@@ -1,0 +1,3521 @@
+{
+  "schemaVersion": "1.4",
+  "tool": "ig-stats.py",
+  "mode": "static",
+  "analyzed": {
+    "path": "/Users/thome/code/fhir-profiling/kerndatensatzmodul-medikation",
+    "label": "mii-ig-medikation",
+    "project_root_nested": null,
+    "project_root_candidates": null,
+    "git_commit": "69120dd",
+    "timestamp": "2026-09-01T20:42:56Z"
+  },
+  "identity": {
+    "id": "mii-ig-medikation",
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation",
+    "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+    "name": "MII_IG_Medikation",
+    "title": "MII IG Medikation",
+    "version": "2026.0.1",
+    "calver": true,
+    "status": "active",
+    "fhirVersion": "4.0.1",
+    "license": "CC-BY-4.0",
+    "publisher": "Medizininformatik Initiative"
+  },
+  "artifacts": {
+    "profiles": 5,
+    "extensions": 2,
+    "valuesets": 5,
+    "codesystems": 1,
+    "logicals": 1,
+    "capabilitystatements": 1,
+    "questionnaires": 0,
+    "searchparameters": 0,
+    "operations": 0,
+    "examples": 25,
+    "rulesets": 28,
+    "invariants": 3,
+    "mappings": 2,
+    "other": {},
+    "total": 40,
+    "other_total": 0,
+    "_source": "input/fsh (FSH-Deklarationen)",
+    "generated_crosscheck": {
+      "source": "fsh-generated/resources",
+      "counts": {
+        "profiles": 5,
+        "extensions": 2,
+        "valuesets": 5,
+        "codesystems": 1,
+        "logicals": 1,
+        "capabilitystatements": 1,
+        "questionnaires": 0,
+        "searchparameters": 0,
+        "operations": 0,
+        "examples": 25
+      },
+      "other": {},
+      "mismatches": {}
+    }
+  },
+  "artifacts_detail": [
+    {
+      "type": "RuleSet",
+      "name": "SupportResource",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 3
+    },
+    {
+      "type": "RuleSet",
+      "name": "Profile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 9
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 14
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportInteraction",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 20
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportSearchParam",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 26
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportSpecialSearchParam",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 34
+    },
+    {
+      "type": "Instance",
+      "name": "mii-cps-medikation-capabilitystatement",
+      "instanceOf": "CapabilityStatement",
+      "category": "capabilitystatements",
+      "path": "input/fsh/capabilitystatements/CapabilityStatement-2x.fsh",
+      "line": 41
+    },
+    {
+      "type": "CodeSystem",
+      "name": "MII_CS_Medikation_Wirkstofftyp",
+      "instanceOf": null,
+      "category": "codesystems",
+      "path": "input/fsh/codesystems/CodeSystem-Wirkstofftyp.fsh",
+      "line": 1
+    },
+    {
+      "type": "Extension",
+      "name": "MII_EX_Medikation_Wirkstoffrelation",
+      "instanceOf": null,
+      "category": "extensions",
+      "path": "input/fsh/extensions/Extension-Wirkstoffrelation.fsh",
+      "line": 1
+    },
+    {
+      "type": "Extension",
+      "name": "MII_EX_Medikation_Wirkstofftyp",
+      "instanceOf": null,
+      "category": "extensions",
+      "path": "input/fsh/extensions/Extension-Wirkstofftyp.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-rezeptur",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-glucoseloesung",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 16
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-calcium",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 39
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-caelyx",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 82
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-ass-100",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 97
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-propofol",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 111
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-thiotepa",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 124
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-dolomo",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 135
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-dolomo-tag",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 156
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-dolomo-nacht",
+      "instanceOf": "mii-pr-medikation-medication",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 190
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-administration",
+      "instanceOf": "mii-pr-medikation-medication-administration",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 224
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 239
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-periodisches-intervall",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 255
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-offset",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 274
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-caelyx",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 291
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-intravenous-use",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 306
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-procedure-thiotepa",
+      "instanceOf": "Procedure",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 321
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-request-caelyx",
+      "instanceOf": "mii-pr-medikation-medication-request",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 333
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medikationsliste-aufnahmemedikation",
+      "instanceOf": "mii-pr-medikation-medikationsliste",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 354
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medikationsliste-aktuelle-therapie",
+      "instanceOf": "mii-pr-medikation-medikationsliste",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 367
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-concor",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 380
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-hct",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 415
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-ibuprofen",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 433
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-medication-statement-zopiclon",
+      "instanceOf": "mii-pr-medikation-medication-statement",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 451
+    },
+    {
+      "type": "Instance",
+      "name": "mii-exa-medikation-list-admission",
+      "instanceOf": "mii-pr-medikation-medikationsliste",
+      "category": "examples",
+      "path": "input/fsh/instances/Instances.fsh",
+      "line": 486
+    },
+    {
+      "type": "Invariant",
+      "name": "dsg-1",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/invariants/invariants.fsh",
+      "line": 1
+    },
+    {
+      "type": "Logical",
+      "name": "MII_LM_Medikation",
+      "instanceOf": null,
+      "category": "logicals",
+      "path": "input/fsh/logicals/LogicalModelMedikation.fsh",
+      "line": 1
+    },
+    {
+      "type": "Mapping",
+      "name": "Medikation-LogicalModel",
+      "instanceOf": null,
+      "category": "mappings",
+      "path": "input/fsh/logicals/LogicalModelMedikation.fsh",
+      "line": 212
+    },
+    {
+      "type": "Mapping",
+      "name": "Medikation-LogicalModel-Profile",
+      "instanceOf": null,
+      "category": "mappings",
+      "path": "input/fsh/logicals/LogicalModelMedikation.fsh",
+      "line": 315
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Medikation_Medikationsliste",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Profile-List.fsh",
+      "line": 2
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Medikation_Fallkontext",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/profiles/Profile-List.fsh",
+      "line": 97
+    },
+    {
+      "type": "Invariant",
+      "name": "medication-list-context-1",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Profile-List.fsh",
+      "line": 114
+    },
+    {
+      "type": "Invariant",
+      "name": "medication-list-context-2",
+      "instanceOf": null,
+      "category": "invariants",
+      "path": "input/fsh/profiles/Profile-List.fsh",
+      "line": 119
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Medikation_Medication",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Profile-Medication.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Medikation_MedicationAdministration",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Profile-MedicationAdministration.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Medikation_MedicationRequest",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Profile-MedicationRequest.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Medikation_MedicationStatement",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/Profile-MedicationStatement.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "SNOMED_Copyright",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/copyright.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "LOINC_Copyright",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/copyright.fsh",
+      "line": 4
+    },
+    {
+      "type": "RuleSet",
+      "name": "ATC_Copyright",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/copyright.fsh",
+      "line": 7
+    },
+    {
+      "type": "RuleSet",
+      "name": "EDQM_Copyright",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/copyright.fsh",
+      "line": 10
+    },
+    {
+      "type": "RuleSet",
+      "name": "IHE_Copyright",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/copyright.fsh",
+      "line": 13
+    },
+    {
+      "type": "RuleSet",
+      "name": "ExtensionContext",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/extension-context.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 3
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40Instance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 7
+    },
+    {
+      "type": "RuleSet",
+      "name": "MetaProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/meta-profile.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "PQTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/pq-translation.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "SP_Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 6
+    },
+    {
+      "type": "RuleSet",
+      "name": "TestDataLabel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/test-data-label.fsh",
+      "line": 3
+    },
+    {
+      "type": "RuleSet",
+      "name": "Translation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddSnomedCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 8
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddPznCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 16
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddAtcDeCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 24
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddAtcWhoCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 32
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddUniiCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 40
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddEdqmCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 48
+    },
+    {
+      "type": "RuleSet",
+      "name": "Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "PR_CS_VS_Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 4
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Medikation_Wirkstofftyp",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/ValueSet-Wirkstofftyp.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Medikation_ASK",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/mii-vs-medikation-ask.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Medikation_ATC",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/mii-vs-medikation-atc.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Medikation_UNII",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/mii-vs-medikation-unii.fsh",
+      "line": 1
+    }
+  ],
+  "preflight": {
+    "licence": {
+      "evidence": [
+        {
+          "source": "sushi-config.yaml/package.json",
+          "value": "CC-BY-4.0"
+        },
+        {
+          "source": "LICENSE",
+          "value": "Attribution 4.0 International"
+        }
+      ],
+      "declared_anywhere": true,
+      "contradictory": true,
+      "distinct_values": [
+        "attribution4.0international",
+        "cc-by-4.0"
+      ]
+    },
+    "canonical_space": {
+      "canonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation",
+      "package_json_canonical": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation",
+      "config_contradiction": false,
+      "out_of_space_count": 0,
+      "out_of_space": [],
+      "id_url_mismatch": [
+        {
+          "type": "CapabilityStatement",
+          "id": "mii-cps-medikation-capabilitystatement",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
+        },
+        {
+          "type": "CodeSystem",
+          "id": "mii-cs-medikation-wirkstofftyp",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-ex-medikation-wirkstoffrelation",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-ex-medikation-wirkstofftyp",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-lm-medikation",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-medikation-medication-administration",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-medikation-medication-request",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-medikation-medication-statement",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-medikation-medication",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "mii-pr-medikation-medikationsliste",
+          "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+        }
+      ],
+      "special_url_prediction": 12,
+      "example_org": []
+    },
+    "dependency_health": {
+      "old_style_packages": [],
+      "tho_pinned_directly": false,
+      "extensions_pinned_directly": false,
+      "injection_risk": true,
+      "external_parents": [],
+      "dependency_block_present": true,
+      "dependency_block_unparsed": false
+    },
+    "package_layout": null,
+    "narrative_sources": {
+      "pagecontent": false,
+      "intro_notes": false,
+      "implementation_guides_tree": true,
+      "dual_source": false,
+      "pagecontent_last_commit": null,
+      "implementation_guides_last_commit": "2026-02-17T17:24:22+01:00"
+    },
+    "qa_baseline": null,
+    "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
+  },
+  "dependencies": {
+    "count": 5,
+    "pinned": 2,
+    "floating": 3,
+    "items": {
+      "hl7.fhir.uv.ips": "2.0.0",
+      "de.medizininformatikinitiative.kerndatensatz.meta": "2026.0.x",
+      "de.basisprofil.r4": "1.5.x",
+      "de.ihe-d.terminology": "3.0.1",
+      "de.fhir.medication": "1.0.x"
+    },
+    "floating_items": [
+      "de.medizininformatikinitiative.kerndatensatz.meta",
+      "de.basisprofil.r4",
+      "de.fhir.medication"
+    ],
+    "block_present": true,
+    "_source": "sushi-config.yaml: dependencies"
+  },
+  "narrative": {
+    "format": "source",
+    "pages": 36,
+    "pages_all": 40,
+    "translation_pages": 0,
+    "translation_words": 0,
+    "intro_note_pages": 0,
+    "intro_note_words": 0,
+    "words": 14257,
+    "words_all_incl_stubs": 14307,
+    "images": 22,
+    "mandatory_present": [],
+    "mandatory_missing_in_target": [],
+    "files": [
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+        "words": 122,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "words": 128,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Index.page.md",
+        "words": 13,
+        "kind": "source",
+        "stub": true
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "words": 88,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "words": 1127,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Index.page.md",
+        "words": 357,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+        "words": 396,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Referenzen.page.md",
+        "words": 123,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "words": 166,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "words": 85,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "words": 120,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "words": 524,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "words": 171,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "words": 202,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "words": 540,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "words": 548,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "words": 371,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "words": 918,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Index.page.md",
+        "words": 12,
+        "kind": "source",
+        "stub": true
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "words": 781,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+        "words": 122,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "words": 128,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Index.page.md",
+        "words": 13,
+        "kind": "source",
+        "stub": true
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "words": 88,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "words": 1105,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Index.page.md",
+        "words": 363,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+        "words": 396,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Referenzen.page.md",
+        "words": 123,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "words": 444,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "words": 86,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "words": 222,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "words": 526,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "words": 173,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "words": 201,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "words": 541,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "words": 660,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "words": 482,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "words": 1054,
+        "kind": "source",
+        "stub": false
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Index.page.md",
+        "words": 12,
+        "kind": "source",
+        "stub": true
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "words": 776,
+        "kind": "source",
+        "stub": false
+      }
+    ]
+  },
+  "linguistics": {
+    "content_pages": 36,
+    "words_total": 14257,
+    "words_avg": 396.0,
+    "words_median": 360,
+    "words_min": 85,
+    "words_max": 1127,
+    "longest_page": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+    "shortest_page": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+    "per_page": [
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "words": 1127
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "words": 1105
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "words": 1054
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "words": 918
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "words": 781
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "words": 776
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "words": 660
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "words": 548
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "words": 541
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "words": 540
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "words": 526
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "words": 524
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "words": 482
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "words": 444
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+        "words": 396
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+        "words": 396
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "words": 371
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Index.page.md",
+        "words": 363
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Index.page.md",
+        "words": 357
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "words": 222
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "words": 202
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "words": 201
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "words": 173
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "words": 171
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "words": 166
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "words": 128
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "words": 128
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Referenzen.page.md",
+        "words": 123
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Referenzen.page.md",
+        "words": 123
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+        "words": 122
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+        "words": 122
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "words": 120
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "words": 88
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "words": 88
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "words": 86
+      },
+      {
+        "path": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "words": 85
+      }
+    ]
+  },
+  "duplication": {
+    "duplicate_block_count": 128,
+    "duplicate_blocks": [
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"code\" finden sich in der [fhir b",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \" id\" finden sich in der [fhir ba",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \" profile\" finden sich in der [fh",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"status\" finden sich in der [fhir",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"subject\" finden sich in der [fhi",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"category\" finden sich in der [fh",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"medication\" finden sich in der [",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"context\" finden sich in der [fhi",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"reason reference\" finden sich in",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"dosage site\" finden sich in der ",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"dosage route\" finden sich in der",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"rateratio numerator\" finden sich",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"rateratio denominator\" finden si",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "anwendungshinweise: weitere informationen zur suche nach \"rateratio\" finden sich in der [f",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      },
+      {
+        "snippet": "das verabreichte medikament soll entweder über eine referenz auf ein medication objekt, üb",
+        "locations": [
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+          "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md"
+        ]
+      }
+    ],
+    "duplicate_file_groups": [
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungderModule.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Index.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Index.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/KontextimGesamtprojektBezgezuanderenModulen.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Referenzen.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Referenzen.page.md"
+      ],
+      [
+        "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Index.page.md",
+        "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Index.page.md"
+      ]
+    ]
+  },
+  "hygiene": {
+    "images_total": 22,
+    "unreferenced_images": [
+      "implementation-guides/ImplementationGuide-Common/images/8_Abbilding_Medikation_en.jpg",
+      "implementation-guides/ImplementationGuide-Common/images/BMP.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Liste.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikation_2x.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikation_Modul_AD_2x.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationseintrag.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationseintrag_2x.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationsverabreichung_2x.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationsvergabe.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Medikationsverordnung_2x.png",
+      "implementation-guides/ImplementationGuide-Common/images/IG_Medikation_KDS_Modul_Uebersicht.png",
+      "implementation-guides/ImplementationGuide-Common/images/KDS_MED_01.png",
+      "implementation-guides/ImplementationGuide-Common/images/KDS_MED_02.png",
+      "implementation-guides/ImplementationGuide-Common/images/KDS_MED_03.png",
+      "implementation-guides/ImplementationGuide-Common/images/KDS_MED_04.JPG",
+      "implementation-guides/ImplementationGuide-Common/images/Medikation_v2.0.puml",
+      "implementation-guides/ImplementationGuide-Common/images/Mediktion_v2.0.pdf",
+      "implementation-guides/ImplementationGuide-Common/images/UML-1.x.png"
+    ],
+    "examples_total": 25,
+    "examples_not_in_narrative": [
+      "mii-exa-medikation-medication-propofol",
+      "mii-exa-medikation-medikationsliste-aufnahmemedikation"
+    ],
+    "note": "Heuristik: 'nicht referenziert' = Dateiname/Artefaktname kommt in keiner Erklärseite vor. Kein Beweis für Ungenutztheit (Referenz kann über Konfiguration/Build erfolgen)."
+  },
+  "i18n": {
+    "default_lang": null,
+    "default_lang_source": null,
+    "languages": [],
+    "translation_supplements": 0,
+    "supplement_files": [],
+    "translated_pages": 0,
+    "fsh_translation_ext": true,
+    "fsh_translation_files": [
+      "input/fsh/codesystems/CodeSystem-Wirkstofftyp.fsh",
+      "input/fsh/extensions/Extension-Wirkstoffrelation.fsh",
+      "input/fsh/extensions/Extension-Wirkstofftyp.fsh",
+      "input/fsh/valuesets/ValueSet-Wirkstofftyp.fsh",
+      "input/fsh/rulesets/translation.fsh",
+      "input/fsh/profiles/Profile-MedicationAdministration.fsh",
+      "input/fsh/profiles/Profile-List.fsh",
+      "input/fsh/profiles/Profile-Medication.fsh",
+      "input/fsh/profiles/Profile-MedicationStatement.fsh",
+      "input/fsh/profiles/Profile-MedicationRequest.fsh",
+      "input/fsh/logicals/LogicalModelMedikation.fsh"
+    ]
+  },
+  "directives": {
+    "total": 316,
+    "by_label": {
+      "tree": 16,
+      "fql-at": 58,
+      "render-image": 9,
+      "render-resource": 13,
+      "index-root": 2,
+      "page-title": 8,
+      "pagelink": 8,
+      "tabs": 112,
+      "xml": 14,
+      "json": 58,
+      "link": 18
+    },
+    "unknown": 0,
+    "occurrences": [
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "line": 10,
+        "label": "tree",
+        "text": "{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/St"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "line": 14,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "line": 6,
+        "label": "render-image",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/UML-2.x.png}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 6,
+        "label": "render-image",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/7_Abbilding_Med"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 19,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 44,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 72,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 81,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 105,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 121,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 131,
+        "label": "render-resource",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Index.page.md",
+        "line": 18,
+        "label": "index-root",
+        "text": "{{index:root}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 1,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 8,
+        "label": "pagelink",
+        "text": "- Neu im Vergleich zu Version 1.0 sind die Profile {{pagelink: MedikationMedicat"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 9,
+        "label": "pagelink",
+        "text": "- Im Profil {{pagelink: MedikationList, text: List, hint: MII_PR_Medikation_Medi"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 11,
+        "label": "pagelink",
+        "text": "- Im Profil {{pagelink: MedikationMedication, text: Medication, hint: MII_PR_Med"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "line": 4,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "line": 15,
+        "label": "render-resource",
+        "text": "{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "line": 12,
+        "label": "render-image",
+        "text": "| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 7,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 13,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 23,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 35,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 46,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 47,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 47,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 49,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 59,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 70,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 71,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 71,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 72,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 72,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 73,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 73,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 74,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 78,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 156,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-list-admission}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 162,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-concor}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 166,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-hct}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 170,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-ibuprofen}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 174,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-zopiclon}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 183,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medikationsliste-aktuelle-therapie}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 12,
+        "label": "link",
+        "text": "## {{link}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 18,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 29,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 30,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 30,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 31,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 32,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 42,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 53,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 54,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 54,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 55,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 55,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 56,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 56,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 57,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 66,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-calcium}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 12,
+        "label": "link",
+        "text": "## {{link}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 21,
+        "label": "pagelink",
+        "text": "Siehe auch {{pagelink:MedikationTerminologien, text:**Terminologien**, hint:Term"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 25,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 36,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 37,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 37,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 38,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 39,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 49,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 60,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 61,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 61,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 62,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 62,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 63,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 63,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 64,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 73,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-calcium}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 11,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 22,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 23,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 23,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 24,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 25,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 35,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 46,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 47,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 47,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 48,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 49,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 49,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 50,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 54,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 147,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-ass-100}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 154,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-rezeptur}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 161,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-glucoseloesung}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 168,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 172,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo-tag}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 176,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo-nacht}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 13,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 24,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 25,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 25,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 26,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 27,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 37,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 49,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 49,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 50,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 50,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 51,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 51,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 52,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 56,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 206,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-administration}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 7,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 13,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 24,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 25,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 25,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 26,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 27,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 37,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 49,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 49,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 50,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 50,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 51,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 51,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 52,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 56,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 150,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-request-caelyx}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 15,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 26,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 27,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 27,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 28,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 29,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 39,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 50,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 51,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 51,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 52,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 52,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 53,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 53,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 54,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 58,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 264,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-caelyx}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 272,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-offset}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 280,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-periodisches-intervall}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 288,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-intravenous-use}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 292,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-thiotepa}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 296,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-procedure-thiotepa}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 9,
+        "label": "render-image",
+        "text": "| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 29,
+        "label": "render-resource",
+        "text": "{{render:mii-cs-medikation-wirkstofftyp}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-de-v2024/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 69,
+        "label": "render-resource",
+        "text": "{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "line": 10,
+        "label": "tree",
+        "text": "{{tree:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/St"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen.page.md",
+        "line": 14,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/AnwendungsflleInformationsmodell/UML.page.md",
+        "line": 6,
+        "label": "render-image",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/UML-2.x.png}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 6,
+        "label": "render-image",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/7_Abbilding_Med"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/BeschreibungModul.page.md",
+        "line": 65,
+        "label": "render-image",
+        "text": "{{render:implementation-guides/ImplementationGuide-Common/images/IG_Medikation_K"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Index.page.md",
+        "line": 18,
+        "label": "index-root",
+        "text": "{{index:root}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 1,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 47,
+        "label": "pagelink",
+        "text": "- Neu im Vergleich zu Version 1.0 sind die Profile {{pagelink: MedikationMedicat"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 48,
+        "label": "pagelink",
+        "text": "- Im Profil {{pagelink: MedikationList, text: List, hint: MII_PR_Medikation_Medi"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/Release-Notes.page.md",
+        "line": 50,
+        "label": "pagelink",
+        "text": "- Im Profil {{pagelink: MedikationMedication, text: Medication, hint: MII_PR_Med"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "line": 4,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/CapabilityStatement.page.md",
+        "line": 15,
+        "label": "render-resource",
+        "text": "{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Index.page.md",
+        "line": 28,
+        "label": "render-image",
+        "text": "| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 7,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 13,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 23,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 35,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 46,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 47,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 47,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 49,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 59,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 70,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 71,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 71,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 72,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 72,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 73,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 73,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 74,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 78,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 156,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-list-admission}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 162,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-concor}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 166,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-hct}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 170,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-ibuprofen}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 174,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-zopiclon}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/List.page.md",
+        "line": 183,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medikationsliste-aktuelle-therapie}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 12,
+        "label": "link",
+        "text": "## {{link}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 18,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 29,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 30,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 30,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 31,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 32,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 42,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 53,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 54,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 54,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 55,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 55,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 56,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 56,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 57,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstoffrelation.page.md",
+        "line": 66,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-calcium}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 12,
+        "label": "link",
+        "text": "## {{link}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 21,
+        "label": "pagelink",
+        "text": "Siehe auch {{pagelink:MedikationTerminologien, text:**Terminologien**, hint:Term"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 25,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 36,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 37,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 37,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 38,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 39,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 49,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 60,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 61,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 61,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 62,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 62,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 63,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 63,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 64,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Extension-Wirkstofftyp.page.md",
+        "line": 73,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-calcium}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 11,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 22,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 23,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 23,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 24,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 25,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 35,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 46,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 47,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 47,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 48,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 48,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 49,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 49,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 50,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 54,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 147,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-ass-100}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 154,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-rezeptur}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 161,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-glucoseloesung}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 168,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 172,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo-tag}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/Medication/Index.page.md",
+        "line": 176,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-dolomo-nacht}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 20,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 31,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 32,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 32,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 33,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 34,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 44,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 55,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 56,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 56,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 57,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 57,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 58,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 58,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 59,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 63,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationAdministration.page.md",
+        "line": 221,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-administration}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 7,
+        "label": "page-title",
+        "text": "## {{page-title}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 22,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 33,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 34,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 34,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 35,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 36,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 46,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 57,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 58,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 58,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 59,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 59,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 60,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 60,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 61,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 65,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationRequest.page.md",
+        "line": 159,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-request-caelyx}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 24,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 35,
+        "label": "tabs",
+        "text": "<tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 36,
+        "label": "tree",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 36,
+        "label": "tabs",
+        "text": "<tab title=\"Darstellung\">{{tree, buttons}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 37,
+        "label": "tabs",
+        "text": "<tab title=\"Beschreibung\">"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 38,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 48,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 59,
+        "label": "tabs",
+        "text": "</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 60,
+        "label": "xml",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 60,
+        "label": "tabs",
+        "text": "<tab title=\"XML\">{{xml}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 61,
+        "label": "json",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 61,
+        "label": "tabs",
+        "text": "<tab title=\"JSON\">{{json}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 62,
+        "label": "link",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 62,
+        "label": "tabs",
+        "text": "<tab title=\"Link\">{{link}}</tab>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 63,
+        "label": "tabs",
+        "text": "</tabs>"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 67,
+        "label": "fql-at",
+        "text": "@```"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 281,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-caelyx}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 289,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-offset}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 297,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-periodisches-intervall}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 305,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-statement-intravenous-use}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 309,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-medication-thiotepa}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/FHIR-Profile/MedicationStatement.page.md",
+        "line": 313,
+        "label": "json",
+        "text": "{{json:mii-exa-medikation-procedure-thiotepa}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 9,
+        "label": "render-image",
+        "text": "| {{render:implementation-guides/ImplementationGuide-Common/images/Warning.jpg}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 29,
+        "label": "render-resource",
+        "text": "{{render:mii-cs-medikation-wirkstofftyp}}"
+      },
+      {
+        "file": "implementation-guides/mii-ig-medikation-v2025/MIIIGModulMedikation/TechnischeImplementierung/Terminologien.page.md",
+        "line": 69,
+        "label": "render-resource",
+        "text": "{{render:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/"
+      }
+    ],
+    "unknown_occurrences": []
+  },
+  "quality": {
+    "qc_rules_defined": 8,
+    "qc_rules": [
+      {
+        "name": "include-recommended",
+        "action": null,
+        "status": null,
+        "category": null
+      },
+      {
+        "name": "conformance-version-filled",
+        "action": null,
+        "status": "Checking if all resources have version filled",
+        "category": null
+      },
+      {
+        "name": "instance-version-filled",
+        "action": null,
+        "status": "Checking if all instances have correct version filled",
+        "category": "example"
+      },
+      {
+        "name": null,
+        "action": "Check for valid ids",
+        "status": null,
+        "category": null
+      },
+      {
+        "name": "naming-convention-id",
+        "action": null,
+        "status": "Checking if all resource ids follow the naming convention",
+        "category": null
+      },
+      {
+        "name": "naming-convention-name",
+        "action": null,
+        "status": "Checking if all resource names follow the naming convention",
+        "category": null
+      },
+      {
+        "name": "naming-convention-title",
+        "action": null,
+        "status": "Checking if all resource titles follow the naming convention",
+        "category": null
+      },
+      {
+        "name": "naming-convention-url",
+        "action": null,
+        "status": "Checking if all resource urls follow the naming convention",
+        "category": null
+      }
+    ],
+    "qc_source": "qc/custom.rules.yaml",
+    "qc_violations": null,
+    "suppressed_messages": null,
+    "qa_errors": null,
+    "qa_warnings": null,
+    "qa_hints": null,
+    "broken_links": null,
+    "qa_categories": null
+  },
+  "maturity": {
+    "components": {
+      "Status": "active",
+      "Doku-Vollständigkeit": 90,
+      "Beispiel-Abdeckung": 0,
+      "Governance": 25
+    },
+    "example_coverage": {
+      "profiles_total": 5,
+      "covered": 0,
+      "uncovered": [
+        "MII_PR_Medikation_Medikationsliste",
+        "MII_PR_Medikation_Medication",
+        "MII_PR_Medikation_MedicationAdministration",
+        "MII_PR_Medikation_MedicationRequest",
+        "MII_PR_Medikation_MedicationStatement"
+      ],
+      "coverage_pct": 0
+    },
+    "governance": {
+      "ci_workflows": 1,
+      "publication_request": false,
+      "ig_ini": false,
+      "devcontainer": false,
+      "governance_score": 25
+    },
+    "doc_health_pct": 90
+  },
+  "portfolio": {
+    "vendor_lockin_score": 100,
+    "vendor_lockin_band": "hoch",
+    "directives_per_page": 8.78,
+    "terminology_standard_systems": [
+      "SNOMED CT",
+      "LOINC",
+      "ICD-10",
+      "UCUM",
+      "ATC",
+      "ASK"
+    ],
+    "terminology_standard_refs": 283,
+    "local_codesystems": 1,
+    "terminology_standard_share_pct": 100,
+    "canonical_reuse_ratio_pct": 100,
+    "external_parents": 5,
+    "local_parents": 0,
+    "fhir_version_label": "R4",
+    "fhir_version_note": "aktuell verbreitet",
+    "dependency_stale_count": 0,
+    "dependency_stale": [],
+    "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
+    "release_cadence_per_year": 72.6,
+    "days_since_last_commit": 196,
+    "tags": 8
+  },
+  "risk": {
+    "terminology_license_flags": [
+      {
+        "system": "SNOMED CT",
+        "license": "lizenzpflichtig (Affiliate/Land)"
+      },
+      {
+        "system": "LOINC",
+        "license": "frei (Registrierung)"
+      },
+      {
+        "system": "ICD-10",
+        "license": "frei"
+      },
+      {
+        "system": "UCUM",
+        "license": "frei"
+      },
+      {
+        "system": "ATC",
+        "license": "eingeschränkt"
+      },
+      {
+        "system": "ASK",
+        "license": "frei"
+      }
+    ],
+    "terminology_license_risk": true,
+    "suppressed_total": 0,
+    "suppressed_broad": 0,
+    "suppressed_warning_risk": "keine",
+    "privacy_page_words": 0,
+    "privacy_page_substantial": false,
+    "examples_contain_pii_like": false,
+    "bus_factor_top_author_pct": 51,
+    "bus_factor_authors": 11,
+    "bus_factor_risk": "gering",
+    "breaking_change_risk": null,
+    "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
+  },
+  "git": {
+    "commits": 471,
+    "authors": 11,
+    "top_author_share": 51,
+    "days_since_last": 196,
+    "commits_per_year": 72.6,
+    "tags": 8,
+    "first": "2019-08-26",
+    "last": "2026-02-17",
+    "history_complete": true
+  }
+}

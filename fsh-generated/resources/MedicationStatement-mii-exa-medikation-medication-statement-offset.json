@@ -10,11 +10,32 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc1"
     ]
   },
   "dosage": [
     {
+      "timing": {
+        "repeat": {
+          "when": [
+            "ACM"
+          ],
+          "frequency": 1,
+          "offset": 30,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 125,
+            "code": "ug",
+            "system": "http://unitsofmeasure.org",
+            "unit": "Mikrogramm"
+          }
+        }
+      ],
       "route": {
         "coding": [
           {
@@ -23,18 +44,6 @@
             "display": "Oral use"
           }
         ]
-      },
-      "text": "L-Thyroxin 125 Mikrogramm täglich eine Tablette oral eine halbe Stunde vor dem Früchstück",
-      "timing": {
-        "repeat": {
-          "frequency": 1,
-          "offset": 30,
-          "period": 1,
-          "periodUnit": "d",
-          "when": [
-            "ACM"
-          ]
-        }
       }
     }
   ],
@@ -44,7 +53,7 @@
       {
         "code": "02532793",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "L-THYROXIN 125 Henning Tabletten"
+        "display": "L-Thyroxin Henning 125 50 Tbl. N2"
       }
     ]
   },

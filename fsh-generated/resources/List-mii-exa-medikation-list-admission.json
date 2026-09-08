@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2027.0.0-ballot.rc1"
     ]
   },
   "code": {
@@ -24,15 +24,6 @@
         "code": "E210"
       }
     ]
-  },
-  "status": "current",
-  "mode": "snapshot",
-  "title": "Aufnahmemedikation",
-  "subject": {
-    "reference": "Patient/example"
-  },
-  "encounter": {
-    "reference": "Encounter/ExampleEinrichtungskontakt"
   },
   "entry": [
     {
@@ -55,5 +46,14 @@
         "reference": "MedicationStatement/mii-exa-medikation-medication-statement-zopiclon"
       }
     }
-  ]
+  ],
+  "status": "current",
+  "mode": "snapshot",
+  "title": "Aufnahmemedikation",
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "encounter": {
+    "reference": "Encounter/ExampleEinrichtungskontakt"
+  }
 }

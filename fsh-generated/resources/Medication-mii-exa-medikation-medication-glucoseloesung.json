@@ -10,7 +10,7 @@
       }
     ],
     "profile": [
-      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2026.0.1"
+      "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc1"
     ]
   },
   "code": {
@@ -18,7 +18,7 @@
       {
         "code": "03705422",
         "system": "http://fhir.de/CodeSystem/ifa/pzn",
-        "display": "Glucose 5% B.braun Ecoflac Plus"
+        "display": "Glucose 5% B.Braun Ecoflac Plus 10x250ml N2"
       },
       {
         "code": "V06DC01",
@@ -34,18 +34,8 @@
       }
     ]
   },
-  "form": {
-    "coding": [
-      {
-        "code": "11210000",
-        "system": "http://standardterms.edqm.eu",
-        "display": "Solution for infusion"
-      }
-    ]
-  },
   "ingredient": [
     {
-      "isActive": true,
       "itemCodeableConcept": {
         "coding": [
           {
@@ -77,10 +67,10 @@
           "system": "http://unitsofmeasure.org",
           "unit": "g"
         }
-      }
+      },
+      "isActive": true
     },
     {
-      "isActive": false,
       "itemCodeableConcept": {
         "coding": [
           {
@@ -98,8 +88,18 @@
             "display": "Water (substance)"
           }
         ]
-      }
+      },
+      "isActive": false
     }
   ],
+  "form": {
+    "coding": [
+      {
+        "code": "11210000",
+        "system": "http://standardterms.edqm.eu",
+        "display": "Solution for infusion"
+      }
+    ]
+  },
   "status": "active"
 }

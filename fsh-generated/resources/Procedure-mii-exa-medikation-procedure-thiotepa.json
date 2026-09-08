@@ -10,15 +10,6 @@
       }
     ]
   },
-  "category": {
-    "coding": [
-      {
-        "code": "182832007",
-        "system": "http://snomed.info/sct",
-        "display": "Procedure related to management of drug administration (procedure)"
-      }
-    ]
-  },
   "code": {
     "coding": [
       {
@@ -26,6 +17,15 @@
         "system": "http://fhir.de/CodeSystem/bfarm/ops",
         "display": "Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg",
         "version": "2020"
+      }
+    ]
+  },
+  "category": {
+    "coding": [
+      {
+        "code": "182832007",
+        "system": "http://snomed.info/sct",
+        "display": "Procedure related to management of drug administration (procedure)"
       }
     ]
   },

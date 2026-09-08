@@ -1,0 +1,96 @@
+# -----------------------------------------------------------------------------
+# TEMPLATE-REPO MAINTENANCE — removed from created modules by the first-run
+# bootstrap (docs/recipes/first-run-setup.md). Modules release via the MII
+# CalVer Module Release Workflow, never Release Please. A created module gets
+# its own CalVer release announcement (topic "Releases") as part of the
+# Module Release Workflow — not this file.
+# -----------------------------------------------------------------------------
+# Announce release — Zulip announcements for THIS TEMPLATE REPO
+#
+# Purpose:   When a GitHub Release of this template repo is published (cut by
+#            Release Please), announce it to the MII Zulip automatically;
+#            optionally — human-enabled only — to the public FHIR Zulip.
+# Trigger:   release: published.
+# Toggles:
+#   - vars.ENABLE_ZULIP_ANNOUNCE — gates the `mii` job; ON by default
+#     (set the repo variable to 'false' to disable).
+#   - vars.ANNOUNCE_PUBLIC_ZULIP — gates the `public` job; OFF by default
+#     (runs only when explicitly set to 'true'). Automation must NEVER set
+#     this — chat.fhir.org is a community server the MII does not own, so the
+#     human's flag + secret is the required authorization.
+# Human-gated steps / credentials:
+#   - Secrets cannot be read in `if:` directly, so each API key is mapped to
+#     env; when a key is absent the job SKIPS with a ::notice — it never
+#     fails the release.
+#   - secrets.ZULIP_API_KEY (MII bot kds-github-bot@mii.zulipchat.com) must
+#     be added by a human before the `mii` job actually posts.
+#   - The `public` job additionally needs a human-created chat.fhir.org bot
+#     account (secrets.FHIR_ZULIP_API_KEY + the email below) and announces
+#     non-prerelease releases only.
+#
+# Topic note: the MII announcement posts to topic "Template Releases" —
+# deliberately SEPARATE from the modules' topic "Releases". This repo's
+# releases are SemVer template-tooling releases; MII KDS modules announce
+# their CalVer releases under "Releases". Mixing both in one topic would
+# re-blur the SemVer/CalVer split.
+# -----------------------------------------------------------------------------
+name: Announce release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  mii:
+    # MII org: automatic (included). Skips cleanly if the key isn't set yet.
+    if: ${{ vars.ENABLE_ZULIP_ANNOUNCE != 'false' }}
+    runs-on: ubuntu-latest
+    env:
+      ZULIP_API_KEY: ${{ secrets.ZULIP_API_KEY }}
+    steps:
+      - name: Notify MII Zulip (skipped if no key)
+        if: ${{ env.ZULIP_API_KEY != '' }}
+        uses: zulip/github-actions-zulip/send-message@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b # v2.0.2
+        with:
+          api-key: ${{ env.ZULIP_API_KEY }}
+          email: ${{ vars.MII_ZULIP_BOT_EMAIL || 'kds-github-bot@mii.zulipchat.com' }}
+          organization-url: "https://mii.zulipchat.com/"
+          type: "stream"
+          to: "MII-Kerndatensatz"
+          # "Template Releases" ≠ the modules' "Releases" topic: template SemVer
+          # announcements stay separate from module CalVer announcements.
+          topic: "Template Releases"
+          content: |
+            **New template release:** `${{ github.repository }}` `${{ github.event.release.tag_name }}`
+            ${{ github.event.release.html_url }}
+      - name: Skip notice when ZULIP_API_KEY is absent
+        if: ${{ env.ZULIP_API_KEY == '' }}
+        run: echo "::notice::ZULIP_API_KEY not set — skipping MII announcement."
+
+  public:
+    # Public FHIR Zulip: OFF unless a human set the flag AND the key. Non-prerelease only.
+    if: ${{ vars.ANNOUNCE_PUBLIC_ZULIP == 'true' && github.event.release.prerelease == false }}
+    runs-on: ubuntu-latest
+    env:
+      FHIR_ZULIP_API_KEY: ${{ secrets.FHIR_ZULIP_API_KEY }}
+    steps:
+      - name: Notify public FHIR Zulip german/mi-initiative (human-enabled)
+        if: ${{ env.FHIR_ZULIP_API_KEY != '' && vars.FHIR_ZULIP_BOT_EMAIL != '' }}
+        uses: zulip/github-actions-zulip/send-message@f675f2b4eb2a95fae974215476dcb7ad8dfeff6b # v2.0.2
+        with:
+          api-key: ${{ env.FHIR_ZULIP_API_KEY }}
+          # Bot account on chat.fhir.org. Set the FHIR_ZULIP_BOT_EMAIL repository
+          # variable — no workflow edit is needed to enable this gate.
+          email: ${{ vars.FHIR_ZULIP_BOT_EMAIL }}
+          organization-url: "https://chat.fhir.org/"
+          type: "stream"
+          to: "german/mi-initiative"
+          topic: "MII KDS template"
+          content: |
+            New MII KDS template release: `${{ github.event.release.tag_name }}` — ${{ github.event.release.html_url }}
+      - name: Skip notice when the public-channel credentials are incomplete
+        if: ${{ env.FHIR_ZULIP_API_KEY == '' || vars.FHIR_ZULIP_BOT_EMAIL == '' }}
+        run: echo "::notice::Public announcement skipped — set BOTH the FHIR_ZULIP_API_KEY secret and the FHIR_ZULIP_BOT_EMAIL variable."
