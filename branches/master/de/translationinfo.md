@@ -1,4 +1,4 @@
-# Hinweise zur Übersetzung - MII IG Medikation v2027.0.0-ballot.rc1
+# Hinweise zur Übersetzung - MII IG Medikation v2027.0.0-ballot.rc2
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Hinweise zur Übersetzung**

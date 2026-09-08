@@ -1,4 +1,4 @@
-# MII CS Medikation Wirkstofftyp - MII IG Medikation v2027.0.0-ballot.rc1
+# MII CS Medikation Wirkstofftyp - MII IG Medikation v2027.0.0-ballot.rc2
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp | *Version*:2027.0.0-ballot.rc1 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp | *Version*:2027.0.0-ballot.rc2 |
 | Active as of 2024-11-14 | *Computable Name*:MII_CS_Medikation_Wirkstofftyp |
 
  
@@ -44,7 +44,7 @@ This Code system is referenced in the definition of the following value sets:
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
-  "version" : "2027.0.0-ballot.rc1",
+  "version" : "2027.0.0-ballot.rc2",
   "name" : "MII_CS_Medikation_Wirkstofftyp",
   "_name" : {
     "extension" : [{

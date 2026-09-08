@@ -1,6 +1,6 @@
 {
-  "version" : "2027.0.0-ballot.rc1",
-  "date" : "20260908094900",
+  "version" : "2027.0.0-ballot.rc2",
+  "date" : "20260908101739",
   "notForPublication" : true,
   "name" : "de.medizininformatikinitiative.kerndatensatz.medikation.r4b"
 }
