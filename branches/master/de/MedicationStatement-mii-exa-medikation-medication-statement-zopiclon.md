@@ -1,0 +1,172 @@
+# mii-exa-medikation-medication-statement-zopiclon - MII IG Medikation v2027.0.0-ballot.rc1
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **mii-exa-medikation-medication-statement-zopiclon**
+
+## Beispiel MedicationStatement: mii-exa-medikation-medication-statement-zopiclon
+
+-------
+
+**German**
+
+-------
+
+Profile: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md) version: 2027.0.0-ballot.rc1
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
+
+**status**: Intended
+
+**medication**: Zopiclon 3,75mg
+
+**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
+
+**effective**: 2022-02-02 12:22:00+0000 --> (ongoing)
+
+> **dosage****timing**: Morning, Once per 1 day
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 0 Tablette (Details: UCUM code1 = '1') |
+
+
+> **dosage****timing**: Noon, Once per 1 day
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 0 Tablette (Details: UCUM code1 = '1') |
+
+
+> **dosage****timing**: Evening, Once per 1 day
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 0 Tablette (Details: UCUM code1 = '1') |
+
+
+> **dosage****timing**: Night, Once per 1 day
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 1 Tablette (Details: UCUM code1 = '1') |
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "MedicationStatement",
+  "id" : "mii-exa-medikation-medication-statement-zopiclon",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc1"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "status" : "intended",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "2022",
+      "code" : "N05CF01"
+    }],
+    "text" : "Zopiclon 3,75mg"
+  },
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "effectivePeriod" : {
+    "start" : "2022-02-02T12:22:00+00:00"
+  },
+  "dosage" : [{
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "when" : ["MORN"]
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 0,
+        "unit" : "Tablette",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }]
+  },
+  {
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "when" : ["NOON"]
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 0,
+        "unit" : "Tablette",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }]
+  },
+  {
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "when" : ["EVE"]
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 0,
+        "unit" : "Tablette",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }]
+  },
+  {
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "when" : ["NIGHT"]
+      }
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 1,
+        "unit" : "Tablette",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }]
+  }]
+}
+
+```
