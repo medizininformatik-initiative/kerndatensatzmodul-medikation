@@ -1,4 +1,4 @@
-# Translation Information - MII IG Medikation v2027.0.0-ballot.rc2
+# Translation Information - MII IG Medikation v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * **Translation Information**

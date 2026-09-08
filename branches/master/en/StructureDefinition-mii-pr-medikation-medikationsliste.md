@@ -1,4 +1,4 @@
-# MII PR Medikation Medikationsliste - MII IG Medikation v2027.0.0-ballot.rc2
+# MII PR Medikation Medikationsliste - MII IG Medikation v2027.0.0-ballot.rc3
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste | *Version*:2027.0.0-ballot.rc2 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste | *Version*:2027.0.0-ballot.rc3 |
 | Active as of 2024-11-13 | *Computable Name*:MII_PR_Medikation_Medikationsliste |
 
  
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-medikation
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste",
-  "version" : "2027.0.0-ballot.rc2",
+  "version" : "2027.0.0-ballot.rc3",
   "name" : "MII_PR_Medikation_Medikationsliste",
   "_name" : {
     "extension" : [{

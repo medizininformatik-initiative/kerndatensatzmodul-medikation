@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Changelog - MII IG Medikation v2027.0.0-ballot.rc2</title>
+    <title>Changelog - MII IG Medikation v2027.0.0-ballot.rc3</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc2 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
 
 
 
@@ -307,7 +307,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc2) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Changelog</h2>
   
 
@@ -332,13 +332,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h3 id="release-notes">Release notes</h3>
 
-<p><strong>Version 2027.0.0-ballot.rc2</strong> — 2026-09-08</p>
+<p><strong>Version 2027.0.0-ballot.rc3</strong> — 2026-09-08</p>
 
-<p><em><code class="language-plaintext highlighter-rouge">2027.0.0-ballot.rc1</code> carries a git tag but was never released. A guard in the
-release workflow read the commented-out `` placeholders in
-<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> as evidence that the repository was still the empty module
-template, and skipped the build and release steps — reporting success while
-doing nothing. The guard now ignores comments; rc2 is the first release of this
+<p><em><code class="language-plaintext highlighter-rouge">2027.0.0-ballot.rc1</code> and <code class="language-plaintext highlighter-rouge">rc2</code> carry git tags but were never released, both for
+reasons in the release tooling rather than in the guide. rc1 was skipped by a guard
+that read the commented-out `` placeholders in <code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> as an
+un-instantiated template. rc2 built completely but could not be zipped for
+publication: <code class="language-plaintext highlighter-rouge">.agents/skills</code> is a versioned symlink to a <code class="language-plaintext highlighter-rouge">skills/</code> directory that
+did not exist in this repository. Both are fixed; rc3 is the first release of this
 sequence and is otherwise identical in content to rc1.</em></p>
 
 <ul>
@@ -396,8 +397,8 @@ sequence and is otherwise identical in content to rc1.</em></p>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Tue, Sep 8, 2026 10:17+0000">2026-09-08</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc3 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated <span title="Tue, Sep 8, 2026 17:27+0000">2026-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

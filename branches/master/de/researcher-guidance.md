@@ -1,4 +1,4 @@
-# Anleitung für Forschende - MII IG Medikation v2027.0.0-ballot.rc2
+# Anleitung für Forschende - MII IG Medikation v2027.0.0-ballot.rc3
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Anleitung**](guidance.md)
