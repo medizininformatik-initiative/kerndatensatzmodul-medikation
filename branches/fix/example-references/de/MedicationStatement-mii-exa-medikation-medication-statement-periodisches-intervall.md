@@ -1,0 +1,93 @@
+# mii-exa-medikation-medication-statement-periodisches-intervall - MII IG Medikation v2027.0.0-ballot.rc3
+
+* [**Inhaltsverzeichnis**](toc.md)
+* [**Artefaktübersicht**](artifacts.md)
+* **mii-exa-medikation-medication-statement-periodisches-intervall**
+
+## Beispiel MedicationStatement: mii-exa-medikation-medication-statement-periodisches-intervall
+
+-------
+
+**German**
+
+-------
+
+Profile: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.md) version: 2027.0.0-ballot.rc3
+
+Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
+
+**status**: Active
+
+**medication**: Marcumar 3mg 98 Tbl. N3
+
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)](Patient-mii-exa-medikation-patient.md)
+
+**effective**: 2020-05-27 17:57:00+0100
+
+> **dosage****timing**: at dinner, Once per 1 day**route**: Oral use
+
+### DoseAndRates
+
+| | |
+| :--- | :--- |
+| - | **Dose[x]** |
+| * | 3 Milligramm (Details: UCUM codemg = 'mg') |
+
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "MedicationStatement",
+  "id" : "mii-exa-medikation-medication-statement-periodisches-intervall",
+  "meta" : {
+    "profile" : ["https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc3"],
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "code" : "HTEST",
+      "display" : "test health data"
+    }]
+  },
+  "status" : "active",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://fhir.de/CodeSystem/ifa/pzn",
+      "code" : "05541338",
+      "display" : "Marcumar 3mg 98 Tbl. N3"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/mii-exa-medikation-patient"
+  },
+  "effectiveDateTime" : "2020-05-27T17:57:00+01:00",
+  "dosage" : [{
+    "timing" : {
+      "repeat" : {
+        "frequency" : 1,
+        "period" : 1,
+        "periodUnit" : "d",
+        "dayOfWeek" : ["mon", "wed", "fri"],
+        "when" : ["CV"]
+      }
+    },
+    "route" : {
+      "coding" : [{
+        "system" : "http://standardterms.edqm.eu",
+        "code" : "20053000",
+        "display" : "Oral use"
+      }]
+    },
+    "doseAndRate" : [{
+      "doseQuantity" : {
+        "value" : 3,
+        "unit" : "Milligramm",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      }
+    }]
+  }]
+}
+
+```
