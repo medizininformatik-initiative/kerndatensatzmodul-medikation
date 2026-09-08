@@ -115,7 +115,18 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          if grep -q '{{' sushi-config.yaml; then
+          # Kommentare AUSNEHMEN. Der Erklaerungsheader des Templates und die
+          # auskommentierten Beispielbloecke in sushi-config.yaml enthalten selbst
+          # {{...}}-Platzhalter (citation, special-url). Ein blosses
+          # `grep -q '{{' sushi-config.yaml` findet die und haelt damit JEDES fertig
+          # instanziierte Modul, das die erklaerenden Kommentare behaelt,
+          # faelschlich fuer das leere Template: is_module=false -> build, release
+          # und notify_zulip werden still uebersprungen, der Tag erzeugt keinen
+          # Release. Genau das ist bei Medikation v2027.0.0-ballot.rc1 passiert
+          # (Run 34212321149). `sed 's/#.*$//'` schneidet Kommentare weg, bevor
+          # gesucht wird; ein echter Platzhalter in einem WERT wird weiterhin
+          # erkannt.
+          if sed 's/#.*$//' sushi-config.yaml | grep -q '{{'; then
             echo "is_module=false" >> "${GITHUB_OUTPUT}"
             echo "::notice::Unreplaced {{...}} placeholders found in sushi-config.yaml. This looks like the un-instantiated module template (or a module whose set-up is unfinished), so the MII CalVer release path is skipped. A real module — placeholders replaced by hand, per the first-run bootstrap's checklist — runs it for real."
           else
