@@ -24,7 +24,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2020-01-14 11:37:00+0100
 
-> **dosage****text**: Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion**timing**: Once per 4 weeks**route**: Intravenous use
+> **dosage****timing**: Once per 4 weeks**route**: Intravenous use
 
 ### DoseAndRates
 
@@ -59,7 +59,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
   },
   "effectiveDateTime" : "2020-01-14T11:37:00+01:00",
   "dosage" : [{
-    "text" : "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
     "timing" : {
       "repeat" : {
         "frequency" : 1,

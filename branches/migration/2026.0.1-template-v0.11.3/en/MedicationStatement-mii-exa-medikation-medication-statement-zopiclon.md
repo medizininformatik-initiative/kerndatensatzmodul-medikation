@@ -24,7 +24,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2022-02-02 12:22:00+0000 --> (ongoing)
 
-> **dosage****text**: Zopiclon 3,75mg Tabl. 0-0-0-1**timing**: Once per 1 day
+> **dosage****timing**: Morning, Once per 1 day
 
 ### DoseAndRates
 
@@ -34,7 +34,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | * | 0 Tablette (Details: UCUM code1 = '1') |
 
 
-> **dosage****text**: Zopiclon 3,75mg Tabl. 0-0-0-1**timing**: Once per 1 day
+> **dosage****timing**: Noon, Once per 1 day
 
 ### DoseAndRates
 
@@ -44,7 +44,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | * | 0 Tablette (Details: UCUM code1 = '1') |
 
 
-> **dosage****text**: Zopiclon 3,75mg Tabl. 0-0-0-1**timing**: Once per 1 day
+> **dosage****timing**: Evening, Once per 1 day
 
 ### DoseAndRates
 
@@ -54,7 +54,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | * | 0 Tablette (Details: UCUM code1 = '1') |
 
 
-> **dosage****text**: Zopiclon 3,75mg Tabl. 0-0-0-1**timing**: Once per 1 day
+> **dosage****timing**: Night, Once per 1 day
 
 ### DoseAndRates
 
@@ -96,13 +96,13 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "start" : "2022-02-02T12:22:00+00:00"
   },
   "dosage" : [{
-    "text" : "Zopiclon 3,75mg Tabl. 0-0-0-1",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["08:00:00"]
+        "timeOfDay" : ["08:00:00"],
+        "when" : ["MORN"]
       }
     },
     "doseAndRate" : [{
@@ -115,13 +115,13 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   {
-    "text" : "Zopiclon 3,75mg Tabl. 0-0-0-1",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["12:00:00"]
+        "timeOfDay" : ["12:00:00"],
+        "when" : ["NOON"]
       }
     },
     "doseAndRate" : [{
@@ -134,13 +134,13 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   {
-    "text" : "Zopiclon 3,75mg Tabl. 0-0-0-1",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["18:00:00"]
+        "timeOfDay" : ["18:00:00"],
+        "when" : ["EVE"]
       }
     },
     "doseAndRate" : [{
@@ -153,13 +153,13 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   {
-    "text" : "Zopiclon 3,75mg Tabl. 0-0-0-1",
     "timing" : {
       "repeat" : {
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["22:00:00"]
+        "timeOfDay" : ["22:00:00"],
+        "when" : ["NIGHT"]
       }
     },
     "doseAndRate" : [{

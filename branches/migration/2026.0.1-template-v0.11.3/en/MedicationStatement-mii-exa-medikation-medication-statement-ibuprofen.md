@@ -24,7 +24,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **effective**: 2022-02-02 12:22:00+0000 --> (ongoing)
 
-> **dosage****text**: Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)**timing**: 3 per 1 day**asNeeded**: true
+> **dosage****timing**: 3 per 1 day**asNeeded**: true
 
 ### DoseAndRates
 
@@ -66,7 +66,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "start" : "2022-02-02T12:22:00+00:00"
   },
   "dosage" : [{
-    "text" : "Ibuprofen 400mg Tabl. 3x1 bei Bedarf (Kopfschmerzen)",
     "timing" : {
       "repeat" : {
         "boundsPeriod" : {
