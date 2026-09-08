@@ -3,7 +3,14 @@
 
 ### Release notes
 
-**Version 2027.0.0-ballot.rc1** — 2026-09-02
+**Version 2027.0.0-ballot.rc2** — 2026-09-08
+
+*`2027.0.0-ballot.rc1` carries a git tag but was never released. A guard in the
+release workflow read the commented-out `{{...}}` placeholders in
+`sushi-config.yaml` as evidence that the repository was still the empty module
+template, and skipped the build and release steps — reporting success while
+doing nothing. The guard now ignores comments; rc2 is the first release of this
+sequence and is otherwise identical in content to rc1.*
 
 * `Changed`: the implementation guide was migrated from Simplifier onto the MII KDS module template (IG Publisher). Content and artifact URLs are unchanged; the page structure now follows the module-wide page set, and the guide is bilingual.
 * `Changed`: the ATC value set now also includes version 2026 (previously 2018 to 2025).
