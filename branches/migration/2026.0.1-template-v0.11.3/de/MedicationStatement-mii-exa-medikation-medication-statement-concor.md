@@ -101,7 +101,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["08:00:00"],
         "when" : ["MORN"]
       }
     },
@@ -120,7 +119,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["12:00:00"],
         "when" : ["NOON"]
       }
     },
@@ -139,7 +137,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["18:00:00"],
         "when" : ["EVE"]
       }
     },
@@ -158,7 +155,6 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["22:00:00"],
         "when" : ["NIGHT"]
       }
     },

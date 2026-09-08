@@ -34,7 +34,6 @@
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["08:00:00"],
         "when" : ["MORN"]
       }
     },
@@ -53,7 +52,6 @@
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["12:00:00"],
         "when" : ["NOON"]
       }
     },
@@ -72,7 +70,6 @@
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["18:00:00"],
         "when" : ["EVE"]
       }
     },
@@ -91,7 +88,6 @@
         "frequency" : 1,
         "period" : 1,
         "periodUnit" : "d",
-        "timeOfDay" : ["22:00:00"],
         "when" : ["NIGHT"]
       }
     },

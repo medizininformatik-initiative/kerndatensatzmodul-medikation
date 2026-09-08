@@ -35,7 +35,6 @@
         <frequency value="1"/>
         <period value="1"/>
         <periodUnit value="d"/>
-        <timeOfDay value="08:00:00"/>
         <when value="MORN"/>
       </repeat>
     </timing>
@@ -54,7 +53,6 @@
         <frequency value="1"/>
         <period value="1"/>
         <periodUnit value="d"/>
-        <timeOfDay value="12:00:00"/>
         <when value="NOON"/>
       </repeat>
     </timing>
@@ -73,7 +71,6 @@
         <frequency value="1"/>
         <period value="1"/>
         <periodUnit value="d"/>
-        <timeOfDay value="18:00:00"/>
         <when value="EVE"/>
       </repeat>
     </timing>
@@ -92,7 +89,6 @@
         <frequency value="1"/>
         <period value="1"/>
         <periodUnit value="d"/>
-        <timeOfDay value="22:00:00"/>
         <when value="NIGHT"/>
       </repeat>
     </timing>

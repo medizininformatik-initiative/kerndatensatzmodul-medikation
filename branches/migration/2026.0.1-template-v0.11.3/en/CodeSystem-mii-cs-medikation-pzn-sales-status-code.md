@@ -40,7 +40,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS Medikation PZN Sales Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-08T07:14:23+00:00",
+  "date" : "2026-09-08T08:44:45+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
