@@ -30,9 +30,6 @@
     {
       "timing": {
         "repeat": {
-          "timeOfDay": [
-            "08:00:00"
-          ],
           "when": [
             "MORN"
           ],
@@ -55,9 +52,6 @@
     {
       "timing": {
         "repeat": {
-          "timeOfDay": [
-            "12:00:00"
-          ],
           "when": [
             "NOON"
           ],
@@ -80,9 +74,6 @@
     {
       "timing": {
         "repeat": {
-          "timeOfDay": [
-            "18:00:00"
-          ],
           "when": [
             "EVE"
           ],
@@ -105,9 +96,6 @@
     {
       "timing": {
         "repeat": {
-          "timeOfDay": [
-            "22:00:00"
-          ],
           "when": [
             "NIGHT"
           ],

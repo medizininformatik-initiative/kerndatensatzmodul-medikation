@@ -397,25 +397,21 @@ Usage: #example
 * dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "08:00:00"
 * dosage[=].timing.repeat.when = #MORN
 * dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "12:00:00"
 * dosage[=].timing.repeat.when = #NOON
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "18:00:00"
 * dosage[=].timing.repeat.when = #EVE
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "22:00:00"
 * dosage[=].timing.repeat.when = #NIGHT
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 
@@ -467,25 +463,21 @@ Usage: #example
 * dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "08:00:00"
 * dosage[=].timing.repeat.when = #MORN
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "12:00:00"
 * dosage[=].timing.repeat.when = #NOON
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "18:00:00"
 * dosage[=].timing.repeat.when = #EVE
 * dosage[=].doseAndRate.doseQuantity = 0 '1' "Tablette"
 * dosage[+].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
 * dosage[=].timing.repeat.periodUnit = #d
-* dosage[=].timing.repeat.timeOfDay = "22:00:00"
 * dosage[=].timing.repeat.when = #NIGHT
 * dosage[=].doseAndRate.doseQuantity = 1 '1' "Tablette"
 
