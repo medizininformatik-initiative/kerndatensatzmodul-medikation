@@ -311,6 +311,22 @@
       },
       {
         "reference": {
+          "reference": "Encounter/mii-exa-medikation-einrichtungskontakt"
+        },
+        "name": "MII EXA Medikation Einrichtungskontakt",
+        "description": "Einrichtungskontakt, in dem die Aufnahmemedikation erhoben wurde.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/mii-exa-medikation-patient"
+        },
+        "name": "MII EXA Medikation Patient",
+        "description": "Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/mii-lm-medikation"
         },
         "name": "MII LM Medikation",

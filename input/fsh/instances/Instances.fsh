@@ -234,7 +234,7 @@ Usage: #example
 * effectivePeriod.start = "2020-01-06T10:20:00.000+00:00"
 * medicationReference = Reference(mii-exa-medikation-medication-rezeptur)
 * status = #completed
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-medication-statement
 InstanceOf: mii-pr-medikation-medication-statement
@@ -249,7 +249,7 @@ Usage: #example
 * effectiveDateTime = "2020-01-14T11:37:00+01:00"
 * medicationReference = Reference(mii-exa-medikation-medication-rezeptur)
 * status = #active
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-medication-statement-periodisches-intervall
 InstanceOf: mii-pr-medikation-medication-statement
@@ -270,7 +270,7 @@ Usage: #example
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
 * medicationCodeableConcept = $cs-pzn#05541338 "Marcumar 3mg 98 Tbl. N3"
 * status = #active
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-medication-statement-offset
 InstanceOf: mii-pr-medikation-medication-statement
@@ -289,7 +289,7 @@ Usage: #example
 * effectiveDateTime = "2020-05-27T17:57:00+01:00"
 * medicationCodeableConcept = $cs-pzn#02532793 "L-Thyroxin Henning 125 50 Tbl. N2"
 * status = #active
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-medication-statement-caelyx
 InstanceOf: mii-pr-medikation-medication-statement
@@ -298,7 +298,7 @@ Usage: #example
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement)
 * status = #active
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * effectiveDateTime = "2020-01-02T09:30:00+01:00"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.period = 4
@@ -321,9 +321,9 @@ Usage: #example
 * dosage.route = $standardterms#20045000 "Intravenous use"
 * effectiveDateTime = "2018-05-26"
 * medicationReference = Reference(mii-exa-medikation-medication-thiotepa)
-* partOf = Reference(Procedure/ExampleProcedure)
+* partOf = Reference(Procedure/mii-exa-medikation-procedure-thiotepa)
 * status = #completed
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-procedure-thiotepa
 InstanceOf: Procedure
@@ -335,7 +335,7 @@ Usage: #example
 * code.coding.version = "2020"
 * performedDateTime = "2018-05-26"
 * status = #completed
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 
 Instance: mii-exa-medikation-medication-request-caelyx
 InstanceOf: mii-pr-medikation-medication-request
@@ -347,7 +347,7 @@ Usage: #example
 * status = #active
 * intent = #order
 * medicationReference = Reference(mii-exa-medikation-medication-caelyx)
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * authoredOn = "2021-12-21T11:41:00+01:00"
 * dosageInstruction.timing.repeat.frequency = 1
 * dosageInstruction.timing.repeat.period = 4
@@ -368,8 +368,8 @@ Usage: #example
 * title = "Aufnahmemedikation"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $ihe-xds-fallkontext#E210
-* subject = Reference(Patient/example)
-* entry[+].item = Reference(MedicationStatement/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
+* entry[+].item = Reference(MedicationStatement/mii-exa-medikation-medication-statement)
 
 Instance: mii-exa-medikation-medikationsliste-aktuelle-therapie
 InstanceOf: mii-pr-medikation-medikationsliste
@@ -381,8 +381,8 @@ Usage: #example
 * title = "Aktuelle medikamentöse Therapie"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $ihe-xds-fallkontext#E200
-* subject = Reference(Patient/example)
-* entry[+].item = Reference(MedicationStatement/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
+* entry[+].item = Reference(MedicationStatement/mii-exa-medikation-medication-statement)
 
 Instance: mii-exa-medikation-medication-statement-concor
 InstanceOf: mii-pr-medikation-medication-statement
@@ -392,7 +392,7 @@ Usage: #example
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#C07AB07
 * medicationCodeableConcept.text = "Concor 2,5mg"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
@@ -425,7 +425,7 @@ Usage: #example
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#C03AA03
 * medicationCodeableConcept.text = "HCT 12,5mg"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage.timing.repeat.frequency = 1
 * dosage.timing.repeat.period = 1
@@ -441,7 +441,7 @@ Usage: #example
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#M01AE01
 * medicationCodeableConcept.text = "Ibuprofen 400mg"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage.timing.repeat.boundsPeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage.timing.repeat.frequency = 3
@@ -458,7 +458,7 @@ Usage: #example
 * status = #intended
 * medicationCodeableConcept = $cs-atc|2022#N05CF01
 * medicationCodeableConcept.text = "Zopiclon 3,75mg"
-* subject = Reference(Patient/example)
+* subject = Reference(Patient/mii-exa-medikation-patient)
 * effectivePeriod.start = "2022-02-02T12:22:00+00:00"
 * dosage[0].timing.repeat.frequency = 1
 * dosage[=].timing.repeat.period = 1
@@ -491,9 +491,46 @@ Usage: #example
 * title = "Aufnahmemedikation"
 * code.coding[medCode] = $list-example-use-codes#medications
 * code.coding[contextCode] = $ihe-xds-fallkontext#E210
-* subject = Reference(Patient/example)
-* encounter = Reference(Encounter/ExampleEinrichtungskontakt)
+* subject = Reference(Patient/mii-exa-medikation-patient)
+* encounter = Reference(Encounter/mii-exa-medikation-einrichtungskontakt)
 * entry[0].item = Reference(mii-exa-medikation-medication-statement-hct)
 * entry[+].item = Reference(mii-exa-medikation-medication-statement-concor)
 * entry[+].item = Reference(mii-exa-medikation-medication-statement-ibuprofen)
 * entry[+].item = Reference(mii-exa-medikation-medication-statement-zopiclon)
+
+// ---------------------------------------------------------------------------
+// Kontext-Instanzen. Dieses Modul profiliert weder Patient noch Encounter --
+// das tun die Module Person und Fall. Die Beispiele hier existieren nur, damit
+// subject- und encounter-Referenzen der Medikationsbeispiele aufloesen; ohne
+// sie meldet der IG Publisher Reference_REF_CantResolve.
+//
+// Bewusst OHNE `insert MetaProfile`: das RuleSet stempelt die Version DIESES
+// Moduls auf die angegebene Canonical. Fuer eigene Profile ist das richtig,
+// fuer fremde waere es eine Falschaussage -- dieselbe Ueberlegung wie beim
+// auskommentierten meta.profile des Procedure-Beispiels.
+// ---------------------------------------------------------------------------
+
+Instance: mii-exa-medikation-patient
+InstanceOf: Patient
+Usage: #example
+Title: "MII EXA Medikation Patient"
+Description: "Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen."
+* insert TestDataLabel
+* identifier[+].system = "http://example.org/fhir/sid/patienten"
+* identifier[=].value = "12345"
+* name[+].family = "Mustermann"
+* name[=].given = "Max"
+* gender = #male
+* birthDate = "1965-03-14"
+
+Instance: mii-exa-medikation-einrichtungskontakt
+InstanceOf: Encounter
+Usage: #example
+Title: "MII EXA Medikation Einrichtungskontakt"
+Description: "Einrichtungskontakt, in dem die Aufnahmemedikation erhoben wurde."
+* insert TestDataLabel
+* status = #finished
+* class = $v3-ActCode#IMP "inpatient encounter"
+* subject = Reference(Patient/mii-exa-medikation-patient)
+* period.start = "2018-05-24"
+* period.end = "2018-06-08"

@@ -32,6 +32,6 @@
   "performedDateTime": "2018-05-26",
   "status": "completed",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   }
 }

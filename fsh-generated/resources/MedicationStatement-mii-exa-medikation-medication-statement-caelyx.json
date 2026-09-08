@@ -48,7 +48,7 @@
     "reference": "Medication/mii-exa-medikation-medication-caelyx"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   },
   "effectiveDateTime": "2020-01-02T09:30:00+01:00"
 }

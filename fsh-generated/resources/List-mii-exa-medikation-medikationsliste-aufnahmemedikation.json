@@ -28,7 +28,7 @@
   "entry": [
     {
       "item": {
-        "reference": "MedicationStatement/example"
+        "reference": "MedicationStatement/mii-exa-medikation-medication-statement"
       }
     }
   ],
@@ -36,6 +36,6 @@
   "mode": "snapshot",
   "title": "Aufnahmemedikation",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   }
 }

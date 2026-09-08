@@ -51,9 +51,9 @@
   "mode": "snapshot",
   "title": "Aufnahmemedikation",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   },
   "encounter": {
-    "reference": "Encounter/ExampleEinrichtungskontakt"
+    "reference": "Encounter/mii-exa-medikation-einrichtungskontakt"
   }
 }
