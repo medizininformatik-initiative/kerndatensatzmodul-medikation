@@ -31,8 +31,43 @@ jobs:
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION }}
       VALIDATION_REPORT_INCLUDE: errors #errors|warnings|all
+      # Bekannte, NICHT vom Modul verursachte Befunde. Format je Zeile:
+      #   filename|messageId|detailsWildcard|location   ('*' = beliebig)
+      # Kommentare muessen HIER stehen, nicht im Block-Skalar unten - dort
+      # waeren sie Filterinhalt.
+      #
+      # 1) IG_DEPENDENCY_DIRECT @ dependsOn -> de.ihe-d.terminology#3.0.1 ist ein
+      #    reines Terminologiepaket und enthaelt NULL ImplementationGuide-
+      #    Ressourcen; seine selbst deklarierte canonical lautet
+      #    http://fhir.de/packages/de.ihe-d.terminology. SUSHI uebernimmt die
+      #    woertlich. Eine '/ImplementationGuide/'-URL gibt es nicht - sie waere
+      #    frei erfunden. Bestand schon vor der Template-Migration.
+      #
+      # 2) IG_DEPENDENCY_CLASH_CANONICAL @ dependsOn -> wir deklarieren
+      #    hl7.fhir.uv.crmi#2.0.0 (existiert, ist R4, ist dist-tag 'latest', und
+      #    dependsOn[6].uri traegt korrekt
+      #    http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi).
+      #    Der Validator schaltet intern auf die .r4-Variante um; dort gibt es
+      #    kein 2.0.0, nur 2.0.0-ballot, und dessen package.json traegt als
+      #    canonical eine Tarball-URL (packages2.fhir.org/...tgz). Der Clash
+      #    entsteht erst durch diese Substitution.
+      #
+      # 3+4) Validation_VAL_Profile_MatchMultiple @ extension.url -> beide
+      #    Instanzen tragen GENAU EINE Extension mit korrekter URL und
+      #    valueMarkdown. Der Validator prueft gegen seinen eigenen Build
+      #    ...renderedDosageInstruction|0.0.1-snapshot-1; unser Pin
+      #    hl7.fhir.uv.xver-r5.r4#0.1.0 definiert dort ein einziges, fest
+      #    belegtes url-Element ohne mehrdeutiges Slicing. Auch das ist ein
+      #    Artefakt der Paketsubstitution, kein Modellierungsfehler.
+      #
+      # Faellt einer dieser Filter kuenftig ins Leere, meldet der Renderer
+      # "filter(s) defined but not triggered" - dann ist der Upstream repariert
+      # und die Zeile gehoert geloescht.
       VALIDATION_REPORT_FILTERS: |
-        MedicationStatement-mii-exa-medikation-medication-statement-hct.json|Terminology_TX_Confirm_4a|*standardterms.edqm.eu*|*dosage*dose*
+        ImplementationGuide-mii-ig-medikation.json|IG_DEPENDENCY_DIRECT|*|*dependsOn*
+        ImplementationGuide-mii-ig-medikation.json|IG_DEPENDENCY_CLASH_CANONICAL|*hl7.fhir.uv.crmi*|*dependsOn*
+        MedicationRequest-mii-exa-medikation-medication-request-caelyx.json|Validation_VAL_Profile_MatchMultiple|*renderedDosageInstruction*|*extension*
+        MedicationStatement-mii-exa-medikation-medication-statement-hct.json|Validation_VAL_Profile_MatchMultiple|*renderedDosageInstruction*|*extension*
     secrets: inherit
 
   RELEASE:
