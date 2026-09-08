@@ -3,13 +3,14 @@
 
 ### Release notes
 
-**Version 2027.0.0-ballot.rc2** — 2026-09-08
+**Version 2027.0.0-ballot.rc3** — 2026-09-08
 
-*`2027.0.0-ballot.rc1` carries a git tag but was never released. A guard in the
-release workflow read the commented-out `{{...}}` placeholders in
-`sushi-config.yaml` as evidence that the repository was still the empty module
-template, and skipped the build and release steps — reporting success while
-doing nothing. The guard now ignores comments; rc2 is the first release of this
+*`2027.0.0-ballot.rc1` and `rc2` carry git tags but were never released, both for
+reasons in the release tooling rather than in the guide. rc1 was skipped by a guard
+that read the commented-out `{{...}}` placeholders in `sushi-config.yaml` as an
+un-instantiated template. rc2 built completely but could not be zipped for
+publication: `.agents/skills` is a versioned symlink to a `skills/` directory that
+did not exist in this repository. Both are fixed; rc3 is the first release of this
 sequence and is otherwise identical in content to rc1.*
 
 * `Changed`: the implementation guide was migrated from Simplifier onto the MII KDS module template (IG Publisher). Content and artifact URLs are unchanged; the page structure now follows the module-wide page set, and the guide is bilingual.
