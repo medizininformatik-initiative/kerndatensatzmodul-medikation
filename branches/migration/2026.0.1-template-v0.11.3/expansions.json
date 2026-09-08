@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "28c14baa-9185-40a6-9e86-2c2b4808597c",
+  "id" : "b703f846-e660-4b4d-a077-e3f6cbc8a72b",
   "meta" : {
-    "lastUpdated" : "2026-09-08T08:59:53.530+00:00"
+    "lastUpdated" : "2026-09-08T09:11:09.543+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -31,8 +31,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bbb1b991-af39-4f99-adb8-0ee777876bed",
-        "timestamp" : "2026-09-08T09:05:16+00:00",
+        "identifier" : "urn:uuid:26c9952f-78cf-4552-9466-7e184e474c36",
+        "timestamp" : "2026-09-08T09:15:57+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -5092,8 +5092,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bbb1b991-af39-4f99-adb8-0ee777876bed",
-        "timestamp" : "2026-09-08T09:05:16+00:00",
+        "identifier" : "urn:uuid:26c9952f-78cf-4552-9466-7e184e474c36",
+        "timestamp" : "2026-09-08T09:15:57+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -10153,8 +10153,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b2e864b2-405e-41d3-8731-0b401b301f12",
-        "timestamp" : "2026-09-08T09:05:17+00:00",
+        "identifier" : "urn:uuid:8446e48a-9695-4037-a7a3-7ba05c57f3fa",
+        "timestamp" : "2026-09-08T09:15:58+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -14214,8 +14214,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18efba53-d485-439c-8f0e-8da573255c5e",
-        "timestamp" : "2026-09-08T09:05:17+00:00",
+        "identifier" : "urn:uuid:0768543d-6dc7-4abd-b4d8-89e15f2a18eb",
+        "timestamp" : "2026-09-08T09:15:58+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -19343,8 +19343,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:18efba53-d485-439c-8f0e-8da573255c5e",
-        "timestamp" : "2026-09-08T09:05:17+00:00",
+        "identifier" : "urn:uuid:0768543d-6dc7-4abd-b4d8-89e15f2a18eb",
+        "timestamp" : "2026-09-08T09:15:58+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -24472,8 +24472,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c42a8f95-a08c-4296-8559-c5164bbafd66",
-        "timestamp" : "2026-09-08T09:05:23+00:00",
+        "identifier" : "urn:uuid:2d545013-b6c4-44f7-bd12-17e6e432587f",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -28601,8 +28601,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3f8ba951-7c4a-41cf-8035-a2a41bc7427b",
-        "timestamp" : "2026-09-08T09:05:23+00:00",
+        "identifier" : "urn:uuid:e3e6187b-02c3-4632-abcc-b6766b4fc44a",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28678,8 +28678,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3f8ba951-7c4a-41cf-8035-a2a41bc7427b",
-        "timestamp" : "2026-09-08T09:05:23+00:00",
+        "identifier" : "urn:uuid:e3e6187b-02c3-4632-abcc-b6766b4fc44a",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28755,8 +28755,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:70842381-a76e-4b17-b543-8f2a8f83683f",
-        "timestamp" : "2026-09-08T09:05:23+00:00",
+        "identifier" : "urn:uuid:cd85de85-b89d-4d48-9fb2-cf191125c8a6",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28819,7 +28819,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-08T08:59:53+00:00",
+      "date" : "2026-09-08T09:11:09+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28828,8 +28828,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bcf73e9c-6434-4ccf-9038-0a070df8c5b8",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:6a977a61-7ac0-4a96-b5b5-64a0571fa494",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -28901,7 +28901,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-08T08:59:53+00:00",
+      "date" : "2026-09-08T09:11:09+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28910,8 +28910,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bcf73e9c-6434-4ccf-9038-0a070df8c5b8",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:6a977a61-7ac0-4a96-b5b5-64a0571fa494",
+        "timestamp" : "2026-09-08T09:16:03+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -28983,7 +28983,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-08T08:59:53+00:00",
+      "date" : "2026-09-08T09:11:09+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28992,8 +28992,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b4d0bbf2-5f6f-49d2-a917-35519d5b946d",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:b7a1e971-b2fa-4f41-a26c-4420635b051e",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -29069,8 +29069,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7dce0c7a-b27f-422c-9dbb-d91c1bc5e46f",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:e268d62a-461a-4172-814b-382d93ace6db",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -34130,8 +34130,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7dce0c7a-b27f-422c-9dbb-d91c1bc5e46f",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:e268d62a-461a-4172-814b-382d93ace6db",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -39191,8 +39191,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d9cf2d5e-f28f-4de6-bc96-0de6d471bec6",
-        "timestamp" : "2026-09-08T09:05:24+00:00",
+        "identifier" : "urn:uuid:60513f5c-005e-4f9d-93a0-882e1e1f0e50",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -43278,8 +43278,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:32739c18-3a99-4ed2-a6d7-c5f8401ab732",
-        "timestamp" : "2026-09-08T09:05:25+00:00",
+        "identifier" : "urn:uuid:6a800776-5730-4f3c-83d1-88664b8786d5",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43376,8 +43376,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:32739c18-3a99-4ed2-a6d7-c5f8401ab732",
-        "timestamp" : "2026-09-08T09:05:25+00:00",
+        "identifier" : "urn:uuid:6a800776-5730-4f3c-83d1-88664b8786d5",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43474,8 +43474,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:c6ab41b2-336c-42ee-9d77-fe819643b74d",
-        "timestamp" : "2026-09-08T09:05:25+00:00",
+        "identifier" : "urn:uuid:43480fea-affc-4ef9-91a4-d42ee03973bc",
+        "timestamp" : "2026-09-08T09:16:04+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
