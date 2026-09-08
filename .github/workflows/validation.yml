@@ -153,12 +153,22 @@ jobs:
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
       JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.5.7' }}
-      # Wire the repo's advisor file into the validator CLI. The reusable
-      # workflow passes JAVA_VALIDATION_OPTIONS verbatim to validator_cli.jar
-      # (verified at the pinned SHA); without this the advisor.json shipped at
-      # the repo root would be read by NOTHING and the "suppressed via
-      # advisor.json" contract in this file's header would be false.
-      JAVA_VALIDATION_OPTIONS: "-advisor-file advisor.json"
+      # NICHT hart setzen. Der Reusable reicht diesen String VERBATIM an
+      # validator_cli.jar weiter -- ein eigener Wert ERSETZT die Org-Variable,
+      # er ergaenzt sie nicht. Die Org-Variable der MII lautet:
+      #   -advisor-file advisor.json -resolution-context file:fsh-generated/resources/
+      #   -txLog txlog.html -forPublication -verbose
+      #   -authorise-non-conformant-tx-servers
+      #   -html-output validation.html -output validation.json
+      # Sie haengt advisor.json also bereits selbst ein. Wer hier
+      # "-advisor-file advisor.json" hart setzt, verliert vor allem
+      # -output validation.json: der Validator schreibt dann gar keinen Report,
+      # und der nachgelagerte Renderer scheitert mit
+      # "ENOENT: no such file or directory, open './validation.json'" -- ein
+      # Fehlerbild, das nach einem kaputten Report aussieht, aber ein nie
+      # entstandener ist. main.yml verfaehrt seit jeher per Org-Variable,
+      # weshalb dort derselbe Schritt lief.
+      JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       # Bekannte, NICHT vom Modul verursachte Befunde. Format je Zeile:
       #   filename|messageId|detailsWildcard|location   ('*' = beliebig)
       # Kommentare muessen HIER stehen, nicht im Block-Skalar unten - dort
