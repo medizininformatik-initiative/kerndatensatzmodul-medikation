@@ -92,7 +92,7 @@ description: "FHIR profiles for representing medication data - prescriptions, ad
 status: active # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2027.0.0-ballot.rc4"
+version: "2027.0.0-ballot.rc5"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
@@ -161,7 +161,7 @@ extension:
       - url: packageId
         valueId: de.medizininformatikinitiative.kerndatensatz.medikation
       - url: version
-        valueString: "2027.0.0-ballot.rc4"
+        valueString: "2027.0.0-ballot.rc5"
       - url: uri
         valueUri: https://www.medizininformatik-initiative.de/fhir/modul-medikation
   # Year this release sequence became effective

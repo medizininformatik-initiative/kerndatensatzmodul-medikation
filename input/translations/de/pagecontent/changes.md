@@ -2,8 +2,13 @@
 
 ### Release Notes
 
-**Version 2027.0.0-ballot.rc4** — 09.09.2026
+**Version 2027.0.0-ballot.rc5** — 09.09.2026
 
+* `Fixed`: Publikations-Metadaten korrigiert. `ci-build` verwies auf `branches/dev/` —
+  ein Branch, den dieses Repository nicht hat; der Default-Branch heisst `master`. `status`
+  stand auf `release`, obwohl die Version ein Ballot-Kandidat ist, und `sequence` auf `2026`
+  bei einer 2027er-Version. Der `releaseLabel` lautet nun `Release` statt `ci-build`, damit
+  die publizierte Fassung sich nicht als fortlaufender Build ausweist.
 * `Fixed`: 19 unaufloesbare Referenzen in den Beispielinstanzen. Zwei Ziele existierten
   nach einer frueheren Zusammenfuehrung unter anderen Ids; `Patient` und `Encounter` gab es
   in diesem Modul nie und werden nun als minimale Kontext-Instanzen mitgeliefert.

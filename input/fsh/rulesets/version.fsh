@@ -1,5 +1,5 @@
 RuleSet: Version
-* version = "2027.0.0-ballot.rc4"
+* version = "2027.0.0-ballot.rc5"
 
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc4"
+* ^version = "2027.0.0-ballot.rc5"
