@@ -51,7 +51,7 @@
   ],
   "partOf": [
     {
-      "reference": "Procedure/ExampleProcedure"
+      "reference": "Procedure/mii-exa-medikation-procedure-thiotepa"
     }
   ],
   "effectiveDateTime": "2018-05-26",
@@ -60,6 +60,6 @@
   },
   "status": "completed",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   }
 }

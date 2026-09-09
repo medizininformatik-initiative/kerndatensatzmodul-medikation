@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD041 -->
 Diese Seite führt die Beispielinstanzen des Moduls **MII IG Medikation** auf. Die
 Vorlage enthält das synthetische Beispiel
-[Max Mustermann-Testpatient](Patient-ExamplePatientInstance.html).
+[Max Mustermann-Testpatient](Patient-mii-exa-medikation-patient.html).
 
 {:.bg-warning}
 **Nur synthetische Daten** — niemals echte oder realistisch wirkende

@@ -53,6 +53,6 @@
   ],
   "status": "intended",
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   }
 }

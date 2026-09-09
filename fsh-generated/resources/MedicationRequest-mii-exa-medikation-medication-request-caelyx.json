@@ -55,7 +55,7 @@
     "reference": "Medication/mii-exa-medikation-medication-caelyx"
   },
   "subject": {
-    "reference": "Patient/example"
+    "reference": "Patient/mii-exa-medikation-patient"
   },
   "authoredOn": "2021-12-21T11:41:00+01:00"
 }

@@ -3,7 +3,7 @@
      German mirror: input/translations/de/pagecontent/examples.md. -->
 This page lists the example instances of the **MII IG Medikation** module. The
 template ships the synthetic example
-[Max Mustermann-Testpatient](Patient-ExamplePatientInstance.html).
+[Max Mustermann-Testpatient](Patient-mii-exa-medikation-patient.html).
 
 {:.bg-warning}
 **Synthetic data only** — never use real or realistic-looking patient data in
