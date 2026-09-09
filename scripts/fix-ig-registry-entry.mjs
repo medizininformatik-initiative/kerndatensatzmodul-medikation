@@ -265,12 +265,32 @@ function validateEntry(
     );
   } else {
     const edition = editions[0];
-    assertEqual(
-      edition.name,
-      requiredString(request, "sequence", "Publication request"),
-      "edition.name",
-      errors,
-    );
+    // Der IG Publisher setzt den Editionsnamen aus SEQUENCE UND STATUS zusammen,
+    // nicht allein aus der sequence: PublicationProcess.java bildet
+    //   case "preview": st = "Preview";  case "ballot": st = "Ballot";  ...
+    // und PublishBoxStatementGenerator liefert fuer einen Ballot
+    //   decorate(sequence + " Ballot").
+    // `status: ballot` mit `sequence: 2027` ergibt also die Edition
+    // "2027 Ballot" -- korrekt und beabsichtigt. Der reine Gleichheitsvergleich
+    // gegen die sequence liess deshalb JEDE Ballot-Publikation scheitern
+    // (beobachtet bei Medikation 2027.0.0-ballot.rc5, go-publish Run
+    // 34358358393). Erlaubt ist die sequence, optional gefolgt vom Status-Label.
+    const STATUS_EDITION_LABELS = {
+      ballot: "Ballot",
+      preview: "Preview",
+      snapshot: "Snapshot",
+    };
+    const sequence = requiredString(request, "sequence", "Publication request");
+    const statusLabel = STATUS_EDITION_LABELS[request.status];
+    const acceptedEditionNames = statusLabel
+      ? [sequence, `${sequence} ${statusLabel}`]
+      : [sequence];
+    if (!acceptedEditionNames.includes(edition.name)) {
+      errors.push(
+        `edition.name: expected one of ` +
+          `${JSON.stringify(acceptedEditionNames)}, found ${JSON.stringify(edition.name)}`,
+      );
+    }
     assertEqual(edition.package, `${packageId}#${version}`, "edition.package", errors);
     assertEqual(
       normalizeUrl(edition.url ?? "", "Generated edition URL"),
