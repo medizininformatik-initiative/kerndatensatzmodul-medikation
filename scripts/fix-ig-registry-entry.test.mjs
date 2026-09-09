@@ -270,3 +270,72 @@ test("rejects missing, duplicate, and ambiguous target entries", () => {
     /Invalid or duplicate registry languages/,
   );
 });
+
+// Regression: eine Ballot-Publikation traegt einen Editionsnamen aus sequence
+// UND Status-Label. Der IG Publisher bildet ihn in PublicationProcess.java
+// (case "ballot": st = "Ballot") beziehungsweise PublishBoxStatementGenerator
+// (decorate(sequence + " Ballot")). Der frueher hier stehende reine
+// Gleichheitsvergleich gegen die sequence liess deshalb JEDE Ballot-Publikation
+// scheitern -- beobachtet bei Medikation 2027.0.0-ballot.rc5:
+//   Generated registry entry is invalid:
+//   - edition.name: expected "2027", found "2027 Ballot"
+function ballotFixture(editionName) {
+  const root = mkdtempSync(join(tmpdir(), "ig-registry-entry-ballot-"));
+  const registry = join(root, "fhir-ig-list.json");
+  const requestFile = join(root, "publication-request.json");
+  const packageFile = join(root, "package.json");
+  const ballotRequest = { ...request, status: "ballot" };
+  const entry = targetEntry({ history, language: ["en", "de"] });
+  entry.editions[0].name = editionName;
+  writeFileSync(
+    registry,
+    `{ "guides" : [${JSON.stringify(entry)}] }\n`,
+  );
+  writeFileSync(requestFile, JSON.stringify(ballotRequest));
+  writeFileSync(packageFile, JSON.stringify(packageMetadata));
+  return { registry, requestFile, packageFile };
+}
+
+test("accepts the publisher's ballot edition name (sequence + label)", () => {
+  const files = ballotFixture(`${request.sequence} Ballot`);
+  assert.doesNotThrow(() =>
+    fixIgRegistryEntry(
+      files.registry,
+      files.requestFile,
+      files.packageFile,
+      canonical,
+      history,
+      ["en", "de"],
+    ),
+  );
+});
+
+test("still accepts the bare sequence as an edition name on a ballot", () => {
+  const files = ballotFixture(request.sequence);
+  assert.doesNotThrow(() =>
+    fixIgRegistryEntry(
+      files.registry,
+      files.requestFile,
+      files.packageFile,
+      canonical,
+      history,
+      ["en", "de"],
+    ),
+  );
+});
+
+test("rejects an edition name that is neither the sequence nor its labelled form", () => {
+  const files = ballotFixture(`${request.sequence} Snapshot`);
+  assert.throws(
+    () =>
+      fixIgRegistryEntry(
+        files.registry,
+        files.requestFile,
+        files.packageFile,
+        canonical,
+        history,
+        ["en", "de"],
+      ),
+    /edition\.name/,
+  );
+});
