@@ -516,7 +516,10 @@ Usage: #example
 Title: "MII EXA Medikation Patient"
 Description: "Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen."
 * insert TestDataLabel
-* identifier[+].system = "http://example.org/fhir/sid/patienten"
+// KEIN example.org: der Validator lehnt Beispiel-URLs an dieser Stelle ab
+// (TYPE_SPECIFIC_CHECKS_DT_URL_EXAMPLE). Ein Namensraum unter der eigenen
+// Canonical ist eindeutig und zieht keine reale Einrichtung in die Beispiele.
+* identifier[+].system = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient"
 * identifier[=].value = "12345"
 * name[+].family = "Mustermann"
 * name[=].given = "Max"
