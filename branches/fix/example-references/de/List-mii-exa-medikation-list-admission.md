@@ -21,7 +21,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | | | |
 | :--- | :--- | :--- |
 | Mode: Snapshot List | Status: Current | Code: Medication List |
-| Subject:[Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)](Patient-mii-exa-medikation-patient.md)Encounter:[Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2018-05-24 --> 2018-06-08](Encounter-mii-exa-medikation-einrichtungskontakt.md) | | |
+| Subject:[Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)Encounter:[Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2018-05-24 --> 2018-06-08](Encounter-mii-exa-medikation-einrichtungskontakt.md) | | |
 
 * **Items**: [MedicationStatement: extension = 1-0-0-0 Tablette HCT 12,5mg oral; status = intended; medication[x] = Hydrochlorothiazid; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-hct.md)
 * **Items**: [MedicationStatement: status = intended; medication[x] = Bisoprolol; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-concor.md)

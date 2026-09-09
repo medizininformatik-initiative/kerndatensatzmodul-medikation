@@ -5,7 +5,7 @@
 
 ## Examples
 
-This page lists the example instances of the **MII IG Medikation** module. The template ships the synthetic example [Max Mustermann-Testpatient](Patient-ExamplePatientInstance.md).
+This page lists the example instances of the **MII IG Medikation** module. The template ships the synthetic example [Max Mustermann-Testpatient](Patient-mii-exa-medikation-patient.md).
 
 **Synthetic data only** — never use real or realistic-looking patient data in examples.
 

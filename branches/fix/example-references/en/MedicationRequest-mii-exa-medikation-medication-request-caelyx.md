@@ -26,7 +26,7 @@ Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen p
 
 **medication**: [Medication Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1](Medication-mii-exa-medikation-medication-caelyx.md)
 
-**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)](Patient-mii-exa-medikation-patient.md)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **authoredOn**: 2021-12-21 11:41:00+0100
 

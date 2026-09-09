@@ -21,7 +21,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | | | |
 | :--- | :--- | :--- |
 | Mode: Working List | Status: Current | Code: Medication List |
-| Subject:[Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)](Patient-mii-exa-medikation-patient.md) | | |
+| Subject:[Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md) | | |
 
 * **Items**: [MedicationStatement: status = active; medication[x] = ->Medication ; effective[x] = 2020-01-14 11:37:00+0100](MedicationStatement-mii-exa-medikation-medication-statement.md)
 

@@ -14,7 +14,7 @@
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)
+Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)
 
 -------
 
@@ -34,7 +34,7 @@ Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#123
     }]
   },
   "identifier" : [{
-    "system" : "http://example.org/fhir/sid/patienten",
+    "system" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient",
     "value" : "12345"
   }],
   "name" : [{

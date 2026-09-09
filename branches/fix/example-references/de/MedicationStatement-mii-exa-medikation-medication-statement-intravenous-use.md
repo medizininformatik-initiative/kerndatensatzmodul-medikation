@@ -22,7 +22,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **medication**: [Medication](Medication-mii-exa-medikation-medication-thiotepa.md)
 
-**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( http://example.org/fhir/sid/patienten#12345)](Patient-mii-exa-medikation-patient.md)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **effective**: 2018-05-26
 

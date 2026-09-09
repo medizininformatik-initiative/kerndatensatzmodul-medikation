@@ -1,10 +1,10 @@
 MII_IG_Medikation : Validation Results
 =========================================
 
-err = 37, warn = 413, info = 1585
+err = 37, warn = 414, info = 1585
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Tue Sep 08 19:37:43 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc3 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
- Build Errors : 4 / 29 / 0
+Generated Wed Sep 09 06:44:22 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc3 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
+ Build Errors : 2 / 29 / 0
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement : 3 / 1 / 119
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-pzn-sales-status-code : 0 / 2 / 2
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-wirkstofftyp : 3 / 2 / 10
@@ -34,7 +34,7 @@ Generated Tue Sep 08 19:37:43 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-offset : 0 / 4 / 3
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall : 0 / 4 / 3
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/MedicationStatement-mii-exa-medikation-medication-statement-zopiclon : 0 / 12 / 2
- /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/Patient-mii-exa-medikation-patient : 0 / 0 / 1
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/Patient-mii-exa-medikation-patient : 0 / 1 / 1
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/Procedure-mii-exa-medikation-procedure-thiotepa : 0 / 0 / 1
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstoffrelation : 3 / 1 / 23
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstofftyp : 3 / 1 / 18
@@ -81,9 +81,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Medication/mii-exa-medikation-medication-thiotepa.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/mii-exa-medikation-procedure-thiotepa.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/mii-param-medikation-manifest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: de/examples.html#/html/body/div/div/div/div/div/p/a at Line 311, column 2: The link 'Patient-ExamplePatientInstance.html' for "Max Mustermann-Testpatient" cannot be resolved
 ERROR: de/profiles.html#/html/body/div/div/div/div/div/p/a at Line 312, column 148: The link 'http://hl7.org/fhir/uv/ips/STU1/' for "International Patient Summary" cannot be resolved
-ERROR: en/examples.html#/html/body/div/div/div/div/div/p/a at Line 335, column 2: The link 'Patient-ExamplePatientInstance.html' for "Max Mustermann-Testpatient" cannot be resolved
 ERROR: en/profiles.html#/html/body/div/div/div/div/div/p/a at Line 335, column 126: The link 'http://hl7.org/fhir/uv/ips/STU1/' for "International Patient Summary" cannot be resolved
 WARNING: 5: An HTML fragment from the set [expansion-params.xhtml, expansion-params.xhtml] is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement.json ==
@@ -463,6 +461,7 @@ WARNING: MedicationStatement/mii-exa-medikation-medication-statement-zopiclon: M
 WARNING: MedicationStatement/mii-exa-medikation-medication-statement-zopiclon: MedicationStatement.dosage[3].doseAndRate[0].dose.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated
 WARNING: MedicationStatement/mii-exa-medikation-medication-statement-zopiclon: MedicationStatement.dosage[3].doseAndRate[0].dose.ofType(Quantity): Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#1')
 == fsh-generated/resources/Patient-mii-exa-medikation-patient.json ==
+WARNING: Patient/mii-exa-medikation-patient: Patient.identifier[0].system: No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient'
 == fsh-generated/resources/Procedure-mii-exa-medikation-procedure-thiotepa.json ==
 == fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstoffrelation.json ==
 ERROR: StructureDefinition.where(url = 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation'): Conformance resource /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstoffrelation.json - the canonical URL (https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/mii-ex-medikation-wirkstoffrelation) does not match the URL (https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation). Use the special-url parameter if you really mean for it not to match
