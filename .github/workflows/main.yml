@@ -58,7 +58,7 @@ jobs:
       # "filter(s) defined but not triggered" - dann ist der Upstream repariert
       # und die Zeile gehoert geloescht.
       VALIDATION_REPORT_FILTERS: |
-        ImplementationGuide-mii-ig-medikation.json|IG_DEPENDENCY_DIRECT|*|*dependsOn*
+        NICHTS|NICHTS|NICHTS|NICHTS
     secrets: inherit
 
   RELEASE:

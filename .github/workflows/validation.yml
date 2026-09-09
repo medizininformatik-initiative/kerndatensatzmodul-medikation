@@ -196,7 +196,7 @@ jobs:
       # "filter(s) defined but not triggered" - dann ist der Upstream repariert
       # und die Zeile gehoert geloescht.
       VALIDATION_REPORT_FILTERS: |
-        ImplementationGuide-mii-ig-medikation.json|IG_DEPENDENCY_DIRECT|*|*dependsOn*
+        NICHTS|NICHTS|NICHTS|NICHTS
     # Secret-name reconciliation: the MII reusable workflow declares
     # CDS_DEV_CLIENT_CERT / _KEY / _CERT_PASSWORD (all required), but THIS repo's
     # canonical name for the same SU-TermServ client certificate is
