@@ -62,7 +62,8 @@ This publication includes IP covered under the following statements.
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [Example Use Codes for List](http://terminology.hl7.org/7.3.0/CodeSystem-list-example-use-codes.html): [List/mii-exa-medikation-list-admission](List-mii-exa-medikation-list-admission.md), [List/mii-exa-medikation-medikationsliste-aktuelle-therapie](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md), [List/mii-exa-medikation-medikationsliste-aufnahmemedikation](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md) and [MII_PR_Medikation_Medikationsliste](StructureDefinition-mii-pr-medikation-medikationsliste.md)
-* [ActReason](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html): [List/mii-exa-medikation-list-admission](List-mii-exa-medikation-list-admission.md), [List/mii-exa-medikation-medikationsliste-aktuelle-therapie](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md)... Show 23 more, [List/mii-exa-medikation-medikationsliste-aufnahmemedikation](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md), [Medication/mii-exa-medikation-medication-ass-100](Medication-mii-exa-medikation-medication-ass-100.md), [Medication/mii-exa-medikation-medication-caelyx](Medication-mii-exa-medikation-medication-caelyx.md), [Medication/mii-exa-medikation-medication-calcium](Medication-mii-exa-medikation-medication-calcium.md), [Medication/mii-exa-medikation-medication-dolomo](Medication-mii-exa-medikation-medication-dolomo.md), [Medication/mii-exa-medikation-medication-dolomo-nacht](Medication-mii-exa-medikation-medication-dolomo-nacht.md), [Medication/mii-exa-medikation-medication-dolomo-tag](Medication-mii-exa-medikation-medication-dolomo-tag.md), [Medication/mii-exa-medikation-medication-glucoseloesung](Medication-mii-exa-medikation-medication-glucoseloesung.md), [Medication/mii-exa-medikation-medication-propofol](Medication-mii-exa-medikation-medication-propofol.md), [Medication/mii-exa-medikation-medication-rezeptur](Medication-mii-exa-medikation-medication-rezeptur.md), [Medication/mii-exa-medikation-medication-thiotepa](Medication-mii-exa-medikation-medication-thiotepa.md), [MedicationAdministration/mii-exa-medikation-medication-administration](MedicationAdministration-mii-exa-medikation-medication-administration.md), [MedicationRequest/mii-exa-medikation-medication-request-caelyx](MedicationRequest-mii-exa-medikation-medication-request-caelyx.md), [MedicationStatement/mii-exa-medikation-medication-statement](MedicationStatement-mii-exa-medikation-medication-statement.md), [MedicationStatement/mii-exa-medikation-medication-statement-caelyx](MedicationStatement-mii-exa-medikation-medication-statement-caelyx.md), [MedicationStatement/mii-exa-medikation-medication-statement-concor](MedicationStatement-mii-exa-medikation-medication-statement-concor.md), [MedicationStatement/mii-exa-medikation-medication-statement-hct](MedicationStatement-mii-exa-medikation-medication-statement-hct.md), [MedicationStatement/mii-exa-medikation-medication-statement-ibuprofen](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md), [MedicationStatement/mii-exa-medikation-medication-statement-intravenous-use](MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.md), [MedicationStatement/mii-exa-medikation-medication-statement-offset](MedicationStatement-mii-exa-medikation-medication-statement-offset.md), [MedicationStatement/mii-exa-medikation-medication-statement-periodisches-intervall](MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.md), [MedicationStatement/mii-exa-medikation-medication-statement-zopiclon](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md) and [Procedure/mii-exa-medikation-procedure-thiotepa](Procedure-mii-exa-medikation-procedure-thiotepa.md)
+* [ActCode](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html): [Encounter/mii-exa-medikation-einrichtungskontakt](Encounter-mii-exa-medikation-einrichtungskontakt.md)
+* [ActReason](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html): [Encounter/mii-exa-medikation-einrichtungskontakt](Encounter-mii-exa-medikation-einrichtungskontakt.md), [List/mii-exa-medikation-list-admission](List-mii-exa-medikation-list-admission.md)... Show 25 more, [List/mii-exa-medikation-medikationsliste-aktuelle-therapie](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md), [List/mii-exa-medikation-medikationsliste-aufnahmemedikation](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md), [Medication/mii-exa-medikation-medication-ass-100](Medication-mii-exa-medikation-medication-ass-100.md), [Medication/mii-exa-medikation-medication-caelyx](Medication-mii-exa-medikation-medication-caelyx.md), [Medication/mii-exa-medikation-medication-calcium](Medication-mii-exa-medikation-medication-calcium.md), [Medication/mii-exa-medikation-medication-dolomo](Medication-mii-exa-medikation-medication-dolomo.md), [Medication/mii-exa-medikation-medication-dolomo-nacht](Medication-mii-exa-medikation-medication-dolomo-nacht.md), [Medication/mii-exa-medikation-medication-dolomo-tag](Medication-mii-exa-medikation-medication-dolomo-tag.md), [Medication/mii-exa-medikation-medication-glucoseloesung](Medication-mii-exa-medikation-medication-glucoseloesung.md), [Medication/mii-exa-medikation-medication-propofol](Medication-mii-exa-medikation-medication-propofol.md), [Medication/mii-exa-medikation-medication-rezeptur](Medication-mii-exa-medikation-medication-rezeptur.md), [Medication/mii-exa-medikation-medication-thiotepa](Medication-mii-exa-medikation-medication-thiotepa.md), [MedicationAdministration/mii-exa-medikation-medication-administration](MedicationAdministration-mii-exa-medikation-medication-administration.md), [MedicationRequest/mii-exa-medikation-medication-request-caelyx](MedicationRequest-mii-exa-medikation-medication-request-caelyx.md), [MedicationStatement/mii-exa-medikation-medication-statement](MedicationStatement-mii-exa-medikation-medication-statement.md), [MedicationStatement/mii-exa-medikation-medication-statement-caelyx](MedicationStatement-mii-exa-medikation-medication-statement-caelyx.md), [MedicationStatement/mii-exa-medikation-medication-statement-concor](MedicationStatement-mii-exa-medikation-medication-statement-concor.md), [MedicationStatement/mii-exa-medikation-medication-statement-hct](MedicationStatement-mii-exa-medikation-medication-statement-hct.md), [MedicationStatement/mii-exa-medikation-medication-statement-ibuprofen](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md), [MedicationStatement/mii-exa-medikation-medication-statement-intravenous-use](MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.md), [MedicationStatement/mii-exa-medikation-medication-statement-offset](MedicationStatement-mii-exa-medikation-medication-statement-offset.md), [MedicationStatement/mii-exa-medikation-medication-statement-periodisches-intervall](MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.md), [MedicationStatement/mii-exa-medikation-medication-statement-zopiclon](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md), [Patient/mii-exa-medikation-patient](Patient-mii-exa-medikation-patient.md) and [Procedure/mii-exa-medikation-procedure-thiotepa](Procedure-mii-exa-medikation-procedure-thiotepa.md)
 
 
 * Unless otherwise noted, the contents of the FDA website (www.fda.gov) — both text and graphics — are not copyrighted. They are in the public domain and may be republished, reprinted and otherwise used freely by anyone without the need to obtain permission from FDA. Credit to the U.S. Food and Drug Administration as the source is appreciated but not required.
@@ -516,6 +517,138 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       {
         "url" : "value",
         "valueString" : "http://hl7.org/v3/cda"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1016,6 +1149,138 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     {
       "extension" : [{
         "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "special-url"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
         "valueCode" : "autoload-resources"
       },
       {
@@ -1412,6 +1677,38 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       "name" : "MII EX Medikation Wirkstofftyp",
       "description" : "Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-mii-exa-medikation-einrichtungskontakt.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/mii-exa-medikation-einrichtungskontakt"
+      },
+      "name" : "MII EXA Medikation Einrichtungskontakt",
+      "description" : "Einrichtungskontakt, in dem die Aufnahmemedikation erhoben wurde.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-mii-exa-medikation-patient.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/mii-exa-medikation-patient"
+      },
+      "name" : "MII EXA Medikation Patient",
+      "description" : "Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{

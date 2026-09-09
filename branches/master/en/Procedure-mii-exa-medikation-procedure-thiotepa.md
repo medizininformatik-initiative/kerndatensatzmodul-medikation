@@ -20,7 +20,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **code**: Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg
 
-**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **performed**: 2018-05-26
 
@@ -56,7 +56,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-medikation-patient"
   },
   "performedDateTime" : "2018-05-26"
 }

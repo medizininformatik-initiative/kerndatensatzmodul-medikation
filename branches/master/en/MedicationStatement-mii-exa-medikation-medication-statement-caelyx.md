@@ -20,7 +20,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **medication**: [Medication Caelyx pegylated liposomal 2 mg/ml Konzentrat zur Herstellung einer Infusionslösung 1x25ml DSF N1](Medication-mii-exa-medikation-medication-caelyx.md)
 
-**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **effective**: 2020-01-02 09:30:00+0100
 
@@ -55,7 +55,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     "reference" : "Medication/mii-exa-medikation-medication-caelyx"
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-medikation-patient"
   },
   "effectiveDateTime" : "2020-01-02T09:30:00+01:00",
   "dosage" : [{

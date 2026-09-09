@@ -21,7 +21,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 | | | |
 | :--- | :--- | :--- |
 | Mode: Snapshot List | Status: Current | Code: Medication List |
-| Subject:[Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)Encounter:[Encounter/ExampleEinrichtungskontakt](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Encounter/ExampleEinrichtungskontakt) | | |
+| Subject:[Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)Encounter:[Encounter: status = finished; class = inpatient encounter (ActCode#IMP); period = 2018-05-24 --> 2018-06-08](Encounter-mii-exa-medikation-einrichtungskontakt.md) | | |
 
 * **Items**: [MedicationStatement: extension = 1-0-0-0 Tablette HCT 12,5mg oral; status = intended; medication[x] = Hydrochlorothiazid; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-hct.md)
 * **Items**: [MedicationStatement: status = intended; medication[x] = Bisoprolol; effective[x] = 2022-02-02 12:22:00+0000 --> (ongoing)](MedicationStatement-mii-exa-medikation-medication-statement-concor.md)
@@ -58,10 +58,10 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-medikation-patient"
   },
   "encounter" : {
-    "reference" : "Encounter/ExampleEinrichtungskontakt"
+    "reference" : "Encounter/mii-exa-medikation-einrichtungskontakt"
   },
   "entry" : [{
     "item" : {

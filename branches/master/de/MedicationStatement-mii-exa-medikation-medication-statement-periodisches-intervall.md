@@ -20,7 +20,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
 
 **medication**: Marcumar 3mg 98 Tbl. N3
 
-**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **effective**: 2020-05-27 17:57:00+0100
 
@@ -59,7 +59,7 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-medikation-patient"
   },
   "effectiveDateTime" : "2020-05-27T17:57:00+01:00",
   "dosage" : [{

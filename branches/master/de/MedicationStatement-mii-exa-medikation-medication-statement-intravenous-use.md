@@ -16,13 +16,13 @@ Profile: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medi
 
 Security Label: [test health data (Details: ActReason code HTEST = 'test health data')](http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html)
 
-**partOf**: [Procedure/ExampleProcedure](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Procedure/ExampleProcedure)
+**partOf**: [Procedure Applikation von Medikamenten, Liste 7: Thiotepa, parenteral: 2.400 mg bis unter 2.600 mg](Procedure-mii-exa-medikation-procedure-thiotepa.md)
 
 **status**: Completed
 
 **medication**: [Medication](Medication-mii-exa-medikation-medication-thiotepa.md)
 
-**subject**: [Patient/example](https://simplifier.net/resolve?scope=de.ihe-d.terminology@3.0.1&canonical=http://fhir.de/packages/de.ihe-d.terminology/Patient/example)
+**subject**: [Max Mustermann Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)](Patient-mii-exa-medikation-patient.md)
 
 **effective**: 2018-05-26
 
@@ -53,14 +53,14 @@ Security Label: [test health data (Details: ActReason code HTEST = 'test health 
     }]
   },
   "partOf" : [{
-    "reference" : "Procedure/ExampleProcedure"
+    "reference" : "Procedure/mii-exa-medikation-procedure-thiotepa"
   }],
   "status" : "completed",
   "medicationReference" : {
     "reference" : "Medication/mii-exa-medikation-medication-thiotepa"
   },
   "subject" : {
-    "reference" : "Patient/example"
+    "reference" : "Patient/mii-exa-medikation-patient"
   },
   "effectiveDateTime" : "2018-05-26",
   "dosage" : [{

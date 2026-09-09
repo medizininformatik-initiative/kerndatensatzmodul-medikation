@@ -356,6 +356,102 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueString value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -716,6 +812,102 @@
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/LogicalModel/BasismodulMedikation"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="special-url"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
         <valueCode value="autoload-resources"/>
       </extension>
       <extension url="value">
@@ -998,6 +1190,28 @@
       <name value="MII EX Medikation Wirkstofftyp"/>
       <description value="Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/mii-exa-medikation-einrichtungskontakt"/>
+      </reference>
+      <name value="MII EXA Medikation Einrichtungskontakt"/>
+      <description value="Einrichtungskontakt, in dem die Aufnahmemedikation erhoben wurde."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/mii-exa-medikation-patient"/>
+      </reference>
+      <name value="MII EXA Medikation Patient"/>
+      <description value="Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

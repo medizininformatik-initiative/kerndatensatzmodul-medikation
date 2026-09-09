@@ -69,6 +69,7 @@
 
 ### Examples
 
+* [mii-exa-medikation-einrichtungskontakt (Encounter)](Encounter-mii-exa-medikation-einrichtungskontakt.md)
 * [Aufnahmemedikation (List)](List-mii-exa-medikation-list-admission.md)
 * [Aktuelle medikamentöse Therapie (List)](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md)
 * [Aufnahmemedikation (List)](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md)
@@ -93,4 +94,5 @@
 * [mii-exa-medikation-medication-statement-offset (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-offset.md)
 * [mii-exa-medikation-medication-statement-zopiclon (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md)
 * [mii-exa-medikation-medication-statement (MedicationStatement)](MedicationStatement-mii-exa-medikation-medication-statement.md)
+* [mii-exa-medikation-patient (Patient)](Patient-mii-exa-medikation-patient.md)
 * [mii-exa-medikation-procedure-thiotepa (Procedure)](Procedure-mii-exa-medikation-procedure-thiotepa.md)

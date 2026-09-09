@@ -72,33 +72,35 @@ Diese definieren neue CodeSysteme, die von Systemen verwendet werden, die mit di
 
 Dies sind Beispielinstanzen, die zeigen, wie Daten aussehen könnten, die von Systemen produziert und konsumiert werden, die mit diesem Implementierungsleitfaden konform sind.
 
-| |
-| :--- |
-| [ Aktuelle medikamentöse Therapie  ](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md) |
-| [ Aufnahmemedikation  ](List-mii-exa-medikation-list-admission.md) |
-| [ Aufnahmemedikation  ](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md) |
-| [ mii-exa-medikation-medication-administration  ](MedicationAdministration-mii-exa-medikation-medication-administration.md) |
-| [ mii-exa-medikation-medication-ass-100  ](Medication-mii-exa-medikation-medication-ass-100.md) |
-| [ mii-exa-medikation-medication-caelyx  ](Medication-mii-exa-medikation-medication-caelyx.md) |
-| [ mii-exa-medikation-medication-calcium  ](Medication-mii-exa-medikation-medication-calcium.md) |
-| [ mii-exa-medikation-medication-dolomo  ](Medication-mii-exa-medikation-medication-dolomo.md) |
-| [ mii-exa-medikation-medication-dolomo-nacht  ](Medication-mii-exa-medikation-medication-dolomo-nacht.md) |
-| [ mii-exa-medikation-medication-dolomo-tag  ](Medication-mii-exa-medikation-medication-dolomo-tag.md) |
-| [ mii-exa-medikation-medication-glucoseloesung  ](Medication-mii-exa-medikation-medication-glucoseloesung.md) |
-| [ mii-exa-medikation-medication-propofol  ](Medication-mii-exa-medikation-medication-propofol.md) |
-| [ mii-exa-medikation-medication-request-caelyx  ](MedicationRequest-mii-exa-medikation-medication-request-caelyx.md) |
-| [ mii-exa-medikation-medication-rezeptur  ](Medication-mii-exa-medikation-medication-rezeptur.md) |
-| [ mii-exa-medikation-medication-statement  ](MedicationStatement-mii-exa-medikation-medication-statement.md) |
-| [ mii-exa-medikation-medication-statement-caelyx  ](MedicationStatement-mii-exa-medikation-medication-statement-caelyx.md) |
-| [ mii-exa-medikation-medication-statement-concor  ](MedicationStatement-mii-exa-medikation-medication-statement-concor.md) |
-| [ mii-exa-medikation-medication-statement-hct  ](MedicationStatement-mii-exa-medikation-medication-statement-hct.md) |
-| [ mii-exa-medikation-medication-statement-ibuprofen  ](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md) |
-| [ mii-exa-medikation-medication-statement-intravenous-use  ](MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.md) |
-| [ mii-exa-medikation-medication-statement-offset  ](MedicationStatement-mii-exa-medikation-medication-statement-offset.md) |
-| [ mii-exa-medikation-medication-statement-periodisches-intervall  ](MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.md) |
-| [ mii-exa-medikation-medication-statement-zopiclon  ](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md) |
-| [ mii-exa-medikation-medication-thiotepa  ](Medication-mii-exa-medikation-medication-thiotepa.md) |
-| [ mii-exa-medikation-procedure-thiotepa  ](Procedure-mii-exa-medikation-procedure-thiotepa.md) |
+| | |
+| :--- | :--- |
+| [ Aktuelle medikamentöse Therapie  ](List-mii-exa-medikation-medikationsliste-aktuelle-therapie.md) |  |
+| [ Aufnahmemedikation  ](List-mii-exa-medikation-list-admission.md) |  |
+| [ Aufnahmemedikation  ](List-mii-exa-medikation-medikationsliste-aufnahmemedikation.md) |  |
+| [ MII EXA Medikation Einrichtungskontakt  ](Encounter-mii-exa-medikation-einrichtungskontakt.md) | Einrichtungskontakt, in dem die Aufnahmemedikation erhoben wurde. |
+| [ MII EXA Medikation Patient  ](Patient-mii-exa-medikation-patient.md) | Beispielpatient, auf den sich die Medikationsbeispiele dieses Moduls beziehen. |
+| [ mii-exa-medikation-medication-administration  ](MedicationAdministration-mii-exa-medikation-medication-administration.md) |  |
+| [ mii-exa-medikation-medication-ass-100  ](Medication-mii-exa-medikation-medication-ass-100.md) |  |
+| [ mii-exa-medikation-medication-caelyx  ](Medication-mii-exa-medikation-medication-caelyx.md) |  |
+| [ mii-exa-medikation-medication-calcium  ](Medication-mii-exa-medikation-medication-calcium.md) |  |
+| [ mii-exa-medikation-medication-dolomo  ](Medication-mii-exa-medikation-medication-dolomo.md) |  |
+| [ mii-exa-medikation-medication-dolomo-nacht  ](Medication-mii-exa-medikation-medication-dolomo-nacht.md) |  |
+| [ mii-exa-medikation-medication-dolomo-tag  ](Medication-mii-exa-medikation-medication-dolomo-tag.md) |  |
+| [ mii-exa-medikation-medication-glucoseloesung  ](Medication-mii-exa-medikation-medication-glucoseloesung.md) |  |
+| [ mii-exa-medikation-medication-propofol  ](Medication-mii-exa-medikation-medication-propofol.md) |  |
+| [ mii-exa-medikation-medication-request-caelyx  ](MedicationRequest-mii-exa-medikation-medication-request-caelyx.md) |  |
+| [ mii-exa-medikation-medication-rezeptur  ](Medication-mii-exa-medikation-medication-rezeptur.md) |  |
+| [ mii-exa-medikation-medication-statement  ](MedicationStatement-mii-exa-medikation-medication-statement.md) |  |
+| [ mii-exa-medikation-medication-statement-caelyx  ](MedicationStatement-mii-exa-medikation-medication-statement-caelyx.md) |  |
+| [ mii-exa-medikation-medication-statement-concor  ](MedicationStatement-mii-exa-medikation-medication-statement-concor.md) |  |
+| [ mii-exa-medikation-medication-statement-hct  ](MedicationStatement-mii-exa-medikation-medication-statement-hct.md) |  |
+| [ mii-exa-medikation-medication-statement-ibuprofen  ](MedicationStatement-mii-exa-medikation-medication-statement-ibuprofen.md) |  |
+| [ mii-exa-medikation-medication-statement-intravenous-use  ](MedicationStatement-mii-exa-medikation-medication-statement-intravenous-use.md) |  |
+| [ mii-exa-medikation-medication-statement-offset  ](MedicationStatement-mii-exa-medikation-medication-statement-offset.md) |  |
+| [ mii-exa-medikation-medication-statement-periodisches-intervall  ](MedicationStatement-mii-exa-medikation-medication-statement-periodisches-intervall.md) |  |
+| [ mii-exa-medikation-medication-statement-zopiclon  ](MedicationStatement-mii-exa-medikation-medication-statement-zopiclon.md) |  |
+| [ mii-exa-medikation-medication-thiotepa  ](Medication-mii-exa-medikation-medication-thiotepa.md) |  |
+| [ mii-exa-medikation-procedure-thiotepa  ](Procedure-mii-exa-medikation-procedure-thiotepa.md) |  |
 
 ### Sonstige 
 
