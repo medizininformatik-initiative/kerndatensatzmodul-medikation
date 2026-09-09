@@ -99,7 +99,11 @@ version: "2027.0.0-ballot.rc4"
 packageId: de.medizininformatikinitiative.kerndatensatz.medikation
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2019+"
-releaseLabel: ci-build
+# DECIDED 2026-09-09: eine foermliche Publikation traegt 'Release' -- dieselbe
+# Entscheidung, die kerndatensatzmodul-GenetischeTests am 2026-09-02 getroffen
+# hat. Der Wert erscheint im Publish-Box-Text jeder gerenderten Seite; 'ci-build'
+# wies die publizierte Fassung faelschlich als CI-Build aus.
+releaseLabel: Release
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # Must equal the publication date; go-publish.yml validates this.
 date: "2026-09-09"
