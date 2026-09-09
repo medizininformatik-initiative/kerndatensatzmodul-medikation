@@ -1,4 +1,4 @@
-# Changelog - MII IG Medikation v2027.0.0-ballot.rc3
+# Changelog - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -7,9 +7,15 @@
 
 ### Release notes
 
-**Version 2027.0.0-ballot.rc3** — 2026-09-08
+**Version 2027.0.0-ballot.rc4** — 2026-09-09
 
-**`2027.0.0-ballot.rc1` and `rc2` carry git tags but were never released, both for reasons in the release tooling rather than in the guide. rc1 was skipped by a guard that read the commented-out `` placeholders in `sushi-config.yaml` as an un-instantiated template. rc2 built completely but could not be zipped for publication: `.agents/skills` is a versioned symlink to a `skills/` directory that did not exist in this repository. Both are fixed; rc3 is the first release of this sequence and is otherwise identical in content to rc1.**
+* `Fixed`: 19 unresolvable references in the example instances. Two targets existed under different ids after an earlier consolidation; `Patient` and `Encounter` had never existed in this module and are now supplied as minimal context instances.
+* `Fixed`: the twelve artefacts whose canonical does not end in their id are now declared via the `special-url` IG parameter — the mechanism the IG Publisher provides for exactly this case. The canonicals themselves are unchanged, as they have been published since 2026.0.1.
+* `Fixed`: the International Patient Summary link pointed at STU1; this module depends on IPS 2.0.0, which is STU2.
+
+**The IG Publisher QA report goes from 60 errors to 1. The remaining one, `IG_DEPENDENCY_DIRECT`, is not fixable from here: `de.ihe-d.terminology` declares a canonical without an `/ImplementationGuide/` segment and ships no such resource.**
+
+**Earlier release candidates of this sequence carry git tags but were not published: rc1 and rc2 failed in the release tooling, rc3 predates the corrections above.**
 
 * `Changed`: the implementation guide was migrated from Simplifier onto the MII KDS module template (IG Publisher). Content and artifact URLs are unchanged; the page structure now follows the module-wide page set, and the guide is bilingual.
 * `Changed`: the ATC value set now also includes version 2026 (previously 2018 to 2025).

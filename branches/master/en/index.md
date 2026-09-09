@@ -1,4 +1,4 @@
-# Home - MII IG Medikation v2027.0.0-ballot.rc3
+# Home - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation | *Version*:2027.0.0-ballot.rc3 |
-| Active as of 2026-09-08 | *Computable Name*:MII_IG_Medikation |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation | *Version*:2027.0.0-ballot.rc4 |
+| Active as of 2026-09-09 | *Computable Name*:MII_IG_Medikation |
 
 ### Introduction
 
@@ -19,7 +19,7 @@ The Medikation module carries the data elements for documenting medication order
 | | |
 | :--- | :--- |
 | Date | 2026-09-02 |
-| Version | 2027.0.0-ballot.rc3 (CalVer`YYYY.n.n`) |
+| Version | 2027.0.0-ballot.rc4 (CalVer`YYYY.n.n`) |
 | Status | active |
 | Realm | DE |
 

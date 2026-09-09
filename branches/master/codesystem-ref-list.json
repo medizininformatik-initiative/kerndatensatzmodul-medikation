@@ -58,7 +58,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_Medikation_PZN_Sales_Status_Codes",
     "title" : "MII CS Medikation PZN Sales Status Codes",
@@ -69,7 +69,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_CS_Medikation_Wirkstofftyp",
     "title" : "MII CS Medikation Wirkstofftyp",

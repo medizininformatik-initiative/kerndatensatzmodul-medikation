@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_Fallkontext",
     "title" : "MII VS Medikation Fallkontext",
@@ -14,7 +14,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_ASK",
     "title" : "MII VS Medikation ASK",
@@ -26,7 +26,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_ATC",
     "title" : "MII VS Medikation ATC",
@@ -41,7 +41,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
     "title" : "MII VS Medikation PZN Sales Status Codes",
@@ -50,7 +50,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_UNII",
     "title" : "MII VS Medikation UNII",
@@ -62,7 +62,7 @@
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
-    "version" : "2027.0.0-ballot.rc3",
+    "version" : "2027.0.0-ballot.rc4",
     "status" : "active",
     "name" : "MII_VS_Medikation_Wirkstofftyp",
     "title" : "MII VS Medikation Wirkstofftypen",

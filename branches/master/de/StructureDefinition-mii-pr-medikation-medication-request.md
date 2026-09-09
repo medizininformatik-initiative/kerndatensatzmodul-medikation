@@ -1,4 +1,4 @@
-# MII PR Medikation MedicationRequest - MII IG Medikation v2027.0.0-ballot.rc3
+# MII PR Medikation MedicationRequest - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest | *Version*:2027.0.0-ballot.rc3 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest | *Version*:2027.0.0-ballot.rc4 |
 | Active Stand: 2025-12-18 | *Maschinenlesbarer Name*:MII_PR_Medikation_MedicationRequest |
 
  
@@ -152,7 +152,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-medik
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_PR_Medikation_MedicationRequest",
   "_name" : {
     "extension" : [{

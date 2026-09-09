@@ -1,4 +1,4 @@
-# MII VS Medikation ATC - MII IG Medikation v2027.0.0-ballot.rc3
+# MII VS Medikation ATC - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc | *Version*:2027.0.0-ballot.rc4 |
 | Active as of 2025-03-19 | *Computable Name*:MII_VS_Medikation_ATC |
 | **Copyright/Legal**: WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM). | |
 
@@ -54,7 +54,7 @@ Enthaelt ATC-Codes der Versionen 2018 bis 2026
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_Medikation_ATC",
   "title" : "MII VS Medikation ATC",
   "status" : "active",

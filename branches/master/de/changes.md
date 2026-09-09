@@ -1,4 +1,4 @@
-# Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc3
+# Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungshistorie**
@@ -9,9 +9,15 @@
 
 ### Release Notes
 
-**Version 2027.0.0-ballot.rc3** — 08.09.2026
+**Version 2027.0.0-ballot.rc4** — 09.09.2026
 
-**Zu `2027.0.0-ballot.rc1` und `rc2` existieren Git-Tags, aber keine Releases — in beiden Faellen wegen der Release-Werkzeuge, nicht wegen des Leitfadens. rc1 wurde von einem Guard uebersprungen, der die auskommentierten ``-Platzhalter in `sushi-config.yaml` als leeres Template las. rc2 baute vollstaendig, liess sich aber nicht zur Publikation zippen: `.agents/skills` ist ein versionierter Symlink auf ein Verzeichnis `skills/`, das es in diesem Repository nicht gab. Beides ist behoben; rc3 ist das erste Release dieser Reihe und inhaltlich mit rc1 identisch.**
+* `Fixed`: 19 unaufloesbare Referenzen in den Beispielinstanzen. Zwei Ziele existierten nach einer frueheren Zusammenfuehrung unter anderen Ids; `Patient` und `Encounter` gab es in diesem Modul nie und werden nun als minimale Kontext-Instanzen mitgeliefert.
+* `Fixed`: Die zwoelf Artefakte, deren Canonical nicht auf ihre Id endet, sind jetzt ueber den IG-Parameter `special-url` ausgewiesen — den Mechanismus, den der IG Publisher genau dafuer vorsieht. Die Canonicals selbst bleiben unveraendert, da sie seit 2026.0.1 publiziert sind.
+* `Fixed`: Der Link auf die International Patient Summary verwies auf STU1; das Modul haengt an IPS 2.0.0, und das ist STU2.
+
+**Der QA-Report des IG Publishers faellt damit von 60 auf 1 Fehler. Der verbliebene, `IG_DEPENDENCY_DIRECT`, ist von hier aus nicht behebbar: `de.ihe-d.terminology` deklariert eine Canonical ohne `/ImplementationGuide/`-Segment und liefert keine solche Ressource.**
+
+**Zu den frueheren Release-Kandidaten dieser Reihe existieren Git-Tags, aber keine Publikationen: rc1 und rc2 scheiterten an den Release-Werkzeugen, rc3 liegt vor den oben genannten Korrekturen.**
 
 * `Changed`: Der Implementierungsleitfaden wurde von Simplifier auf das MII-KDS-Modul-Template (IG Publisher) migriert. Inhalte und Artefakt-URLs sind unveraendert; die Seitenstruktur folgt jetzt dem modulweit einheitlichen Seitenset, und der Leitfaden erscheint zweisprachig.
 * `Changed`: ATC-ValueSet um die Version 2026 erweitert (bisher 2018 bis 2025).

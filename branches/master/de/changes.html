@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc3</title>
+    <title>Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc4</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc3 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
 
 
 
@@ -279,7 +279,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc3) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc4) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Änderungshistorie</h2>
   
 
@@ -309,15 +309,27 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <h3 id="release-notes">Release Notes</h3>
 
-<p><strong>Version 2027.0.0-ballot.rc3</strong> — 08.09.2026</p>
+<p><strong>Version 2027.0.0-ballot.rc4</strong> — 09.09.2026</p>
 
-<p><em>Zu <code class="language-plaintext highlighter-rouge">2027.0.0-ballot.rc1</code> und <code class="language-plaintext highlighter-rouge">rc2</code> existieren Git-Tags, aber keine Releases — in
-beiden Faellen wegen der Release-Werkzeuge, nicht wegen des Leitfadens. rc1 wurde von
-einem Guard uebersprungen, der die auskommentierten ``-Platzhalter in
-<code class="language-plaintext highlighter-rouge">sushi-config.yaml</code> als leeres Template las. rc2 baute vollstaendig, liess sich aber
-nicht zur Publikation zippen: <code class="language-plaintext highlighter-rouge">.agents/skills</code> ist ein versionierter Symlink auf ein
-Verzeichnis <code class="language-plaintext highlighter-rouge">skills/</code>, das es in diesem Repository nicht gab. Beides ist behoben; rc3
-ist das erste Release dieser Reihe und inhaltlich mit rc1 identisch.</em></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Fixed</code>: 19 unaufloesbare Referenzen in den Beispielinstanzen. Zwei Ziele existierten
+nach einer frueheren Zusammenfuehrung unter anderen Ids; <code class="language-plaintext highlighter-rouge">Patient</code> und <code class="language-plaintext highlighter-rouge">Encounter</code> gab es
+in diesem Modul nie und werden nun als minimale Kontext-Instanzen mitgeliefert.</li>
+  <li><code class="language-plaintext highlighter-rouge">Fixed</code>: Die zwoelf Artefakte, deren Canonical nicht auf ihre Id endet, sind jetzt ueber
+den IG-Parameter <code class="language-plaintext highlighter-rouge">special-url</code> ausgewiesen — den Mechanismus, den der IG Publisher genau
+dafuer vorsieht. Die Canonicals selbst bleiben unveraendert, da sie seit 2026.0.1
+publiziert sind.</li>
+  <li><code class="language-plaintext highlighter-rouge">Fixed</code>: Der Link auf die International Patient Summary verwies auf STU1; das Modul haengt
+an IPS 2.0.0, und das ist STU2.</li>
+</ul>
+
+<p><em>Der QA-Report des IG Publishers faellt damit von 60 auf 1 Fehler. Der verbliebene,
+<code class="language-plaintext highlighter-rouge">IG_DEPENDENCY_DIRECT</code>, ist von hier aus nicht behebbar: <code class="language-plaintext highlighter-rouge">de.ihe-d.terminology</code> deklariert
+eine Canonical ohne <code class="language-plaintext highlighter-rouge">/ImplementationGuide/</code>-Segment und liefert keine solche Ressource.</em></p>
+
+<p><em>Zu den frueheren Release-Kandidaten dieser Reihe existieren Git-Tags, aber keine
+Publikationen: rc1 und rc2 scheiterten an den Release-Werkzeugen, rc3 liegt vor den oben
+genannten Korrekturen.</em></p>
 
 <ul>
   <li><code class="language-plaintext highlighter-rouge">Changed</code>: Der Implementierungsleitfaden wurde von Simplifier auf das MII-KDS-Modul-Template (IG Publisher) migriert. Inhalte und Artefakt-URLs sind unveraendert; die Seitenstruktur folgt jetzt dem modulweit einheitlichen Seitenset, und der Leitfaden erscheint zweisprachig.</li>
@@ -396,8 +408,8 @@ ist das erste Release dieser Reihe und inhaltlich mit rc1 identisch.</em></p>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc3 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 9, 2026 08:16+0000">2026-09-09</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Sep 9, 2026 10:16+0000">2026-09-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

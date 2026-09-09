@@ -1,4 +1,4 @@
-# MII VS Medikation Wirkstofftypen - MII IG Medikation v2027.0.0-ballot.rc3
+# MII VS Medikation Wirkstofftypen - MII IG Medikation v2027.0.0-ballot.rc4
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp | *Version*:2027.0.0-ballot.rc3 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp | *Version*:2027.0.0-ballot.rc4 |
 | Active as of 2024-11-14 | *Computable Name*:MII_VS_Medikation_Wirkstofftyp |
 
  
@@ -50,7 +50,7 @@ Codes zur Differenzierung von Wirkstoffen zwischen genauer Substanz (z.B. Salz, 
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp",
-  "version" : "2027.0.0-ballot.rc3",
+  "version" : "2027.0.0-ballot.rc4",
   "name" : "MII_VS_Medikation_Wirkstofftyp",
   "_name" : {
     "extension" : [{
