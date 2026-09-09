@@ -3,8 +3,13 @@
 
 ### Release notes
 
-**Version 2027.0.0-ballot.rc4** — 2026-09-09
+**Version 2027.0.0-ballot.rc5** — 2026-09-09
 
+* `Fixed`: publication metadata. `ci-build` pointed at `branches/dev/` — a branch this
+  repository does not have; its default branch is `master`. `status` said `release` although
+  the version is a ballot candidate, and `sequence` said `2026` on a 2027 version. The
+  `releaseLabel` is now `Release` rather than `ci-build`, so the published rendering no
+  longer presents itself as a continuous build.
 * `Fixed`: 19 unresolvable references in the example instances. Two targets existed under
   different ids after an earlier consolidation; `Patient` and `Encounter` had never existed
   in this module and are now supplied as minimal context instances.
