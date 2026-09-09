@@ -9,7 +9,7 @@
 
 ### FHIR-Profile
 
-Die Arbeiten der Kerndatensatzspezifikationen basieren, wo möglich, auf internationalen Standards und Terminologien. Insbesondere sei hier die [International Patient Summary](http://hl7.org/fhir/uv/ips/STU1/) hervorgehoben. Eine Anpassung an die Gegebenheiten des deutschen Gesundheitswesens erfolgt durch die Verwendung der [Deutschen Basisprofile](https://ig.fhir.de/basisprofile-de/) von HL7 Deutschland. Außerdem wird Kompatibilität zu den FHIR-Spezifikationen der [Kassenärztlichen Bundesvereinigung (KBV)](https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv) und der [gematik](https://simplifier.net/organization/gematik) angestrebt.
+Die Arbeiten der Kerndatensatzspezifikationen basieren, wo möglich, auf internationalen Standards und Terminologien. Insbesondere sei hier die [International Patient Summary](http://hl7.org/fhir/uv/ips/STU2/) hervorgehoben. Eine Anpassung an die Gegebenheiten des deutschen Gesundheitswesens erfolgt durch die Verwendung der [Deutschen Basisprofile](https://ig.fhir.de/basisprofile-de/) von HL7 Deutschland. Außerdem wird Kompatibilität zu den FHIR-Spezifikationen der [Kassenärztlichen Bundesvereinigung (KBV)](https://simplifier.net/organization/kassenrztlichebundesvereinigungkbv) und der [gematik](https://simplifier.net/organization/gematik) angestrebt.
 
 Alle Elemente des Kerndatensatzes, angepasst an die Details und Anforderungen der Use Cases der Medizininformatik-Initiative, werden in Form von FHIR StructureDefinitions beschrieben. Die Notwendigkeit der Anpassung der FHIR-Profile wird jeweils in textueller Form auf der Seite des Profils erläutert.
 
