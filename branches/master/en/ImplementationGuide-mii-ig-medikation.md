@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Medikation v2027.0.0-ballot.rc4
+# MII ImplementationGuide Resource - MII IG Medikation v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -118,7 +118,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc4"
+      "valueString" : "2027.0.0-ballot.rc5"
     },
     {
       "url" : "uri",
@@ -218,7 +218,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_IG_Medikation",
   "title" : "MII IG Medikation",
   "status" : "active",

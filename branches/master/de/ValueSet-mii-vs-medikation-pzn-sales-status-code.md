@@ -1,4 +1,4 @@
-# MII VS Medikation PZN Sales Status Codes - MII IG Medikation v2027.0.0-ballot.rc4
+# MII VS Medikation PZN Sales Status Codes - MII IG Medikation v2027.0.0-ballot.rc5
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot.rc4 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot.rc5 |
 | Active Stand: 2026-09-09 | *Maschinenlesbarer Name*:MII_VS_Medikation_PZN_Sales_Status_Codes |
 | **Copyright/Rechtliches**: Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt. | |
 
@@ -41,12 +41,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
   "title" : "MII VS Medikation PZN Sales Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-09T12:21:13+00:00",
+  "date" : "2026-09-09T13:32:22+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

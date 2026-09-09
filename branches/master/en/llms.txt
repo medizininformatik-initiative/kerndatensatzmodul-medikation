@@ -1,4 +1,4 @@
-# de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc4: MII IG Medikation(en)
+# de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc5: MII IG Medikation(en)
 
 ## Pages
 

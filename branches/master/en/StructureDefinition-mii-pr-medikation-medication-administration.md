@@ -1,4 +1,4 @@
-# MII PR Medikation MedicationAdministration - MII IG Medikation v2027.0.0-ballot.rc4
+# MII PR Medikation MedicationAdministration - MII IG Medikation v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration | *Version*:2027.0.0-ballot.rc4 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration | *Version*:2027.0.0-ballot.rc5 |
 | Active as of 2025-12-18 | *Computable Name*:MII_PR_Medikation_MedicationAdministration |
 
  
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-medikation
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_PR_Medikation_MedicationAdministration",
   "_name" : {
     "extension" : [{

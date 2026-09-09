@@ -6,7 +6,7 @@
 <html xml:lang="de" xmlns="http://www.w3.org/1999/xhtml" lang="de" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc4</title>
+    <title>Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc5</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -141,7 +141,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">MII IG Medikation</span>
             <br/>
-            <span style="display:inline-block;">2027.0.0-ballot.rc4 - 
+            <span style="display:inline-block;">2027.0.0-ballot.rc5 - 
 
 
 
@@ -279,7 +279,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc4) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">MII IG Medikation - Local Development build (v2027.0.0-ballot.rc5) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Änderungshistorie</h2>
   
 
@@ -309,9 +309,14 @@ Diese Seite enthält Übersetzungen aus der Originalsprache, in der der Leitfade
 
 <h3 id="release-notes">Release Notes</h3>
 
-<p><strong>Version 2027.0.0-ballot.rc4</strong> — 09.09.2026</p>
+<p><strong>Version 2027.0.0-ballot.rc5</strong> — 09.09.2026</p>
 
 <ul>
+  <li><code class="language-plaintext highlighter-rouge">Fixed</code>: Publikations-Metadaten korrigiert. <code class="language-plaintext highlighter-rouge">ci-build</code> verwies auf <code class="language-plaintext highlighter-rouge">branches/dev/</code> —
+ein Branch, den dieses Repository nicht hat; der Default-Branch heisst <code class="language-plaintext highlighter-rouge">master</code>. <code class="language-plaintext highlighter-rouge">status</code>
+stand auf <code class="language-plaintext highlighter-rouge">release</code>, obwohl die Version ein Ballot-Kandidat ist, und <code class="language-plaintext highlighter-rouge">sequence</code> auf <code class="language-plaintext highlighter-rouge">2026</code>
+bei einer 2027er-Version. Der <code class="language-plaintext highlighter-rouge">releaseLabel</code> lautet nun <code class="language-plaintext highlighter-rouge">Release</code> statt <code class="language-plaintext highlighter-rouge">ci-build</code>, damit
+die publizierte Fassung sich nicht als fortlaufender Build ausweist.</li>
   <li><code class="language-plaintext highlighter-rouge">Fixed</code>: 19 unaufloesbare Referenzen in den Beispielinstanzen. Zwei Ziele existierten
 nach einer frueheren Zusammenfuehrung unter anderen Ids; <code class="language-plaintext highlighter-rouge">Patient</code> und <code class="language-plaintext highlighter-rouge">Encounter</code> gab es
 in diesem Modul nie und werden nun als minimale Kontext-Instanzen mitgeliefert.</li>
@@ -408,8 +413,8 @@ genannten Korrekturen.</em></p>
 
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
-          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc4 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Wed, Sep 9, 2026 12:21+0000">2026-09-09</span>
+          Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc5 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Erstellt <span title="Wed, Sep 9, 2026 13:32+0000">2026-09-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

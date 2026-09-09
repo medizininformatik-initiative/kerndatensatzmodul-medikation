@@ -1,4 +1,4 @@
-# MII VS Medikation UNII - MII IG Medikation v2027.0.0-ballot.rc4
+# MII VS Medikation UNII - MII IG Medikation v2027.0.0-ballot.rc5
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii | *Version*:2027.0.0-ballot.rc4 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii | *Version*:2027.0.0-ballot.rc5 |
 | Active as of 2025-11-05 | *Computable Name*:MII_VS_Medikation_UNII |
 | **Copyright/Legal**: U.S. Food and Drug Administration (FDA) | |
 
@@ -51,7 +51,7 @@ Enthaelt Unique Ingredient Identifier (UNII-Codes)
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii",
-  "version" : "2027.0.0-ballot.rc4",
+  "version" : "2027.0.0-ballot.rc5",
   "name" : "MII_VS_Medikation_UNII",
   "title" : "MII VS Medikation UNII",
   "status" : "active",
