@@ -1889,7 +1889,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "example",
-          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips",
           "description": "target site IPS"
         }
       },
