@@ -6,7 +6,7 @@
    "status": "ballot",
    "sequence": "2027",
    "desc": "MII Core Data Set module Medikation, release 2027.0.0-ballot, on the MII KDS module template.",
-   "first": true,
+   "first": false,
    "title": "MII Implementation Guide MII IG Medikation",
    "ci-build": "https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/branches/master/",
    "category": "Research",
