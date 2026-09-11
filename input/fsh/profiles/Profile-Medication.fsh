@@ -3,6 +3,18 @@ Parent: Medication
 Id: mii-pr-medikation-medication
 Title: "MII PR Medikation Medication"
 Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
 * insert Translation(^name, en-US, MII_PR_Medikation_Medication)
 * insert Translation(^title, en-US, MII PR Medikation Medication)

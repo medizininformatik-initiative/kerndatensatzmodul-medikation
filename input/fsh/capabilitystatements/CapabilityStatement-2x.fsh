@@ -41,6 +41,17 @@ RuleSet: SupportSpecialSearchParam (name, type, expectation)
 Instance: mii-cps-medikation-capabilitystatement
 InstanceOf: CapabilityStatement
 Usage: #definition
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* insert CRMIShareableCapabilityStatement
+* insert CRMIPublishableCapabilityStatement
+* insert CRMIKnowledgeCapabilitiesCapabilityStatement
+* insert CRMIVersionPolicyStrictInstance
+* insert CRMIPackageSource
+* insert CRMIArtifactUsageCapabilityStatement
+* insert CRMIApprovalDateInstance(2026-09-09)
+* insert CRMIResourceEffectivePeriodInstance
+* insert CRMIArtifactTopicInstance(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributorsInstance
 * url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CapabilityStatement/metadata"
 * insert Version
 * insert LicenseCodeableCCBY40Instance

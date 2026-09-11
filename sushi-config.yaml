@@ -162,24 +162,40 @@ extension:
         valueId: de.medizininformatikinitiative.kerndatensatz.medikation
       - url: version
         valueString: "2027.0.0-ballot.rc5"
+      # Die uri ist die Canonical DIESES Moduls -- mit `core/`, wie sie seit
+      # 2026.0.1 publiziert ist. kerndatensatz-basis traegt hier ebenfalls seine
+      # eigene Canonical (.../fhir/modul-base); dass die kein `core/` enthaelt,
+      # ist Eigenschaft von basis, nicht die Regel. Die Regel lautet: uri gleich
+      # Canonical. Ohne `core/` zeigte die Angabe auf einen Namensraum, unter dem
+      # dieses Modul nie publiziert wurde.
       - url: uri
-        valueUri: https://www.medizininformatik-initiative.de/fhir/modul-medikation
+        valueUri: https://www.medizininformatik-initiative.de/fhir/core/modul-medikation
   # Year this release sequence became effective
   # (for example, kerndatensatz-basis records "2026").
   - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
     valuePeriod:
       start: "2027"
+  # Autorenschaft: dieselbe wie in kerndatensatz-basis — das Modul Medikation
+  # wird von derselben Person fachlich verantwortet. Beim Port aus basis war die
+  # Adresse faelschlich als Platzhalter behandelt und ersetzt worden.
   - url: http://hl7.org/fhir/StructureDefinition/artifact-author
     valueContactDetail:
       telecom:
         - system: email
-          value: "thomas.debertshaeuser@charite.de"
+          value: "julian.sass@charite.de"
   # The MII-wide governance bodies below apply to every MII KDS module — for
   # example, kerndatensatz-basis records the same National Steering Committee as
   # reviewer and endorser. Adjust only if your module's governance differs.
   - url: http://hl7.org/fhir/StructureDefinition/artifact-editor
     valueContactDetail:
       name: Taskforce Core Data Set
+  # Redaktionelle Pflege dieses Moduls (Template-Migration, Release-Pflege).
+  # artifact-editor ist wiederholbar, wie reviewer und endorser darunter.
+  - url: http://hl7.org/fhir/StructureDefinition/artifact-editor
+    valueContactDetail:
+      telecom:
+        - system: email
+          value: "thomas.debertshaeuser@charite.de"
   - url: http://hl7.org/fhir/StructureDefinition/artifact-reviewer
     valueContactDetail:
       name: Interoperability Working Group

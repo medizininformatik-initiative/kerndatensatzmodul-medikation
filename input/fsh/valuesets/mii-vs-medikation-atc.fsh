@@ -2,6 +2,17 @@ ValueSet: MII_VS_Medikation_ATC
 Id: mii-vs-medikation-atc
 Title: "MII VS Medikation ATC"
 Description: "Enthaelt ATC-Codes der Versionen 2018 bis 2026" 
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIComputableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
+* insert CRMIApprovalDate(2026-09-09)
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^copyright = "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM)."
 * insert PR_CS_VS_Version

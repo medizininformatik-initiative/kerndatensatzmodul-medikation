@@ -3,6 +3,18 @@ Parent: Element
 Id: mii-lm-medikation
 Title: "MII LM Medikation"
 Description: "MII LogicalModel Modul Medikation"
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageLogicalModel
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
 * insert Translation(^name, en-US, MII_LM_Medikation)
 * insert Translation(^title, en-US, MII LM Medikation)
 * insert Translation(^description, en-US, MII LogicalModel Module Medikation)

@@ -19,6 +19,21 @@ CodeSystem: MII_CS_Medikation_PZN_Sales_Status_Codes
 Id: mii-cs-medikation-pzn-sales-status-code
 Title: "MII CS Medikation PZN Sales Status Codes"
 Description: "This code system contains the sales status codes (catalog #116) for medications in the http://fhir.de/CodeSystem/ifa/pzn CodeSystem. This representation was generated from the MMI Pharmindex R3 raw data files. It is distributed under license for the purposes of integration into the software systems of the Medical Informatics Initiative and the Network University Medicine."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^date = "2026-09-09"
+* insert CRMIShareableCodeSystem
+* insert CRMIPublishableCodeSystem
+// shr-1 verlangt: wenn knowledge capabilities angegeben sind, MUSS shareable
+// dabei sein. Die ...Publishable-Variante setzt nur publishable und ist fuer
+// CodeSystems gedacht, die das Shareable-Profil NICHT beanspruchen. Unsere tun
+// es (meta.profile crmi-shareablecodesystem), also die vollstaendige Variante.
+* insert CRMIKnowledgeCapabilitiesCodeSystem
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactContributors
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code"
 * ^status = #active
@@ -38,6 +53,18 @@ ValueSet: MII_VS_Medikation_PZN_Sales_Status_Codes
 Id: mii-vs-medikation-pzn-sales-status-code
 Title: "MII VS Medikation PZN Sales Status Codes"
 Description: "Alle Verkaufsstatus-Codes des CodeSystems MII CS Medikation PZN Sales Status Codes."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^date = "2026-09-09"
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIComputableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
+* insert CRMIApprovalDate(2026-09-09)
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code"
 * ^status = #active

@@ -4,6 +4,18 @@ Parent: List
 Id: mii-pr-medikation-medikationsliste
 Title: "MII PR Medikation Medikationsliste"
 Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste"
 * insert Translation(^name, en-US, MII_PR_Medikation_Medicationlist)
 * insert Translation(^title, de-DE, Medikationsliste)
@@ -98,6 +110,17 @@ ValueSet: MII_VS_Medikation_Fallkontext
 Id: mii-vs-medikation-fallkontext
 Title: "MII VS Medikation Fallkontext"
 Description: "Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet wird."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* insert CRMIShareableValueSet
+* insert CRMIPublishableValueSet
+* insert CRMIComputableValueSet
+* insert CRMIKnowledgeCapabilitiesValueSet
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
+* insert CRMIApprovalDate(2026-09-09)
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * insert PR_CS_VS_Version

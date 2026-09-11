@@ -2,6 +2,17 @@ Extension: MII_EX_Medikation_Wirkstoffrelation
 Id: mii-ex-medikation-wirkstoffrelation
 Title: "MII EX Medikation Wirkstoffrelation"
 Description: "Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageExtension
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
 * insert Translation(^name, en-US, MII_EX_Medikation_IngredientRelation)
 * insert Translation(^title, en-US, MII EX Medikation Ingredient Relation)
