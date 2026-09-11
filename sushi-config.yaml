@@ -281,7 +281,7 @@ dependencies:
   # German base profiles (kerndatensatz-basis pins the same 1.5.4).
   de.basisprofil.r4: 1.6.0
   # MII cross-module meta package (kerndatensatz-basis pins the same 2026.0.0).
-  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot.rc3
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot
   # R5→R4 cross-version extensions (kerndatensatz-basis pins the same 0.1.0).
   # basis needs it for R5 extensions — for example Encounter.plannedStartDate;
   # remove it if your module defines no R5 cross-version extensions.
