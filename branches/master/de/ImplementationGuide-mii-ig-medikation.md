@@ -122,7 +122,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "uri",
-      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-medikation"
+      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
     }],
     "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
   },
@@ -137,7 +137,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "valueContactDetail" : {
       "telecom" : [{
         "system" : "email",
-        "value" : "thomas.debertshaeuser@charite.de"
+        "value" : "julian.sass@charite.de"
       }]
     }
   },
@@ -145,6 +145,15 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
     "valueContactDetail" : {
       "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "thomas.debertshaeuser@charite.de"
+      }]
     }
   },
   {

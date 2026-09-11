@@ -20,7 +20,19 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecodesystem|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset|2.0.0"/>
   </parameter>
   <parameter>
     <name value="system-version"/>
@@ -33,6 +45,14 @@
   <parameter>
     <name value="system-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp|2027.0.0-ballot.rc5"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablecapabilitystatement|2.0.0"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -348,6 +368,14 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablestructuredefinition|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-canonical-version"/>
     <valueCanonical value="http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"/>
   </parameter>
   <parameter>
@@ -421,6 +449,10 @@
   <parameter>
     <name value="default-valueset-version"/>
     <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc|2027.0.0-ballot.rc5"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips|2.0.0"/>
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>

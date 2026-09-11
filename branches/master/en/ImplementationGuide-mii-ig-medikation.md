@@ -122,7 +122,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "uri",
-      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-medikation"
+      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
     }],
     "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
   },
@@ -137,7 +137,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "valueContactDetail" : {
       "telecom" : [{
         "system" : "email",
-        "value" : "thomas.debertshaeuser@charite.de"
+        "value" : "julian.sass@charite.de"
       }]
     }
   },
@@ -145,6 +145,15 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
     "valueContactDetail" : {
       "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "thomas.debertshaeuser@charite.de"
+      }]
     }
   },
   {

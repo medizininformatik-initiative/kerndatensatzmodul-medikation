@@ -38,7 +38,7 @@
       <valueString value="2027.0.0-ballot.rc5"/>
     </extension>
     <extension url="uri">
-      <valueUri value="https://www.medizininformatik-initiative.de/fhir/modul-medikation"/>
+      <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
@@ -50,13 +50,21 @@
     <valueContactDetail>
       <telecom>
         <system value="email"/>
-        <value value="thomas.debertshaeuser@charite.de"/>
+        <value value="julian.sass@charite.de"/>
       </telecom>
     </valueContactDetail>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
     <valueContactDetail>
       <name value="Taskforce Core Data Set"/>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/artifact-editor">
+    <valueContactDetail>
+      <telecom>
+        <system value="email"/>
+        <value value="thomas.debertshaeuser@charite.de"/>
+      </telecom>
     </valueContactDetail>
   </extension>
   <extension url="http://hl7.org/fhir/StructureDefinition/artifact-reviewer">

@@ -117,31 +117,61 @@
       "MedicationStatement"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-author": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-purpose": [
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "ImplementationGuide",
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
       "CapabilityStatement.rest.resource",
@@ -153,7 +183,11 @@
       "ImplementationGuide"
     ],
     "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -175,13 +209,25 @@
       "Medication.ingredient.strength.denominator"
     ],
     "http://hl7.org/fhir/StructureDefinition/package-source": [
-      "ImplementationGuide"
+      "CapabilityStatement.meta",
+      "CodeSystem.meta",
+      "ImplementationGuide",
+      "StructureDefinition.meta",
+      "ValueSet.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
-      "ImplementationGuide"
+      "CapabilityStatement",
+      "CodeSystem",
+      "ImplementationGuide",
+      "StructureDefinition",
+      "ValueSet"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

@@ -44,7 +44,7 @@
     },
     {
       "url" : "uri",
-      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-medikation"
+      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
     }],
     "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
   },
@@ -59,7 +59,7 @@
     "valueContactDetail" : {
       "telecom" : [{
         "system" : "email",
-        "value" : "thomas.debertshaeuser@charite.de"
+        "value" : "julian.sass@charite.de"
       }]
     }
   },
@@ -67,6 +67,15 @@
     "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
     "valueContactDetail" : {
       "name" : "Taskforce Core Data Set"
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+    "valueContactDetail" : {
+      "telecom" : [{
+        "system" : "email",
+        "value" : "thomas.debertshaeuser@charite.de"
+      }]
     }
   },
   {

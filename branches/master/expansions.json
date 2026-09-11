@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "04435ab8-8a9c-4a2b-b32d-49869932bd35",
+  "id" : "c4e83027-4126-4d4c-be69-e37f00c19699",
   "meta" : {
-    "lastUpdated" : "2026-09-09T14:23:03.009+00:00"
+    "lastUpdated" : "2026-09-11T09:33:11.809+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -10,7 +10,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -31,8 +48,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3738e848-3c2c-486c-85b8-01945f0eae3d",
-        "timestamp" : "2026-09-09T14:28:30+00:00",
+        "identifier" : "urn:uuid:3c3ccb2f-d6fb-4af2-84d6-5e83e1a22fe9",
+        "timestamp" : "2026-09-11T09:37:35+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -5071,7 +5088,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -5092,8 +5126,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:3738e848-3c2c-486c-85b8-01945f0eae3d",
-        "timestamp" : "2026-09-09T14:28:30+00:00",
+        "identifier" : "urn:uuid:3c3ccb2f-d6fb-4af2-84d6-5e83e1a22fe9",
+        "timestamp" : "2026-09-11T09:37:35+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -10132,7 +10166,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -10153,8 +10204,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:8c3a1718-a4eb-479d-940d-1493a5a3e5f5",
-        "timestamp" : "2026-09-09T14:28:31+00:00",
+        "identifier" : "urn:uuid:5add833b-6580-43ac-bd5c-4346412b635b",
+        "timestamp" : "2026-09-11T09:37:35+00:00",
         "total" : 22207,
         "offset" : 0,
         "parameter" : [{
@@ -14193,7 +14244,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -14214,8 +14282,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fcb0906d-4461-4f6a-9eb9-69cf446f065d",
-        "timestamp" : "2026-09-09T14:28:32+00:00",
+        "identifier" : "urn:uuid:6735c78d-d504-48c4-af8f-c69c24316137",
+        "timestamp" : "2026-09-11T09:37:35+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -19322,7 +19390,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -19343,8 +19428,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:fcb0906d-4461-4f6a-9eb9-69cf446f065d",
-        "timestamp" : "2026-09-09T14:28:32+00:00",
+        "identifier" : "urn:uuid:6735c78d-d504-48c4-af8f-c69c24316137",
+        "timestamp" : "2026-09-11T09:37:35+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -24451,7 +24536,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -24472,8 +24574,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:f6fc6b09-bac3-4ef8-90d7-5ef0ef1cdc7b",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:00c11fe9-eb3d-43dc-9c71-4fa69bcc6041",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 69313,
         "offset" : 0,
         "parameter" : [{
@@ -28580,7 +28682,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28601,8 +28720,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:166413b3-850d-4c01-b636-f2735e791931",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:646002e0-c170-40b3-91e1-4a49ef1da26b",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28657,7 +28776,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28678,8 +28814,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:166413b3-850d-4c01-b636-f2735e791931",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:646002e0-c170-40b3-91e1-4a49ef1da26b",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28734,7 +28870,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28755,8 +28908,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b5e882c2-912f-46e1-807a-6b7326a168fd",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:fda61fc3-0f22-492c-a817-add49961a6b1",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -28807,7 +28960,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28819,7 +28989,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-09T14:23:03+00:00",
+      "date" : "2026-09-09",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28828,8 +28998,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:467138f7-c3bf-40f9-9804-ed4b41099de9",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:eb1a30bc-dc5e-484a-836e-4ef83429b70f",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -28889,7 +29059,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28901,7 +29088,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-09T14:23:03+00:00",
+      "date" : "2026-09-09",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28910,8 +29097,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:467138f7-c3bf-40f9-9804-ed4b41099de9",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:eb1a30bc-dc5e-484a-836e-4ef83429b70f",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -28971,7 +29158,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -28983,7 +29187,7 @@
       "title" : "MII VS Medikation PZN Sales Status Codes",
       "status" : "active",
       "experimental" : false,
-      "date" : "2026-09-09T14:23:03+00:00",
+      "date" : "2026-09-09",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28992,8 +29196,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:7810a9e1-2f7c-48f3-a1a5-189e8cca6f4f",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:ae0e624a-5729-4a3d-9b50-412febf57127",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -29048,7 +29252,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -29069,8 +29290,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aaf10975-4fa3-476d-91b3-6de0d5ad6564",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:5e557d58-b992-4f67-a7d2-147db3a94685",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -34109,7 +34330,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -34130,8 +34368,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:aaf10975-4fa3-476d-91b3-6de0d5ad6564",
-        "timestamp" : "2026-09-09T14:28:38+00:00",
+        "identifier" : "urn:uuid:5e557d58-b992-4f67-a7d2-147db3a94685",
+        "timestamp" : "2026-09-11T09:37:41+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -39170,7 +39408,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -39191,8 +39446,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5d319442-1900-4662-959c-6d17a71826fb",
-        "timestamp" : "2026-09-09T14:28:39+00:00",
+        "identifier" : "urn:uuid:6a704a52-f717-4f2d-86f7-92b448b25d63",
+        "timestamp" : "2026-09-11T09:37:42+00:00",
         "total" : 163973,
         "offset" : 0,
         "parameter" : [{
@@ -43231,7 +43486,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -43278,8 +43550,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6182e884-a897-4c6b-9044-632e51447bc2",
-        "timestamp" : "2026-09-09T14:28:39+00:00",
+        "identifier" : "urn:uuid:737e7182-f238-452c-9d42-d53ec0ff0f63",
+        "timestamp" : "2026-09-11T09:37:42+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43329,7 +43601,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -43376,8 +43665,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:6182e884-a897-4c6b-9044-632e51447bc2",
-        "timestamp" : "2026-09-09T14:28:39+00:00",
+        "identifier" : "urn:uuid:737e7182-f238-452c-9d42-d53ec0ff0f63",
+        "timestamp" : "2026-09-11T09:37:42+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -43427,7 +43716,24 @@
     "resource" : {
       "resourceType" : "ValueSet",
       "meta" : {
-        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+        "extension" : [{
+          "extension" : [{
+            "url" : "packageId",
+            "valueId" : "de.medizininformatikinitiative.kerndatensatz.medikation"
+          },
+          {
+            "url" : "version",
+            "valueString" : "2027.0.0-ballot.rc5"
+          },
+          {
+            "url" : "uri",
+            "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
+          }],
+          "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
+        }],
+        "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset",
+        "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset"]
       },
       "text" : {
         "status" : "generated",
@@ -43474,8 +43780,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:dc07d53d-2a51-47ea-af38-212c83d53be6",
-        "timestamp" : "2026-09-09T14:28:39+00:00",
+        "identifier" : "urn:uuid:e8a3055a-a7fa-4815-9a93-395b9284e065",
+        "timestamp" : "2026-09-11T09:37:42+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
