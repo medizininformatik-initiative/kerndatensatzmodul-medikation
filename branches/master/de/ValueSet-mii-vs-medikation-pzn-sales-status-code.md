@@ -1,4 +1,4 @@
-# MII VS Medikation PZN Sales Status Codes - MII IG Medikation v2027.0.0-ballot.rc5
+# MII VS Medikation PZN Sales Status Codes - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot.rc5 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot |
 | Active Stand: 2026-09-09 | *Maschinenlesbarer Name*:MII_VS_Medikation_PZN_Sales_Status_Codes |
 | **Copyright/Rechtliches**: Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt. | |
 
@@ -45,7 +45,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc5"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -172,7 +172,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Medikation_PZN_Sales_Status_Codes",
   "title" : "MII VS Medikation PZN Sales Status Codes",
   "status" : "active",

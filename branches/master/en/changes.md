@@ -1,4 +1,4 @@
-# Changelog - MII IG Medikation v2027.0.0-ballot.rc5
+# Changelog - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -7,7 +7,13 @@
 
 ### Release notes
 
-**Version 2027.0.0-ballot.rc5** — 2026-09-09
+**Version 2027.0.0-ballot** — 2026-09-11
+
+* `Added`: every conformance artefact now carries CRMI metadata — the shareable / publishable / computable profile claims, knowledge capabilities, version policy, package source, approval date, effective period, artefact topic and contributors. The rulesets had been present since the template migration but were never applied.
+* `Fixed`: `dosage.site` bound to `target-site-uv-ips`, which IPS removed in 2.0. It now binds `body-site-uv-ips` — content-identical (SNOMED CT descendants of 442083009).
+* `Changed`: `artifact-author` is the module's author again; the editorial upkeep of this module is recorded as a second `artifact-editor`.
+
+**This is the ballot version. `2027.0.0-ballot.rc1` … `rc5` carry git tags; rc1 and rc2 were never released (release-tooling defects), rc3 and rc4 predate the corrections above, and rc5 was the first formally published candidate.**
 
 * `Fixed`: publication metadata. `ci-build` pointed at `branches/dev/` — a branch this repository does not have; its default branch is `master`. `status` said `release` although the version is a ballot candidate, and `sequence` said `2026` on a 2027 version. The `releaseLabel` is now `Release` rather than `ci-build`, so the published rendering no longer presents itself as a continuous build.
 * `Fixed`: 19 unresolvable references in the example instances. Two targets existed under different ids after an earlier consolidation; `Patient` and `Encounter` had never existed in this module and are now supplied as minimal context instances.

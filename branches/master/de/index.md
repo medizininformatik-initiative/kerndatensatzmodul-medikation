@@ -1,4 +1,4 @@
-# Startseite - MII IG Medikation v2027.0.0-ballot.rc5
+# Startseite - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Startseite**
@@ -7,15 +7,15 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation | *Version*:2027.0.0-ballot.rc5 |
-| Active Stand: 2026-09-09 | *Maschinenlesbarer Name*:MII_IG_Medikation |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation | *Version*:2027.0.0-ballot |
+| Active Stand: 2026-09-11 | *Maschinenlesbarer Name*:MII_IG_Medikation |
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz-Moduls **Medikation** der Medizininformatik-Initiative (MII). Im Folgenden werden die Use Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | | |
 | :--- | :--- |
 | Datum | 2026-09-02 |
-| Version | 2027.0.0-ballot.rc5 |
+| Version | 2027.0.0-ballot |
 | Status | active |
 | Realm | DE |
 

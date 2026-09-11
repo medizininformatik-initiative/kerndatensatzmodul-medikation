@@ -1,4 +1,4 @@
-# Sicherheit und Datenschutz - MII IG Medikation v2027.0.0-ballot.rc5
+# Sicherheit und Datenschutz - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Sicherheit und Datenschutz**

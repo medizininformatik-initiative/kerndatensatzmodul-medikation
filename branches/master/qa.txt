@@ -3,7 +3,7 @@ MII_IG_Medikation : Validation Results
 
 err = 1, warn = 431, info = 1956
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Fri Sep 11 09:39:12 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc5 (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
+Generated Fri Sep 11 10:18:44 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
  Build Errors : 0 / 29 / 0
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement : 0 / 2 / 140
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-pzn-sales-status-code : 0 / 3 / 19
@@ -99,7 +99,7 @@ INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[11].definition:
 INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[12].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/List-source to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[13].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/List-status to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[14].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/List-subject to 4.0.1
-INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[15].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode to 2027.0.0-ballot.rc3
+INFORMATION: CapabilityStatement.rest[0].resource[0].searchParam[15].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode to 2027.0.0-ballot
 INFORMATION: CapabilityStatement.rest[0].resource[1].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/Medication to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[2].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-id to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[3].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-lastUpdated to 4.0.1
@@ -113,9 +113,9 @@ INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[10].definition:
 INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[11].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Medication-lot-number to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[12].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Medication-manufacturer to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[13].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Medication-status to 4.0.1
-INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[14].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[15].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[16].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator to 2027.0.0-ballot.rc3
+INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[14].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[15].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[1].searchParam[16].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator to 2027.0.0-ballot
 INFORMATION: CapabilityStatement.rest[0].resource[2].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationAdministration to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[2].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-id to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[3].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-lastUpdated to 4.0.1
@@ -132,14 +132,14 @@ INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[13].definition:
 INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[14].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationAdministration-request to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[15].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/medications-status to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[16].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationAdministration-subject to 4.0.1
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[17].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[18].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[19].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[20].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof to 2027.0.0-ballot.rc3
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[17].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[18].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[19].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[20].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[2].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof to 2027.0.0-ballot
 INFORMATION: CapabilityStatement.rest[0].resource[3].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationRequest to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[2].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-id to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[3].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-lastUpdated to 4.0.1
@@ -160,19 +160,19 @@ INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[17].definition:
 INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[18].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationRequest-requester to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[19].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/medications-status to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[20].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationRequest-subject to 4.0.1
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[25].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[26].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[27].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[28].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[29].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[30].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[31].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[32].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[33].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot.rc3
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[25].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[26].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[27].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[28].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[29].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[30].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[31].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[32].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[3].searchParam[33].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot
 INFORMATION: CapabilityStatement.rest[0].resource[4].profile: Pinned the version of http://hl7.org/fhir/StructureDefinition/MedicationStatement to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[2].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-id to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[3].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/Resource-lastUpdated to 4.0.1
@@ -188,19 +188,19 @@ INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[12].definition:
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[13].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationStatement-source to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[14].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/medications-status to 4.0.1
 INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[15].definition: Pinned the version of http://hl7.org/fhir/SearchParameter/MedicationStatement-subject to 4.0.1
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[16].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[17].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[18].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[19].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[20].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[25].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[26].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[27].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot.rc3
-INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[28].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot.rc3
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[16].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[17].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[18].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[19].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[20].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[21].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[22].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[23].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[24].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[25].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[26].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[27].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator to 2027.0.0-ballot
+INFORMATION: CapabilityStatement.rest[0].resource[4].searchParam[28].definition: Pinned the version of https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio to 2027.0.0-ballot
 INFORMATION: CapabilityStatement/mii-cps-medikation-capabilitystatement: CapabilityStatement.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/mii-cps-medikation-capabilitystatement: CapabilityStatement.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/mii-cps-medikation-capabilitystatement: CapabilityStatement.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablecapabilitystatement|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -273,30 +273,30 @@ WARNING: Resource: The resource CodeSystem/mii-cs-medikation-wirkstofftyp should
 INFORMATION: ImplementationGuide.meta.profile[0]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide to 2.0.0
 INFORMATION: ImplementationGuide.meta.profile[1]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide to 2.0.0
 INFORMATION: ImplementationGuide.meta.profile[2]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide to 2.0.0
-INFORMATION: ImplementationGuide.definition.resource[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[1].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[2].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[23].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[24].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[25].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[26].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[31].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[32].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[33].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[35].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[37].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[38].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[39].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[40].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[41].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
-INFORMATION: ImplementationGuide.definition.resource[42].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
+INFORMATION: ImplementationGuide.definition.resource[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[1].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[2].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[22].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[23].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[24].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[25].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[26].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[27].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[28].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[29].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[30].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[31].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[32].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[33].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[34].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[35].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[36].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[37].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[38].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[39].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[40].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[41].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
+INFORMATION: ImplementationGuide.definition.resource[42].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
 INFORMATION: ImplementationGuide.title: Unused 'de' translation 'MII Implementation Guide MII IG Medikation' -> 'MII Implementierungsleitfaden MII IG Medikation'
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
@@ -421,7 +421,7 @@ WARNING: Medication/mii-exa-medikation-medication-propofol: Medication.ingredien
 == fsh-generated/resources/Medication-mii-exa-medikation-medication-rezeptur.json ==
 INFORMATION: Medication/mii-exa-medikation-medication-rezeptur: Medication.form: Reference to trial-use ValueSet http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform|2.0.0
 INFORMATION: Medication/mii-exa-medikation-medication-rezeptur: Medication.form: None of the codings provided are in the value set 'Medicine EDQM Doseform - IPS' (http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform|2.0.0), and a coding is recommended to come from this value set (codes = http://standardterms.edqm.eu#11210000)
-INFORMATION: Medication/mii-exa-medikation-medication-rezeptur: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc5 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Medication/mii-exa-medikation-medication-rezeptur: Medication.ingredient[0].item.ofType(CodeableConcept).coding[0]: This element does not match any known slice defined in the profile https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Medication/mii-exa-medikation-medication-rezeptur: Medication.ingredient[0].strength.numerator: Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mg')
 WARNING: Medication/mii-exa-medikation-medication-rezeptur: Medication.ingredient[0].strength.denominator: Resolved system http://unitsofmeasure.org (v3.0.1), but the definition doesn't include any codes, so the code has not been validated (for 'http://unitsofmeasure.org#mL')
 == fsh-generated/resources/Medication-mii-exa-medikation-medication-thiotepa.json ==
@@ -559,7 +559,7 @@ INFORMATION: StructureDefinition.snapshot.element[0].constraint[1].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[4].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[6].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[6].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[7].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -567,7 +567,7 @@ INFORMATION: StructureDefinition.snapshot.element[8].constraint[0].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[9].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[10].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[11].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[3].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/wirkstofftyp to 2027.0.0-ballot
 INFORMATION: StructureDefinition/mii-ex-medikation-wirkstofftyp: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-ex-medikation-wirkstofftyp: StructureDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-ex-medikation-wirkstofftyp: StructureDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1063,7 +1063,7 @@ INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[30].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1100,24 +1100,24 @@ INFORMATION: StructureDefinition.snapshot.element[62].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[63].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[65].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[66].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[66].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[66].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[67].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[67].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[67].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[68].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[68].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[69].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[70].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Substance to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[70].type[0].targetProfile[1]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[70].type[0].targetProfile[1]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[70].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[71].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[73].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[74].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[75].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[75].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[75].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[77].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1126,7 +1126,7 @@ INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[83].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[83].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[85].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1164,14 +1164,14 @@ INFORMATION: StructureDefinition.snapshot.element[117].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[117].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[118].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[119].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[10].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[19].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform to 2.0.0
-INFORMATION: StructureDefinition.differential.element[26].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[27].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[26].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[27].type[0].profile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[29].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Substance to 4.0.1
-INFORMATION: StructureDefinition.differential.element[29].type[0].targetProfile[1]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[35].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[29].type[0].targetProfile[1]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[32].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[35].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii to 2027.0.0-ballot
 INFORMATION: StructureDefinition/mii-pr-medikation-medication: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-pr-medikation-medication: StructureDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-pr-medikation-medication: StructureDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1239,7 +1239,7 @@ INFORMATION: StructureDefinition.snapshot.element[20].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[21].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[24].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1254,7 +1254,7 @@ INFORMATION: StructureDefinition.snapshot.element[34].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[37].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[37].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1379,8 +1379,8 @@ INFORMATION: StructureDefinition.snapshot.element[152].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[153].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[154].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[155].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[40].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[45].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition.differential.element[68].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
@@ -1451,7 +1451,7 @@ INFORMATION: StructureDefinition.snapshot.element[22].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[23].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[24].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[26].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[26].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1466,7 +1466,7 @@ INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[37].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[38].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[39].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[39].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[39].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1510,7 +1510,7 @@ INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[80].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[81].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[81].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[83].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[84].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1764,10 +1764,10 @@ INFORMATION: StructureDefinition.snapshot.element[306].binding.valueSet: Pinned 
 INFORMATION: StructureDefinition.snapshot.element[307].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[308].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[309].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[35].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
-INFORMATION: StructureDefinition.differential.element[35].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[35].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[69].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition/mii-pr-medikation-medication-request: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1839,10 +1839,10 @@ INFORMATION: StructureDefinition.snapshot.element[25].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[26].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[26].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/medication-statement-category to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[27].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[27].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[27].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[28].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[29].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[30].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1857,7 +1857,7 @@ INFORMATION: StructureDefinition.snapshot.element[40].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[41].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[42].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[43].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[43].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[43].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[45].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[46].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1895,7 +1895,7 @@ INFORMATION: StructureDefinition.snapshot.element[77].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[78].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[79].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
 INFORMATION: StructureDefinition.snapshot.element[79].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[79].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[79].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[81].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[82].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2124,11 +2124,11 @@ INFORMATION: StructureDefinition.snapshot.element[285].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[286].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[287].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[11].binding.valueSet: Pinned the version of http://hl7.org/fhir/ValueSet/medication-statement-category to 4.0.1
-INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[14].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[40].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
-INFORMATION: StructureDefinition.differential.element[40].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[40].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[79].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition.differential.element[86].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
@@ -2178,8 +2178,8 @@ INFORMATION: StructureDefinition.snapshot.element[0].constraint[4].source: Pinne
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[5].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/List to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[6].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/List to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[0].constraint[7].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/List to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[8].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.snapshot.element[0].constraint[9].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[8].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: StructureDefinition.snapshot.element[0].constraint[9].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[2].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[4].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
@@ -2214,7 +2214,7 @@ INFORMATION: StructureDefinition.snapshot.element[30].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[31].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[32].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[33].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[33].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[35].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[36].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2238,14 +2238,14 @@ INFORMATION: StructureDefinition.snapshot.element[51].constraint[1].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[52].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[53].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[54].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.snapshot.element[55].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.snapshot.element[55].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
 INFORMATION: StructureDefinition.snapshot.element[55].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[56].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
-INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[0].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot.rc5
-INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[0].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[0].constraint[1].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste to 2027.0.0-ballot
+INFORMATION: StructureDefinition.differential.element[12].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext to 2027.0.0-ballot
 INFORMATION: StructureDefinition.differential.element[15].type[0].targetProfile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/Patient to 4.0.1
-INFORMATION: StructureDefinition.differential.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[21].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot
 INFORMATION: StructureDefinition/mii-pr-medikation-medikationsliste: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-pr-medikation-medikationsliste: StructureDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-pr-medikation-medikationsliste: StructureDefinition.extension[5]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -2380,7 +2380,7 @@ INFORMATION: ValueSet/mii-vs-medikation-fallkontext: ValueSet.extension[14]: Thi
 INFORMATION: ValueSet/mii-vs-medikation-fallkontext: ValueSet.extension[15]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Resource: The resource ValueSet/mii-vs-medikation-fallkontext should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/ValueSet-mii-vs-medikation-pzn-sales-status-code.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code to 2027.0.0-ballot.rc5
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code to 2027.0.0-ballot
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet.meta.profile[1]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset to 2.0.0
 INFORMATION: ValueSet.meta.profile[2]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset to 2.0.0
@@ -2450,7 +2450,7 @@ INFORMATION: ValueSet/mii-vs-medikation-unii: ValueSet.extension[15]: This eleme
 WARNING: Resource: The resource ValueSet/mii-vs-medikation-unii should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 INFORMATION: ValueSet.where(id = 'mii-vs-medikation-unii'): The value set expansion is too large, and only a subset has been displayed
 == fsh-generated/resources/ValueSet-mii-vs-medikation-wirkstofftyp.json ==
-INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp to 2027.0.0-ballot.rc5
+INFORMATION: ValueSet.compose.include[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/wirkstofftyp to 2027.0.0-ballot
 INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablevalueset to 4.0.2
 INFORMATION: ValueSet.meta.profile[1]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablevalueset to 2.0.0
 INFORMATION: ValueSet.meta.profile[2]: Pinned the version of http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-computablevalueset to 2.0.0

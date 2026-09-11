@@ -1,4 +1,4 @@
-# MII VS Medikation Fallkontext - MII IG Medikation v2027.0.0-ballot.rc5
+# MII VS Medikation Fallkontext - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext | *Version*:2027.0.0-ballot |
 | Active as of 2024-11-14 | *Computable Name*:MII_VS_Medikation_Fallkontext |
 | **Copyright/Legal**: This artifact includes content from IHE Deutschland e.V. (https://www.ihe-d.de/) | |
 
@@ -46,7 +46,7 @@ Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet w
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc5"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -183,7 +183,7 @@ Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet w
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_VS_Medikation_Fallkontext",
   "title" : "MII VS Medikation Fallkontext",
   "status" : "active",

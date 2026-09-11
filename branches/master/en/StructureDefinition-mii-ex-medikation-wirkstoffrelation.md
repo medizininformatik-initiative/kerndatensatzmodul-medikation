@@ -1,4 +1,4 @@
-# MII EX Medikation Wirkstoffrelation - MII IG Medikation v2027.0.0-ballot.rc5
+# MII EX Medikation Wirkstoffrelation - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation | *Version*:2027.0.0-ballot.rc5 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation | *Version*:2027.0.0-ballot |
 | Active as of 2024-11-14 | *Computable Name*:MII_EX_Medikation_Wirkstoffrelation |
 
 The extension enables the assignment of an exact substance e.g. salt, ester to a general substance.
@@ -52,7 +52,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-medikation
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc5"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -188,7 +188,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-ex-medikation
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_EX_Medikation_Wirkstoffrelation",
   "_name" : {
     "extension" : [{

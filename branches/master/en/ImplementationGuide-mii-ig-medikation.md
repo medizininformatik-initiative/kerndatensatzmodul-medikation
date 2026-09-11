@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII IG Medikation v2027.0.0-ballot.rc5
+# MII ImplementationGuide Resource - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -91,7 +91,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "language" : "en",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2026-09-09"
+    "valueDate" : "2026-09-11"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -118,7 +118,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "version",
-      "valueString" : "2027.0.0-ballot.rc5"
+      "valueString" : "2027.0.0-ballot"
     },
     {
       "url" : "uri",
@@ -227,12 +227,12 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_IG_Medikation",
   "title" : "MII IG Medikation",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-09",
+  "date" : "2026-09-11",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -293,7 +293,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_medizininformatikinitiative_kerndatensatz_meta",
     "uri" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
     "packageId" : "de.medizininformatikinitiative.kerndatensatz.meta",
-    "version" : "2027.0.0-ballot.rc3"
+    "version" : "2027.0.0-ballot"
   },
   {
     "id" : "hl7_fhir_uv_xver_r5_r4",

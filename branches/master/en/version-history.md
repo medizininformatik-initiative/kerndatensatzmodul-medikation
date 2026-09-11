@@ -1,4 +1,4 @@
-# Versioning - MII IG Medikation v2027.0.0-ballot.rc5
+# Versioning - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Versioning**
@@ -9,7 +9,7 @@
 
 The **MII IG Medikation** module follows the KDS calendar-versioning (CalVer) scheme in a SemVer-compatible numeric form:
 
-* format **`YYYY.MINOR.PATCH[-label]`** — the current version is `2027.0.0-ballot.rc5`;
+* format **`YYYY.MINOR.PATCH[-label]`** — the current version is `2027.0.0-ballot`;
 * **`YYYY`** — the year in which the guide applies and is intended to be used; it takes the place of the major version;
 * **`MINOR`** — incremented for non-breaking additions and refinements;
 * **`PATCH`** — incremented for corrections and bug fixes;

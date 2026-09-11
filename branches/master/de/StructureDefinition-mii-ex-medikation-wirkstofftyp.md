@@ -1,4 +1,4 @@
-# MII EX Medikation Wirkstofftyp - MII IG Medikation v2027.0.0-ballot.rc5
+# MII EX Medikation Wirkstofftyp - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp | *Version*:2027.0.0-ballot.rc5 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp | *Version*:2027.0.0-ballot |
 | Active Stand: 2024-11-14 | *Maschinenlesbarer Name*:MII_EX_Medikation_Wirkstofftyp |
 
 Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff.
@@ -95,7 +95,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-medik
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc5"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -231,7 +231,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-ex-medik
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_EX_Medikation_Wirkstofftyp",
   "_name" : {
     "extension" : [{

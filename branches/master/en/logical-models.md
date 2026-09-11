@@ -1,4 +1,4 @@
-# Logical Models - MII IG Medikation v2027.0.0-ballot.rc5
+# Logical Models - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Logical Models**

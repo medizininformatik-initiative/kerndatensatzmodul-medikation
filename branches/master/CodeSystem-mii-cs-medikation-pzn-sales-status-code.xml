@@ -8,7 +8,7 @@
         <valueId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
       </extension>
       <extension url="version">
-        <valueString value="2027.0.0-ballot.rc5"/>
+        <valueString value="2027.0.0-ballot"/>
       </extension>
       <extension url="uri">
         <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"/>
@@ -117,7 +117,7 @@
     </valueCoding>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code"/>
-  <version value="2027.0.0-ballot.rc5"/>
+  <version value="2027.0.0-ballot"/>
   <name value="MII_CS_Medikation_PZN_Sales_Status_Codes"/>
   <title value="MII CS Medikation PZN Sales Status Codes"/>
   <status value="active"/>

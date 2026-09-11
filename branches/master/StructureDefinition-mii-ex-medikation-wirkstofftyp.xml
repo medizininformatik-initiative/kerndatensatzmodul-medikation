@@ -8,7 +8,7 @@
         <valueId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
       </extension>
       <extension url="version">
-        <valueString value="2027.0.0-ballot.rc5"/>
+        <valueString value="2027.0.0-ballot"/>
       </extension>
       <extension url="uri">
         <valueUri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"/>
@@ -141,7 +141,7 @@
     </valueCodeableConcept>
   </extension>
   <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"/>
-  <version value="2027.0.0-ballot.rc5"/>
+  <version value="2027.0.0-ballot"/>
   <name value="MII_EX_Medikation_Wirkstofftyp">
     <extension url="http://hl7.org/fhir/StructureDefinition/translation">
       <extension url="lang">

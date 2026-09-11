@@ -1,4 +1,4 @@
-# Änderungshistorie - MII IG Medikation v2027.0.0-ballot.rc5
+# Änderungshistorie - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **Änderungshistorie**
@@ -9,7 +9,13 @@
 
 ### Release Notes
 
-**Version 2027.0.0-ballot.rc5** — 09.09.2026
+**Version 2027.0.0-ballot** — 11.09.2026
+
+* `Added`: Alle Konformitaetsartefakte tragen jetzt CRMI-Metadaten — die Shareable-/Publishable-/Computable-Profilangaben, Knowledge Capabilities, Versionspolitik, Paketherkunft, Freigabedatum, Gueltigkeitsbeginn, Thema und Mitwirkende. Die RuleSets lagen seit der Template-Migration vor, wurden aber nie angewandt.
+* `Fixed`: `dosage.site` band an `target-site-uv-ips`, das IPS mit 2.0 entfernt hat. Die Bindung zeigt nun auf `body-site-uv-ips` — inhaltlich dasselbe ValueSet (SNOMED-CT-Nachfahren von 442083009).
+* `Changed`: `artifact-author` ist wieder der Autor des Moduls; die redaktionelle Pflege dieses Moduls steht als zweiter `artifact-editor`.
+
+**Dies ist die Ballot-Fassung. Zu `2027.0.0-ballot.rc1` bis `rc5` existieren Git-Tags; rc1 und rc2 erschienen nie (Fehler in den Release-Werkzeugen), rc3 und rc4 liegen vor den obigen Korrekturen, rc5 war der erste foermlich publizierte Kandidat.**
 
 * `Fixed`: Publikations-Metadaten korrigiert. `ci-build` verwies auf `branches/dev/` — ein Branch, den dieses Repository nicht hat; der Default-Branch heisst `master`. `status` stand auf `release`, obwohl die Version ein Ballot-Kandidat ist, und `sequence` auf `2026` bei einer 2027er-Version. Der `releaseLabel` lautet nun `Release` statt `ci-build`, damit die publizierte Fassung sich nicht als fortlaufender Build ausweist.
 * `Fixed`: 19 unaufloesbare Referenzen in den Beispielinstanzen. Zwei Ziele existierten nach einer frueheren Zusammenfuehrung unter anderen Ids; `Patient` und `Encounter` gab es in diesem Modul nie und werden nun als minimale Kontext-Instanzen mitgeliefert.

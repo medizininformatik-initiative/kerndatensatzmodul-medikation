@@ -1,4 +1,4 @@
-# Code Systems - MII IG Medikation v2027.0.0-ballot.rc5
+# Code Systems - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Code Systems**

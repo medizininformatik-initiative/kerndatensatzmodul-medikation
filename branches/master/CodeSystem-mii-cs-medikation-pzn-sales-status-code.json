@@ -9,7 +9,7 @@
       },
       {
         "url" : "version",
-        "valueString" : "2027.0.0-ballot.rc5"
+        "valueString" : "2027.0.0-ballot"
       },
       {
         "url" : "uri",
@@ -135,7 +135,7 @@
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code",
-  "version" : "2027.0.0-ballot.rc5",
+  "version" : "2027.0.0-ballot",
   "name" : "MII_CS_Medikation_PZN_Sales_Status_Codes",
   "title" : "MII CS Medikation PZN Sales Status Codes",
   "status" : "active",

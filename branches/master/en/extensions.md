@@ -1,4 +1,4 @@
-# Extensions - MII IG Medikation v2027.0.0-ballot.rc5
+# Extensions - MII IG Medikation v2027.0.0-ballot
 
 * [**Table of Contents**](toc.md)
 * **Extensions**

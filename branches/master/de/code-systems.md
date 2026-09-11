@@ -1,4 +1,4 @@
-# CodeSystems - MII IG Medikation v2027.0.0-ballot.rc5
+# CodeSystems - MII IG Medikation v2027.0.0-ballot
 
 * [**Inhaltsverzeichnis**](toc.md)
 * **CodeSystems**
