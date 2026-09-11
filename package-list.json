@@ -7,13 +7,22 @@
     "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
   },
   {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot",
+    "status" : "ballot",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-11",
+    "current" : true,
+    "desc" : "MII Core Data Set module Medikation, release 2027.0.0-ballot, on the MII KDS module template."
+  },
+  {
     "version" : "2027.0.0-ballot.rc5",
     "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot.rc5",
     "status" : "ballot",
     "sequence" : "2027",
     "fhirversion" : "4.0.1",
     "date" : "2026-09-09",
-    "current" : true,
     "desc" : "MII Core Data Set module Medikation, release 2027.0.0-ballot.rc5, on the MII KDS module template."
   }],
   "package-id" : "de.medizininformatikinitiative.kerndatensatz.medikation",

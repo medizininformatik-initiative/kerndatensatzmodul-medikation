@@ -4,12 +4,23 @@
     <description>FHIR packages published by the Medical Informatics Initiative</description>
     <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation</link>
     <generator>Medical Informatics Initiative (MII)</generator>
-    <lastBuildDate>Wed, 09 Sep 2026 02:40:15 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 10:30:12 +0000</lastBuildDate>
     <atom:link href="https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/package-feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Sep 2026 02:40:15 +0000</pubDate>
+    <pubDate>Fri, 11 Sep 2026 10:30:12 +0000</pubDate>
     <language>en</language>
     <ttl>600</ttl>
   
+    <item>
+      <title>de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot</title>
+      <description>MII Core Data Set module Medikation, release 2027.0.0-ballot, on the MII KDS module template.</description>
+      <link>https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot/package.tgz</link>
+      <guid isPermaLink="true">https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot/package.tgz</guid>
+      <dc:creator>Medical Informatics Initiative (MII)</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 11 Sep 2026 10:30:12 +0000</pubDate>
+      <fhir:details>Publication run at 11/09/2026 by runner using Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (29 days old) source id Unknown (todo)</fhir:details>
+    </item>
     <item>
       <title>de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot.rc5</title>
       <description>MII Core Data Set module Medikation, release 2027.0.0-ballot.rc5, on the MII KDS module template.</description>
