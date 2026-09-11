@@ -3,7 +3,7 @@ MII_IG_Medikation : Validation Results
 
 err = 1, warn = 431, info = 1956
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Fri Sep 11 09:58:21 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
+Generated Fri Sep 11 10:08:46 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
  Build Errors : 0 / 29 / 0
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CapabilityStatement-mii-cps-medikation-capabilitystatement : 0 / 2 / 140
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/CodeSystem-mii-cs-medikation-pzn-sales-status-code : 0 / 3 / 19

@@ -1,7 +1,7 @@
 {
   "version" : "2027.0.0-ballot",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260911095040",
+  "date" : "20260911100111",
   "name" : "de.medizininformatikinitiative.kerndatensatz.medikation",
   "jurisdiction" : "urn:iso:std:iso:3166#DE"
 }

@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for MII_IG_Medikation</h1>
- <p>Generated Fri Sep 11 09:58:21 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation">https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Sep 11 10:08:46 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation">https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</a> (<a href="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.3.2 which is a development version. The latest official release version isv2.3.4 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = de.medizininformatikinitiative.kerndatensatz.medikation, Canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation</td></tr>
@@ -61,7 +61,6 @@
  <tr><td>Release-Label</d><td>Release</td></tr>
  <tr><td>Sequence (Group)</d><td>2027</td></tr>
  <tr><td>desc</d><td>MII Core Data Set module Medikation, release 2027.0.0-ballot, on the MII KDS module template.</td></tr>
- <tr><td>first</d><td>true</td></tr>
  <tr><td>category</d><td>Research</td></tr>
  <tr><td>title</d><td>MII Implementation Guide MII IG Medikation</td></tr>
  <tr><td>introduction</d><td>FHIR profiles for representing medication data - prescriptions, administrations, statements and medication lists, including active ingredients and dosage - as part of the MII core data set.</td></tr>
@@ -69,8 +68,10 @@
  <tr><td>RelatedIgs</d><td>(None Found)</td></tr>
 </table>
 <ul><li>Error fetching package-list from https://www.medizininformatik-initiative.de/fhir/core/modul-medikation: Error parsing JSON source: Unexpected content '<' in json format at Line 3 (path=[null]) <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This appears to be the first publication, so first must be true <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>Proposed path for this publication does not start with the canonical URL (https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot vs https://www.medizininformatik-initiative.de/fhir/core/modul-medikation) <img src="icon-error.gif" height="16px" width="16px"/></li>
 <li>This release is labelled as a milestone, so should not have a patch version (2027.0.0-ballot) <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>This IG is not yet published at all, so there must be "first" : true in the publication request <img src="icon-error.gif" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
  <tr><td>Supressed Messages:</td><td><a href="#suppressed">8 Suppressed Issues</a>
