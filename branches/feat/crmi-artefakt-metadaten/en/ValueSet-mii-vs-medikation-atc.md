@@ -77,6 +77,7 @@ Enthaelt ATC-Codes der Versionen 2018 bis 2026
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]

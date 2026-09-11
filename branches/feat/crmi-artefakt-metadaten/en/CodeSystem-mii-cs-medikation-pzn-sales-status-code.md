@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/CodeSystem/mii-cs-medikation-pzn-sales-status-code | *Version*:2027.0.0-ballot.rc5 |
-| Active as of 2026-09-11 | *Computable Name*:MII_CS_Medikation_PZN_Sales_Status_Codes |
+| Active as of 2026-09-09 | *Computable Name*:MII_CS_Medikation_PZN_Sales_Status_Codes |
 | **Copyright/Legal**: Für die Nutzung der Rohdaten der Vidal MMI GmbH wurde mit der TMF – Technologie- und Methodenplattform für die vernetzte medizinische Forschung e.V. ein Nutzungsvertrag für die Nutzung der Daten innerhalb der Medizininformatik-Initiative gezeichnet. Diese Lizenzbedingungen erlauben die überlassenen Daten als 'Quelle zur Dokumentation, Recherche und Identifikation von Arzneimitteln zu installieren, zu testen, zu nutzen, bereitzustellen, sowie Anwendern der Lizenznehmer Produkte den Zugriff auf die Daten zu all diesen Zwecken zu gewähren (öffentliches Zugänglichmachen)'. Eine Nutzung dieser Distribution ist somit nur innerhalb der Projekte der Medizininformatik-Initiative und des Netzwerks Universitätsmedizin erlaubt. | |
 
  
@@ -59,6 +59,7 @@ This Code system is referenced in the definition of the following value sets:
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
@@ -161,7 +162,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII CS Medikation PZN Sales Status Codes",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-11T08:18:01+00:00",
+  "date" : "2026-09-09",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

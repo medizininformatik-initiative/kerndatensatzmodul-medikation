@@ -178,6 +178,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-medik
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
@@ -330,6 +331,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-medik
     }]
   },
   "status" : "active",
+  "experimental" : false,
   "date" : "2025-12-18",
   "publisher" : "NUM-DIZ",
   "_publisher" : {

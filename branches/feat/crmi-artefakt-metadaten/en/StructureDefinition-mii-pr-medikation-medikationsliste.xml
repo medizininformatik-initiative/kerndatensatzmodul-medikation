@@ -53,6 +53,7 @@
     <valueCodeableConcept>
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"/>
+        <version value="3.0.0"/>
         <code value="package"/>
         <display value="Package"/>
       </coding>
@@ -155,6 +156,7 @@
   <name value="MII_PR_Medikation_Medikationsliste"/>
   <title value="MII PR Medikation Medikationsliste"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2024-11-13"/>
   <publisher value="NUM-DIZ"/>
   <contact>

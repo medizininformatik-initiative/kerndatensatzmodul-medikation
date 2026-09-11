@@ -75,6 +75,7 @@ Codes zur Differenzierung des Kontextes in dem eine Medikationsliste verwaltet w
     "valueCodeableConcept" : {
       "coding" : [{
         "system" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+        "version" : "3.0.0",
         "code" : "package",
         "display" : "Package"
       }]
