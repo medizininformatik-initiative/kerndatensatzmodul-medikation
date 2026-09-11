@@ -1,7 +1,7 @@
 MII_IG_Medikation : Validation Results
 =========================================
 
-err = 9, warn = 431, info = 1950
+err = 9, warn = 431, info = 1956
 $--
 Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz.medikation#$-- (canonical = https://www.medizininformatik-initiative.de/fhir/core/modul-medikation)
  Build Errors : 0 / 29 / 0
@@ -40,9 +40,9 @@ Generated $--. FHIR version $-- for de.medizininformatikinitiative.kerndatensatz
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-ex-medikation-wirkstofftyp : 0 / 2 / 39
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-lm-medikation : 1 / 252 / 186
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication : 1 / 2 / 184
- /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-administration : 1 / 2 / 209
- /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-request : 1 / 2 / 384
- /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-statement : 1 / 2 / 364
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-administration : 1 / 2 / 211
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-request : 1 / 2 / 386
+ /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medication-statement : 1 / 2 / 366
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/StructureDefinition-mii-pr-medikation-medikationsliste : 1 / 2 / 103
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-ask : 0 / 3 / 41
  /home/runner/work/kerndatensatzmodul-medikation/kerndatensatzmodul-medikation/fsh-generated/resources/ValueSet-mii-vs-medikation-atc : 0 / 3 / 41
@@ -1313,6 +1313,7 @@ INFORMATION: StructureDefinition.snapshot.element[86].constraint[0].source: Pinn
 INFORMATION: StructureDefinition.snapshot.element[86].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[87].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[88].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[88].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[90].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[91].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1384,6 +1385,7 @@ INFORMATION: StructureDefinition.snapshot.element[154].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[155].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[0]: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication to 2027.0.0-ballot.rc5
 INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[40].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[45].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition.differential.element[68].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition/mii-pr-medikation-medication-administration: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1600,6 +1602,7 @@ INFORMATION: StructureDefinition.snapshot.element[150].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[150].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[151].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[152].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[152].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[154].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[154].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[155].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -1770,6 +1773,7 @@ INFORMATION: StructureDefinition.differential.element[10].type[0].targetProfile[
 INFORMATION: StructureDefinition.differential.element[16].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
 INFORMATION: StructureDefinition.differential.element[35].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
 INFORMATION: StructureDefinition.differential.element[35].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[69].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition/mii-pr-medikation-medication-request: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: StructureDefinition/mii-pr-medikation-medication-request: StructureDefinition.extension[4]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -1984,6 +1988,7 @@ INFORMATION: StructureDefinition.snapshot.element[148].constraint[0].source: Pin
 INFORMATION: StructureDefinition.snapshot.element[148].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[149].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[150].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
+INFORMATION: StructureDefinition.snapshot.element[150].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.snapshot.element[152].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[152].constraint[1].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Extension to 4.0.1
 INFORMATION: StructureDefinition.snapshot.element[153].constraint[0].source: Pinned the version of http://hl7.org/fhir/StructureDefinition/Element to 4.0.1
@@ -2130,6 +2135,7 @@ INFORMATION: StructureDefinition.differential.element[14].type[0].targetProfile[
 INFORMATION: StructureDefinition.differential.element[20].binding.valueSet: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc to 2027.0.0-ballot.rc5
 INFORMATION: StructureDefinition.differential.element[40].type[0].profile[0]: Pinned the version of http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE to 1.0.7
 INFORMATION: StructureDefinition.differential.element[40].constraint[0].source: Pinned the version of https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement to 2027.0.0-ballot.rc5
+INFORMATION: StructureDefinition.differential.element[74].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips to 2.0.0
 INFORMATION: StructureDefinition.differential.element[79].binding.valueSet: Pinned the version of http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration to 2.0.0
 INFORMATION: StructureDefinition.differential.element[86].type[0].profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/SimpleQuantity to 4.0.1
 INFORMATION: StructureDefinition/mii-pr-medikation-medication-statement: StructureDefinition.extension[3]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablestructuredefinition|2.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)

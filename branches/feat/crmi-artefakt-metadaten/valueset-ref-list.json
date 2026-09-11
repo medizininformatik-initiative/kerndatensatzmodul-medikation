@@ -14,6 +14,20 @@
     "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement"
   },
   {
+    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "BodySiteUvIps",
+    "title" : "Body Site - IPS",
+    "description" : "IPS body site value set. This value set includes a set of codes from SNOMED CT that may be used to represent body sites (e.g., for laboratory specimen collection). This value set includes codes from SNOMED CT®: all descendants of 442083009 \\|Anatomical or acquired body structure (body structure)\\|\n\nSNOMED CT® ECL definition:\\\n< 442083009 \\|Anatomical or acquired body structure (body structure)\\|",
+    "systems" : ["http://snomed.info/sct"],
+    "uses" : {
+    },
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
+    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
+  },
+  {
     "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-doseform",
     "version" : "2.0.0",
     "status" : "active",
@@ -35,23 +49,9 @@
     "systems" : ["http://standardterms.edqm.eu"],
     "uses" : {
     },
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
     "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
-  },
-  {
-    "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
-    "version" : "1.1.0",
-    "status" : "active",
-    "name" : "TargetSiteUvIps",
-    "title" : "Target Site - IPS",
-    "description" : "This value set includes codes from SNOMED Clinical Terms®: all descendants of 442083009 | Anatomical or acquired body structure (body structure)|.",
-    "systems" : ["http://snomed.info/sct"],
-    "uses" : {
-    },
-    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext",
@@ -63,8 +63,8 @@
     "systems" : ["http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medikationsliste.html" : "MII PR Medikation Medikationsliste"
+    "StructureDefinition-mii-pr-medikation-medikationsliste.html" : "MII PR Medikation Medikationsliste",
+    "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask",
@@ -88,10 +88,10 @@
     "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
     "uses" : {
     },
+    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest",
     "StructureDefinition-mii-pr-medikation-medication.html" : "MII PR Medikation Medication",
     "StructureDefinition-mii-pr-medikation-medication-statement.html" : "MII PR Medikation MedicationStatement",
-    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration",
-    "StructureDefinition-mii-pr-medikation-medication-request.html" : "MII PR Medikation MedicationRequest"
+    "StructureDefinition-mii-pr-medikation-medication-administration.html" : "MII PR Medikation MedicationAdministration"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-pzn-sales-status-code",

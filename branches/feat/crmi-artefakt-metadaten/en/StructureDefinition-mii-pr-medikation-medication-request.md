@@ -1748,7 +1748,7 @@ Other representations of profile: [CSV](../StructureDefinition-mii-pr-medikation
       "binding" : {
         "strength" : "example",
         "description" : "target site IPS",
-        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips"
       }
     },
     {

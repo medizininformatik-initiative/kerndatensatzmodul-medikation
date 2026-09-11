@@ -1844,7 +1844,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-mii-pr-medik
       "binding" : {
         "strength" : "example",
         "description" : "target site IPS",
-        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips"
+        "valueSet" : "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips"
       }
     },
     {

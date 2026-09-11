@@ -450,6 +450,10 @@
   },
   {
     "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips|2.0.0"
+  },
+  {
+    "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration|2.0.0"
   },
   {

@@ -451,6 +451,10 @@
   </parameter>
   <parameter>
     <name value="default-valueset-version"/>
+    <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips|2.0.0"/>
+  </parameter>
+  <parameter>
+    <name value="default-valueset-version"/>
     <valueCanonical value="http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration|2.0.0"/>
   </parameter>
   <parameter>
