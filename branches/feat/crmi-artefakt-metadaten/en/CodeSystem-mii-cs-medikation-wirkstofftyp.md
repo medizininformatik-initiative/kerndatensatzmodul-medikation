@@ -51,6 +51,10 @@ This Code system is referenced in the definition of the following value sets:
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+    "valueCode" : "shareable"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
     "valueCode" : "publishable"
   },
   {
