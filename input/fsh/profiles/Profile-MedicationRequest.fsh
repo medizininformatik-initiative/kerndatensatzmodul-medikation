@@ -233,7 +233,13 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * dosageInstruction.site.coding contains
     SNOMED 0..* MS
 * insert AddSnomedCodingTranslation(dosageInstruction.site.coding[SNOMED])
-* dosageInstruction.site.coding[SNOMED] from http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips (example)
+// IPS 2.0 hat target-site-uv-ips entfernt und durch body-site-uv-ips ersetzt.
+// Inhaltlich dasselbe ValueSet: beide sind SNOMED-CT-Nachfahren von 442083009;
+// die alte Fassung pinnte zusaetzlich die International Edition. Die Bindung
+// hier zeigte seit dem Bump auf IPS 2.0.0 ins Leere -- unbemerkt, weil sie
+// `example` ist und ein unaufloesbares Beispiel-ValueSet weder Validierungs-
+// fehler noch QA-Eintrag erzeugt.
+* dosageInstruction.site.coding[SNOMED] from http://hl7.org/fhir/uv/ips/ValueSet/body-site-uv-ips (example)
 * dosageInstruction.site.coding[SNOMED] ^sliceName = "SNOMED"
 * dosageInstruction.site.coding[SNOMED] ^patternCoding.system = "http://snomed.info/sct"
 * dosageInstruction.site.coding[SNOMED] ^binding.description = "target site IPS"
