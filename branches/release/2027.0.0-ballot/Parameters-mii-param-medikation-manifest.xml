@@ -111,7 +111,7 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-list-mode|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -151,15 +151,15 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-numerator|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-ingredient-strength-denominator|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -203,35 +203,35 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-site|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-route|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-dosequantity|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-ratequantity|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-numerator|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio-denominator|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-rateratio|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-partof|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
@@ -283,27 +283,27 @@
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-low|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange-high|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-doserange|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-low|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange-high|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
-    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange|2027.0.0-ballot.rc3"/>
+    <valueCanonical value="https://www.medizininformatik-initiative.de/fhir/modul-meta/SearchParameter/mii-sp-meta-medication-dosage-raterange|2027.0.0-ballot"/>
   </parameter>
   <parameter>
     <name value="default-canonical-version"/>
