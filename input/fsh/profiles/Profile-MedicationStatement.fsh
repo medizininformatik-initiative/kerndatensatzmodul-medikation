@@ -4,6 +4,7 @@ Id: mii-pr-medikation-medication-statement
 Title: "MII PR Medikation MedicationStatement"
 Description: "Das MedicationStatement kann anzeigen, dass der Patient ein Medikament zur Zeit einnimmt, in der Vergangenheit genommen hat oder in Zukunft einnehmen wird. Dabei kann es sich sowohl um verschreibungspflichtige Medikamente handeln, wie auch um OTC-Präparate, welche ein Patient in Eigenverantwortung einnimmt."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition

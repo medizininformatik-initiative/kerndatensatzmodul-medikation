@@ -4,6 +4,7 @@ Id: mii-pr-medikation-medication-request
 Title: "MII PR Medikation MedicationRequest"
 Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition

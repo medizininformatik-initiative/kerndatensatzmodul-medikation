@@ -4,6 +4,7 @@ Id: mii-pr-medikation-medication-administration
 Title: "MII PR Medikation MedicationAdministration"
 Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließlich der Selbstverabreichung von oralen Medikamenten, Injektionen, intravenösen Gaben etc."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition

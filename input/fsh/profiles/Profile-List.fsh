@@ -5,6 +5,7 @@ Id: mii-pr-medikation-medikationsliste
 Title: "MII PR Medikation Medikationsliste"
 Description: "Liste einzelner Medikationen z.B. zur Dokumentation der Aufnahme- oder Entlassmedikation."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition

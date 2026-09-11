@@ -21,14 +21,17 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 // ── Resource-independent version policy ──────────────────────────────────────
+// Die CodeSystem-Version ist GEPINNT (|3.0.0), wie in kerndatensatz-basis.
+// Ohne den Pin loest der Terminologieserver eine Fassung auf, die den Code
+// 'package' nicht kennt -- 17x Unknown_Code_in_Version im Java-Validator.
 
 RuleSet: CRMIVersionPolicyStrict
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* ^extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 RuleSet: CRMIVersionPolicyStrictInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy"
-* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes#package "Package"
+* extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0#package "Package"
 
 // ── Copyright label ──────────────────────────────────────────────────────────
 // basis notes that there is currently no resource type in the module where

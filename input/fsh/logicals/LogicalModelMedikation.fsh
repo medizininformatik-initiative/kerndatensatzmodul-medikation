@@ -4,6 +4,7 @@ Id: mii-lm-medikation
 Title: "MII LM Medikation"
 Description: "MII LogicalModel Modul Medikation"
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* ^experimental = false
 * insert CRMIShareableStructureDefinition
 * insert CRMIPublishableStructureDefinition
 * insert CRMIKnowledgeCapabilitiesStructureDefinition
