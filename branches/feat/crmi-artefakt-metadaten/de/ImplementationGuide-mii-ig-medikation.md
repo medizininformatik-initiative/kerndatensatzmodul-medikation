@@ -122,7 +122,7 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
     },
     {
       "url" : "uri",
-      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/modul-medikation"
+      "valueUri" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
     }],
     "url" : "http://hl7.org/fhir/StructureDefinition/package-source"
   },

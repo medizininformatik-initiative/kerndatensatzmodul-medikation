@@ -302,7 +302,7 @@ INFORMATION: ImplementationGuide.definition.resource[42].profile[0]: Pinned the 
 INFORMATION: ImplementationGuide.title: Unused 'de' translation 'MII Implementation Guide MII IG Medikation' -> 'MII Implementierungsleitfaden MII IG Medikation'
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-WARNING: ImplementationGuide/mii-ig-medikation: ImplementationGuide.extension[4].extension[2].value.ofType(uri): No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/modul-medikation'
+WARNING: ImplementationGuide/mii-ig-medikation: ImplementationGuide.extension[4].extension[2].value.ofType(uri): No definition could be found for URL value 'https://www.medizininformatik-initiative.de/fhir/core/modul-medikation'
 INFORMATION: ImplementationGuide/mii-ig-medikation: ImplementationGuide.extension[17].value.ofType(CodeableConcept): Reference to experimental CodeSystem http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|25.6.0-e
 WARNING: ImplementationGuide/mii-ig-medikation: ImplementationGuide.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: ImplementationGuide/mii-ig-medikation: ImplementationGuide.dependsOn[3].uri: A definition could not be found for Canonical URL 'http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4'
