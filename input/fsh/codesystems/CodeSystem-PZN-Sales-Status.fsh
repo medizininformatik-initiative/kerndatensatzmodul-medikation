@@ -23,7 +23,11 @@ Description: "This code system contains the sales status codes (catalog #116) fo
 * ^date = "2026-09-09"
 * insert CRMIShareableCodeSystem
 * insert CRMIPublishableCodeSystem
-* insert CRMIKnowledgeCapabilitiesCodeSystemPublishable
+// shr-1 verlangt: wenn knowledge capabilities angegeben sind, MUSS shareable
+// dabei sein. Die ...Publishable-Variante setzt nur publishable und ist fuer
+// CodeSystems gedacht, die das Shareable-Profil NICHT beanspruchen. Unsere tun
+// es (meta.profile crmi-shareablecodesystem), also die vollstaendige Variante.
+* insert CRMIKnowledgeCapabilitiesCodeSystem
 * insert CRMIVersionPolicyStrict
 * insert CRMIPackageSourceDefinitionalResource
 * insert CRMIApprovalDate(2026-09-09)
