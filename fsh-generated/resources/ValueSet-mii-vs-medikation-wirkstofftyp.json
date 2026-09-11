@@ -73,7 +73,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc5"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -239,7 +239,7 @@
       ]
     }
   ],
-  "version": "2027.0.0-ballot.rc5",
+  "version": "2027.0.0-ballot",
   "date": "2024-11-14",
   "compose": {
     "include": [

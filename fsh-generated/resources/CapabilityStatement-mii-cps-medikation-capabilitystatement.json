@@ -15,7 +15,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc5"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -207,7 +207,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2027.0.0-ballot.rc5"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste|2027.0.0-ballot"
           ],
           "_supportedProfile": [
             {
@@ -426,7 +426,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot.rc5"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication|2027.0.0-ballot"
           ],
           "_supportedProfile": [
             {
@@ -656,7 +656,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2027.0.0-ballot.rc5"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration|2027.0.0-ballot"
           ],
           "_supportedProfile": [
             {
@@ -974,7 +974,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2027.0.0-ballot.rc5"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest|2027.0.0-ballot"
           ],
           "_supportedProfile": [
             {
@@ -1391,7 +1391,7 @@
             }
           ],
           "supportedProfile": [
-            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot.rc5"
+            "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement|2027.0.0-ballot"
           ],
           "_supportedProfile": [
             {
@@ -1749,7 +1749,7 @@
       "mode": "server"
     }
   ],
-  "version": "2027.0.0-ballot.rc5",
+  "version": "2027.0.0-ballot",
   "name": "MII_CPS_Medikation_CapabilityStatement",
   "title": "MII CPS Medikation CapabilityStatement",
   "status": "active",
