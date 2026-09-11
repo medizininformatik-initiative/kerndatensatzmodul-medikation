@@ -3,6 +3,17 @@ Parent: MedicationRequest
 Id: mii-pr-medikation-medication-request
 Title: "MII PR Medikation MedicationRequest"
 Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
+// CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
+* insert CRMIShareableStructureDefinition
+* insert CRMIPublishableStructureDefinition
+* insert CRMIKnowledgeCapabilitiesStructureDefinition
+* insert CRMIVersionPolicyStrict
+* insert CRMIPackageSourceDefinitionalResource
+* insert CRMIArtifactUsageProfile
+* insert CRMIApprovalDate(2026-09-09)
+* insert CRMIResourceEffectivePeriod
+* insert CRMIArtifactTopic(http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl, C459)
+* insert CRMIArtifactContributors
 * ^url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest"
 * insert Translation(^name, en-US, MII_PR_Medikation_MedicationRequest)
 * insert Translation(^title, de-DE, Medikationsverordnung)

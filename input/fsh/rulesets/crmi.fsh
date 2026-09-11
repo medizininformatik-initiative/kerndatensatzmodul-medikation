@@ -15,7 +15,7 @@
 //
 // basis literals replaced by this repository's placeholders:
 //   "2019+ Medical Informatics Initiative (MII)" → "2019+ …"
-//   the basis artifact-author contact email      → thomas.debertshaeuser@charite.de
+//   (the basis artifact-author email is KEPT — same maintainer)
 // The approval date and the artifact topic stay RuleSet PARAMETERS (as in
 // basis); pass 2026-02-17 / C459 at the call site.
 // ─────────────────────────────────────────────────────────────────────────────
@@ -70,7 +70,9 @@ RuleSet: CRMIArtifactTopicInstance(system, code)
 * extension[=].valueCodeableConcept.coding[+] = {system}#{code}
 
 // ── Artifact contributors ────────────────────────────────────────────────────
-// Author = the module author (thomas.debertshaeuser@charite.de). Editor / reviewer /
+// Author = the module author (julian.sass@charite.de, same as kerndatensatz-basis:
+// this module is maintained by the same person). A SECOND artifact-editor carries
+// the editorial upkeep of this module. Editor / reviewer /
 // endorser are the MII-wide governance bodies and apply to every KDS module —
 // the same values sushi-config.yaml sets on the IG resource. Adjust only if your
 // module's governance differs.
@@ -78,9 +80,12 @@ RuleSet: CRMIArtifactTopicInstance(system, code)
 RuleSet: CRMIArtifactContributors
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * ^extension[=].valueContactDetail.telecom[+].system = #email
-* ^extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
+* ^extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
 * ^extension[=].valueContactDetail.name = "Taskforce Core Data Set"
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
+* ^extension[=].valueContactDetail.telecom[+].system = #email
+* ^extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"
 * ^extension[=].valueContactDetail.name = "Interoperability Working Group"
 * ^extension[=].valueContactDetail.telecom[+].system = #url
@@ -101,9 +106,12 @@ RuleSet: CRMIArtifactContributors
 RuleSet: CRMIArtifactContributorsInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-author"
 * extension[=].valueContactDetail.telecom[+].system = #email
-* extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
+* extension[=].valueContactDetail.telecom[=].value = "julian.sass@charite.de"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
 * extension[=].valueContactDetail.name = "Taskforce Core Data Set"
+* extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-editor"
+* extension[=].valueContactDetail.telecom[+].system = #email
+* extension[=].valueContactDetail.telecom[=].value = "thomas.debertshaeuser@charite.de"
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/artifact-reviewer"
 * extension[=].valueContactDetail.name = "Interoperability Working Group"
 * extension[=].valueContactDetail.telecom[+].system = #url
