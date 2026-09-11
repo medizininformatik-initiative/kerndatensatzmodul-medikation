@@ -22,7 +22,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc5"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -177,7 +177,7 @@
     }
   ],
   "copyright": "WHO, BfArM 1994 - 2026 - Die Erstellung erfolgt unter Verwendung der maschinenlesbaren Fassung des Bundesinstituts für Arzneimittel und Medizinprodukte (BfArM).",
-  "version": "2027.0.0-ballot.rc5",
+  "version": "2027.0.0-ballot",
   "publisher": "Medizininformatik Initiative",
   "contact": [
     {

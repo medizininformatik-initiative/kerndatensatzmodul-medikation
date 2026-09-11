@@ -16,7 +16,7 @@
           },
           {
             "url": "version",
-            "valueString": "2027.0.0-ballot.rc5"
+            "valueString": "2027.0.0-ballot"
           },
           {
             "url": "uri",
@@ -171,7 +171,7 @@
     }
   ],
   "url": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp",
-  "version": "2027.0.0-ballot.rc5",
+  "version": "2027.0.0-ballot",
   "name": "MII_EX_Medikation_Wirkstofftyp",
   "_name": {
     "extension": [

@@ -5,7 +5,7 @@
 // wird beim Release gemeinsam gebumpt -- deshalb liegen CRMIPackageSource* hier
 // und nicht in crmi.fsh.
 //
-// ACHTUNG beim Bump: alle Vorkommen von 2027.0.0-ballot.rc5 in dieser Datei
+// ACHTUNG beim Bump: alle Vorkommen von 2027.0.0-ballot in dieser Datei
 // gehoeren zur EIGENEN Version. Die Abhaengigkeit auf kerndatensatz.meta traegt
 // zufaellig eine aehnliche Nummer und darf NICHT mitgezogen werden.
 
@@ -13,12 +13,12 @@ Alias: $artifact-versionAlgorithm = http://hl7.org/fhir/StructureDefinition/arti
 Alias: $version-algorithm = http://hl7.org/fhir/version-algorithm
 
 RuleSet: Version
-* version = "2027.0.0-ballot.rc5"
+* version = "2027.0.0-ballot"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc5"
+* ^version = "2027.0.0-ballot"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
@@ -30,7 +30,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.medikation"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc5"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
 
@@ -39,7 +39,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.medikation"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc5"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation"
 
