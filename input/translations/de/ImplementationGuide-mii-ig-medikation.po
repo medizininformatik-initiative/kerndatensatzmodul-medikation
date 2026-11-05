@@ -138,6 +138,12 @@ msgstr "MII ImplementationGuide Ressource"
 msgid "Translation Information"
 msgstr "Hinweise zur Übersetzung"
 
+# A short title used to represent this page in navigational structures such
+# as table of contents, bread crumbs, etc.
+#: ImplementationGuide.definition.page.title
+msgid "Ballot Reconciliation 2027.0.0-ballot"
+msgstr "Ballot-Kommentierung 2027.0.0-ballot"
+
 # --- preserved: units NOT owned by gen-page-title-po -----------------------
 # They are not generated from the pages: tree; they were found in this file
 # and are written back verbatim on every regeneration.

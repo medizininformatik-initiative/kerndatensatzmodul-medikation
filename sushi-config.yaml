@@ -370,6 +370,9 @@ pages:
   changes.md:
     title: Changelog
 
+  ballot-reconciliation.md:
+    title: Ballot Reconciliation 2027.0.0-ballot
+
   metadata.md: # OPTIONAL (0..1) — see docs/optional-pages.md
     title: Metadata Overview
   version-history.md:
