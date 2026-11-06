@@ -85,6 +85,8 @@ Notes:
   carries `medikation`/`MII_IG_Medikation`/`2026.0.1` placeholders
   like the rest of the scaffold. The .NET job is configured upstream to always
   pass, so a naming violation appears in its log, not as a red check.
+  **This module calls only the Java job** (see the `validation.yml` header), so
+  `qc/custom.rules.yaml` is currently unread.
 - **Terminology** is auto-selected, not a toggle: builds use **SU-TermServ** when the
   client-cert secrets are present, else fall back to HL7 `tx.fhir.org` with a notice.
 - **Pages mode** (`vars.PAGES_ACTIONS_ENABLED`) chooses the gh-pages push vs the
