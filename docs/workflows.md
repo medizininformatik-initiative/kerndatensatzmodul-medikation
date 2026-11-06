@@ -71,6 +71,7 @@ Everything below **propagates** to a module (the bootstrap keeps it). This is ho
 | `validation.yml` | push to `master`; any pull request; `workflow_dispatch` | Runs the **MII reusable validation** workflows | validation report | `ENABLE_VALIDATION` (ON) | no (skips on the template repo itself) |
 | `convention-check.yml` | push/PR to `master`/`release/**`; `workflow_dispatch` (input `strict`: force release mode) | The **single** convention checker: metadata-contract patterns (hard on release branches) + the optional-page decision gate (M9, `docs/optional-pages.md`) + the language-model guard (`scripts/language-model-check.sh`) + the offline test suites (`scripts/*.test.mjs`, and on the template repo `scripts/*.template-test.mjs`); the advisory repo ↔ MII-wiki drift review is a manual review, not part of this workflow | check result | `ENABLE_CONVENTION_CHECK` (ON) | no |
 | `module-release.yml` | push of a CalVer tag `vYYYY.n.n`; `release: published` (the announcement); `workflow_dispatch` (dry run) | Builds, creates the GitHub Release, announces to the MII Zulip (topic *Releases*), hands off to `go-publish` | release | `ENABLE_MODULE_RELEASE` (ON) · `ENABLE_ZULIP_ANNOUNCE` (ON) | production publish is gated |
+| `publish-fsh-generated.yml` | push to `master`/`release/**`; `workflow_dispatch` | **Module-specific (Medikation).** Compiles FSH with the SUSHI pinned in `ig-publisher.yml` and publishes `fsh-generated/resources/` + `package.json` to the orphan branch `fsh-generated` (kerndatensatz-basis idiom). Source branches never commit `fsh-generated/` | `fsh-generated` branch | — | no |
 | `go-publish.yml` | `workflow_dispatch` **only** | Production `-go-publish`; `publish:false` = full dry run by default | published IG | — | **always human-triggered** |
 | `dependency-check.yml` | schedule (Mon 06:00 UTC); `workflow_dispatch` | Version drift (IG Publisher, SUSHI, Jekyll, both templates, FHIR deps, the skill catalog) → one tracking issue | `dependencies` issue | `ENABLE_DEPENDENCY_CHECK` (ON) | proposals only |
 | `security-scan.yml` | schedule (Mon 07:00 UTC); PR to `master`; `workflow_dispatch` | OSV + Trivy (fs + dev-container image) | SARIF in Security tab | `ENABLE_SECURITY_SCAN` (ON) | no |
@@ -84,6 +85,8 @@ Notes:
   carries `medikation`/`MII_IG_Medikation`/`2026.0.1` placeholders
   like the rest of the scaffold. The .NET job is configured upstream to always
   pass, so a naming violation appears in its log, not as a red check.
+  **This module calls only the Java job** (see the `validation.yml` header), so
+  `qc/custom.rules.yaml` is currently unread.
 - **Terminology** is auto-selected, not a toggle: builds use **SU-TermServ** when the
   client-cert secrets are present, else fall back to HL7 `tx.fhir.org` with a notice.
 - **Pages mode** (`vars.PAGES_ACTIONS_ENABLED`) chooses the gh-pages push vs the

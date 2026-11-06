@@ -5,13 +5,16 @@
 #            workflows rather than reimplementing validation. Since
 #            kerndatensatz-meta#251 they live in mii-kds-module-template's
 #            .github/workflows/ (before: kerndatensatz-meta@master):
-#              - ci_dotnet_validation.yml — SUSHI compile + Simplifier Quality
-#                Control (MII naming conventions), whose rule set this repo
-#                ships at the fixed path qc/custom.rules.yaml. NOTE (per the
-#                MII wiki): the .NET validator is configured to ALWAYS pass;
-#                read its logs for warnings it does not surface as a failure.
-#              - ci_java_validation.yml — HL7 Java validator against SU-TermServ;
-#                FAILS on errors (known ones are suppressed via advisor.json).
+#              - ci_java_validation.yml — SUSHI compile + HL7 Java validator
+#                against SU-TermServ; FAILS on errors (known ones are
+#                suppressed via advisor.json).
+#            NOT called: ci_dotnet_validation.yml (SUSHI + Simplifier QC). Its
+#            final step unconditionally `git add`s fsh-generated/resources/ on
+#            pull requests, which fails since fsh-generated/ is gitignored here
+#            (publish-fsh-generated.yml serves it on its own branch instead).
+#            kerndatensatz-basis runs the Java validation only, for the same
+#            reason; the .NET QC was configured as an expected fail and never
+#            gated a change.
 #            Source + contract: MII wiki "GitHub Reusable Validation Workflows".
 #
 # Triggers:  push to dev / main, pull_request, and manual workflow_dispatch.
@@ -42,7 +45,6 @@
 # Secrets (human prerequisites — CI cannot obtain them by itself):
 #            passed via `secrets: inherit` (the wiki's canonical pattern). A
 #            module maintainer must set, as repo secrets:
-#              - SIMPLIFIER_USERNAME / SIMPLIFIER_PASSWORD  (dotnet QC login)
 #              - CDS_DEV_CLIENT_CERT / CDS_DEV_CLIENT_KEY /
 #                CDS_DEV_CLIENT_CERT_PASSWORD  (Java validator → SU-TermServ)
 #            > RESOLVED: the Java job now MAPS this repo's canonical
@@ -50,8 +52,6 @@
 #            > CDS_DEV_CLIENT_* names at the call site, so the SU-TermServ
 #            > certificate is stored ONCE under one name for the whole repo
 #            > (ig-publisher.yml, go-publish.yml and validation all use it).
-#            > SIMPLIFIER_USERNAME / SIMPLIFIER_PASSWORD have no local equivalent
-#            > and stay inherited.
 # Human-gated: none here; supplying the validation secrets is the human step.
 name: FHIR validation
 
@@ -62,49 +62,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # the dotnet reusable workflow auto-commits fsh-generated on PRs
+  contents: read
   pull-requests: write
 
 jobs:
-  # The upstream dotnet workflow declares SIMPLIFIER_USERNAME/SIMPLIFIER_PASSWORD
-  # as REQUIRED secrets — calling it without them fails at workflow evaluation
-  # with zero steps ("Secret SIMPLIFIER_USERNAME is required, but not
-  # provided"; observed in every created module since 2026-08-06). Job-level
-  # `if:` cannot read secrets, so this guard computes their presence (same
-  # pattern as the SU-TermServ certificate guard below).
-  dotnet-validation-guard:
-    name: Simplifier credentials present?
-    if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') }}
-    runs-on: ubuntu-latest
-    outputs:
-      has_creds: ${{ steps.probe.outputs.has_creds }}
-    steps:
-      - name: Probe
-        id: probe
-        env:
-          U: ${{ secrets.SIMPLIFIER_USERNAME }}
-          P: ${{ secrets.SIMPLIFIER_PASSWORD }}
-        run: |
-          if [ -n "${U}" ] && [ -n "${P}" ]; then
-            echo "has_creds=true" >> "${GITHUB_OUTPUT}"
-          else
-            echo "has_creds=false" >> "${GITHUB_OUTPUT}"
-            echo "::notice::Simplifier credentials not configured — skipping the SUSHI + Simplifier QC (.NET) job (the upstream workflow requires SIMPLIFIER_USERNAME/SIMPLIFIER_PASSWORD). The IG preview build still compiles and validates the IG."
-          fi
-
-  dotnet-validation:
-    name: SUSHI + Simplifier QC (.NET)
-    needs: dotnet-validation-guard
-    # ON by default, and only on created modules — the placeholder
-    # template repo cannot produce clean SUSHI output for validation.
-    if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@53291347918f61a809f0fa06c59f54a514f9f10b # mii-kds-module-template dev @ 2026-11-02 (#46)
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      # Pinned SUSHI (fixed versions); overridable via the repo variable.
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.21.0' }}
-    secrets: inherit
-
   # The upstream Java-validation workflow has NO terminology fallback: it
   # builds its client-cert proxy from the CDS_DEV_CLIENT_* secrets
   # unconditionally, so calling it without the SU-TermServ certificate fails
@@ -152,8 +113,9 @@ jobs:
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
-      # Compile FSH in the job: fsh-generated/ is not the source of truth. Same
-      # pinned SUSHI as the .NET job above; overridable via the repo variable.
+      # Compile FSH in the job: fsh-generated/ is not committed. Pinned SUSHI
+      # (fixed versions; toolchain-pins.test.mjs keeps it equal to the build
+      # workflows); overridable via the repo variable.
       SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.21.0' }}
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.

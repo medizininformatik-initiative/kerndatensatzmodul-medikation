@@ -1,0 +1,104 @@
+# Publish the SUSHI output to the orphan branch `fsh-generated`.
+#
+# Purpose:   fsh-generated/ is not committed on source branches (see
+#            .gitignore). Consumers that read FHIR JSON straight from GitHub —
+#            a GitHub-linked Simplifier project, ad-hoc tooling — read it from
+#            the orphan branch `fsh-generated` instead, which this workflow
+#            refreshes from every push to master and release/**.
+#            Same idiom as kerndatensatz-basis (publish-fsh-generated.yml), with
+#            the toolchain pinned instead of fsh-sushi@latest.
+#
+# Content:   fsh-generated/resources/ + package.json — exactly what master used
+#            to carry. SUSHI's index files and generated includes stay out, as
+#            before. One commit per change, message "<branch> @ <sha>".
+#
+# Not here:  the FHIR package. The authoritative package.tgz is built by
+#            go-publish.yml; scripts/publish-simplifier.sh uploads that one.
+#            ig-publisher.yml excludes the `fsh-generated` branch from previews.
+#
+# Fixed versions: SUSHI is NOT pinned here a second time. The step reads the
+#            SUSHI_VERSION pin from ig-publisher.yml's env: block (the copy
+#            scripts/toolchain-pins.test.mjs keeps identical across the build
+#            workflows), so this branch always carries the output of the same
+#            SUSHI the previews and the release use.
+name: Publish fsh-generated branch
+
+on:
+  push:
+    branches:
+      - master
+      - "release/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write # push to the fsh-generated branch
+
+concurrency:
+  # One writer of the fsh-generated branch at a time. Queue, never cancel, so
+  # the last push always wins.
+  group: publish-fsh-generated
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: SUSHI → fsh-generated branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22"
+
+      - name: SUSHI compile
+        shell: bash
+        run: |
+          set -euo pipefail
+          SUSHI_VERSION="$(sed -n -E 's/^  SUSHI_VERSION: "([0-9]+\.[0-9]+\.[0-9]+)"$/\1/p' .github/workflows/ig-publisher.yml)"
+          if [ -z "${SUSHI_VERSION}" ]; then
+            echo "::error::no fixed SUSHI_VERSION pin found in ig-publisher.yml"
+            exit 1
+          fi
+          echo "SUSHI ${SUSHI_VERSION} (pin from ig-publisher.yml)"
+          npm install --global "fsh-sushi@${SUSHI_VERSION}"
+          sushi .
+          test -d fsh-generated/resources
+
+      - name: Commit to the fsh-generated branch
+        shell: bash
+        env:
+          SOURCE_REF: ${{ github.ref_name }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          out="${RUNNER_TEMP}/fsh-generated-branch"
+          if git ls-remote --exit-code --heads origin fsh-generated >/dev/null; then
+            git fetch --depth 1 origin fsh-generated
+            git worktree add --detach "${out}" FETCH_HEAD
+          else
+            git worktree add --orphan -b fsh-generated "${out}"
+          fi
+
+          # Replace the branch content wholesale with this build's output.
+          git -C "${out}" rm -r -q --ignore-unmatch .
+          mkdir -p "${out}/fsh-generated"
+          cp -r fsh-generated/resources "${out}/fsh-generated/"
+          cp package.json "${out}/"
+
+          git -C "${out}" add -A
+          if git -C "${out}" diff --cached --quiet; then
+            echo "::notice::fsh-generated branch already up to date."
+            exit 0
+          fi
+          git -C "${out}" commit -q -m "Update FHIR resources from ${SOURCE_REF} @ ${SOURCE_SHA}"
+          git -C "${out}" push origin HEAD:refs/heads/fsh-generated
+          {
+            echo "### fsh-generated branch updated"
+            echo "From \`${SOURCE_REF}\` @ \`${SOURCE_SHA}\`: $(git -C "${out}" ls-files | wc -l) files."
+          } >> "${GITHUB_STEP_SUMMARY}"
