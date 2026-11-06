@@ -1,0 +1,131 @@
+@startuml
+
+skinparam ClassBackgroundColor LightBlue
+skinparam Linetype ortho
+
+class Medikation {
+   Code : CodeableConcept[0..1]
+   Darreichungsform : CodeableConcept[0..1]
+}
+
+class Bestandteil {
+   Code : CodeableConcept[0..1]
+   Wirkstoff|Medikation : CodeableConcept[0..1]
+   Menge|Stärke : Ratio[0..1]
+}
+
+note right of Bestandteil
+  //Wirkstofftyp// durch
+  //Wirkstoff|Medikation// ersetzt
+end note
+
+class Medikationsverordnung {
+   Identifikation : Identifier[0..*]
+   Status : code[1]
+   Hinweis : string[0..*]
+   Behandlungsgrund : CodeableContept|Reference[0..*]
+   Datum der Verordnung : dateTime[0..1]
+   Ersatzmedikation : booleanCodeableConcept[0..1]
+   Verordnungsdetails : code[1] 
+   Bezug zum Patient : Reference[1]
+   Bezug zum Fall : Reference[0..1]
+   vorherige Medikationsverordnung : Reference[0..1]
+   Kontraindikation : Reference[0..*]
+   Autor*in|Informant*in : Reference[0..1]
+}
+
+class Medikationseintrag {
+   Identifikation : Identifier[0..*]
+   Status : code[1]
+   Hinweis : string[0..*]
+   Behandlungsgrund : CodeableContept|Reference[0..*]
+   Bezug zur Verordnung : Reference[0..1]
+   Bezug zur Abgabe : Reference[0..*]
+   Bezug zum Patient : Reference[1]
+   Bezug zum Fall : Reference[0..1]
+   Datum des Eintrags : dateTime[0..1]
+   Autor*in|Informant*in : Reference[0..1]
+}
+
+class Dosierung {
+   Reihenfolge : integer[0..1]
+   Freitext : string[0..1]
+   Einnahme bei Bedarf : boolean|CodeableConcept[0..1]
+   Art der Anwendung : CodeableConcept[0..1]
+   Dosis : Ratio|Range|Quantity[0..1]
+}
+
+note left
+  Wir haben hier ein Klassendiagramm verwendet.
+  Wenn auch dargestellt werden soll, dass jeweils 
+  //andere Instanzen der Klassen Dosierung und Zeitangabe//
+  referenziert werden, muss man ein Objectdiagramm
+  verwenden.
+end note
+
+class Medikationsliste {
+   Identifikation : Identifier[0..*]
+   Status : code[1]
+   Modus : code[1]
+   Hinweis : string[0..*]
+   Typ : CodeableConcept[0..*]
+   Bezug zum Patient : Reference[1]
+   Bezug zum Fall : Reference[0..1]
+}
+
+class Medikationsverabreichung {
+   Identifikation : Identifier[0..*]
+   Status : code[1]
+   Verabreichungszeitpunkt : dateTime|Period[0..1]
+   Hinweis : string[0..*]
+   Behandlungsgrund : CodeableContextReference[0..*]
+   Bezug zur Verordnung : Reference[0..1]
+   Bezug zum Patient : Reference[1]
+   Bezug zum Fall : Reference[0..1]
+   Durchführende*r : Reference[0..*]
+}
+
+class Dosierungsinstruktion {
+   Reihenfolge : integer[0..1]
+   Freitext : string[0..1]
+   Einnahme bei Bedarf : boolean|CodeableConcept[0..1]
+   Art der Anwendung : CodeableConcept[0..1]
+   Dosis : Ratio|Range|Quantity[0..1]
+}
+
+class Zeitangabe {
+   Zeitpunkt : dateTime[0..1]
+
+}
+
+class Periodisches_Intervall {
+    Phase : dateTime[0..1]
+    Periode : Period[0..1]
+}
+
+class Ereignisbezogene_Wiederholung {
+    Ereignis : code[0..1]
+    Offset : unsignedInt[0..1]
+}
+
+class Einnahmedauer {
+    Startzeitpunkt : dateTime[0..1]
+    Endzeitpunkt : dateTime[0..1]
+    Dauer der Einnahme : Period[0..1]
+}
+
+Medikation "1" -up- "1..*" Bestandteil
+Medikation "1" -- "0..1" Medikationsverordnung
+Medikation "1" -- "0..1" Medikationseintrag
+Medikation "1" -- "0..1" Medikationsverabreichung
+Medikationseintrag "0..*" -up- "1" Medikationsliste
+Medikationseintrag "1" -- "0..*" Dosierung
+Medikationsverabreichung "1" -- "0..*" Dosierung
+Medikationsverordnung "1" -- "0..*" Dosierungsinstruktion
+Dosierung "1" -- "0..1" Zeitangabe
+Dosierungsinstruktion "1" -- "0..1" Zeitangabe
+Zeitangabe "1" -- "0..1" Periodisches_Intervall
+Zeitangabe "1" -- "0..1" Ereignisbezogene_Wiederholung
+Zeitangabe "1" -- "0..1" Einnahmedauer
+
+@enduml
