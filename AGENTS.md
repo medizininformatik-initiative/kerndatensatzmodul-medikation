@@ -1,4 +1,4 @@
-# AGENTS.md — mii-kds-module-template
+# AGENTS.md — kerndatensatzmodul-medikation
 
 Vendor-neutral instructions for any coding agent working in this repository.
 These instructions describe *what to do*, independent of which agent, runtime,
@@ -6,46 +6,48 @@ or model executes them.
 
 ## What this repository is
 
-A **GitHub template repository** — the scaffold for a new **MII KDS module
-Implementation Guide (IG)**. A user clicks "Use this template" to start a
-module; the scaffold's `sushi-config.yaml`, `ig.ini`, and workflows carry
-`{{PLACEHOLDER}}` values the new module fills in. The scaffold **references**
-the MII IG template package
-[`ig-template-mii-kds`](https://github.com/forschungsgruppe-digital-health/ig-template-mii-kds)
-(`de.medizininformatikinitiative.template`) in `ig.ini` — **today as the
-vendored local folder `template = #ig-template`**, because that package has no
-published release yet; it switches to
-`template = de.medizininformatikinitiative.template#<version>` once it does (see
-[`docs/recipes/switch-template-to-published.md`](docs/recipes/switch-template-to-published.md)
-and [issue #136](../../issues/136)). See [`README.md`](README.md)
-for the full picture.
+The **MII Kerndatensatz Modul Medikation** — the Implementation Guide (IG) of a
+KDS module, built with SUSHI and the HL7 IG Publisher
+(`de.medizininformatikinitiative.kerndatensatz.medikation`, canonical
+`https://www.medizininformatik-initiative.de/fhir/core/modul-medikation`). It was
+created from the
+[`mii-kds-module-template`](https://github.com/medizininformatik-initiative/mii-kds-module-template)
+and keeps that template's tooling (workflows, scripts, convention checker).
+`ig.ini` references the MII IG template
+[`ig-template-mii-kds`](https://github.com/medizininformatik-initiative/ig-template-mii-kds)
+by repository URL until the package is published; the vendored `ig-template/`
+is the offline fallback (see
+[`docs/recipes/switch-template-to-published.md`](docs/recipes/switch-template-to-published.md)).
+See [`README.md`](README.md) for the module itself.
 
-**Two layers — do not confuse them:**
+The module releases with **CalVer `YYYY.n.n`** via the MII Module Release
+Workflow (`module-release.yml` → `go-publish.yml`). It never uses Release Please
+or SemVer — those belong to the template repository only.
 
-- **This template repository itself** releases with **SemVer** (Release Please
-  on `main`) — it is tooling.
-- **A module created from it** releases with **CalVer `YYYY.n.n`** via the MII
-  Module Release Workflow. The first-run bootstrap
-  ([`scripts/first-run-bootstrap.sh`](scripts/first-run-bootstrap.sh)) removes this
-  repo's Release Please files from a new module so the two never mix.
+## Sources and generated files
+
+- FSH sources live in `input/fsh/`; pages in `input/pagecontent/` (English, the
+  source) and `input/translations/de/` (German).
+- `fsh-generated/` is **build output and is never committed** (it is in
+  `.gitignore`). Every build runs `sushi .` first;
+  `publish-fsh-generated.yml` publishes the output to the orphan branch
+  `fsh-generated` for consumers that read FHIR JSON from GitHub. Never commit
+  to that branch by hand.
 
 ## Branching and pull-request rules
 
-Full walkthrough in [`CONTRIBUTING.md`](CONTRIBUTING.md). The short form the
-agent must follow:
-
-- **Never commit to `main` or `dev` directly.** All work happens on a
-  short-lived branch (`feature/*`, `change/*`, `fix/*`) **off `dev`**.
-- Every change arrives as a **pull request targeting `dev`** — one focused
-  change per PR. PRs into `dev` are squash-merged after green CI and human
-  review; the working branch is then deleted.
-- `dev` → `main` is the **release gate**: a human decision, merged as a merge
-  commit (not a squash). Never open or merge it unprompted.
-- **Back-merge rule.** `main` and `dev` have diverged (see
-  [`docs/project-status.md`](docs/project-status.md)). If anything lands on
-  `main` without going through `dev`, `main` must be merged back into `dev`
-  before the next `dev → main` merge. Check `git log origin/dev..origin/main`
-  before branching.
+- **Never commit to `master` directly.** All work happens on a short-lived
+  branch (`feature/*`, `change/*`, `fix/*`, `docs/*`, `ci/*`, `chore/*`) **off
+  `master`**.
+- Every change arrives as a **pull request targeting `master`** — one focused
+  change per PR, merged after green CI and human review; the working branch is
+  then deleted.
+- Release preparation happens on `release/**` branches, where the convention
+  check runs in strict (release) mode.
+- Every pushed branch gets an IG preview under
+  `https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/branches/<branch>/`
+  (`ig-publisher.yml`); `cleanup-gh-pages.yml` removes it once the branch is
+  deleted.
 - **Conventional Commits** for every commit message and PR title
   (`feat`, `fix`, `docs`, `chore`, `ci`, `refactor`, `test`).
 
@@ -57,150 +59,66 @@ Author identity is the configured human committer.
 
 ## Guardrails
 
-- **Never mix release systems.** This template repo = SemVer/Release Please; a
-  module = CalVer/MII Module Release Workflow. Do not wire Release Please into a
-  module, and do not let a module inherit this repo's Release Please files.
 - **Fixed versions only.** Never use `current`/`latest`/`dev`/`cibuild` as a
-  version label in anything built (dependencies, the IG template pin, tool
-  versions). The convention check (M7) and the publication gate in
-  `go-publish.yml` both reject that set; the dependency check proposes bumps.
+  version label in anything built (dependencies, tool versions, reusable
+  workflow refs — pin commit SHAs). The convention check (M7) and the
+  publication gate in `go-publish.yml` both reject that set; the dependency
+  check proposes bumps. The interim template URL in `ig.ini` is the one
+  sanctioned exception until the template package is published.
+- **Toolchain pins are copies that must agree** (IG Publisher + SHA-256, SUSHI,
+  Jekyll in `ig-publisher.yml`, `go-publish.yml`, `module-release.yml`; the
+  SUSHI fallback in `validation.yml`). `scripts/toolchain-pins.test.mjs` fails
+  on drift; change them together.
 - **`ig-template/` is a machine-synced mirror**, maintained by
   `scripts/sync-ig-template.sh` (`--check` fails on drift; `sync-ig-template.yml`
-  runs it). Never hand-edit it, and never rewrite `template = #ig-template` into
-  a package pin — `scripts/first-run-bootstrap.sh` tells module owners to leave
-  that line alone until the package is published. Fix the source in
-  `ig-template-mii-kds` and re-sync.
-- **The vendored skill folders are machine-synced too** (`skills/fhir-ig-analysis`,
-  `skills/fhir-ig-translation`), maintained by `scripts/sync-skills.sh` at the ref
-  pinned in `skills-lock.json` (`--check` fails on drift; `sync-skills.yml` runs
-  it). Never hand-edit them; fix the source in `agent-skills` and re-sync.
+  runs it). Never hand-edit it, and never rewrite the `template =` line in
+  `ig.ini` into a package pin before the package is published.
 - **The single convention checker** is `wiki-consistency-check` +
-  `scripts/convention-check.mjs` (placeholder-aware). Do not add a second
-  metadata linter. `convention-check.yml` also runs `scripts/language-model-check.sh`
-  — a separate concern (see below), not a second metadata linter.
+  `scripts/convention-check.mjs`. Do not add a second metadata linter.
+  `convention-check.yml` also runs `scripts/language-model-check.sh` — a
+  separate concern, not a second metadata linter.
 - **English is the IG's default language, German the translation**
   (`i18n-default-lang: en`, sources under `input/translations/de/`) — the same
-  model as `kerndatensatz-basis`, so "deviates from basis" is never true. Prose
-  asserting the reverse fails `scripts/language-model-check.sh` in CI — fix the
-  prose, never the guard.
+  model as `kerndatensatz-basis`. Prose asserting the reverse fails
+  `scripts/language-model-check.sh` in CI — fix the prose, never the guard.
 - Do not change canonical URLs of published artifacts.
 - Checker/analysis skills are report-only: they propose, humans decide; no
-  auto-merge; any change is a PR targeting `dev`.
-- Never trigger a publication or announcement; those are human-gated.
+  auto-merge; any change is a PR targeting `master`.
+- Never trigger a publication, a release, or an announcement; those are
+  human-gated (`go-publish.yml` is `workflow_dispatch` only).
 
 ## Skills
 
-Every skill an agent can invoke here lives in [`skills/`](skills/) — one folder
-per skill, with the instructions in `SKILL.md` (agent-skills format). Consult
-them before doing the corresponding task by hand. Two kinds share the directory,
-and the difference decides where a fix goes ([`skills/README.md`](skills/README.md)
-is the index):
+Every skill tracked here lives in [`skills/`](skills/) — one folder per skill,
+instructions in `SKILL.md` (agent-skills format); [`skills/README.md`](skills/README.md)
+is the index. `.claude/skills` and `.agents/skills` are relative symlinks to
+`skills/`, so every runtime reads the same content.
 
-- **Written here** — this repository is their source of truth; edit them here.
-- **Vendored from the org catalog** — pinned copies; edit them in the catalog
-  (see below).
+- [`skills/wiki-consistency-check/`](skills/wiki-consistency-check/SKILL.md) —
+  the convention checker (repo ↔ MII meta wiki drift plus the module-metadata
+  contract), mechanized by [`scripts/convention-check.mjs`](scripts/convention-check.mjs).
+- [`skills/docs-steward/`](skills/docs-steward/SKILL.md) — checks this
+  repository's documentation against the repo itself.
 
-Written here:
+Both come from the module template; update them from there.
 
-- [`skills/wiki-consistency-check/`](skills/wiki-consistency-check/SKILL.md)
-  — **the single convention checker**: repo ↔ MII meta wiki drift plus the hard
-  module-metadata contract; placeholder-aware; report-only, PRs target `dev`.
-  Mechanized by [`scripts/convention-check.mjs`](scripts/convention-check.mjs).
-- [`skills/docs-steward/`](skills/docs-steward/SKILL.md) — checks and repairs
-  this repository's documentation: verifies every link, path and factual claim
-  against the repo itself, keeps the docs to what create/modify/maintain
-  actually needs, and walks the documented path as a first-time and an
-  experienced reader. Findings are reported for a human to decide on; any
-  resulting change is a pull request targeting `dev`.
-
-### Skills vendored from the org catalog (pinned, drift-checked)
-
-Measuring an IG and translating one are **not written here**. They belong to the organization's
-skill catalog,
-[`forschungsgruppe-digital-health/agent-skills`](https://github.com/forschungsgruppe-digital-health/agent-skills),
-which is their single source of truth and where they have been developed further — but this is the
-repository where a module author actually runs them, so they are **vendored**: a pinned copy under
-`skills/`, refreshed from the catalog and verified against the pin in CI.
-
-| Task | Catalog skill | Was |
-| --- | --- | --- |
-| Measure / compare Implementation Guides (read-only statistics, hygiene, maturity) | [`skills/fhir-ig-analysis/`](skills/fhir-ig-analysis/SKILL.md) | `skills/ig-analyze` + `scripts/ig-stats.py` |
-| Produce a guide's translation supplements (translate or harvest) | [`skills/fhir-ig-translation/`](skills/fhir-ig-translation/SKILL.md) | `skills/ig-translate` + `scripts/ig-translate.sh` |
-| Migrate a Simplifier/Forge-published KDS module onto this scaffold | `mii-ig-migration` — **not vendored** | never local |
-
-**Why vendored and not merely pointed at:** "Use this template" copies tracked files and fetches
-nothing, and an agent can only invoke a skill that is present on disk. A documentation pointer would
-remove the capability from every created module. `mii-ig-migration` is the exception: it runs
-against a guide *before* it lives on this scaffold, i.e. in the migrator's own checkout, not in a
-module.
-
-| | |
-| --- | --- |
-| The pin | [`skills-lock.json`](skills-lock.json) — `ref` per skill, written by the installer itself |
-| Refresh / verify | `scripts/sync-skills.sh` · `scripts/sync-skills.sh --check` (fails on drift) |
-| CI | [`sync-skills.yml`](.github/workflows/sync-skills.yml) — drift check on every PR, weekly repair PR; `scripts/vendored-skills.test.mjs` asserts the offline half on every push |
-| Bump the pin | `scripts/sync-skills.sh --ref vX.Y.Z` — one reviewable diff over `skills/` + `skills-lock.json`; the weekly dependency check proposes it |
-
-> **Never hand-edit a vendored skill folder** — the drift check will fail the next pull request.
-> Fix it in the catalog, cut a catalog release, then bump the pin here. Same rule, same reason as
-> `ig-template/`.
-
-To install a catalog skill **outside this repository** (globally, or into another checkout) use the
-catalog's own installer:
+**Org-catalog skills are installed, not copied.** Measuring an IG
+(`fhir-ig-analysis`), producing translation supplements
+(`fhir-ig-translation`) and migrating a guide (`mii-ig-migration`) belong to the
+catalog [`forschungsgruppe-digital-health/agent-skills`](https://github.com/forschungsgruppe-digital-health/agent-skills).
+Install them at a pinned release when needed:
 
 ```bash
-CATALOG=https://github.com/forschungsgruppe-digital-health/agent-skills/tree/v0.15.1
-npx skills add "$CATALOG" --list
-npx skills add "$CATALOG" --skill mii-ig-migration --agent claude-code codex --global --yes
+npx skills add forschungsgruppe-digital-health/agent-skills/tree/<release> --skill fhir-ig-analysis fhir-ig-translation --copy
 ```
 
-Pin with the `/tree/<ref>` form — `owner/repo@v0.15.1` does *not* pin: in that CLI `@` introduces a
-skill *name*, and the install silently comes from the default branch. Inside this checkout, run
-`scripts/sync-skills.sh` instead of `npx skills add`: `.claude/skills` and `.agents/skills` are
-symlinks to `skills/`, so a hand-run install writes into the vendored tree — the script does that
-deliberately, at the pinned ref, with `--copy`. The full record of what moved when is in
-[`skills/RETIRED.md`](skills/RETIRED.md); the catalog's own
-[`docs/consuming-skills.md`](https://github.com/forschungsgruppe-digital-health/agent-skills/blob/main/docs/consuming-skills.md)
-documents all three consumption paths.
+Pin with the `/tree/<ref>` form — `owner/repo@<ref>` does *not* pin. An install
+inside this checkout lands in `skills/` through the symlinks; those folders are
+in `.gitignore` and are never committed. A skill that needs another one states
+it as a precondition and prints the install command — it never installs
+anything itself.
 
-### Skills never install other skills
-
-A skill that needs another one states it as a **precondition** and prints the exact install command
-for the user to run. It does not install anything itself, and `allowed-tools` is not a dependency
-declaration — it grants permissions, it says nothing about what must already be present.
-Auto-installing would write into the user's project as a side effect of an unrelated invocation,
-make the run non-hermetic (its behaviour would depend on a network fetch nobody asked for), and cut
-against the catalog's static-by-design stance.
-
-### Discovery paths (symlinks, not copies)
-
-Some agent runtimes look for skills in a runtime-specific directory. Those
-directories are committed as **relative symlinks** to the single source:
-
-```
-.claude/skills  -> ../skills
-.agents/skills  -> ../skills
-```
-
-> **Why symlinks over copies:** copies drift; a symlink guarantees every
-> runtime reads the identical, single-sourced skill content.
-
-**Windows caveat:** on Windows, git checks out symlinks as plain text files
-containing the link target unless symlink support is enabled (Developer Mode or
-admin rights, plus `git config core.symlinks true` before checkout). If a
-runtime on such a checkout cannot follow the links, read the canonical
-`skills/` directory directly — or generate a mirror from `skills/` in CI. Never
-hand-copy the content into the runtime directories.
-
-## Creating a module from this template
-
-A new module needs the one-time first-run bootstrap
-([`docs/recipes/first-run-setup.md`](docs/recipes/first-run-setup.md)): it
-creates `dev` from `main`, applies branch protection, and removes the
-files that would conflict with a module (Release Please + the template's SemVer
-announcement + the template `CHANGELOG`). The preview, validation, monitoring,
-convention-check, and module-release workflows, the skills, and the bootstrap
-with its recipe **stay** — a module wants them. The authoritative removal list
-is the `REMOVE=` line in
-[`scripts/first-run-bootstrap.sh`](scripts/first-run-bootstrap.sh); the dry run
-prints it.
+**Windows caveat:** git checks out symlinks as plain text files unless symlink
+support is enabled (`git config core.symlinks true` before checkout). If a
+runtime cannot follow the links, read `skills/` directly; never hand-copy the
+content into the runtime directories.
