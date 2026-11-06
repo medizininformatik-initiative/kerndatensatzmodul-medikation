@@ -28,26 +28,28 @@ function fixture() {
   writeFileSync(
     join(root, "sushi-config.yaml"),
     [
-      "id: mii-ig-medikation",
-      "# a comment holding medikation must not trip the active-placeholder guard",
-      'version: "2026.0.1"',
-      "title: MII Implementation Guide MII IG Medikation",
+      "id: mii-ig-{{MODULE_SLUG}}",
+      "# a comment holding {{MODULE_SLUG}} must not trip the active-placeholder guard",
+      'version: "{{CALVER_VERSION}}"',
+      "title: MII Implementation Guide {{MODULE_TITLE}}",
       "",
     ].join("\n"),
   );
-  writeFileSync(join(root, "ig.ini"), "[IG]\nig = fsh-generated/resources/ImplementationGuide-mii-ig-medikation.json\ntemplate = #ig-template\n");
+  // The template line mirrors the real ig.ini's URL default; the script must
+  // leave it untouched either way (URL default or the #ig-template fallback).
+  writeFileSync(join(root, "ig.ini"), "[IG]\nig = fsh-generated/resources/ImplementationGuide-mii-ig-{{MODULE_SLUG}}.json\ntemplate = https://github.com/medizininformatik-initiative/ig-template-mii-kds\n");
   mkdirSync(join(root, "input", "translations", "de", "pagecontent"), { recursive: true });
   mkdirSync(join(root, "input", "pagecontent"), { recursive: true });
-  writeFileSync(join(root, "input", "index.md"), "Version 2026.0.1, year 2026.\n");
-  writeFileSync(join(root, "input", "translations", "de", "ImplementationGuide-mii-ig-medikation.po"), 'msgid "x"\n');
+  writeFileSync(join(root, "input", "index.md"), "Version {{CALVER_VERSION}}, year {{CALVER_YEAR}}.\n");
+  writeFileSync(join(root, "input", "translations", "de", "ImplementationGuide-mii-ig-{{MODULE_SLUG}}.po"), 'msgid "x"\n');
   // the IG-resource intro pages: placeholder in the NAME and liquid in the body
   writeFileSync(
-    join(root, "input", "pagecontent", "ImplementationGuide-mii-ig-medikation.md"),
-    "- [XML](../ImplementationGuide-mii-ig-medikation.xml)\n\n{% lang-fragment dependency-table.xhtml %}\n",
+    join(root, "input", "pagecontent", "ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md"),
+    "- [XML](../ImplementationGuide-mii-ig-{{MODULE_SLUG}}.xml)\n\n{% lang-fragment dependency-table.xhtml %}\n",
   );
   writeFileSync(
-    join(root, "input", "translations", "de", "pagecontent", "ImplementationGuide-mii-ig-medikation.md"),
-    "- [XML](../ImplementationGuide-mii-ig-medikation.xml)\n\n{% lang-fragment dependency-table.xhtml %}\n",
+    join(root, "input", "translations", "de", "pagecontent", "ImplementationGuide-mii-ig-{{MODULE_SLUG}}.md"),
+    "- [XML](../ImplementationGuide-mii-ig-{{MODULE_SLUG}}.xml)\n\n{% lang-fragment dependency-table.xhtml %}\n",
   );
   return root;
 }
