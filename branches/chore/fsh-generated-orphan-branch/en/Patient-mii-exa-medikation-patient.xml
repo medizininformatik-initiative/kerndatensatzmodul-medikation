@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="mii-exa-medikation-patient"/>
+  <meta>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HTEST"/>
+      <display value="test health data"/>
+    </security>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: Patient mii-exa-medikation-patient</b></p><a name="mii-exa-medikation-patient"> </a><a name="hcmii-exa-medikation-patient"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Security Label: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActReason.html">test health data (Details: ActReason code HTEST = 'test health data')</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Max Mustermann  Male, DoB: 1965-03-14 ( https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient#12345)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/sid/patient"/>
+    <value value="12345"/>
+  </identifier>
+  <name>
+    <family value="Mustermann"/>
+    <given value="Max"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1965-03-14"/>
+</Patient>
