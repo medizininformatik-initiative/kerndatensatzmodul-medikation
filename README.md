@@ -4,7 +4,7 @@
 
 [![FHIR Project on GitHub.com](https://img.shields.io/badge/FHIR_project_on_GitHub.com-kerndatensatzmodul--medikation-green)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation) 
 
-[![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/main.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/main.yml)
+[![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/validation.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/validation.yml)
 
 Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Medikation', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
 

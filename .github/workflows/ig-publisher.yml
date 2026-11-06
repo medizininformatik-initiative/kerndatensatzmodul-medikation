@@ -25,6 +25,14 @@
 #            to 'false' to skip the whole workflow (jobs show as "skipped", not
 #            failed).
 #
+# QA summary: vars.ENABLE_QA_SUMMARY — ON by default. Renders output/qa.xml
+#            with patrick-werner/validation-outcome-markdown-renderer as
+#            annotations + a job-summary table (report-only, never fails the
+#            build). vars.QA_SUMMARY_INCLUDE picks the severities (errors |
+#            warnings | all; default errors); vars.QA_SUMMARY_FILTERS takes
+#            line-separated `filename|messageId|detailsWildcard|location`
+#            rules for known issues.
+#
 # Pages two modes (vars.PAGES_ACTIONS_ENABLED):
 #            - unset / not 'true' (default): the preview is served by "Deploy
 #              from a branch → gh-pages" (Settings → Pages). This workflow only
@@ -48,8 +56,9 @@
 #            WORKSPACE COPY that is NEVER committed, sed-substitutes the
 #            documented self-check values (MODULE_SLUG=template, …) into
 #            sushi-config.yaml, ig.ini and the build inputs so a real build can
-#            run. The template line itself is left alone: `#ig-template` (the
-#            vendored folder) is buildable, so the full build + preview run.
+#            run. The template line itself is left alone: both the repository-URL
+#            default and `#ig-template` (the vendored fallback folder) are
+#            buildable, so the full build + preview run.
 #            Should a repository ever carry a TODO template line instead, the
 #            build DEGRADES at runtime to a SUSHI-only check with a clear
 #            ::notice — no edit to this file needed either way. In a created
@@ -102,7 +111,7 @@ env:
   # fails the build if they drift apart.
   PUBLISHER_VERSION: "2.3.2"
   PUBLISHER_SHA256: "07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5"
-  SUSHI_VERSION: "3.20.1"
+  SUSHI_VERSION: "3.21.0"
   JEKYLL_VERSION: "4.4.1"
 
 jobs:
@@ -156,7 +165,7 @@ jobs:
         #
         # The value table itself lives in scripts/self-check-substitute.sh rather
         # than inline here, because release-demo.yml needs the SAME substitution
-        # to render the demo the Pages landing page advertises. Two copies of the
+        # to render the demo the Pages root index advertises. Two copies of the
         # table is how the two builds drift apart — exactly the class of bug
         # release-demo.yml exists to end. Leaving SELF_CHECK_RELEASE_TAG unset
         # keeps the fixed draft CALVER_VERSION that a preview should carry; the
@@ -190,13 +199,14 @@ jobs:
           sushi .
           test -d fsh-generated/resources
           # A full IG Publisher build needs a buildable IG template in ig.ini.
-          # `#ig-template` (the vendored folder) is buildable, so this normally
-          # takes the full path; a TODO template line degrades to a SUSHI-only
-          # check. Detecting it at runtime keeps this file edit-free either way.
+          # The repository-URL default and `#ig-template` (the vendored
+          # fallback) are both buildable, so this normally takes the full path;
+          # a TODO template line degrades to a SUSHI-only check. Detecting it
+          # at runtime keeps this file edit-free either way.
           tmpl_line="$(grep -E '^[[:space:]]*template[[:space:]]*=' ig.ini || true)"
           if printf '%s' "${tmpl_line}" | grep -q 'TODO'; then
             echo "mode=sushi-only" >> "${GITHUB_OUTPUT}"
-            echo "::notice::ig.ini carries a TODO template placeholder — running a SUSHI-only check. The IG Publisher build and the Pages preview are skipped until ig.ini names a buildable template (the vendored #ig-template, or the published package once it exists — see docs/recipes/switch-template-to-published.md)."
+            echo "::notice::ig.ini carries a TODO template placeholder — running a SUSHI-only check. The IG Publisher build and the Pages preview are skipped until ig.ini names a buildable template (the template repository URL — the default, the vendored #ig-template fallback, or the published package once it exists — see docs/recipes/switch-template-to-published.md)."
           else
             echo "mode=full" >> "${GITHUB_OUTPUT}"
             echo "IG template reference present — running the full IG Publisher build + preview."
@@ -287,6 +297,23 @@ jobs:
             -fhir-settings "${GITHUB_WORKSPACE}/.github/fhir-settings.json"
           test -s output/index.html
           jq empty output/qa.json
+
+      - name: Render IG Publisher QA (qa.xml) as job summary
+        # The publisher's own validation result, rendered as annotations and a
+        # summary table — for repos that run neither of the MII reusable
+        # validation workflows. Runs even when the build step failed, as long
+        # as the publisher got far enough to write output/qa.xml. Report-only:
+        # the renderer fails on remaining errors, continue-on-error keeps that
+        # from failing the preview. The summary file goes to RUNNER_TEMP so it
+        # never lands in the published preview.
+        if: ${{ !cancelled() && steps.build.outputs.mode == 'full' && vars.ENABLE_QA_SUMMARY != 'false' && hashFiles('output/qa.xml') != '' }}
+        continue-on-error: true
+        uses: patrick-werner/validation-outcome-markdown-renderer@09f430c50c24c4d8666158efa4922dd300de6b1b # v1.5.0
+        with:
+          bundle-file: output/qa.xml
+          include: ${{ vars.QA_SUMMARY_INCLUDE || 'errors' }}
+          filters: ${{ vars.QA_SUMMARY_FILTERS }}
+          pr-summary-path: ${{ runner.temp }}/qa-summary.md
 
       - name: Template-repo self-check DEMO — render the version-comparison report
         # Demonstrates what a version delta looks like and where it lives,

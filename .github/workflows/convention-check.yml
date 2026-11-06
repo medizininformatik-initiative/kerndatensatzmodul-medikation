@@ -35,9 +35,9 @@ name: convention-check
 
 on:
   push:
-    branches: [dev, main, "release/**"]
+    branches: [master, "release/**"]
   pull_request:
-    branches: [dev, main, "release/**"]
+    branches: [master, "release/**"]
   workflow_dispatch:
     inputs:
       strict:

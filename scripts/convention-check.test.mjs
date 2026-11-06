@@ -5,12 +5,12 @@ import assert from "node:assert/strict";
 import { evaluate, readTopLevel, readDependencies, readIgIniTemplate, scanOptionalPages } from "./convention-check.mjs";
 
 // A parameterized scaffold sushi-config, as this repo ships it.
-const SCAFFOLD = `id: mii-ig-medikation
-canonical: https://www.medizininformatik-initiative.de/fhir/modul-medikation
-name: MII_IG_MII_IG_Medikation
-title: MII Implementation Guide MII IG Medikation
-version: "2026.0.1"
-packageId: de.medizininformatikinitiative.kerndatensatz.medikation
+const SCAFFOLD = `id: mii-ig-{{MODULE_SLUG}}
+canonical: https://www.medizininformatik-initiative.de/fhir/modul-{{MODULE_SLUG}}
+name: MII_IG_{{MODULE_NAME}}
+title: MII Implementation Guide {{MODULE_TITLE}}
+version: "{{CALVER_VERSION}}"
+packageId: de.medizininformatikinitiative.kerndatensatz.{{MODULE_SLUG}}
 dependencies:
   de.basisprofil.r4: 1.5.4
   hl7.fhir.uv.crmi: 2.0.0
@@ -69,14 +69,21 @@ test("M5 still rejects what is genuinely outside the canonical universe", () => 
 });
 
 test("M5 keeps placeholder handling in the ext/core spaces", () => {
-  const finding = m5("https://www.medizininformatik-initiative.de/fhir/ext/modul-medikation", false);
+  const finding = m5("https://www.medizininformatik-initiative.de/fhir/ext/modul-{{MODULE_SLUG}}", false);
   assert.equal(finding.status, "parameterized");
 });
 
 test("extractors read values, strip quotes and comments", () => {
-  assert.equal(readTopLevel(SCAFFOLD, "id"), "mii-ig-medikation");
+  assert.equal(readTopLevel(SCAFFOLD, "id"), "mii-ig-{{MODULE_SLUG}}");
   assert.equal(readTopLevel(CONCRETE, "version"), "2026.0.1");
   assert.equal(readTopLevel("status: active # a comment\n", "status"), "active");
+  // Quoted value WITH a trailing comment: the quotes end the value, the
+  // comment is not part of it (annotating above the line is no longer the
+  // only safe form - the measured M4 false-failure class).
+  assert.equal(readTopLevel('title: "MII Modul X" # decided 2026-08-28\n', "title"), "MII Modul X");
+  assert.equal(readTopLevel("license: 'CC0-1.0' # carried from the source\n", "license"), "CC0-1.0");
+  // A hash INSIDE the quotes is content, never a comment.
+  assert.equal(readTopLevel('title: "MII # 1"\n', "title"), "MII # 1");
   assert.equal(readDependencies(SCAFFOLD).length, 2);
   assert.equal(readIgIniTemplate(CONCRETE_IGINI), "de.medizininformatikinitiative.template#0.1.0");
 });
@@ -124,6 +131,15 @@ test("malformed concrete values fail", () => {
   assert.ok(failed.includes("M6 version"));
 });
 
+test("a CalVer prerelease suffix passes M6 (create-a-new-module.md and go-publish.yml both sanction it)", () => {
+  const rc = CONCRETE.replace('version: "2026.0.1"', 'version: "2027.0.0-ballot.rc1"');
+  const { findings } = evaluate({ sushiConfig: rc, igIni: CONCRETE_IGINI, release: false });
+  assert.ok(!ids(findings, "fail").includes("M6 version"));
+  const draft = CONCRETE.replace('version: "2026.0.1"', 'version: "2027.0.0-draft.1"');
+  const r2 = evaluate({ sushiConfig: draft, igIni: CONCRETE_IGINI, release: false });
+  assert.ok(!ids(r2.findings, "fail").includes("M6 version"));
+});
+
 test("a floating dependency pin fails M7 on every branch", () => {
   const floating = CONCRETE.replace("de.basisprofil.r4: 1.5.4", "de.basisprofil.r4: current");
   const { ok, findings } = evaluate({ sushiConfig: floating, igIni: CONCRETE_IGINI, release: false });
@@ -147,8 +163,12 @@ test("a #cibuild ig.ini template fails M7", () => {
   assert.ok(ids(findings, "fail").includes("M7 no floating pins"));
 });
 
-test("a pinned package reference and the vendored local folder both pass M7", () => {
-  for (const tmpl of ["de.medizininformatikinitiative.template#1.0.0", "#ig-template"]) {
+test("a pinned package reference, the vendored folder and the interim URL all pass M7", () => {
+  // The repository-URL form is the sanctioned interim (decision 2026-08-28,
+  // docs/concepts.md section 2): it carries no floating LABEL, and the
+  // published id#version pin replaces it once the package is on the registry.
+  for (const tmpl of ["de.medizininformatikinitiative.template#1.0.0", "#ig-template",
+    "https://github.com/medizininformatik-initiative/ig-template-mii-kds"]) {
     const { findings } = evaluate({ sushiConfig: CONCRETE, igIni: `template = ${tmpl}\n`, release: false });
     assert.ok(ids(findings, "pass").includes("M7 no floating pins"), tmpl);
   }
@@ -300,14 +320,14 @@ test("scanOptionalPages pairs the languages of this repository's scaffold", () =
   // optional pages and deletes the markers of KEPT ones (the M9 decision), so
   // the full-scaffold state below holds only where the placeholders do —
   // detected the same way the self-check does, by an unreplaced
-  // medikation in sushi-config.yaml (this test ships into created
+  // {{MODULE_SLUG}} in sushi-config.yaml (this test ships into created
   // modules; asserting the template's committed state there broke a real
   // migration's CI). In every repository, whatever optional pages DO exist
   // must agree across the two languages.
   const sushi = readFileSync(`${root}/sushi-config.yaml`, "utf8");
   // Detected by the PARSED id value, never by a substring of the whole file:
   // a module that keeps the placeholder documentation as COMMENTS still
-  // contains "medikation" textually, and the substring test forced the
+  // contains "{{MODULE_SLUG}}" textually, and the substring test forced the
   // full-scaffold assertions below onto a real module that had legitimately
   // removed optional pages per its M9 decision (issue #165, measured on the
   // Onkologie migration). The full-scaffold pins further down are DELIBERATE

@@ -2,7 +2,9 @@
 #
 # Purpose:   Validate the module's FHIR conformance resources and examples by
 #            CALLING the Medical Informatics Initiative's shared reusable
-#            workflows rather than reimplementing validation:
+#            workflows rather than reimplementing validation. Since
+#            kerndatensatz-meta#251 they live in mii-kds-module-template's
+#            .github/workflows/ (before: kerndatensatz-meta@master):
 #              - ci_dotnet_validation.yml — SUSHI compile + Simplifier Quality
 #                Control (MII naming conventions), whose rule set this repo
 #                ships at the fixed path qc/custom.rules.yaml. NOTE (per the
@@ -34,7 +36,7 @@
 #            bootstrap keeps it).
 #
 # Fixed versions: the reusable workflows are pinned to a FIXED commit SHA
-#            of kerndatensatz-meta (not the moving @master the wiki shows).
+#            of mii-kds-module-template (never a branch).
 #            SUSHI + Java-validator versions are pinned with a repo-var override.
 #
 # Secrets (human prerequisites — CI cannot obtain them by itself):
@@ -55,7 +57,7 @@ name: FHIR validation
 
 on:
   push:
-    branches: [dev, main]
+    branches: [master]
   pull_request:
   workflow_dispatch:
 
@@ -96,11 +98,11 @@ jobs:
     # ON by default, and only on created modules — the placeholder
     # template repo cannot produce clean SUSHI output for validation.
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.dotnet-validation-guard.outputs.has_creds == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-07-15
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_dotnet_validation.yml@53291347918f61a809f0fa06c59f54a514f9f10b # mii-kds-module-template dev @ 2026-11-02 (#46)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       # Pinned SUSHI (fixed versions); overridable via the repo variable.
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.21.0' }}
     secrets: inherit
 
   # The upstream Java-validation workflow has NO terminology fallback: it
@@ -123,7 +125,7 @@ jobs:
           P: ${{ secrets.SU_TERMSERV_CLIENT_PASSWORD }}
           # Fallback auf die Namen, unter denen die MII-Organisation das
           # Zertifikat fuehrt. Der wiederverwendbare Workflow aus
-          # kerndatensatz-meta (ci_java_validation.yml, gepinnt auf 1db2e53)
+          # mii-kds-module-template (ci_java_validation.yml, gepinnt auf 5329134)
           # konsumiert AUSSCHLIESSLICH diese Namen; prueft der Waechter nur die
           # Template-Namen, ueberspringt er die Java-Validierung, obwohl sie
           # laufen koennte. Beachte: das Passwort heisst dort _CERT_PASSWORD.
@@ -144,15 +146,18 @@ jobs:
     name: HL7 Java validator (SU-TermServ)
     needs: java-validation-guard
     if: ${{ vars.ENABLE_VALIDATION != 'false' && !endsWith(github.repository, '/mii-kds-module-template') && needs.java-validation-guard.outputs.has_cert == 'true' }}
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@1db2e534704d92e5ee0cde663ce3e7ccd8825fa7 # kerndatensatz-meta master @ 2026-07-15
+    uses: medizininformatik-initiative/mii-kds-module-template/.github/workflows/ci_java_validation.yml@53291347918f61a809f0fa06c59f54a514f9f10b # mii-kds-module-template dev @ 2026-11-02 (#46)
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
       PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
       PATH_TO_EXAMPLES: fsh-generated/resources
       JAVA_VALIDATION_ENABLED: true
+      # Compile FSH in the job: fsh-generated/ is not the source of truth. Same
+      # pinned SUSHI as the .NET job above; overridable via the repo variable.
+      SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.21.0' }}
       # Pinned Java validator (fixed versions); mirrors the reusable workflow's
       # own default at the pinned SHA. Overridable via the repo variable.
-      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.5.7' }}
+      JAVA_VALIDATOR_VERSION: ${{ vars.JAVA_VALIDATOR_VERSION || '6.10.4' }}
       # NICHT hart setzen. Der Reusable reicht diesen String VERBATIM an
       # validator_cli.jar weiter -- ein eigener Wert ERSETZT die Org-Variable,
       # er ergaenzt sie nicht. Die Org-Variable der MII lautet:
@@ -166,8 +171,7 @@ jobs:
       # und der nachgelagerte Renderer scheitert mit
       # "ENOENT: no such file or directory, open './validation.json'" -- ein
       # Fehlerbild, das nach einem kaputten Report aussieht, aber ein nie
-      # entstandener ist. main.yml verfaehrt seit jeher per Org-Variable,
-      # weshalb dort derselbe Schritt lief.
+      # entstandener ist.
       JAVA_VALIDATION_OPTIONS: ${{ vars.JAVA_VALIDATION_OPTIONS }}
       # Ein einziger bekannter, nicht vom Modul verursachter Befund. Format:
       #   filename|messageId|detailsWildcard|location   ('*' = beliebig)
@@ -211,8 +215,7 @@ jobs:
     # Die explizite Zuordnung uebergab dreimal einen LEEREN String, weil
     # SU_TERMSERV_* hier nicht existiert: der Reusable dekodierte Leerwerte, und
     # openssl meldete "Could not read private key" - der Fehler sah nach einem
-    # kaputten Zertifikat aus, war aber ein nicht angekommenes. main.yml
-    # verfaehrt seit jeher per inherit, weshalb dort derselbe Schritt lief.
+    # kaputten Zertifikat aus, war aber ein nicht angekommenes.
     secrets: inherit
 
   template-repo-notice:
