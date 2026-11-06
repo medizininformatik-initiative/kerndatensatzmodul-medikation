@@ -36,3 +36,18 @@ skills/mii-ig-migration/
 # --- OS / editor noise ---
 .DS_Store
 *.log
+
+# --- Local IG Publisher helper scripts and editor settings ---
+# Downloaded/created locally (kerndatensatz-basis ignores them the same way);
+# CI uses the pinned workflows, never these scripts.
+_build.bat
+_build.sh
+_gencontinuous.bat
+_gencontinuous.sh
+_genonce.bat
+_genonce.sh
+_updatePublisher.bat
+_updatePublisher.sh
+.vscode/
+# Local build by-product, never source (kerndatensatz-basis ignores it too).
+Requirements-fromNarrative.json

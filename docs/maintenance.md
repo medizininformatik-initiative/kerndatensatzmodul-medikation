@@ -185,8 +185,7 @@ rather than assumed.
 This repository and the IG template share a number of documentation filenames —
 compare them with `comm -12` over `git ls-files docs` in both checkouts. That was
 once real duplication; it is not any more. **No shared file is identical**, and the
-closest pairs differ for good reasons — `project-status.md` because each names
-the other repository, `glossary.md` because this scaffold defines nine terms the
+closest pairs differ for good reasons — `glossary.md` because this scaffold defines nine terms the
 template repository has no use for, `further-reading.md` because Release Please
 is a template-repo entry a module must not follow.
 
