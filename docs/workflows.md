@@ -17,16 +17,11 @@ not in one of these tables is undocumented, and that is a defect.
 
 ## Branching (both layers)
 
-Same model as described in [CONTRIBUTING.md](../CONTRIBUTING.md): `main` (stable,
-default) · `dev` (integration) · short-lived `feature|change|fix/*` off `dev`;
-`dev → main` is a **merge commit**. A **new module starts with `main` only** unless
-you tick *Include all branches* or run the [first-run bootstrap](recipes/first-run-setup.md),
-which creates `dev` for you.
-
-In *this* repository the two branches diverged once and were reconciled on
-2026-08-06; anything landing on `main` directly has to be back-merged into `dev`
-— [project-status.md](project-status.md#branch-state--main-and-dev-are-reconciled)
-has the history and the rule.
+The template repository uses `main` (stable, default) · `dev` (integration) ·
+short-lived `feature|change|fix/*` off `dev`. **This module** works on `master`
+only: short-lived branches off `master`, PRs into `master`, `release/**` for
+release preparation — see [CONTRIBUTING.md](../CONTRIBUTING.md). Where the
+tables below say `dev`/`main`, read `master` for this module.
 
 ---
 
