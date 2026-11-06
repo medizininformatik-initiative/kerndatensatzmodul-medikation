@@ -26,6 +26,12 @@ publisher.jar
 
 # --- Tooling ---
 node_modules/
+# Org-catalog skills installed into this checkout (`npx skills add …`) land in
+# skills/ through the .claude/.agents symlinks. They are working copies, never
+# tracked content — see skills/README.md and skills/RETIRED.md.
+skills/fhir-ig-analysis/
+skills/fhir-ig-translation/
+skills/mii-ig-migration/
 
 # --- OS / editor noise ---
 .DS_Store

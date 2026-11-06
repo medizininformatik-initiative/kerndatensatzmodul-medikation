@@ -197,15 +197,17 @@ The bootstrap printed it; the essentials:
 
 ## What needs no setup: the agent skills
 
-Your module already carries every skill in [`skills/`](../../skills/README.md), including the two
-that belong to the org catalog `agent-skills` (`fhir-ig-analysis`, `fhir-ig-translation`). They are
-**vendored** — copied into the repository at a pinned ref — so "Use this template" brought them with
-it and an agent can invoke them immediately. Nothing to install, no variable to set.
+Your module already carries the repository-local skills in [`skills/`](../../skills/README.md)
+(`wiki-consistency-check`, `docs-steward`) — "Use this template" brought them with it and an agent
+can invoke them immediately. Nothing to install, no variable to set.
 
-They also stay honest on their own: `sync-skills.yml` verifies them against the pin in
-`skills-lock.json` on every pull request and opens a repair PR if a copy ever drifts. Moving to a
-newer catalog release is a deliberate step — `scripts/sync-skills.sh --ref vX.Y.Z` — proposed by the
-weekly dependency check, never automatic.
+The IG-measuring and IG-translation skills live in the org catalog `agent-skills` and are **not**
+copied into the template (see [`skills/RETIRED.md`](../../skills/RETIRED.md)). When you need one,
+install it from the catalog at a pinned release:
+
+```bash
+npx skills add forschungsgruppe-digital-health/agent-skills/tree/<release> --skill fhir-ig-analysis fhir-ig-translation --copy
+```
 
 ---
 
