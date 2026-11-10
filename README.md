@@ -6,7 +6,23 @@
 
 [![CI (FHIR Validation)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/validation.yml/badge.svg)](https://github.com/medizininformatik-initiative/kerndatensatzmodul-medikation/actions/workflows/validation.yml)
 
-Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Medikation', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
+Das vorliegende Projekt beschreibt die FHIR-Spezifikation des Basismoduls 'Medikation', welches einen zentralen Teil des Kerndatensatzes der Medizininformatik-Initiative darstellt. Die hier veröffentlichten FHIR-Profile und ImplementationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
+
+### Veröffentlichter Implementierungsleitfaden
+
+#### Build-Versionen
+
+- **Aktuelle Veröffentlichung**: https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/
+- **Entwicklungsstand (`master`)**: https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/branches/master/
+
+#### Ballot-Release
+
+- **Release 2027.0.0-ballot**: https://medizininformatik-initiative.github.io/kerndatensatzmodul-medikation/2027.0.0-ballot/
+
+#### Frühere Releases (Simplifier)
+
+- **Releases 2025.x / 2026.x (aktuell 2026.0.1)**: https://simplifier.net/guide/mii-ig-modul-medikation-2025
+- **Release 2024**: https://simplifier.net/guide/mii-ig-modul-medikation-2024-de
 
 ### Status:
 
