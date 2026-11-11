@@ -230,7 +230,7 @@ Unless otherwise noted, the contents of the FDA website (www.fda.gov) — both t
 
           IG &copy; 2019+ NUM-DIZ.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot based on FHIR 4.0.1.
-          Generated 2026-11-06
+          Generated 2026-11-11
           
           
             
@@ -256,7 +256,7 @@ Unless otherwise noted, the contents of the FDA website (www.fda.gov) — both t
 
           IG &copy; 2019+ NUM-DIZ.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot basiert auf FHIR 4.0.1.
-          Erstellt 2026-11-06
+          Erstellt 2026-11-11
           
           
             
@@ -284,14 +284,6 @@ Unless otherwise noted, the contents of the FDA website (www.fda.gov) — both t
 )
       </li>
       <li>
-(a) ja · (b), (c) nein (        <a href="de/ballot-reconciliation.html">src</a>
-)
-      </li>
-      <li>
-(a) yes · (b), (c) no (        <a href="en/ballot-reconciliation.html">src</a>
-)
-      </li>
-      <li>
 ASS 100 - 1 A Pharma&reg; TAH 100 Tbl. N3 (        <a href="en/Medication-mii-exa-medikation-medication-ass-100.html">src</a>
 )
       </li>
@@ -313,14 +305,6 @@ FENPROPOREX, (R)- (        <a href="en/ValueSet-mii-vs-medikation-unii.html">src
       </li>
       <li>
 HL7&reg;, FHIR&reg; and the FHIR flame design are registered trademarks of Health Level Seven International. Their use does not constitute endorsement by HL7. (        <a href="en/version-history.html">src</a>
-)
-      </li>
-      <li>
-ISiK ISiKMedikationsVerabreichung erlaubt für effective[x] nur sekundengenaue Angaben und verweist datumsgenaue Gaben auf MedicationStatement. Das MII-Profil erlaubt derzeit jede Genauigkeit. Teilt die MII diese Abgrenzung? MII-Daten stammen häufig aus retrospektiven DIZ-Quellen, in denen ggf. nur das Datum bekannt ist; eine harte Invariante würde solche Daten invalide machen. Optionen: (a) ISiK-Regel als Invariante übernehmen, (b) nur als SOLL im Narrativ, (c) aktuelle Regel beibehalten und die Abweichung von ISiK dokumentieren. (        <a href="de/ballot-reconciliation.html">src</a>
-)
-      </li>
-      <li>
-ISiK ISiKMedikationsVerabreichung only allows precision to the second for effective[x] and refers date-only administrations to MedicationStatement. The MII profile currently allows any precision. Does MII share this distinction? MII data often comes from retrospective DIZ sources where only the date may be known; a hard invariant would make such data invalid. Options: (a) adopt the ISiK rule as an invariant, (b) adopt it as a SHOULD in the narrative only, (c) keep the current rule and document the deviation from ISiK. (        <a href="en/ballot-reconciliation.html">src</a>
 )
       </li>
       <li>
@@ -511,7 +495,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Fri, Nov 6, 2026 14:43+0000">2026-11-06</span>
+          Erstellt           <span title="Wed, Nov 11, 2026 18:57+0000">2026-11-11</span>
 
                     <br/>
 
@@ -904,9 +888,12 @@ Dosierungsangaben sollen gemäß dem           <a href="https://ig.fhir.de/igs/m
         <td>
 Diese Seite ist ein           <strong>Arbeitsdokument</strong>
  für die Kommentierung (Ballot Reconciliation) der Version           <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code>
- des MII Kerndatensatz Modul Medikation. Sie listet die offenen Tickets aus dem HL7-Deutschland-Ballot (          <a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira-Abfrage</a>
-) nach Kategorien gruppiert, jeweils mit einer           <strong>vorgeschlagenen</strong>
- Lösung. Die Seite ist temporär und wird vor dem Release           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+ des MII Kerndatensatz Modul Medikation. Sie führt die Tickets aus dem HL7-Deutschland-Ballot (          <a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira-Abfrage</a>
+) nach Kategorien auf, jeweils mit der in der Kommentierung getroffenen           <strong>Entscheidung</strong>
+ und ihrer Umsetzung für           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+. Die Änderungen erfolgen auf dem Branch           <code class="language-plaintext highlighter-rouge">change/ballot-2027-reconciliation</code>
+, ein Commit pro Ticket, und sind in den Release Notes von           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+ aufgeführt. Die Seite ist temporär und wird vor dem Release           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
  entfernt.
         </td>
       </tr>
@@ -1007,19 +994,6 @@ Diese Seite ist ein           <strong>Arbeitsdokument</strong>
         </td>
         <td>
           <a href="https://hl7germany.atlassian.net/browse/HDB-979">HDB-979</a>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="de/ballot-reconciliation.html">web</a>
-        </td>
-        <td>
-          <a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">gematik.github.io</a>
-        </td>
-        <td>
-Den ISiK-Best-Practice-Hinweis zur Pausierung einer Medikation übernehmen (          <a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">ISiKMedikationsInformation</a>
-): eine Pausierung über mehrere MedicationStatement- (bzw. MedicationAdministration-)Ressourcen abbilden, statt eine bestehende zu überschreiben, damit           <code class="language-plaintext highlighter-rouge">status</code>
- stets den aktuellen Stand wiedergibt und die Historie erhalten bleibt. Hinweis in den Intro-Notes der Profile MedicationStatement und MedicationAdministration ergänzen.
         </td>
       </tr>
       <tr>
@@ -1840,7 +1814,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Fri, Nov 6, 2026 14:43+0000">2026-11-06</span>
+          Generated           <span title="Wed, Nov 11, 2026 18:57+0000">2026-11-11</span>
 
                     <br/>
 
@@ -2156,23 +2130,13 @@ Dosage information should follow the           <a href="https://ig.fhir.de/igs/m
         <td>
 This page is a           <strong>working document</strong>
  for the reconciliation of the ballot comments on version           <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code>
- of the MII Kerndatensatz Modul Medikation. It lists the open tickets from the HL7 Germany ballot (          <a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira query</a>
-), grouped by category, with a           <strong>proposed</strong>
- resolution for each. It is temporary and will be removed before the           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+ of the MII Kerndatensatz Modul Medikation. It lists the tickets from the HL7 Germany ballot (          <a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira query</a>
+), grouped by category, with the           <strong>decision</strong>
+ taken in the reconciliation and how it is implemented for           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+. The changes are made on the branch           <code class="language-plaintext highlighter-rouge">change/ballot-2027-reconciliation</code>
+, one commit per ticket, and are listed in the release notes of           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
+. This page is temporary and will be removed before the           <code class="language-plaintext highlighter-rouge">2027.0.0</code>
  release.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="en/ballot-reconciliation.html">web</a>
-        </td>
-        <td>
-          <a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">gematik.github.io</a>
-        </td>
-        <td>
-Adopt the ISiK best-practice note on pausing a medication (          <a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">ISiKMedikationsInformation</a>
-): represent a pause with several MedicationStatement (resp. MedicationAdministration) resources instead of overwriting an existing one, so           <code class="language-plaintext highlighter-rouge">status</code>
- always reflects the current state and the history is kept. Add the note to the intro notes of the MedicationStatement and MedicationAdministration profiles.
         </td>
       </tr>
       <tr>

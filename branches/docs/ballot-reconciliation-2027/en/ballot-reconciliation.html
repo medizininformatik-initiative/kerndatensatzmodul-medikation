@@ -325,15 +325,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#a-proposed-accept--profile-changes" id="markdown-toc-a-proposed-accept--profile-changes">A. Proposed: accept – profile changes</a></li>
-  <li><a href="#b-proposed-accept--terminology" id="markdown-toc-b-proposed-accept--terminology">B. Proposed: accept – terminology</a></li>
-  <li><a href="#c-to-be-discussed" id="markdown-toc-c-to-be-discussed">C. To be discussed</a></li>
-  <li><a href="#d-proposed-accept--documentation-only" id="markdown-toc-d-proposed-accept--documentation-only">D. Proposed: accept – documentation only</a></li>
-  <li><a href="#e-planned-reply" id="markdown-toc-e-planned-reply">E. Planned reply</a></li>
+  <li><a href="#a-profile-changes" id="markdown-toc-a-profile-changes">A. Profile changes</a></li>
+  <li><a href="#b-terminology" id="markdown-toc-b-terminology">B. Terminology</a></li>
+  <li><a href="#c-discussed" id="markdown-toc-c-discussed">C. Discussed</a></li>
+  <li><a href="#d-documentation" id="markdown-toc-d-documentation">D. Documentation</a></li>
+  <li><a href="#e-questions" id="markdown-toc-e-questions">E. Questions</a></li>
+  <li><a href="#follow-ups" id="markdown-toc-follow-ups">Follow-ups</a></li>
 </ul>
 
 </div>
-<p>This page is a <strong>working document</strong> for the reconciliation of the ballot comments on version <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code> of the MII Kerndatensatz Modul Medikation. It lists the open tickets from the HL7 Germany ballot (<a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira query</a>), grouped by category, with a <strong>proposed</strong> resolution for each. It is temporary and will be removed before the <code class="language-plaintext highlighter-rouge">2027.0.0</code> release.</p>
+<p>This page is a <strong>working document</strong> for the reconciliation of the ballot comments on version <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code> of the MII Kerndatensatz Modul Medikation. It lists the tickets from the HL7 Germany ballot (<a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira query</a>), grouped by category, with the <strong>decision</strong> taken in the reconciliation and how it is implemented for <code class="language-plaintext highlighter-rouge">2027.0.0</code>. The changes are made on the branch <code class="language-plaintext highlighter-rouge">change/ballot-2027-reconciliation</code>, one commit per ticket, and are listed in the release notes of <code class="language-plaintext highlighter-rouge">2027.0.0</code>. This page is temporary and will be removed before the <code class="language-plaintext highlighter-rouge">2027.0.0</code> release.</p>
 
 <h4 id="legend">Legend</h4>
 
@@ -346,20 +347,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><strong>Proposed: accept</strong></td>
-      <td>Proposal to implement the change for <code class="language-plaintext highlighter-rouge">2027.0.0</code>; to be ratified in the meeting.</td>
+      <td><strong>Accepted</strong></td>
+      <td>Implemented as proposed.</td>
     </tr>
     <tr>
-      <td><strong>Proposed: accept (docs)</strong></td>
-      <td>Proposal to change documentation or guidance only, no artefact changes; to be ratified.</td>
+      <td><strong>Accepted with modification</strong></td>
+      <td>Implemented, with changes to the proposal agreed in the reconciliation.</td>
     </tr>
     <tr>
-      <td><strong>Discuss</strong></td>
-      <td>No proposed resolution yet; to be discussed in the meeting.</td>
+      <td><strong>Accepted (docs)</strong></td>
+      <td>Documentation or guidance only, no change to the artefacts' constraints.</td>
     </tr>
     <tr>
-      <td><strong>Planned reply</strong></td>
-      <td>Question; a reply in Jira is planned (draft given), possibly with a documentation clarification.</td>
+      <td><strong>Accepted – deferred</strong></td>
+      <td>Agreed, but cannot be implemented yet; tracked in the backlog.</td>
     </tr>
   </tbody>
 </table>
@@ -368,14 +369,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="a-proposed-accept--profile-changes">A. Proposed: accept – profile changes</h3>
+<h3 id="a-profile-changes">A. Profile changes</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Topic</th>
-      <th>Proposed resolution</th>
+      <th>Decision and implementation</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -384,49 +385,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-980">HDB-980</a></td>
       <td>Medication ingredient – Vorschlag zur Kardinalität</td>
-      <td>Relax <code class="language-plaintext highlighter-rouge">Medication.ingredient</code> from <code class="language-plaintext highlighter-rouge">1..*</code> to <code class="language-plaintext highlighter-rouge">0..*</code> and add an invariant <code class="language-plaintext highlighter-rouge">code.exists() or ingredient.exists()</code> (analogous to ISiK <code class="language-plaintext highlighter-rouge">isik-med-1</code>). Keep "at least the active ingredient SHOULD be given" in the narrative. This allows finished medicinal products coded only by PZN/ATC, as delivered by ISiK 6.0.0 systems. Consumers can no longer rely on <code class="language-plaintext highlighter-rouge">ingredient</code> being present.</td>
-      <td>Proposed: accept</td>
+      <td><code class="language-plaintext highlighter-rouge">Medication.ingredient</code> relaxed from <code class="language-plaintext highlighter-rouge">1..*</code> to <code class="language-plaintext highlighter-rouge">0..*</code>. New invariant <code class="language-plaintext highlighter-rouge">mii-med-1</code> (error): <code class="language-plaintext highlighter-rouge">code.exists() or ingredient.exists()</code>, as <code class="language-plaintext highlighter-rouge">isik-med-1</code> in ISiK stage 6. The active ingredient SHOULD still be given. Explained on the Medication profile page with reference to ISiK 6.</td>
+      <td>Accepted</td>
       <td>no (relaxation)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-1038">HDB-1038</a></td>
       <td>Medication.ingredient von 1..* auf 0..* aufweichen</td>
-      <td>Resolved together with HDB-980. Removes the current workaround of filling <code class="language-plaintext highlighter-rouge">ingredient</code> with a <code class="language-plaintext highlighter-rouge">data-absent-reason</code> extension when only the ATC code is known.</td>
-      <td>Proposed: accept</td>
+      <td>Resolved together with HDB-980. The workaround of an <code class="language-plaintext highlighter-rouge">ingredient</code> carrying only a <code class="language-plaintext highlighter-rouge">data-absent-reason</code> extension is no longer needed.</td>
+      <td>Accepted</td>
       <td>no</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-984">HDB-984</a></td>
       <td>MedicationRequest doNotPerform nicht verbieten</td>
-      <td>Change <code class="language-plaintext highlighter-rouge">MedicationRequest.doNotPerform</code> from <code class="language-plaintext highlighter-rouge">0..0</code> to <code class="language-plaintext highlighter-rouge">0..1</code> with the invariant <code class="language-plaintext highlighter-rouge">doNotPerform.empty() or doNotPerform = false</code>, so ISiK requests carrying <code class="language-plaintext highlighter-rouge">doNotPerform = false</code> conform, while negative orders stay out of scope.</td>
-      <td>Proposed: accept</td>
+      <td>ISiK stage 6 variant adopted: <code class="language-plaintext highlighter-rouge">MedicationRequest.doNotPerform</code> <code class="language-plaintext highlighter-rouge">0..1</code>, Must Support, <strong>any value</strong> (the proposal had allowed only <code class="language-plaintext highlighter-rouge">false</code>). The element comment and the profile page state that <code class="language-plaintext highlighter-rouge">true</code> marks an order not to give the medication and must be evaluated by receivers.</td>
+      <td>Accepted with modification</td>
       <td>no (relaxation)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-982">HDB-982</a></td>
       <td>MII PR Medikation Medication – status nicht definiert</td>
-      <td>Flag <code class="language-plaintext highlighter-rouge">Medication.status</code> as Must Support (aligned with ISiK) and add guidance: <code class="language-plaintext highlighter-rouge">status</code> is a modifier element; <code class="language-plaintext highlighter-rouge">inactive</code> and <code class="language-plaintext highlighter-rouge">entered-in-error</code> change the meaning of the resource and must be evaluated by receivers.</td>
-      <td>Proposed: accept</td>
+      <td><code class="language-plaintext highlighter-rouge">Medication.status</code> Must Support, with guidance that <code class="language-plaintext highlighter-rouge">inactive</code> and <code class="language-plaintext highlighter-rouge">entered-in-error</code> must be evaluated. It stays <strong>optional (<code class="language-plaintext highlighter-rouge">0..1</code>)</strong>; the deviation from ISiK stage 6 (<code class="language-plaintext highlighter-rouge">1..1</code>) is documented on the profile page, so that existing MII data without <code class="language-plaintext highlighter-rouge">status</code> stays valid.</td>
+      <td>Accepted</td>
       <td>no (Must Support only)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-967">HDB-967</a></td>
       <td>MedicationAdministration.dosage.dose ist Pflichtfeld ohne Wertevorrat</td>
-      <td>Bind <code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose</code> (<em>required</em>) to <code class="language-plaintext highlighter-rouge">http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE</code>, the same binding <code class="language-plaintext highlighter-rouge">DosageDE</code> (<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7) applies to <code class="language-plaintext highlighter-rouge">doseAndRate.dose[x]:doseQuantity</code> in MedicationRequest and MedicationStatement. <code class="language-plaintext highlighter-rouge">DosageDE</code> cannot be used as a type profile there, because <code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage</code> is a BackboneElement in R4. <code class="language-plaintext highlighter-rouge">dosage.dose.system</code>/<code class="language-plaintext highlighter-rouge">.code</code> are already <code class="language-plaintext highlighter-rouge">1..1</code>. Inherited by <code class="language-plaintext highlighter-rouge">mii-pr-bildgebung-kontrastmittelgabe</code> and <code class="language-plaintext highlighter-rouge">mii-pr-lungenfunktion-dosis-gabe</code>. Moving to Medikation-DE 2.x is a separate, post-ballot decision.</td>
-      <td>Proposed: accept</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose</code> bound (<em>required</em>) to <code class="language-plaintext highlighter-rouge">http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE</code>, the binding <code class="language-plaintext highlighter-rouge">DosageDE</code> applies in MedicationRequest and MedicationStatement. Explained on the profile page.</td>
+      <td>Accepted</td>
       <td><strong>yes</strong> (units outside the ValueSet become invalid)</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="b-proposed-accept--terminology">B. Proposed: accept – terminology</h3>
+<h3 id="b-terminology">B. Terminology</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Topic</th>
-      <th>Proposed resolution</th>
+      <th>Decision and implementation</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -435,28 +436,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-981">HDB-981</a></td>
       <td>ValueSet mii-vs-medikation-atc – fehlendes 2027er Release</td>
-      <td>Add <code class="language-plaintext highlighter-rouge">include codes from system http://fhir.de/CodeSystem/bfarm/atc\|2027</code> to <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code> once BfArM publishes ATC-DE 2027, and update description and copyright ("2018 bis 2027"). A version-independent include was considered: it would accept every future version without review, which conflicts with <code class="language-plaintext highlighter-rouge">code.coding:atcClassDe.version</code> being <code class="language-plaintext highlighter-rouge">1..1</code>, and is therefore not proposed.</td>
-      <td>Proposed: accept</td>
+      <td>ATC-DE 2027 will be added to <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code> (explicit <code class="language-plaintext highlighter-rouge">\|2027</code> include, description and copyright updated). BfArM has not released ATC-DE 2027 yet, so the change is tracked in the backlog. A version-independent include remains rejected.</td>
+      <td>Accepted – deferred</td>
       <td>no</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-983">HDB-983</a></td>
       <td>Extension wirkstofftyp, CodeSystem wirkstofftyp aus deutschen Basisprofilen nutzen</td>
-      <td>Confirmed: <code class="language-plaintext highlighter-rouge">http://fhir.de/StructureDefinition/WirkstofftypEX</code> (<code class="language-plaintext highlighter-rouge">de.basisprofil.r4</code> 1.6.0, already a dependency) has the same context (<code class="language-plaintext highlighter-rouge">Medication.ingredient</code>) and its CodeSystem <code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/WirkstofftypCS</code> has the same codes (<code class="language-plaintext highlighter-rouge">IN</code>, <code class="language-plaintext highlighter-rouge">PIN</code>, <code class="language-plaintext highlighter-rouge">MIN</code>) as the MII artefacts. Proposal: add the Basisprofil extension as a Must Support slice on <code class="language-plaintext highlighter-rouge">Medication.ingredient.extension</code>, keep the MII extension for a transition period and set the MII extension, ValueSet and CodeSystem to <code class="language-plaintext highlighter-rouge">retired</code> in a later release; update examples.</td>
-      <td>Proposed: accept</td>
-      <td>no with a transition period (both URLs allowed); <strong>yes</strong> if the MII extension is removed</td>
+      <td>The slice <code class="language-plaintext highlighter-rouge">Medication.ingredient.extension:Wirkstofftyp</code> now uses <code class="language-plaintext highlighter-rouge">http://fhir.de/StructureDefinition/WirkstofftypEX</code> (<code class="language-plaintext highlighter-rouge">de.basisprofil.r4</code> 1.6.0), as ISiK does; the MII extension is removed from the profile. The MII extension, ValueSet and CodeSystem stay in the guide, are marked <strong>deprecated</strong> on their pages (the Basisprofil extension grew out of the MII extension and is used by ISiK) and will be retired in a later release. New warning invariant <code class="language-plaintext highlighter-rouge">mii-med-2</code> flags use of the MII extension and advises replacing it. New ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-medikation-wirkstofftyp</code> maps the MII codes to <code class="language-plaintext highlighter-rouge">WirkstofftypCS</code>. Examples updated. A StructureMap (FML) for converting data is tracked in the backlog.</td>
+      <td>Accepted with modification</td>
+      <td>no (MII extension still accepted, with a warning)</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="c-to-be-discussed">C. To be discussed</h3>
+<h3 id="c-discussed">C. Discussed</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Topic</th>
-      <th>Open question</th>
+      <th>Decision and implementation</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -465,21 +466,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-985">HDB-985</a></td>
       <td>MedicationAdministration effective[x]</td>
-      <td>ISiK <code class="language-plaintext highlighter-rouge">ISiKMedikationsVerabreichung</code> only allows precision to the second for <code class="language-plaintext highlighter-rouge">effective[x]</code> and refers date-only administrations to MedicationStatement. The MII profile currently allows any precision. Does MII share this distinction? MII data often comes from retrospective DIZ sources where only the date may be known; a hard invariant would make such data invalid. Options: (a) adopt the ISiK rule as an invariant, (b) adopt it as a SHOULD in the narrative only, (c) keep the current rule and document the deviation from ISiK.</td>
-      <td>Discuss</td>
-      <td>(a) <strong>yes</strong> · (b), (c) no</td>
+      <td>ISiK states the second precision in prose, not as an invariant. MedicationAdministration: <code class="language-plaintext highlighter-rouge">effective[x]</code> SHOULD be given to the second, as best practice with reference to ISiK stage 6 (element comment and profile page); coarser values such as date-only data from retrospective sources stay valid. MedicationStatement stays unchanged, because there are use cases for coarser periods.</td>
+      <td>Accepted (docs)</td>
+      <td>no</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="d-proposed-accept--documentation-only">D. Proposed: accept – documentation only</h3>
+<h3 id="d-documentation">D. Documentation</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Topic</th>
-      <th>Proposed resolution</th>
+      <th>Decision and implementation</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -488,21 +489,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-979">HDB-979</a></td>
       <td>Hinweis zur Pausierung einer Medikation aus ISiK übernehmen</td>
-      <td>Adopt the ISiK best-practice note on pausing a medication (<a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">ISiKMedikationsInformation</a>): represent a pause with several MedicationStatement (resp. MedicationAdministration) resources instead of overwriting an existing one, so <code class="language-plaintext highlighter-rouge">status</code> always reflects the current state and the history is kept. Add the note to the intro notes of the MedicationStatement and MedicationAdministration profiles.</td>
-      <td>Proposed: accept (docs)</td>
+      <td>ISiK best practice adopted on the MedicationStatement and MedicationAdministration profile pages: a pause SHOULD be represented with several resources instead of overwriting one. Added as an <strong>open question, input welcome</strong>: ISiK does not say which <code class="language-plaintext highlighter-rouge">status</code> the first resource carries. During the pause it is <code class="language-plaintext highlighter-rouge">on-hold</code> or <code class="language-plaintext highlighter-rouge">stopped</code>; one current implementation sets it back to <code class="language-plaintext highlighter-rouge">active</code> (MedicationAdministration: <code class="language-plaintext highlighter-rouge">in-progress</code>) once the continuation is documented, with <code class="language-plaintext highlighter-rouge">effectivePeriod</code> closed.</td>
+      <td>Accepted (docs)</td>
       <td>no</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="e-planned-reply">E. Planned reply</h3>
+<h3 id="e-questions">E. Questions</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Topic</th>
-      <th>Draft reply</th>
+      <th>Decision and implementation</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -511,12 +512,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-986">HDB-986</a></td>
       <td>Frage zur Verschreibung von Kombipackungen (Beschreibung auf der Startseite)</td>
-      <td>Draft (to be confirmed): MedicationRequest, MedicationStatement and MedicationAdministration reference the "upper" combination-package <code class="language-plaintext highlighter-rouge">Medication</code> when the package as a whole is prescribed or documented. If the component actually taken or administered is known, the resource references the corresponding sub-<code class="language-plaintext highlighter-rouge">Medication</code> directly (it is a complete <code class="language-plaintext highlighter-rouge">Medication</code> instance, see "Combination packages" on the home page). Add a sentence on this to the home page.</td>
-      <td>Planned reply</td>
+      <td>Guidance extended beyond the planned reply: MedicationRequest, MedicationStatement and MedicationAdministration MUST reference the component (sub-<code class="language-plaintext highlighter-rouge">Medication</code>), not only the "upper" combination-package <code class="language-plaintext highlighter-rouge">Medication</code>. A PZN order of a package is represented by a package request plus one request per component stating how it is taken, linked via <code class="language-plaintext highlighter-rouge">basedOn</code>. Hospital information systems rarely order combination packages by PZN; the component is usually the subject. Home page and researcher guidance updated.</td>
+      <td>Accepted (docs)</td>
       <td>no</td>
     </tr>
   </tbody>
 </table>
+
+<h3 id="follow-ups">Follow-ups</h3>
+
+<ul>
+  <li>ATC-DE 2027 in <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code> once BfArM releases it (HDB-981).</li>
+  <li>StructureMap (FML) converting the MII Wirkstofftyp extension to <code class="language-plaintext highlighter-rouge">WirkstofftypEX</code> (HDB-983).</li>
+  <li>Retire the MII Wirkstofftyp extension, ValueSet and CodeSystem in a later release (HDB-983).</li>
+  <li>Collect feedback on the status of the first resource after a paused medication is continued (HDB-979).</li>
+</ul>
 
 
 
@@ -543,7 +553,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Nov 6, 2026 14:43+0000">2026-11-06</span>
+          Generated <span title="Wed, Nov 11, 2026 18:57+0000">2026-11-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

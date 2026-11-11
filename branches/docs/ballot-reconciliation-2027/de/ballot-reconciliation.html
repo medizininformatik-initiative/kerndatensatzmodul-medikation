@@ -297,15 +297,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#a-vorschlag-annehmen--profiländerungen" id="markdown-toc-a-vorschlag-annehmen--profiländerungen">A. Vorschlag: annehmen – Profiländerungen</a></li>
-  <li><a href="#b-vorschlag-annehmen--terminologie" id="markdown-toc-b-vorschlag-annehmen--terminologie">B. Vorschlag: annehmen – Terminologie</a></li>
-  <li><a href="#c-zu-diskutieren" id="markdown-toc-c-zu-diskutieren">C. Zu diskutieren</a></li>
-  <li><a href="#d-vorschlag-annehmen--nur-dokumentation" id="markdown-toc-d-vorschlag-annehmen--nur-dokumentation">D. Vorschlag: annehmen – nur Dokumentation</a></li>
-  <li><a href="#e-antwort-geplant" id="markdown-toc-e-antwort-geplant">E. Antwort geplant</a></li>
+  <li><a href="#a-profiländerungen" id="markdown-toc-a-profiländerungen">A. Profiländerungen</a></li>
+  <li><a href="#b-terminologie" id="markdown-toc-b-terminologie">B. Terminologie</a></li>
+  <li><a href="#c-diskutiert" id="markdown-toc-c-diskutiert">C. Diskutiert</a></li>
+  <li><a href="#d-dokumentation" id="markdown-toc-d-dokumentation">D. Dokumentation</a></li>
+  <li><a href="#e-fragen" id="markdown-toc-e-fragen">E. Fragen</a></li>
+  <li><a href="#folgearbeiten" id="markdown-toc-folgearbeiten">Folgearbeiten</a></li>
 </ul>
 
 </div>
-<p>Diese Seite ist ein <strong>Arbeitsdokument</strong> für die Kommentierung (Ballot Reconciliation) der Version <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code> des MII Kerndatensatz Modul Medikation. Sie listet die offenen Tickets aus dem HL7-Deutschland-Ballot (<a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira-Abfrage</a>) nach Kategorien gruppiert, jeweils mit einer <strong>vorgeschlagenen</strong> Lösung. Die Seite ist temporär und wird vor dem Release <code class="language-plaintext highlighter-rouge">2027.0.0</code> entfernt.</p>
+<p>Diese Seite ist ein <strong>Arbeitsdokument</strong> für die Kommentierung (Ballot Reconciliation) der Version <code class="language-plaintext highlighter-rouge">2027.0.0-ballot</code> des MII Kerndatensatz Modul Medikation. Sie führt die Tickets aus dem HL7-Deutschland-Ballot (<a href="https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC">Jira-Abfrage</a>) nach Kategorien auf, jeweils mit der in der Kommentierung getroffenen <strong>Entscheidung</strong> und ihrer Umsetzung für <code class="language-plaintext highlighter-rouge">2027.0.0</code>. Die Änderungen erfolgen auf dem Branch <code class="language-plaintext highlighter-rouge">change/ballot-2027-reconciliation</code>, ein Commit pro Ticket, und sind in den Release Notes von <code class="language-plaintext highlighter-rouge">2027.0.0</code> aufgeführt. Die Seite ist temporär und wird vor dem Release <code class="language-plaintext highlighter-rouge">2027.0.0</code> entfernt.</p>
 
 <h4 id="legende">Legende</h4>
 
@@ -318,20 +319,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </thead>
   <tbody>
     <tr>
-      <td><strong>Vorschlag: annehmen</strong></td>
-      <td>Vorschlag, die Änderung für <code class="language-plaintext highlighter-rouge">2027.0.0</code> umzusetzen; Bestätigung in der Sitzung.</td>
+      <td><strong>Angenommen</strong></td>
+      <td>Wie vorgeschlagen umgesetzt.</td>
     </tr>
     <tr>
-      <td><strong>Vorschlag: annehmen (Doku)</strong></td>
-      <td>Vorschlag, nur Dokumentation oder Hinweise zu ändern, keine Artefaktänderung; Bestätigung in der Sitzung.</td>
+      <td><strong>Angenommen mit Änderung</strong></td>
+      <td>Umgesetzt, mit in der Kommentierung vereinbarten Änderungen am Vorschlag.</td>
     </tr>
     <tr>
-      <td><strong>Diskussion</strong></td>
-      <td>Noch kein Lösungsvorschlag; Diskussion in der Sitzung.</td>
+      <td><strong>Angenommen (Doku)</strong></td>
+      <td>Nur Dokumentation bzw. Hinweise, keine Änderung an den Constraints der Artefakte.</td>
     </tr>
     <tr>
-      <td><strong>Antwort geplant</strong></td>
-      <td>Frage; eine Antwort in Jira ist geplant (Entwurf angegeben), ggf. mit Klarstellung in der Dokumentation.</td>
+      <td><strong>Angenommen – zurückgestellt</strong></td>
+      <td>Vereinbart, aber noch nicht umsetzbar; im Backlog erfasst.</td>
     </tr>
   </tbody>
 </table>
@@ -340,14 +341,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
-<h3 id="a-vorschlag-annehmen--profiländerungen">A. Vorschlag: annehmen – Profiländerungen</h3>
+<h3 id="a-profiländerungen">A. Profiländerungen</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Thema</th>
-      <th>Lösungsvorschlag</th>
+      <th>Entscheidung und Umsetzung</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -356,49 +357,49 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-980">HDB-980</a></td>
       <td>Medication ingredient – Vorschlag zur Kardinalität</td>
-      <td><code class="language-plaintext highlighter-rouge">Medication.ingredient</code> von <code class="language-plaintext highlighter-rouge">1..*</code> auf <code class="language-plaintext highlighter-rouge">0..*</code> lockern und eine Invariante <code class="language-plaintext highlighter-rouge">code.exists() or ingredient.exists()</code> ergänzen (analog ISiK <code class="language-plaintext highlighter-rouge">isik-med-1</code>). „Mindestens der Wirkstoff SOLL angegeben werden" bleibt im Narrativ. Damit sind Fertigarzneimittel zulässig, die nur per PZN/ATC codiert sind, wie sie ISiK-6.0.0-Systeme liefern. Empfänger können sich nicht mehr auf ein vorhandenes <code class="language-plaintext highlighter-rouge">ingredient</code> verlassen.</td>
-      <td>Vorschlag: annehmen</td>
+      <td><code class="language-plaintext highlighter-rouge">Medication.ingredient</code> von <code class="language-plaintext highlighter-rouge">1..*</code> auf <code class="language-plaintext highlighter-rouge">0..*</code> gelockert. Neue Invariante <code class="language-plaintext highlighter-rouge">mii-med-1</code> (error): <code class="language-plaintext highlighter-rouge">code.exists() or ingredient.exists()</code>, wie <code class="language-plaintext highlighter-rouge">isik-med-1</code> in ISiK Stufe 6. Der Wirkstoff SOLL weiterhin angegeben werden. Auf der Profilseite Medication mit Verweis auf ISiK 6 erläutert.</td>
+      <td>Angenommen</td>
       <td>nein (Lockerung)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-1038">HDB-1038</a></td>
       <td>Medication.ingredient von 1..* auf 0..* aufweichen</td>
-      <td>Wird zusammen mit HDB-980 gelöst. Der bisherige Workaround, <code class="language-plaintext highlighter-rouge">ingredient</code> mit einer <code class="language-plaintext highlighter-rouge">data-absent-reason</code>-Extension zu füllen, wenn nur der ATC-Code bekannt ist, entfällt.</td>
-      <td>Vorschlag: annehmen</td>
+      <td>Zusammen mit HDB-980 gelöst. Der Workaround eines <code class="language-plaintext highlighter-rouge">ingredient</code>, das nur eine <code class="language-plaintext highlighter-rouge">data-absent-reason</code>-Extension trägt, entfällt.</td>
+      <td>Angenommen</td>
       <td>nein</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-984">HDB-984</a></td>
       <td>MedicationRequest doNotPerform nicht verbieten</td>
-      <td><code class="language-plaintext highlighter-rouge">MedicationRequest.doNotPerform</code> von <code class="language-plaintext highlighter-rouge">0..0</code> auf <code class="language-plaintext highlighter-rouge">0..1</code> ändern, mit der Invariante <code class="language-plaintext highlighter-rouge">doNotPerform.empty() or doNotPerform = false</code>. ISiK-Verordnungen mit <code class="language-plaintext highlighter-rouge">doNotPerform = false</code> sind damit konform, Negativ-Verordnungen bleiben ausgeschlossen.</td>
-      <td>Vorschlag: annehmen</td>
+      <td>Variante aus ISiK Stufe 6 übernommen: <code class="language-plaintext highlighter-rouge">MedicationRequest.doNotPerform</code> <code class="language-plaintext highlighter-rouge">0..1</code>, Must Support, <strong>beliebiger Wert</strong> (der Vorschlag hatte nur <code class="language-plaintext highlighter-rouge">false</code> erlaubt). Element-Kommentar und Profilseite halten fest, dass <code class="language-plaintext highlighter-rouge">true</code> eine Anordnung kennzeichnet, das Medikament nicht zu geben, und von empfangenden Systemen ausgewertet werden muss.</td>
+      <td>Angenommen mit Änderung</td>
       <td>nein (Lockerung)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-982">HDB-982</a></td>
       <td>MII PR Medikation Medication – status nicht definiert</td>
-      <td><code class="language-plaintext highlighter-rouge">Medication.status</code> als Must Support kennzeichnen (analog ISiK) und einen Hinweis ergänzen: <code class="language-plaintext highlighter-rouge">status</code> ist ein Modifier-Element; <code class="language-plaintext highlighter-rouge">inactive</code> und <code class="language-plaintext highlighter-rouge">entered-in-error</code> ändern die Bedeutung der Ressource und müssen von Empfängern ausgewertet werden.</td>
-      <td>Vorschlag: annehmen</td>
+      <td><code class="language-plaintext highlighter-rouge">Medication.status</code> Must Support, mit dem Hinweis, dass <code class="language-plaintext highlighter-rouge">inactive</code> und <code class="language-plaintext highlighter-rouge">entered-in-error</code> ausgewertet werden müssen. Bleibt <strong>optional (<code class="language-plaintext highlighter-rouge">0..1</code>)</strong>; die Abweichung von ISiK Stufe 6 (<code class="language-plaintext highlighter-rouge">1..1</code>) ist auf der Profilseite dokumentiert, damit bestehende MII-Daten ohne <code class="language-plaintext highlighter-rouge">status</code> gültig bleiben.</td>
+      <td>Angenommen</td>
       <td>nein (nur Must Support)</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-967">HDB-967</a></td>
       <td>MedicationAdministration.dosage.dose ist Pflichtfeld ohne Wertevorrat</td>
-      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose</code> (<em>required</em>) an <code class="language-plaintext highlighter-rouge">http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE</code> binden – dieselbe Bindung, die <code class="language-plaintext highlighter-rouge">DosageDE</code> (<code class="language-plaintext highlighter-rouge">de.fhir.medication</code> 1.0.7) auf <code class="language-plaintext highlighter-rouge">doseAndRate.dose[x]:doseQuantity</code> in MedicationRequest und MedicationStatement setzt. <code class="language-plaintext highlighter-rouge">DosageDE</code> lässt sich dort nicht als Typprofil verwenden, da <code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage</code> in R4 ein BackboneElement ist. <code class="language-plaintext highlighter-rouge">dosage.dose.system</code>/<code class="language-plaintext highlighter-rouge">.code</code> sind bereits <code class="language-plaintext highlighter-rouge">1..1</code>. Wird von <code class="language-plaintext highlighter-rouge">mii-pr-bildgebung-kontrastmittelgabe</code> und <code class="language-plaintext highlighter-rouge">mii-pr-lungenfunktion-dosis-gabe</code> geerbt. Der Wechsel auf Medikation-DE 2.x ist eine separate Entscheidung nach dem Ballot.</td>
-      <td>Vorschlag: annehmen</td>
-      <td><strong>ja</strong> (Einheiten außerhalb des ValueSets werden invalide)</td>
+      <td><code class="language-plaintext highlighter-rouge">MedicationAdministration.dosage.dose</code> (<em>required</em>) an <code class="language-plaintext highlighter-rouge">http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE</code> gebunden, die Bindung, die <code class="language-plaintext highlighter-rouge">DosageDE</code> in MedicationRequest und MedicationStatement anwendet. Auf der Profilseite erläutert.</td>
+      <td>Angenommen</td>
+      <td><strong>ja</strong> (Einheiten außerhalb des ValueSets werden ungültig)</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="b-vorschlag-annehmen--terminologie">B. Vorschlag: annehmen – Terminologie</h3>
+<h3 id="b-terminologie">B. Terminologie</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Thema</th>
-      <th>Lösungsvorschlag</th>
+      <th>Entscheidung und Umsetzung</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -407,28 +408,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-981">HDB-981</a></td>
       <td>ValueSet mii-vs-medikation-atc – fehlendes 2027er Release</td>
-      <td><code class="language-plaintext highlighter-rouge">include codes from system http://fhir.de/CodeSystem/bfarm/atc\|2027</code> in <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code> aufnehmen, sobald das BfArM ATC-DE 2027 veröffentlicht, und Beschreibung sowie Copyright anpassen („2018 bis 2027"). Eine versionsunabhängige Einbindung würde jede künftige Version ungeprüft zulassen, passt nicht zu <code class="language-plaintext highlighter-rouge">code.coding:atcClassDe.version</code> <code class="language-plaintext highlighter-rouge">1..1</code> und wird daher nicht vorgeschlagen.</td>
-      <td>Vorschlag: annehmen</td>
+      <td>ATC-DE 2027 wird in <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code> aufgenommen (expliziter <code class="language-plaintext highlighter-rouge">\|2027</code>-Include, Beschreibung und Copyright angepasst). Das BfArM hat ATC-DE 2027 noch nicht veröffentlicht, daher ist die Änderung im Backlog erfasst. Ein versionsunabhängiger Include bleibt abgelehnt.</td>
+      <td>Angenommen – zurückgestellt</td>
       <td>nein</td>
     </tr>
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-983">HDB-983</a></td>
       <td>Extension wirkstofftyp, CodeSystem wirkstofftyp aus deutschen Basisprofilen nutzen</td>
-      <td>Bestätigt: <code class="language-plaintext highlighter-rouge">http://fhir.de/StructureDefinition/WirkstofftypEX</code> (<code class="language-plaintext highlighter-rouge">de.basisprofil.r4</code> 1.6.0, bereits Abhängigkeit) hat denselben Kontext (<code class="language-plaintext highlighter-rouge">Medication.ingredient</code>), ihr CodeSystem <code class="language-plaintext highlighter-rouge">http://fhir.de/CodeSystem/WirkstofftypCS</code> dieselben Codes (<code class="language-plaintext highlighter-rouge">IN</code>, <code class="language-plaintext highlighter-rouge">PIN</code>, <code class="language-plaintext highlighter-rouge">MIN</code>) wie die MII-Artefakte. Vorschlag: die Basisprofil-Extension als Must-Support-Slice auf <code class="language-plaintext highlighter-rouge">Medication.ingredient.extension</code> ergänzen, die MII-Extension für eine Übergangszeit beibehalten und MII-Extension, -ValueSet und -CodeSystem in einem späteren Release auf <code class="language-plaintext highlighter-rouge">retired</code> setzen; Beispiele anpassen.</td>
-      <td>Vorschlag: annehmen</td>
-      <td>nein mit Übergangszeit (beide URLs zulässig); <strong>ja</strong>, wenn die MII-Extension entfernt wird</td>
+      <td>Der Slice <code class="language-plaintext highlighter-rouge">Medication.ingredient.extension:Wirkstofftyp</code> verwendet jetzt <code class="language-plaintext highlighter-rouge">http://fhir.de/StructureDefinition/WirkstofftypEX</code> (<code class="language-plaintext highlighter-rouge">de.basisprofil.r4</code> 1.6.0), wie ISiK; die MII-Extension ist aus dem Profil entfernt. MII-Extension, ValueSet und CodeSystem bleiben im Leitfaden, sind auf ihren Seiten als <strong>veraltet (deprecated)</strong> gekennzeichnet (die Basisprofil-Extension ist aus der MII-Extension hervorgegangen und wird von ISiK verwendet) und werden in einem späteren Release stillgelegt. Die neue Warn-Invariante <code class="language-plaintext highlighter-rouge">mii-med-2</code> meldet die Verwendung der MII-Extension und empfiehlt, sie zu ersetzen. Die neue ConceptMap <code class="language-plaintext highlighter-rouge">mii-cm-medikation-wirkstofftyp</code> bildet die MII-Codes auf <code class="language-plaintext highlighter-rouge">WirkstofftypCS</code> ab. Beispiele angepasst. Eine StructureMap (FML) zur Datenumstellung ist im Backlog erfasst.</td>
+      <td>Angenommen mit Änderung</td>
+      <td>nein (MII-Extension weiterhin akzeptiert, mit Warnung)</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="c-zu-diskutieren">C. Zu diskutieren</h3>
+<h3 id="c-diskutiert">C. Diskutiert</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Thema</th>
-      <th>Offene Frage</th>
+      <th>Entscheidung und Umsetzung</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -437,21 +438,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-985">HDB-985</a></td>
       <td>MedicationAdministration effective[x]</td>
-      <td>ISiK <code class="language-plaintext highlighter-rouge">ISiKMedikationsVerabreichung</code> erlaubt für <code class="language-plaintext highlighter-rouge">effective[x]</code> nur sekundengenaue Angaben und verweist datumsgenaue Gaben auf MedicationStatement. Das MII-Profil erlaubt derzeit jede Genauigkeit. Teilt die MII diese Abgrenzung? MII-Daten stammen häufig aus retrospektiven DIZ-Quellen, in denen ggf. nur das Datum bekannt ist; eine harte Invariante würde solche Daten invalide machen. Optionen: (a) ISiK-Regel als Invariante übernehmen, (b) nur als SOLL im Narrativ, (c) aktuelle Regel beibehalten und die Abweichung von ISiK dokumentieren.</td>
-      <td>Diskussion</td>
-      <td>(a) <strong>ja</strong> · (b), (c) nein</td>
+      <td>ISiK legt die Sekundengenauigkeit im Text fest, nicht als Invariante. MedicationAdministration: <code class="language-plaintext highlighter-rouge">effective[x]</code> SOLL als Best Practice mit Verweis auf ISiK Stufe 6 sekundengenau angegeben werden (Element-Kommentar und Profilseite); gröbere Angaben, etwa nur das Datum aus retrospektiven Quellen, bleiben gültig. MedicationStatement bleibt unverändert, da es Anwendungsfälle für gröbere Zeiträume gibt.</td>
+      <td>Angenommen (Doku)</td>
+      <td>nein</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="d-vorschlag-annehmen--nur-dokumentation">D. Vorschlag: annehmen – nur Dokumentation</h3>
+<h3 id="d-dokumentation">D. Dokumentation</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Thema</th>
-      <th>Lösungsvorschlag</th>
+      <th>Entscheidung und Umsetzung</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -460,21 +461,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-979">HDB-979</a></td>
       <td>Hinweis zur Pausierung einer Medikation aus ISiK übernehmen</td>
-      <td>Den ISiK-Best-Practice-Hinweis zur Pausierung einer Medikation übernehmen (<a href="https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html">ISiKMedikationsInformation</a>): eine Pausierung über mehrere MedicationStatement- (bzw. MedicationAdministration-)Ressourcen abbilden, statt eine bestehende zu überschreiben, damit <code class="language-plaintext highlighter-rouge">status</code> stets den aktuellen Stand wiedergibt und die Historie erhalten bleibt. Hinweis in den Intro-Notes der Profile MedicationStatement und MedicationAdministration ergänzen.</td>
-      <td>Vorschlag: annehmen (Doku)</td>
+      <td>ISiK-Best-Practice auf den Profilseiten MedicationStatement und MedicationAdministration übernommen: Eine Pausierung SOLL mit mehreren Ressourcen abgebildet werden, statt eine bestehende zu überschreiben. Als <strong>offene Frage, Rückmeldungen erwünscht</strong> ergänzt: ISiK legt nicht fest, welchen <code class="language-plaintext highlighter-rouge">status</code> die erste Ressource trägt. Während der Pause ist sie <code class="language-plaintext highlighter-rouge">on-hold</code> oder <code class="language-plaintext highlighter-rouge">stopped</code>; eine aktuelle Implementierung setzt sie nach dokumentierter Fortsetzung wieder auf <code class="language-plaintext highlighter-rouge">active</code> (MedicationAdministration: <code class="language-plaintext highlighter-rouge">in-progress</code>), mit abgeschlossener <code class="language-plaintext highlighter-rouge">effectivePeriod</code>.</td>
+      <td>Angenommen (Doku)</td>
       <td>nein</td>
     </tr>
   </tbody>
 </table>
 
-<h3 id="e-antwort-geplant">E. Antwort geplant</h3>
+<h3 id="e-fragen">E. Fragen</h3>
 
 <table>
   <thead>
     <tr>
       <th>Ticket</th>
       <th>Thema</th>
-      <th>Antwortentwurf</th>
+      <th>Entscheidung und Umsetzung</th>
       <th>Status</th>
       <th>Breaking</th>
     </tr>
@@ -483,12 +484,21 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td><a href="https://hl7germany.atlassian.net/browse/HDB-986">HDB-986</a></td>
       <td>Frage zur Verschreibung von Kombipackungen (Beschreibung auf der Startseite)</td>
-      <td>Entwurf (zu bestätigen): MedicationRequest, MedicationStatement und MedicationAdministration referenzieren die „obere" Kombipackungs-<code class="language-plaintext highlighter-rouge">Medication</code>, wenn die Packung als Ganzes verordnet oder dokumentiert wird. Ist der tatsächlich eingenommene bzw. verabreichte Bestandteil bekannt, referenziert die Ressource direkt die entsprechende Unter-<code class="language-plaintext highlighter-rouge">Medication</code> (eine vollständige <code class="language-plaintext highlighter-rouge">Medication</code>-Instanz, siehe „Kombinationspackungen" auf der Startseite). Einen Satz dazu auf der Startseite ergänzen.</td>
-      <td>Antwort geplant</td>
+      <td>Hinweise über die geplante Antwort hinaus erweitert: MedicationRequest, MedicationStatement und MedicationAdministration MÜSSEN die Komponente (Untermedikation) referenzieren, nicht nur die „obere" <code class="language-plaintext highlighter-rouge">Medication</code> der Kombinationspackung. Eine PZN-Verordnung einer Packung wird durch eine Packungs-Verordnung plus je eine Verordnung pro Komponente mit Einnahmeangaben abgebildet, verknüpft über <code class="language-plaintext highlighter-rouge">basedOn</code>. Krankenhausinformationssysteme verordnen Kombinationspackungen kaum über die PZN; Gegenstand ist in der Regel die Komponente. Startseite und Hinweise für Forschende angepasst.</td>
+      <td>Angenommen (Doku)</td>
       <td>nein</td>
     </tr>
   </tbody>
 </table>
+
+<h3 id="folgearbeiten">Folgearbeiten</h3>
+
+<ul>
+  <li>ATC-DE 2027 in <code class="language-plaintext highlighter-rouge">mii-vs-medikation-atc</code>, sobald das BfArM es veröffentlicht (HDB-981).</li>
+  <li>StructureMap (FML) zur Umstellung der MII-Extension Wirkstofftyp auf <code class="language-plaintext highlighter-rouge">WirkstofftypEX</code> (HDB-983).</li>
+  <li>Stilllegung von MII-Extension, ValueSet und CodeSystem Wirkstofftyp in einem späteren Release (HDB-983).</li>
+  <li>Rückmeldungen zum Status der ersten Ressource nach Fortsetzung einer pausierten Medikation sammeln (HDB-979).</li>
+</ul>
 
 
 
@@ -515,7 +525,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.medikation#2027.0.0-ballot basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Nov 6, 2026 14:43+0000">2026-11-06</span>
+          Erstellt <span title="Wed, Nov 11, 2026 18:57+0000">2026-11-11</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
