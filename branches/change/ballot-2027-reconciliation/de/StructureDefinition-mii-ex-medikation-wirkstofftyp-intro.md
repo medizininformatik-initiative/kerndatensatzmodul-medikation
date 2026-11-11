@@ -1,0 +1,13 @@
+<div class="ig-highlight ig-highlight-orange" markdown="1">
+**Veraltet (deprecated) — Stilllegung geplant.** Seit Version 2027.0.0 verwendet das Profil [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) dieses Artefakt nicht mehr. Der Wirkstofftyp wird mit der Extension [WirkstofftypEX](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644264) und dem CodeSystem [WirkstofftypCS](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644187) aus den deutschen Basisprofilen (`de.basisprofil.r4` 1.6.0) angegeben. Diese Extension ist aus der ursprünglichen MII-Extension hervorgegangen: Sie hat denselben Kontext (`Medication.ingredient`) und dieselben Codes (`IN`, `PIN`, `MIN`), und ISiK (z. B. [ISiK Medikament, Stufe 6](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikament.html)) sowie weitere deutsche Spezifikationen verwenden sie. Eine gemeinsame Extension vermeidet zwei parallele Artefakte für dasselbe Konzept. Die MII-Extension, das ValueSet und das CodeSystem bleiben für bestehende Daten in diesem Leitfaden und werden in einem späteren Release auf `retired` gesetzt. Daten, die noch die MII-Extension verwenden, lösen die Warnung `mii-med-2` aus. Die ConceptMap [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) bildet die MII-Codes auf `WirkstofftypCS` ab.
+</div>
+
+### Inhalt
+
+Durch die Extension KANN bei der Berechnung der Dosisangaben zwischen dem genauen Wirkstoff (der ein Salz, Ester etc. sein kann) und dem reinen Wirkstoff unterschieden werden, um anzugeben, ob die Berechnung auf dem Derivat (seltener) oder der reinen/"allgemeinen" Substanz (meist) beruht. Aus diesem Grund wurde eine Extension definiert, welche zusätzlich zur Wirkstoffcodierung angegeben werden KANN. Diese Extension verweist auf ein ValueSet mit Codes für:
+
+* `IN` (ingredient - allgemeiner Wirkstoff),
+* `PIN` (precise ingredient - genauer Wirkstoff),
+* oder `MIN` (multiple ingredients - Kombinationscode für mehrere Wirkstoffe).
+
+Siehe auch [**Terminologien**](code-systems.html).
