@@ -33,6 +33,10 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
 * `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — guidance that `effective[x]` SHOULD be given to the second, as best
   practice following ISiK stage 6; coarser values stay valid. MedicationStatement is unchanged
   ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
+* `Added`: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — best practice from ISiK stage 6 for pausing a medication: several
+  resources instead of overwriting one. The status of the first resource after a
+  continuation is an open question with one current implementation described; input welcome
+  ([HDB-979](https://hl7germany.atlassian.net/browse/HDB-979)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 

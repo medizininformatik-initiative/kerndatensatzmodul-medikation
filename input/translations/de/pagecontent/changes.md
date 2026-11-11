@@ -32,6 +32,10 @@
 * `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Hinweis, dass `effective[x]` als Best Practice nach ISiK Stufe 6
   sekundengenau angegeben werden SOLL; gröbere Angaben bleiben gültig. MedicationStatement
   bleibt unverändert ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
+* `Added`: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Best Practice aus ISiK Stufe 6 zur Pausierung einer Medikation: mehrere
+  Ressourcen statt Überschreiben einer bestehenden. Der Status der ersten Ressource nach einer
+  Fortsetzung ist eine offene Frage; eine aktuelle Implementierung ist beschrieben,
+  Rückmeldungen sind erwünscht ([HDB-979](https://hl7germany.atlassian.net/browse/HDB-979)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 

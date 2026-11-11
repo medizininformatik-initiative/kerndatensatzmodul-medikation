@@ -11,3 +11,15 @@ Seit Version 2027.0.0 ist `MedicationAdministration.dosage.dose` (*required*) an
 ### Zeitpunkt der Verabreichung
 
 Als Best Practice SOLL `MedicationAdministration.effective[x]` (`effectiveDateTime` oder `effectivePeriod`) sekundengenau angegeben werden. Damit folgt das Profil dem [ISiK-Profil MedikationsVerabreichung der ISiK-Stufe 6 (6.0.0)](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsVerabreichung.html), das eine Verabreichung mit sekundengenauem Zeitpunkt abbildet und gröbere Angaben (nur Jahr, Monat oder Tag) an MedicationStatement verweist. Anders als ISiK erzwingt dieses Profil die Genauigkeit nicht: Daten aus retrospektiven Quellen, in denen nur das Datum einer Verabreichung bekannt ist, bleiben gültig. Das MedicationStatement-Profil bleibt unverändert und erlaubt weiterhin gröbere Angaben, etwa einen Zeitraum über mehrere Tage.
+
+### Pausierung einer Medikation
+
+Als Best Practice SOLL die Pausierung einer Medikation mit mehreren MedicationAdministration-Ressourcen abgebildet werden, anstatt eine bestehende zu überschreiben. Damit wird der Hinweis aus dem [ISiK-Profil ISiKMedikationsVerabreichung der ISiK-Stufe 6 (6.0.0)](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsVerabreichung.html) übernommen:
+
+* **Aktueller Status:** `status` bildet stets den momentanen Zustand der Medikation ab und ist systemweit durchsuchbar.
+* **Effiziente REST-Abfragen:** In Kombination mit dem Zeitraum lässt sich die zu einem Zeitpunkt aktive Medikation über eine Suche nach `status` finden. Würde nur die Dosierung einer bestehenden Ressource geändert, müssten alle Ressourcen abgerufen und ausgewertet werden.
+* **Erhalt der Verlaufsinformation:** Ein `statusReason` (z. B. „pausiert wegen Nebenwirkungen") ginge bei einer Aktualisierung der bestehenden Ressource zur Fortsetzung verloren; getrennte Ressourcen erhalten ihn.
+
+<div class="ig-highlight ig-highlight-blue" markdown="1">
+**Offene Frage — Rückmeldungen erwünscht.** ISiK legt nicht fest, welchen `status` die erste MedicationAdministration trägt. Während der Pause ist sie `on-hold` oder `stopped`. Eine aktuelle Implementierung setzt die erste Ressource wieder auf `in-progress` (`in-progress` entspricht bei MedicationAdministration dem Status `active`), sobald die Fortsetzung in einer neuen MedicationAdministration mit Status `in-progress` dokumentiert ist: `effectivePeriod.start` und `effectivePeriod.end` zeigen, dass dieser Abschnitt abgeschlossen ist, während der Status zeigt, dass die Medikation selbst fortgesetzt wird. Rückmeldungen zu diesem Vorgehen sind willkommen.
+</div>
