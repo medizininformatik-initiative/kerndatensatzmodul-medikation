@@ -19,6 +19,10 @@
 * `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` ist Must Support, mit dem Hinweis, dass `inactive`
   und `entered-in-error` ausgewertet werden müssen. Anders als in ISiK Stufe 6 bleibt
   `status` optional (`0..1`) ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
+* `Changed`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — **breaking:** `MedicationAdministration.dosage.dose` ist (*required*)
+  an `DosageDoseQuantityDE` gebunden, die Bindung, die MedicationRequest und
+  MedicationStatement über `DosageDE` bereits verwenden. Dosisangaben in anderen
+  Einheiten werden ungültig ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 

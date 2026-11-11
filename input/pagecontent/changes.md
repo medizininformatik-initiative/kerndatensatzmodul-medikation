@@ -20,6 +20,10 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
 * `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` is Must Support, with guidance that `inactive`
   and `entered-in-error` must be evaluated. Unlike ISiK stage 6 it stays optional (`0..1`)
   ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
+* `Changed`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — **breaking:** `MedicationAdministration.dosage.dose` is bound
+  (*required*) to `DosageDoseQuantityDE`, the binding MedicationRequest and
+  MedicationStatement already use via `DosageDE`. Doses in other units become invalid
+  ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 

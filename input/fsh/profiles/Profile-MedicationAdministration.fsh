@@ -249,6 +249,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(dosage.dose ^definition, de-DE, Menge des Medikaments pro Dosis)
 * insert Translation(dosage.dose ^definition, en-US, The amount of medication per dose)
 //* dosage.dose ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.dose from $vs-dosage-dose-quantity-de (required)
 * dosage.dose.value 1.. MS
 * dosage.dose.unit MS
 * dosage.dose.system 1.. MS
