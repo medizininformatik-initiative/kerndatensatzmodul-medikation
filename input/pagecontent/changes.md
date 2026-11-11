@@ -17,6 +17,9 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
 * `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` is allowed and Must Support
   (`0..0` → `0..1`), as in ISiK stage 6, so ISiK requests carrying it conform
   ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` is Must Support, with guidance that `inactive`
+  and `entered-in-error` must be evaluated. Unlike ISiK stage 6 it stays optional (`0..1`)
+  ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 

@@ -67,6 +67,11 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassEn].version 1.. MS
 * code.coding[atcClassEn].code 1.. MS
 * code.text MS
+* status MS
+* status ^short = "Status"
+* insert Translation(status ^short, en-US, Status)
+* status ^comment = "Modifier-Element: inactive und entered-in-error ändern die Bedeutung der Ressource und MÜSSEN von empfangenden Systemen ausgewertet werden. Abweichend von ISiK Stufe 6, wo status 1..1 ist, bleibt status optional."
+* insert Translation(status ^comment, en-US, Modifier element: inactive and entered-in-error change the meaning of the resource and MUST be evaluated by receiving systems. Unlike ISiK stage 6\, where status is 1..1\, status stays optional.)
 * form MS
 * form ^short = "Darreichungsform"
 * form ^definition = "Darreichungsform des Medikaments"

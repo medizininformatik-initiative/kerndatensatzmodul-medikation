@@ -16,6 +16,9 @@
 * `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` ist erlaubt und Must Support
   (`0..0` → `0..1`), wie in ISiK Stufe 6, sodass ISiK-Verordnungen mit diesem Element
   konform sind ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` ist Must Support, mit dem Hinweis, dass `inactive`
+  und `entered-in-error` ausgewertet werden müssen. Anders als in ISiK Stufe 6 bleibt
+  `status` optional (`0..1`) ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 
