@@ -23,3 +23,5 @@ Alias: $ucum = http://unitsofmeasure.org
 Alias: $unii = http://fdasis.nlm.nih.gov
 // from Medication IG DE
 Alias: $DosageDE = http://ig.fhir.de/igs/medication/StructureDefinition/DosageDE
+Alias: $ex-wirkstofftyp-de = http://fhir.de/StructureDefinition/WirkstofftypEX
+Alias: $cs-wirkstofftyp-de = http://fhir.de/CodeSystem/WirkstofftypCS

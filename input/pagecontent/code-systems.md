@@ -30,7 +30,7 @@ For active ingredients it should be possible, when calculating dose information,
 * `PIN` — precise ingredient
 * `MIN` — multiple ingredients, combination code for several active ingredients
 
-See the extensions [Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) and [Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.html).
+Since version 2027.0.0 the profiles use the extension [WirkstofftypEX](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644264) and the code system [WirkstofftypCS](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644187) from the German base profiles; the MII extension and code system are deprecated. See the extensions [Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) (deprecated) and [Wirkstoffrelation](StructureDefinition-mii-ex-medikation-wirkstoffrelation.html).
 
 
 #### Sales status of a PZN

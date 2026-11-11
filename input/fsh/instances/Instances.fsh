@@ -46,8 +46,8 @@ Usage: #example
 * code.coding[+] = $cs-atc-who|2023#A12AA20 "calcium (different salts in combination)"
 * form = $standardterms#10222000 "Effervescent tablet"
 * ingredient[0].id = "ing_1"
-* ingredient[=].extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
-* ingredient[=].extension.valueCoding = $cs-wirkstofftyp#PIN
+* ingredient[=].extension.url = "http://fhir.de/StructureDefinition/WirkstofftypEX"
+* ingredient[=].extension.valueCoding = $cs-wirkstofftyp-de#PIN
 * ingredient[=].itemCodeableConcept.coding[0] = $fdasis#472LWJ3Y9N "CALCIUM LACTATE GLUCONATE"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#11116-97-5 "Calcium lactate gluconate"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#422232005 "Calcium lactate gluconate (substance)"
@@ -55,8 +55,8 @@ Usage: #example
 * ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
 * insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
 * ingredient[+].id = "ing_2"
-* ingredient[=].extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
-* ingredient[=].extension.valueCoding = $cs-wirkstofftyp#PIN
+* ingredient[=].extension.url = "http://fhir.de/StructureDefinition/WirkstofftypEX"
+* ingredient[=].extension.valueCoding = $cs-wirkstofftyp-de#PIN
 * ingredient[=].itemCodeableConcept.coding[0] = $fdasis#H0G9379FGK "CALCIUM CARBONATE"
 * ingredient[=].itemCodeableConcept.coding[+] = $cas#471-34-1 "Calcium carbonate"
 * ingredient[=].itemCodeableConcept.coding[+] = $sct-no-ver#387307005 "Calcium carbonate (substance)"
@@ -64,8 +64,8 @@ Usage: #example
 * ingredient[=].strength.denominator = 1 '1' "Effervescent tablet"
 * insert PQTranslation(ingredient[=].strength.denominator, 1, Effervescent tablet, http://standardterms.edqm.eu, 10222000)
 * ingredient[+].id = "ing_3"
-* ingredient[=].extension[0].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
-* ingredient[=].extension[=].valueCoding = $cs-wirkstofftyp#IN
+* ingredient[=].extension[0].url = "http://fhir.de/StructureDefinition/WirkstofftypEX"
+* ingredient[=].extension[=].valueCoding = $cs-wirkstofftyp-de#IN
 * ingredient[=].extension[+].extension.url = "ingredientUri"
 * ingredient[=].extension[=].extension.valueUri = "#ing_1"
 * ingredient[=].extension[=].url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation"
@@ -126,8 +126,8 @@ InstanceOf: mii-pr-medikation-medication
 Usage: #example
 * insert TestDataLabel
 * insert MetaProfile(https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication)
-* ingredient.extension.url = "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp"
-* ingredient.extension.valueCoding = $cs-wirkstofftyp#IN "ingredient"
+* ingredient.extension.url = "http://fhir.de/StructureDefinition/WirkstofftypEX"
+* ingredient.extension.valueCoding = $cs-wirkstofftyp-de#IN "ingredient"
 * ingredient.itemCodeableConcept.coding[0] = $fdasis#905Z5W3GKH "THIOTEPA"
 * ingredient.itemCodeableConcept.coding[+] = $cs-ask#07962 "Thiotepa"
 * ingredient.itemCodeableConcept.coding[+] = $cas#52-24-4

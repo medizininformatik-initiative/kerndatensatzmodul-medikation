@@ -91,6 +91,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * form.coding[EDQM].code 1.. MS
 * obeys mii-med-1
 * ingredient MS
+* ingredient obeys mii-med-2
 * ingredient ^short = "Bestandteil"
 * ingredient ^definition = "Ein Bestandteil des Medikaments"
 * ingredient.extension MS
@@ -98,7 +99,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.extension ^slicing.discriminator.path = "url"
 * ingredient.extension ^slicing.rules = #open
 * ingredient.extension contains
-    $ex-wirkstofftyp named Wirkstofftyp 0..1 MS and
+    $ex-wirkstofftyp-de named Wirkstofftyp 0..1 MS and
     $ex-wirkstoffrelation named Wirkstoffrelation 0..* MS
 * ingredient.item[x] only CodeableConcept or Reference
 * ingredient.item[x] ^slicing.discriminator.type = #type

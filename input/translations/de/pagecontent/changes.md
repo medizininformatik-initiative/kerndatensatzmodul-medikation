@@ -23,6 +23,12 @@
   an `DosageDoseQuantityDE` gebunden, die Bindung, die MedicationRequest und
   MedicationStatement über `DosageDE` bereits verwenden. Dosisangaben in anderen
   Einheiten werden ungültig ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
+* `Deprecated`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html), [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) — der Wirkstofftyp verwendet die Basisprofil-DE-Extension
+  `WirkstofftypEX` (Codes aus `WirkstofftypCS`), wie ISiK. MII-Extension, ValueSet und
+  CodeSystem bleiben im Leitfaden, sind veraltet und werden in einem späteren Release stillgelegt;
+  die Invariante `mii-med-2` warnt bei Verwendung der MII-Extension. Die neue ConceptMap
+  [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) bildet die MII-Codes auf `WirkstofftypCS` ab. Beispiele angepasst
+  ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 

@@ -24,6 +24,12 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
   (*required*) to `DosageDoseQuantityDE`, the binding MedicationRequest and
   MedicationStatement already use via `DosageDE`. Doses in other units become invalid
   ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
+* `Deprecated`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html), [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) — the ingredient type uses the Basisprofil DE extension
+  `WirkstofftypEX` (codes from `WirkstofftypCS`), as ISiK does. The MII extension, value set and
+  code system stay in the guide, are deprecated and will be retired in a later release; the
+  invariant `mii-med-2` warns when the MII extension is used. The new ConceptMap
+  [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) maps the MII codes to `WirkstofftypCS`. Examples updated
+  ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 
