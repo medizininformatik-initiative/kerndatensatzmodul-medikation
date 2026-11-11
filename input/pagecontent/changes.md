@@ -3,6 +3,45 @@
 
 ### Release notes
 
+**Version 2027.0.0** — unreleased
+
+<!-- From 2027.0.0 on, every bullet starts with a link to the affected artifact(s). -->
+
+Changes from the ballot reconciliation of 2027.0.0-ballot:
+
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.ingredient` is optional (`1..*` → `0..*`), so a finished
+  medicinal product coded only by PZN or ATC conforms without a placeholder ingredient.
+  The new invariant `mii-med-1` requires a `code` or at least one `ingredient`
+  ([HDB-980](https://hl7germany.atlassian.net/browse/HDB-980),
+  [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` is allowed and Must Support
+  (`0..0` → `0..1`), as in ISiK stage 6, so ISiK requests carrying it conform
+  ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` is Must Support, with guidance that `inactive`
+  and `entered-in-error` must be evaluated. Unlike ISiK stage 6 it stays optional (`0..1`)
+  ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
+* `Changed`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — **breaking:** `MedicationAdministration.dosage.dose` is bound
+  (*required*) to `DosageDoseQuantityDE`, the binding MedicationRequest and
+  MedicationStatement already use via `DosageDE`. Doses in other units become invalid
+  ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
+* `Deprecated`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html), [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) — the ingredient type uses the Basisprofil DE extension
+  `WirkstofftypEX` (codes from `WirkstofftypCS`), as ISiK does. The MII extension, value set and
+  code system stay in the guide, are deprecated and will be retired in a later release; the
+  invariant `mii-med-2` warns when the MII extension is used. The new ConceptMap
+  [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) maps the MII codes to `WirkstofftypCS`. Examples updated
+  ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
+* `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — guidance that `effective[x]` SHOULD be given to the second, as best
+  practice following ISiK stage 6; coarser values stay valid. MedicationStatement is unchanged
+  ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
+* `Added`: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — best practice from ISiK stage 6 for pausing a medication: several
+  resources instead of overwriting one. The status of the first resource after a
+  continuation is an open question with one current implementation described; input welcome
+  ([HDB-979](https://hl7germany.atlassian.net/browse/HDB-979)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html), [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — combination packages: orders, statements and administrations MUST
+  reference the component (sub-`Medication`), not only the package. A PZN order of a package is
+  represented by a package request plus one request per component (`basedOn`); see the home page
+  ([HDB-986](https://hl7germany.atlassian.net/browse/HDB-986)).
+
 **Version 2027.0.0-ballot** — 2026-09-11
 
 * `Added`: every conformance artefact now carries CRMI metadata — the shareable /

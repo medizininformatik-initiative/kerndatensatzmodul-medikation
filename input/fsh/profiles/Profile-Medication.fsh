@@ -2,7 +2,7 @@ Profile: MII_PR_Medikation_Medication
 Parent: Medication
 Id: mii-pr-medikation-medication
 Title: "MII PR Medikation Medication"
-Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt."
+Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Medikation MUSS über einen Code oder mindestens einen Bestandteil identifiziert werden; die Angabe des Wirkstoffes SOLL erfolgen."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
 * ^experimental = false
 * insert CRMIShareableStructureDefinition
@@ -67,6 +67,11 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * code.coding[atcClassEn].version 1.. MS
 * code.coding[atcClassEn].code 1.. MS
 * code.text MS
+* status MS
+* status ^short = "Status"
+* insert Translation(status ^short, en-US, Status)
+* status ^comment = "Modifier-Element: inactive und entered-in-error ändern die Bedeutung der Ressource und MÜSSEN von empfangenden Systemen ausgewertet werden. Abweichend von ISiK Stufe 6, wo status 1..1 ist, bleibt status optional."
+* insert Translation(status ^comment, en-US, Modifier element: inactive and entered-in-error change the meaning of the resource and MUST be evaluated by receiving systems. Unlike ISiK stage 6\, where status is 1..1\, status stays optional.)
 * form MS
 * form ^short = "Darreichungsform"
 * form ^definition = "Darreichungsform des Medikaments"
@@ -84,7 +89,9 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * form.coding[EDQM] ^mustSupport = true
 * form.coding[EDQM].system 1.. MS
 * form.coding[EDQM].code 1.. MS
-* ingredient 1.. MS
+* obeys mii-med-1
+* ingredient MS
+* ingredient obeys mii-med-2
 * ingredient ^short = "Bestandteil"
 * ingredient ^definition = "Ein Bestandteil des Medikaments"
 * ingredient.extension MS
@@ -92,7 +99,7 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * ingredient.extension ^slicing.discriminator.path = "url"
 * ingredient.extension ^slicing.rules = #open
 * ingredient.extension contains
-    $ex-wirkstofftyp named Wirkstofftyp 0..1 MS and
+    $ex-wirkstofftyp-de named Wirkstofftyp 0..1 MS and
     $ex-wirkstoffrelation named Wirkstoffrelation 0..* MS
 * ingredient.item[x] only CodeableConcept or Reference
 * ingredient.item[x] ^slicing.discriminator.type = #type

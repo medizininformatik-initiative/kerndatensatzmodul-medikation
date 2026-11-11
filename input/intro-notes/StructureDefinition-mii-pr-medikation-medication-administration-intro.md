@@ -4,3 +4,23 @@
 The MedicationAdministration resource is used to record the administration of medication, including self-administration of oral medication, injections, intravenous administration and so on.
 
 The administered medication should be given either as a reference to a *Medication* resource, as a Pharmazentralnummer (PZN) or as an ATC code. Coding the medication via the Unique Ingredient Identifier (UNII) should only be considered for medications where neither a PZN nor an ATC code is available — for example investigational medicinal products, or certain preparations used in oncology or for rare diseases. Note that the UNII codes only an active ingredient, not a medication; combination products can therefore only be modelled via a *Medication*.
+
+### Dose unit
+
+Since version 2027.0.0, `MedicationAdministration.dosage.dose` is bound (*required*) to the ValueSet [DosageDoseQuantityDE](https://ig.fhir.de/igs/medication/ValueSet-DosageDoseQuantityDE.html) from the Medication IG DE: UCUM units, the dosage units of the BMP (KBV) and EDQM units of presentation. MedicationRequest and MedicationStatement already use this binding through the [DosageDE profile](https://ig.fhir.de/igs/medication/StructureDefinition-DosageDE.html); an administration is now coded in the same units as the order or statement it relates to. `DosageDE` itself cannot be used here, because `MedicationAdministration.dosage` is a separate backbone element in FHIR R4, not a `Dosage`. Doses in units outside this ValueSet are no longer valid.
+
+### Time of administration
+
+As best practice, `MedicationAdministration.effective[x]` (`effectiveDateTime` or `effectivePeriod`) SHOULD be given to the second. This follows the [ISiK MedikationsVerabreichung profile of ISiK stage 6 (6.0.0)](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsVerabreichung.html), which records an administration with a time to the second and refers coarser information (only year, month or day) to MedicationStatement. Unlike ISiK, this profile does not enforce the precision: data from retrospective sources in which only the date of an administration is known remains valid. The MedicationStatement profile is unchanged and continues to allow coarser values, for example a period of several days.
+
+### Pausing a medication
+
+As best practice, a pause in a medication SHOULD be represented with several MedicationAdministration resources instead of overwriting an existing one. This adopts the note in the [ISiK profile ISiKMedikationsVerabreichung of ISiK stage 6 (6.0.0)](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsVerabreichung.html):
+
+* **Current status:** `status` always reflects the current state of the medication and can be searched across systems.
+* **Efficient REST queries:** in combination with the time period, the medication active at a given time can be found with a search on `status`. If only the dosage were changed in an existing resource, every resource would have to be retrieved and analysed.
+* **History preserved:** a `statusReason` (e.g. "paused because of side effects") would be lost when the existing resource is updated on continuation; separate resources keep it.
+
+<div class="ig-highlight ig-highlight-blue" markdown="1">
+**Open question — input welcome.** ISiK does not say which `status` the first MedicationAdministration carries. During the pause it is `on-hold` or `stopped`. One current implementation sets the first resource back to `in-progress` (`in-progress` is the MedicationAdministration counterpart of `active`) once the continuation is documented in a new, `in-progress` MedicationAdministration: its `effectivePeriod.start` and `effectivePeriod.end` show that this part has ended, while the status shows that the medication itself is being continued. Feedback on this pattern is welcome.
+</div>

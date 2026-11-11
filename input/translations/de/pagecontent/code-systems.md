@@ -27,7 +27,7 @@ Im Bereich der Wirkstoffe soll die Möglichkeit gegeben werden, bei der Berechnu
 * PIN (precise ingredient – genauer Wirkstoff),
 * oder MIN (multiple ingredients – Kombinationscode für mehrere Wirkstoffe).
 
-Das CodeSystem dazu: [MII CS Medikation Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.html).
+Seit Version 2027.0.0 verwenden die Profile die Extension [WirkstofftypEX](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644264) und das CodeSystem [WirkstofftypCS](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644187) aus den deutschen Basisprofilen; die MII-Extension und das CodeSystem [MII CS Medikation Wirkstofftyp](CodeSystem-mii-cs-medikation-wirkstofftyp.html) sind veraltet (deprecated).
 
 #### Verkaufsstatus einer PZN
 

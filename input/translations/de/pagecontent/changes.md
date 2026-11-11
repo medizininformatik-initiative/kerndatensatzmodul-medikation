@@ -2,6 +2,45 @@
 
 ### Release Notes
 
+**Version 2027.0.0** — unveröffentlicht
+
+<!-- Ab 2027.0.0 beginnt jeder Eintrag mit einem Link auf das betroffene Artefakt. -->
+
+Änderungen aus der Ballot-Kommentierung zu 2027.0.0-ballot:
+
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.ingredient` ist optional (`1..*` → `0..*`), sodass ein nur per
+  PZN oder ATC kodiertes Fertigarzneimittel ohne Platzhalter-Bestandteil konform ist.
+  Die neue Invariante `mii-med-1` verlangt einen `code` oder mindestens ein `ingredient`
+  ([HDB-980](https://hl7germany.atlassian.net/browse/HDB-980),
+  [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` ist erlaubt und Must Support
+  (`0..0` → `0..1`), wie in ISiK Stufe 6, sodass ISiK-Verordnungen mit diesem Element
+  konform sind ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.status` ist Must Support, mit dem Hinweis, dass `inactive`
+  und `entered-in-error` ausgewertet werden müssen. Anders als in ISiK Stufe 6 bleibt
+  `status` optional (`0..1`) ([HDB-982](https://hl7germany.atlassian.net/browse/HDB-982)).
+* `Changed`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — **breaking:** `MedicationAdministration.dosage.dose` ist (*required*)
+  an `DosageDoseQuantityDE` gebunden, die Bindung, die MedicationRequest und
+  MedicationStatement über `DosageDE` bereits verwenden. Dosisangaben in anderen
+  Einheiten werden ungültig ([HDB-967](https://hl7germany.atlassian.net/browse/HDB-967)).
+* `Deprecated`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html), [MII EX Medikation Wirkstofftyp](StructureDefinition-mii-ex-medikation-wirkstofftyp.html) — der Wirkstofftyp verwendet die Basisprofil-DE-Extension
+  `WirkstofftypEX` (Codes aus `WirkstofftypCS`), wie ISiK. MII-Extension, ValueSet und
+  CodeSystem bleiben im Leitfaden, sind veraltet und werden in einem späteren Release stillgelegt;
+  die Invariante `mii-med-2` warnt bei Verwendung der MII-Extension. Die neue ConceptMap
+  [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) bildet die MII-Codes auf `WirkstofftypCS` ab. Beispiele angepasst
+  ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
+* `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Hinweis, dass `effective[x]` als Best Practice nach ISiK Stufe 6
+  sekundengenau angegeben werden SOLL; gröbere Angaben bleiben gültig. MedicationStatement
+  bleibt unverändert ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
+* `Added`: [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Best Practice aus ISiK Stufe 6 zur Pausierung einer Medikation: mehrere
+  Ressourcen statt Überschreiben einer bestehenden. Der Status der ersten Ressource nach einer
+  Fortsetzung ist eine offene Frage; eine aktuelle Implementierung ist beschrieben,
+  Rückmeldungen sind erwünscht ([HDB-979](https://hl7germany.atlassian.net/browse/HDB-979)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html), [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Kombinationspackungen: Verordnung, Medikationseintrag und Verabreichung
+  MÜSSEN die Komponente (Untermedikation) referenzieren, nicht nur die Packung. Eine PZN-Verordnung
+  einer Packung wird durch eine Packungs-Verordnung plus je eine Verordnung pro Komponente
+  (`basedOn`) abgebildet; siehe Startseite ([HDB-986](https://hl7germany.atlassian.net/browse/HDB-986)).
+
 **Version 2027.0.0-ballot** — 11.09.2026
 
 * `Added`: Alle Konformitaetsartefakte tragen jetzt CRMI-Metadaten — die

@@ -25,7 +25,7 @@ There is also the distinction between **precise and general ingredient**: "bisop
 
 A `Medication` references further `Medication` resources through `ingredient.itemReference`. This is needed in two places:
 
-* **Combination packages.** The outer resource carries the PZN of the package; the inner ones describe the individual preparations with their ingredients, each without a PZN of its own.
+* **Combination packages.** The outer resource carries the PZN of the package; the inner ones describe the individual preparations with their ingredients, each without a PZN of its own. Orders, statements and administrations reference the inner component, not only the package.
 * **Compounded preparations and infusion solutions.** The prepared solution references its components.
 
 For analyses this means: **a single `Medication` is not necessarily the whole story.** Counting ingredients without following the reference chain loses, for combination packages, exactly the information being sought — the ingredient sits one level down.

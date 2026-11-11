@@ -37,7 +37,11 @@ Description: "Dieses Profil beschreibt die Verordnung einer Medikation."
 * identifier ^definition = "Ein Identifikator für die Medikationsverordnung"
 * insert Translation(identifier ^definition, de-DE, Ein Identifikator für die Medikationsverordnung)
 * insert Translation(identifier ^definition, en-US, An identifier for this medication request)
-* doNotPerform 0..0
+* doNotPerform MS
+* doNotPerform ^short = "Nicht durchführen"
+* insert Translation(doNotPerform ^short, en-US, Do not perform)
+* doNotPerform ^comment = "Begründung MS: Modifier-Element der Kernspezifikation. Die Angabe ist erlaubt, weil ISiK Stufe 6, E-Rezept und ePA sie nicht verbieten. doNotPerform = true kennzeichnet die Anordnung, das Medikament NICHT zu geben. Empfangende Systeme MÜSSEN den Wert auswerten."
+* insert Translation(doNotPerform ^comment, en-US, Reason for MS: modifier element of the core specification. It is allowed because ISiK stage 6\, e-prescription and ePA do not prohibit it. doNotPerform = true marks an order NOT to give the medication. Receiving systems MUST evaluate the value.)
 * status MS
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)

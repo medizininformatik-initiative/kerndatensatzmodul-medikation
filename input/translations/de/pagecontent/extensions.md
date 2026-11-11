@@ -19,7 +19,7 @@ Die folgende Tabelle wird beim Build aus den tatsächlich gebauten Artefakten er
 
 Beide Extensions hängen an der Wirkstoffangabe einer `Medication` und lösen dasselbe fachliche Problem: die Dosisberechnung braucht die Unterscheidung zwischen dem genauen Wirkstoff — der ein Salz oder Ester sein kann — und der reinen Substanz.
 
-* **Wirkstofftyp** klassifiziert die Angabe als allgemeinen Wirkstoff (`IN`), genauen Wirkstoff (`PIN`) oder Kombinationswirkstoff (`MIN`).
+* **Wirkstofftyp** klassifiziert die Angabe als allgemeinen Wirkstoff (`IN`), genauen Wirkstoff (`PIN`) oder Kombinationswirkstoff (`MIN`). *Veraltet seit 2027.0.0:* Die Profile verwenden stattdessen [WirkstofftypEX](https://simplifier.net/packages/de.basisprofil.r4/1.6.0/files/3644264) aus den deutschen Basisprofilen.
 * **Wirkstoffrelation** verknüpft einen genauen mit dem zugehörigen allgemeinen Wirkstoff und macht damit die Umrechnung nachvollziehbar: 10 mg Bisoprololhemifumarat entsprechen 8,49 mg Bisoprolol.
 
 Die zugehörigen Codes beschreibt der Abschnitt [Terminologien](code-systems.html).

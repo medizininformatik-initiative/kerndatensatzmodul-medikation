@@ -131,6 +131,8 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * effective[x] ^definition = "Datum oder Zeitraum, in dem die Medikation verabreicht wurde."
 * insert Translation(effective[x] ^definition, de-DE, Zeitpunkt oder Zeitraum in dem die Medikation verabreicht wurde.)
 * insert Translation(effective[x] ^definition, en-US, The date or time period over which the medication was administered.)
+* effective[x] ^comment = "Best Practice wie in ISiK Stufe 6: Der Zeitpunkt bzw. Zeitraum der Verabreichung SOLL sekundengenau angegeben werden. Gröbere Angaben, etwa nur das Datum aus retrospektiven Quellen, bleiben zulässig."
+* insert Translation(effective[x] ^comment, en-US, Best practice as in ISiK stage 6: the time or period of administration SHOULD be given to the second. Coarser values such as a date only from retrospective sources remain valid.)
 * effectiveDateTime MS
 * effectiveDateTime ^short = "Zeitpunkt"
 * insert Translation(effectiveDateTime ^short, de-DE, Zeitpunkt)
@@ -249,6 +251,7 @@ Description: "Dieses Profil beschreibt Medikamentenverabreichungen, einschließl
 * insert Translation(dosage.dose ^definition, de-DE, Menge des Medikaments pro Dosis)
 * insert Translation(dosage.dose ^definition, en-US, The amount of medication per dose)
 //* dosage.dose ^patternQuantity.system = "http://unitsofmeasure.org"
+* dosage.dose from $vs-dosage-dose-quantity-de (required)
 * dosage.dose.value 1.. MS
 * dosage.dose.unit MS
 * dosage.dose.system 1.. MS
