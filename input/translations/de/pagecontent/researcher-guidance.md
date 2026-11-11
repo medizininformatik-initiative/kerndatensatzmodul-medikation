@@ -24,7 +24,7 @@ Hinzu kommt die Unterscheidung zwischen **genauem und allgemeinem Wirkstoff**: �
 
 Eine `Medication` verweist über `ingredient.itemReference` auf weitere `Medication`-Ressourcen. Das wird an zwei Stellen gebraucht:
 
-* **Kombinationspackungen.** Die äußere Ressource trägt die PZN der Packung, die inneren beschreiben die einzelnen Präparate mit ihren Wirkstoffen — jeweils ohne eigene PZN.
+* **Kombinationspackungen.** Die äußere Ressource trägt die PZN der Packung, die inneren beschreiben die einzelnen Präparate mit ihren Wirkstoffen — jeweils ohne eigene PZN. Verordnung, Medikationseintrag und Verabreichung verweisen auf die innere Komponente, nicht nur auf die Packung.
 * **Rezepturen und Infusionslösungen.** Die zubereitete Lösung verweist auf ihre Bestandteile.
 
 Für Auswertungen heißt das: **eine einzelne `Medication` ist nicht notwendigerweise die ganze Geschichte.** Wer Wirkstoffe zählt, ohne der Referenzkette zu folgen, verliert bei Kombinationspackungen genau die Information, die er sucht — der Wirkstoff steht dort eine Ebene tiefer.

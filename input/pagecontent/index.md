@@ -78,6 +78,8 @@ For medication information that demonstrably refers to whole packages via the PZ
 
 Combination packages can be represented straightforwardly by nesting `Medication` hierarchically, linking from `Item.reference` to other `Medication` instances. The "upper" `Medication` instance thus serves as the package hierarchy and as a container for the actual medication. It also carries the PZN of the combination package. The actual medication (the "sub-medication") is represented as a complete `Medication` instance — each without a PZN, with complete medication data including ASK and, where applicable, ATC.
 
+**Orders, statements and administrations of combination packages.** A MedicationRequest, MedicationStatement or MedicationAdministration MUST reference the component that is ordered, taken or administered, i.e. the sub-`Medication`; referencing only the "upper" combination-package `Medication` is not sufficient, because dose, dose form and timing differ between the components. If a combination package is ordered by its PZN, the order is represented by several MedicationRequests: one for the package, referencing the "upper" `Medication`, and one per component, referencing the sub-`Medication` and stating how that component is to be taken. The component requests reference the package request via `basedOn`. In hospital information systems a combination package is rarely ordered by its PZN; the component itself is usually the subject of the order or statement.
+
 #### Medication statement
 
 For documenting medication events independent of an order or an administration — for example in medication plans, or where patients state their own medication.

@@ -37,6 +37,10 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
   resources instead of overwriting one. The status of the first resource after a
   continuation is an open question with one current implementation described; input welcome
   ([HDB-979](https://hl7germany.atlassian.net/browse/HDB-979)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html), [MII PR Medikation MedicationStatement](StructureDefinition-mii-pr-medikation-medication-statement.html), [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — combination packages: orders, statements and administrations MUST
+  reference the component (sub-`Medication`), not only the package. A PZN order of a package is
+  represented by a package request plus one request per component (`basedOn`); see the home page
+  ([HDB-986](https://hl7germany.atlassian.net/browse/HDB-986)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 
