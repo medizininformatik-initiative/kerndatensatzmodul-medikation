@@ -14,6 +14,9 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
   The new invariant `mii-med-1` requires a `code` or at least one `ingredient`
   ([HDB-980](https://hl7germany.atlassian.net/browse/HDB-980),
   [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` is allowed and Must Support
+  (`0..0` → `0..1`), as in ISiK stage 6, so ISiK requests carrying it conform
+  ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 

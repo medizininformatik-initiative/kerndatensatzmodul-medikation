@@ -13,6 +13,9 @@
   Die neue Invariante `mii-med-1` verlangt einen `code` oder mindestens ein `ingredient`
   ([HDB-980](https://hl7germany.atlassian.net/browse/HDB-980),
   [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038)).
+* `Changed`: [MII PR Medikation MedicationRequest](StructureDefinition-mii-pr-medikation-medication-request.html) — `MedicationRequest.doNotPerform` ist erlaubt und Must Support
+  (`0..0` → `0..1`), wie in ISiK Stufe 6, sodass ISiK-Verordnungen mit diesem Element
+  konform sind ([HDB-984](https://hl7germany.atlassian.net/browse/HDB-984)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 
