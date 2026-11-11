@@ -2,7 +2,7 @@ Profile: MII_PR_Medikation_Medication
 Parent: Medication
 Id: mii-pr-medikation-medication
 Title: "MII PR Medikation Medication"
-Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Angabe mindestens eines Wirkstoffes wird verlangt."
+Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Medikation MUSS über einen Code oder mindestens einen Bestandteil identifiziert werden; die Angabe des Wirkstoffes SOLL erfolgen."
 // CRMI-Artefakt-Metadaten (Muster: kerndatensatz-basis)
 * ^experimental = false
 * insert CRMIShareableStructureDefinition
@@ -84,7 +84,8 @@ Description: "Dieses Profil beschreibt die Medikation, die angesetzt, geplant od
 * form.coding[EDQM] ^mustSupport = true
 * form.coding[EDQM].system 1.. MS
 * form.coding[EDQM].code 1.. MS
-* ingredient 1.. MS
+* obeys mii-med-1
+* ingredient MS
 * ingredient ^short = "Bestandteil"
 * ingredient ^definition = "Ein Bestandteil des Medikaments"
 * ingredient.extension MS

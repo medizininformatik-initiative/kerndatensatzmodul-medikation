@@ -3,6 +3,18 @@
 
 ### Release notes
 
+**Version 2027.0.0** — unreleased
+
+<!-- From 2027.0.0 on, every bullet starts with a link to the affected artifact(s). -->
+
+Changes from the ballot reconciliation of 2027.0.0-ballot:
+
+* `Changed`: [MII PR Medikation Medication](StructureDefinition-mii-pr-medikation-medication.html) — `Medication.ingredient` is optional (`1..*` → `0..*`), so a finished
+  medicinal product coded only by PZN or ATC conforms without a placeholder ingredient.
+  The new invariant `mii-med-1` requires a `code` or at least one `ingredient`
+  ([HDB-980](https://hl7germany.atlassian.net/browse/HDB-980),
+  [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038)).
+
 **Version 2027.0.0-ballot** — 2026-09-11
 
 * `Added`: every conformance artefact now carries CRMI metadata — the shareable /

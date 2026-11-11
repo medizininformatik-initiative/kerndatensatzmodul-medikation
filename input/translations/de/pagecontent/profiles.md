@@ -10,4 +10,4 @@ Die KDS-weiten Konformitätsregeln — Anforderungssprache nach RFC-2119, Must S
 
 #### Medication
 
-Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Mindestens ein Wirkstoff MUSS angegeben werden.
+Die Medikation, die angesetzt, geplant oder verabreicht wird. Es kann sich um ein Fertigarzneimittel oder eine Rezeptur handeln. Auch die Angabe nur des Wirkstoffes ist möglich. Die Medikation MUSS über einen Code oder mindestens einen Bestandteil identifiziert werden; die Angabe des Wirkstoffes SOLL erfolgen.

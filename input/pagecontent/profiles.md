@@ -11,4 +11,4 @@ The KDS-wide conformance rules — requirements language per RFC-2119, Must Supp
 
 #### Medication
 
-The medication that is ordered, planned or administered. It may be a finished medicinal product or a compounded preparation; stating only the active ingredient is also possible. At least one active ingredient MUST be given.
+The medication that is ordered, planned or administered. It may be a finished medicinal product or a compounded preparation; stating only the active ingredient is also possible. The medication MUST be identified by a code or at least one ingredient; the active ingredient SHOULD be given.
