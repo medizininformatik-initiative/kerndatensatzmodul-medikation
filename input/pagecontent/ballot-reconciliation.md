@@ -1,49 +1,56 @@
-This page is a **working document** for the reconciliation of the ballot comments on version `2027.0.0-ballot` of the MII Kerndatensatz Modul Medikation. It lists the open tickets from the HL7 Germany ballot ([Jira query](https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC)), grouped by category, with a **proposed** resolution for each. It is temporary and will be removed before the `2027.0.0` release.
+This page is a **working document** for the reconciliation of the ballot comments on version `2027.0.0-ballot` of the MII Kerndatensatz Modul Medikation. It lists the tickets from the HL7 Germany ballot ([Jira query](https://hl7germany.atlassian.net/issues/?jql=project%20%3D%20HDB%20AND%20created%20%3E%3D%20-200d%20AND%20statusCategory%20%21%3D%20Done%20AND%20%22Project%5BDropdown%5D%22%20in%20%28%22MII%20-%20Modul%20Medikation%22%29%20ORDER%20BY%20created%20DESC)), grouped by category, with the **decision** taken in the reconciliation and how it is implemented for `2027.0.0`. The changes are made on the branch `change/ballot-2027-reconciliation`, one commit per ticket, and are listed in the release notes of `2027.0.0`. This page is temporary and will be removed before the `2027.0.0` release.
 
 #### Legend
 
 | Status | Meaning |
 | --- | --- |
-| **Proposed: accept** | Proposal to implement the change for `2027.0.0`; to be ratified in the meeting. |
-| **Proposed: accept (docs)** | Proposal to change documentation or guidance only, no artefact changes; to be ratified. |
-| **Discuss** | No proposed resolution yet; to be discussed in the meeting. |
-| **Planned reply** | Question; a reply in Jira is planned (draft given), possibly with a documentation clarification. |
+| **Accepted** | Implemented as proposed. |
+| **Accepted with modification** | Implemented, with changes to the proposal agreed in the reconciliation. |
+| **Accepted (docs)** | Documentation or guidance only, no change to the artefacts' constraints. |
+| **Accepted – deferred** | Agreed, but cannot be implemented yet; tracked in the backlog. |
 
 **Breaking** = *yes* if implementations conforming to the previous release (`2026.0.x`) no longer conform after the change.
 
 ---
 
-### A. Proposed: accept – profile changes
+### A. Profile changes
 
-| Ticket | Topic | Proposed resolution | Status | Breaking |
+| Ticket | Topic | Decision and implementation | Status | Breaking |
 | --- | --- | --- | --- | --- |
-| [HDB-980](https://hl7germany.atlassian.net/browse/HDB-980) | Medication ingredient – Vorschlag zur Kardinalität | Relax `Medication.ingredient` from `1..*` to `0..*` and add an invariant `code.exists() or ingredient.exists()` (analogous to ISiK `isik-med-1`). Keep "at least the active ingredient SHOULD be given" in the narrative. This allows finished medicinal products coded only by PZN/ATC, as delivered by ISiK 6.0.0 systems. Consumers can no longer rely on `ingredient` being present. | Proposed: accept | no (relaxation) |
-| [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038) | Medication.ingredient von 1..* auf 0..* aufweichen | Resolved together with HDB-980. Removes the current workaround of filling `ingredient` with a `data-absent-reason` extension when only the ATC code is known. | Proposed: accept | no |
-| [HDB-984](https://hl7germany.atlassian.net/browse/HDB-984) | MedicationRequest doNotPerform nicht verbieten | Change `MedicationRequest.doNotPerform` from `0..0` to `0..1` with the invariant `doNotPerform.empty() or doNotPerform = false`, so ISiK requests carrying `doNotPerform = false` conform, while negative orders stay out of scope. | Proposed: accept | no (relaxation) |
-| [HDB-982](https://hl7germany.atlassian.net/browse/HDB-982) | MII PR Medikation Medication – status nicht definiert | Flag `Medication.status` as Must Support (aligned with ISiK) and add guidance: `status` is a modifier element; `inactive` and `entered-in-error` change the meaning of the resource and must be evaluated by receivers. | Proposed: accept | no (Must Support only) |
-| [HDB-967](https://hl7germany.atlassian.net/browse/HDB-967) | MedicationAdministration.dosage.dose ist Pflichtfeld ohne Wertevorrat | Bind `MedicationAdministration.dosage.dose` (*required*) to `http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE`, the same binding `DosageDE` (`de.fhir.medication` 1.0.7) applies to `doseAndRate.dose[x]:doseQuantity` in MedicationRequest and MedicationStatement. `DosageDE` cannot be used as a type profile there, because `MedicationAdministration.dosage` is a BackboneElement in R4. `dosage.dose.system`/`.code` are already `1..1`. Inherited by `mii-pr-bildgebung-kontrastmittelgabe` and `mii-pr-lungenfunktion-dosis-gabe`. Moving to Medikation-DE 2.x is a separate, post-ballot decision. | Proposed: accept | **yes** (units outside the ValueSet become invalid) |
+| [HDB-980](https://hl7germany.atlassian.net/browse/HDB-980) | Medication ingredient – Vorschlag zur Kardinalität | `Medication.ingredient` relaxed from `1..*` to `0..*`. New invariant `mii-med-1` (error): `code.exists() or ingredient.exists()`, as `isik-med-1` in ISiK stage 6. The active ingredient SHOULD still be given. Explained on the Medication profile page with reference to ISiK 6. | Accepted | no (relaxation) |
+| [HDB-1038](https://hl7germany.atlassian.net/browse/HDB-1038) | Medication.ingredient von 1..* auf 0..* aufweichen | Resolved together with HDB-980. The workaround of an `ingredient` carrying only a `data-absent-reason` extension is no longer needed. | Accepted | no |
+| [HDB-984](https://hl7germany.atlassian.net/browse/HDB-984) | MedicationRequest doNotPerform nicht verbieten | ISiK stage 6 variant adopted: `MedicationRequest.doNotPerform` `0..1`, Must Support, **any value** (the proposal had allowed only `false`). The element comment and the profile page state that `true` marks an order not to give the medication and must be evaluated by receivers. | Accepted with modification | no (relaxation) |
+| [HDB-982](https://hl7germany.atlassian.net/browse/HDB-982) | MII PR Medikation Medication – status nicht definiert | `Medication.status` Must Support, with guidance that `inactive` and `entered-in-error` must be evaluated. It stays **optional (`0..1`)**; the deviation from ISiK stage 6 (`1..1`) is documented on the profile page, so that existing MII data without `status` stays valid. | Accepted | no (Must Support only) |
+| [HDB-967](https://hl7germany.atlassian.net/browse/HDB-967) | MedicationAdministration.dosage.dose ist Pflichtfeld ohne Wertevorrat | `MedicationAdministration.dosage.dose` bound (*required*) to `http://ig.fhir.de/igs/medication/ValueSet/DosageDoseQuantityDE`, the binding `DosageDE` applies in MedicationRequest and MedicationStatement. Explained on the profile page. | Accepted | **yes** (units outside the ValueSet become invalid) |
 
-### B. Proposed: accept – terminology
+### B. Terminology
 
-| Ticket | Topic | Proposed resolution | Status | Breaking |
+| Ticket | Topic | Decision and implementation | Status | Breaking |
 | --- | --- | --- | --- | --- |
-| [HDB-981](https://hl7germany.atlassian.net/browse/HDB-981) | ValueSet mii-vs-medikation-atc – fehlendes 2027er Release | Add `include codes from system http://fhir.de/CodeSystem/bfarm/atc\|2027` to `mii-vs-medikation-atc` once BfArM publishes ATC-DE 2027, and update description and copyright ("2018 bis 2027"). A version-independent include was considered: it would accept every future version without review, which conflicts with `code.coding:atcClassDe.version` being `1..1`, and is therefore not proposed. | Proposed: accept | no |
-| [HDB-983](https://hl7germany.atlassian.net/browse/HDB-983) | Extension wirkstofftyp, CodeSystem wirkstofftyp aus deutschen Basisprofilen nutzen | Confirmed: `http://fhir.de/StructureDefinition/WirkstofftypEX` (`de.basisprofil.r4` 1.6.0, already a dependency) has the same context (`Medication.ingredient`) and its CodeSystem `http://fhir.de/CodeSystem/WirkstofftypCS` has the same codes (`IN`, `PIN`, `MIN`) as the MII artefacts. Proposal: add the Basisprofil extension as a Must Support slice on `Medication.ingredient.extension`, keep the MII extension for a transition period and set the MII extension, ValueSet and CodeSystem to `retired` in a later release; update examples. | Proposed: accept | no with a transition period (both URLs allowed); **yes** if the MII extension is removed |
+| [HDB-981](https://hl7germany.atlassian.net/browse/HDB-981) | ValueSet mii-vs-medikation-atc – fehlendes 2027er Release | ATC-DE 2027 will be added to `mii-vs-medikation-atc` (explicit `\|2027` include, description and copyright updated). BfArM has not released ATC-DE 2027 yet, so the change is tracked in the backlog. A version-independent include remains rejected. | Accepted – deferred | no |
+| [HDB-983](https://hl7germany.atlassian.net/browse/HDB-983) | Extension wirkstofftyp, CodeSystem wirkstofftyp aus deutschen Basisprofilen nutzen | The slice `Medication.ingredient.extension:Wirkstofftyp` now uses `http://fhir.de/StructureDefinition/WirkstofftypEX` (`de.basisprofil.r4` 1.6.0), as ISiK does; the MII extension is removed from the profile. The MII extension, ValueSet and CodeSystem stay in the guide, are marked **deprecated** on their pages (the Basisprofil extension grew out of the MII extension and is used by ISiK) and will be retired in a later release. New warning invariant `mii-med-2` flags use of the MII extension and advises replacing it. New ConceptMap `mii-cm-medikation-wirkstofftyp` maps the MII codes to `WirkstofftypCS`. Examples updated. A StructureMap (FML) for converting data is tracked in the backlog. | Accepted with modification | no (MII extension still accepted, with a warning) |
 
-### C. To be discussed
+### C. Discussed
 
-| Ticket | Topic | Open question | Status | Breaking |
+| Ticket | Topic | Decision and implementation | Status | Breaking |
 | --- | --- | --- | --- | --- |
-| [HDB-985](https://hl7germany.atlassian.net/browse/HDB-985) | MedicationAdministration effective[x] | ISiK `ISiKMedikationsVerabreichung` only allows precision to the second for `effective[x]` and refers date-only administrations to MedicationStatement. The MII profile currently allows any precision. Does MII share this distinction? MII data often comes from retrospective DIZ sources where only the date may be known; a hard invariant would make such data invalid. Options: (a) adopt the ISiK rule as an invariant, (b) adopt it as a SHOULD in the narrative only, (c) keep the current rule and document the deviation from ISiK. | Discuss | (a) **yes** · (b), (c) no |
+| [HDB-985](https://hl7germany.atlassian.net/browse/HDB-985) | MedicationAdministration effective[x] | ISiK states the second precision in prose, not as an invariant. MedicationAdministration: `effective[x]` SHOULD be given to the second, as best practice with reference to ISiK stage 6 (element comment and profile page); coarser values such as date-only data from retrospective sources stay valid. MedicationStatement stays unchanged, because there are use cases for coarser periods. | Accepted (docs) | no |
 
-### D. Proposed: accept – documentation only
+### D. Documentation
 
-| Ticket | Topic | Proposed resolution | Status | Breaking |
+| Ticket | Topic | Decision and implementation | Status | Breaking |
 | --- | --- | --- | --- | --- |
-| [HDB-979](https://hl7germany.atlassian.net/browse/HDB-979) | Hinweis zur Pausierung einer Medikation aus ISiK übernehmen | Adopt the ISiK best-practice note on pausing a medication ([ISiKMedikationsInformation](https://gematik.github.io/spec-ISiK-Basismodul/main-stufe-6/ISiK-Medikation/en/StructureDefinition-ISiKMedikationsInformation.html)): represent a pause with several MedicationStatement (resp. MedicationAdministration) resources instead of overwriting an existing one, so `status` always reflects the current state and the history is kept. Add the note to the intro notes of the MedicationStatement and MedicationAdministration profiles. | Proposed: accept (docs) | no |
+| [HDB-979](https://hl7germany.atlassian.net/browse/HDB-979) | Hinweis zur Pausierung einer Medikation aus ISiK übernehmen | ISiK best practice adopted on the MedicationStatement and MedicationAdministration profile pages: a pause SHOULD be represented with several resources instead of overwriting one. Added as an **open question, input welcome**: ISiK does not say which `status` the first resource carries. During the pause it is `on-hold` or `stopped`; one current implementation sets it back to `active` (MedicationAdministration: `in-progress`) once the continuation is documented, with `effectivePeriod` closed. | Accepted (docs) | no |
 
-### E. Planned reply
+### E. Questions
 
-| Ticket | Topic | Draft reply | Status | Breaking |
+| Ticket | Topic | Decision and implementation | Status | Breaking |
 | --- | --- | --- | --- | --- |
-| [HDB-986](https://hl7germany.atlassian.net/browse/HDB-986) | Frage zur Verschreibung von Kombipackungen (Beschreibung auf der Startseite) | Draft (to be confirmed): MedicationRequest, MedicationStatement and MedicationAdministration reference the "upper" combination-package `Medication` when the package as a whole is prescribed or documented. If the component actually taken or administered is known, the resource references the corresponding sub-`Medication` directly (it is a complete `Medication` instance, see "Combination packages" on the home page). Add a sentence on this to the home page. | Planned reply | no |
+| [HDB-986](https://hl7germany.atlassian.net/browse/HDB-986) | Frage zur Verschreibung von Kombipackungen (Beschreibung auf der Startseite) | Guidance extended beyond the planned reply: MedicationRequest, MedicationStatement and MedicationAdministration MUST reference the component (sub-`Medication`), not only the "upper" combination-package `Medication`. A PZN order of a package is represented by a package request plus one request per component stating how it is taken, linked via `basedOn`. Hospital information systems rarely order combination packages by PZN; the component is usually the subject. Home page and researcher guidance updated. | Accepted (docs) | no |
+
+### Follow-ups
+
+* ATC-DE 2027 in `mii-vs-medikation-atc` once BfArM releases it (HDB-981).
+* StructureMap (FML) converting the MII Wirkstofftyp extension to `WirkstofftypEX` (HDB-983).
+* Retire the MII Wirkstofftyp extension, ValueSet and CodeSystem in a later release (HDB-983).
+* Collect feedback on the status of the first resource after a paused medication is continued (HDB-979).
