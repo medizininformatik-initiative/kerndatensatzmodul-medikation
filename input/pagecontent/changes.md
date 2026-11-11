@@ -30,6 +30,9 @@ Changes from the ballot reconciliation of 2027.0.0-ballot:
   invariant `mii-med-2` warns when the MII extension is used. The new ConceptMap
   [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) maps the MII codes to `WirkstofftypCS`. Examples updated
   ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
+* `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — guidance that `effective[x]` SHOULD be given to the second, as best
+  practice following ISiK stage 6; coarser values stay valid. MedicationStatement is unchanged
+  ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
 
 **Version 2027.0.0-ballot** — 2026-09-11
 

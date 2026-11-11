@@ -29,6 +29,9 @@
   die Invariante `mii-med-2` warnt bei Verwendung der MII-Extension. Die neue ConceptMap
   [MII CM Medikation Wirkstofftyp](ConceptMap-mii-cm-medikation-wirkstofftyp.html) bildet die MII-Codes auf `WirkstofftypCS` ab. Beispiele angepasst
   ([HDB-983](https://hl7germany.atlassian.net/browse/HDB-983)).
+* `Added`: [MII PR Medikation MedicationAdministration](StructureDefinition-mii-pr-medikation-medication-administration.html) — Hinweis, dass `effective[x]` als Best Practice nach ISiK Stufe 6
+  sekundengenau angegeben werden SOLL; gröbere Angaben bleiben gültig. MedicationStatement
+  bleibt unverändert ([HDB-985](https://hl7germany.atlassian.net/browse/HDB-985)).
 
 **Version 2027.0.0-ballot** — 11.09.2026
 
