@@ -1,0 +1,21 @@
+{
+  "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
+  "name" : "MII_IG_Medikation",
+  "title" : "MII IG Medikation",
+  "description" : "FHIR profiles for representing medication data - prescriptions, administrations, statements and medication lists, including active ingredients and dosage - as part of the MII core data set.",
+  "ig-date" : "2026-09-11",
+  "status" : "active",
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.medikation",
+  "ig-ver" : "2027.0.0-ballot",
+  "date" : "Fri, 27 Nov, 2026 14:10:45 +0000",
+  "dateISO8601" : "2026-11-27T14:10:45+00:00",
+  "errs" : 1647,
+  "warnings" : 463,
+  "hints" : 2003,
+  "broken-links" : 0,
+  "suppressed-hints" : 1624,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2857949848
+}
